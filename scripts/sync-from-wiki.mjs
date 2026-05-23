@@ -114,9 +114,7 @@ async function main() {
     pages.push({ title: data.title, slug, type: data.type, updated: data.updated, sourcePath: rel, tags: data.tags });
   }
 
-  pages.sort((a, b) => a.title.localeCompare(b.title));
   const manifest = {
-    generatedAt: new Date().toISOString(),
     wikiRoot,
     pageCount: pages.length,
     sourceHash: crypto.createHash('sha256').update(JSON.stringify(pages)).digest('hex'),
