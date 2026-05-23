@@ -6,6 +6,7 @@ import matter from 'gray-matter';
 const repoRoot = process.cwd();
 const wikiRoot = process.env.WIKI_PATH || '/home/chad/wiki';
 const outDir = path.join(repoRoot, 'src/content/knowledge');
+const updatesDir = path.join(repoRoot, 'src/content/updates');
 const manifestPath = path.join(repoRoot, 'src/data/wiki-manifest.json');
 
 const publishDirs = ['entities', 'concepts', 'comparisons', 'queries'];
