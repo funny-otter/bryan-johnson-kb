@@ -1,0 +1,201 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const fallbackMetrics = {
+  source: 'local-snapshot',
+  generated_at: '2026-05-23T00:00:00Z',
+  ranges: {
+    '24h': [
+      {
+        content_type: 'x_post',
+        label: 'X posts',
+        total: 18,
+        buckets: [2, 0, 1, 1, 0, 2, 1, 3, 2, 0, 1, 2, 3, 0],
+      },
+      {
+        content_type: 'blog',
+        label: 'Blogs',
+        total: 5,
+        buckets: [0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0],
+      },
+    ],
+    '7d': [
+      {
+        content_type: 'x_post',
+        label: 'X posts',
+        total: 74,
+        buckets: [8, 12, 7, 14, 9, 11, 13],
+      },
+      {
+        content_type: 'blog',
+        label: 'Blogs',
+        total: 16,
+        buckets: [1, 2, 4, 1, 3, 2, 3],
+      },
+    ],
+    '30d': [
+      {
+        content_type: 'x_post',
+        label: 'X posts',
+        total: 263,
+        buckets: [5, 9, 7, 12, 8, 6, 10, 11, 9, 13, 8, 7, 12, 15, 10, 9, 6, 11, 13, 7, 8, 12, 10, 9, 14, 11, 8, 12, 9, 10],
+      },
+      {
+        content_type: 'blog',
+        label: 'Blogs',
+        total: 44,
+        buckets: [0, 1, 2, 1, 0, 2, 1, 3, 1, 1, 2, 0, 1, 2, 3, 1, 0, 2, 1, 2, 1, 0, 2, 3, 1, 2, 1, 0, 1, 2],
+      },
+    ],
+  },
+};
+---
+<BaseLayout title="Metrics · Bryan Johnson KB" description="Source-specific Bryan Johnson content metrics across 24h, 7d, and 30d windows.">
+  <section class="section-intro">
+    <p class="eyebrow">Metric tab</p>
+    <h1>Content velocity by source.</h1>
+    <p class="lead">Track Bryan Johnson-related X posts, blogs, and aggregate content across the current 24h, 7d, and 30d ranges. The tab reads <code>GET /api/metrics/content</code> when the metrics API is available and falls back to the local snapshot for static builds.</p>
+  </section>
+
+  <section class="metric-dashboard" data-metrics-dashboard data-fallback={JSON.stringify(fallbackMetrics)} aria-live="polite">
+    <div class="metric-toolbar">
+      <div>
+        <h2>Metrics</h2>
+        <p id="metric-summary">Loading metrics for Bryan Johnson content…</p>
+      </div>
+      <div class="range-selector" role="tablist" aria-label="Metric range selector">
+        <button type="button" class="active" role="tab" aria-selected="true" data-range="24h">24h</button>
+        <button type="button" role="tab" aria-selected="false" data-range="7d">7d</button>
+        <button type="button" role="tab" aria-selected="false" data-range="30d">30d</button>
+      </div>
+    </div>
+
+    <div class="metric-state metric-loading" data-state="loading">Loading metrics…</div>
+    <div class="metric-state metric-error" data-state="error" hidden>Unable to load metrics. Showing the last local snapshot if available.</div>
+    <div class="metric-state metric-empty" data-state="empty" hidden>No metric data for this range yet.</div>
+
+    <div class="metric-total-grid" data-total-grid aria-label="Metric totals"></div>
+    <div class="metric-graph-grid" data-graph-grid aria-label="Source metric graphs"></div>
+  </section>
+
+  <noscript>
+    <section class="metric-state">JavaScript is required to fetch and switch metric ranges.</section>
+  </noscript>
+
+  <script is:inline>
+    const dashboard = document.querySelector('[data-metrics-dashboard]');
+    const fallback = JSON.parse(dashboard.dataset.fallback || '{}');
+    const labels = { all: 'All sources', x_post: 'X posts', blog: 'Blogs' };
+    let activeRange = '24h';
+    let lastUsedFallback = false;
+
+    const loading = dashboard.querySelector('[data-state="loading"]');
+    const error = dashboard.querySelector('[data-state="error"]');
+    const empty = dashboard.querySelector('[data-state="empty"]');
+    const summary = dashboard.querySelector('#metric-summary');
+    const totalGrid = dashboard.querySelector('[data-total-grid]');
+    const graphGrid = dashboard.querySelector('[data-graph-grid]');
+    const buttons = Array.from(dashboard.querySelectorAll('[data-range]'));
+
+    const normalizeBuckets = (buckets = []) => buckets.map((bucket, index) => {
+      if (typeof bucket === 'number') return { label: String(index + 1), value: bucket };
+      return {
+        label: bucket.label || bucket.start || bucket.timestamp || String(index + 1),
+        value: Number(bucket.count ?? bucket.value ?? bucket.total ?? 0),
+      };
+    });
+
+    const normalizeSeries = (payload, range) => {
+      const rawSeries = payload?.series || payload?.content_types || payload?.ranges?.[range] || [];
+      const series = rawSeries.map((item) => ({
+        content_type: item.content_type || item.type || 'all',
+        label: item.label || labels[item.content_type] || item.content_type || 'All sources',
+        total: Number(item.total ?? item.count ?? normalizeBuckets(item.buckets).reduce((sum, bucket) => sum + bucket.value, 0)),
+        buckets: normalizeBuckets(item.buckets),
+      }));
+      const allTotal = series.reduce((sum, item) => sum + item.total, 0);
+      return allTotal > 0 ? [{ content_type: 'all', label: 'All sources', total: allTotal, buckets: combineBuckets(series) }, ...series] : series;
+    };
+
+    const combineBuckets = (series) => {
+      const maxLength = Math.max(0, ...series.map((item) => item.buckets.length));
+      return Array.from({ length: maxLength }, (_, index) => ({
+        label: series[0]?.buckets[index]?.label || String(index + 1),
+        value: series.reduce((sum, item) => sum + (item.buckets[index]?.value || 0), 0),
+      }));
+    };
+
+    const sparkline = (buckets) => {
+      if (!buckets.length) return '';
+      const max = Math.max(1, ...buckets.map((bucket) => bucket.value));
+      const step = buckets.length === 1 ? 100 : 100 / (buckets.length - 1);
+      return buckets.map((bucket, index) => {
+        const x = Number((index * step).toFixed(2));
+        const y = Number((38 - (bucket.value / max) * 34).toFixed(2));
+        return `${x},${y}`;
+      }).join(' ');
+    };
+
+    const setState = ({ isLoading = false, hasError = false, isEmpty = false } = {}) => {
+      loading.hidden = !isLoading;
+      error.hidden = !hasError;
+      empty.hidden = !isEmpty;
+    };
+
+    const render = (series, range) => {
+      const hasData = series.some((item) => item.total > 0);
+      totalGrid.innerHTML = '';
+      graphGrid.innerHTML = '';
+      setState({ hasError: lastUsedFallback, isEmpty: !hasData });
+      summary.textContent = hasData
+        ? `${range} totals by source${lastUsedFallback ? ' · local snapshot' : ''}`
+        : `No metric data in the current ${range} window.`;
+
+      for (const item of series) {
+        const totalCard = document.createElement('article');
+        totalCard.className = 'metric-total-card';
+        totalCard.innerHTML = `<span>${item.label}</span><strong>${item.total.toLocaleString()}</strong><small>${range} total</small>`;
+        totalGrid.append(totalCard);
+
+        const graphCard = document.createElement('article');
+        graphCard.className = 'metric-card';
+        const points = sparkline(item.buckets);
+        const max = Math.max(0, ...item.buckets.map((bucket) => bucket.value));
+        graphCard.innerHTML = `
+          <div class="card-topline"><span class="source-type">${item.content_type}</span><strong>${item.total.toLocaleString()} items</strong></div>
+          <h3>${item.label}</h3>
+          <svg class="metric-graph" viewBox="0 0 100 40" preserveAspectRatio="none" role="img" aria-label="${item.label} ${range} trend">
+            <polyline points="${points}" fill="none" stroke="currentColor" stroke-width="2.8" vector-effect="non-scaling-stroke"></polyline>
+          </svg>
+          <div class="metric-axis"><span>${item.buckets[0]?.label || 'start'}</span><span>Peak ${max.toLocaleString()}</span><span>${item.buckets.at(-1)?.label || 'now'}</span></div>
+        `;
+        graphGrid.append(graphCard);
+      }
+    };
+
+    const loadRange = async (range) => {
+      activeRange = range;
+      lastUsedFallback = false;
+      buttons.forEach((button) => {
+        const selected = button.dataset.range === range;
+        button.classList.toggle('active', selected);
+        button.setAttribute('aria-selected', String(selected));
+      });
+      setState({ isLoading: true });
+
+      try {
+        const response = await fetch(`/api/metrics/content?range=${encodeURIComponent(range)}&content_type=all`, { headers: { accept: 'application/json' } });
+        if (!response.ok) throw new Error(`Metric API returned ${response.status}`);
+        const payload = await response.json();
+        render(normalizeSeries(payload, range), range);
+      } catch (apiError) {
+        lastUsedFallback = true;
+        const fallbackPayload = { ranges: fallback.ranges };
+        render(normalizeSeries(fallbackPayload, range), range);
+      }
+    };
+
+    buttons.forEach((button) => button.addEventListener('click', () => loadRange(button.dataset.range || activeRange)));
+    loadRange(activeRange);
+  </script>
+</BaseLayout>
