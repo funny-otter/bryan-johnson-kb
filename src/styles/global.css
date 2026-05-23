@@ -129,6 +129,9 @@ code { color: #d8e6f7; background: rgba(255,255,255,.06); border: 1px solid rgba
 .knowledge-content-grid { display: grid; grid-template-columns: minmax(0, 760px) minmax(250px, 320px); gap: clamp(28px, 5vw, 72px); align-items: start; }
 .knowledge-body {
   min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
   background: rgba(255,255,255,.028);
   border: 1px solid rgba(255,255,255,.08);
   border-radius: 32px;
@@ -145,6 +148,13 @@ code { color: #d8e6f7; background: rgba(255,255,255,.06); border: 1px solid rgba
 .knowledge-body strong { color: var(--text); }
 .knowledge-body a { color: var(--accent); text-decoration-color: rgba(124,247,201,.35); text-underline-offset: 3px; }
 .knowledge-body a:hover { text-decoration-color: var(--accent); }
+.knowledge-body table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+.knowledge-body th, .knowledge-body td { min-width: 0; word-break: normal; overflow-wrap: anywhere; }
 .knowledge-sidecar { position: sticky; top: 104px; display: grid; gap: 16px; }
 .knowledge-side-section {
   background: linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.025));
@@ -168,7 +178,7 @@ code { color: #d8e6f7; background: rgba(255,255,255,.06); border: 1px solid rgba
   .knowledge-page { padding-top: 18px; }
   .knowledge-breadcrumb { margin-bottom: 22px; }
   .knowledge-title-block h1 { font-size: clamp(40px, 14vw, 64px); }
-  .knowledge-body { border-radius: 24px; padding: 24px; }
+  .knowledge-body { max-width: 100%; box-sizing: border-box; border-radius: 24px; padding: 24px; }
   .knowledge-body p, .knowledge-body li { font-size: 16px; }
   .section-head { align-items: flex-start; flex-direction: column; }
   .timeline { padding-left: 0; }
