@@ -109,7 +109,24 @@ async function walk(dir) {
   return files;
 }
 
+async function exists(dir) {
+  try {
+    await fs.access(dir);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 async function main() {
+  // Cloudflare Pages builds from committed content and does not have access to
+  // the private local llm-wiki. In that environment, skip sync instead of
+  // deleting committed Markdown files and producing an empty deployment.
+  if (!(await exists(wikiRoot))) {
+    console.log(`Wiki path ${wikiRoot} is unavailable; using committed site content.`);
+    return;
+  }
+
   await fs.rm(outDir, { recursive: true, force: true });
   await fs.mkdir(outDir, { recursive: true });
   await fs.mkdir(path.dirname(manifestPath), { recursive: true });
