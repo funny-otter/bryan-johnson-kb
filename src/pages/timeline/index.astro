@@ -1,19 +1,32 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import KnowledgeCard from '../../components/KnowledgeCard.astro';
-import { getCollection } from 'astro:content';
+import { timelineEvents } from '../../data/dashboard-sections';
 const title = 'Timeline';
-const terms = ['timeline', 'history', 'created', 'updated', 'braintree', 'kernel', 'os fund', 'blueprint'];
-const entries = (await getCollection('knowledge')).filter((entry) => {
-  const haystack = [entry.data.title, entry.data.type, ...(entry.data.tags || []), entry.body].join(' ').toLowerCase();
-  return terms.some((term) => haystack.includes(term));
-}).sort((a, b) => (b.data.updated || '').localeCompare(a.data.updated || ''));
+const events = [...timelineEvents].sort((a, b) => a.date.localeCompare(b.date));
 ---
-<BaseLayout title={`${title} · Bryan Johnson KB`}>
+<BaseLayout title={`${title} · Bryan Johnson KB`} description="Chronological Bryan Johnson, Blueprint, Don't Die, and source-update events.">
   <div class="container">
-    <div class="section-head"><h2>{title}</h2><span class="pill">{entries.length} pages</span></div>
-    <section class="grid">
-      {entries.map((entry) => <KnowledgeCard entry={entry} />)}
+    <section class="section-intro">
+      <p class="eyebrow">Chronology, not update sort</p>
+      <div class="section-head"><h2>{title}</h2><span class="pill">{events.length} dated events</span></div>
+      <p class="lead">A date-first view of the KB: company milestones, Blueprint/Don’t Die developments, protocol reversals, and source-ingest moments. Events link back to the relevant knowledge page and cite the source path used by the wiki.</p>
     </section>
+
+    <ol class="timeline" aria-label="Chronological events">
+      {events.map((event) => (
+        <li class="timeline-event">
+          <time datetime={event.date}>{event.date}</time>
+          <div class="timeline-body">
+            <div class="card-topline">
+              <span class={`confidence confidence-${event.confidence}`}>{event.confidence} confidence</span>
+              <a href={event.relatedHref}>{event.relatedTitle}</a>
+            </div>
+            <h3>{event.label}</h3>
+            <p>{event.summary}</p>
+            <code>{event.source}</code>
+          </div>
+        </li>
+      ))}
+    </ol>
   </div>
 </BaseLayout>

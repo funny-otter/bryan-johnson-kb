@@ -1,19 +1,65 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import KnowledgeCard from '../../components/KnowledgeCard.astro';
 import { getCollection } from 'astro:content';
 const title = 'Sources';
-const terms = ['source', 'raw/articles', 'twitter', 'x-twitter', 'interview', 'profile'];
-const entries = (await getCollection('knowledge')).filter((entry) => {
-  const haystack = [entry.data.title, entry.data.type, ...(entry.data.tags || []), entry.body].join(' ').toLowerCase();
-  return terms.some((term) => haystack.includes(term));
-}).sort((a, b) => (b.data.updated || '').localeCompare(a.data.updated || ''));
+type SourceRecord = {
+  source: string;
+  title: string;
+  type: string;
+  pages: Array<{ title: string; href: string }>;
+};
+const entries = await getCollection('knowledge');
+const sourceMap = new Map<string, SourceRecord>();
+for (const entry of entries) {
+  for (const source of entry.data.sources || []) {
+    if (!sourceMap.has(source)) {
+      const filename = source.split('/').at(-1) || source;
+      const title = filename.replace(/\.md$/, '').replace(/-/g, ' ').replace(/\b\w/g, (char) => char.toUpperCase());
+      const type = source.includes('/x') || source.includes('twitter') ? 'social' : source.includes('profile') || source.includes('about') ? 'profile' : source.includes('critique') || source.includes('limits') ? 'critique' : 'article';
+      sourceMap.set(source, { source, title, type, pages: [] });
+    }
+    const record = sourceMap.get(source);
+    if (record) record.pages.push({ title: entry.data.title, href: `/knowledge/${entry.data.slug}/` });
+  }
+}
+const sources = [...sourceMap.values()].sort((a, b) => {
+  const typeSort = a.type.localeCompare(b.type);
+  if (typeSort !== 0) return typeSort;
+  return a.title.localeCompare(b.title);
+});
+const sourceMapPage = entries.find((entry) => entry.data.slug === 'bryan-johnson-source-map');
 ---
-<BaseLayout title={`${title} · Bryan Johnson KB`}>
+<BaseLayout title={`${title} · Bryan Johnson KB`} description="Citation and source index for the Bryan Johnson KB.">
   <div class="container">
-    <div class="section-head"><h2>{title}</h2><span class="pill">{entries.length} pages</span></div>
-    <section class="grid">
-      {entries.map((entry) => <KnowledgeCard entry={entry} />)}
+    <section class="section-intro">
+      <p class="eyebrow">Citation index</p>
+      <div class="section-head"><h2>{title}</h2><span class="pill">{sources.length} source records</span></div>
+      <p class="lead">This view indexes source paths from knowledge-page frontmatter and shows which public KB pages each source supports. It is designed for auditability rather than browsing generic summaries.</p>
+      {sourceMapPage && (
+        <a class="featured-source" href={`/knowledge/${sourceMapPage.data.slug}/`}>
+          <span>Start here</span>
+          <strong>{sourceMapPage.data.title}</strong>
+          <p>{sourceMapPage.data.summary}</p>
+        </a>
+      )}
+    </section>
+
+    <section class="source-table" aria-label="Source records">
+      {sources.map((item) => (
+        <article class="source-row">
+          <div>
+            <span class="source-type">{item.type}</span>
+            <h3>{item.title}</h3>
+            <code>{item.source}</code>
+          </div>
+          <div class="related-pages">
+            <span>Supports</span>
+            <ul>
+              {item.pages.map((page) => <li><a href={page.href}>{page.title}</a></li>)}
+            </ul>
+          </div>
+        </article>
+      ))}
     </section>
   </div>
 </BaseLayout>

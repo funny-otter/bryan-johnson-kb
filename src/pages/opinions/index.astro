@@ -1,19 +1,39 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import KnowledgeCard from '../../components/KnowledgeCard.astro';
-import { getCollection } from 'astro:content';
+import { opinionItems } from '../../data/dashboard-sections';
 const title = 'Opinions';
-const terms = ['opinion', 'ideology', 'dont-die', 'zeroth', 'religion', 'claim', 'controversy'];
-const entries = (await getCollection('knowledge')).filter((entry) => {
-  const haystack = [entry.data.title, entry.data.type, ...(entry.data.tags || []), entry.body].join(' ').toLowerCase();
-  return terms.some((term) => haystack.includes(term));
-}).sort((a, b) => (b.data.updated || '').localeCompare(a.data.updated || ''));
 ---
-<BaseLayout title={`${title} · Bryan Johnson KB`}>
+<BaseLayout title={`${title} · Bryan Johnson KB`} description="Claim and stance cards for Bryan Johnson, Blueprint, and Don't Die.">
   <div class="container">
-    <div class="section-head"><h2>{title}</h2><span class="pill">{entries.length} pages</span></div>
-    <section class="grid">
-      {entries.map((entry) => <KnowledgeCard entry={entry} />)}
+    <section class="section-intro">
+      <p class="eyebrow">Claims, stances, caveats</p>
+      <div class="section-head"><h2>{title}</h2><span class="pill">{opinionItems.length} claims</span></div>
+      <p class="lead">This tab is intentionally not a generic page index. It pulls out Bryan Johnson / Blueprint positions, the evidence angle, and the main caveat so readers can see what is a stance, what is sourced, and what remains contested.</p>
+    </section>
+
+    <section class="opinion-list" aria-label="Opinion and claim cards">
+      {opinionItems.map((item) => (
+        <article class="opinion-card">
+          <div class="card-topline">
+            <span class={`confidence confidence-${item.confidence}`}>{item.confidence} confidence</span>
+            <a href={item.relatedHref}>{item.relatedTitle}</a>
+          </div>
+          <h3>{item.claim}</h3>
+          <dl class="claim-grid">
+            <div>
+              <dt>Position</dt>
+              <dd>{item.position}</dd>
+            </div>
+            <div>
+              <dt>Counterpoint / caution</dt>
+              <dd>{item.counterpoint}</dd>
+            </div>
+          </dl>
+          <div class="source-chips" aria-label="Supporting source paths">
+            {item.sources.map((source) => <code>{source}</code>)}
+          </div>
+        </article>
+      ))}
     </section>
   </div>
 </BaseLayout>
