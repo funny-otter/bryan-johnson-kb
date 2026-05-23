@@ -1,0 +1,40 @@
+---
+import '../styles/global.css';
+const { title = 'Bryan Johnson KB', description = 'A static knowledge site generated from an LLM Wiki.' } = Astro.props;
+const nav = [
+  ['/', 'Overview'],
+  ['/knowledge/', 'Knowledge'],
+  ['/updates/', 'Updates'],
+  ['/sources/', 'Sources'],
+  ['/search/', 'Search'],
+];
+const path = Astro.url.pathname;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="site-shell nav">
+        <a href="/" class="brand" aria-label="Bryan Johnson KB home">
+          <span class="brand-mark"></span>
+          <span>Bryan Johnson KB</span>
+        </a>
+        <div class="nav-links">
+          {nav.map(([href, label]) => <a class={path === href || (href !== '/' && path.startsWith(href)) ? 'active' : ''} href={href}>{label}</a>)}
+        </div>
+      </nav>
+    </header>
+    <main class="site-shell">
+      <slot />
+    </main>
+    <footer class="site-shell footer">
+      Generated from the local LLM Wiki. Treat health claims as sourced notes, not medical advice.
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+export async function getStaticPaths() {
+  const entries = await getCollection('knowledge');
+  return entries.map((entry) => ({ params: { slug: entry.data.slug }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+<BaseLayout title={`${entry.data.title} · Bryan Johnson KB`}>
+  <div class="container article">
+    <a class="pill" href="/">← Home</a>
+    <h1>{entry.data.title}</h1>
+    <div class="meta">
+      <span class="badge accent">{entry.data.type}</span>
+      {entry.data.updated && <span class="badge">updated {entry.data.updated}</span>}
+      {entry.data.confidence && <span class="badge">confidence: {entry.data.confidence}</span>}
+      {entry.data.contested && <span class="badge" style="color: var(--danger)">contested</span>}
+    </div>
+    <div class="article-body" data-pagefind-body>
+      <Content />
+    </div>
+    {entry.data.sources?.length > 0 && (
+      <section class="panel" style="margin-top:2rem">
+        <h2>Sources</h2>
+        <ul>
+          {entry.data.sources.map((source) => <li><code>{source}</code></li>)}
+        </ul>
+      </section>
+    )}
+  </div>
+</BaseLayout>

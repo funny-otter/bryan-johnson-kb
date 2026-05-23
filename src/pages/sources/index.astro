@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import KnowledgeCard from '../../components/KnowledgeCard.astro';
+import { getCollection } from 'astro:content';
+const title = 'Sources';
+const terms = ['source', 'raw/articles', 'twitter', 'x-twitter', 'interview', 'profile'];
+const entries = (await getCollection('knowledge')).filter((entry) => {
+  const haystack = [entry.data.title, entry.data.type, ...(entry.data.tags || []), entry.body].join(' ').toLowerCase();
+  return terms.some((term) => haystack.includes(term));
+}).sort((a, b) => (b.data.updated || '').localeCompare(a.data.updated || ''));
+---
+<BaseLayout title={`${title} · Bryan Johnson KB`}>
+  <div class="container">
+    <div class="section-head"><h2>{title}</h2><span class="pill">{entries.length} pages</span></div>
+    <section class="grid">
+      {entries.map((entry) => <KnowledgeCard entry={entry} />)}
+    </section>
+  </div>
+</BaseLayout>

@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Search · Bryan Johnson KB">
+  <div class="container article">
+    <h1>Search</h1>
+    <p class="lede">Static full-text search powered by Pagefind. It appears after the production build is deployed.</p>
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+    <script is:inline src="/pagefind/pagefind-ui.js"></script>
+    <div id="search"></div>
+    <script is:inline>
+      window.addEventListener('DOMContentLoaded', () => {
+        if (window.PagefindUI) new PagefindUI({ element: '#search', showSubResults: true });
+      });
+    </script>
+  </div>
+</BaseLayout>

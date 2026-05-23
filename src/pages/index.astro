@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import KnowledgeCard from '../components/KnowledgeCard.astro';
+import { getCollection } from 'astro:content';
+const entries = (await getCollection('knowledge')).sort((a, b) => (b.data.updated || '').localeCompare(a.data.updated || ''));
+const featured = entries.slice(0, 6);
+const types = new Map();
+for (const entry of entries) types.set(entry.data.type, (types.get(entry.data.type) || 0) + 1);
+const updated = entries.map((e) => e.data.updated).filter(Boolean).sort().at(-1) || 'n/a';
+---
+<BaseLayout>
+  <div class="container">
+    <section class="hero">
+      <div>
+        <p class="pill" style="display:inline-flex">Static knowledge site</p>
+        <h1>Bryan Johnson knowledge base.</h1>
+        <p class="lede">A compact, source-backed knowledge browser for Bryan Johnson, Blueprint, Don't Die, and measurement-first longevity ideas. Content is generated from the local llm-wiki maintained by Hermes/librarian.</p>
+      </div>
+      <aside class="panel">
+        <div class="stat"><span>Published pages</span><strong>{entries.length}</strong></div>
+        <div class="stat"><span>Latest wiki update</span><strong>{updated}</strong></div>
+        <div class="stat"><span>Content types</span><strong>{types.size}</strong></div>
+        <div class="stat"><span>Search</span><strong>Pagefind</strong></div>
+      </aside>
+    </section>
+
+    <div class="section-head"><h2>Recently updated</h2><a class="pill" href="/search/">Search all</a></div>
+    <section class="grid">
+      {featured.map((entry) => <KnowledgeCard entry={entry} />)}
+    </section>
+  </div>
+</BaseLayout>

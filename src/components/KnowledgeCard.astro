@@ -1,0 +1,16 @@
+---
+const { entry } = Astro.props;
+const data = entry.data;
+---
+<a class="card" href={`/knowledge/${data.slug}/`}>
+  <div class="meta">
+    <span class="badge accent">{data.type}</span>
+    {data.confidence && <span class="badge">{data.confidence}</span>}
+    {data.updated && <span class="badge">updated {data.updated}</span>}
+  </div>
+  <h3>{data.title}</h3>
+  <p>{data.summary || 'Compiled wiki page with source-backed notes and cross-references.'}</p>
+  <div class="meta">
+    {(data.tags || []).slice(0, 5).map((tag: string) => <span class="badge">#{tag}</span>)}
+  </div>
+</a>
