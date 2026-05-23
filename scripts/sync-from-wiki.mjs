@@ -65,6 +65,38 @@ function firstParagraph(markdown) {
   return cleaned || 'Compiled wiki synthesis from Bryan Johnson related source material.';
 }
 
+function recentBryanUpdates(logText, pages) {
+  const sections = logText
+    .split(/\n(?=## \[\d{4}-\d{2}-\d{2}\])/g)
+    .map((section) => section.trim())
+    .filter((section) => /^## \[\d{4}-\d{2}-\d{2}\]/.test(section))
+    .filter((section) => /Bryan Johnson|Blueprint|Don'?t Die|longevity|health/i.test(section))
+    .slice(-12);
+  if (sections.length > 0) return sections;
+  return [`## [${new Date().toISOString().slice(0, 10)}] sync | Site generation\n- Exported ${pages.length} publishable Bryan Johnson related wiki pages.`];
+}
+
+async function writeUpdates(pages) {
+  await fs.rm(updatesDir, { recursive: true, force: true });
+  await fs.mkdir(updatesDir, { recursive: true });
+  const logText = await fs.readFile(path.join(wikiRoot, 'log.md'), 'utf8').catch(() => '');
+  for (const section of recentBryanUpdates(logText, pages)) {
+    const match = section.match(/^## \[(\d{4}-\d{2}-\d{2})\]\s+([^|]+)\|\s*(.+)$/m);
+    const date = match?.[1] || new Date().toISOString().slice(0, 10);
+    const action = match?.[2]?.trim() || 'sync';
+    const subject = match?.[3]?.trim() || 'Wiki update';
+    const slug = slugify(`${date}-${action}-${subject}`).slice(0, 90);
+    const body = section.replace(/^## .*$/m, '').trim();
+    const out = matter.stringify(`# ${subject}\n\n${body || `Exported ${pages.length} pages.`}\n`, {
+      title: subject,
+      date,
+      source: 'llm-wiki',
+      wikiPaths: pages.map((page) => page.sourcePath),
+    });
+    await fs.writeFile(path.join(updatesDir, `${slug}.md`), out);
+  }
+}
+
 async function walk(dir) {
   const entries = await fs.readdir(dir, { withFileTypes: true }).catch(() => []);
   const files = [];
@@ -114,6 +146,8 @@ async function main() {
     pages.push({ title: data.title, slug, type: data.type, updated: data.updated, sourcePath: rel, tags: data.tags });
   }
 
+  pages.sort((a, b) => a.title.localeCompare(b.title));
+  await writeUpdates(pages);
   const manifest = {
     wikiRoot,
     pageCount: pages.length,
