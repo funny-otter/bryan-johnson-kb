@@ -72,4 +72,4 @@ This makes Blueprint relevant to the wiki's AI-agent themes: it is essentially a
 - [blueprint](/knowledge/blueprint/)
 - [bryan johnson](/knowledge/bryan-johnson/)
 - [dont die](/knowledge/dont-die/)
-- [agent context management](/knowledge/agent-context-management/) — analogous concerns around what to measure/load and how to constrain an autonomous loop.
+- [algorithmic health](/knowledge/algorithmic-health/) — the broader measurement-and-policy pattern behind the protocol.

@@ -49,4 +49,4 @@ The pattern mirrors broader AI-agent and automation themes already in the wiki: 
 
 - [blueprint protocol](/knowledge/blueprint-protocol/) — central case study.
 - [dont die](/knowledge/dont-die/) — broader ideology built from the same pattern.
-- [agent context management](/knowledge/agent-context-management/) — analogy for measurement/context controlling agent decisions.
+- [biomarker-driven longevity protocols](/knowledge/biomarker-driven-longevity-protocols/) — adjacent measurement-first health systems.
