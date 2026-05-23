@@ -1,0 +1,88 @@
+---
+const { entry, summary: summaryOverride } = Astro.props;
+const data = entry.data;
+const sourceCount = data.sources?.length ?? 0;
+const tags = data.tags ?? [];
+const summary = summaryOverride ?? data.summary;
+---
+
+<article class="knowledge-page">
+  <header class="knowledge-hero">
+    <nav class="knowledge-breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Overview</a>
+      <span aria-hidden="true">/</span>
+      <a href="/health/">Knowledge</a>
+      <span aria-hidden="true">/</span>
+      <span>{data.title}</span>
+    </nav>
+
+    <div class="knowledge-hero-grid">
+      <div class="knowledge-title-block">
+        <p class="eyebrow">{data.type} dossier</p>
+        <h1>{data.title}</h1>
+        {summary && <p class="knowledge-summary">{summary}</p>}
+      </div>
+
+      <aside class="knowledge-fact-panel" aria-label="Page metadata">
+        <div class="fact-row">
+          <span>Confidence</span>
+          <strong>{data.confidence ?? 'unrated'}</strong>
+        </div>
+        <div class="fact-row">
+          <span>Updated</span>
+          <strong>{data.updated ?? 'n/a'}</strong>
+        </div>
+        <div class="fact-row">
+          <span>Sources</span>
+          <strong>{sourceCount}</strong>
+        </div>
+        {data.contested && <p class="knowledge-warning">Contested interpretation: keep claims source-aware.</p>}
+      </aside>
+    </div>
+
+    {tags.length > 0 && (
+      <div class="knowledge-tags" aria-label="Tags">
+        {tags.map((tag: string) => <span>{tag}</span>)}
+      </div>
+    )}
+  </header>
+
+  <div class="knowledge-content-grid">
+    <main class="knowledge-body" data-pagefind-body>
+      <slot />
+    </main>
+
+    <aside class="knowledge-sidecar" aria-label="Article context">
+      <section class="knowledge-side-section">
+        <h2>At a glance</h2>
+        <dl>
+          <div>
+            <dt>Type</dt>
+            <dd>{data.type}</dd>
+          </div>
+          {data.sourcePath && (
+            <div>
+              <dt>Wiki path</dt>
+              <dd><code>{data.sourcePath}</code></dd>
+            </div>
+          )}
+          {data.created && (
+            <div>
+              <dt>Created</dt>
+              <dd>{data.created}</dd>
+            </div>
+          )}
+        </dl>
+      </section>
+
+      {sourceCount > 0 && (
+        <section class="knowledge-side-section sources-list">
+          <h2>Sources</h2>
+          <ul>
+            {data.sources.map((source: string) => <li><code>{source}</code></li>)}
+          </ul>
+        </section>
+      )}
+    </aside>
+  </div>
+</article>
