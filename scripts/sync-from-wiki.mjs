@@ -12,7 +12,7 @@ const publishDirs = ['entities', 'concepts', 'comparisons', 'queries'];
 const includeTerms = [
   'bryan johnson', 'bryan-johnson', 'blueprint', "don't die", 'dont-die', 'dont die',
   'longevity', 'biomarker', 'protocol', 'health', 'kernel', 'os fund', 'os-fund', 'braintree',
-  'venmo', 'immortality', 'algorithmic-health', 'aging'
+  'venmo', 'immortality', 'algorithmic-health', 'aging', 'biohacking'
 ];
 const excludeTerms = ['hermes agent', 'claude code', 'openclaw', 'agentic coding'];
 
@@ -28,11 +28,7 @@ function slugify(input) {
 function normalizeArray(value) {
   if (!value) return [];
   if (Array.isArray(value)) return value.filter((item) => item !== undefined && item !== null).map(String);
-  return String(value).split(',').map((s) => s.trim()).filter(Boolean);
-}
-
-function cleanData(data) {
-  return Object.fromEntries(Object.entries(data).filter(([, value]) => value !== undefined && value !== null));
+  return [String(value)];
 }
 
 function toPlainDate(value) {
@@ -113,7 +109,7 @@ async function main() {
       contested: parsed.data.contested === true || parsed.data.contested === 'true' || undefined,
       summary: firstParagraph(parsed.content),
     }).filter(([, value]) => value !== undefined));
-    const frontmatter = matter.stringify(body, cleanData(data));
+    const frontmatter = matter.stringify(body, data);
     await fs.writeFile(path.join(outDir, `${slug}.md`), frontmatter);
     pages.push({ title: data.title, slug, type: data.type, updated: data.updated, sourcePath: rel, tags: data.tags });
   }
