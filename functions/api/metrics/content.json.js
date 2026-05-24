@@ -1,4 +1,4 @@
-import wikiManifest from '../../../src/data/wiki-manifest.json' with { type: 'json' };
+import wikiManifest from '../../../src/data/wiki-manifest.mjs';
 import {
   buildContentMetrics,
   buildSourceRecords,

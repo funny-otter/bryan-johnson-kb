@@ -8,6 +8,7 @@ const wikiRoot = process.env.WIKI_PATH || '/home/chad/wiki';
 const outDir = path.join(repoRoot, 'src/content/knowledge');
 const updatesDir = path.join(repoRoot, 'src/content/updates');
 const manifestPath = path.join(repoRoot, 'src/data/wiki-manifest.json');
+const manifestModulePath = path.join(repoRoot, 'src/data/wiki-manifest.mjs');
 
 const publishDirs = ['entities', 'concepts', 'comparisons', 'queries'];
 const includeTerms = [
@@ -172,7 +173,9 @@ async function main() {
     sourceHash: crypto.createHash('sha256').update(JSON.stringify(pages)).digest('hex'),
     pages,
   };
-  await fs.writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
+  const manifestJson = JSON.stringify(manifest, null, 2);
+  await fs.writeFile(manifestPath, `${manifestJson}\n`);
+  await fs.writeFile(manifestModulePath, `const wikiManifest = ${manifestJson};\n\nexport default wikiManifest;\n`);
   console.log(`Synced ${pages.length} publishable wiki pages from ${wikiRoot}`);
 }
 

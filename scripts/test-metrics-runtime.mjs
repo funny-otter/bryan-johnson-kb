@@ -17,5 +17,6 @@ assert.match(pagesFunction, /onRequestGet/, 'Cloudflare Pages function exposes t
 assert.match(pagesFunction, /new URL\(request\.url\)/, 'Cloudflare Pages function reads runtime request query params');
 assert.match(pagesFunction, /buildContentMetrics/, 'Cloudflare Pages function reuses the metric aggregation implementation');
 assert.match(pagesFunction, /InvalidMetricQueryError/, 'Cloudflare Pages function preserves invalid-query HTTP 400 handling');
+assert.doesNotMatch(pagesFunction, /with\s*\{\s*type:\s*['"]json['"]\s*\}/, 'Cloudflare Pages function avoids import attributes unsupported by Cloudflare Git build Wrangler 3');
 
 console.log('metrics runtime contract checks passed');
