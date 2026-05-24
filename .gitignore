@@ -4,3 +4,5 @@ dist/
 .pagefind/
 .env
 .DS_Store
+.kanban-worktrees/
+dogfood-output/
