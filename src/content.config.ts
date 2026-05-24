@@ -18,4 +18,14 @@ const knowledge = defineCollection({
   }),
 });
 
-export const collections = { knowledge };
+const updates = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/updates' }),
+  schema: z.object({
+    title: z.string(),
+    date: z.string(),
+    source: z.string().optional(),
+    wikiPaths: z.array(z.string()).default([]),
+  }),
+});
+
+export const collections = { knowledge, updates };
