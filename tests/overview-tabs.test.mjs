@@ -5,21 +5,33 @@ import { describe, it } from 'node:test';
 const indexSource = readFileSync(new URL('../src/pages/index.astro', import.meta.url), 'utf8');
 const contentConfig = readFileSync(new URL('../src/content.config.ts', import.meta.url), 'utf8');
 const styles = readFileSync(new URL('../src/styles/global.css', import.meta.url), 'utf8');
+const changelogSource = readFileSync(new URL('../src/pages/changelog/index.astro', import.meta.url), 'utf8');
 const curatedHomePath = new URL('../src/data/curated-home.mjs', import.meta.url);
 const curatedHomeSource = existsSync(curatedHomePath) ? readFileSync(curatedHomePath, 'utf8') : '';
 
-describe('home overview/changelog tabs', () => {
-  it('loads update entries and keeps the polished tab shell', () => {
-    assert.match(indexSource, /getCollection\('updates'\)/, 'home page should load update entries for the changelog tab');
-    assert.match(indexSource, /overview-tab-overview/, 'home page should include an Overview tab control');
-    assert.match(indexSource, /overview-tab-changelog/, 'home page should include a Changelog tab control');
+describe('home overview and dedicated changelog route', () => {
+  it('keeps changelog off overview and exposes it as a polished dedicated route', () => {
+    assert.doesNotMatch(indexSource, /getCollection\('updates'\)/, 'overview should not load update entries for an embedded changelog');
+    assert.doesNotMatch(indexSource, /overview-tab-overview/, 'overview should not include an Overview tab control');
+    assert.doesNotMatch(indexSource, /overview-tab-changelog/, 'overview should not include a Changelog tab control');
     assert.match(indexSource, /Recent news/i, 'overview should label prominent recent news separately from update history');
-    assert.match(indexSource, /changelog/i, 'home page should render changelog/update-history content');
+    assert.match(indexSource, /href="\/changelog\/"/, 'overview should link to the standalone changelog route');
+    assert.match(changelogSource, /getCollection\('updates'\)/, 'changelog route should load update entries');
+    assert.match(changelogSource, /<h1 id="changelog-title">Changelog<\/h1>/, 'changelog route should render update-history content');
     assert.match(contentConfig, /const updates = defineCollection/, 'content config should define an updates collection');
     assert.match(contentConfig, /collections = \{ knowledge, updates \}/, 'updates collection should be exported');
-    assert.match(styles, /\.overview-tabs/, 'global styles should include tab layout styles');
+    assert.match(styles, /\.overview-sections/, 'global styles should include non-tab overview section layout styles');
     assert.match(styles, /\.news-card/, 'global styles should include readable recent-news card styles');
     assert.match(styles, /\.changelog-list/, 'global styles should include changelog list styles');
+  });
+
+  it('keeps the overview hero compact with useful recent activity high on the page', () => {
+    assert.doesNotMatch(styles, /\.activity-hero\s*\{[\s\S]*?min-height:\s*min\(760px,\s*calc\(100dvh - 150px\)\)/, 'overview hero should not reserve a near-full-screen banner height');
+    assert.match(styles, /\.activity-copy h1\s*\{[^}]*font-size:\s*clamp\(34px,\s*5vw,\s*58px\)/, 'overview headline should be compact on desktop');
+    assert.match(styles, /@media \(max-width: 850px\)[\s\S]*\.activity-stack\s*\{[^}]*order:\s*-1/, 'mobile overview should show recent activity before intro copy');
+    assert.match(styles, /@media \(max-width: 850px\)[\s\S]*\.activity-copy h1\s*\{[^}]*font-size:\s*clamp\(30px,\s*8vw,\s*38px\)/, 'overview headline should stay compact on mobile');
+    assert.ok(indexSource.indexOf('activity-copy') < indexSource.indexOf('activity-stack'), 'intro copy should be short before the activity cards');
+    assert.match(indexSource, /<div class="activity-stack" id="recent-activity"/, 'recent activity cards should remain in the top overview surface');
   });
 
   it('wires overview recent news to the curated high-signal set, not updated knowledge-page order', () => {

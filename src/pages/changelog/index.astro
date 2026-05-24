@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const updates = (await getCollection('updates')).sort((a, b) => (b.data.date || '').localeCompare(a.data.date || ''));
+const latestChange = updates[0]?.data.date || 'n/a';
+const dateFormatter = new Intl.DateTimeFormat('en', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+const formatDate = (date = '') => {
+  if (!date) return 'Undated';
+  const parsed = new Date(`${date}T00:00:00Z`);
+  return Number.isNaN(parsed.getTime()) ? date : dateFormatter.format(parsed);
+};
+const cleanMarkdown = (value = '') => value.replace(/[`*_#[\]()]/g, '').replace(/\s+/g, ' ').trim();
+const updateSummary = (body = '') => {
+  const firstBullet = body.split('\n').find((line) => line.trim().startsWith('- '));
+  const fallback = body.split('\n').find((line) => line.trim() && !line.startsWith('#'));
+  const summary = cleanMarkdown(firstBullet?.replace(/^\s*-\s*/, '') || fallback || 'Recently published wiki maintenance and synthesis work.');
+  return summary.length > 185 ? `${summary.slice(0, 182)}…` : summary;
+};
+---
+<BaseLayout title="Bryan Johnson KB · Changelog" description="Curated publishing changelog for Bryan Johnson KB wiki updates.">
+  <section class="section-intro changelog-hero" aria-labelledby="changelog-title">
+    <p class="eyebrow">Recently updated material</p>
+    <div class="changelog-hero-grid">
+      <div>
+        <h1 id="changelog-title">Changelog</h1>
+        <p class="lede">Curated public-dashboard publishing notes from the Bryan Johnson, Blueprint, Don't Die, and longevity wiki source set.</p>
+      </div>
+      <div class="changelog-summary-card">
+        <span>Latest publishing pass</span>
+        <strong>{formatDate(latestChange)}</strong>
+        <a href="/">Back to overview</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-label="Recent update history">
+    {updates.length > 0 ? (
+      <ol class="changelog-list">
+        {updates.map((update) => (
+          <li class="changelog-item">
+            <time datetime={update.data.date}>{formatDate(update.data.date)}</time>
+            <div>
+              <h2>{update.data.title}</h2>
+              <p>{updateSummary(update.body)}</p>
+              {update.data.wikiPaths.length > 0 && (
+                <div class="source-chips" aria-label="Updated wiki paths">
+                  {update.data.wikiPaths.slice(0, 5).map((path) => <code>{path}</code>)}
+                  {update.data.wikiPaths.length > 5 && <span class="badge">+{update.data.wikiPaths.length - 5} more</span>}
+                </div>
+              )}
+            </div>
+          </li>
+        ))}
+      </ol>
+    ) : (
+      <div class="empty-state">
+        <h2>No changelog entries yet</h2>
+        <p>Curated wiki publish notes will appear here when updated material is available.</p>
+      </div>
+    )}
+  </section>
+</BaseLayout>

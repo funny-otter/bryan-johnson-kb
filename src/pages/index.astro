@@ -4,7 +4,6 @@ import { getCollection } from 'astro:content';
 import { coreTopicSlugs, curatedRecentNews } from '../data/curated-home.mjs';
 
 const entries = (await getCollection('knowledge')).sort((a, b) => (b.data.updated || '').localeCompare(a.data.updated || ''));
-const updates = (await getCollection('updates')).sort((a, b) => (b.data.date || '').localeCompare(a.data.date || ''));
 const entryBySlug = new Map(entries.map((entry) => [entry.data.slug, entry]));
 const coreTopics = coreTopicSlugs.flatMap((slug) => {
   const entry = entryBySlug.get(slug);
@@ -14,18 +13,11 @@ const updateCards = curatedRecentNews
   .slice()
   .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
   .slice(0, 5);
-const latestChange = updates[0]?.data.date || entries.map((e) => e.data.updated).filter(Boolean).sort().at(-1) || 'n/a';
 const dateFormatter = new Intl.DateTimeFormat('en', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
 const formatDate = (date = '') => {
   if (!date) return 'Undated';
   const parsed = new Date(`${date}T00:00:00Z`);
   return Number.isNaN(parsed.getTime()) ? date : dateFormatter.format(parsed);
-};
-const cleanMarkdown = (value = '') => value.replace(/[`*_#[\]()]/g, '').replace(/\s+/g, ' ').trim();
-const updateSummary = (body = '') => {
-  const firstBullet = body.split('\n').find((line) => line.trim().startsWith('- '));
-  const summary = cleanMarkdown(firstBullet?.replace(/^\s*-\s*/, '') || body.split('\n').find((line) => line.trim() && !line.startsWith('#')) || 'Recently published wiki maintenance and synthesis work.');
-  return summary.length > 185 ? `${summary.slice(0, 182)}…` : summary;
 };
 const sourceLabel = (count = 0) => `${count} source${count === 1 ? '' : 's'}`;
 const explorationPaths = [
@@ -64,10 +56,10 @@ const explorationPaths = [
     <section class="activity-hero" aria-labelledby="activity-title">
       <div class="activity-copy">
         <p class="eyebrow">Latest signals</p>
-        <h1 id="activity-title">What changed recently?</h1>
-        <p class="activity-lede">A source-aware activity surface for Bryan Johnson, Blueprint, Don't Die, and longevity claims. Recent updates come first; deeper sections stay one click away.</p>
+        <h1 id="activity-title">Recent Bryan Johnson updates</h1>
+        <p class="activity-lede">The overview starts with current activity. Use deeper sections for protocol notes, timelines, source trails, and metrics.</p>
         <div class="activity-actions" aria-label="Primary actions">
-          <a class="command-button primary" href="#recent-activity">Read latest updates</a>
+          <a class="command-button primary" href="/changelog/">Open changelog</a>
           <a class="command-button" href="/search/">Search the KB</a>
         </div>
       </div>
@@ -78,7 +70,7 @@ const explorationPaths = [
             <p class="eyebrow">Recent news</p>
             <h2>Activity queue</h2>
           </div>
-          <label for="overview-tab-changelog" class="queue-link">Changelog</label>
+          <a class="queue-link" href="/changelog/">Changelog</a>
         </div>
         <div class="signal-list">
           {updateCards.map((item, index) => (
@@ -102,18 +94,8 @@ const explorationPaths = [
       </div>
     </section>
 
-    <section class="overview-tabs" aria-label="Overview and changelog tabs">
-      <input class="tab-input" type="radio" id="overview-tab-overview" name="overview-home-tabs" checked />
-      <input class="tab-input" type="radio" id="overview-tab-changelog" name="overview-home-tabs" />
-
-      <div class="tab-list" role="tablist" aria-label="Home page sections">
-        <label role="tab" for="overview-tab-overview">Overview</label>
-        <label role="tab" for="overview-tab-changelog">Changelog</label>
-      </div>
-
-      <div class="tab-panels">
-        <div class="tab-panel" data-tab="overview" role="tabpanel" aria-labelledby="overview-tab-overview">
-          <section class="section-pathways" aria-labelledby="pathways-title">
+    <section class="overview-sections" aria-label="Overview sections">
+      <section class="section-pathways" aria-labelledby="pathways-title">
             <div class="section-head compact-head">
               <div>
                 <p class="eyebrow">Next moves</p>
@@ -132,9 +114,9 @@ const explorationPaths = [
                 </a>
               ))}
             </div>
-          </section>
+      </section>
 
-          <section class="topic-ledger" aria-labelledby="topic-ledger-title">
+      <section class="topic-ledger" aria-labelledby="topic-ledger-title">
             <div>
               <p class="eyebrow">Core dossiers</p>
               <h2 id="topic-ledger-title">Pinned knowledge paths</h2>
@@ -148,44 +130,7 @@ const explorationPaths = [
                 </a>
               ))}
             </div>
-          </section>
-        </div>
-
-        <div class="tab-panel" data-tab="changelog" role="tabpanel" aria-labelledby="overview-tab-changelog" id="changelog">
-          <div class="section-head compact-head">
-            <div>
-              <p class="eyebrow">Recently updated material</p>
-              <h2>Changelog</h2>
-            </div>
-            <p class="section-note">Latest curated publishing pass: {formatDate(latestChange)}.</p>
-          </div>
-
-          {updates.length > 0 ? (
-            <ol class="changelog-list" aria-label="Recent update history">
-              {updates.map((update) => (
-                <li class="changelog-item">
-                  <time datetime={update.data.date}>{formatDate(update.data.date)}</time>
-                  <div>
-                    <h3>{update.data.title}</h3>
-                    <p>{updateSummary(update.body)}</p>
-                    {update.data.wikiPaths.length > 0 && (
-                      <div class="source-chips" aria-label="Updated wiki paths">
-                        {update.data.wikiPaths.slice(0, 5).map((path) => <code>{path}</code>)}
-                        {update.data.wikiPaths.length > 5 && <span class="badge">+{update.data.wikiPaths.length - 5} more</span>}
-                      </div>
-                    )}
-                  </div>
-                </li>
-              ))}
-            </ol>
-          ) : (
-            <div class="empty-state">
-              <h3>No changelog entries yet</h3>
-              <p>Curated wiki publish notes will appear here when updated material is available.</p>
-            </div>
-          )}
-        </div>
-      </div>
+      </section>
     </section>
   </div>
 </BaseLayout>
