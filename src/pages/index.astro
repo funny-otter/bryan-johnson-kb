@@ -1,17 +1,20 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import KnowledgeCard from '../components/KnowledgeCard.astro';
 import { getCollection } from 'astro:content';
 import { coreTopicSlugs, curatedRecentNews } from '../data/curated-home.mjs';
 
 const entries = (await getCollection('knowledge')).sort((a, b) => (b.data.updated || '').localeCompare(a.data.updated || ''));
 const updates = (await getCollection('updates')).sort((a, b) => (b.data.date || '').localeCompare(a.data.date || ''));
 const entryBySlug = new Map(entries.map((entry) => [entry.data.slug, entry]));
-const coreTopics = coreTopicSlugs.map((slug) => entryBySlug.get(slug)).filter(Boolean);
-const types = new Map();
-for (const entry of entries) types.set(entry.data.type, (types.get(entry.data.type) || 0) + 1);
-const latestKnowledgeUpdate = entries.map((e) => e.data.updated).filter(Boolean).sort().at(-1) || 'n/a';
-const latestChange = updates[0]?.data.date || latestKnowledgeUpdate;
+const coreTopics = coreTopicSlugs.flatMap((slug) => {
+  const entry = entryBySlug.get(slug);
+  return entry ? [entry] : [];
+});
+const updateCards = curatedRecentNews
+  .slice()
+  .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
+  .slice(0, 5);
+const latestChange = updates[0]?.data.date || entries.map((e) => e.data.updated).filter(Boolean).sort().at(-1) || 'n/a';
 const dateFormatter = new Intl.DateTimeFormat('en', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
 const formatDate = (date = '') => {
   if (!date) return 'Undated';
@@ -24,21 +27,79 @@ const updateSummary = (body = '') => {
   const summary = cleanMarkdown(firstBullet?.replace(/^\s*-\s*/, '') || body.split('\n').find((line) => line.trim() && !line.startsWith('#')) || 'Recently published wiki maintenance and synthesis work.');
   return summary.length > 185 ? `${summary.slice(0, 182)}…` : summary;
 };
+const sourceLabel = (count = 0) => `${count} source${count === 1 ? '' : 's'}`;
+const explorationPaths = [
+  {
+    href: '/metrics/',
+    label: 'Metrics',
+    kicker: 'Separate dashboard',
+    title: 'Move from headlines to measurement trends',
+    body: 'Open the content-metrics view when you want volume and velocity instead of landing-page context.',
+  },
+  {
+    href: '/knowledge/blueprint-protocol/',
+    label: 'Protocols',
+    kicker: 'Action layer',
+    title: 'Read protocol notes with medical caution preserved',
+    body: 'See how Blueprint habits, testing, and protocol claims are summarized from the wiki source set.',
+  },
+  {
+    href: '/timeline/',
+    label: 'Timeline',
+    kicker: 'Sequence',
+    title: 'Place recent claims in historical order',
+    body: 'Use the chronology when a product launch, public claim, or critique needs date-aware context.',
+  },
+  {
+    href: '/sources/',
+    label: 'Sources',
+    kicker: 'Receipts',
+    title: 'Trace public pages back to source paths',
+    body: 'Inspect source notes and related pages instead of treating the dashboard as unsourced advice.',
+  },
+];
 ---
-<BaseLayout title="Bryan Johnson KB · Overview" description="Concise overview of recent Bryan Johnson, Blueprint, Don't Die, and longevity knowledge-base updates.">
-  <div class="container home-overview">
-    <section class="hero hero-polished">
-      <div>
-        <p class="pill" style="display:inline-flex">Source-backed longevity intelligence</p>
-        <h1>Bryan Johnson knowledge base.</h1>
-        <p class="lede">A concise, curated briefing on Bryan Johnson, Blueprint, Don't Die, and measurement-first longevity ideas — synthesized from the local llm-wiki into public, reader-friendly context.</p>
+<BaseLayout title="Bryan Johnson KB · Overview" description="Fresh activity dashboard for recent Bryan Johnson, Blueprint, Don't Die, and longevity knowledge-base updates.">
+  <div class="home-command">
+    <section class="activity-hero" aria-labelledby="activity-title">
+      <div class="activity-copy">
+        <p class="eyebrow">Latest signals</p>
+        <h1 id="activity-title">What changed recently?</h1>
+        <p class="activity-lede">A source-aware activity surface for Bryan Johnson, Blueprint, Don't Die, and longevity claims. Recent updates come first; deeper sections stay one click away.</p>
+        <div class="activity-actions" aria-label="Primary actions">
+          <a class="command-button primary" href="#recent-activity">Read latest updates</a>
+          <a class="command-button" href="/search/">Search the KB</a>
+        </div>
       </div>
-      <aside class="panel overview-stats" aria-label="Knowledge base statistics">
-        <div class="stat"><span>Published pages</span><strong>{entries.length}</strong></div>
-        <div class="stat"><span>Latest change</span><strong>{latestChange}</strong></div>
-        <div class="stat"><span>Content types</span><strong>{types.size}</strong></div>
-        <a class="stat stat-link" href="/search/"><span>Search index</span><strong>Open</strong></a>
-      </aside>
+
+      <div class="activity-stack" id="recent-activity" aria-label="Recent activity update cards">
+        <div class="stack-header">
+          <div>
+            <p class="eyebrow">Recent news</p>
+            <h2>Activity queue</h2>
+          </div>
+          <label for="overview-tab-changelog" class="queue-link">Changelog</label>
+        </div>
+        <div class="signal-list">
+          {updateCards.map((item, index) => (
+            <a class:list={["signal-card", { primary: index === 0 }]} href={item.href}>
+              <div class="signal-index" aria-hidden="true">{String(index + 1).padStart(2, '0')}</div>
+              <div class="signal-body">
+                <div class="card-topline">
+                  <span>{item.badge}</span>
+                  <time datetime={item.date}>{formatDate(item.date)}</time>
+                </div>
+                <h3>{item.title}</h3>
+                <p>{item.summary}</p>
+                <div class="signal-meta">
+                  <span>{item.topic}</span>
+                  <span>{sourceLabel(item.sources.length)}</span>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
     </section>
 
     <section class="overview-tabs" aria-label="Overview and changelog tabs">
@@ -52,52 +113,51 @@ const updateSummary = (body = '') => {
 
       <div class="tab-panels">
         <div class="tab-panel" data-tab="overview" role="tabpanel" aria-labelledby="overview-tab-overview">
-          <div class="section-head compact-head">
-            <div>
-              <p class="eyebrow">Current briefing</p>
-              <h2>Recent news</h2>
+          <section class="section-pathways" aria-labelledby="pathways-title">
+            <div class="section-head compact-head">
+              <div>
+                <p class="eyebrow">Next moves</p>
+                <h2 id="pathways-title">Choose a deeper view</h2>
+              </div>
+              <p class="section-note">No duplicate dashboard wall here — each tile is an entry point into the section built for that job.</p>
             </div>
-            <a class="pill" href="/search/">Search all</a>
-          </div>
 
-          <section class="news-grid" aria-label="Curated high-signal recent news">
-            {curatedRecentNews.map((item, index) => (
-              <a class:list={["news-card", { featured: index === 0 }]} href={item.href}>
-                <div class="card-topline">
-                  <span>{item.badge}</span>
-                  <time datetime={item.date}>{formatDate(item.date)}</time>
-                </div>
-                <h3>{item.title}</h3>
-                <p>{item.summary}</p>
-                <div class="badges">
-                  <span class="badge accent">{item.topic}</span>
-                  <span class="badge">{item.sources.length} source{item.sources.length === 1 ? '' : 's'}</span>
-                </div>
-              </a>
-            ))}
+            <div class="pathway-grid">
+              {explorationPaths.map((path) => (
+                <a class="pathway-card" href={path.href}>
+                  <span class="pathway-kicker">{path.kicker}</span>
+                  <strong>{path.label}</strong>
+                  <h3>{path.title}</h3>
+                  <p>{path.body}</p>
+                </a>
+              ))}
+            </div>
           </section>
 
-          <div class="section-head lower-head">
+          <section class="topic-ledger" aria-labelledby="topic-ledger-title">
             <div>
-              <p class="eyebrow">Explore</p>
-              <h2>Core topics</h2>
+              <p class="eyebrow">Core dossiers</p>
+              <h2 id="topic-ledger-title">Pinned knowledge paths</h2>
             </div>
-          </div>
-          {coreTopics.length > 0 ? (
-            <section class="grid compact-grid">
-              {coreTopics.map((entry) => <KnowledgeCard entry={entry} />)}
-            </section>
-          ) : (
-            <div class="empty-state subdued"><p>Additional topic cards will appear as the public knowledge base expands.</p></div>
-          )}
+            <div class="topic-list">
+              {coreTopics.map((entry) => (
+                <a class="topic-row" href={`/knowledge/${entry.data.slug}/`}>
+                  <span>{entry.data.type}</span>
+                  <strong>{entry.data.title}</strong>
+                  <p>{entry.data.summary}</p>
+                </a>
+              ))}
+            </div>
+          </section>
         </div>
 
-        <div class="tab-panel" data-tab="changelog" role="tabpanel" aria-labelledby="overview-tab-changelog">
+        <div class="tab-panel" data-tab="changelog" role="tabpanel" aria-labelledby="overview-tab-changelog" id="changelog">
           <div class="section-head compact-head">
             <div>
               <p class="eyebrow">Recently updated material</p>
               <h2>Changelog</h2>
             </div>
+            <p class="section-note">Latest curated publishing pass: {formatDate(latestChange)}.</p>
           </div>
 
           {updates.length > 0 ? (
