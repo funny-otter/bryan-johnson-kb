@@ -4,7 +4,7 @@ slug: biomarker-driven-longevity-protocols
 type: concept
 sourcePath: concepts/biomarker-driven-longevity-protocols.md
 created: '2026-05-22'
-updated: '2026-05-22'
+updated: '2026-05-25'
 tags:
   - longevity
   - biomarkers
@@ -19,6 +19,7 @@ sources:
   - raw/articles/bryan-johnson/mdlinx-blueprint-critique-2025-02-15.md
   - raw/articles/bryan-johnson/years-biomarkers-limits-2026-04-20.md
   - raw/articles/bryan-johnson/x-twitter-bryan-johnson-2026-05-22.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-05-25.md
 confidence: medium
 summary: >-
   A biomarker-driven longevity protocol is a health system that treats the body
@@ -32,6 +33,8 @@ A biomarker-driven longevity protocol is a health system that treats the body as
 ## What gets measured
 
 In the Blueprint corpus, measurements include blood and urine biomarkers, biological age / speed-of-aging tests, imaging, fitness tests, sleep data, resting heart rate, glucose control, sexual/fertility metrics, and organ-specific results. Blueprint's biomarker product advertises 100+ biomarkers, 160+ measurements per year, baseline testing, six-month retesting, lab-import, and AI health guidance. 
+
+The May 2026 Kate Tolo and Enhanced Games posts extend the measurement frame beyond Johnson's own protocol: Johnson describes a cycle-aware female baseline protocol for Tolo, suspected endometriosis evaluation using ultrasound/MRI/labs, and Enhanced Games athlete/protocol commentary built around measurements and medical supervision. These are primary-source claims and should be treated as hypothesis-generating/public-positioning material, not clinical proof.
 
 YEARS groups Johnson's measurements into blood biomarkers (lipids, inflammation, ApoB, HOMA-IR, hs-CRP), imaging (MRI/ultrasound/EKG), functional tests (VO2 max, grip strength, balance, cognition), and epigenetic clocks. The article's central caution is that “data volume and clinical relevance are two different things.” 
 

@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-05-22'
+updated: '2026-05-25'
 tags:
   - person
   - company
@@ -21,6 +21,7 @@ sources:
   - raw/articles/bryan-johnson/os-fund-bryan-johnson-profile-2026-05-22.md
   - raw/articles/bryan-johnson/uchicago-bryan-johnson-profile-2018.md
   - raw/articles/bryan-johnson/x-twitter-bryan-johnson-2026-05-22.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-05-25.md
 confidence: medium
 summary: >-
   Bryan Johnson is an American entrepreneur who moved from payments and
@@ -48,6 +49,8 @@ Johnson’s worldview now fuses personal health optimization with the broader [d
 Johnson claims to be among the most biologically measured people, and his protocol page lists percentile-style outcomes across muscle, fat, bone mineral density, resting heart rate, fertility, blood pressure, vascular function, sleep, grip strength, glucose, and blood-sugar control. These are primary-source self-reports and should be treated as claims requiring context rather than independent clinical validation. 
 
 On X/Twitter in May 2026, Johnson's messaging emphasized sleep, resting heart rate before bed, biomarkers-in-context, sauna experiments, peptide experiments, certified products, and scaling a “female Bryan Johnson” / female-specific protocol via Kate Tolo. This shows that the public project is no longer just a static protocol; it is a daily media feed of experiments, product launches, health claims, and “Don't Die” norm-setting. 
+
+On May 23–24, 2026, Johnson also used X/Twitter to frame his Enhanced Games commentary role as “Human Enhancement Expert”: he highlighted athlete measurement, claimed medical supervision and optional enhancement, and tied performance-enhancing protocols to the same measurement-first posture that runs through [biomarker driven longevity protocols](/knowledge/biomarker-driven-longevity-protocols/). The posts are useful evidence for his public positioning, but not independent validation of Enhanced Games safety or efficacy.
 
 ## Reading stance
 

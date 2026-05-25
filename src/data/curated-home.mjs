@@ -1,5 +1,19 @@
 export const curatedRecentNews = [
   {
+    id: 'enhanced-games-human-enhancement-analyst',
+    title: 'Johnson frames Enhanced Games as supervised, measured human enhancement',
+    date: '2026-05-24',
+    badge: 'Media',
+    topic: 'Enhanced Games',
+    summary:
+      "Johnson posted that he would broadcast the Enhanced Games as a “Human Enhancement Expert,” emphasizing athlete measurements, medical supervision, individualized protocols, and optional FDA-approved enhancement. Treat this as Johnson's framing, not independent safety validation.",
+    href: '/knowledge/biomarker-driven-longevity-protocols/',
+    sources: [
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-05-25.md#Sun May 24 03:02:37 +0000 2026--2058383135868666111',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-05-25.md#Sun May 24 18:00:45 +0000 2026--2058609161294979495',
+    ],
+  },
+  {
     id: 'kate-tolo-female-protocol',
     title: 'Kate Tolo launches female-specific Blueprint measurement protocol',
     date: '2026-05-19',

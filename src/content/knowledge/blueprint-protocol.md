@@ -4,7 +4,7 @@ slug: blueprint-protocol
 type: concept
 sourcePath: concepts/blueprint-protocol.md
 created: '2026-05-22'
-updated: '2026-05-22'
+updated: '2026-05-25'
 tags:
   - protocol
   - longevity
@@ -19,6 +19,7 @@ sources:
   - raw/articles/bryan-johnson-x-blueprint-automation-2024-03-12.md
   - raw/articles/bryan-johnson-x-paused-metformin-2025-08-07.md
   - raw/articles/critical-context-bryan-johnson-blueprint-2026-05-22.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-05-25.md
 confidence: medium
 contested: true
 summary: >-
@@ -43,6 +44,8 @@ The protocol has the structure of an autonomous control system:
 ## Current protocol stack
 
 The public 2026 protocol emphasizes foundational habits: lower resting heart rate before bed, earlier meals, screens off before bed, consistent sleep, exercise, nutrient-dense food, oral hygiene, skin/hair routines, clean water, and measurement.
+
+Johnson's May 24, 2026 sleep post adds a tactical version of the same sleep discipline: when expecting to stay up past his 8pm bedtime, he said he took a nap first and argued that “front-loading” sleep is preferable to trying to repay sleep debt afterward because circadian timing still matters. This should be read as Johnson's personal protocol advice rather than a general medical recommendation.
 
 Johnson's April 2026 morning routine is an example implementation: 8:30pm bedtime, ~5am wake, oral hygiene, 10,000 lux light, breath work, pre-workout nutrition/supplements, 90 minutes exercise, sauna, red/NIR light, optional shockwave therapy, shower/hair/skincare, and a breakfast of vegetables/legumes/EVOO/berries/nuts/seeds.
 
