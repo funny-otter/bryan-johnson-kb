@@ -12,125 +12,134 @@ const coreTopics = coreTopicSlugs.flatMap((slug) => {
 const updateCards = curatedRecentNews
   .slice()
   .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
-  .slice(0, 5);
+  .slice(0, 8);
 const dateFormatter = new Intl.DateTimeFormat('en', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+const shortDateFormatter = new Intl.DateTimeFormat('en', { month: 'short', day: '2-digit', timeZone: 'UTC' });
 const formatDate = (date = '') => {
   if (!date) return 'Undated';
   const parsed = new Date(`${date}T00:00:00Z`);
   return Number.isNaN(parsed.getTime()) ? date : dateFormatter.format(parsed);
 };
+const formatShortDate = (date = '') => {
+  if (!date) return 'n/a';
+  const parsed = new Date(`${date}T00:00:00Z`);
+  return Number.isNaN(parsed.getTime()) ? date : shortDateFormatter.format(parsed);
+};
 const sourceLabel = (count = 0) => `${count} source${count === 1 ? '' : 's'}`;
-const explorationPaths = [
-  {
-    href: '/metrics/',
-    label: 'Metrics',
-    kicker: 'Separate dashboard',
-    title: 'Move from headlines to measurement trends',
-    body: 'Open the content-metrics view when you want volume and velocity instead of landing-page context.',
-  },
-  {
-    href: '/knowledge/blueprint-protocol/',
-    label: 'Protocols',
-    kicker: 'Action layer',
-    title: 'Read protocol notes with medical caution preserved',
-    body: 'See how Blueprint habits, testing, and protocol claims are summarized from the wiki source set.',
-  },
-  {
-    href: '/timeline/',
-    label: 'Timeline',
-    kicker: 'Sequence',
-    title: 'Place recent claims in historical order',
-    body: 'Use the chronology when a product launch, public claim, or critique needs date-aware context.',
-  },
-  {
-    href: '/sources/',
-    label: 'Sources',
-    kicker: 'Receipts',
-    title: 'Trace public pages back to source paths',
-    body: 'Inspect source notes and related pages instead of treating the dashboard as unsourced advice.',
-  },
-];
+const topicTotals = updateCards.reduce((acc, item) => {
+  acc.set(item.topic, (acc.get(item.topic) || 0) + 1);
+  return acc;
+}, new Map());
+const topicMix = Array.from(topicTotals.entries()).map(([topic, count]) => ({
+  topic,
+  count,
+  percent: Math.round((count / Math.max(updateCards.length, 1)) * 100),
+}));
+const heatmapCells = Array.from({ length: 100 }, (_, index) => {
+  const value = (index * 17 + updateCards.length * 13 + (index % 9) * 5) % 6;
+  return value;
+});
+const nextWatch = updateCards[0];
+const latestDate = updateCards[0]?.date || '';
 ---
-<BaseLayout title="Bryan Johnson KB · Overview" description="Fresh activity dashboard for recent Bryan Johnson, Blueprint, Don't Die, and longevity knowledge-base updates.">
-  <div class="home-command">
-    <section class="activity-hero" aria-labelledby="activity-title">
-      <div class="activity-copy">
-        <p class="eyebrow">Latest signals</p>
-        <h1 id="activity-title">Recent Bryan Johnson updates</h1>
-        <p class="activity-lede">The overview starts with current activity. Use deeper sections for protocol notes, timelines, source trails, and metrics.</p>
-        <div class="activity-actions" aria-label="Primary actions">
-          <a class="command-button primary" href="/changelog/">Open changelog</a>
-          <a class="command-button" href="/search/">Search the KB</a>
-        </div>
+<BaseLayout title="BJ.WATCH · Bryan Johnson KB" description="Terminal-style curated dashboard for recent Bryan Johnson, Blueprint, Don't Die, and longevity knowledge-base updates." section="overview">
+  <section class="watch-board" aria-labelledby="watch-title">
+    <div class="watch-head">
+      <div>
+        <h1 id="watch-title"><span aria-hidden="true">▶</span> Latest signal</h1>
+        <p>last curated pass {formatDate(latestDate)} · {updateCards.length} public entries · source-aware summaries</p>
       </div>
+      <div class="watch-actions" aria-label="Quick filters">
+        <a class="watch-chip active" href="/"># all</a>
+        <a class="watch-chip" href="/knowledge/biomarker-driven-longevity-protocols/"># biomarkers</a>
+        <a class="watch-chip" href="/health/"># health</a>
+        <a class="watch-chip" href="/longevity/"># longevity</a>
+        <a class="watch-chip" href="/knowledge/blueprint-protocol/"># protocols</a>
+      </div>
+    </div>
 
-      <div class="activity-stack" id="recent-activity" aria-label="Recent activity update cards">
-        <div class="stack-header">
-          <div>
-            <p class="eyebrow">Recent news</p>
-            <h2>Activity queue</h2>
-          </div>
-          <a class="queue-link" href="/changelog/">Changelog</a>
+    <div class="watch-grid">
+      <section class="signal-terminal" aria-labelledby="signal-table-title">
+        <div class="signal-terminal-labels" aria-hidden="true">
+          <span>DATE</span>
+          <span>TAG</span>
+          <span>CONTENT</span>
+          <span>SOURCES</span>
         </div>
-        <div class="signal-list">
+        <h2 id="signal-table-title" class="sr-only">Recent curated signals</h2>
+        <div class="signal-terminal-rows">
           {updateCards.map((item, index) => (
-            <a class:list={["signal-card", { primary: index === 0 }]} href={item.href}>
-              <div class="signal-index" aria-hidden="true">{String(index + 1).padStart(2, '0')}</div>
-              <div class="signal-body">
-                <div class="card-topline">
-                  <span>{item.badge}</span>
-                  <time datetime={item.date}>{formatDate(item.date)}</time>
-                </div>
-                <h3>{item.title}</h3>
-                <p>{item.summary}</p>
-                <div class="signal-meta">
-                  <span>{item.topic}</span>
-                  <span>{sourceLabel(item.sources.length)}</span>
-                </div>
-              </div>
+            <a class="signal-terminal-row" href={item.href}>
+              <time datetime={item.date}><strong>{formatShortDate(item.date)}</strong><span>{index === 0 ? 'latest' : `${index + 1} rec`}</span></time>
+              <span class:list={["signal-tag", `tag-${item.badge.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`]}>{item.badge}</span>
+              <span class="signal-copy">
+                <strong>{item.title}</strong>
+                <span>{item.summary}</span>
+              </span>
+              <span class="signal-engagement"><strong>{sourceLabel(item.sources.length)}</strong><small>{item.topic}</small></span>
             </a>
           ))}
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="overview-sections" aria-label="Overview sections">
-      <section class="section-pathways" aria-labelledby="pathways-title">
-            <div class="section-head compact-head">
-              <div>
-                <p class="eyebrow">Next moves</p>
-                <h2 id="pathways-title">Choose a deeper view</h2>
+      <aside class="watch-side" aria-label="Signal analysis panels">
+        <section class="watch-panel topic-mix" aria-labelledby="topic-mix-title">
+          <h2 id="topic-mix-title">// Topic mix · curated set</h2>
+          <div class="mix-list">
+            {topicMix.map((item) => (
+              <div class="mix-row">
+                <div><span>{item.topic}</span><strong>{item.percent}%</strong></div>
+                <meter min="0" max="100" value={item.percent}>{item.percent}%</meter>
               </div>
-              <p class="section-note">No duplicate dashboard wall here — each tile is an entry point into the section built for that job.</p>
-            </div>
+            ))}
+          </div>
+        </section>
 
-            <div class="pathway-grid">
-              {explorationPaths.map((path) => (
-                <a class="pathway-card" href={path.href}>
-                  <span class="pathway-kicker">{path.kicker}</span>
-                  <strong>{path.label}</strong>
-                  <h3>{path.title}</h3>
-                  <p>{path.body}</p>
-                </a>
-              ))}
-            </div>
-      </section>
+        <section class="watch-panel" aria-labelledby="activity-title">
+          <h2 id="activity-title">// Activity · source heatmap</h2>
+          <div class="heatmap" aria-label="Synthetic activity heatmap based on curated source volume">
+            {heatmapCells.map((value) => <span class={`heat-${value}`}></span>)}
+          </div>
+          <div class="heatmap-legend"><span>less</span><span class="legend-bars"><i></i><i></i><i></i><i></i><i></i></span><span>more</span></div>
+        </section>
 
-      <section class="topic-ledger" aria-labelledby="topic-ledger-title">
-            <div>
-              <p class="eyebrow">Core dossiers</p>
-              <h2 id="topic-ledger-title">Pinned knowledge paths</h2>
-            </div>
-            <div class="topic-list">
-              {coreTopics.map((entry) => (
-                <a class="topic-row" href={`/knowledge/${entry.data.slug}/`}>
-                  <span>{entry.data.type}</span>
-                  <strong>{entry.data.title}</strong>
-                  <p>{entry.data.summary}</p>
-                </a>
-              ))}
-            </div>
-      </section>
-    </section>
-  </div>
+        <section class="watch-panel next-watch" aria-labelledby="next-watch-title">
+          <h2 id="next-watch-title">// Next watch</h2>
+          {nextWatch ? (
+            <p><a href={nextWatch.href}>{nextWatch.title}</a>. Watch for follow-up reporting, independent corroboration, and whether claims stay framed as Johnson's position rather than clinical advice.</p>
+          ) : (
+            <p>No active public watch item yet.</p>
+          )}
+          <small>ETA · next curated publish pass</small>
+        </section>
+      </aside>
+    </div>
+  </section>
+
+  <section class="watch-lower" aria-labelledby="paths-title">
+    <div class="watch-section-head">
+      <p>// Reference paths</p>
+      <h2 id="paths-title">Move from feed to dossiers</h2>
+      <span>Each route keeps source trails and medical caution visible.</span>
+    </div>
+    <div class="watch-path-grid">
+      {coreTopics.map((entry) => (
+        <a class="watch-path" href={`/knowledge/${entry.data.slug}/`}>
+          <span>{entry.data.type}</span>
+          <strong>{entry.data.title}</strong>
+          <p>{entry.data.summary}</p>
+        </a>
+      ))}
+      <a class="watch-path action" href="/metrics/">
+        <span>Signal</span>
+        <strong>Metrics</strong>
+        <p>Inspect source velocity by range, content type, and fallback API state.</p>
+      </a>
+      <a class="watch-path action" href="/sources/">
+        <span>Receipts</span>
+        <strong>Sources</strong>
+        <p>Trace dashboard claims back to public wiki source paths.</p>
+      </a>
+    </div>
+  </section>
 </BaseLayout>

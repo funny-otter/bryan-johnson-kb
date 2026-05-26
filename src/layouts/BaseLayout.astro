@@ -1,18 +1,55 @@
 ---
 import '../styles/global.css';
-const { title = 'Bryan Johnson KB', description = 'A static knowledge site generated from an LLM Wiki.' } = Astro.props;
-const nav = [
-  ['/', 'Overview'],
-  ['/changelog/', 'Changelog'],
-  ['/health/', 'Health'],
-  ['/longevity/', 'Longevity'],
-  ['/opinions/', 'Opinions'],
-  ['/timeline/', 'Timeline'],
-  ['/sources/', 'Sources'],
-  ['/metrics/', 'Metrics'],
-  ['/search/', 'Search'],
+import { getCollection } from 'astro:content';
+import { curatedRecentNews } from '../data/curated-home.mjs';
+const {
+  title = 'Bryan Johnson KB',
+  description = 'Agent-curated Bryan Johnson dashboard with source-aware context and medical caution.',
+  section = 'overview',
+} = Astro.props;
+const knowledgeEntries = await getCollection('knowledge');
+const updates = await getCollection('updates');
+const countForTerms = (terms: string[]) => knowledgeEntries.filter((entry) => {
+  const haystack = [entry.data.title, entry.data.type, ...(entry.data.tags || []), entry.body].join(' ').toLowerCase();
+  return terms.some((term) => haystack.includes(term));
+}).length;
+const healthCount = countForTerms(['health', 'biomarker', 'protocol', 'sleep', 'diet', 'supplement', 'blueprint']);
+const longevityCount = countForTerms(['longevity', 'aging', 'age', 'lifespan', 'blueprint', 'biomarker']);
+const navGroups = [
+  {
+    label: 'FEED',
+    items: [
+      ['/', 'overview', '$', String(curatedRecentNews.length)],
+      ['/changelog/', 'changelog', '$', String(updates.length)],
+      ['/search/', 'search', '$', ''],
+    ],
+  },
+  {
+    label: 'PROTOCOLS',
+    items: [
+      ['/health/', 'health', '~/', String(healthCount)],
+      ['/longevity/', 'longevity', '~/', String(longevityCount)],
+      ['/knowledge/blueprint-protocol/', 'protocol', '~/', ''],
+      ['/knowledge/biomarker-driven-longevity-protocols/', 'biomarkers', '~/', ''],
+    ],
+  },
+  {
+    label: 'REFERENCE',
+    items: [
+      ['/sources/', 'sources', '~/', ''],
+      ['/timeline/', 'timeline', '~/', ''],
+      ['/opinions/', 'opinions', '~/', ''],
+    ],
+  },
+  {
+    label: 'SIGNAL',
+    items: [['/metrics/', 'metrics', '$', 'api']],
+  },
 ];
 const path = Astro.url.pathname;
+const isActive = (href: string) => path === href || (href !== '/' && path.startsWith(href));
+const activeItem = navGroups.flatMap((group) => group.items).find(([href]) => isActive(href));
+const activeLabel = section || activeItem?.[1] || 'overview';
 ---
 <!doctype html>
 <html lang="en">
@@ -23,22 +60,48 @@ const path = Astro.url.pathname;
     <title>{title}</title>
   </head>
   <body>
-    <header class="header">
-      <nav class="site-shell nav">
-        <a href="/" class="brand" aria-label="Bryan Johnson KB home">
-          <span class="brand-mark"></span>
-          <span>Bryan Johnson KB</span>
+    <div class="terminal-app">
+      <aside class="terminal-sidebar" aria-label="Primary navigation">
+        <a href="/" class="terminal-brand" aria-label="Bryan Johnson KB home">
+          <span class="terminal-brand-mark" aria-hidden="true"></span>
+          <span>BJ.WATCH</span>
         </a>
-        <div class="nav-links">
-          {nav.map(([href, label]) => <a class={path === href || (href !== '/' && path.startsWith(href)) ? 'active' : ''} href={href}>{label}</a>)}
+        <p class="terminal-version">v0.5 · curated daily<br />agent-reviewed public KB</p>
+
+        {navGroups.map((group) => (
+          <nav class="terminal-nav-group" aria-label={group.label.toLowerCase()}>
+            <p>// {group.label}</p>
+            {group.items.map(([href, label, prefix, count]) => (
+              <a class:list={["terminal-nav-link", { active: isActive(href) }]} href={href}>
+                <span class="nav-prefix">{prefix}</span>
+                <span>{label}</span>
+                {count && <small>{count}</small>}
+              </a>
+            ))}
+          </nav>
+        ))}
+
+        <div class="terminal-stat" aria-label="Public dashboard caution">
+          <span>CLAIMS MODE</span>
+          <strong>sourced</strong>
+          <small>not medical advice</small>
         </div>
-      </nav>
-    </header>
-    <main class="site-shell">
-      <slot />
-    </main>
-    <footer class="site-shell footer">
-      Generated from the local LLM Wiki. Treat health claims as sourced notes, not medical advice.
-    </footer>
+      </aside>
+
+      <div class="terminal-main-shell">
+        <header class="terminal-topbar">
+          <div class="terminal-crumb" aria-label="Current location">
+            <span>~/</span><span>/</span><span>bj.watch</span><span>/</span><strong>{activeLabel}</strong>
+          </div>
+          <div class="terminal-live"><span aria-hidden="true"></span> live <time datetime="2026-05-24">2026.05.24 · curated</time></div>
+        </header>
+        <main class="terminal-main">
+          <slot />
+        </main>
+        <footer class="terminal-footer">
+          Agent-curated from the local LLM Wiki. Health claims are sourced notes and context, not personal medical advice.
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
