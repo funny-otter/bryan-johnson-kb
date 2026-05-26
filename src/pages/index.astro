@@ -2,6 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import { coreTopicSlugs, curatedRecentNews } from '../data/curated-home.mjs';
+import { curatedActivity, curatedSignals, sourceCounts, watchQueue } from '../data/signals.mjs';
+import { conceptEntries, protocolCategories } from '../data/protocols.mjs';
 
 const entries = (await getCollection('knowledge')).sort((a, b) => (b.data.updated || '').localeCompare(a.data.updated || ''));
 const entryBySlug = new Map(entries.map((entry) => [entry.data.slug, entry]));
@@ -9,7 +11,8 @@ const coreTopics = coreTopicSlugs.flatMap((slug) => {
   const entry = entryBySlug.get(slug);
   return entry ? [entry] : [];
 });
-const updateCards = curatedRecentNews
+const curatedNewsArchiveCount = curatedRecentNews.length;
+const signalCards = curatedSignals
   .slice()
   .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
   .slice(0, 8);
@@ -26,35 +29,32 @@ const formatShortDate = (date = '') => {
   return Number.isNaN(parsed.getTime()) ? date : shortDateFormatter.format(parsed);
 };
 const sourceLabel = (count = 0) => `${count} source${count === 1 ? '' : 's'}`;
-const topicTotals = updateCards.reduce((acc, item) => {
+const topicTotals = signalCards.reduce((acc, item) => {
   acc.set(item.topic, (acc.get(item.topic) || 0) + 1);
   return acc;
 }, new Map());
 const topicMix = Array.from(topicTotals.entries()).map(([topic, count]) => ({
   topic,
   count,
-  percent: Math.round((count / Math.max(updateCards.length, 1)) * 100),
+  percent: Math.round((count / Math.max(signalCards.length, 1)) * 100),
 }));
-const heatmapCells = Array.from({ length: 100 }, (_, index) => {
-  const value = (index * 17 + updateCards.length * 13 + (index % 9) * 5) % 6;
-  return value;
-});
-const nextWatch = updateCards[0];
-const latestDate = updateCards[0]?.date || '';
+const activityMax = Math.max(1, ...curatedActivity.map((item) => item.x_post + item.third_party + item.wiki_update + item.site_update));
+const latestDate = signalCards[0]?.date || '';
 ---
 <BaseLayout title="BJ.WATCH · Bryan Johnson KB" description="Terminal-style curated dashboard for recent Bryan Johnson, Blueprint, Don't Die, and longevity knowledge-base updates." section="overview">
   <section class="watch-board" aria-labelledby="watch-title">
     <div class="watch-head">
       <div>
         <h1 id="watch-title"><span aria-hidden="true">▶</span> Latest signal</h1>
-        <p>last curated pass {formatDate(latestDate)} · {updateCards.length} public entries · source-aware summaries</p>
+        <p>last curated pass {formatDate(latestDate)} · {signalCards.length} public entries · source-aware summaries from {curatedNewsArchiveCount} legacy curated cards plus llm-wiki tweets</p>
       </div>
       <div class="watch-actions" aria-label="Quick filters">
         <a class="watch-chip active" href="/"># all</a>
-        <a class="watch-chip" href="/knowledge/biomarker-driven-longevity-protocols/"># biomarkers</a>
         <a class="watch-chip" href="/health/"># health</a>
         <a class="watch-chip" href="/longevity/"># longevity</a>
-        <a class="watch-chip" href="/knowledge/blueprint-protocol/"># protocols</a>
+        <a class="watch-chip" href="/nutrition/"># nutrition</a>
+        <a class="watch-chip" href="/sleep/"># sleep</a>
+        <a class="watch-chip" href="/concepts/"># concepts</a>
       </div>
     </div>
 
@@ -68,9 +68,9 @@ const latestDate = updateCards[0]?.date || '';
         </div>
         <h2 id="signal-table-title" class="sr-only">Recent curated signals</h2>
         <div class="signal-terminal-rows">
-          {updateCards.map((item, index) => (
+          {signalCards.map((item, index) => (
             <a class="signal-terminal-row" href={item.href}>
-              <time datetime={item.date}><strong>{formatShortDate(item.date)}</strong><span>{index === 0 ? 'latest' : `${index + 1} rec`}</span></time>
+              <time datetime={item.date}><strong>{formatShortDate(item.date)}</strong><span>{index === 0 ? 'latest' : item.tweetId ? `tweet ${item.tweetId.slice(-4)}` : `${index + 1} rec`}</span></time>
               <span class:list={["signal-tag", `tag-${item.badge.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`]}>{item.badge}</span>
               <span class="signal-copy">
                 <strong>{item.title}</strong>
@@ -84,7 +84,7 @@ const latestDate = updateCards[0]?.date || '';
 
       <aside class="watch-side" aria-label="Signal analysis panels">
         <section class="watch-panel topic-mix" aria-labelledby="topic-mix-title">
-          <h2 id="topic-mix-title">// Topic mix · curated set</h2>
+          <h2 id="topic-mix-title">// Topic mix · curated signals</h2>
           <div class="mix-list">
             {topicMix.map((item) => (
               <div class="mix-row">
@@ -96,21 +96,48 @@ const latestDate = updateCards[0]?.date || '';
         </section>
 
         <section class="watch-panel" aria-labelledby="activity-title">
-          <h2 id="activity-title">// Activity · source heatmap</h2>
-          <div class="heatmap" aria-label="Synthetic activity heatmap based on curated source volume">
-            {heatmapCells.map((value) => <span class={`heat-${value}`}></span>)}
+          <h2 id="activity-title">// Activity · curated source activity</h2>
+          <div class="activity-bars" aria-label="Curated source activity by date">
+            {curatedActivity.map((item) => {
+              const total = item.x_post + item.third_party + item.wiki_update + item.site_update;
+              return (
+                <div class="activity-row">
+                  <span>{formatShortDate(item.date)}</span>
+                  <meter min="0" max={activityMax} value={total}>{total}</meter>
+                  <strong>{total}</strong>
+                </div>
+              );
+            })}
           </div>
-          <div class="heatmap-legend"><span>less</span><span class="legend-bars"><i></i><i></i><i></i><i></i><i></i></span><span>more</span></div>
+          <small>Curated source activity, not full @bryan_johnson posting telemetry.</small>
+        </section>
+
+        <section class="watch-panel" aria-labelledby="recent-tweets-title">
+          <h2 id="recent-tweets-title">// Recent tweets/signals</h2>
+          <ul class="compact-list">
+            {signalCards.filter((item) => item.tweetId).slice(0, 5).map((item) => (
+              <li><a href={item.href}>{item.title}</a><small>tweet {item.tweetId} · {item.confidence} confidence</small></li>
+            ))}
+          </ul>
         </section>
 
         <section class="watch-panel next-watch" aria-labelledby="next-watch-title">
           <h2 id="next-watch-title">// Next watch</h2>
-          {nextWatch ? (
-            <p><a href={nextWatch.href}>{nextWatch.title}</a>. Watch for follow-up reporting, independent corroboration, and whether claims stay framed as Johnson's position rather than clinical advice.</p>
-          ) : (
-            <p>No active public watch item yet.</p>
-          )}
-          <small>ETA · next curated publish pass</small>
+          <ul class="compact-list">
+            {watchQueue.slice(0, 3).map((item) => (
+              <li><a href={item.href}>{item.title}</a><small>{item.summary}</small></li>
+            ))}
+          </ul>
+        </section>
+
+        <section class="watch-panel" aria-labelledby="source-counts-title">
+          <h2 id="source-counts-title">// Source counts</h2>
+          <div class="source-count-grid">
+            {sourceCounts.map((item) => (
+              <div><strong>{item.value}</strong><span>{item.label}</span><small>{item.detail}</small></div>
+            ))}
+          </div>
+          <small>Protocol tabs backed: {protocolCategories.length}; concepts mapped: {conceptEntries.length}.</small>
         </section>
       </aside>
     </div>
@@ -123,6 +150,26 @@ const latestDate = updateCards[0]?.date || '';
       <span>Each route keeps source trails and medical caution visible.</span>
     </div>
     <div class="watch-path-grid">
+      <a class="watch-path action" href="/health/">
+        <span>Protocol</span>
+        <strong>Health</strong>
+        <p>Measurement loops, sleep consistency, oral care, exercise, and caution around experimental interventions.</p>
+      </a>
+      <a class="watch-path action" href="/nutrition/">
+        <span>Protocol</span>
+        <strong>Nutrition</strong>
+        <p>Plant-led food pattern, Blueprint products, microplastics claims, and metabolic-drug caveats.</p>
+      </a>
+      <a class="watch-path action" href="/sleep/">
+        <span>Protocol</span>
+        <strong>Sleep</strong>
+        <p>Bedtime discipline, front-loading examples, and metric caution from tweet-backed sources.</p>
+      </a>
+      <a class="watch-path action" href="/concepts/">
+        <span>Reference</span>
+        <strong>Concepts</strong>
+        <p>12 source-aware glossary entries, including concepts without dedicated wiki pages yet.</p>
+      </a>
       {coreTopics.map((entry) => (
         <a class="watch-path" href={`/knowledge/${entry.data.slug}/`}>
           <span>{entry.data.type}</span>
@@ -134,11 +181,6 @@ const latestDate = updateCards[0]?.date || '';
         <span>Signal</span>
         <strong>Metrics</strong>
         <p>Inspect source velocity by range, content type, and fallback API state.</p>
-      </a>
-      <a class="watch-path action" href="/sources/">
-        <span>Receipts</span>
-        <strong>Sources</strong>
-        <p>Trace dashboard claims back to public wiki source paths.</p>
       </a>
     </div>
   </section>

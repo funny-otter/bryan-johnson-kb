@@ -1,14 +1,14 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { protocolCategories } from '../../data/protocols.mjs';
-const protocol = protocolCategories.find((item) => item.category === 'longevity')!;
+const protocol = protocolCategories.find((item) => item.category === 'nutrition')!;
 ---
-<BaseLayout title="Longevity protocol · BJ.WATCH" description="Source-aware Bryan Johnson longevity protocol notes with claim framing." section="longevity">
+<BaseLayout title="Nutrition protocol · BJ.WATCH" description="Source-aware Bryan Johnson nutrition protocol notes with medical caution." section="nutrition">
   <section class="protocol-page" aria-labelledby="protocol-title">
-    <p class="eyebrow">// PROTOCOLS / longevity</p>
+    <p class="eyebrow">// PROTOCOLS / nutrition</p>
     <h1 id="protocol-title">{protocol.title}</h1>
     <p class="lede">{protocol.lede}</p>
-    <p class="source-aware-note">Source-aware summary only; not medical advice. Claims about biological age, enhancement, or immortality remain claims unless independently validated.</p>
+    <p class="source-aware-note">Source-aware summary only; not medical advice. Prototype calorie, macro, drug, and eating-window numbers are intentionally omitted unless source-backed.</p>
     <div class="protocol-grid">
       {protocol.cards.map((card) => (
         <article class="protocol-card">
@@ -18,8 +18,8 @@ const protocol = protocolCategories.find((item) => item.category === 'longevity'
         </article>
       ))}
     </div>
-    <section class="source-panel" aria-labelledby="longevity-sources">
-      <h2 id="longevity-sources">Source trails</h2>
+    <section class="source-panel" aria-labelledby="nutrition-sources">
+      <h2 id="nutrition-sources">Source trails</h2>
       <div class="source-chips">{protocol.sourcePaths.map((path) => <code>{path}</code>)}</div>
     </section>
   </section>

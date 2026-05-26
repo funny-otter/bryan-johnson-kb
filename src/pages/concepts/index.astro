@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { conceptEntries } from '../../data/protocols.mjs';
+---
+<BaseLayout title="Concepts · BJ.WATCH" description="Source-aware Bryan Johnson and Blueprint concept glossary." section="concepts">
+  <section class="protocol-page concepts-page" aria-labelledby="concepts-title">
+    <p class="eyebrow">// REFERENCE / concepts</p>
+    <h1 id="concepts-title">Concepts</h1>
+    <p class="lede">A 12-entry glossary for Blueprint, Don't Die, biomarker protocols, Female-specific Blueprint, source-aware critiques, and tweet-backed concepts that do not yet have dedicated wiki pages.</p>
+    <p class="source-aware-note">Source-aware summaries only; not medical advice. Confidence labels describe public-dashboard certainty, not clinical truth.</p>
+    <div class="concept-grid">
+      {conceptEntries.map((entry, index) => (
+        <article class="concept-card">
+          <div class="card-topline"><span>#{String(index + 1).padStart(2, '0')}</span><span class={`confidence confidence-${entry.confidence}`}>{entry.confidence}</span></div>
+          <h2>{entry.title}</h2>
+          <p>{entry.summary}</p>
+          <code>{entry.source}</code>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

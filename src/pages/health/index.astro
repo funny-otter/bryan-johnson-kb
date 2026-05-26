@@ -1,19 +1,26 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import KnowledgeCard from '../../components/KnowledgeCard.astro';
-import { getCollection } from 'astro:content';
-const title = 'Health';
-const terms = ['health', 'biomarker', 'protocol', 'sleep', 'diet', 'supplement', 'blueprint'];
-const entries = (await getCollection('knowledge')).filter((entry) => {
-  const haystack = [entry.data.title, entry.data.type, ...(entry.data.tags || []), entry.body].join(' ').toLowerCase();
-  return terms.some((term) => haystack.includes(term));
-}).sort((a, b) => (b.data.updated || '').localeCompare(a.data.updated || ''));
+import { protocolCategories } from '../../data/protocols.mjs';
+const protocol = protocolCategories.find((item) => item.category === 'health')!;
 ---
-<BaseLayout title={`${title} · Bryan Johnson KB`}>
-  <div class="container">
-    <div class="section-head"><h2>{title}</h2><span class="pill">{entries.length} pages</span></div>
-    <section class="grid">
-      {entries.map((entry) => <KnowledgeCard entry={entry} />)}
+<BaseLayout title="Health protocol · BJ.WATCH" description="Source-aware Bryan Johnson health protocol notes with medical caution." section="health">
+  <section class="protocol-page" aria-labelledby="protocol-title">
+    <p class="eyebrow">// PROTOCOLS / health</p>
+    <h1 id="protocol-title">{protocol.title}</h1>
+    <p class="lede">{protocol.lede}</p>
+    <p class="source-aware-note">Source-aware summary only; not medical advice. Exact targets and interventions require source verification and clinician guidance.</p>
+    <div class="protocol-grid">
+      {protocol.cards.map((card) => (
+        <article class="protocol-card">
+          <span>{card.label}</span>
+          <h2>{card.title}</h2>
+          <p>{card.body}</p>
+        </article>
+      ))}
+    </div>
+    <section class="source-panel" aria-labelledby="health-sources">
+      <h2 id="health-sources">Source trails</h2>
+      <div class="source-chips">{protocol.sourcePaths.map((path) => <code>{path}</code>)}</div>
     </section>
-  </div>
+  </section>
 </BaseLayout>

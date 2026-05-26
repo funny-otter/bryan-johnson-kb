@@ -2,54 +2,52 @@
 import '../styles/global.css';
 import { getCollection } from 'astro:content';
 import { curatedRecentNews } from '../data/curated-home.mjs';
+import { curatedSignals } from '../data/signals.mjs';
+import { conceptEntries, protocolCategories } from '../data/protocols.mjs';
 const {
   title = 'Bryan Johnson KB',
   description = 'Agent-curated Bryan Johnson dashboard with source-aware context and medical caution.',
   section = 'overview',
 } = Astro.props;
-const knowledgeEntries = await getCollection('knowledge');
 const updates = await getCollection('updates');
-const countForTerms = (terms: string[]) => knowledgeEntries.filter((entry) => {
-  const haystack = [entry.data.title, entry.data.type, ...(entry.data.tags || []), entry.body].join(' ').toLowerCase();
-  return terms.some((term) => haystack.includes(term));
-}).length;
-const healthCount = countForTerms(['health', 'biomarker', 'protocol', 'sleep', 'diet', 'supplement', 'blueprint']);
-const longevityCount = countForTerms(['longevity', 'aging', 'age', 'lifespan', 'blueprint', 'biomarker']);
+const protocolCount = (category: string) => protocolCategories.find((item) => item.category === category)?.cards.length || '';
+const latestSignalDate = curatedSignals.slice().sort((a, b) => (b.date || '').localeCompare(a.date || ''))[0]?.date || updates[0]?.data.date || '';
 const navGroups = [
   {
     label: 'FEED',
     items: [
-      ['/', 'overview', '$', String(curatedRecentNews.length)],
-      ['/changelog/', 'changelog', '$', String(updates.length)],
-      ['/search/', 'search', '$', ''],
+      ['/', 'overview', '$', String(curatedSignals.length || curatedRecentNews.length)],
     ],
   },
   {
     label: 'PROTOCOLS',
     items: [
-      ['/health/', 'health', '~/', String(healthCount)],
-      ['/longevity/', 'longevity', '~/', String(longevityCount)],
-      ['/knowledge/blueprint-protocol/', 'protocol', '~/', ''],
-      ['/knowledge/biomarker-driven-longevity-protocols/', 'biomarkers', '~/', ''],
+      ['/health/', 'health', '~/', String(protocolCount('health'))],
+      ['/longevity/', 'longevity', '~/', String(protocolCount('longevity'))],
+      ['/nutrition/', 'nutrition', '~/', String(protocolCount('nutrition'))],
+      ['/sleep/', 'sleep', '~/', String(protocolCount('sleep'))],
     ],
   },
   {
     label: 'REFERENCE',
     items: [
-      ['/sources/', 'sources', '~/', ''],
-      ['/timeline/', 'timeline', '~/', ''],
-      ['/opinions/', 'opinions', '~/', ''],
+      ['/concepts/', 'concepts', '~/', String(conceptEntries.length)],
     ],
   },
   {
     label: 'SIGNAL',
-    items: [['/metrics/', 'metrics', '$', 'api']],
+    items: [
+      ['/metrics/', 'metrics', '$', 'api'],
+      ['/changelog/', 'changelog', '$', String(updates.length)],
+    ],
   },
 ];
 const path = Astro.url.pathname;
 const isActive = (href: string) => path === href || (href !== '/' && path.startsWith(href));
 const activeItem = navGroups.flatMap((group) => group.items).find(([href]) => isActive(href));
 const activeLabel = section || activeItem?.[1] || 'overview';
+const dateTime = latestSignalDate || '2026-05-24';
+const displayDate = dateTime.replaceAll('-', '.');
 ---
 <!doctype html>
 <html lang="en">
@@ -61,8 +59,14 @@ const activeLabel = section || activeItem?.[1] || 'overview';
   </head>
   <body>
     <div class="terminal-app">
-      <aside class="terminal-sidebar" aria-label="Primary navigation">
-        <a href="/" class="terminal-brand" aria-label="Bryan Johnson KB home">
+      <button class="terminal-menu-toggle" type="button" aria-label="Open primary navigation" aria-controls="terminal-sidebar" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span class="sr-only">Open menu</span>
+      </button>
+      <div class="terminal-drawer-backdrop" data-close-nav aria-hidden="true"></div>
+      <aside id="terminal-sidebar" class="terminal-sidebar" aria-label="Primary navigation">
+        <button class="terminal-drawer-close" type="button" data-close-nav aria-label="Close primary navigation">×</button>
+        <a href="/" class="terminal-brand" aria-label="Bryan Johnson KB home" data-close-nav>
           <span class="terminal-brand-mark" aria-hidden="true"></span>
           <span>BJ.WATCH</span>
         </a>
@@ -72,7 +76,7 @@ const activeLabel = section || activeItem?.[1] || 'overview';
           <nav class="terminal-nav-group" aria-label={group.label.toLowerCase()}>
             <p>// {group.label}</p>
             {group.items.map(([href, label, prefix, count]) => (
-              <a class:list={["terminal-nav-link", { active: isActive(href) }]} href={href}>
+              <a class:list={["terminal-nav-link", { active: isActive(href) }]} href={href} data-close-nav>
                 <span class="nav-prefix">{prefix}</span>
                 <span>{label}</span>
                 {count && <small>{count}</small>}
@@ -93,7 +97,7 @@ const activeLabel = section || activeItem?.[1] || 'overview';
           <div class="terminal-crumb" aria-label="Current location">
             <span>~/</span><span>/</span><span>bj.watch</span><span>/</span><strong>{activeLabel}</strong>
           </div>
-          <div class="terminal-live"><span aria-hidden="true"></span> live <time datetime="2026-05-24">2026.05.24 · curated</time></div>
+          <div class="terminal-live"><span aria-hidden="true"></span> live <time datetime={dateTime}>{displayDate} · curated</time></div>
         </header>
         <main class="terminal-main">
           <slot />
@@ -103,5 +107,30 @@ const activeLabel = section || activeItem?.[1] || 'overview';
         </footer>
       </div>
     </div>
+    <script>
+      const menuToggle = document.querySelector('.terminal-menu-toggle');
+      const sidebar = document.querySelector('#terminal-sidebar');
+      const closeControls = document.querySelectorAll('[data-close-nav]');
+      const firstDrawerLink = sidebar?.querySelector('button, a') as HTMLElement | null;
+
+      function setNavOpen(isOpen: boolean) {
+        document.body.classList.toggle('nav-open', isOpen);
+        menuToggle?.setAttribute('aria-expanded', String(isOpen));
+        menuToggle?.setAttribute('aria-label', isOpen ? 'Close primary navigation' : 'Open primary navigation');
+        if (isOpen) firstDrawerLink?.focus();
+      }
+
+      menuToggle?.addEventListener('click', () => {
+        setNavOpen(!document.body.classList.contains('nav-open'));
+      });
+
+      closeControls.forEach((control) => {
+        control.addEventListener('click', () => setNavOpen(false));
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') setNavOpen(false);
+      });
+    </script>
   </body>
 </html>
