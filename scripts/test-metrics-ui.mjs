@@ -5,7 +5,7 @@ const root = new URL('../', import.meta.url);
 const read = async (path) => readFile(new URL(path, root), 'utf8');
 
 const layout = await read('src/layouts/BaseLayout.astro');
-assert.match(layout, /\['\/metrics\/',\s*'Metrics'\]/, 'top navigation exposes a Metrics tab');
+assert.match(layout, /\['\/metrics\/',\s*'metrics',\s*'\$',\s*'api'\]/, 'terminal navigation exposes a Metrics signal route');
 
 const page = await read('src/pages/metrics/index.astro');
 assert.match(page, /data-metrics-dashboard/, 'metrics page mounts an interactive dashboard');
