@@ -1,0 +1,121 @@
+---
+type SectionKey = 'habits' | 'longterm' | 'donts';
+type Protocol = {
+  category: string;
+  title: string;
+  lede: string;
+  confidence: string;
+  sourcePaths: string[];
+  sections: Partial<Record<SectionKey, string[]>>;
+  cards: Array<{ label: string; title: string; body: string }>;
+};
+
+const { protocol, caution = 'Source-aware summary only; not medical advice. Exact interventions require source verification and clinician guidance.' } = Astro.props as {
+  protocol: Protocol;
+  caution?: string;
+};
+
+const sectionDefinitions: Array<{ key: SectionKey; label: string; code: string; tone: string; confidence: string }> = [
+  { key: 'habits', label: 'Habits', code: 'HBT', tone: 'protocol', confidence: protocol.confidence || 'medium' },
+  { key: 'longterm', label: 'Longterm', code: 'LNG', tone: 'strategy', confidence: protocol.confidence || 'medium' },
+  { key: 'donts', label: 'Don’ts', code: 'DNT', tone: 'guardrail', confidence: 'caution' },
+];
+
+const ledgerRows = sectionDefinitions.flatMap((definition) => {
+  const items = Array.isArray(protocol.sections?.[definition.key]) ? protocol.sections[definition.key] ?? [] : [];
+  return (items.length ? items : [`No source-backed ${definition.label.toLowerCase()} are published for this protocol yet.`]).map((item, index) => ({
+    ...definition,
+    item,
+    index: index + 1,
+    source: protocol.sourcePaths[index % protocol.sourcePaths.length] || 'source pending',
+  }));
+});
+
+const sourcePreview = protocol.sourcePaths.slice(0, 5);
+const confidenceMix = [
+  { label: 'source-backed', value: protocol.confidence === 'medium' ? 62 : 48 },
+  { label: 'claim-framed', value: protocol.confidence === 'mixed' ? 39 : 25 },
+  { label: 'guardrail', value: 21 },
+];
+---
+
+<section class="protocol-page protocol-dossier" aria-labelledby="protocol-title">
+  <div class="watch-head protocol-command">
+    <div>
+      <p class="eyebrow">// PROTOCOLS / {protocol.category}</p>
+      <h1 id="protocol-title"><span>▶</span> {protocol.title}</h1>
+      <p>{protocol.lede}</p>
+    </div>
+    <div class="watch-actions protocol-filter-row" aria-label="Protocol ledger filters">
+      <a class="watch-chip active" href={`/${protocol.category}/`}># all</a>
+      <a class="watch-chip" href={`/${protocol.category}/#habits`}># habits</a>
+      <a class="watch-chip" href={`/${protocol.category}/#longterm`}># longterm</a>
+      <a class="watch-chip" href={`/${protocol.category}/#donts`}># don’ts</a>
+    </div>
+  </div>
+
+  <div class="protocol-dossier-grid">
+    <div class="protocol-ledger" role="table" aria-label={`${protocol.title} ledger`}>
+      <div class="protocol-ledger-labels" role="row">
+        <span>BUCKET</span>
+        <span>DIRECTIVE</span>
+        <span>CONFIDENCE</span>
+        <span>SOURCE</span>
+      </div>
+      {ledgerRows.map((row) => (
+        <div class:list={["protocol-ledger-row", `ledger-${row.key}`]} role="row" id={row.index === 1 ? row.key : undefined}>
+          <div class="protocol-bucket" role="cell">
+            <span class:list={["signal-tag", `tag-${row.tone}`]}>{row.code}</span>
+            <strong>{row.label}</strong>
+            <small>#{String(row.index).padStart(2, '0')}</small>
+          </div>
+          <div class="protocol-directive" role="cell">
+            <strong>{row.item}</strong>
+            <span>{row.key === 'donts' ? 'Guardrail stays adjacent to the claim surface.' : 'Protocol note remains framed as Bryan/Blueprint context.'}</span>
+          </div>
+          <div class="protocol-confidence" role="cell">
+            <span class:list={["confidence", `confidence-${row.confidence === 'caution' ? 'low' : row.confidence}`]}>{row.confidence}</span>
+          </div>
+          <div class="protocol-source" role="cell"><code>{row.source}</code></div>
+        </div>
+      ))}
+    </div>
+
+    <aside class="protocol-dossier-side" aria-label="Protocol analysis panels">
+      <section class="protocol-analysis-panel">
+        <h2>// SOURCE TRAILS</h2>
+        <ul class="compact-list">
+          {sourcePreview.map((path) => (
+            <li><code>{path}</code><small>linked wiki/source trail</small></li>
+          ))}
+        </ul>
+      </section>
+
+      <section class="protocol-analysis-panel">
+        <h2>// CONFIDENCE MIX</h2>
+        <div class="mix-list">
+          {confidenceMix.map((item) => (
+            <div class="mix-row">
+              <div><span>{item.label}</span><strong>{item.value}%</strong></div>
+              <meter min="0" max="100" value={item.value}>{item.value}%</meter>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="protocol-analysis-panel protocol-caution-panel">
+        <h2>// GUARDRAILS</h2>
+        <p>{caution}</p>
+      </section>
+
+      <section class="protocol-analysis-panel">
+        <h2>// RELATED CONCEPTS</h2>
+        <ul class="compact-list">
+          {protocol.cards.map((card) => (
+            <li><a href={`/concepts/`}>{card.title}</a><small>{card.label}</small></li>
+          ))}
+        </ul>
+      </section>
+    </aside>
+  </div>
+</section>

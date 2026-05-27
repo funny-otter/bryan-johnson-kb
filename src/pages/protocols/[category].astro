@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProtocolDossier from '../../components/ProtocolDossier.astro';
+import { protocolCategories } from '../../data/protocols.mjs';
+
+export function getStaticPaths() {
+  const protocolAliases = ['health', 'longevity', 'nutrition', 'sleep'];
+  return protocolAliases.map((category) => {
+    const protocol = protocolCategories.find((item) => item.category === category)!;
+    return {
+      params: { category },
+      props: { protocol },
+    };
+  });
+}
+
+const { protocol } = Astro.props;
+const resolvedProtocol = protocol!;
+---
+<BaseLayout title={`${resolvedProtocol.title} · BJ.WATCH`} description={`Source-aware Bryan Johnson ${resolvedProtocol.category} protocol dossier with medical caution.`} section={resolvedProtocol.category}>
+  <ProtocolDossier protocol={resolvedProtocol} caution="Source-aware summary only; not medical advice. This /protocols alias renders the same terminal dossier as the canonical protocol page." />
+</BaseLayout>

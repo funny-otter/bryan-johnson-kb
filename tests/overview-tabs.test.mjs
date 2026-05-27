@@ -193,7 +193,7 @@ describe('home overview and dedicated changelog route', () => {
       ['sleep', sleepPageSource],
     ]) {
       assert.match(protocolsSource, new RegExp(`category:\\s*['"]${category}['"][\\s\\S]*sections:\\s*\\{[\\s\\S]*habits:[\\s\\S]*longterm:[\\s\\S]*donts:`), `${category} protocol should define all required buckets`);
-      assert.match(pageSource, /<ProtocolSections/, `${category} route should render shared protocol section buckets`);
+      assert.match(pageSource, /<Protocol(Dossier|Sections)/, `${category} route should render shared protocol bucket/dossier component`);
     }
 
     assert.match(protocolsSource, /protocolSectionsBySlug/, 'knowledge pages should be able to reuse protocol buckets by slug');

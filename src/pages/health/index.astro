@@ -1,28 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import ProtocolSections from '../../components/ProtocolSections.astro';
+import ProtocolDossier from '../../components/ProtocolDossier.astro';
 import { protocolCategories } from '../../data/protocols.mjs';
 const protocol = protocolCategories.find((item) => item.category === 'health')!;
 ---
 <BaseLayout title="Health protocol · BJ.WATCH" description="Source-aware Bryan Johnson health protocol notes with medical caution." section="health">
-  <section class="protocol-page" aria-labelledby="protocol-title">
-    <p class="eyebrow">// PROTOCOLS / health</p>
-    <h1 id="protocol-title">{protocol.title}</h1>
-    <p class="lede">{protocol.lede}</p>
-    <p class="source-aware-note">Source-aware summary only; not medical advice. Exact targets and interventions require source verification and clinician guidance.</p>
-    <ProtocolSections sections={protocol.sections} title={`${protocol.title}: habits, longterm, and don’ts`} />
-    <div class="protocol-grid">
-      {protocol.cards.map((card) => (
-        <article class="protocol-card">
-          <span>{card.label}</span>
-          <h2>{card.title}</h2>
-          <p>{card.body}</p>
-        </article>
-      ))}
-    </div>
-    <section class="source-panel" aria-labelledby="health-sources">
-      <h2 id="health-sources">Source trails</h2>
-      <div class="source-chips">{protocol.sourcePaths.map((path) => <code>{path}</code>)}</div>
-    </section>
-  </section>
+  <ProtocolDossier protocol={protocol} caution="Source-aware summary only; not medical advice. Exact targets and interventions require source verification and clinician guidance." />
 </BaseLayout>
