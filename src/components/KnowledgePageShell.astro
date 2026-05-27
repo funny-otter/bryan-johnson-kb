@@ -1,10 +1,14 @@
 ---
+import ProtocolSections from './ProtocolSections.astro';
+import { protocolSectionsBySlug } from '../data/protocols.mjs';
 const { entry, summary: summaryOverride } = Astro.props;
 const data = entry.data;
 const sourceCount = data.sources?.length ?? 0;
 const tags = data.tags ?? [];
 const summary = summaryOverride ?? data.summary;
 const confidence = data.confidence ?? 'unrated';
+const slug = String(data.slug ?? '');
+const protocolSections = protocolSectionsBySlug[slug as keyof typeof protocolSectionsBySlug];
 ---
 
 <article class="knowledge-page">
@@ -50,6 +54,7 @@ const confidence = data.confidence ?? 'unrated';
 
   <div class="knowledge-content-grid">
     <main class="knowledge-body" data-pagefind-body>
+      {protocolSections && <ProtocolSections sections={protocolSections} title={`${data.title}: habits, longterm, and don’ts`} />}
       <slot />
     </main>
 

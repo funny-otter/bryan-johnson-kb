@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProtocolSections from '../../components/ProtocolSections.astro';
 import { protocolCategories } from '../../data/protocols.mjs';
 const protocol = protocolCategories.find((item) => item.category === 'health')!;
 ---
@@ -9,6 +10,7 @@ const protocol = protocolCategories.find((item) => item.category === 'health')!;
     <h1 id="protocol-title">{protocol.title}</h1>
     <p class="lede">{protocol.lede}</p>
     <p class="source-aware-note">Source-aware summary only; not medical advice. Exact targets and interventions require source verification and clinician guidance.</p>
+    <ProtocolSections sections={protocol.sections} title={`${protocol.title}: habits, longterm, and don’ts`} />
     <div class="protocol-grid">
       {protocol.cards.map((card) => (
         <article class="protocol-card">
