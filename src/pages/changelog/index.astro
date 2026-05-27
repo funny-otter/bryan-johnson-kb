@@ -1,6 +1,10 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import ChangelogUpdateList from '../../components/ChangelogUpdateList.astro';
 import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+
+type UpdateEntry = CollectionEntry<'updates'>;
 
 const updates = (await getCollection('updates')).sort((a, b) => (b.data.date || '').localeCompare(a.data.date || ''));
 const latestChange = updates[0]?.data.date || 'n/a';
@@ -17,14 +21,30 @@ const updateSummary = (body = '') => {
   const summary = cleanMarkdown(firstBullet?.replace(/^\s*-\s*/, '') || fallback || 'Recently published wiki maintenance and synthesis work.');
   return summary.length > 185 ? `${summary.slice(0, 182)}…` : summary;
 };
+
+const protocolSignalPattern = /\b(protocol|biomarker|biomarkers|microplastics|metformin|longevity|time profile|years critique|blueprint biomarkers)\b/i;
+const siteTitlePattern = /@bryan_johnson|\b(changelog curation|curation pass|wiki reconciliation|index\/source-map cleanup|source[- ]?map cleanup|research|ingest|backfill)\b/i;
+const updateSearchText = (update: UpdateEntry) => [
+  update.data.title,
+  update.body || '',
+  ...(update.data.wikiPaths || []),
+].join(' ');
+const isProtocolUpdate = (update: UpdateEntry) => {
+  if (siteTitlePattern.test(update.data.title)) return false;
+  const text = updateSearchText(update);
+  return protocolSignalPattern.test(text);
+};
+
+const protocolUpdates = updates.filter(isProtocolUpdate);
+const siteChangelog = updates.filter((update) => !isProtocolUpdate(update));
 ---
-<BaseLayout title="Bryan Johnson KB · Changelog" description="Curated publishing changelog for Bryan Johnson KB wiki updates.">
+<BaseLayout title="Bryan Johnson KB · Changelog" description="Curated protocol and publishing changelog for Bryan Johnson KB wiki updates.">
   <section class="section-intro changelog-hero" aria-labelledby="changelog-title">
     <p class="eyebrow">Recently updated material</p>
     <div class="changelog-hero-grid">
       <div>
         <h1 id="changelog-title">Changelog</h1>
-        <p class="lede">Curated public-dashboard publishing notes from the Bryan Johnson, Blueprint, Don't Die, and longevity wiki source set.</p>
+        <p class="lede">Two lanes: reader-facing Bryan/Blueprint protocol changes, and site/wiki maintenance notes that explain how the public dashboard changed.</p>
       </div>
       <div class="changelog-summary-card">
         <span>Latest publishing pass</span>
@@ -34,30 +54,44 @@ const updateSummary = (body = '') => {
     </div>
   </section>
 
-  <section class="section" aria-label="Recent update history">
-    {updates.length > 0 ? (
-      <ol class="changelog-list">
-        {updates.map((update) => (
-          <li class="changelog-item">
-            <time datetime={update.data.date}>{formatDate(update.data.date)}</time>
-            <div>
-              <h2>{update.data.title}</h2>
-              <p>{updateSummary(update.body)}</p>
-              {update.data.wikiPaths.length > 0 && (
-                <div class="source-chips" aria-label="Updated wiki paths">
-                  {update.data.wikiPaths.slice(0, 5).map((path) => <code>{path}</code>)}
-                  {update.data.wikiPaths.length > 5 && <span class="badge">+{update.data.wikiPaths.length - 5} more</span>}
-                </div>
-              )}
-            </div>
-          </li>
-        ))}
-      </ol>
-    ) : (
-      <div class="empty-state">
-        <h2>No changelog entries yet</h2>
-        <p>Curated wiki publish notes will appear here when updated material is available.</p>
-      </div>
-    )}
+  <section class="section changelog-tabs" aria-label="Recent update history">
+    <input class="changelog-tab-input" type="radio" name="changelog-tabs" id="changelog-tab-protocol" checked aria-controls="protocol-updates-panel" />
+    <input class="changelog-tab-input" type="radio" name="changelog-tabs" id="changelog-tab-site" aria-controls="site-changelog-panel" />
+
+    <div class="changelog-tab-list" role="tablist" aria-label="Changelog categories">
+      <label class="changelog-tab" role="tab" id="protocol-updates-tab" for="changelog-tab-protocol" aria-controls="protocol-updates-panel">
+        <span>Protocol updates</span>
+        <strong>{protocolUpdates.length}</strong>
+      </label>
+      <label class="changelog-tab" role="tab" id="site-changelog-tab" for="changelog-tab-site" aria-controls="site-changelog-panel">
+        <span>Site changelog</span>
+        <strong>{siteChangelog.length}</strong>
+      </label>
+    </div>
+
+    <div class="changelog-tab-note" aria-live="polite">
+      <p><strong>Protocol updates</strong> collects actual Bryan Johnson, Blueprint, Don't Die, biomarker, protocol, and longevity-claim changes. <strong>Site changelog</strong> keeps source ingest, curation, cleanup, and publishing operations separate.</p>
+    </div>
+
+    <div class="changelog-tab-panels">
+      <section id="protocol-updates-panel" class="changelog-tab-panel" data-tab-panel="protocol-updates" role="tabpanel" aria-labelledby="protocol-updates-tab">
+        <ChangelogUpdateList
+          updates={protocolUpdates}
+          emptyTitle="No protocol updates yet"
+          emptyCopy="Reader-facing protocol or Blueprint changes will appear here when the source set adds them."
+          formatDate={formatDate}
+          updateSummary={updateSummary}
+        />
+      </section>
+      <section id="site-changelog-panel" class="changelog-tab-panel" data-tab-panel="site-changelog" role="tabpanel" aria-labelledby="site-changelog-tab">
+        <ChangelogUpdateList
+          updates={siteChangelog}
+          emptyTitle="No site changelog entries yet"
+          emptyCopy="Wiki/site maintenance and publishing events will appear here when available."
+          formatDate={formatDate}
+          updateSummary={updateSummary}
+        />
+      </section>
+    </div>
   </section>
 </BaseLayout>

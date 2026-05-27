@@ -1,0 +1,42 @@
+---
+interface Props {
+  updates: Array<{
+    data: {
+      title: string;
+      date: string;
+      wikiPaths: string[];
+    };
+    body?: string;
+  }>;
+  emptyTitle: string;
+  emptyCopy: string;
+  formatDate: (date?: string) => string;
+  updateSummary: (body?: string) => string;
+}
+
+const { updates, emptyTitle, emptyCopy, formatDate, updateSummary } = Astro.props;
+---
+{updates.length > 0 ? (
+  <ol class="changelog-list">
+    {updates.map((update) => (
+      <li class="changelog-item">
+        <time datetime={update.data.date}>{formatDate(update.data.date)}</time>
+        <div>
+          <h2>{update.data.title}</h2>
+          <p>{updateSummary(update.body)}</p>
+          {update.data.wikiPaths.length > 0 && (
+            <div class="source-chips" aria-label="Updated wiki paths">
+              {update.data.wikiPaths.slice(0, 5).map((path) => <code>{path}</code>)}
+              {update.data.wikiPaths.length > 5 && <span class="badge">+{update.data.wikiPaths.length - 5} more</span>}
+            </div>
+          )}
+        </div>
+      </li>
+    ))}
+  </ol>
+) : (
+  <div class="empty-state">
+    <h2>{emptyTitle}</h2>
+    <p>{emptyCopy}</p>
+  </div>
+)}
