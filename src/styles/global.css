@@ -470,6 +470,18 @@ meter::-moz-meter-bar { background: var(--accent); }
 .protocol-page { width: min(1160px, calc(100% - 32px)); margin: 0 auto; padding: 52px 0; }
 .protocol-page h1 { max-width: 780px; }
 .source-aware-note { max-width: 780px; margin: 18px 0 26px; color: #d7c27a; border: 1px solid rgba(255,209,102,.22); background: rgba(255,209,102,.055); padding: 14px 16px; }
+.protocol-sections { margin: 26px 0 28px; }
+.protocol-sections-head { max-width: 840px; margin-bottom: 14px; }
+.protocol-sections-head h2 { margin: 6px 0 8px; font-size: clamp(22px, 3vw, 34px); letter-spacing: -.03em; }
+.protocol-sections-head p:last-child { margin: 0; color: #9fc8bd; line-height: 1.55; }
+.protocol-section-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.protocol-section-bucket { border: 1px solid var(--line); background: linear-gradient(180deg, rgba(52,245,197,.055), rgba(11,26,22,.62)); padding: 18px; min-height: 100%; }
+.protocol-section-bucket span { color: var(--accent); font-size: 10px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+.protocol-section-bucket h3 { margin: 9px 0 12px; color: var(--text); font-size: 22px; }
+.protocol-section-bucket ul { margin: 0; padding-left: 19px; color: #c7ded7; }
+.protocol-section-bucket li + li { margin-top: 10px; }
+.protocol-section-bucket.bucket-donts { background: linear-gradient(180deg, rgba(255,209,102,.075), rgba(11,26,22,.62)); }
+.empty-state { color: var(--muted); font-style: italic; }
 .protocol-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 24px 0; }
 .protocol-card,
 .concept-card,
@@ -491,7 +503,7 @@ meter::-moz-meter-bar { background: var(--accent); }
   .watch-grid { grid-template-columns: 1fr; }
   .watch-side { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .watch-section-head { grid-template-columns: 1fr; }
-  .protocol-grid, .concept-grid { grid-template-columns: 1fr; }
+  .protocol-grid, .protocol-section-grid, .concept-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 720px) {
   body.nav-open { overflow: hidden; }

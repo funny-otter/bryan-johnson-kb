@@ -1,0 +1,55 @@
+---
+type SectionKey = 'habits' | 'longterm' | 'donts';
+type ProtocolSectionMap = Partial<Record<SectionKey, string[]>>;
+const { sections = {} as ProtocolSectionMap, title = 'Protocol sections' } = Astro.props as {
+  sections?: ProtocolSectionMap;
+  title?: string;
+};
+
+const sectionDefinitions: Array<{ key: SectionKey; label: string; kicker: string; empty: string }> = [
+  {
+    key: 'habits',
+    label: 'Habits',
+    kicker: 'repeatable behaviors',
+    empty: 'No source-backed habits are published for this protocol yet.',
+  },
+  {
+    key: 'longterm',
+    label: 'Longterm',
+    kicker: 'durable strategy',
+    empty: 'No longterm strategy notes are published for this protocol yet.',
+  },
+  {
+    key: 'donts',
+    label: 'Don’ts',
+    kicker: 'guardrails',
+    empty: 'No explicit don’ts are published for this protocol yet.',
+  },
+];
+---
+
+<section class="protocol-sections" aria-labelledby="protocol-sections-title">
+  <div class="protocol-sections-head">
+    <p class="eyebrow">// Habits · Longterm · Don’ts</p>
+    <h2 id="protocol-sections-title">{title}</h2>
+    <p>Three buckets keep practical routines, long-range interpretation, and source-aware caution visible on every protocol surface.</p>
+  </div>
+  <div class="protocol-section-grid">
+    {sectionDefinitions.map((definition) => {
+      const items = Array.isArray(sections?.[definition.key]) ? (sections[definition.key] ?? []) : [];
+      return (
+        <article class:list={["protocol-section-bucket", `bucket-${definition.key}`]}>
+          <span>{definition.kicker}</span>
+          <h3>{definition.label}</h3>
+          {items.length > 0 ? (
+            <ul>
+              {items.map((item) => <li>{item}</li>)}
+            </ul>
+          ) : (
+            <p class="empty-state">{definition.empty}</p>
+          )}
+        </article>
+      );
+    })}
+  </div>
+</section>

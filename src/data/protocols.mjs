@@ -12,6 +12,20 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/bryan-johnson-protocol-2026-05-22.md',
       'raw/articles/bryan-johnson/x-twitter-bryan-johnson-2026-05-22.md',
     ],
+    sections: {
+      habits: [
+        'Run the measurement loop: bloodwork, wearables, oral/skin/organ metrics, then retest instead of relying on vibes.',
+        'Keep the stable inputs visible first: consistent sleep, training, nutrient-dense meals, oral care, light exposure, and recovery.',
+      ],
+      longterm: [
+        'Treat Blueprint as a repeatable feedback system whose rules can evolve as biomarkers, symptoms, or evidence change.',
+        'Preserve medical-caution framing: this page summarizes Johnson/Blueprint practice, not personal treatment advice.',
+      ],
+      donts: [
+        'Do not present N=1 biomarker movement as proof of clinical outcomes.',
+        'Do not mix experimental drugs, hormones, or supplements into the same confidence tier as sleep, exercise, and food quality.',
+      ],
+    },
     cards: [
       {
         label: 'Measurement loop',
@@ -44,6 +58,20 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/years-biomarkers-limits-2026-04-20.md',
       'raw/articles/bryan-johnson/mdlinx-blueprint-critique-2025-02-15.md',
     ],
+    sections: {
+      habits: [
+        'Prioritize measured healthspan basics: exercise, sleep regularity, nutrition, risk-factor monitoring, and clinician-guided prevention.',
+        'Read biological-age and speed-of-aging numbers as tracked claims with source trails and critique links nearby.',
+      ],
+      longterm: [
+        'Separate durable healthspan practices from frontier enhancement, drug-stack, gene-therapy, and immortality narratives.',
+        'Keep critiques visible so biomarker improvements do not become unsupported longevity promises.',
+      ],
+      donts: [
+        'Do not render “immortality by 2039” as a realistic forecast or medical endpoint.',
+        'Do not collapse Johnson’s ideology, Blueprint marketing, and independent evidence into one confidence level.',
+      ],
+    },
     cards: [
       {
         label: 'Biomarker claims',
@@ -75,6 +103,20 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/x-twitter-bryan-johnson-2026-05-22.md',
       'raw/articles/bryan-johnson/blueprint-home-2026-05-22.md',
     ],
+    sections: {
+      habits: [
+        'Emphasize food quality and repeatability: plant-led meals, legumes/vegetables/healthy fats, earlier eating, and consistent prep.',
+        'Pair product or testing claims with source paths so readers can distinguish Blueprint marketing from independent evidence.',
+      ],
+      longterm: [
+        'Keep nutrition as one input in the measurement loop rather than a standalone promise of rejuvenation.',
+        'Update exact calories, macros, and meal windows only when a current source supports the number.',
+      ],
+      donts: [
+        'Do not publish prototype calorie, macro, supplement-dose, or eating-window numbers as universal targets.',
+        'Do not treat metabolic-drug analogies or microplastics product claims as clinician guidance.',
+      ],
+    },
     cards: [
       {
         label: 'Food pattern',
@@ -106,6 +148,20 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/x-twitter-bryan-johnson-2026-05-22.md#Thu May 21 13:59:33 +0000 2026',
       'raw/articles/bryan-johnson/bryan-johnson-protocol-2026-05-22.md',
     ],
+    sections: {
+      habits: [
+        'Keep bedtime consistency as the central behavior signal, with Johnson’s own “go to bed on time” framing.',
+        'Use front-loading sleep before planned late nights as a source-backed example, not as a universal rule.',
+      ],
+      longterm: [
+        'Frame sleep as a durable foundation feeding the broader biomarker and recovery system.',
+        'Add exact wearable targets only after source verification and keep them in claims/measurement context.',
+      ],
+      donts: [
+        'Do not publish unsourced sleep score, REM, HRV, or wake-event targets.',
+        'Do not imply one nap or one night can fully “repay” circadian disruption.',
+      ],
+    },
     cards: [
       {
         label: 'Consistency',
@@ -125,6 +181,15 @@ export const protocolCategories = [
     ],
   },
 ];
+
+export const protocolSectionsBySlug = {
+  'blueprint-protocol': protocolCategories.find((item) => item.category === 'health')?.sections,
+  'project-blueprint': protocolCategories.find((item) => item.category === 'health')?.sections,
+  'algorithmic-health': protocolCategories.find((item) => item.category === 'health')?.sections,
+  'biomarker-driven-longevity-protocols': protocolCategories.find((item) => item.category === 'longevity')?.sections,
+  'immortality-by-2039': protocolCategories.find((item) => item.category === 'longevity')?.sections,
+  blueprint: protocolCategories.find((item) => item.category === 'nutrition')?.sections,
+};
 
 export const conceptEntries = [
   { title: 'Blueprint Protocol', confidence: 'medium', source: 'concepts/blueprint-protocol.md', summary: 'The measurement-led routine and intervention stack Johnson presents as Blueprint.' },

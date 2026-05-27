@@ -19,6 +19,12 @@ const nutritionPagePath = new URL('../src/pages/nutrition/index.astro', import.m
 const nutritionPageSource = existsSync(nutritionPagePath) ? readFileSync(nutritionPagePath, 'utf8') : '';
 const sleepPagePath = new URL('../src/pages/sleep/index.astro', import.meta.url);
 const sleepPageSource = existsSync(sleepPagePath) ? readFileSync(sleepPagePath, 'utf8') : '';
+const knowledgeShellPath = new URL('../src/components/KnowledgePageShell.astro', import.meta.url);
+const knowledgeShellSource = existsSync(knowledgeShellPath) ? readFileSync(knowledgeShellPath, 'utf8') : '';
+const protocolSectionComponentPath = new URL('../src/components/ProtocolSections.astro', import.meta.url);
+const protocolSectionComponentSource = existsSync(protocolSectionComponentPath) ? readFileSync(protocolSectionComponentPath, 'utf8') : '';
+
+const protocolSectionLabels = ['Habits', 'Longterm', "Don’ts"];
 
 describe('home overview and dedicated changelog route', () => {
   it('keeps update history off the terminal overview and exposes changelog through primary nav', () => {
@@ -154,5 +160,26 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(conceptsPageSource, /Female-specific Blueprint/, 'concepts route should include source-aware concepts without dedicated wiki pages');
     assert.match(nutritionPageSource, /source-aware|not medical advice/i, 'nutrition page should preserve source-aware medical caution');
     assert.match(sleepPageSource, /source-aware|not medical advice/i, 'sleep page should preserve source-aware medical caution');
+  });
+
+  it('renders Habits, Longterm, and Don’ts sections on every protocol surface', () => {
+    assert.ok(existsSync(protocolSectionComponentPath), 'shared protocol section component should exist');
+    for (const label of protocolSectionLabels) {
+      assert.ok(protocolSectionComponentSource.includes(`label: '${label}'`), `component should know ${label}`);
+      assert.ok(indexSource.includes(label), `overview protocol cards should mention ${label}`);
+    }
+
+    for (const [category, pageSource] of [
+      ['health', readFileSync(new URL('../src/pages/health/index.astro', import.meta.url), 'utf8')],
+      ['longevity', readFileSync(new URL('../src/pages/longevity/index.astro', import.meta.url), 'utf8')],
+      ['nutrition', nutritionPageSource],
+      ['sleep', sleepPageSource],
+    ]) {
+      assert.match(protocolsSource, new RegExp(`category:\\s*['"]${category}['"][\\s\\S]*sections:\\s*\\{[\\s\\S]*habits:[\\s\\S]*longterm:[\\s\\S]*donts:`), `${category} protocol should define all required buckets`);
+      assert.match(pageSource, /<ProtocolSections/, `${category} route should render shared protocol section buckets`);
+    }
+
+    assert.match(protocolsSource, /protocolSectionsBySlug/, 'knowledge pages should be able to reuse protocol buckets by slug');
+    assert.match(knowledgeShellSource, /protocolSectionsBySlug/, 'knowledge detail pages should render protocol sections when content is protocol-like');
   });
 });
