@@ -101,6 +101,23 @@ describe('home overview and dedicated changelog route', () => {
     }
   });
 
+  it('renders changelog as exactly two accessible tabs split by protocol versus site updates', () => {
+    const tabInputMatches = changelogSource.match(/class="changelog-tab-input"/g) || [];
+    assert.equal(tabInputMatches.length, 2, 'changelog should expose exactly two primary tab controls');
+    assert.match(changelogSource, /role="tablist"/, 'changelog tabs should expose an accessible tablist');
+    assert.match(changelogSource, /Protocol updates/, 'first tab should label Bryan\/Blueprint protocol changes');
+    assert.match(changelogSource, /Site changelog/, 'second tab should label site\/wiki maintenance changes');
+    assert.match(changelogSource, /const protocolUpdates\s*=/, 'protocol updates should be a dedicated data bucket');
+    assert.match(changelogSource, /const siteChangelog\s*=/, 'site changelog should be a dedicated data bucket');
+    assert.match(changelogSource, /data-tab-panel="protocol-updates"/, 'protocol tab panel should be addressable');
+    assert.match(changelogSource, /data-tab-panel="site-changelog"/, 'site tab panel should be addressable');
+    assert.match(changelogSource, /<ChangelogUpdateList\s+[\s\S]*updates=\{protocolUpdates\}/, 'protocol panel should render only protocol entries');
+    assert.match(changelogSource, /<ChangelogUpdateList\s+[\s\S]*updates=\{siteChangelog\}/, 'site panel should render only site entries');
+    assert.match(styles, /\.changelog-tabs/, 'global styles should include changelog-specific tab layout');
+    assert.match(styles, /#changelog-tab-protocol:checked[\s\S]*data-tab-panel="protocol-updates"/, 'CSS should reveal protocol panel from tab state');
+    assert.match(styles, /#changelog-tab-site:checked[\s\S]*data-tab-panel="site-changelog"/, 'CSS should reveal site panel from tab state');
+  });
+
   it('matches the reference left-sidebar information architecture and order', () => {
     const expectedOrder = [
       "['/', 'overview'",
