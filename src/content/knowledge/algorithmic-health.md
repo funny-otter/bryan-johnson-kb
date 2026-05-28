@@ -4,7 +4,7 @@ slug: algorithmic-health
 type: concept
 sourcePath: concepts/algorithmic-health.md
 created: '2026-05-22'
-updated: '2026-05-22'
+updated: '2026-05-27'
 tags:
   - health
   - protocol
@@ -16,6 +16,7 @@ sources:
   - raw/articles/dont-die-bryan-johnson-2026-05-22.md
   - raw/articles/time-bryan-johnson-longevity-2026.md
   - raw/articles/x-bryan-johnson-recent-posts-2026-05-22.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-05-27.md
 confidence: medium
 summary: >-
   Algorithmic health is the pattern of using measurement systems, scientific
@@ -33,6 +34,8 @@ Algorithmic health is the pattern of using measurement systems, scientific prior
 - **Delegated decision authority:** diet, sleep, exercise, and advanced therapies are selected by protocol rather than desire.
 - **Iterative feedback:** interventions are re-scored and modified as data changes.
 - **Public protocolization:** results are shared as routines, products, apps, leaderboards, and community challenges.
+
+Johnson's May 26, 2026 posts show the same pattern applied to mundane constraints. Sun exposure becomes a skin-aging and vitamin-D-management problem; international travel becomes a glucose, circadian, and sleep-architecture recovery problem; Kate Tolo's female-protocol baseline becomes a reason to avoid international travel during measurement. The dashboard should label the specific travel recovery timelines as Johnson's attributed N=1 claims unless corroborated elsewhere.
 
 ## Why it matters
 

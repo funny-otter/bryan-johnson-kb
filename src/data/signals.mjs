@@ -1,5 +1,53 @@
 export const curatedSignals = [
   {
+    id: 'international-travel-biomarker-cost',
+    title: 'International travel framed as a biomarker and circadian cost',
+    date: '2026-05-26',
+    badge: 'Claim',
+    kind: 'tweet',
+    topic: 'Travel / circadian rhythm',
+    summary:
+      'Johnson argued that long-haul travel disrupted his glucose stability, circadian rhythm, and sleep architecture after a prior Asia trip, then suggested limiting international trips. Treat the recovery timelines as attributed N=1 claims plus cited rationale, not general medical guidance.',
+    href: '/sleep/',
+    tweetId: '2059388354060595238',
+    confidence: 'medium',
+    sources: [
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-05-27.md#Tue May 26 21:36:59 +0000 2026--2059388354060595238',
+    ],
+  },
+  {
+    id: 'sun-aware-skin-aging-claim',
+    title: 'Sun-aware skin-aging thread ties umbrella use to Don’t Die',
+    date: '2026-05-26',
+    badge: 'Health',
+    kind: 'tweet',
+    topic: 'Skin / sun exposure',
+    summary:
+      'Responding to umbrella jokes, Johnson framed sun exposure through skin-aging biomarkers, UVA/UVB damage, vitamin D supplementation, and circadian-light substitutes. Keep it as his protocol posture; sun exposure tradeoffs remain individualized.',
+    href: '/health/',
+    tweetId: '2059296187120050408',
+    confidence: 'medium',
+    sources: [
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-05-27.md#Tue May 26 15:30:45 +0000 2026--2059296187120050408',
+    ],
+  },
+  {
+    id: 'female-protocol-baseline-travel-avoidance',
+    title: 'Kate Tolo baseline requires travel restraint during measurement window',
+    date: '2026-05-26',
+    badge: 'Protocol',
+    kind: 'tweet',
+    topic: 'Female Blueprint',
+    summary:
+      'In the travel thread, Johnson said Kate Tolo would avoid international travel for several months while collecting baseline measurements for the female protocol. This is useful protocol-design context, not public clinical advice.',
+    href: '/health/',
+    tweetId: '2059388354060595238',
+    confidence: 'medium',
+    sources: [
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-05-27.md#Tue May 26 21:36:59 +0000 2026--2059388354060595238',
+    ],
+  },
+  {
     id: 'sleep-front-loading-late-night',
     title: 'Sleep front-loading before a planned late night',
     date: '2026-05-24',
@@ -128,6 +176,12 @@ export const curatedSignals = [
 
 export const watchQueue = [
   {
+    title: 'Travel/circadian claims',
+    summary: 'Watch for whether Johnson publishes the underlying trip biomarker data and distinguishes N=1 recovery timelines from general travel advice.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-05-27.md',
+    href: '/sleep/',
+  },
+  {
     title: 'Enhanced Games follow-up',
     summary: 'Watch for independent reporting/results and whether medical-supervision claims are corroborated beyond Johnson\'s framing.',
     source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-05-25.md',
@@ -154,6 +208,7 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
+  { label: 'Latest daily X capture', value: '5', detail: '5 tweets with engagement · x-twitter-daily-2026-05-27.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
@@ -161,6 +216,7 @@ export const sourceCounts = [
 ];
 
 export const curatedActivity = [
+  { date: '2026-05-26', x_post: 5, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-05-24', x_post: 4, third_party: 0, wiki_update: 1, site_update: 0 },
   { date: '2026-05-23', x_post: 2, third_party: 2, wiki_update: 1, site_update: 1 },
   { date: '2026-05-22', x_post: 3, third_party: 1, wiki_update: 3, site_update: 4 },
