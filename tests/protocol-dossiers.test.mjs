@@ -12,21 +12,29 @@ function read(url) {
 }
 
 describe('protocol terminal dossier pages', () => {
-  it('has a shared ledger-first dossier component instead of per-page hero/card grids', () => {
+  it('uses separate BJ.WATCH habit/objective/forbidden surfaces instead of one mixed bucket ledger', () => {
     assert.ok(existsSync(protocolComponentPath), 'missing shared ProtocolDossier component');
     const source = read(protocolComponentPath);
 
     assert.match(source, /protocol-dossier/, 'component should render the compact dossier shell');
     assert.match(source, /protocol-command/, 'component should include a compact command header');
-    assert.match(source, /protocol-ledger/, 'component should render a table-like protocol ledger');
-    assert.match(source, /protocol-dossier-side/, 'component should render right-side analysis panels');
+    assert.match(source, /class="habit-list"/, 'daily habits should render in the reference habit-list table');
+    assert.match(source, /class="habit-head"/, 'habit list should include the reference habit-head row');
+    assert.match(source, /class="habit"/, 'habit entries should use the reference habit row class');
+    assert.match(source, /class="two"/, 'objectives and forbidden items should sit in the reference two-column grid');
+    assert.match(source, /class="panel objectives-panel"/, 'long-term objectives should render as a dedicated panel');
+    assert.match(source, /class="panel forbidden-panel"/, 'forbidden items should render as a dedicated panel');
+    assert.match(source, /class="obj"/, 'long-term objective rows should use the reference obj class');
+    assert.match(source, /class="dont"/, 'forbidden rows should use the reference dont class');
 
-    for (const label of ['Habits', 'Longterm', 'Don’ts']) {
-      assert.match(source, new RegExp(label), `dossier should expose ${label} as a primary ledger bucket`);
+    for (const label of ['idx', 'time', 'habit']) {
+      assert.match(source, new RegExp(`<span>${label}<\\/span>`), `habit table should include ${label} header`);
     }
-    for (const label of ['BUCKET', 'DIRECTIVE', 'CONFIDENCE', 'SOURCE']) {
-      assert.match(source, new RegExp(`<span>${label}<\\/span>`), `ledger should include ${label} column`);
-    }
+    assert.match(source, /Long-term objectives/, 'dossier should title the objectives panel exactly like the reference');
+    assert.match(source, /Forbidden/, 'dossier should title the forbidden panel exactly like the reference');
+    assert.match(source, /FORBID/, 'forbidden rows should use the compact FORBID label');
+    assert.doesNotMatch(source, /<span>BUCKET<\/span>/, 'protocol pages must not render one combined bucket table');
+    assert.doesNotMatch(source, /ledgerRows/, 'component should not mix HBT/LNG/DNT rows into one ledger collection');
   });
 
   it('canonical protocol routes delegate to the dossier component and avoid the old card wall', () => {
@@ -55,8 +63,13 @@ describe('protocol terminal dossier pages', () => {
       '.protocol-dossier-grid',
       '.protocol-command',
       '.protocol-filter-row',
-      '.protocol-ledger-labels',
-      '.protocol-ledger-row',
+      '.habit-list',
+      '.habit-head',
+      '.habit',
+      '.two',
+      '.panel',
+      '.obj',
+      '.dont',
       '.protocol-dossier-side',
       '.protocol-analysis-panel',
     ]) {

@@ -15,22 +15,32 @@ const { protocol, caution = 'Source-aware summary only; not medical advice. Exac
   caution?: string;
 };
 
-const sectionDefinitions: Array<{ key: SectionKey; label: string; code: string; tone: string; confidence: string }> = [
-  { key: 'habits', label: 'Habits', code: 'HBT', tone: 'protocol', confidence: protocol.confidence || 'medium' },
-  { key: 'longterm', label: 'Longterm', code: 'LNG', tone: 'strategy', confidence: protocol.confidence || 'medium' },
-  { key: 'donts', label: 'Don’ts', code: 'DNT', tone: 'guardrail', confidence: 'caution' },
-];
-
-const ledgerRows = sectionDefinitions.flatMap((definition) => {
-  const items = Array.isArray(protocol.sections?.[definition.key]) ? protocol.sections[definition.key] ?? [] : [];
-  return (items.length ? items : [`No source-backed ${definition.label.toLowerCase()} are published for this protocol yet.`]).map((item, index) => ({
-    ...definition,
-    item,
+const sourceFor = (index: number) => protocol.sourcePaths.length ? protocol.sourcePaths[index % protocol.sourcePaths.length] : 'source pending';
+const sourcedItems = (key: SectionKey, fallback: string) => {
+  const items = Array.isArray(protocol.sections?.[key]) ? protocol.sections[key] ?? [] : [];
+  return (items.length ? items : [fallback]).map((text, index) => ({
+    text,
     index: index + 1,
-    source: protocol.sourcePaths[index % protocol.sourcePaths.length] || 'source pending',
+    source: sourceFor(index),
   }));
+};
+
+const habitRows = sourcedItems('habits', 'No source-backed daily habits are published for this protocol yet.').map((item) => ({
+  ...item,
+  time: item.text.match(/sleep|bedtime|wake/i) ? 'night' : item.text.match(/meal|breakfast|dinner|calorie|food|protein|nutrition/i) ? 'meal' : 'daily',
+}));
+
+const objectiveRows = sourcedItems('longterm', 'No source-backed long-term objectives are published for this protocol yet.').map((item) => {
+  const [rawTarget, ...rest] = item.text.split(/—|:|;/);
+  const target = rawTarget && rawTarget.length <= 34 ? rawTarget.trim() : `target ${String(item.index).padStart(2, '0')}`;
+  return {
+    ...item,
+    target,
+    text: rest.length ? rest.join('—').trim() : item.text,
+  };
 });
 
+const forbiddenRows = sourcedItems('donts', 'No source-backed forbidden items are published for this protocol yet.');
 const sourcePreview = protocol.sourcePaths.slice(0, 5);
 const confidenceMix = [
   { label: 'source-backed', value: protocol.confidence === 'medium' ? 62 : 48 },
@@ -46,39 +56,51 @@ const confidenceMix = [
       <h1 id="protocol-title"><span>▶</span> {protocol.title}</h1>
       <p>{protocol.lede}</p>
     </div>
-    <div class="watch-actions protocol-filter-row" aria-label="Protocol ledger filters">
+    <div class="watch-actions protocol-filter-row" aria-label="Protocol section shortcuts">
       <a class="watch-chip active" href={`/${protocol.category}/`}># all</a>
       <a class="watch-chip" href={`/${protocol.category}/#habits`}># habits</a>
-      <a class="watch-chip" href={`/${protocol.category}/#longterm`}># longterm</a>
-      <a class="watch-chip" href={`/${protocol.category}/#donts`}># don’ts</a>
+      <a class="watch-chip" href={`/${protocol.category}/#longterm`}># objectives</a>
+      <a class="watch-chip" href={`/${protocol.category}/#donts`}># forbidden</a>
     </div>
   </div>
 
   <div class="protocol-dossier-grid">
-    <div class="protocol-ledger" role="table" aria-label={`${protocol.title} ledger`}>
-      <div class="protocol-ledger-labels" role="row">
-        <span>BUCKET</span>
-        <span>DIRECTIVE</span>
-        <span>CONFIDENCE</span>
-        <span>SOURCE</span>
-      </div>
-      {ledgerRows.map((row) => (
-        <div class:list={["protocol-ledger-row", `ledger-${row.key}`]} role="row" id={row.index === 1 ? row.key : undefined}>
-          <div class="protocol-bucket" role="cell">
-            <span class:list={["signal-tag", `tag-${row.tone}`]}>{row.code}</span>
-            <strong>{row.label}</strong>
-            <small>#{String(row.index).padStart(2, '0')}</small>
-          </div>
-          <div class="protocol-directive" role="cell">
-            <strong>{row.item}</strong>
-            <span>{row.key === 'donts' ? 'Guardrail stays adjacent to the claim surface.' : 'Protocol note remains framed as Bryan/Blueprint context.'}</span>
-          </div>
-          <div class="protocol-confidence" role="cell">
-            <span class:list={["confidence", `confidence-${row.confidence === 'caution' ? 'low' : row.confidence}`]}>{row.confidence}</span>
-          </div>
-          <div class="protocol-source" role="cell"><code>{row.source}</code></div>
+    <div class="protocol-primary" aria-label={`${protocol.title} habits and objectives`}>
+      <p class="lead">Daily inputs, long-range targets, and explicit avoidances are separated into the same terminal panels as the BJ.WATCH reference. <em>Source-aware summary only.</em></p>
+
+      <div class="habit-list" id="habits" role="table" aria-label={`${protocol.title} daily habits`}>
+        <div class="habit-head" role="row">
+          <span>idx</span><span>time</span><span>habit</span>
         </div>
-      ))}
+        {habitRows.map((row) => (
+          <div class="habit" role="row">
+            <span class="id" role="cell">{String(row.index).padStart(2, '0')}</span>
+            <span class="h-time" role="cell">{row.time}<span class="h-dose-inline">HBT</span></span>
+            <span class="h-copy" role="cell">
+              <strong class="h-title">{row.text}</strong>
+              <span class="h-why"><code>{row.source}</code></span>
+            </span>
+          </div>
+        ))}
+      </div>
+
+      <div class="two">
+        <div class="panel objectives-panel" id="longterm">
+          <h3>Long-term objectives</h3>
+          {objectiveRows.map((row) => (
+            <div class="obj">
+              <span class="target">{row.target}</span>
+              <span class="text"><strong>{row.text}</strong><small>{row.source}</small></span>
+            </div>
+          ))}
+        </div>
+        <div class="panel forbidden-panel" id="donts">
+          <h3>Forbidden</h3>
+          {forbiddenRows.map((row) => (
+            <div class="dont"><span class="sr-only">FORBID: </span>{row.text}</div>
+          ))}
+        </div>
+      </div>
     </div>
 
     <aside class="protocol-dossier-side" aria-label="Protocol analysis panels">
