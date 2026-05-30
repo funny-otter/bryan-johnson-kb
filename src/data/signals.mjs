@@ -1,5 +1,22 @@
 export const curatedSignals = [
   {
+    id: 'dont-die-app-community-migration',
+    title: "Don’t Die app positioned as X Communities successor",
+    date: '2026-05-29',
+    badge: 'Community',
+    kind: 'tweet',
+    topic: "Don't Die app",
+    summary:
+      "Johnson told followers to move to the Don’t Die app as X Communities shut down, making the app part of the movement’s community-continuity layer. A same-day post predicted broader future access to longevity therapies; treat that as movement framing, not established medical fact.",
+    href: '/knowledge/dont-die/',
+    tweetId: '2060211152286822759',
+    confidence: 'medium',
+    sources: [
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-05-30.md#Fri May 29 04:06:30 +0000 2026--2060211152286822759',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-05-30.md#Fri May 29 23:15:49 +0000 2026--2060500388957266356',
+    ],
+  },
+  {
     id: 'international-travel-biomarker-cost',
     title: 'International travel framed as a biomarker and circadian cost',
     date: '2026-05-26',
@@ -176,6 +193,12 @@ export const curatedSignals = [
 
 export const watchQueue = [
   {
+    title: "Don't Die app migration",
+    summary: 'Watch whether the X Communities shutdown turns the Don’t Die app into the primary community venue, and whether public health-score/community features change as a result.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-05-30.md',
+    href: '/knowledge/dont-die/',
+  },
+  {
     title: 'Travel/circadian claims',
     summary: 'Watch for whether Johnson publishes the underlying trip biomarker data and distinguishes N=1 recovery timelines from general travel advice.',
     source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-05-27.md',
@@ -208,14 +231,15 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '5', detail: '5 tweets with engagement · x-twitter-daily-2026-05-27.md' },
+  { label: 'Latest daily X capture', value: '2', detail: '2 tweets with engagement · x-twitter-daily-2026-05-30.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '22', detail: '12 knowledge pages + 10 update pages before this pass' },
+  { label: 'Public site content', value: '24', detail: '12 knowledge pages + 12 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-05-29', x_post: 2, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-05-26', x_post: 5, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-05-24', x_post: 4, third_party: 0, wiki_update: 1, site_update: 0 },
   { date: '2026-05-23', x_post: 2, third_party: 2, wiki_update: 1, site_update: 1 },
