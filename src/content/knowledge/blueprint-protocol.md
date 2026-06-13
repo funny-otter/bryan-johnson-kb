@@ -4,7 +4,7 @@ slug: blueprint-protocol
 type: concept
 sourcePath: concepts/blueprint-protocol.md
 created: '2026-05-22'
-updated: '2026-05-25'
+updated: '2026-06-13'
 tags:
   - protocol
   - longevity
@@ -20,6 +20,8 @@ sources:
   - raw/articles/bryan-johnson-x-paused-metformin-2025-08-07.md
   - raw/articles/critical-context-bryan-johnson-blueprint-2026-05-22.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-05-25.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-12.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md
 confidence: medium
 contested: true
 summary: >-
@@ -52,6 +54,16 @@ Johnson's April 2026 morning routine is an example implementation: 8:30pm bedtim
 ## Iteration and reversals
 
 The protocol is not static. Johnson's public posts include stopping or pausing interventions when measurements disappoint. A 2025 @bryan_johnson post says he paused metformin after five years because it appeared to build energy capacity while limiting his ability to use much of it.
+
+### Prescription-therapeutics expansion
+
+On June 9, 2026, Johnson announced a prescription medication platform under the Blueprint/Don't Die umbrella, naming Tadalafil/Cialis, Metformin, Oral Minoxidil, Tretinoin, Estradiol, and Acarbose as prescriptions he personally uses and says are dispensed through licensed doctors and pharmacies. This is a meaningful product expansion from routines, supplements, foods, tests, and certified products into clinician-mediated prescription access.
+
+On June 12, he gave one concrete example: daily 5 mg Tadalafil/Cialis, which he framed as blood-flow/longevity support and not just sexual-health treatment. The public claim cites observational associations with lower mortality and cardiovascular/neurological outcomes, but Johnson’s own post caveats that association is not causation and that the information is not medical advice. The dashboard should preserve that distinction: useful evidence of where Blueprint is moving, not a treatment recommendation.
+
+### Jet lag and routine snapshots
+
+The June 2026 batch also included self-reported jet-lag recovery timelines and a caffeine + melatonin recovery protocol Johnson said he was testing, plus a breakfast snapshot centered on vegetables, legumes, mushrooms, herbs, seeds, and olive oil. These are examples of the measurement loop in public: an intervention or routine is narrated, tied to biomarkers or recovery, then folded back into the protocol story.
 
 Critical context: changes are hard to interpret because dozens of variables move at once. In conventional evidence hierarchy, this is hypothesis-generating self-experimentation, not proof of general efficacy.
 

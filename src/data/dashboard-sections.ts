@@ -71,6 +71,24 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-06-12',
+    label: 'Daily Tadalafil framed as a longevity claim',
+    summary: 'Johnson described daily 5 mg Tadalafil/Cialis as a blood-flow/longevity intervention while caveating that the cited data are observational and not medical advice.',
+    relatedHref: '/knowledge/biomarker-driven-longevity-protocols/',
+    relatedTitle: 'Biomarker-driven longevity protocols',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md',
+    confidence: 'medium',
+  },
+  {
+    date: '2026-06-09',
+    label: 'Longevity Rx platform announced',
+    summary: 'Johnson said Blueprint/Don’t Die was adding prescription access for drugs he personally uses, moving the public protocol deeper into clinician-mediated therapeutics.',
+    relatedHref: '/knowledge/blueprint-protocol/',
+    relatedTitle: 'Blueprint Protocol',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-12.md',
+    confidence: 'medium',
+  },
+  {
     date: '2007',
     label: 'Braintree founded',
     summary: 'Johnson founded Braintree after identifying an opportunity in developer-friendly payment processing.',

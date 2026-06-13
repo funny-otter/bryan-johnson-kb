@@ -11,6 +11,8 @@ export const protocolCategories = [
       'concepts/algorithmic-health.md',
       'raw/articles/bryan-johnson/bryan-johnson-protocol-2026-05-22.md',
       'raw/articles/bryan-johnson/x-twitter-bryan-johnson-2026-05-22.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-12.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md',
     ],
     sections: {
       habits: [
@@ -19,6 +21,7 @@ export const protocolCategories = [
       ],
       longterm: [
         'Treat Blueprint as a repeatable feedback system whose rules can evolve as biomarkers, symptoms, or evidence change.',
+        'Track the June 2026 prescription-therapeutics expansion separately from foundational habits; it is a commercial/protocol claim that requires clinician oversight.',
         'Preserve medical-caution framing: this page summarizes Johnson/Blueprint practice, not personal treatment advice.',
       ],
       donts: [
@@ -42,6 +45,11 @@ export const protocolCategories = [
         title: 'Experimental interventions stay separated',
         body: 'Hormonal, drug, or supplement experiments belong behind caution labels unless backed by independent clinical evidence for the specific claim.',
       },
+      {
+        label: 'Rx expansion',
+        title: 'Prescription access is now part of the Blueprint story',
+        body: 'The June 2026 Longevity Rx announcement is product-positioning and protocol evidence, not a public recommendation to use Metformin, Tadalafil, hormones, or other drugs.',
+      },
     ],
   },
   {
@@ -57,6 +65,7 @@ export const protocolCategories = [
       'raw/articles/blueprint-immortal-by-2039-2026-01-30.md',
       'raw/articles/bryan-johnson/years-biomarkers-limits-2026-04-20.md',
       'raw/articles/bryan-johnson/mdlinx-blueprint-critique-2025-02-15.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md',
     ],
     sections: {
       habits: [
@@ -65,6 +74,7 @@ export const protocolCategories = [
       ],
       longterm: [
         'Separate durable healthspan practices from frontier enhancement, drug-stack, gene-therapy, and immortality narratives.',
+        'Classify daily Tadalafil/Cialis and similar drug claims as hypothesis-generating prescription-intervention claims unless independent clinical evidence supports the exact longevity use case.',
         'Keep critiques visible so biomarker improvements do not become unsupported longevity promises.',
       ],
       donts: [
@@ -82,6 +92,11 @@ export const protocolCategories = [
         label: 'Evidence tiers',
         title: 'Separate basics from frontier experiments',
         body: 'Exercise, sleep, nutrition, and risk-factor management have a different evidence profile than gene therapies, aggressive drug stacks, or enhancement competition claims.',
+      },
+      {
+        label: 'Prescription claims',
+        title: 'Tadalafil/Cialis claims require observational-data caveats',
+        body: 'Johnson frames daily 5 mg Tadalafil as blood-flow/longevity support, but his own caveat says observational associations are not causation and the post is not medical advice.',
       },
       {
         label: 'Aspirational ideology',
@@ -102,6 +117,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/bryan-johnson-protocol-2026-05-22.md',
       'raw/articles/bryan-johnson/x-twitter-bryan-johnson-2026-05-22.md',
       'raw/articles/bryan-johnson/blueprint-home-2026-05-22.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md',
     ],
     sections: {
       habits: [
@@ -121,7 +137,7 @@ export const protocolCategories = [
       {
         label: 'Food pattern',
         title: 'Nutrient-dense, plant-led Blueprint meals',
-        body: 'The wiki supports a general food-quality/eating-timing summary. Do not copy prototype calorie, macro, or eating-window numbers unless a source verifies them.',
+        body: 'Recent source-backed examples include vegetables, legumes, mushrooms, herbs, seeds, and olive oil. Keep this as a pattern summary; do not turn one breakfast post into universal meal advice.',
       },
       {
         label: 'Microplastics',

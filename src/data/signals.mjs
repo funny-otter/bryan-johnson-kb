@@ -1,5 +1,35 @@
 export const curatedSignals = [
   {
+    id: 'tadalafil-longevity-claim-caveated',
+    title: 'Daily Tadalafil/Cialis framed as a longevity intervention',
+    date: '2026-06-12',
+    badge: 'Rx claim',
+    kind: 'tweet',
+    topic: 'Prescription therapeutics',
+    summary:
+      'Johnson said he takes 5 mg Tadalafil daily and framed it as blood-flow/longevity support, while explicitly caveating that the cited outcome data are observational associations, not causation or medical advice. Keep it in the prescription-claim bucket.',
+    href: '/longevity/',
+    tweetId: '2065535163749294136',
+    confidence: 'medium',
+    sources: [
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md#Tweet-2065535163749294136',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md#Tweet-2065535295207133203',
+    ],
+  },
+  {
+    id: 'longevity-rx-platform-launch',
+    title: 'Blueprint/Don’t Die adds a prescription-therapeutics layer',
+    date: '2026-06-09',
+    badge: 'Platform',
+    kind: 'tweet',
+    topic: 'Longevity Rx',
+    summary:
+      'Johnson announced medicine.immortals.com with prescriptions he says he personally uses, including Tadalafil, Metformin, Oral Minoxidil, Tretinoin, Estradiol, and Acarbose, via licensed doctors and pharmacies. This is a major commercial/protocol shift, not a clinical endorsement.',
+    href: '/health/',
+    confidence: 'medium',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-06-12.md'],
+  },
+  {
     id: 'dont-die-app-community-migration',
     title: "Don’t Die app positioned as X Communities successor",
     date: '2026-05-29',
@@ -193,6 +223,18 @@ export const curatedSignals = [
 
 export const watchQueue = [
   {
+    title: 'Longevity Rx evidence and regulation',
+    summary: 'Watch for public prescribing criteria, physician/pharmacy details, adverse-event disclosures, and independent evidence for each drug’s claimed longevity use.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-12.md',
+    href: '/health/',
+  },
+  {
+    title: 'Tadalafil/Cialis claim follow-up',
+    summary: 'Watch whether Johnson or Blueprint links full studies, distinguishes population associations from outcomes trials, and clarifies sex-specific evidence limits.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md',
+    href: '/longevity/',
+  },
+  {
     title: "Don't Die app migration",
     summary: 'Watch whether the X Communities shutdown turns the Don’t Die app into the primary community venue, and whether public health-score/community features change as a result.',
     source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-05-30.md',
@@ -231,14 +273,17 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '2', detail: '2 tweets with engagement · x-twitter-daily-2026-05-30.md' },
+  { label: 'Latest daily X capture', value: '3', detail: '3 tweets with engagement · x-twitter-daily-2026-06-13.md' },
+  { label: 'Previous June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '24', detail: '12 knowledge pages + 12 update pages after this pass' },
+  { label: 'Public site content', value: '25', detail: '12 knowledge pages + 13 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-06-13', x_post: 3, third_party: 0, wiki_update: 1, site_update: 1 },
+  { date: '2026-06-12', x_post: 18, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-05-29', x_post: 2, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-05-26', x_post: 5, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-05-24', x_post: 4, third_party: 0, wiki_update: 1, site_update: 0 },

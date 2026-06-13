@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-05-25'
+updated: '2026-06-13'
 tags:
   - person
   - company
@@ -22,6 +22,8 @@ sources:
   - raw/articles/bryan-johnson/uchicago-bryan-johnson-profile-2018.md
   - raw/articles/bryan-johnson/x-twitter-bryan-johnson-2026-05-22.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-05-25.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-12.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md
 confidence: medium
 summary: >-
   Bryan Johnson is an American entrepreneur who moved from payments and
@@ -51,6 +53,10 @@ Johnson claims to be among the most biologically measured people, and his protoc
 On X/Twitter in May 2026, Johnson's messaging emphasized sleep, resting heart rate before bed, biomarkers-in-context, sauna experiments, peptide experiments, certified products, and scaling a “female Bryan Johnson” / female-specific protocol via Kate Tolo. This shows that the public project is no longer just a static protocol; it is a daily media feed of experiments, product launches, health claims, and “Don't Die” norm-setting. 
 
 On May 23–24, 2026, Johnson also used X/Twitter to frame his Enhanced Games commentary role as “Human Enhancement Expert”: he highlighted athlete measurement, claimed medical supervision and optional enhancement, and tied performance-enhancing protocols to the same measurement-first posture that runs through [biomarker driven longevity protocols](/knowledge/biomarker-driven-longevity-protocols/). The posts are useful evidence for his public positioning, but not independent validation of Enhanced Games safety or efficacy.
+
+In June 2026, Johnson’s feed added two durable dashboard themes. First, he announced a prescription-therapeutics layer at `medicine.immortals.com`, describing Tadalafil/Cialis, Metformin, Oral Minoxidil, Tretinoin, Estradiol, and Acarbose as prescriptions he personally uses via licensed doctors and pharmacies. Second, he highlighted daily 5 mg Tadalafil/Cialis as a blood-flow/longevity intervention while explicitly caveating that the cited outcome data are observational associations, not proof of causation or medical advice. Treat both as Johnson/Blueprint commercial and protocol claims, not clinical recommendations.
+
+The same June batch continued everyday protocol storytelling: quantified jet-lag recovery claims, sleep-as-recovery messaging, and a vegetable/legume-heavy breakfast example. Those posts are useful for showing how Blueprint blends measurement, routine snapshots, and product expansion, but they should stay in the claim/context lane rather than being rendered as personal health instructions.
 
 ## Reading stance
 
