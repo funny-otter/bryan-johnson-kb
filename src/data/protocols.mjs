@@ -13,6 +13,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/x-twitter-bryan-johnson-2026-05-22.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-12.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md',
     ],
     sections: {
       habits: [
@@ -21,6 +22,7 @@ export const protocolCategories = [
       ],
       longterm: [
         'Treat Blueprint as a repeatable feedback system whose rules can evolve as biomarkers, symptoms, or evidence change.',
+        'Treat the June 2026 sauna/HSP27 thread as a protocol-design case study: Johnson shifted the dose question from minutes in the sauna to measured core temperature and biomarker response.',
         'Track the June 2026 prescription-therapeutics expansion separately from foundational habits; it is a commercial/protocol claim that requires clinician oversight.',
         'Preserve medical-caution framing: this page summarizes Johnson/Blueprint practice, not personal treatment advice.',
       ],
@@ -46,6 +48,11 @@ export const protocolCategories = [
         body: 'Hormonal, drug, or supplement experiments belong behind caution labels unless backed by independent clinical evidence for the specific claim.',
       },
       {
+        label: 'Sauna dose test',
+        title: 'Heat exposure is now framed as measured core-temperature dose',
+        body: 'Johnson claims his HSP27 response appeared only after roughly 15 minutes above 102.2°F / 39°C core temperature. Keep this as N=1 protocol documentation with heat-safety caution, not generic sauna advice.',
+      },
+      {
         label: 'Rx expansion',
         title: 'Prescription access is now part of the Blueprint story',
         body: 'The June 2026 Longevity Rx announcement is product-positioning and protocol evidence, not a public recommendation to use Metformin, Tadalafil, hormones, or other drugs.',
@@ -66,6 +73,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/years-biomarkers-limits-2026-04-20.md',
       'raw/articles/bryan-johnson/mdlinx-blueprint-critique-2025-02-15.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md',
     ],
     sections: {
       habits: [
@@ -75,6 +83,7 @@ export const protocolCategories = [
       longterm: [
         'Separate durable healthspan practices from frontier enhancement, drug-stack, gene-therapy, and immortality narratives.',
         'Classify daily Tadalafil/Cialis and similar drug claims as hypothesis-generating prescription-intervention claims unless independent clinical evidence supports the exact longevity use case.',
+        'Classify sauna/HSP27 claims as mechanistic biomarker self-experimentation unless replicated and tied to clinically meaningful outcomes.',
         'Keep critiques visible so biomarker improvements do not become unsupported longevity promises.',
       ],
       donts: [
@@ -97,6 +106,11 @@ export const protocolCategories = [
         label: 'Prescription claims',
         title: 'Tadalafil/Cialis claims require observational-data caveats',
         body: 'Johnson frames daily 5 mg Tadalafil as blood-flow/longevity support, but his own caveat says observational associations are not causation and the post is not medical advice.',
+      },
+      {
+        label: 'Heat-dose biomarkers',
+        title: 'Sauna claims illustrate the biomarker-vs-outcome gap',
+        body: 'The June 2026 sauna thread is useful because it isolates dose tracking more clearly than many Blueprint posts, but HSP27 movement still does not prove longer healthspan for readers.',
       },
       {
         label: 'Aspirational ideology',
@@ -210,6 +224,7 @@ export const protocolSectionsBySlug = {
 export const conceptEntries = [
   { title: 'Blueprint Protocol', confidence: 'medium', source: 'concepts/blueprint-protocol.md', summary: 'The measurement-led routine and intervention stack Johnson presents as Blueprint.' },
   { title: 'Biomarker-driven longevity protocols', confidence: 'medium', source: 'concepts/biomarker-driven-longevity-protocols.md', summary: 'The feedback-loop idea that biomarkers guide protocol changes, with caveats about outcomes.' },
+  { title: 'Sauna heat-dose / HSP27 self-experiment', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md', summary: 'A June 2026 N=1 test using ingestible temperature tracking and blood biomarkers; useful as protocol design, not medical advice.' },
   { title: 'Algorithmic Health', confidence: 'medium', source: 'concepts/algorithmic-health.md', summary: 'Delegating health decisions to measurement, rules, and repeatable systems.' },
   { title: "Don't Die", confidence: 'medium', source: 'concepts/dont-die.md', summary: 'Johnson’s anti-death ideology and movement framing.' },
   { title: 'Immortality by 2039', confidence: 'low', source: 'concepts/immortality-by-2039.md', summary: 'An aspirational longevity claim that should stay clearly low-confidence.' },

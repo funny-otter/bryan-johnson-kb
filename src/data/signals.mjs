@@ -1,5 +1,22 @@
 export const curatedSignals = [
   {
+    id: 'sauna-hsp27-core-temperature-test',
+    title: 'Sauna/HSP27 thread reframes heat dose around core temperature',
+    date: '2026-06-16',
+    badge: 'N=1 test',
+    kind: 'tweet',
+    topic: 'Sauna / biomarkers',
+    summary:
+      'Johnson described a three-session dry-sauna self-experiment using an ingestible core-temperature capsule, repeated blood draws, and specialty biomarkers. He claims HSP27 rose only when his core temperature stayed above 102.2°F / 39°C for roughly 15 minutes; treat this as a high-signal Blueprint measurement example, not medical advice.',
+    href: '/health/',
+    tweetId: '2066916926325207228',
+    confidence: 'medium',
+    sources: [
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md#Tweet-2066916926325207228',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md#Tweet-2066963125874856055',
+    ],
+  },
+  {
     id: 'tadalafil-longevity-claim-caveated',
     title: 'Daily Tadalafil/Cialis framed as a longevity intervention',
     date: '2026-06-12',
@@ -223,6 +240,12 @@ export const curatedSignals = [
 
 export const watchQueue = [
   {
+    title: 'Sauna/HSP27 replication and safety context',
+    summary: 'Watch whether Johnson publishes the underlying biomarker panels, repeats the threshold finding, distinguishes HSP27 movement from clinical outcomes, and adds safety guidance for heat exposure risk.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md',
+    href: '/health/',
+  },
+  {
     title: 'Longevity Rx evidence and regulation',
     summary: 'Watch for public prescribing criteria, physician/pharmacy details, adverse-event disclosures, and independent evidence for each drug’s claimed longevity use.',
     source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-12.md',
@@ -273,15 +296,17 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '3', detail: '3 tweets with engagement · x-twitter-daily-2026-06-13.md' },
-  { label: 'Previous June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
+  { label: 'Latest daily X capture', value: '3', detail: '3 tweets with engagement · x-twitter-daily-2026-06-17.md' },
+  { label: 'Previous daily X capture', value: '3', detail: '3 tweets with engagement · x-twitter-daily-2026-06-13.md' },
+  { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '25', detail: '12 knowledge pages + 13 update pages after this pass' },
+  { label: 'Public site content', value: '26', detail: '12 knowledge pages + 14 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-06-17', x_post: 3, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-06-13', x_post: 3, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-06-12', x_post: 18, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-05-29', x_post: 2, third_party: 0, wiki_update: 1, site_update: 1 },

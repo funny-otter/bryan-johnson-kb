@@ -4,7 +4,7 @@ slug: biomarker-driven-longevity-protocols
 type: concept
 sourcePath: concepts/biomarker-driven-longevity-protocols.md
 created: '2026-05-22'
-updated: '2026-06-13'
+updated: '2026-06-17'
 tags:
   - longevity
   - biomarkers
@@ -21,6 +21,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-bryan-johnson-2026-05-22.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-05-25.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md
 confidence: medium
 summary: >-
   A biomarker-driven longevity protocol is a health system that treats the body
@@ -55,6 +56,8 @@ The strongest version of the idea is not “take Bryan Johnson's supplements.”
 MDLinx takes a clinician-facing view: some pieces (sleep, exercise, selected monitoring) are plausible or supported, but the extreme regimen — 100+ pills, extensive testing, transfusions/experimental interventions, and intensive routine control — is not generally feasible and may not be necessary. YEARS emphasizes N=1, confounding, surrogate endpoints, and the Hawthorne effect from being intensely monitored.
 
 The June 2026 Tadalafil/Cialis posts are a useful example of how Johnson's protocol mixes biomarkers, prescriptions, epidemiological associations, and public caveats. He frames daily 5 mg Tadalafil as a blood-flow/longevity intervention and names mortality/cardiovascular/dementia associations, while acknowledging observational data cannot prove causation and that evidence in women is thinner. For evaluation, this belongs in the “prescription/intervention claim” bucket: potentially measurable and potentially medically supervised, but hypothesis-generating rather than independent proof of longevity benefit.  
+
+The June 16, 2026 sauna/HSP27 thread is a clearer example of biomarker-driven protocol design. Johnson used continuous ingestible core-temperature tracking and repeated blood draws to ask whether dry-sauna dose is better represented by minutes in the sauna or by time spent above a core-temperature threshold. The dashboard takeaway is the experimental structure, not the exact heat prescription: HSP27 movement is a mechanistic biomarker claim and does not establish clinical outcome benefit for readers.
 
 ## Practical evaluation checklist
 

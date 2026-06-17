@@ -71,6 +71,15 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-06-16',
+    label: 'Sauna/HSP27 heat-dose self-experiment posted',
+    summary: 'Johnson claimed his HSP27 response tracked core-temperature dose, using an ingestible sensor and blood draws to compare time above 102.2°F / 39°C in a dry sauna.',
+    relatedHref: '/knowledge/blueprint-protocol/',
+    relatedTitle: 'Blueprint Protocol',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md',
+    confidence: 'medium',
+  },
+  {
     date: '2026-06-12',
     label: 'Daily Tadalafil framed as a longevity claim',
     summary: 'Johnson described daily 5 mg Tadalafil/Cialis as a blood-flow/longevity intervention while caveating that the cited data are observational and not medical advice.',

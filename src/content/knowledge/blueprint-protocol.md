@@ -4,7 +4,7 @@ slug: blueprint-protocol
 type: concept
 sourcePath: concepts/blueprint-protocol.md
 created: '2026-05-22'
-updated: '2026-06-13'
+updated: '2026-06-17'
 tags:
   - protocol
   - longevity
@@ -22,6 +22,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-05-25.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-12.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md
 confidence: medium
 contested: true
 summary: >-
@@ -64,6 +65,12 @@ On June 12, he gave one concrete example: daily 5 mg Tadalafil/Cialis, which he 
 ### Jet lag and routine snapshots
 
 The June 2026 batch also included self-reported jet-lag recovery timelines and a caffeine + melatonin recovery protocol Johnson said he was testing, plus a breakfast snapshot centered on vegetables, legumes, mushrooms, herbs, seeds, and olive oil. These are examples of the measurement loop in public: an intervention or routine is narrated, tied to biomarkers or recovery, then folded back into the protocol story.
+
+### Sauna heat-dose / HSP27 testing
+
+On June 16, 2026, Johnson posted a three-session dry-sauna experiment using an ingestible temperature capsule with 30-second core-temperature readings, repeated blood draws, and specialty biomarkers. His stated question was whether sauna benefit depends on elapsed time or on body-temperature dose. Johnson claims HSP27 increased only in sessions where his core temperature stayed above 102.2°F / 39°C for roughly 15 minutes, while a shorter time above that threshold did not produce the same response.
+
+This is useful for the dashboard because it shows Blueprint's protocol-iteration style: define a measurable mechanism, track delivered dose inside the body, compare response, then revise the practical rule. It should not be rendered as a public sauna prescription. Extreme heat exposure can be risky, and Johnson's thread remains N=1 biomarker evidence rather than independent proof of clinical longevity benefit.
 
 Critical context: changes are hard to interpret because dozens of variables move at once. In conventional evidence hierarchy, this is hypothesis-generating self-experimentation, not proof of general efficacy.
 
