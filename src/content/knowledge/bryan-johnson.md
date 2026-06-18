@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-06-13'
+updated: '2026-06-18'
 tags:
   - person
   - company
@@ -24,6 +24,8 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-05-25.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-12.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-18.md
 confidence: medium
 summary: >-
   Bryan Johnson is an American entrepreneur who moved from payments and
@@ -57,6 +59,8 @@ On May 23–24, 2026, Johnson also used X/Twitter to frame his Enhanced Games co
 In June 2026, Johnson’s feed added two durable dashboard themes. First, he announced a prescription-therapeutics layer at `medicine.immortals.com`, describing Tadalafil/Cialis, Metformin, Oral Minoxidil, Tretinoin, Estradiol, and Acarbose as prescriptions he personally uses via licensed doctors and pharmacies. Second, he highlighted daily 5 mg Tadalafil/Cialis as a blood-flow/longevity intervention while explicitly caveating that the cited outcome data are observational associations, not proof of causation or medical advice. Treat both as Johnson/Blueprint commercial and protocol claims, not clinical recommendations.
 
 The same June batch continued everyday protocol storytelling: quantified jet-lag recovery claims, sleep-as-recovery messaging, and a vegetable/legume-heavy breakfast example. Those posts are useful for showing how Blueprint blends measurement, routine snapshots, and product expansion, but they should stay in the claim/context lane rather than being rendered as personal health instructions.
+
+On June 16–17, Johnson added a tighter methodological arc: a sauna/HSP27 self-experiment using ingestible core-temperature tracking, repeated blood draws, and a later heart-rate trace; then a Nature-feature thread with a formal Blueprint/Immortals essay arguing that RCTs are necessary but not sufficient for individualized longevity optimization. The public-site stance is to surface the measurement method and mainstream-attention signal while preserving Johnson's own caveat that the listed first-in-human biological observations need further validation.
 
 ## Reading stance
 

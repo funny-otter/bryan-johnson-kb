@@ -4,7 +4,7 @@ slug: biomarker-driven-longevity-protocols
 type: concept
 sourcePath: concepts/biomarker-driven-longevity-protocols.md
 created: '2026-05-22'
-updated: '2026-06-17'
+updated: '2026-06-18'
 tags:
   - longevity
   - biomarkers
@@ -22,6 +22,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-05-25.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-18.md
 confidence: medium
 summary: >-
   A biomarker-driven longevity protocol is a health system that treats the body
@@ -58,6 +59,8 @@ MDLinx takes a clinician-facing view: some pieces (sleep, exercise, selected mon
 The June 2026 Tadalafil/Cialis posts are a useful example of how Johnson's protocol mixes biomarkers, prescriptions, epidemiological associations, and public caveats. He frames daily 5 mg Tadalafil as a blood-flow/longevity intervention and names mortality/cardiovascular/dementia associations, while acknowledging observational data cannot prove causation and that evidence in women is thinner. For evaluation, this belongs in the “prescription/intervention claim” bucket: potentially measurable and potentially medically supervised, but hypothesis-generating rather than independent proof of longevity benefit.  
 
 The June 16, 2026 sauna/HSP27 thread is a clearer example of biomarker-driven protocol design. Johnson used continuous ingestible core-temperature tracking and repeated blood draws to ask whether dry-sauna dose is better represented by minutes in the sauna or by time spent above a core-temperature threshold. The dashboard takeaway is the experimental structure, not the exact heat prescription: HSP27 movement is a mechanistic biomarker claim and does not establish clinical outcome benefit for readers.
+
+On June 17, 2026, Johnson made the methodology argument more explicit while discussing a Nature feature: with the Blueprint & Immortals Medical and Science Team, he argued that randomized controlled trials remain necessary for average-effect and safety questions but are not sufficient for optimizing individualized stacks of interventions. The essay frames N-of-1 measurement as a complement to RCTs, enabled by AI, wearables, multi-omics, real-time tracking, and nearest-neighbor mapping against deeply instrumented people. The caution is equally important: its examples — heat-shock-protein response, sauna-related plasticizer clearance, fertility markers, microplastics reduction, and a psilocybin metabolic signal — are presented as first-in-human observations needing validation, not as proven therapies.
 
 ## Practical evaluation checklist
 

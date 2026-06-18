@@ -71,6 +71,24 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-06-17',
+    label: 'Nature feature and N-of-1 methodology essay',
+    summary: 'Johnson used a Nature feature to publish a formal Blueprint/Immortals argument that RCTs remain necessary but are not sufficient for individualized longevity optimization; the listed biological signals are explicitly unvalidated N=1 observations.',
+    relatedHref: '/knowledge/biomarker-driven-longevity-protocols/',
+    relatedTitle: 'Biomarker-driven longevity protocols',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-18.md',
+    confidence: 'medium',
+  },
+  {
+    date: '2026-06-17',
+    label: 'Immortals brand positioned as “radical” culture strategy',
+    summary: 'Johnson publicly named Immortals and framed “radical” as an entry point for priming culture toward the Don’t Die value system, extending the project from protocol into explicit brand/culture strategy.',
+    relatedHref: '/knowledge/dont-die/',
+    relatedTitle: "Don't Die",
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-18.md',
+    confidence: 'medium',
+  },
+  {
     date: '2026-06-16',
     label: 'Sauna/HSP27 heat-dose self-experiment posted',
     summary: 'Johnson claimed his HSP27 response tracked core-temperature dose, using an ingestible sensor and blood draws to compare time above 102.2°F / 39°C in a dry sauna.',

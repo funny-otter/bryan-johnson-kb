@@ -4,7 +4,7 @@ slug: dont-die
 type: concept
 sourcePath: concepts/dont-die.md
 created: '2026-05-22'
-updated: '2026-05-30'
+updated: '2026-06-18'
 tags:
   - longevity
   - biohacking
@@ -18,6 +18,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-bryan-johnson-2026-05-22.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-05-27.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-05-30.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-18.md
 confidence: medium
 summary: >-
   Don't Die is bryan-johnson's community slogan, longevity philosophy, and
@@ -39,6 +40,8 @@ The slogan also reaches beyond health. Johnson's X/Twitter messaging in May 2026
 On May 26, 2026, Johnson used Don't Die as an umbrella for ordinary tradeoffs: GLP-1-era market commentary, umbrella/sun avoidance, vitamin D supplementation, and international-travel restraint. That makes the concept read less like a single protocol and more like a lifestyle filter applied to skin, sleep, travel, commerce, and identity. These are Johnson-attributed claims and should not be treated as personal medical advice.
 
 On May 29, 2026, Johnson told followers that X Communities was shutting down and directed them to the Don't Die app. The update makes the app look like community-continuity infrastructure for the movement, not just a companion product. A same-day post also claimed that longevity therapies associated with wealthy people may eventually become more broadly accessible; keep that as Johnson's prediction/framing rather than an established medical or market fact.
+
+On June 17, 2026, Johnson publicly named Immortals as the company behind the newer medical layer and described “radical” as a deliberate conversation entry point. The point was cultural priming: make ideas that once sounded bizarre or dangerous legible as steps toward valuing life and collective survival. For the dashboard, this belongs in the movement/brand lane rather than the health-advice lane.
 
 ## Practical components
 

@@ -4,7 +4,7 @@ slug: blueprint-protocol
 type: concept
 sourcePath: concepts/blueprint-protocol.md
 created: '2026-05-22'
-updated: '2026-06-17'
+updated: '2026-06-18'
 tags:
   - protocol
   - longevity
@@ -23,6 +23,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-12.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-18.md
 confidence: medium
 contested: true
 summary: >-
@@ -71,6 +72,12 @@ The June 2026 batch also included self-reported jet-lag recovery timelines and a
 On June 16, 2026, Johnson posted a three-session dry-sauna experiment using an ingestible temperature capsule with 30-second core-temperature readings, repeated blood draws, and specialty biomarkers. His stated question was whether sauna benefit depends on elapsed time or on body-temperature dose. Johnson claims HSP27 increased only in sessions where his core temperature stayed above 102.2°F / 39°C for roughly 15 minutes, while a shorter time above that threshold did not produce the same response.
 
 This is useful for the dashboard because it shows Blueprint's protocol-iteration style: define a measurable mechanism, track delivered dose inside the body, compare response, then revise the practical rule. It should not be rendered as a public sauna prescription. Extreme heat exposure can be risky, and Johnson's thread remains N=1 biomarker evidence rather than independent proof of clinical longevity benefit.
+
+A June 17 follow-up added a heart-rate trace from the same 56-minute 200°F / 93°C session, with Johnson reporting a 128–133 bpm peak and a spike when changing ice on his face, neck, and groin. The extra datapoint is dashboard-useful mainly because it shows how Blueprint experiments now publish physiological traces alongside biomarker claims; it does not change the N=1 status or safety caveats.
+
+### N-of-1 methodology essay (June 2026)
+
+The same daily batch included Johnson's most formal public defense of Blueprint's method to date, prompted by a Nature feature. With the Blueprint & Immortals Medical and Science Team, he argued that RCTs remain the gold standard for population average effects and safety, but are structurally limited for tuning individualized intervention combinations over time. For the public KB, this is best treated as a methodology update: it clarifies why Blueprint keeps emphasizing dense personal measurement, while also making the evidence boundary explicit because the essay's examples are still observations needing validation.
 
 Critical context: changes are hard to interpret because dozens of variables move at once. In conventional evidence hierarchy, this is hypothesis-generating self-experimentation, not proof of general efficacy.
 
