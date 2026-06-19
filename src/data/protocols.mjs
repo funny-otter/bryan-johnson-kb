@@ -14,6 +14,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-12.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md',
     ],
     sections: {
       habits: [
@@ -23,6 +24,7 @@ export const protocolCategories = [
       longterm: [
         'Treat Blueprint as a repeatable feedback system whose rules can evolve as biomarkers, symptoms, or evidence change.',
         'Treat the June 2026 sauna/HSP27 thread as a protocol-design case study: Johnson shifted the dose question from minutes in the sauna to measured core temperature and biomarker response.',
+        'Track the June 2026 jet-lag follow-up as a self-reported caffeine + melatonin test using blood glucose as a body-clock readout, not as general travel medical advice.',
         'Track the June 2026 prescription-therapeutics expansion separately from foundational habits; it is a commercial/protocol claim that requires clinician oversight.',
         'Preserve medical-caution framing: this page summarizes Johnson/Blueprint practice, not personal treatment advice.',
       ],
@@ -56,6 +58,11 @@ export const protocolCategories = [
         label: 'Rx expansion',
         title: 'Prescription access is now part of the Blueprint story',
         body: 'The June 2026 Longevity Rx announcement is product-positioning and protocol evidence, not a public recommendation to use Metformin, Tadalafil, hormones, or other drugs.',
+      },
+      {
+        label: 'Jet lag N=1',
+        title: 'Caffeine + melatonin follow-up stays anecdotal',
+        body: 'Johnson reports 300 mg caffeine in the morning plus 3 mg melatonin before bed accelerated his post-Australia resynchronization, observed via glucose. Present this as N=1 protocol logging, not dosing advice.',
       },
     ],
   },
@@ -132,11 +139,13 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/x-twitter-bryan-johnson-2026-05-22.md',
       'raw/articles/bryan-johnson/blueprint-home-2026-05-22.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md',
     ],
     sections: {
       habits: [
         'Emphasize food quality and repeatability: plant-led meals, legumes/vegetables/healthy fats, earlier eating, and consistent prep.',
         'Pair product or testing claims with source paths so readers can distinguish Blueprint marketing from independent evidence.',
+        'Treat the Akkermansia + butyrate product as supplement/product positioning until product-specific outcome evidence is available.',
       ],
       longterm: [
         'Keep nutrition as one input in the measurement loop rather than a standalone promise of rejuvenation.',
@@ -159,6 +168,11 @@ export const protocolCategories = [
         body: 'Microplastics material is useful as a signal, but the N=1 reduction claim should be framed as Johnson’s report and not as proven intervention efficacy.',
       },
       {
+        label: 'Microbiome product',
+        title: 'Akkermansia + butyrate claims need evidence separation',
+        body: 'The June 2026 Blueprint supplement pairs Akkermansia muciniphila with butyrate triglycerides. Keep mechanism claims, product marketing, and independently validated outcomes in separate buckets.',
+      },
+      {
         label: 'Metabolic drugs',
         title: 'Retatrutide commentary is a claim/explainer',
         body: 'Drug analogies from tweets belong in the claims bucket and should explicitly remind readers to use clinician guidance for medications.',
@@ -177,6 +191,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/x-twitter-bryan-johnson-2026-05-22.md#Tue May 19 13:51:22 +0000 2026',
       'raw/articles/bryan-johnson/x-twitter-bryan-johnson-2026-05-22.md#Thu May 21 13:59:33 +0000 2026',
       'raw/articles/bryan-johnson/bryan-johnson-protocol-2026-05-22.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md',
     ],
     sections: {
       habits: [
@@ -185,6 +200,7 @@ export const protocolCategories = [
       ],
       longterm: [
         'Frame sleep as a durable foundation feeding the broader biomarker and recovery system.',
+        'Keep jet-lag protocol material in a circadian-recovery / self-experiment bucket unless replicated and externally validated.',
         'Add exact wearable targets only after source verification and keep them in claims/measurement context.',
       ],
       donts: [
@@ -208,6 +224,11 @@ export const protocolCategories = [
         title: 'Do not publish exact REM/HRV targets without source verification',
         body: 'Prototype numbers like sleep score, REM percentage, HRV, or wake events need source-backed confirmation before they become public metrics.',
       },
+      {
+        label: 'Jet lag recovery',
+        title: 'Caffeine + melatonin dosing is Johnson’s N=1 report',
+        body: 'The Australia follow-up says 300 mg caffeine plus 3 mg melatonin helped resynchronize his body clock via glucose traces. This belongs in source-aware context, not as reader dosing guidance.',
+      },
     ],
   },
 ];
@@ -223,6 +244,8 @@ export const protocolSectionsBySlug = {
 
 export const conceptEntries = [
   { title: 'Blueprint Protocol', confidence: 'medium', source: 'concepts/blueprint-protocol.md', summary: 'The measurement-led routine and intervention stack Johnson presents as Blueprint.' },
+  { title: 'Akkermansia + butyrate Blueprint product', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md', summary: 'A June 2026 microbiome supplement launch; notable as product expansion, not clinical validation.' },
+  { title: 'Jet lag caffeine + melatonin follow-up', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md', summary: 'Johnson’s N=1 circadian recovery claim using glucose as readout after Australia travel.' },
   { title: 'Biomarker-driven longevity protocols', confidence: 'medium', source: 'concepts/biomarker-driven-longevity-protocols.md', summary: 'The feedback-loop idea that biomarkers guide protocol changes, with caveats about outcomes.' },
   { title: 'Sauna heat-dose / HSP27 self-experiment', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md', summary: 'A June 2026 N=1 test using ingestible temperature tracking and blood biomarkers; useful as protocol design, not medical advice.' },
   { title: 'Algorithmic Health', confidence: 'medium', source: 'concepts/algorithmic-health.md', summary: 'Delegating health decisions to measurement, rules, and repeatable systems.' },

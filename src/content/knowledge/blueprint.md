@@ -4,7 +4,7 @@ slug: blueprint
 type: entity
 sourcePath: entities/blueprint.md
 created: '2026-05-22'
-updated: '2026-05-22'
+updated: '2026-06-19'
 tags:
   - product
   - company
@@ -20,6 +20,8 @@ sources:
   - raw/articles/bryan-johnson-morning-routine-2026-04-22.md
   - raw/articles/time-bryan-johnson-longevity-2026.md
   - raw/articles/critical-context-bryan-johnson-blueprint-2026-05-22.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-12.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md
 confidence: medium
 contested: true
 summary: >-
@@ -44,6 +46,15 @@ Blueprint has three overlapping meanings:
 The homepage describes Blueprint as "The most nutritious food program in history" and "67 health interventions based upon 1,000+ clinical trials." The Protocol page is more expansive: it attempts to turn health into a game where people learn to "flex" biomarkers and adopt fewer, higher-leverage behaviors.
 
 Johnson's X/Twitter positioning compresses the thesis: "Blueprint is automation that first achieves peak health and then self-drives to age escape velocity."
+
+## Recent commercial expansion (June 2026)
+
+Blueprint's public product layer now includes more than food, supplements, tests, and skincare. In June 2026 Johnson highlighted two newer commercial directions:
+
+- **Prescription therapeutics:** a Longevity Rx / Immortals medical layer offering clinician-mediated access to drugs Johnson says he personally uses, including Tadalafil, Metformin, Oral Minoxidil, Tretinoin, Estradiol, and Acarbose.
+- **Microbiome supplement:** a Blueprint product built around *Akkermansia muciniphila* plus butyrate triglycerides, described as a “capsule within a liquid capsule.” Johnson frames it around gut-barrier, glucose-regulation, and metabolic-health mechanisms.
+
+Both are product-positioning signals. They belong on the dashboard because they show where Blueprint is moving commercially, but the health claims should be read as Johnson/Blueprint claims unless independently validated.
 
 ## Evidence posture
 

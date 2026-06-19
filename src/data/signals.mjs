@@ -1,5 +1,33 @@
 export const curatedSignals = [
   {
+    id: 'blueprint-akkermansia-butyrate-product',
+    title: 'Blueprint launches Akkermansia + butyrate microbiome product',
+    date: '2026-06-18',
+    badge: 'Product',
+    kind: 'tweet',
+    topic: 'Microbiome / supplements',
+    summary:
+      'Johnson announced a new Blueprint microbiome supplement built around Akkermansia muciniphila and butyrate triglycerides, delivered as a “capsule within a liquid capsule.” Treat it as a commercial product and gut/metabolic-health claim, not independent validation of clinical benefit.',
+    href: '/nutrition/',
+    tweetId: '2067672015725789278',
+    confidence: 'medium',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md#Tweet-2067672015725789278'],
+  },
+  {
+    id: 'jet-lag-caffeine-melatonin-followup',
+    title: 'Johnson reports caffeine + melatonin jet-lag test “worked”',
+    date: '2026-06-18',
+    badge: 'N=1 test',
+    kind: 'tweet',
+    topic: 'Circadian recovery',
+    summary:
+      'After returning from Australia, Johnson said 300 mg caffeine in the morning plus 3 mg melatonin before bed accelerated body-clock resynchronization, watched “live” via blood glucose. This is useful protocol-followup context, but remains an anecdotal N=1 claim rather than travel advice.',
+    href: '/sleep/',
+    tweetId: '2067724811317715080',
+    confidence: 'medium',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md#Tweet-2067724811317715080'],
+  },
+  {
     id: 'nature-n-of-1-methodology-essay',
     title: 'Nature feature prompts Johnson’s formal N-of-1 defense',
     date: '2026-06-17',
@@ -268,6 +296,18 @@ export const curatedSignals = [
 
 export const watchQueue = [
   {
+    title: 'Akkermansia + butyrate product evidence',
+    summary: 'Watch for ingredient dosing, third-party testing, human outcome data, and clearer separation between microbiome mechanism claims and product-specific evidence.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md',
+    href: '/nutrition/',
+  },
+  {
+    title: 'Jet lag protocol replication',
+    summary: 'Watch whether Johnson publishes glucose/circadian traces, repeats the caffeine + melatonin protocol across trips, or links the referenced study in enough detail to evaluate dose and applicability.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md',
+    href: '/sleep/',
+  },
+  {
     title: 'N-of-1 methodology validation',
     summary: 'Watch whether Johnson/Immortals publishes protocols, data, independent replication, or peer-reviewed follow-up that separates the methodological case for N-of-1 measurement from specific unvalidated biological claims.',
     source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-18.md',
@@ -330,16 +370,17 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '4', detail: '4 tweets with engagement · x-twitter-daily-2026-06-18.md' },
-  { label: 'Previous daily X capture', value: '3', detail: '3 tweets with engagement · x-twitter-daily-2026-06-17.md' },
+  { label: 'Latest daily X capture', value: '3', detail: '3 tweets with engagement · x-twitter-daily-2026-06-19.md' },
+  { label: 'Previous daily X capture', value: '4', detail: '4 tweets with engagement · x-twitter-daily-2026-06-18.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '27', detail: '12 knowledge pages + 15 update pages after this pass' },
+  { label: 'Public site content', value: '28', detail: '12 knowledge pages + 16 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-06-19', x_post: 3, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-06-18', x_post: 4, third_party: 1, wiki_update: 1, site_update: 1 },
   { date: '2026-06-17', x_post: 3, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-06-13', x_post: 3, third_party: 0, wiki_update: 1, site_update: 1 },

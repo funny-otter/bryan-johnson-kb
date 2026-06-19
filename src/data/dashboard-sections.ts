@@ -71,6 +71,24 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-06-18',
+    label: 'Akkermansia + butyrate microbiome product announced',
+    summary: 'Johnson said Blueprint launched a microbiome supplement pairing Akkermansia muciniphila with butyrate triglycerides. It is dashboard-relevant as product expansion and mechanism-heavy marketing, not as independent proof of gut or metabolic benefit.',
+    relatedHref: '/knowledge/blueprint/',
+    relatedTitle: 'Blueprint',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md',
+    confidence: 'medium',
+  },
+  {
+    date: '2026-06-18',
+    label: 'Jet lag protocol follow-up posted',
+    summary: 'Johnson reported that a 300 mg morning caffeine + 3 mg bedtime melatonin protocol accelerated post-Australia body-clock recovery, which he said he watched via blood glucose. Keep it as N=1 follow-up, not travel medicine advice.',
+    relatedHref: '/knowledge/blueprint-protocol/',
+    relatedTitle: 'Blueprint Protocol',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md',
+    confidence: 'medium',
+  },
+  {
     date: '2026-06-17',
     label: 'Nature feature and N-of-1 methodology essay',
     summary: 'Johnson used a Nature feature to publish a formal Blueprint/Immortals argument that RCTs remain necessary but are not sufficient for individualized longevity optimization; the listed biological signals are explicitly unvalidated N=1 observations.',

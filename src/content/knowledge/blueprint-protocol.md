@@ -4,7 +4,7 @@ slug: blueprint-protocol
 type: concept
 sourcePath: concepts/blueprint-protocol.md
 created: '2026-05-22'
-updated: '2026-06-18'
+updated: '2026-06-19'
 tags:
   - protocol
   - longevity
@@ -24,6 +24,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-18.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md
 confidence: medium
 contested: true
 summary: >-
@@ -66,6 +67,12 @@ On June 12, he gave one concrete example: daily 5 mg Tadalafil/Cialis, which he 
 ### Jet lag and routine snapshots
 
 The June 2026 batch also included self-reported jet-lag recovery timelines and a caffeine + melatonin recovery protocol Johnson said he was testing, plus a breakfast snapshot centered on vegetables, legumes, mushrooms, herbs, seeds, and olive oil. These are examples of the measurement loop in public: an intervention or routine is narrated, tied to biomarkers or recovery, then folded back into the protocol story.
+
+On June 18, Johnson posted the outcome half of that jet-lag test after returning from Australia: 300 mg caffeine in the morning plus 3 mg melatonin before bed, which he said accelerated body-clock resynchronization and was observable “live” via blood glucose. This is useful as protocol logging and follow-up, but still N=1 self-report rather than dosing guidance or proof that the intervention caused recovery.
+
+### Microbiome product — Akkermansia + butyrate
+
+The same June 18 source also added a commercial protocol/product signal: Blueprint launched a microbiome supplement pairing *Akkermansia muciniphila* with butyrate triglycerides. Johnson framed Akkermansia around age-related decline, gut-barrier integrity, glucose regulation, insulin sensitivity, and Amuc_1100/TLR2 signaling, while framing butyrate triglycerides as direct epithelial support. The dashboard should separate those mechanism claims from product-specific evidence; the launch is notable, but not independent validation of gut or metabolic benefit.
 
 ### Sauna heat-dose / HSP27 testing
 
