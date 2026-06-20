@@ -4,7 +4,7 @@ slug: blueprint-protocol
 type: concept
 sourcePath: concepts/blueprint-protocol.md
 created: '2026-05-22'
-updated: '2026-06-19'
+updated: '2026-06-20'
 tags:
   - protocol
   - longevity
@@ -25,6 +25,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-18.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md
 confidence: medium
 contested: true
 summary: >-
@@ -54,6 +55,8 @@ Johnson's May 24, 2026 sleep post adds a tactical version of the same sleep disc
 
 Johnson's April 2026 morning routine is an example implementation: 8:30pm bedtime, ~5am wake, oral hygiene, 10,000 lux light, breath work, pre-workout nutrition/supplements, 90 minutes exercise, sauna, red/NIR light, optional shockwave therapy, shower/hair/skincare, and a breakfast of vegetables/legumes/EVOO/berries/nuts/seeds.
 
+On June 19, 2026, a high-engagement routine post compressed that posture into a seven-day checklist: stop food four hours before sleep, screens off 60 minutes before bed, read for 10 minutes before sleep, get light in the eyes on waking, and exercise daily. It is useful as a current, low-tech summary of Johnson’s recurring sleep/wake advice; it should still be presented as his habit framing rather than personalized medical guidance.
+
 ## Iteration and reversals
 
 The protocol is not static. Johnson's public posts include stopping or pausing interventions when measurements disappoint. A 2025 @bryan_johnson post says he paused metformin after five years because it appeared to build energy capacity while limiting his ability to use much of it.
@@ -73,6 +76,10 @@ On June 18, Johnson posted the outcome half of that jet-lag test after returning
 ### Microbiome product — Akkermansia + butyrate
 
 The same June 18 source also added a commercial protocol/product signal: Blueprint launched a microbiome supplement pairing *Akkermansia muciniphila* with butyrate triglycerides. Johnson framed Akkermansia around age-related decline, gut-barrier integrity, glucose regulation, insulin sensitivity, and Amuc_1100/TLR2 signaling, while framing butyrate triglycerides as direct epithelial support. The dashboard should separate those mechanism claims from product-specific evidence; the launch is notable, but not independent validation of gut or metabolic benefit.
+
+### Skin / UV protection
+
+On June 19, 2026, Johnson posted a skin-aging self-measurement from his Australia trip: he claimed one week of Australian sun increased his skin aging by about 5% via UV damage/spots despite umbrella and peak-UV protection, then added in a reply that he has reversed his skin age by roughly 9 years since starting the project. He cited a 1,472-person comparison where Australian women showed skin-aging signs 10–20 years earlier than US women, but did not provide a full citation in-tweet. For the dashboard, this is best treated as another Blueprint readout example — skin/UV risk quantified as a metric — not independent validation of the 5% or 9-year figures and not individualized skincare advice.
 
 ### Sauna heat-dose / HSP27 testing
 

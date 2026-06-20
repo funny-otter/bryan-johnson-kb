@@ -4,7 +4,7 @@ slug: immortality-by-2039
 type: concept
 sourcePath: concepts/immortality-by-2039.md
 created: '2026-05-22'
-updated: '2026-05-22'
+updated: '2026-06-20'
 tags:
   - longevity
   - prediction
@@ -17,6 +17,7 @@ sources:
   - raw/articles/blueprint-about-2026-05-22.md
   - raw/articles/bryan-johnson-x-targeted-searches-2026-05-22.md
   - raw/articles/bryan-johnson-x-recent-2026-05-22.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md
 confidence: low
 summary: >-
   “Immortality by 2039” is bryan-johnson's stated aspirational target for
@@ -45,6 +46,8 @@ The article says Johnson is having thousands of organ clones built in dishes to 
 Johnson says the 2039 goal is not only about living forever; it is a way to focus collective attention on a positive goal and move society from YOLO to [dont die](/knowledge/dont-die/). He frames this as part of surviving superintelligence: if AI changes everything, society needs a stabilizing aspiration around existence. 
 
 On X, he often repeats adjacent formulations: humans may be “the first generation to not die,” lifespans may become so long that people stop thinking about lifespans, and Blueprint is becoming infrastructure for people who want to “play the immortality by 2039 game.”  
+
+On June 19, 2026, Johnson reinforced the same frame by explicitly announcing that the company has changed its name to Immortals and by publishing a search-trend essay that portrays “Bryan Johnson” and “immortality” as rising together since 2022. The underlying search data source was not cited in the tweet, so the dashboard treats this as Johnson’s narrative about legitimacy and cultural momentum, not independent analytics. It strengthens the evidence that immortality is central to the brand, but it does not raise confidence in the 2039 forecast.
 
 ## Why confidence is low
 

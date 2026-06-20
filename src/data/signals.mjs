@@ -1,5 +1,50 @@
 export const curatedSignals = [
   {
+    id: 'immortals-company-rename-identity-frame',
+    title: 'Johnson makes the Immortals company rename explicit',
+    date: '2026-06-19',
+    badge: 'Brand',
+    kind: 'tweet',
+    topic: "Don't Die / Immortals",
+    summary:
+      'Johnson wrote that “we’ve changed our company name to Immortals,” tying the company behind Blueprint products and medicine.immortals.com to an “identity precedes behavior” argument about overcoming physical death. The dashboard treats this as brand/ideology strategy, not evidence that immortality is technically near.',
+    href: '/knowledge/dont-die/',
+    tweetId: '2068047516235669543',
+    confidence: 'medium',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md#Tweet-2068047516235669543'],
+  },
+  {
+    id: 'australia-sun-skin-aging-readout',
+    title: 'Australian sun thread adds a skin-aging N=1 readout',
+    date: '2026-06-19',
+    badge: 'N=1 test',
+    kind: 'tweet',
+    topic: 'Skin / UV exposure',
+    summary:
+      'Johnson claimed one week of Australian sun increased his measured skin aging by about 5% despite umbrella and peak-UV protection, then claimed a roughly 9-year skin-age reversal since starting the project. Keep this as a self-measured Blueprint readout with UV-risk context, not independent validation.',
+    href: '/health/',
+    tweetId: '2068014944629727559',
+    confidence: 'medium',
+    sources: [
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md#Tweet-2068014944629727559',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md#Tweet-2068018152445968826',
+    ],
+  },
+  {
+    id: 'seven-day-sleep-wake-routine-checklist',
+    title: 'Seven-day sleep/wake checklist goes high-engagement',
+    date: '2026-06-19',
+    badge: 'Sleep',
+    kind: 'tweet',
+    topic: 'Sleep / habits',
+    summary:
+      'A high-engagement post distilled Johnson’s routine advice to five low-tech steps: stop food 4 hours before sleep, screens off 60 minutes before bed, read 10 minutes before sleep, get morning light, and exercise daily for 7 days. It is useful as recurring habit framing, not personalized medical advice.',
+    href: '/sleep/',
+    tweetId: '2067989154223562777',
+    confidence: 'medium',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md#Tweet-2067989154223562777'],
+  },
+  {
     id: 'blueprint-akkermansia-butyrate-product',
     title: 'Blueprint launches Akkermansia + butyrate microbiome product',
     date: '2026-06-18',
@@ -296,6 +341,18 @@ export const curatedSignals = [
 
 export const watchQueue = [
   {
+    title: 'Immortals rebrand follow-through',
+    summary: 'Watch whether public Blueprint, Don’t Die, medicine.immortals.com, product, and legal/company materials converge on Immortals or whether the rename remains mostly Johnson’s social identity frame.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md',
+    href: '/knowledge/dont-die/',
+  },
+  {
+    title: 'Skin-aging measurement evidence',
+    summary: 'Watch for the measurement method behind the claimed 5% Australia skin-aging increase and 9-year skin-age reversal, plus fuller citations for the 1,472-person Australian/US skin-aging comparison.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md',
+    href: '/health/',
+  },
+  {
     title: 'Akkermansia + butyrate product evidence',
     summary: 'Watch for ingredient dosing, third-party testing, human outcome data, and clearer separation between microbiome mechanism claims and product-specific evidence.',
     source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md',
@@ -370,16 +427,17 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '3', detail: '3 tweets with engagement · x-twitter-daily-2026-06-19.md' },
-  { label: 'Previous daily X capture', value: '4', detail: '4 tweets with engagement · x-twitter-daily-2026-06-18.md' },
+  { label: 'Latest daily X capture', value: '5', detail: '5 tweets with engagement · x-twitter-daily-2026-06-20.md' },
+  { label: 'Previous daily X capture', value: '3', detail: '3 tweets with engagement · x-twitter-daily-2026-06-19.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '28', detail: '12 knowledge pages + 16 update pages after this pass' },
+  { label: 'Public site content', value: '29', detail: '12 knowledge pages + 17 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-06-20', x_post: 5, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-06-19', x_post: 3, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-06-18', x_post: 4, third_party: 1, wiki_update: 1, site_update: 1 },
   { date: '2026-06-17', x_post: 3, third_party: 0, wiki_update: 1, site_update: 1 },

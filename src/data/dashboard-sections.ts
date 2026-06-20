@@ -71,6 +71,24 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-06-19',
+    label: 'Company rename to Immortals made explicit',
+    summary: 'Johnson wrote that the company has changed its name to Immortals, linking Blueprint products, the prescription layer, and Don’t Die ideology to an “identity precedes behavior” argument. This is confirmed brand positioning, not validation of the immortality forecast.',
+    relatedHref: '/knowledge/dont-die/',
+    relatedTitle: "Don't Die",
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md',
+    confidence: 'medium',
+  },
+  {
+    date: '2026-06-19',
+    label: 'Skin-aging N=1 readout from Australia trip',
+    summary: 'Johnson claimed one week of Australian sun increased his skin-aging readout by ~5% despite protection and repeated a ~9-year skin-age reversal claim. Keep it as self-measurement plus UV-risk framing, not a generalized skincare prescription.',
+    relatedHref: '/knowledge/blueprint-protocol/',
+    relatedTitle: 'Blueprint Protocol',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md',
+    confidence: 'medium',
+  },
+  {
     date: '2026-06-18',
     label: 'Akkermansia + butyrate microbiome product announced',
     summary: 'Johnson said Blueprint launched a microbiome supplement pairing Akkermansia muciniphila with butyrate triglycerides. It is dashboard-relevant as product expansion and mechanism-heavy marketing, not as independent proof of gut or metabolic benefit.',

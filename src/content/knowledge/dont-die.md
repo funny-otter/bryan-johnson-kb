@@ -4,7 +4,7 @@ slug: dont-die
 type: concept
 sourcePath: concepts/dont-die.md
 created: '2026-05-22'
-updated: '2026-06-18'
+updated: '2026-06-20'
 tags:
   - longevity
   - biohacking
@@ -19,6 +19,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-05-27.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-05-30.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-18.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md
 confidence: medium
 summary: >-
   Don't Die is bryan-johnson's community slogan, longevity philosophy, and
@@ -42,6 +43,8 @@ On May 26, 2026, Johnson used Don't Die as an umbrella for ordinary tradeoffs: G
 On May 29, 2026, Johnson told followers that X Communities was shutting down and directed them to the Don't Die app. The update makes the app look like community-continuity infrastructure for the movement, not just a companion product. A same-day post also claimed that longevity therapies associated with wealthy people may eventually become more broadly accessible; keep that as Johnson's prediction/framing rather than an established medical or market fact.
 
 On June 17, 2026, Johnson publicly named Immortals as the company behind the newer medical layer and described “radical” as a deliberate conversation entry point. The point was cultural priming: make ideas that once sounded bizarre or dangerous legible as steps toward valuing life and collective survival. For the dashboard, this belongs in the movement/brand lane rather than the health-advice lane.
+
+On June 19, 2026, Johnson made the rename explicit: “we’ve changed our company name to Immortals.” He linked the change to “identity precedes behavior,” arguing that seeing oneself as mortal or immortal changes what actions feel possible. This tightens the connection between Don’t Die, Blueprint products, the prescription layer at medicine.immortals.com, and the low-confidence immortality narrative. Read it as confirmed brand/identity strategy and movement positioning, not as a health claim or proof that physical immortality is near.
 
 ## Practical components
 

@@ -15,6 +15,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md',
     ],
     sections: {
       habits: [
@@ -23,8 +24,9 @@ export const protocolCategories = [
       ],
       longterm: [
         'Treat Blueprint as a repeatable feedback system whose rules can evolve as biomarkers, symptoms, or evidence change.',
-        'Treat the June 2026 sauna/HSP27 thread as a protocol-design case study: Johnson shifted the dose question from minutes in the sauna to measured core temperature and biomarker response.',
+        'Track the June 2026 sauna/HSP27 thread as a protocol-design case study: Johnson shifted the dose question from minutes in the sauna to measured core temperature and biomarker response.',
         'Track the June 2026 jet-lag follow-up as a self-reported caffeine + melatonin test using blood glucose as a body-clock readout, not as general travel medical advice.',
+        'Treat the June 2026 Australian sun/skin-aging post as a skin-readout example inside the measurement loop, not as validated skincare advice.',
         'Track the June 2026 prescription-therapeutics expansion separately from foundational habits; it is a commercial/protocol claim that requires clinician oversight.',
         'Preserve medical-caution framing: this page summarizes Johnson/Blueprint practice, not personal treatment advice.',
       ],
@@ -64,6 +66,11 @@ export const protocolCategories = [
         title: 'Caffeine + melatonin follow-up stays anecdotal',
         body: 'Johnson reports 300 mg caffeine in the morning plus 3 mg melatonin before bed accelerated his post-Australia resynchronization, observed via glucose. Present this as N=1 protocol logging, not dosing advice.',
       },
+      {
+        label: 'Skin readout',
+        title: 'Australian sun exposure becomes another measured endpoint',
+        body: 'Johnson claims one week in Australian sun increased his skin-aging metric by about 5% despite protection. Present this as self-measured UV-risk context, not as independent proof or individualized skincare advice.',
+      },
     ],
   },
   {
@@ -81,6 +88,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/mdlinx-blueprint-critique-2025-02-15.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md',
     ],
     sections: {
       habits: [
@@ -91,6 +99,7 @@ export const protocolCategories = [
         'Separate durable healthspan practices from frontier enhancement, drug-stack, gene-therapy, and immortality narratives.',
         'Classify daily Tadalafil/Cialis and similar drug claims as hypothesis-generating prescription-intervention claims unless independent clinical evidence supports the exact longevity use case.',
         'Classify sauna/HSP27 claims as mechanistic biomarker self-experimentation unless replicated and tied to clinically meaningful outcomes.',
+        'Keep the Immortals rename and immortality search-trend narrative in the ideology/brand lane; it does not increase confidence in the 2039 forecast.',
         'Keep critiques visible so biomarker improvements do not become unsupported longevity promises.',
       ],
       donts: [
@@ -123,6 +132,11 @@ export const protocolCategories = [
         label: 'Aspirational ideology',
         title: 'Immortality by 2039 remains low-confidence',
         body: 'The concept is useful for understanding Johnson’s worldview, but the dashboard should not present it as a realistic medical forecast.',
+      },
+      {
+        label: 'Immortals identity',
+        title: 'The company rename is confirmed brand strategy',
+        body: 'Johnson explicitly says the company has changed its name to Immortals. That matters for the movement story, but not as evidence that physical immortality is near.',
       },
     ],
   },
@@ -192,6 +206,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/x-twitter-bryan-johnson-2026-05-22.md#Thu May 21 13:59:33 +0000 2026',
       'raw/articles/bryan-johnson/bryan-johnson-protocol-2026-05-22.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md',
     ],
     sections: {
       habits: [
@@ -200,6 +215,7 @@ export const protocolCategories = [
       ],
       longterm: [
         'Frame sleep as a durable foundation feeding the broader biomarker and recovery system.',
+        'Use the June 19 seven-day checklist as a simple recurring-habits example, while preserving that readers need individualized medical guidance for health conditions.',
         'Keep jet-lag protocol material in a circadian-recovery / self-experiment bucket unless replicated and externally validated.',
         'Add exact wearable targets only after source verification and keep them in claims/measurement context.',
       ],
@@ -229,6 +245,11 @@ export const protocolCategories = [
         title: 'Caffeine + melatonin dosing is Johnson’s N=1 report',
         body: 'The Australia follow-up says 300 mg caffeine plus 3 mg melatonin helped resynchronize his body clock via glucose traces. This belongs in source-aware context, not as reader dosing guidance.',
       },
+      {
+        label: '7-day checklist',
+        title: 'Food cutoff, screen cutoff, reading, morning light, exercise',
+        body: 'Johnson’s June 19 high-engagement checklist is a compact version of his recurring sleep/wake routine: final food 4 hours before bed, screens off 60 minutes before bed, 10 minutes reading, morning light, and daily exercise.',
+      },
     ],
   },
 ];
@@ -243,6 +264,8 @@ export const protocolSectionsBySlug = {
 };
 
 export const conceptEntries = [
+  { title: 'Immortals company rename', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md', summary: 'Johnson explicitly says the company has changed its name to Immortals; notable as movement/brand positioning, not a medical claim.' },
+  { title: 'Australian sun skin-aging readout', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md', summary: 'A June 2026 N=1 skin-aging metric claim after Australia travel; useful as protocol readout context, not independent validation.' },
   { title: 'Blueprint Protocol', confidence: 'medium', source: 'concepts/blueprint-protocol.md', summary: 'The measurement-led routine and intervention stack Johnson presents as Blueprint.' },
   { title: 'Akkermansia + butyrate Blueprint product', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md', summary: 'A June 2026 microbiome supplement launch; notable as product expansion, not clinical validation.' },
   { title: 'Jet lag caffeine + melatonin follow-up', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md', summary: 'Johnson’s N=1 circadian recovery claim using glucose as readout after Australia travel.' },
