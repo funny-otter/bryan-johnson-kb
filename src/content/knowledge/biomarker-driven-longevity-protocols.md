@@ -4,7 +4,7 @@ slug: biomarker-driven-longevity-protocols
 type: concept
 sourcePath: concepts/biomarker-driven-longevity-protocols.md
 created: '2026-05-22'
-updated: '2026-06-18'
+updated: '2026-06-20'
 tags:
   - longevity
   - biomarkers
@@ -23,6 +23,8 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-18.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md
 confidence: medium
 summary: >-
   A biomarker-driven longevity protocol is a health system that treats the body
@@ -59,6 +61,10 @@ MDLinx takes a clinician-facing view: some pieces (sleep, exercise, selected mon
 The June 2026 Tadalafil/Cialis posts are a useful example of how Johnson's protocol mixes biomarkers, prescriptions, epidemiological associations, and public caveats. He frames daily 5 mg Tadalafil as a blood-flow/longevity intervention and names mortality/cardiovascular/dementia associations, while acknowledging observational data cannot prove causation and that evidence in women is thinner. For evaluation, this belongs in the “prescription/intervention claim” bucket: potentially measurable and potentially medically supervised, but hypothesis-generating rather than independent proof of longevity benefit.  
 
 The June 16, 2026 sauna/HSP27 thread is a clearer example of biomarker-driven protocol design. Johnson used continuous ingestible core-temperature tracking and repeated blood draws to ask whether dry-sauna dose is better represented by minutes in the sauna or by time spent above a core-temperature threshold. The dashboard takeaway is the experimental structure, not the exact heat prescription: HSP27 movement is a mechanistic biomarker claim and does not establish clinical outcome benefit for readers.
+
+A June 18, 2026 post shows the same readout-first instinct applied to circadian recovery: Johnson reported that after his return flight from Australia, he watched his body clock "come back online, live, via blood glucose" while using his caffeine + melatonin jet lag protocol. The notable evaluation point is the *choice of readout* — blood glucose used as a real-time proxy for circadian resynchronization — while the intervention remains an N=1 self-report rather than proof that the dosing caused the recovery.
+
+A June 19, 2026 skin-aging post extends the readout-first pattern to a cosmetic endpoint: Johnson claimed one week of Australian sun increased his skin-aging readout by ~5% despite umbrella use and peak-UV protection, and separately repeated a claim that he has reversed his skin age by ~9 years since starting the project. For evaluation, the notable point is the quantification of a skin/UV endpoint as a protocol metric; the exact percentages should be treated as personal self-measurements, not independent validation.
 
 On June 17, 2026, Johnson made the methodology argument more explicit while discussing a Nature feature: with the Blueprint & Immortals Medical and Science Team, he argued that randomized controlled trials remain necessary for average-effect and safety questions but are not sufficient for optimizing individualized stacks of interventions. The essay frames N-of-1 measurement as a complement to RCTs, enabled by AI, wearables, multi-omics, real-time tracking, and nearest-neighbor mapping against deeply instrumented people. The caution is equally important: its examples — heat-shock-protein response, sauna-related plasticizer clearance, fertility markers, microplastics reduction, and a psilocybin metabolic signal — are presented as first-in-human observations needing validation, not as proven therapies.
 
