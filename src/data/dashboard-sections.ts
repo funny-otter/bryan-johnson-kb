@@ -71,6 +71,15 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-06-21',
+    label: 'Don’t Die media pushback posted',
+    summary: 'Johnson replied to Ezra Klein and Gary Shteyngart after what he called a “modern dystopia” framing, restating Don’t Die as a rejection of YOLO-style acceptance of self-destructive habits. This is ideology/media positioning rather than a new protocol claim.',
+    relatedHref: '/knowledge/dont-die/',
+    relatedTitle: "Don't Die",
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-22.md',
+    confidence: 'medium',
+  },
+  {
     date: '2026-06-19',
     label: 'Company rename to Immortals made explicit',
     summary: 'Johnson wrote that the company has changed its name to Immortals, linking Blueprint products, the prescription layer, and Don’t Die ideology to an “identity precedes behavior” argument. This is confirmed brand positioning, not validation of the immortality forecast.',

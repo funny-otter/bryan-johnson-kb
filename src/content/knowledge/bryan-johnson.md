@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-06-18'
+updated: '2026-06-22'
 tags:
   - person
   - company
@@ -26,6 +26,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-18.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-22.md
 confidence: medium
 summary: >-
   Bryan Johnson is an American entrepreneur who moved from payments and
@@ -61,6 +62,8 @@ In June 2026, Johnson’s feed added two durable dashboard themes. First, he ann
 The same June batch continued everyday protocol storytelling: quantified jet-lag recovery claims, sleep-as-recovery messaging, and a vegetable/legume-heavy breakfast example. Those posts are useful for showing how Blueprint blends measurement, routine snapshots, and product expansion, but they should stay in the claim/context lane rather than being rendered as personal health instructions.
 
 On June 16–17, Johnson added a tighter methodological arc: a sauna/HSP27 self-experiment using ingestible core-temperature tracking, repeated blood draws, and a later heart-rate trace; then a Nature-feature thread with a formal Blueprint/Immortals essay arguing that RCTs are necessary but not sufficient for individualized longevity optimization. The public-site stance is to surface the measurement method and mainstream-attention signal while preserving Johnson's own caveat that the listed first-in-human biological observations need further validation.
+
+On June 21, Johnson’s feed turned from biomarker claims to media and fatherhood positioning. A reply to Ezra Klein and Gary Shteyngart pushed back on being framed as “modern dystopia” and re-articulated Don’t Die as a rejection of YOLO-style acceptance of self-destructive habits. Two other posts described parenting mental models and a childhood exercise in giving away water and bars without reward, using overjustification effect and moral elevation language. These are public-persona and ideology signals, not health-protocol evidence.
 
 ## Reading stance
 

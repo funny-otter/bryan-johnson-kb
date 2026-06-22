@@ -1,5 +1,19 @@
 export const curatedSignals = [
   {
+    id: 'dont-die-modern-dystopia-media-response',
+    title: 'Johnson answers a “modern dystopia” framing of Don’t Die',
+    date: '2026-06-21',
+    badge: 'Media',
+    kind: 'tweet',
+    topic: "Don't Die / ideology",
+    summary:
+      'Johnson replied to Ezra Klein and Gary Shteyngart after what he characterized as a “modern dystopia” framing, restating that acceptance of death lets YOLO rationalize drinking, poor sleep, and unhealthy food. Treat it as movement positioning and media engagement, not a new biomedical claim.',
+    href: '/knowledge/dont-die/',
+    tweetId: '2068806358934368433',
+    confidence: 'medium',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-06-22.md#Tweet-2068806358934368433'],
+  },
+  {
     id: 'immortals-company-rename-identity-frame',
     title: 'Johnson makes the Immortals company rename explicit',
     date: '2026-06-19',

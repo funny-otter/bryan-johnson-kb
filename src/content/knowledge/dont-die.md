@@ -4,7 +4,7 @@ slug: dont-die
 type: concept
 sourcePath: concepts/dont-die.md
 created: '2026-05-22'
-updated: '2026-06-20'
+updated: '2026-06-22'
 tags:
   - longevity
   - biohacking
@@ -20,6 +20,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-05-30.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-18.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-22.md
 confidence: medium
 summary: >-
   Don't Die is bryan-johnson's community slogan, longevity philosophy, and
@@ -45,6 +46,8 @@ On May 29, 2026, Johnson told followers that X Communities was shutting down and
 On June 17, 2026, Johnson publicly named Immortals as the company behind the newer medical layer and described “radical” as a deliberate conversation entry point. The point was cultural priming: make ideas that once sounded bizarre or dangerous legible as steps toward valuing life and collective survival. For the dashboard, this belongs in the movement/brand lane rather than the health-advice lane.
 
 On June 19, 2026, Johnson made the rename explicit: “we’ve changed our company name to Immortals.” He linked the change to “identity precedes behavior,” arguing that seeing oneself as mortal or immortal changes what actions feel possible. This tightens the connection between Don’t Die, Blueprint products, the prescription layer at medicine.immortals.com, and the low-confidence immortality narrative. Read it as confirmed brand/identity strategy and movement positioning, not as a health claim or proof that physical immortality is near.
+
+On June 21, 2026, Johnson replied to Ezra Klein and Gary Shteyngart after what he characterized as a “modern dystopia” framing of his project. The response restated the movement’s core claim: if death is treated as inevitable, “YOLO” can romanticize slow self-harm through drinking, poor sleep, and unhealthy food; if radical life extension becomes possible, moral, ethical, and economic systems may evolve to value existence more explicitly. The dashboard treats this as a mainstream-media engagement and ideology clarification, not a new biological claim or independent verification of the attached press framing.
 
 ## Practical components
 
