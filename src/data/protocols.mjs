@@ -16,6 +16,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md',
     ],
     sections: {
       habits: [
@@ -27,7 +28,7 @@ export const protocolCategories = [
         'Track the June 2026 sauna/HSP27 thread as a protocol-design case study: Johnson shifted the dose question from minutes in the sauna to measured core temperature and biomarker response.',
         'Track the June 2026 jet-lag follow-up as a self-reported caffeine + melatonin test using blood glucose as a body-clock readout, not as general travel medical advice.',
         'Treat the June 2026 Australian sun/skin-aging post as a skin-readout example inside the measurement loop, not as validated skincare advice.',
-        'Track the June 2026 prescription-therapeutics expansion separately from foundational habits; it is a commercial/protocol claim that requires clinician oversight.',
+        'Track the June 2026 Immortals Rx expansion separately from foundational habits; the GLP-1, SGLT2, peptide, and NAD+ catalog is a commercial/protocol claim that requires clinician oversight.',
         'Preserve medical-caution framing: this page summarizes Johnson/Blueprint practice, not personal treatment advice.',
       ],
       donts: [
@@ -58,8 +59,8 @@ export const protocolCategories = [
       },
       {
         label: 'Rx expansion',
-        title: 'Prescription access is now part of the Blueprint story',
-        body: 'The June 2026 Longevity Rx announcement is product-positioning and protocol evidence, not a public recommendation to use Metformin, Tadalafil, hormones, or other drugs.',
+        title: 'Immortals Rx now includes GLP-1s, peptides, and NAD+',
+        body: 'Johnson’s June 22 expansion added semaglutide/Wegovy, tirzepatide/Zepbound, SGLT2 inhibitors, peptide complexes, glutathione, and NAD+ to the Rx story. Keep it as product-positioning and protocol evidence, not medication advice.',
       },
       {
         label: 'Jet lag N=1',
@@ -89,6 +90,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md',
     ],
     sections: {
       habits: [
@@ -98,6 +100,7 @@ export const protocolCategories = [
       longterm: [
         'Separate durable healthspan practices from frontier enhancement, drug-stack, gene-therapy, and immortality narratives.',
         'Classify daily Tadalafil/Cialis and similar drug claims as hypothesis-generating prescription-intervention claims unless independent clinical evidence supports the exact longevity use case.',
+        'Classify Immortals Rx GLP-1, SGLT2, peptide, and NAD+ listings as commercial platform expansion; do not treat off-label longevity positioning as proven outcome evidence.',
         'Classify sauna/HSP27 claims as mechanistic biomarker self-experimentation unless replicated and tied to clinically meaningful outcomes.',
         'Keep the Immortals rename and immortality search-trend narrative in the ideology/brand lane; it does not increase confidence in the 2039 forecast.',
         'Keep critiques visible so biomarker improvements do not become unsupported longevity promises.',
@@ -137,6 +140,11 @@ export const protocolCategories = [
         label: 'Immortals identity',
         title: 'The company rename is confirmed brand strategy',
         body: 'Johnson explicitly says the company has changed its name to Immortals. That matters for the movement story, but not as evidence that physical immortality is near.',
+      },
+      {
+        label: 'Rx platform',
+        title: 'GLP-1 and peptide expansion raises evidence questions',
+        body: 'The expanded Immortals Rx catalog is notable because it moves the public protocol further into prescription therapeutics. It needs clinician/regulatory context and drug-specific evidence, not generic longevity framing.',
       },
     ],
   },
@@ -264,6 +272,7 @@ export const protocolSectionsBySlug = {
 };
 
 export const conceptEntries = [
+  { title: 'Immortals Rx GLP-1 / peptide expansion', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md', summary: 'Johnson announced semaglutide/Wegovy, tirzepatide/Zepbound, SGLT2 inhibitors, peptide complexes, glutathione, and NAD+ as part of a wider Immortals Rx catalog; commercial platform news, not medication advice.' },
   { title: 'Immortals company rename', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md', summary: 'Johnson explicitly says the company has changed its name to Immortals; notable as movement/brand positioning, not a medical claim.' },
   { title: 'Australian sun skin-aging readout', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md', summary: 'A June 2026 N=1 skin-aging metric claim after Australia travel; useful as protocol readout context, not independent validation.' },
   { title: 'Blueprint Protocol', confidence: 'medium', source: 'concepts/blueprint-protocol.md', summary: 'The measurement-led routine and intervention stack Johnson presents as Blueprint.' },

@@ -71,6 +71,15 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-06-22',
+    label: 'Immortals Rx expands into GLP-1s, peptides, and NAD+',
+    summary: 'Johnson announced a wider Immortals Rx catalog headed by “microdose” GLP-1s, peptides, and NAD+, including semaglutide/Wegovy, tirzepatide/Zepbound, SGLT2 inhibitors, peptide complexes, glutathione, and NAD+. Treat it as a major commercial/protocol expansion, not proof of off-label longevity benefit.',
+    relatedHref: '/knowledge/blueprint-protocol/',
+    relatedTitle: 'Blueprint Protocol',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md',
+    confidence: 'medium',
+  },
+  {
     date: '2026-06-21',
     label: 'Don’t Die media pushback posted',
     summary: 'Johnson replied to Ezra Klein and Gary Shteyngart after what he called a “modern dystopia” framing, restating Don’t Die as a rejection of YOLO-style acceptance of self-destructive habits. This is ideology/media positioning rather than a new protocol claim.',

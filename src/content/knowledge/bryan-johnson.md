@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-06-22'
+updated: '2026-06-23'
 tags:
   - person
   - company
@@ -26,7 +26,10 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-18.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-22.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md
 confidence: medium
 summary: >-
   Bryan Johnson is an American entrepreneur who moved from payments and
@@ -64,6 +67,8 @@ The same June batch continued everyday protocol storytelling: quantified jet-lag
 On June 16–17, Johnson added a tighter methodological arc: a sauna/HSP27 self-experiment using ingestible core-temperature tracking, repeated blood draws, and a later heart-rate trace; then a Nature-feature thread with a formal Blueprint/Immortals essay arguing that RCTs are necessary but not sufficient for individualized longevity optimization. The public-site stance is to surface the measurement method and mainstream-attention signal while preserving Johnson's own caveat that the listed first-in-human biological observations need further validation.
 
 On June 21, Johnson’s feed turned from biomarker claims to media and fatherhood positioning. A reply to Ezra Klein and Gary Shteyngart pushed back on being framed as “modern dystopia” and re-articulated Don’t Die as a rejection of YOLO-style acceptance of self-destructive habits. Two other posts described parenting mental models and a childhood exercise in giving away water and bars without reward, using overjustification effect and moral elevation language. These are public-persona and ideology signals, not health-protocol evidence.
+
+On June 22, the feed returned to commercial health infrastructure: Johnson announced that Immortals Rx had expanded into “microdose” GLP-1s, peptides, and NAD+, listing semaglutide/Wegovy, tirzepatide/Zepbound, SGLT2 inhibitors, peptide complexes, glutathione, and NAD+ alongside the earlier tadalafil/metformin/minoxidil/tretinoin/acarbose stack. The same batch included a fermented-foods post citing an unnamed randomized trial, a biological-age joke, and an N=1 meibomian-gland dry-eye procedure report. The Rx expansion is dashboard-level business/protocol news; the food and procedure posts remain attributed claims or self-reports, not medical advice.
 
 ## Reading stance
 

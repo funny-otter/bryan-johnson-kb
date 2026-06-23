@@ -4,7 +4,7 @@ slug: blueprint-protocol
 type: concept
 sourcePath: concepts/blueprint-protocol.md
 created: '2026-05-22'
-updated: '2026-06-20'
+updated: '2026-06-23'
 tags:
   - protocol
   - longevity
@@ -26,6 +26,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-18.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md
 confidence: medium
 contested: true
 summary: >-
@@ -66,6 +67,8 @@ The protocol is not static. Johnson's public posts include stopping or pausing i
 On June 9, 2026, Johnson announced a prescription medication platform under the Blueprint/Don't Die umbrella, naming Tadalafil/Cialis, Metformin, Oral Minoxidil, Tretinoin, Estradiol, and Acarbose as prescriptions he personally uses and says are dispensed through licensed doctors and pharmacies. This is a meaningful product expansion from routines, supplements, foods, tests, and certified products into clinician-mediated prescription access.
 
 On June 12, he gave one concrete example: daily 5 mg Tadalafil/Cialis, which he framed as blood-flow/longevity support and not just sexual-health treatment. The public claim cites observational associations with lower mortality and cardiovascular/neurological outcomes, but Johnson’s own post caveats that association is not causation and that the information is not medical advice. The dashboard should preserve that distinction: useful evidence of where Blueprint is moving, not a treatment recommendation.
+
+On June 22, Johnson announced a major expansion of the same prescription layer, now branded **Immortals Rx**, under the headline “microdose GLP-1s,” “peptides,” and “NAD+.” Newly listed items included semaglutide/Wegovy, tirzepatide/Zepbound, SGLT2 inhibitors Jardiance and Brenzavvy, additional sex/arousal/skin/hair peptide complexes, glutathione, and NAD+, alongside the existing tadalafil/metformin/minoxidil/tretinoin/acarbose stack. This is the strongest public signal so far that the Rx business is widening from a short list of Johnson’s own drugs into GLP-1, peptide, and NAD+ catalogs. It should be presented as Immortals/Blueprint commercial positioning; off-label longevity efficacy and safety are not established by the announcement.
 
 ### Jet lag and routine snapshots
 
