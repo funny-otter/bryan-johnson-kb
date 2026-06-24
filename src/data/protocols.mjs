@@ -17,6 +17,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md',
     ],
     sections: {
       habits: [
@@ -28,7 +29,8 @@ export const protocolCategories = [
         'Track the June 2026 sauna/HSP27 thread as a protocol-design case study: Johnson shifted the dose question from minutes in the sauna to measured core temperature and biomarker response.',
         'Track the June 2026 jet-lag follow-up as a self-reported caffeine + melatonin test using blood glucose as a body-clock readout, not as general travel medical advice.',
         'Treat the June 2026 Australian sun/skin-aging post as a skin-readout example inside the measurement loop, not as validated skincare advice.',
-        'Track the June 2026 Immortals Rx expansion separately from foundational habits; the GLP-1, SGLT2, peptide, and NAD+ catalog is a commercial/protocol claim that requires clinician oversight.',
+        'Treat the June 2026 Immortals Rx expansion separately from foundational habits; the GLP-1, SGLT2, peptide, and NAD+ catalog is a commercial/protocol claim that requires clinician oversight.',
+        'Treat Johnson’s June 2026 “one international trip per quarter” rule as a biomarker-derived personal boundary, not as a reader travel guideline.',
         'Preserve medical-caution framing: this page summarizes Johnson/Blueprint practice, not personal treatment advice.',
       ],
       donts: [
@@ -68,6 +70,11 @@ export const protocolCategories = [
         body: 'Johnson reports 300 mg caffeine in the morning plus 3 mg melatonin before bed accelerated his post-Australia resynchronization, observed via glucose. Present this as N=1 protocol logging, not dosing advice.',
       },
       {
+        label: 'Travel cap',
+        title: 'International travel is now framed as a quarterly budget',
+        body: 'Johnson suggests one international trip per quarter after measuring China, India, and Australia travel as weeks-long biological insults. Keep it as his personal biomarker-derived rule, not generalized travel medicine.',
+      },
+      {
         label: 'Skin readout',
         title: 'Australian sun exposure becomes another measured endpoint',
         body: 'Johnson claims one week in Australian sun increased his skin-aging metric by about 5% despite protection. Present this as self-measured UV-risk context, not as independent proof or individualized skincare advice.',
@@ -91,6 +98,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md',
     ],
     sections: {
       habits: [
@@ -102,6 +110,7 @@ export const protocolCategories = [
         'Classify daily Tadalafil/Cialis and similar drug claims as hypothesis-generating prescription-intervention claims unless independent clinical evidence supports the exact longevity use case.',
         'Classify Immortals Rx GLP-1, SGLT2, peptide, and NAD+ listings as commercial platform expansion; do not treat off-label longevity positioning as proven outcome evidence.',
         'Classify sauna/HSP27 claims as mechanistic biomarker self-experimentation unless replicated and tied to clinically meaningful outcomes.',
+        'Classify the Midjourney scanner essay as a measurement-modality argument; structural imaging may complement chemical and functional data, but the third-party device and routine-screening claims need validation.',
         'Keep the Immortals rename and immortality search-trend narrative in the ideology/brand lane; it does not increase confidence in the 2039 forecast.',
         'Keep critiques visible so biomarker improvements do not become unsupported longevity promises.',
       ],
@@ -130,6 +139,11 @@ export const protocolCategories = [
         label: 'Heat-dose biomarkers',
         title: 'Sauna claims illustrate the biomarker-vs-outcome gap',
         body: 'The June 2026 sauna thread is useful because it isolates dose tracking more clearly than many Blueprint posts, but HSP27 movement still does not prove longer healthspan for readers.',
+      },
+      {
+        label: 'Structural imaging',
+        title: 'Midjourney scanner essay adds a third measurement layer',
+        body: 'Johnson frames blood as chemical data, wearables as functional data, and imaging as structural data. Baseline + longitudinal tracking is the methodological signal; whole-body scanner claims still need clinical validation and false-positive context.',
       },
       {
         label: 'Aspirational ideology',
@@ -215,6 +229,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/bryan-johnson-protocol-2026-05-22.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md',
     ],
     sections: {
       habits: [
@@ -225,6 +240,7 @@ export const protocolCategories = [
         'Frame sleep as a durable foundation feeding the broader biomarker and recovery system.',
         'Use the June 19 seven-day checklist as a simple recurring-habits example, while preserving that readers need individualized medical guidance for health conditions.',
         'Keep jet-lag protocol material in a circadian-recovery / self-experiment bucket unless replicated and externally validated.',
+        'Treat the June 2026 “one international trip per quarter” suggestion as Johnson’s biomarker-derived travel budget, not generalized medical advice.',
         'Add exact wearable targets only after source verification and keep them in claims/measurement context.',
       ],
       donts: [
@@ -254,6 +270,11 @@ export const protocolCategories = [
         body: 'The Australia follow-up says 300 mg caffeine plus 3 mg melatonin helped resynchronize his body clock via glucose traces. This belongs in source-aware context, not as reader dosing guidance.',
       },
       {
+        label: 'Travel budget',
+        title: 'Quarterly international travel cap is an N=1 rule',
+        body: 'Johnson now suggests one international trip per quarter after measuring weeks-long recovery from China, India, and Australia travel. Keep the cap attributed to his protocol, not as a medical guideline for readers.',
+      },
+      {
         label: '7-day checklist',
         title: 'Food cutoff, screen cutoff, reading, morning light, exercise',
         body: 'Johnson’s June 19 high-engagement checklist is a compact version of his recurring sleep/wake routine: final food 4 hours before bed, screens off 60 minutes before bed, 10 minutes reading, morning light, and daily exercise.',
@@ -272,6 +293,8 @@ export const protocolSectionsBySlug = {
 };
 
 export const conceptEntries = [
+  { title: 'Midjourney scanner / structural imaging layer', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md', summary: 'Johnson’s June 23 essay frames blood draws, wearables, and imaging as chemical/functional/structural measurement layers; useful methodology signal, not proof the device improves outcomes.' },
+  { title: 'Quarterly international travel cap', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md', summary: 'Johnson suggests at most one international trip per quarter based on his travel biomarker recovery; N=1 behavioral prescription, not clinical guidance.' },
   { title: 'Immortals Rx GLP-1 / peptide expansion', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md', summary: 'Johnson announced semaglutide/Wegovy, tirzepatide/Zepbound, SGLT2 inhibitors, peptide complexes, glutathione, and NAD+ as part of a wider Immortals Rx catalog; commercial platform news, not medication advice.' },
   { title: 'Immortals company rename', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md', summary: 'Johnson explicitly says the company has changed its name to Immortals; notable as movement/brand positioning, not a medical claim.' },
   { title: 'Australian sun skin-aging readout', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md', summary: 'A June 2026 N=1 skin-aging metric claim after Australia travel; useful as protocol readout context, not independent validation.' },

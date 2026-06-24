@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-06-23'
+updated: '2026-06-24'
 tags:
   - person
   - company
@@ -30,6 +30,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-22.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md
 confidence: medium
 summary: >-
   Bryan Johnson is an American entrepreneur who moved from payments and
@@ -69,6 +70,8 @@ On June 16–17, Johnson added a tighter methodological arc: a sauna/HSP27 self-
 On June 21, Johnson’s feed turned from biomarker claims to media and fatherhood positioning. A reply to Ezra Klein and Gary Shteyngart pushed back on being framed as “modern dystopia” and re-articulated Don’t Die as a rejection of YOLO-style acceptance of self-destructive habits. Two other posts described parenting mental models and a childhood exercise in giving away water and bars without reward, using overjustification effect and moral elevation language. These are public-persona and ideology signals, not health-protocol evidence.
 
 On June 22, the feed returned to commercial health infrastructure: Johnson announced that Immortals Rx had expanded into “microdose” GLP-1s, peptides, and NAD+, listing semaglutide/Wegovy, tirzepatide/Zepbound, SGLT2 inhibitors, peptide complexes, glutathione, and NAD+ alongside the earlier tadalafil/metformin/minoxidil/tretinoin/acarbose stack. The same batch included a fermented-foods post citing an unnamed randomized trial, a biological-age joke, and an N=1 meibomian-gland dry-eye procedure report. The Rx expansion is dashboard-level business/protocol news; the food and procedure posts remain attributed claims or self-reports, not medical advice.
+
+On June 23, Johnson used a long endorsement of the third-party “Midjourney scanner” to state a clearer measurement model: blood draws for chemical state, wearables for function, and imaging for structural state, with baseline + longitudinal tracking as the real unlock. The same batch added a public exchange with Nassim Nicholas Taleb about attribution/confounding, a personal “one international trip per quarter” travel cap derived from China/India/Australia biomarker recovery, and a detailed preview of Kate Tolo’s cycle-anchored daily measurement routine for the female protocol. These are useful signals about Johnson’s measurement worldview and public reception, but the scanner, travel rule, and female-protocol readouts remain attributed claims or exploratory protocol design rather than clinical advice.
 
 ## Reading stance
 

@@ -71,6 +71,24 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-06-23',
+    label: 'Midjourney scanner essay adds structural-imaging layer',
+    summary: 'Johnson endorsed Midjourney’s third-party whole-body soft-tissue scanner and used it to state a three-part measurement model: blood draws for chemical state, wearables for function, and imaging for structural state. The useful dashboard signal is the baseline + longitudinal-tracking argument; the device and cited screening statistics remain unvalidated positioning.',
+    relatedHref: '/knowledge/biomarker-driven-longevity-protocols/',
+    relatedTitle: 'Biomarker-driven longevity protocols',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md',
+    confidence: 'medium',
+  },
+  {
+    date: '2026-06-23',
+    label: 'Taleb attribution critique and travel cap enter the feed',
+    summary: 'Johnson replied affably to Nassim Taleb’s criticism about attribution/confounding, then suggested limiting international travel to once per quarter based on his China/India/Australia biomarker recovery experience. Both are context signals: one highlights a failure mode, the other is an N=1 rule rather than a clinical guideline.',
+    relatedHref: '/knowledge/bryan-johnson/',
+    relatedTitle: 'Bryan Johnson',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md',
+    confidence: 'medium',
+  },
+  {
     date: '2026-06-22',
     label: 'Immortals Rx expands into GLP-1s, peptides, and NAD+',
     summary: 'Johnson announced a wider Immortals Rx catalog headed by “microdose” GLP-1s, peptides, and NAD+, including semaglutide/Wegovy, tirzepatide/Zepbound, SGLT2 inhibitors, peptide complexes, glutathione, and NAD+. Treat it as a major commercial/protocol expansion, not proof of off-label longevity benefit.',

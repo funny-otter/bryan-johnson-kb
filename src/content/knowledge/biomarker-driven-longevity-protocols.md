@@ -4,7 +4,7 @@ slug: biomarker-driven-longevity-protocols
 type: concept
 sourcePath: concepts/biomarker-driven-longevity-protocols.md
 created: '2026-05-22'
-updated: '2026-06-20'
+updated: '2026-06-24'
 tags:
   - longevity
   - biomarkers
@@ -25,6 +25,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-18.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md
 confidence: medium
 summary: >-
   A biomarker-driven longevity protocol is a health system that treats the body
@@ -67,6 +68,10 @@ A June 18, 2026 post shows the same readout-first instinct applied to circadian 
 A June 19, 2026 skin-aging post extends the readout-first pattern to a cosmetic endpoint: Johnson claimed one week of Australian sun increased his skin-aging readout by ~5% despite umbrella use and peak-UV protection, and separately repeated a claim that he has reversed his skin age by ~9 years since starting the project. For evaluation, the notable point is the quantification of a skin/UV endpoint as a protocol metric; the exact percentages should be treated as personal self-measurements, not independent validation.
 
 On June 17, 2026, Johnson made the methodology argument more explicit while discussing a Nature feature: with the Blueprint & Immortals Medical and Science Team, he argued that randomized controlled trials remain necessary for average-effect and safety questions but are not sufficient for optimizing individualized stacks of interventions. The essay frames N-of-1 measurement as a complement to RCTs, enabled by AI, wearables, multi-omics, real-time tracking, and nearest-neighbor mapping against deeply instrumented people. The caution is equally important: its examples — heat-shock-protein response, sauna-related plasticizer clearance, fertility markers, microplastics reduction, and a psilocybin metabolic signal — are presented as first-in-human observations needing validation, not as proven therapies.
+
+On June 23, 2026, Johnson extended the same methodology argument to structural imaging while endorsing the third-party “Midjourney scanner.” He framed blood draws as chemical data, wearables as functional data, and imaging as structural data, then argued that baseline + repeated scans can shift a finding from “what is this?” to “is this changing?” That is a useful answer to the over-testing failure mode above, but only at the level of a hypothesis: the scanner’s clinical value, regulatory status, and false-positive handling remain unvalidated, and Johnson’s screening statistics were lay citations without source links in the tweet.
+
+The same day also showed two protocol outputs rather than new measurements. First, Johnson replied to Nassim Nicholas Taleb’s attribution critique — “we’ll never know which drug, or combination of drugs, did him in” — which restates the confounding problem any dense intervention stack must face. Second, he suggested “travel internationally one time per quarter, max” after measuring China, India, and Australia as weeks-long biological insults. Treat the travel cap as a personal N=1 rule produced by Johnson’s measurement loop, not as general travel medicine guidance.
 
 ## Practical evaluation checklist
 

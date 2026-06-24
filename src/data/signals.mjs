@@ -1,5 +1,33 @@
 export const curatedSignals = [
   {
+    id: 'midjourney-scanner-structural-imaging-layer',
+    title: 'Johnson endorses Midjourney scanner as structural measurement layer',
+    date: '2026-06-23',
+    badge: 'Measurement',
+    kind: 'tweet',
+    topic: 'Imaging / prevention',
+    summary:
+      'Johnson published a long endorsement of Midjourney’s third-party whole-body soft-tissue scanner, using it to articulate a three-layer measurement model: blood draws for chemical state, wearables for function, and imaging for structural state. The dashboard takeaway is the baseline + longitudinal-tracking argument; the scanner’s clinical value and Johnson’s screening statistics remain unvalidated positioning, not medical advice.',
+    href: '/metrics/',
+    tweetId: '2069221309918351661',
+    confidence: 'medium',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md#Tweet-2069221309918351661'],
+  },
+  {
+    id: 'international-travel-quarterly-cap',
+    title: 'International travel becomes a biomarker-derived frequency cap',
+    date: '2026-06-23',
+    badge: 'N=1 rule',
+    kind: 'tweet',
+    topic: 'Travel / circadian recovery',
+    summary:
+      'After measuring travel to China, India, and Australia, Johnson suggested “travel internationally one time per quarter, max,” calling long-haul travel a biological insult requiring weeks to recover. Treat this as his N=1 behavioral prescription, not a clinical travel guideline.',
+    href: '/sleep/',
+    tweetId: '2069467553848778929',
+    confidence: 'medium',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md#Tweet-2069467553848778929'],
+  },
+  {
     id: 'immortals-rx-glp1-peptide-expansion',
     title: 'Immortals Rx expands into GLP-1s, peptides, and NAD+',
     date: '2026-06-22',
@@ -369,6 +397,18 @@ export const curatedSignals = [
 
 export const watchQueue = [
   {
+    title: 'Midjourney scanner validation and screening risk',
+    summary: 'Watch for clinical validation, regulatory status, false-positive handling, comparison data against MRI/ultrasound, and evidence that baseline + longitudinal whole-body scanning improves outcomes rather than simply increasing incidental findings.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md',
+    href: '/metrics/',
+  },
+  {
+    title: 'Kate Tolo female-protocol measurement release',
+    summary: 'Watch whether the July cycle-anchored protocol publishes actual baseline data, measurement methods, and interpretation boundaries for hormone, vaginal pH, skin, brain, body-composition, and performance readouts.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md',
+    href: '/health/',
+  },
+  {
     title: 'Immortals Rx GLP-1 and peptide evidence',
     summary: 'Watch for prescribing criteria, dosing details, adverse-event disclosures, clinician/pharmacy specifics, and independent evidence for GLP-1, SGLT2, peptide, glutathione, and NAD+ longevity positioning.',
     source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md',
@@ -461,16 +501,17 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '4', detail: '4 tweets with engagement · x-twitter-daily-2026-06-23.md' },
-  { label: 'Previous daily X capture', value: '3', detail: '3 tweets with engagement · x-twitter-daily-2026-06-22.md' },
+  { label: 'Latest daily X capture', value: '6', detail: '6 tweets with engagement · x-twitter-daily-2026-06-24.md' },
+  { label: 'Previous daily X capture', value: '4', detail: '4 tweets with engagement · x-twitter-daily-2026-06-23.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '31', detail: '12 knowledge pages + 19 update pages after this pass' },
+  { label: 'Public site content', value: '32', detail: '12 knowledge pages + 20 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-06-24', x_post: 6, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-06-23', x_post: 4, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-06-22', x_post: 3, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-06-20', x_post: 5, third_party: 0, wiki_update: 1, site_update: 1 },
