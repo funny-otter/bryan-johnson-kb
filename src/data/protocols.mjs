@@ -18,6 +18,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md',
     ],
     sections: {
       habits: [
@@ -99,6 +100,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md',
     ],
     sections: {
       habits: [
@@ -111,7 +113,9 @@ export const protocolCategories = [
         'Classify Immortals Rx GLP-1, SGLT2, peptide, and NAD+ listings as commercial platform expansion; do not treat off-label longevity positioning as proven outcome evidence.',
         'Classify sauna/HSP27 claims as mechanistic biomarker self-experimentation unless replicated and tied to clinically meaningful outcomes.',
         'Classify the Midjourney scanner essay as a measurement-modality argument; structural imaging may complement chemical and functional data, but the third-party device and routine-screening claims need validation.',
+        'Classify Johnson’s June 2026 wearable reply as a relative-tracking claim: consistency can help trend detection, but it does not settle absolute accuracy or clinical validity.',
         'Keep the Immortals rename and immortality search-trend narrative in the ideology/brand lane; it does not increase confidence in the 2039 forecast.',
+        'Keep the June 2026 immortality manifesto and “Die Economy” frame in the ideology/forecast lane unless independent evidence supports the specific biological and AI claims.',
         'Keep critiques visible so biomarker improvements do not become unsupported longevity promises.',
       ],
       donts: [
@@ -120,6 +124,11 @@ export const protocolCategories = [
       ],
     },
     cards: [
+      {
+        label: 'Structured manifesto',
+        title: 'Immortality argument is clearer, not stronger evidence',
+        body: 'Johnson now defines immortality as life expectancy rising faster than aging and argues from biology, AI, and anecdotal AI-guided cancer cases. It is dashboard-relevant ideology, but the 2039 forecast remains low-confidence.',
+      },
       {
         label: 'Biomarker claims',
         title: 'Biological age and speed-of-aging claims need claim framing',
@@ -293,6 +302,8 @@ export const protocolSectionsBySlug = {
 };
 
 export const conceptEntries = [
+  { title: 'Immortality manifesto / Die Economy', confidence: 'low', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md', summary: 'Johnson’s June 24 essay defines immortality as life expectancy gains outpacing aging and introduces the Die Economy vs Don’t Die Economy frame; important ideology, not validation of the 2039 forecast.' },
+  { title: 'Wearable relative tracking', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md', summary: 'Johnson argues divergent wearable numbers can still be useful for within-device trend tracking; this supports longitudinal measurement while leaving accuracy questions open.' },
   { title: 'Midjourney scanner / structural imaging layer', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md', summary: 'Johnson’s June 23 essay frames blood draws, wearables, and imaging as chemical/functional/structural measurement layers; useful methodology signal, not proof the device improves outcomes.' },
   { title: 'Quarterly international travel cap', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md', summary: 'Johnson suggests at most one international trip per quarter based on his travel biomarker recovery; N=1 behavioral prescription, not clinical guidance.' },
   { title: 'Immortals Rx GLP-1 / peptide expansion', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md', summary: 'Johnson announced semaglutide/Wegovy, tirzepatide/Zepbound, SGLT2 inhibitors, peptide complexes, glutathione, and NAD+ as part of a wider Immortals Rx catalog; commercial platform news, not medication advice.' },

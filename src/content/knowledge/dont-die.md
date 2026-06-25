@@ -4,7 +4,7 @@ slug: dont-die
 type: concept
 sourcePath: concepts/dont-die.md
 created: '2026-05-22'
-updated: '2026-06-22'
+updated: '2026-06-25'
 tags:
   - longevity
   - biohacking
@@ -21,6 +21,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-18.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-22.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md
 confidence: medium
 summary: >-
   Don't Die is bryan-johnson's community slogan, longevity philosophy, and
@@ -48,6 +49,8 @@ On June 17, 2026, Johnson publicly named Immortals as the company behind the new
 On June 19, 2026, Johnson made the rename explicit: “we’ve changed our company name to Immortals.” He linked the change to “identity precedes behavior,” arguing that seeing oneself as mortal or immortal changes what actions feel possible. This tightens the connection between Don’t Die, Blueprint products, the prescription layer at medicine.immortals.com, and the low-confidence immortality narrative. Read it as confirmed brand/identity strategy and movement positioning, not as a health claim or proof that physical immortality is near.
 
 On June 21, 2026, Johnson replied to Ezra Klein and Gary Shteyngart after what he characterized as a “modern dystopia” framing of his project. The response restated the movement’s core claim: if death is treated as inevitable, “YOLO” can romanticize slow self-harm through drinking, poor sleep, and unhealthy food; if radical life extension becomes possible, moral, ethical, and economic systems may evolve to value existence more explicitly. The dashboard treats this as a mainstream-media engagement and ideology clarification, not a new biological claim or independent verification of the attached press framing.
+
+On June 24, 2026, Johnson turned the ideology into a market map: the “Die Economy” versus the “Don’t Die Economy.” He labels grind culture, addiction, polluted social media, fast food, porn, and alcohol as industries that convert life and attention into profit, then positions Immortals as building products that convert time and attention into healthier, more functional years. This is dashboard-relevant because it makes Don’t Die a political-economy and company-mission frame, not only a slogan or habit protocol; it remains Johnson’s positioning, not an established economic or medical claim.
 
 ## Practical components
 

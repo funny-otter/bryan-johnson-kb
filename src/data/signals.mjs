@@ -1,5 +1,33 @@
 export const curatedSignals = [
   {
+    id: 'immortality-manifesto-die-economy',
+    title: 'Johnson publishes structured immortality manifesto and “Die Economy” frame',
+    date: '2026-06-24',
+    badge: 'Ideology',
+    kind: 'tweet',
+    topic: 'Immortality / Don’t Die',
+    summary:
+      'Johnson’s June 24 essay gave his clearest public structure for the immortality thesis: life expectancy rising faster than aging, biology and AI as enabling evidence, and a practical tier of “don’t die,” find the weak system, and invest in AI/Immortality/Energy. It also introduced the “Die Economy” versus “Don’t Die Economy” market frame. The dashboard treats this as important ideology and brand positioning, not new validation of the 2039 forecast.',
+    href: '/longevity/',
+    tweetId: '2069815304721756486',
+    confidence: 'low',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md#Tweet-2069815304721756486'],
+  },
+  {
+    id: 'wearables-relative-tracking-reliability',
+    title: 'Wearables framed as relative-tracking tools, not absolute truth',
+    date: '2026-06-24',
+    badge: 'Measurement',
+    kind: 'tweet',
+    topic: 'Wearables / reliability',
+    summary:
+      'Replying to divergent Apple Watch, Whoop, Oura, and Fitbit readouts, Johnson argued that wearables are useful for comparing yesterday to today because a consistent device can still reveal directionality. This reinforces his longitudinal measurement model while leaving absolute accuracy and clinical validity unresolved.',
+    href: '/metrics/',
+    tweetId: '2069860656678048004',
+    confidence: 'medium',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md#Tweet-2069860656678048004'],
+  },
+  {
     id: 'midjourney-scanner-structural-imaging-layer',
     title: 'Johnson endorses Midjourney scanner as structural measurement layer',
     date: '2026-06-23',
@@ -397,6 +425,18 @@ export const curatedSignals = [
 
 export const watchQueue = [
   {
+    title: 'Immortality manifesto evidence claims',
+    summary: 'Watch for independent sourcing around the Sid Sijbrandij and Paul Conyngham cases, clearer definitions of longevity escape velocity, and whether Johnson separates AI-accelerated cancer anecdotes from evidence for whole-body aging escape.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md',
+    href: '/longevity/',
+  },
+  {
+    title: 'Wearable reliability versus validity',
+    summary: 'Watch whether Johnson publishes device-comparison data, defines acceptable within-device consistency, or connects relative-tracking claims to clinically meaningful decisions rather than only behavioral feedback.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md',
+    href: '/metrics/',
+  },
+  {
     title: 'Midjourney scanner validation and screening risk',
     summary: 'Watch for clinical validation, regulatory status, false-positive handling, comparison data against MRI/ultrasound, and evidence that baseline + longitudinal whole-body scanning improves outcomes rather than simply increasing incidental findings.',
     source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md',
@@ -501,16 +541,17 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '6', detail: '6 tweets with engagement · x-twitter-daily-2026-06-24.md' },
-  { label: 'Previous daily X capture', value: '4', detail: '4 tweets with engagement · x-twitter-daily-2026-06-23.md' },
+  { label: 'Latest daily X capture', value: '2', detail: '2 tweets with engagement · x-twitter-daily-2026-06-25.md' },
+  { label: 'Previous daily X capture', value: '6', detail: '6 tweets with engagement · x-twitter-daily-2026-06-24.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '32', detail: '12 knowledge pages + 20 update pages after this pass' },
+  { label: 'Public site content', value: '33', detail: '12 knowledge pages + 21 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-06-25', x_post: 2, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-06-24', x_post: 6, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-06-23', x_post: 4, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-06-22', x_post: 3, third_party: 0, wiki_update: 1, site_update: 1 },

@@ -4,7 +4,7 @@ slug: biomarker-driven-longevity-protocols
 type: concept
 sourcePath: concepts/biomarker-driven-longevity-protocols.md
 created: '2026-05-22'
-updated: '2026-06-24'
+updated: '2026-06-25'
 tags:
   - longevity
   - biomarkers
@@ -26,6 +26,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md
 confidence: medium
 summary: >-
   A biomarker-driven longevity protocol is a health system that treats the body
@@ -72,6 +73,8 @@ On June 17, 2026, Johnson made the methodology argument more explicit while disc
 On June 23, 2026, Johnson extended the same methodology argument to structural imaging while endorsing the third-party “Midjourney scanner.” He framed blood draws as chemical data, wearables as functional data, and imaging as structural data, then argued that baseline + repeated scans can shift a finding from “what is this?” to “is this changing?” That is a useful answer to the over-testing failure mode above, but only at the level of a hypothesis: the scanner’s clinical value, regulatory status, and false-positive handling remain unvalidated, and Johnson’s screening statistics were lay citations without source links in the tweet.
 
 The same day also showed two protocol outputs rather than new measurements. First, Johnson replied to Nassim Nicholas Taleb’s attribution critique — “we’ll never know which drug, or combination of drugs, did him in” — which restates the confounding problem any dense intervention stack must face. Second, he suggested “travel internationally one time per quarter, max” after measuring China, India, and Australia as weeks-long biological insults. Treat the travel cap as a personal N=1 rule produced by Johnson’s measurement loop, not as general travel medicine guidance.
+
+On June 24, 2026, Johnson extended the same longitudinal logic to consumer wearables. Replying to a post comparing Apple Watch, Whoop, Oura, and Fitbit Air and finding divergent readings, he argued that wearables remain useful for *relative* tracking — yesterday versus today, or how sleep changes after alcohol — if the device is consistent with itself. This is a reliability-versus-validity stance: within-device trends may support behavioral feedback, but divergent absolute numbers still leave accuracy and clinical-decision questions unresolved.
 
 ## Practical evaluation checklist
 

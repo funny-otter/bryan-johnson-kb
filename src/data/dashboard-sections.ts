@@ -71,6 +71,24 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-06-24',
+    label: 'Immortality manifesto adds “Die Economy” frame',
+    summary: 'Johnson published his clearest structured immortality argument yet: longevity escape as life expectancy increasing faster than aging, biology and AI as supporting motifs, and a “don’t die / find your achilles heel / invest in the future” action tier. The same essay names a “Die Economy” versus “Don’t Die Economy,” tying the renamed Immortals company to ideology and market positioning. It remains low-confidence as a forecast.',
+    relatedHref: '/knowledge/immortality-by-2039/',
+    relatedTitle: 'Immortality by 2039',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md',
+    confidence: 'low',
+  },
+  {
+    date: '2026-06-24',
+    label: 'Wearables defended for relative tracking',
+    summary: 'Johnson replied to divergent consumer-wearable readouts by arguing that within-device consistency can still support trend tracking, such as comparing sleep after alcohol with baseline nights. This reinforces his longitudinal measurement thesis while preserving questions about absolute accuracy and clinical validity.',
+    relatedHref: '/knowledge/biomarker-driven-longevity-protocols/',
+    relatedTitle: 'Biomarker-driven longevity protocols',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md',
+    confidence: 'medium',
+  },
+  {
     date: '2026-06-23',
     label: 'Midjourney scanner essay adds structural-imaging layer',
     summary: 'Johnson endorsed Midjourney’s third-party whole-body soft-tissue scanner and used it to state a three-part measurement model: blood draws for chemical state, wearables for function, and imaging for structural state. The useful dashboard signal is the baseline + longitudinal-tracking argument; the device and cited screening statistics remain unvalidated positioning.',
