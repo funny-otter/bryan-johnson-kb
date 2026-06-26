@@ -1,5 +1,19 @@
 export const curatedSignals = [
   {
+    id: 'inherited-cancer-dna-rna-panel',
+    title: 'Johnson adds inherited-cancer DNA + RNA screening to the measurement stack',
+    date: '2026-06-25',
+    badge: 'Measurement',
+    kind: 'tweet',
+    topic: 'Cancer risk / genetics',
+    summary:
+      'Johnson reported running an Invitae Multi-Cancer Panel covering 71 inherited-cancer-risk genes with DNA plus RNA analysis and said it found no pathogenic variants. The dashboard treats this as a new germline risk-stratification layer in his measurement worldview, not proof of clinical benefit or personal screening advice; he also notes it does not address most non-inherited cancers.',
+    href: '/metrics/',
+    tweetId: '2070217017064620228',
+    confidence: 'medium',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-06-26.md#Tweet-2070217017064620228'],
+  },
+  {
     id: 'immortality-manifesto-die-economy',
     title: 'Johnson publishes structured immortality manifesto and “Die Economy” frame',
     date: '2026-06-24',

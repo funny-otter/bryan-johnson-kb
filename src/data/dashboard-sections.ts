@@ -71,6 +71,15 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-06-25',
+    label: 'Inherited-cancer DNA + RNA screen disclosed',
+    summary: 'Johnson reported a negative result from an Invitae Multi-Cancer Panel covering 71 inherited-cancer-risk genes with DNA plus RNA analysis. It adds germline risk stratification to the public measurement stack, but remains an attributed self-report and does not validate the test as reader advice or address most non-inherited cancers.',
+    relatedHref: '/knowledge/biomarker-driven-longevity-protocols/',
+    relatedTitle: 'Biomarker-driven longevity protocols',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-26.md',
+    confidence: 'medium',
+  },
+  {
     date: '2026-06-24',
     label: 'Immortality manifesto adds “Die Economy” frame',
     summary: 'Johnson published his clearest structured immortality argument yet: longevity escape as life expectancy increasing faster than aging, biology and AI as supporting motifs, and a “don’t die / find your achilles heel / invest in the future” action tier. The same essay names a “Die Economy” versus “Don’t Die Economy,” tying the renamed Immortals company to ideology and market positioning. It remains low-confidence as a forecast.',

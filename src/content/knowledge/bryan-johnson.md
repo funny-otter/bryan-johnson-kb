@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-06-25'
+updated: '2026-06-26'
 tags:
   - person
   - company
@@ -32,6 +32,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-26.md
 confidence: medium
 summary: >-
   Bryan Johnson is an American entrepreneur who moved from payments and
@@ -75,6 +76,8 @@ On June 22, the feed returned to commercial health infrastructure: Johnson annou
 On June 23, Johnson used a long endorsement of the third-party “Midjourney scanner” to state a clearer measurement model: blood draws for chemical state, wearables for function, and imaging for structural state, with baseline + longitudinal tracking as the real unlock. The same batch added a public exchange with Nassim Nicholas Taleb about attribution/confounding, a personal “one international trip per quarter” travel cap derived from China/India/Australia biomarker recovery, and a detailed preview of Kate Tolo’s cycle-anchored daily measurement routine for the female protocol. These are useful signals about Johnson’s measurement worldview and public reception, but the scanner, travel rule, and female-protocol readouts remain attributed claims or exploratory protocol design rather than clinical advice.
 
 On June 24, Johnson published two durable posts. The first was his clearest structured immortality manifesto, defining immortality as life expectancy outpacing aging and arguing from biology, AI capability, and Johnson-reported AI-assisted cancer anecdotes before introducing the “Die Economy” versus “Don’t Die Economy” frame for Immortals. The second defended consumer wearables as relative-tracking tools despite divergent absolute readings across brands. Together they sharpen the split between Johnson’s low-confidence future ideology and his medium-confidence measurement methodology; neither should be read as personal medical advice or independent validation of the claims.
+
+On June 25, Johnson’s most substantive new post was a self-reported inherited-cancer screen: a combined DNA + RNA panel across 71 genes, with a negative result. He framed it as early risk stratification for surveillance rather than a cancer diagnosis. The same batch repeated his sleep-as-longevity-drug checklist and amplified New York Post coverage of Kate Tolo’s skin-age biohacking; those are recurring sleep/female-protocol signals, while the cancer panel is the novel measurement addition.
 
 ## Reading stance
 

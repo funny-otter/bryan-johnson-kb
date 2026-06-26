@@ -4,7 +4,7 @@ slug: biomarker-driven-longevity-protocols
 type: concept
 sourcePath: concepts/biomarker-driven-longevity-protocols.md
 created: '2026-05-22'
-updated: '2026-06-25'
+updated: '2026-06-26'
 tags:
   - longevity
   - biomarkers
@@ -27,6 +27,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-26.md
 confidence: medium
 summary: >-
   A biomarker-driven longevity protocol is a health system that treats the body
@@ -75,6 +76,8 @@ On June 23, 2026, Johnson extended the same methodology argument to structural i
 The same day also showed two protocol outputs rather than new measurements. First, Johnson replied to Nassim Nicholas Taleb’s attribution critique — “we’ll never know which drug, or combination of drugs, did him in” — which restates the confounding problem any dense intervention stack must face. Second, he suggested “travel internationally one time per quarter, max” after measuring China, India, and Australia as weeks-long biological insults. Treat the travel cap as a personal N=1 rule produced by Johnson’s measurement loop, not as general travel medicine guidance.
 
 On June 24, 2026, Johnson extended the same longitudinal logic to consumer wearables. Replying to a post comparing Apple Watch, Whoop, Oura, and Fitbit Air and finding divergent readings, he argued that wearables remain useful for *relative* tracking — yesterday versus today, or how sleep changes after alcohol — if the device is consistent with itself. This is a reliability-versus-validity stance: within-device trends may support behavioral feedback, but divergent absolute numbers still leave accuracy and clinical-decision questions unresolved.
+
+On June 25, 2026, Johnson added germline inherited-cancer screening to the measurement stack. He said he ran a combined DNA + RNA panel covering 71 inherited-cancer-risk genes, including BRCA1/2, ATM, MLH1/MSH2, TP53, APC, PTEN, RET, VHL, and MEN1, and reported a negative result. The useful dashboard signal is a new measurement category — inherited-risk stratification — rather than another blood/imaging/fitness readout. The caveat is equally important: the cancer-survival statistics and RNA-splicing claims are Johnson’s lay citations from the tweet, the test does not address the large majority of non-inherited cancers, and his negative result is an N=1 self-report, not independent validation or reader screening advice.
 
 ## Practical evaluation checklist
 

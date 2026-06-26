@@ -19,6 +19,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-26.md',
     ],
     sections: {
       habits: [
@@ -32,6 +33,7 @@ export const protocolCategories = [
         'Treat the June 2026 Australian sun/skin-aging post as a skin-readout example inside the measurement loop, not as validated skincare advice.',
         'Treat the June 2026 Immortals Rx expansion separately from foundational habits; the GLP-1, SGLT2, peptide, and NAD+ catalog is a commercial/protocol claim that requires clinician oversight.',
         'Treat Johnson’s June 2026 “one international trip per quarter” rule as a biomarker-derived personal boundary, not as a reader travel guideline.',
+        'Treat the June 2026 inherited-cancer DNA + RNA panel as germline risk-stratification context, not a diagnosis, universal screening recommendation, or validation of Johnson’s early-surveillance statistics.',
         'Preserve medical-caution framing: this page summarizes Johnson/Blueprint practice, not personal treatment advice.',
       ],
       donts: [
@@ -76,6 +78,11 @@ export const protocolCategories = [
         body: 'Johnson suggests one international trip per quarter after measuring China, India, and Australia travel as weeks-long biological insults. Keep it as his personal biomarker-derived rule, not generalized travel medicine.',
       },
       {
+        label: 'Cancer risk screen',
+        title: 'DNA + RNA panel adds inherited-risk stratification',
+        body: 'Johnson says an Invitae panel across 71 inherited-cancer genes found no pathogenic variants. Keep it as a self-reported measurement-category expansion with clinician/genetics-counseling context, not reader screening advice.',
+      },
+      {
         label: 'Skin readout',
         title: 'Australian sun exposure becomes another measured endpoint',
         body: 'Johnson claims one week in Australian sun increased his skin-aging metric by about 5% despite protection. Present this as self-measured UV-risk context, not as independent proof or individualized skincare advice.',
@@ -101,6 +108,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-26.md',
     ],
     sections: {
       habits: [
@@ -114,6 +122,7 @@ export const protocolCategories = [
         'Classify sauna/HSP27 claims as mechanistic biomarker self-experimentation unless replicated and tied to clinically meaningful outcomes.',
         'Classify the Midjourney scanner essay as a measurement-modality argument; structural imaging may complement chemical and functional data, but the third-party device and routine-screening claims need validation.',
         'Classify Johnson’s June 2026 wearable reply as a relative-tracking claim: consistency can help trend detection, but it does not settle absolute accuracy or clinical validity.',
+        'Classify the inherited-cancer DNA + RNA panel as early-risk surveillance framing: useful for understanding Johnson’s measurement stack, not evidence that broad genetic screening improves outcomes for every reader.',
         'Keep the Immortals rename and immortality search-trend narrative in the ideology/brand lane; it does not increase confidence in the 2039 forecast.',
         'Keep the June 2026 immortality manifesto and “Die Economy” frame in the ideology/forecast lane unless independent evidence supports the specific biological and AI claims.',
         'Keep critiques visible so biomarker improvements do not become unsupported longevity promises.',
@@ -153,6 +162,11 @@ export const protocolCategories = [
         label: 'Structural imaging',
         title: 'Midjourney scanner essay adds a third measurement layer',
         body: 'Johnson frames blood as chemical data, wearables as functional data, and imaging as structural data. Baseline + longitudinal tracking is the methodological signal; whole-body scanner claims still need clinical validation and false-positive context.',
+      },
+      {
+        label: 'Genetic risk layer',
+        title: 'Inherited-cancer screening enters the measurement model',
+        body: 'Johnson’s June 25 panel result adds germline DNA/RNA risk stratification to the public stack. It is source-worthy methodology context, but his negative result and survival-stat citations remain attributed self-report and lay framing.',
       },
       {
         label: 'Aspirational ideology',
@@ -302,6 +316,7 @@ export const protocolSectionsBySlug = {
 };
 
 export const conceptEntries = [
+  { title: 'Inherited-cancer DNA + RNA risk panel', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-26.md', summary: 'Johnson reported a negative 71-gene Invitae inherited-cancer panel with DNA plus RNA analysis; useful as a risk-stratification measurement signal, not clinical screening advice.' },
   { title: 'Immortality manifesto / Die Economy', confidence: 'low', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md', summary: 'Johnson’s June 24 essay defines immortality as life expectancy gains outpacing aging and introduces the Die Economy vs Don’t Die Economy frame; important ideology, not validation of the 2039 forecast.' },
   { title: 'Wearable relative tracking', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md', summary: 'Johnson argues divergent wearable numbers can still be useful for within-device trend tracking; this supports longitudinal measurement while leaving accuracy questions open.' },
   { title: 'Midjourney scanner / structural imaging layer', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md', summary: 'Johnson’s June 23 essay frames blood draws, wearables, and imaging as chemical/functional/structural measurement layers; useful methodology signal, not proof the device improves outcomes.' },
