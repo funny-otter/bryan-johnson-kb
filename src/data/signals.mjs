@@ -1,5 +1,19 @@
 export const curatedSignals = [
   {
+    id: 'biological-age-early-cancer-risk-claim',
+    title: 'Biological-age acceleration tied to early-cancer-risk messaging',
+    date: '2026-06-26',
+    badge: 'Risk marker',
+    kind: 'tweet',
+    topic: 'Biological age / cancer risk',
+    summary:
+      'Johnson cited an unnamed study arguing that, especially under age 55, a biological age older than chronological age is associated with higher early-cancer risk. The dashboard treats this as an argument connecting his biological-age-clock theme to cancer surveillance, not as a validated screening recommendation; the statistics are Johnson’s lay citation from the tweet and the source study was not named.',
+    href: '/metrics/',
+    tweetId: '2070592637732819082',
+    confidence: 'low',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-06-27.md#Tweet-2070592637732819082'],
+  },
+  {
     id: 'inherited-cancer-dna-rna-panel',
     title: 'Johnson adds inherited-cancer DNA + RNA screening to the measurement stack',
     date: '2026-06-25',

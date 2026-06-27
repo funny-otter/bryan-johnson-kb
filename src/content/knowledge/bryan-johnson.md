@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-06-26'
+updated: '2026-06-27'
 tags:
   - person
   - company
@@ -33,6 +33,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-26.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-27.md
 confidence: medium
 summary: >-
   Bryan Johnson is an American entrepreneur who moved from payments and
@@ -78,6 +79,8 @@ On June 23, Johnson used a long endorsement of the third-party “Midjourney sca
 On June 24, Johnson published two durable posts. The first was his clearest structured immortality manifesto, defining immortality as life expectancy outpacing aging and arguing from biology, AI capability, and Johnson-reported AI-assisted cancer anecdotes before introducing the “Die Economy” versus “Don’t Die Economy” frame for Immortals. The second defended consumer wearables as relative-tracking tools despite divergent absolute readings across brands. Together they sharpen the split between Johnson’s low-confidence future ideology and his medium-confidence measurement methodology; neither should be read as personal medical advice or independent validation of the claims.
 
 On June 25, Johnson’s most substantive new post was a self-reported inherited-cancer screen: a combined DNA + RNA panel across 71 genes, with a negative result. He framed it as early risk stratification for surveillance rather than a cancer diagnosis. The same batch repeated his sleep-as-longevity-drug checklist and amplified New York Post coverage of Kate Tolo’s skin-age biohacking; those are recurring sleep/female-protocol signals, while the cancer panel is the novel measurement addition.
+
+On June 26, Johnson followed that cancer-risk theme with a single biological-age post. He cited an unnamed study claiming that people whose biological age runs ahead of chronological age have higher early-cancer risk under 55, with the widest gaps associated with higher lung, uterine, and gastrointestinal cancer risk. The post is useful as a bridge between his biological-age-clock messaging and cancer-surveillance frame, but remains a tweet-level lay citation rather than independently verified medical guidance.
 
 ## Reading stance
 

@@ -71,6 +71,15 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-06-26',
+    label: 'Biological-age gap cited as early-cancer-risk marker',
+    summary: 'Johnson cited an unnamed study claiming that biological age ahead of chronological age is associated with higher early-cancer risk under age 55, with the largest gaps linked to higher lung, uterine, and GI cancer risk. This extends the biological-age-clock theme toward cancer surveillance but remains an attributed, unsourced tweet-level claim rather than screening advice.',
+    relatedHref: '/knowledge/biomarker-driven-longevity-protocols/',
+    relatedTitle: 'Biomarker-driven longevity protocols',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-27.md',
+    confidence: 'low',
+  },
+  {
     date: '2026-06-25',
     label: 'Inherited-cancer DNA + RNA screen disclosed',
     summary: 'Johnson reported a negative result from an Invitae Multi-Cancer Panel covering 71 inherited-cancer-risk genes with DNA plus RNA analysis. It adds germline risk stratification to the public measurement stack, but remains an attributed self-report and does not validate the test as reader advice or address most non-inherited cancers.',
