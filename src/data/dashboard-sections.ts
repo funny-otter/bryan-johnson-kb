@@ -71,6 +71,15 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-06-27',
+    label: 'Don’t Die cigarette-pack meme amplified',
+    summary: 'Johnson quote-tweeted a TBPN video claiming France had put his image and Don’t Die wording on cigarette packs, then joked about being “the face of French cigarettes.” Treat it as unverified brand/reception context and an ironic collision with the Die Economy frame, not as a confirmed government action or health claim.',
+    relatedHref: '/knowledge/dont-die/',
+    relatedTitle: "Don't Die",
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-28.md',
+    confidence: 'low',
+  },
+  {
     date: '2026-06-26',
     label: 'Biological-age gap cited as early-cancer-risk marker',
     summary: 'Johnson cited an unnamed study claiming that biological age ahead of chronological age is associated with higher early-cancer risk under age 55, with the largest gaps linked to higher lung, uterine, and GI cancer risk. This extends the biological-age-clock theme toward cancer surveillance but remains an attributed, unsourced tweet-level claim rather than screening advice.',

@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-06-27'
+updated: '2026-06-28'
 tags:
   - person
   - company
@@ -34,6 +34,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-26.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-27.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-28.md
 confidence: medium
 summary: >-
   Bryan Johnson is an American entrepreneur who moved from payments and
@@ -81,6 +82,8 @@ On June 24, Johnson published two durable posts. The first was his clearest stru
 On June 25, Johnson’s most substantive new post was a self-reported inherited-cancer screen: a combined DNA + RNA panel across 71 genes, with a negative result. He framed it as early risk stratification for surveillance rather than a cancer diagnosis. The same batch repeated his sleep-as-longevity-drug checklist and amplified New York Post coverage of Kate Tolo’s skin-age biohacking; those are recurring sleep/female-protocol signals, while the cancer panel is the novel measurement addition.
 
 On June 26, Johnson followed that cancer-risk theme with a single biological-age post. He cited an unnamed study claiming that people whose biological age runs ahead of chronological age have higher early-cancer risk under 55, with the widest gaps associated with higher lung, uterine, and gastrointestinal cancer risk. The post is useful as a bridge between his biological-age-clock messaging and cancer-surveillance frame, but remains a tweet-level lay citation rather than independently verified medical guidance.
+
+On June 27, Johnson’s feed shifted from biomarker claims to cultural reception. He quote-tweeted a TBPN video claiming French cigarette packs had reappropriated his image and Don’t Die slogan, then joked about being “the face of French cigarettes” while nudging smokers toward sleep. Because the underlying claim is third-party and unverified, the dashboard records it only as a meme/brand-reception signal. A second post that day urged care for self, others, the planet, animals, and life; it restates the Don’t Die worldview without adding a new protocol or medical claim.
 
 ## Reading stance
 

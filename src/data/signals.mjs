@@ -1,5 +1,19 @@
 export const curatedSignals = [
   {
+    id: 'dont-die-french-cigarettes-meme',
+    title: 'Don’t Die reappears as an unverified French-cigarette meme',
+    date: '2026-06-27',
+    badge: 'Reception',
+    kind: 'tweet',
+    topic: "Don't Die / brand",
+    summary:
+      'Johnson amplified a TBPN post claiming France had put his likeness and a Don’t Die message on cigarette packs, joking that he was “pleased to be the face of French cigarettes” and redirecting the gag toward sleep. The dashboard treats this as cultural-reception evidence, not a verified government or tobacco-packaging fact; the irony is that a tobacco meme reappropriated a slogan whose ideology opposes the “Die Economy.”',
+    href: '/knowledge/dont-die/',
+    tweetId: '2070903240603103295',
+    confidence: 'low',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-06-28.md#Tweet-2070903240603103295'],
+  },
+  {
     id: 'biological-age-early-cancer-risk-claim',
     title: 'Biological-age acceleration tied to early-cancer-risk messaging',
     date: '2026-06-26',

@@ -4,7 +4,7 @@ slug: dont-die
 type: concept
 sourcePath: concepts/dont-die.md
 created: '2026-05-22'
-updated: '2026-06-25'
+updated: '2026-06-28'
 tags:
   - longevity
   - biohacking
@@ -22,6 +22,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-22.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-28.md
 confidence: medium
 summary: >-
   Don't Die is bryan-johnson's community slogan, longevity philosophy, and
@@ -51,6 +52,8 @@ On June 19, 2026, Johnson made the rename explicit: “we’ve changed our compa
 On June 21, 2026, Johnson replied to Ezra Klein and Gary Shteyngart after what he characterized as a “modern dystopia” framing of his project. The response restated the movement’s core claim: if death is treated as inevitable, “YOLO” can romanticize slow self-harm through drinking, poor sleep, and unhealthy food; if radical life extension becomes possible, moral, ethical, and economic systems may evolve to value existence more explicitly. The dashboard treats this as a mainstream-media engagement and ideology clarification, not a new biological claim or independent verification of the attached press framing.
 
 On June 24, 2026, Johnson turned the ideology into a market map: the “Die Economy” versus the “Don’t Die Economy.” He labels grind culture, addiction, polluted social media, fast food, porn, and alcohol as industries that convert life and attention into profit, then positions Immortals as building products that convert time and attention into healthier, more functional years. This is dashboard-relevant because it makes Don’t Die a political-economy and company-mission frame, not only a slogan or habit protocol; it remains Johnson’s positioning, not an established economic or medical claim.
+
+On June 27, 2026, Johnson amplified a viral TBPN post claiming France had put his likeness and a Don’t Die message on cigarette packs, joking that he was “pleased to be the face of French cigarettes” and folding the moment back into his sleep messaging. The dashboard treats this as brand/reception context, not a verified French government action: the source was a third-party social post with no official citation. Its relevance is the irony that Don’t Die is now recognizable enough to be reappropriated in a tobacco meme, a product category the ideology would place squarely in the “Die Economy.” A same-day reflective post restated the movement’s care-for-life ethos rather than adding a new health claim.
 
 ## Practical components
 
