@@ -71,6 +71,15 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-06-28',
+    label: 'Munger biases mapped to health neglect',
+    summary: 'Johnson applied Charlie Munger’s cognitive-bias framework to why “smart people” ignore health: delayed incentives, slow decline, consistency traps, denial, and skipping tests to avoid bad news. This is useful Don’t Die behavior framing, not a new intervention or clinical claim.',
+    relatedHref: '/knowledge/dont-die/',
+    relatedTitle: "Don't Die",
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-29.md',
+    confidence: 'medium',
+  },
+  {
     date: '2026-06-27',
     label: 'Don’t Die cigarette-pack meme amplified',
     summary: 'Johnson quote-tweeted a TBPN video claiming France had put his image and Don’t Die wording on cigarette packs, then joked about being “the face of French cigarettes.” Treat it as unverified brand/reception context and an ironic collision with the Die Economy frame, not as a confirmed government action or health claim.',

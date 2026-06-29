@@ -1,5 +1,19 @@
 export const curatedSignals = [
   {
+    id: 'munger-biases-health-neglect',
+    title: 'Health neglect reframed through Charlie Munger’s bias checklist',
+    date: '2026-06-28',
+    badge: 'Ideology',
+    kind: 'tweet',
+    topic: "Don't Die / behavior",
+    summary:
+      'Johnson quote-tweeted a Charlie Munger psychology-of-misjudgment thread and mapped five biases onto health neglect: delayed payoff, slow-boiling-frog decline, public consistency, denial, and avoiding tests to avoid bad news. The dashboard treats this as a Don’t Die behavior-design argument, not a new protocol, biomarker, or medical claim.',
+    href: '/knowledge/dont-die/',
+    tweetId: '2071285403471233309',
+    confidence: 'medium',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-06-29.md#Tweet-2071285403471233309'],
+  },
+  {
     id: 'dont-die-french-cigarettes-meme',
     title: 'Don’t Die reappears as an unverified French-cigarette meme',
     date: '2026-06-27',
