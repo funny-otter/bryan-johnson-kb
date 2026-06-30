@@ -20,6 +20,17 @@ export type TimelineEvent = {
 
 export const opinionItems: OpinionItem[] = [
   {
+    claim: 'AI competence could pressure adult rights and institutional authority.',
+    position: 'In a June 30 essay, Johnson speculated that if AI systems become demonstrably better than humans at high-stakes decisions, society may apply the same relative-competence logic used to limit teenage autonomy to adults in domains such as driving, law, medicine, finance, and governance.',
+    counterpoint: 'Johnson explicitly hedged that he was following a pattern rather than advocating the outcome or calling it inevitable. This belongs in the speculative opinion lane, not as evidence of a Blueprint protocol, health claim, or settled AI-governance forecast.',
+    confidence: 'low',
+    relatedHref: '/knowledge/bryan-johnson/',
+    relatedTitle: 'Bryan Johnson',
+    sources: [
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-30.md#Tweet-2071747970354266213',
+    ],
+  },
+  {
     claim: 'Biomarkers and organs should outrank cravings when choosing health behavior.',
     position: 'Johnson frames Blueprint as a delegated decision system: measure the body, let the data produce the “grocery shopping list,” and reduce the authority of momentary preference.',
     counterpoint: 'The public evidence is strongest for ordinary foundations such as sleep, exercise, nutrition, and oral care; dense measurement can still overfit proxies or become expensive N=1 optimization.',
@@ -70,6 +81,15 @@ export const opinionItems: OpinionItem[] = [
 ];
 
 export const timelineEvents: TimelineEvent[] = [
+  {
+    date: '2026-06-30',
+    label: 'AI competence and adult-rights speculation posted',
+    summary: 'Johnson argued that “rights follow from relative competence” and speculated that adult rights could be curtailed as AI demonstrates superior judgment in safety-critical and institutional domains. He hedged that this was pattern-following rather than advocacy or inevitability, so the KB treats it as public philosophy/AI-governance opinion rather than a health or protocol update.',
+    relatedHref: '/opinions/',
+    relatedTitle: 'Opinions',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-30.md',
+    confidence: 'low',
+  },
   {
     date: '2026-06-28',
     label: 'Munger biases mapped to health neglect',

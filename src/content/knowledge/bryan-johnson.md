@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-06-28'
+updated: '2026-06-30'
 tags:
   - person
   - company
@@ -35,6 +35,8 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-26.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-27.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-28.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-29.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-06-30.md
 confidence: medium
 summary: >-
   Bryan Johnson is an American entrepreneur who moved from payments and
@@ -84,6 +86,10 @@ On June 25, Johnson’s most substantive new post was a self-reported inherited-
 On June 26, Johnson followed that cancer-risk theme with a single biological-age post. He cited an unnamed study claiming that people whose biological age runs ahead of chronological age have higher early-cancer risk under 55, with the widest gaps associated with higher lung, uterine, and gastrointestinal cancer risk. The post is useful as a bridge between his biological-age-clock messaging and cancer-surveillance frame, but remains a tweet-level lay citation rather than independently verified medical guidance.
 
 On June 27, Johnson’s feed shifted from biomarker claims to cultural reception. He quote-tweeted a TBPN video claiming French cigarette packs had reappropriated his image and Don’t Die slogan, then joked about being “the face of French cigarettes” while nudging smokers toward sleep. Because the underlying claim is third-party and unverified, the dashboard records it only as a meme/brand-reception signal. A second post that day urged care for self, others, the planet, animals, and life; it restates the Don’t Die worldview without adding a new protocol or medical claim.
+
+On June 28, Johnson used a Charlie Munger psychology-of-misjudgment thread to explain why “smart people” neglect health: delayed incentives, slow decline, consistency pressure, denial, and avoiding tests to avoid bad news. This is useful public-persona context because it shows Johnson translating Don’t Die into behavioral economics language, but it remains attributed framing rather than clinical evidence or a new protocol.
+
+On June 29–30, Johnson moved briefly outside the health stack into AI-governance speculation. One high-reply post asked, “Who would you trust to run the world?” and a longer essay argued that “rights follow from relative competence,” so adult rights could be curtailed if AI proves better at driving, law, medicine, finance, governance, and similar domains. He explicitly hedged that he was not advocating the future or calling it inevitable. The dashboard treats this as a low-confidence opinion signal about Johnson’s broader future-of-humanity reasoning, not as a Blueprint, biomarker, or medical claim.
 
 ## Reading stance
 

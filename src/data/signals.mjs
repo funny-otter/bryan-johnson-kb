@@ -1,5 +1,19 @@
 export const curatedSignals = [
   {
+    id: 'ai-rights-relative-competence-speculation',
+    title: 'Johnson speculates that AI competence could reshape adult rights',
+    date: '2026-06-30',
+    badge: 'Opinion',
+    kind: 'tweet',
+    topic: 'AI governance / rights',
+    summary:
+      'Johnson wrote that “rights follow from relative competence” and speculated that adult rights may be curtailed if AI systems prove superior in driving, law, medicine, finance, governance, and other high-stakes decisions. He explicitly hedged that he was following a pattern rather than advocating or predicting inevitability, so the dashboard treats it as public philosophy/AI-governance opinion, not a Blueprint protocol or health claim.',
+    href: '/opinions/',
+    tweetId: '2071747970354266213',
+    confidence: 'low',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-06-30.md#Tweet-2071747970354266213'],
+  },
+  {
     id: 'munger-biases-health-neglect',
     title: 'Health neglect reframed through Charlie Munger’s bias checklist',
     date: '2026-06-28',
@@ -597,16 +611,21 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '2', detail: '2 tweets with engagement · x-twitter-daily-2026-06-25.md' },
-  { label: 'Previous daily X capture', value: '6', detail: '6 tweets with engagement · x-twitter-daily-2026-06-24.md' },
+  { label: 'Latest daily X capture', value: '2', detail: '2 tweets with engagement · x-twitter-daily-2026-06-30.md' },
+  { label: 'Previous daily X capture', value: '1', detail: '1 tweet with engagement · x-twitter-daily-2026-06-29.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '33', detail: '12 knowledge pages + 21 update pages after this pass' },
+  { label: 'Public site content', value: '38', detail: '12 knowledge pages + 26 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-06-30', x_post: 2, third_party: 0, wiki_update: 1, site_update: 1 },
+  { date: '2026-06-29', x_post: 1, third_party: 0, wiki_update: 1, site_update: 1 },
+  { date: '2026-06-28', x_post: 2, third_party: 0, wiki_update: 1, site_update: 1 },
+  { date: '2026-06-27', x_post: 1, third_party: 0, wiki_update: 1, site_update: 1 },
+  { date: '2026-06-26', x_post: 3, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-06-25', x_post: 2, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-06-24', x_post: 6, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-06-23', x_post: 4, third_party: 0, wiki_update: 1, site_update: 1 },
