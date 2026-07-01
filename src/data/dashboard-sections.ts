@@ -83,6 +83,15 @@ export const opinionItems: OpinionItem[] = [
 export const timelineEvents: TimelineEvent[] = [
   {
     date: '2026-06-30',
+    label: 'Autoimmune gastritis diagnosis and Immortals Care disclosed',
+    summary: 'Johnson said an 11-year low-ferritin pattern was finally connected to autoimmune gastritis through APCA bloodwork, bi-directional endoscopy, and stomach biopsies. He also named “Immortals Care” as a $1M/year protocol and laid out a four-tier roadmap from current support/monitoring to investigational immune and AI-designed therapies. Treat this as Johnson’s self-reported diagnosis and research agenda, not medical advice or proof of a cure.',
+    relatedHref: '/knowledge/biomarker-driven-longevity-protocols/',
+    relatedTitle: 'Biomarker-driven longevity protocols',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-01.md',
+    confidence: 'medium',
+  },
+  {
+    date: '2026-06-30',
     label: 'AI competence and adult-rights speculation posted',
     summary: 'Johnson argued that “rights follow from relative competence” and speculated that adult rights could be curtailed as AI demonstrates superior judgment in safety-critical and institutional domains. He hedged that this was pattern-following rather than advocacy or inevitability, so the KB treats it as public philosophy/AI-governance opinion rather than a health or protocol update.',
     relatedHref: '/opinions/',

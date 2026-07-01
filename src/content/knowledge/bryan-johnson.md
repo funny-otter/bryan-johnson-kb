@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-06-30'
+updated: '2026-07-01'
 tags:
   - person
   - company
@@ -37,6 +37,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-28.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-29.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-30.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-01.md
 confidence: medium
 summary: >-
   Bryan Johnson is an American entrepreneur who moved from payments and
@@ -90,6 +91,8 @@ On June 27, Johnson’s feed shifted from biomarker claims to cultural reception
 On June 28, Johnson used a Charlie Munger psychology-of-misjudgment thread to explain why “smart people” neglect health: delayed incentives, slow decline, consistency pressure, denial, and avoiding tests to avoid bad news. This is useful public-persona context because it shows Johnson translating Don’t Die into behavioral economics language, but it remains attributed framing rather than clinical evidence or a new protocol.
 
 On June 29–30, Johnson moved briefly outside the health stack into AI-governance speculation. One high-reply post asked, “Who would you trust to run the world?” and a longer essay argued that “rights follow from relative competence,” so adult rights could be curtailed if AI proves better at driving, law, medicine, finance, governance, and similar domains. He explicitly hedged that he was not advocating the future or calling it inevitable. The dashboard treats this as a low-confidence opinion signal about Johnson’s broader future-of-humanity reasoning, not as a Blueprint, biomarker, or medical claim.
+
+Later on June 30, Johnson returned to health with one of his most substantive personal disclosures: he said he had been formally diagnosed with autoimmune gastritis after years of low ferritin that did not progress to anemia and therefore was easy for prior care teams to dismiss. His account says the diagnosis came through anti-parietal-cell antibody bloodwork, a bi-directional endoscopy, and five stomach biopsies, after an overhauled medical team revisited the unresolved iron-storage signal. The same post named **Immortals Care** as a “$1M a year protocol” and sketched a four-tier autoimmune-gastritis roadmap, from current support/monitoring to explicitly investigational JAK/STAT, IL-17, regulatory-T-cell, CAAR-T, and AI-designed-antibody ideas. Treat this as Johnson’s self-reported diagnosis and research agenda; the advanced tiers are not approved cures or reader advice. The same daily batch also included a longevity ↔ AI-compute investment disclosure in Etched, which he framed as infrastructure for drug-discovery search, and a Kate Tolo / WSJ media-reach update for the female-health protocol.
 
 ## Reading stance
 

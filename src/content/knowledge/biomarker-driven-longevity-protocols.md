@@ -4,7 +4,7 @@ slug: biomarker-driven-longevity-protocols
 type: concept
 sourcePath: concepts/biomarker-driven-longevity-protocols.md
 created: '2026-05-22'
-updated: '2026-06-27'
+updated: '2026-07-01'
 tags:
   - longevity
   - biomarkers
@@ -29,6 +29,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-26.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-27.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-01.md
 confidence: medium
 summary: >-
   A biomarker-driven longevity protocol is a health system that treats the body
@@ -57,8 +58,9 @@ The strongest version of the idea is not “take Bryan Johnson's supplements.”
 2. **Confounding.** Diet, sleep, exercise, supplements, drugs, devices, and experimental therapies change together, making attribution nearly impossible.
 3. **Surrogate endpoints.** Better biomarkers or epigenetic clock scores may not necessarily translate into longer healthspan or lower disease/mortality risk.
 4. **Over-testing.** More imaging and lab work can create false positives, anxiety, unnecessary procedures, or unclear actionability.
-5. **Commercial incentives.** When the same actor sells supplements, testing, app access, and protocol products, claims need conflict-of-interest scrutiny.
-6. **Medical risk.** Prescription drugs, hormone manipulation, gene therapy, plasma exchange, and aggressive restriction require clinical supervision.
+5. **Under-investigated signals.** A dense dashboard can still miss disease if a repeatedly abnormal but “non-urgent” marker is normalized, explained away, or not connected to the right diagnostic pathway.
+6. **Commercial incentives.** When the same actor sells supplements, testing, app access, and protocol products, claims need conflict-of-interest scrutiny.
+7. **Medical risk.** Prescription drugs, hormone manipulation, gene therapy, plasma exchange, and aggressive restriction require clinical supervision.
 
 MDLinx takes a clinician-facing view: some pieces (sleep, exercise, selected monitoring) are plausible or supported, but the extreme regimen — 100+ pills, extensive testing, transfusions/experimental interventions, and intensive routine control — is not generally feasible and may not be necessary. YEARS emphasizes N=1, confounding, surrogate endpoints, and the Hawthorne effect from being intensely monitored.
 
@@ -81,6 +83,8 @@ On June 24, 2026, Johnson extended the same longitudinal logic to consumer weara
 On June 25, 2026, Johnson added germline inherited-cancer screening to the measurement stack. He said he ran a combined DNA + RNA panel covering 71 inherited-cancer-risk genes, including BRCA1/2, ATM, MLH1/MSH2, TP53, APC, PTEN, RET, VHL, and MEN1, and reported a negative result. The useful dashboard signal is a new measurement category — inherited-risk stratification — rather than another blood/imaging/fitness readout. The caveat is equally important: the cancer-survival statistics and RNA-splicing claims are Johnson’s lay citations from the tweet, the test does not address the large majority of non-inherited cancers, and his negative result is an N=1 self-report, not independent validation or reader screening advice.
 
 On June 26, 2026, Johnson connected biological-age clocks to cancer-surveillance rhetoric by citing an unnamed study in which people whose biological age exceeded chronological age had higher early-cancer risk, especially under age 55. He quoted larger-gap associations of up to 57% higher lung-cancer risk, 31% uterine, and 17% gastrointestinal, and noted that two of three age-estimation tests used basic blood markers. This is best read as an argument extending the existing biological-age measurement theme, not a new validated screening modality: the study was not named in the tweet, the statistics are Johnson’s lay citation, and the post does not establish what an individual reader should measure or do.
+
+On June 30, 2026, Johnson’s autoimmune-gastritis disclosure added the inverse failure mode: not over-testing, but **under-investigating a persistent signal**. He said an 11-year pattern of low ferritin, with normal hemoglobin and hematocrit, was repeatedly explained away until a rebuilt care team connected it to autoimmune thyroid history, APCA bloodwork around five times the upper limit of normal, a bi-directional endoscopy, and five stomach biopsies. For this dashboard, the useful signal is methodological: a biomarker-driven protocol is only as good as the clinical reasoning that follows abnormal-but-subtle markers. Johnson’s proposed “Immortals Care” roadmap for AIG moves from current monitoring/support to explicitly investigational immune-pathway, regulatory-T-cell, CAAR-T, and AI-designed-antibody concepts; it should be read as his research agenda, not as an approved cure or reader treatment pathway.
 
 ## Practical evaluation checklist
 
