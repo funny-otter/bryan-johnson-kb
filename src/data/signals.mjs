@@ -1,5 +1,22 @@
 export const curatedSignals = [
   {
+    id: 'aig-single-cell-immune-sequencing',
+    title: 'AIG follow-up adds single-cell immune-receptor sequencing',
+    date: '2026-07-03',
+    badge: 'Measurement',
+    kind: 'tweet',
+    topic: 'Autoimmunity / immune profiling',
+    summary:
+      'Johnson said he is sequencing 1,000,000 individual immune cells to identify the autoreactive “rogue” clones attacking his stomach lining in autoimmune gastritis. The thread also reported a 198.5 mL / 33-tube blood draw, 50 tests, roughly 100 biomarkers, and resolution of iron deficiency after a 1,000 mg Monoferric infusion. The dashboard treats this as a new cellular/receptor-level diagnostic modality in his AIG roadmap, not proof of a cure or reader medical advice.',
+    href: '/metrics/',
+    tweetId: '2073059792588034383',
+    confidence: 'medium',
+    sources: [
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-07-04.md#Tweet-2073059792588034383',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-07-04.md#Tweet-2073108446409625770',
+    ],
+  },
+  {
     id: 'autoimmune-gastritis-immortals-care',
     title: 'Johnson discloses autoimmune gastritis and names “Immortals Care”',
     date: '2026-06-30',
@@ -510,8 +527,8 @@ export const curatedSignals = [
 export const watchQueue = [
   {
     title: 'Autoimmune gastritis follow-through',
-    summary: 'Watch whether Johnson publishes biopsy/pathology details, longitudinal ferritin/B12/gastrin/chromogranin traces, medical-team disclosures, and any evidence separating available support from the preclinical JAK/STAT, IL-17, iTreg, CAAR-T, and AI-antibody roadmap.',
-    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-01.md',
+    summary: 'Watch whether Johnson publishes biopsy/pathology details, longitudinal ferritin/B12/gastrin/chromogranin traces, single-cell immune-sequencing results, medical-team disclosures, and any evidence separating available support from the preclinical JAK/STAT, IL-17, iTreg, CAAR-T, and AI-antibody roadmap.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-04.md',
     href: '/metrics/',
   },
   {
@@ -631,16 +648,18 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '3', detail: '3 tweets with engagement · x-twitter-daily-2026-07-01.md' },
-  { label: 'Previous daily X capture', value: '2', detail: '2 tweets with engagement · x-twitter-daily-2026-06-30.md' },
+  { label: 'Latest daily X capture', value: '7', detail: '7 tweets with engagement · x-twitter-daily-2026-07-04.md' },
+  { label: 'Previous daily X capture', value: '3', detail: '3 tweets with engagement · x-twitter-daily-2026-07-02.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '39', detail: '12 knowledge pages + 27 update pages after this pass' },
+  { label: 'Public site content', value: '40', detail: '12 knowledge pages + 28 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-07-04', x_post: 7, third_party: 0, wiki_update: 1, site_update: 1 },
+  { date: '2026-07-02', x_post: 3, third_party: 0, wiki_update: 1, site_update: 0 },
   { date: '2026-07-01', x_post: 3, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-06-30', x_post: 2, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-06-29', x_post: 1, third_party: 0, wiki_update: 1, site_update: 1 },

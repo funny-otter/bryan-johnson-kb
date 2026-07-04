@@ -82,6 +82,15 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-07-03',
+    label: 'Single-cell immune sequencing added to AIG workup',
+    summary: 'Johnson said he is sequencing 1,000,000 individual immune cells to identify the autoreactive clones attacking his stomach lining in autoimmune gastritis. The thread quantified the paired draw as 198.5 mL, 33 tubes, 50 tests, and roughly 100 biomarkers, and reported that iron deficiency was corrected with a 1,000 mg Monoferric infusion. Treat this as Johnson’s self-reported diagnostic follow-through and a new measurement layer, not evidence of a cure or personal medical advice.',
+    relatedHref: '/knowledge/biomarker-driven-longevity-protocols/',
+    relatedTitle: 'Biomarker-driven longevity protocols',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-04.md',
+    confidence: 'medium',
+  },
+  {
     date: '2026-06-30',
     label: 'Autoimmune gastritis diagnosis and Immortals Care disclosed',
     summary: 'Johnson said an 11-year low-ferritin pattern was finally connected to autoimmune gastritis through APCA bloodwork, bi-directional endoscopy, and stomach biopsies. He also named “Immortals Care” as a $1M/year protocol and laid out a four-tier roadmap from current support/monitoring to investigational immune and AI-designed therapies. Treat this as Johnson’s self-reported diagnosis and research agenda, not medical advice or proof of a cure.',

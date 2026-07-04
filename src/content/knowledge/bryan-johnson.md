@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-07-01'
+updated: '2026-07-04'
 tags:
   - person
   - company
@@ -38,6 +38,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-29.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-30.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-01.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-04.md
 confidence: medium
 summary: >-
   Bryan Johnson is an American entrepreneur who moved from payments and
@@ -93,6 +94,8 @@ On June 28, Johnson used a Charlie Munger psychology-of-misjudgment thread to ex
 On June 29–30, Johnson moved briefly outside the health stack into AI-governance speculation. One high-reply post asked, “Who would you trust to run the world?” and a longer essay argued that “rights follow from relative competence,” so adult rights could be curtailed if AI proves better at driving, law, medicine, finance, governance, and similar domains. He explicitly hedged that he was not advocating the future or calling it inevitable. The dashboard treats this as a low-confidence opinion signal about Johnson’s broader future-of-humanity reasoning, not as a Blueprint, biomarker, or medical claim.
 
 Later on June 30, Johnson returned to health with one of his most substantive personal disclosures: he said he had been formally diagnosed with autoimmune gastritis after years of low ferritin that did not progress to anemia and therefore was easy for prior care teams to dismiss. His account says the diagnosis came through anti-parietal-cell antibody bloodwork, a bi-directional endoscopy, and five stomach biopsies, after an overhauled medical team revisited the unresolved iron-storage signal. The same post named **Immortals Care** as a “$1M a year protocol” and sketched a four-tier autoimmune-gastritis roadmap, from current support/monitoring to explicitly investigational JAK/STAT, IL-17, regulatory-T-cell, CAAR-T, and AI-designed-antibody ideas. Treat this as Johnson’s self-reported diagnosis and research agenda; the advanced tiers are not approved cures or reader advice. The same daily batch also included a longevity ↔ AI-compute investment disclosure in Etched, which he framed as infrastructure for drug-discovery search, and a Kate Tolo / WSJ media-reach update for the female-health protocol.
+
+On July 3, Johnson continued the AIG story with a diagnostic follow-through thread: he said he is sequencing **1,000,000 individual immune cells** to identify the autoreactive “rogue” clones attacking his stomach lining. Replies quantified the draw as 198.5 mL, 33 tubes, 50 tests, roughly 100 biomarkers, and the 1M-cell decode, and reported he was “no longer iron deficient” after a 1,000 mg Monoferric infusion. A longer follow-up pushed back on meat/sunlight/food “cure” suggestions, arguing low ferritin is downstream of parietal-cell destruction and that targeted therapy requires identifying the immune-cell clone/receptor pattern first. Treat the sequencing as Johnson’s self-reported measurement modality and diagnostic reasoning, not an established AIG cure or reader testing advice.
 
 ## Reading stance
 

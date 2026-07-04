@@ -4,7 +4,7 @@ slug: biomarker-driven-longevity-protocols
 type: concept
 sourcePath: concepts/biomarker-driven-longevity-protocols.md
 created: '2026-05-22'
-updated: '2026-07-01'
+updated: '2026-07-04'
 tags:
   - longevity
   - biomarkers
@@ -30,6 +30,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-26.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-27.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-01.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-04.md
 confidence: medium
 summary: >-
   A biomarker-driven longevity protocol is a health system that treats the body
@@ -85,6 +86,8 @@ On June 25, 2026, Johnson added germline inherited-cancer screening to the measu
 On June 26, 2026, Johnson connected biological-age clocks to cancer-surveillance rhetoric by citing an unnamed study in which people whose biological age exceeded chronological age had higher early-cancer risk, especially under age 55. He quoted larger-gap associations of up to 57% higher lung-cancer risk, 31% uterine, and 17% gastrointestinal, and noted that two of three age-estimation tests used basic blood markers. This is best read as an argument extending the existing biological-age measurement theme, not a new validated screening modality: the study was not named in the tweet, the statistics are Johnson’s lay citation, and the post does not establish what an individual reader should measure or do.
 
 On June 30, 2026, Johnson’s autoimmune-gastritis disclosure added the inverse failure mode: not over-testing, but **under-investigating a persistent signal**. He said an 11-year pattern of low ferritin, with normal hemoglobin and hematocrit, was repeatedly explained away until a rebuilt care team connected it to autoimmune thyroid history, APCA bloodwork around five times the upper limit of normal, a bi-directional endoscopy, and five stomach biopsies. For this dashboard, the useful signal is methodological: a biomarker-driven protocol is only as good as the clinical reasoning that follows abnormal-but-subtle markers. Johnson’s proposed “Immortals Care” roadmap for AIG moves from current monitoring/support to explicitly investigational immune-pathway, regulatory-T-cell, CAAR-T, and AI-designed-antibody concepts; it should be read as his research agenda, not as an approved cure or reader treatment pathway.
+
+On July 3, 2026, Johnson added a more granular AIG measurement layer: **single-cell immune-receptor sequencing of 1,000,000 immune cells**. His stated goal is to move beyond ordinary immune-cell counts and read each cell’s antigen-receptor “key” to identify the autoreactive clones attacking his stomach lining. The same thread tied that sequencing to a large blood draw (198.5 mL, 33 tubes, 50 tests, roughly 100 biomarkers) and to follow-up markers such as ferritin, anti-parietal-cell antibody, intrinsic-factor antibodies, gastrin, chromogranin A, HLA typing, cytokines, and neurodegeneration markers. The dashboard signal is a new cellular/receptor-level readout in his measurement stack; the caveat is that it remains diagnostic follow-through and hypothesis generation, not validation that a targeted AIG therapy exists or that readers should pursue similar testing.
 
 ## Practical evaluation checklist
 
