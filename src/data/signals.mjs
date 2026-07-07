@@ -1,5 +1,19 @@
 export const curatedSignals = [
   {
+    id: 'dont-die-death-ritual-essay',
+    title: 'Johnson frames ordinary indulgence as a shared “death ritual”',
+    date: '2026-07-06',
+    badge: 'Ideology',
+    kind: 'tweet',
+    topic: "Don't Die / social psychology",
+    summary:
+      'Johnson published a long essay answering the “forgot how to live” critique. He argues that drinking, vaping, fast food, late nights, cheat days, and holiday excess function as collective death rituals that mask existential fear, while abstainers provoke anger by breaking the spell. The dashboard treats this as Don’t Die movement philosophy and social-psychology framing, not a new protocol, biomarker, or medical/scientific claim.',
+    href: '/knowledge/dont-die/',
+    tweetId: '2073923578622595148',
+    confidence: 'medium',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-07-07.md#Tweet-2073923578622595148'],
+  },
+  {
     id: 'aig-single-cell-immune-sequencing',
     title: 'AIG follow-up adds single-cell immune-receptor sequencing',
     date: '2026-07-03',
@@ -648,16 +662,18 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '7', detail: '7 tweets with engagement · x-twitter-daily-2026-07-04.md' },
-  { label: 'Previous daily X capture', value: '3', detail: '3 tweets with engagement · x-twitter-daily-2026-07-02.md' },
+  { label: 'Latest daily X capture', value: '4', detail: '4 tweets with engagement · x-twitter-daily-2026-07-07.md' },
+  { label: 'Previous daily X capture', value: '3', detail: '3 tweets with engagement · x-twitter-daily-2026-07-05.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '40', detail: '12 knowledge pages + 28 update pages after this pass' },
+  { label: 'Public site content', value: '41', detail: '12 knowledge pages + 29 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-07-07', x_post: 4, third_party: 0, wiki_update: 1, site_update: 1 },
+  { date: '2026-07-05', x_post: 3, third_party: 0, wiki_update: 1, site_update: 0 },
   { date: '2026-07-04', x_post: 7, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-02', x_post: 3, third_party: 0, wiki_update: 1, site_update: 0 },
   { date: '2026-07-01', x_post: 3, third_party: 0, wiki_update: 1, site_update: 1 },

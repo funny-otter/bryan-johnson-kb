@@ -20,6 +20,17 @@ export type TimelineEvent = {
 
 export const opinionItems: OpinionItem[] = [
   {
+    claim: 'Ordinary “live a little” indulgence is a collective death ritual, according to Johnson.',
+    position: 'In a July 6 essay, Johnson argued that drinking, vaping, fast food, late nights, cheat days, and holiday excess mask existential fear through group ritual. He says abstainers provoke anger because they expose the ritual, and reframes Don’t Die as an “evolutionary jailbreak” rather than a control obsession.',
+    counterpoint: 'This is useful for understanding the movement’s psychology and brand posture, but the cellular/metabolic and evolutionary assertions in the tweet are not independently sourced. Treat it as ideology, not scientific proof or medical advice.',
+    confidence: 'medium',
+    relatedHref: '/knowledge/dont-die/',
+    relatedTitle: "Don't Die",
+    sources: [
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-07-07.md#Tweet-2073923578622595148',
+    ],
+  },
+  {
     claim: 'AI competence could pressure adult rights and institutional authority.',
     position: 'In a June 30 essay, Johnson speculated that if AI systems become demonstrably better than humans at high-stakes decisions, society may apply the same relative-competence logic used to limit teenage autonomy to adults in domains such as driving, law, medicine, finance, and governance.',
     counterpoint: 'Johnson explicitly hedged that he was following a pattern rather than advocating the outcome or calling it inevitable. This belongs in the speculative opinion lane, not as evidence of a Blueprint protocol, health claim, or settled AI-governance forecast.',
@@ -81,6 +92,15 @@ export const opinionItems: OpinionItem[] = [
 ];
 
 export const timelineEvents: TimelineEvent[] = [
+  {
+    date: '2026-07-06',
+    label: 'Don’t Die “death ritual” essay posted',
+    summary: 'Johnson answered the “forgot how to live” critique by arguing that ordinary indulgence culture functions as a shared death ritual masking existential fear, and that abstainers draw hostility because they break the spell. The KB records it as a high-signal Don’t Die philosophy update, not a new health protocol or scientific claim.',
+    relatedHref: '/knowledge/dont-die/',
+    relatedTitle: "Don't Die",
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-07.md',
+    confidence: 'medium',
+  },
   {
     date: '2026-07-03',
     label: 'Single-cell immune sequencing added to AIG workup',
