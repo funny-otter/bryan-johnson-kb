@@ -21,6 +21,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-26.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-07-04.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-07-08.md',
     ],
     sections: {
       habits: [
@@ -36,6 +37,7 @@ export const protocolCategories = [
         'Treat Johnson’s June 2026 “one international trip per quarter” rule as a biomarker-derived personal boundary, not as a reader travel guideline.',
         'Treat the June 2026 inherited-cancer DNA + RNA panel as germline risk-stratification context, not a diagnosis, universal screening recommendation, or validation of Johnson’s early-surveillance statistics.',
         'Treat the July 2026 AIG single-cell immune-receptor sequencing thread as Johnson’s diagnostic follow-through: a cellular/receptor-level measurement layer, not a validated therapy or reader test recommendation.',
+        'Treat the July 2026 low-ferritin / Monoferric follow-up as Johnson’s self-reported AIG case and false-negative philosophy, not a general iron-infusion recommendation.',
         'Preserve medical-caution framing: this page summarizes Johnson/Blueprint practice, not personal treatment advice.',
       ],
       donts: [
@@ -90,6 +92,11 @@ export const protocolCategories = [
         body: 'Johnson says he is sequencing 1M immune cells to identify autoreactive clones behind autoimmune gastritis. Keep it as diagnostic-methodology context inside his supervised AIG roadmap, not as proof of targeted therapy or a reader testing recommendation.',
       },
       {
+        label: 'False negatives',
+        title: 'Low ferritin becomes a diagnostic-miss case study',
+        body: 'Johnson says 11 years of low ferritin were dismissed because hemoglobin and hematocrit stayed normal, then reports a 1,000 mg Monoferric infusion after AIG was found. Keep this as a self-reported lesson about investigating persistent signals, not iron-treatment advice.',
+      },
+      {
         label: 'Skin readout',
         title: 'Australian sun exposure becomes another measured endpoint',
         body: 'Johnson claims one week in Australian sun increased his skin-aging metric by about 5% despite protection. Present this as self-measured UV-risk context, not as independent proof or individualized skincare advice.',
@@ -117,6 +124,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-26.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-07-04.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-07-08.md',
     ],
     sections: {
       habits: [
@@ -132,6 +140,7 @@ export const protocolCategories = [
         'Classify Johnson’s June 2026 wearable reply as a relative-tracking claim: consistency can help trend detection, but it does not settle absolute accuracy or clinical validity.',
         'Classify the inherited-cancer DNA + RNA panel as early-risk surveillance framing: useful for understanding Johnson’s measurement stack, not evidence that broad genetic screening improves outcomes for every reader.',
         'Classify the July 2026 single-cell immune sequencing thread as an AIG diagnostic/readout extension, not as proof that Johnson has a validated antigen-specific therapy.',
+        'Classify the July 2026 low-ferritin / Monoferric follow-up as self-reported diagnostic follow-through and a false-negative argument, not as generalized iron-infusion guidance.',
         'Keep the Immortals rename and immortality search-trend narrative in the ideology/brand lane; it does not increase confidence in the 2039 forecast.',
         'Keep the June 2026 immortality manifesto and “Die Economy” frame in the ideology/forecast lane unless independent evidence supports the specific biological and AI claims.',
         'Keep critiques visible so biomarker improvements do not become unsupported longevity promises.',
@@ -181,6 +190,11 @@ export const protocolCategories = [
         label: 'Cellular immune layer',
         title: 'AIG thread adds single-cell immune-receptor sequencing',
         body: 'Johnson’s July 3 thread extends the AIG story from ferritin/APCA/endoscopy into sequencing 1M immune cells to find autoreactive clones. It is a high-signal measurement modality, but still diagnostic follow-through rather than validated longevity evidence.',
+      },
+      {
+        label: 'Diagnostic misses',
+        title: 'Low ferritin sharpens the false-negative argument',
+        body: 'Johnson’s July 7 posts argue that normal headline markers can hide a persistent abnormal signal. The dashboard records the measurement-ethos update while keeping the Monoferric details in self-report and clinician-supervised territory.',
       },
       {
         label: 'Aspirational ideology',
@@ -330,6 +344,7 @@ export const protocolSectionsBySlug = {
 };
 
 export const conceptEntries = [
+  { title: 'AIG low ferritin / false-negative follow-up', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-08.md', summary: 'Johnson recast his AIG story as an 11-year low-ferritin diagnostic miss and reported Monoferric ferritin follow-up; useful as measurement ethos, not iron-treatment advice.' },
   { title: 'AIG single-cell immune-receptor sequencing', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-04.md', summary: 'Johnson says he is sequencing 1M immune cells to identify autoreactive clones behind autoimmune gastritis; a cellular/receptor-level measurement layer, not a proven therapy or reader recommendation.' },
   { title: 'Inherited-cancer DNA + RNA risk panel', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-26.md', summary: 'Johnson reported a negative 71-gene Invitae inherited-cancer panel with DNA plus RNA analysis; useful as a risk-stratification measurement signal, not clinical screening advice.' },
   { title: 'Immortality manifesto / Die Economy', confidence: 'low', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md', summary: 'Johnson’s June 24 essay defines immortality as life expectancy gains outpacing aging and introduces the Die Economy vs Don’t Die Economy frame; important ideology, not validation of the 2039 forecast.' },

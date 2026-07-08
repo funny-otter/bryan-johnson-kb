@@ -20,6 +20,18 @@ export type TimelineEvent = {
 
 export const opinionItems: OpinionItem[] = [
   {
+    claim: 'Johnson now says the bigger diagnostic risk is false negatives, not just over-testing.',
+    position: 'In July 7 posts about autoimmune gastritis and low ferritin, Johnson argued that normal hemoglobin/hematocrit let an 11-year low-iron signal get dismissed, then wrote that “People mistake the absence of diagnosis for the presence of health” and “People fear false positives. I fear false negatives.”',
+    counterpoint: 'This clarifies his values around aggressive investigation, but it does not erase the real risks of false positives, anxiety, invasive follow-up, or overtreatment. The Monoferric and ferritin numbers are Johnson’s self-report and should not be read as reader treatment advice.',
+    confidence: 'medium',
+    relatedHref: '/knowledge/biomarker-driven-longevity-protocols/',
+    relatedTitle: 'Biomarker-driven longevity protocols',
+    sources: [
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-07-08.md#Tweet-2074546259021680952',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-07-08.md#Tweet-2074565720722293004',
+    ],
+  },
+  {
     claim: 'Ordinary “live a little” indulgence is a collective death ritual, according to Johnson.',
     position: 'In a July 6 essay, Johnson argued that drinking, vaping, fast food, late nights, cheat days, and holiday excess mask existential fear through group ritual. He says abstainers provoke anger because they expose the ritual, and reframes Don’t Die as an “evolutionary jailbreak” rather than a control obsession.',
     counterpoint: 'This is useful for understanding the movement’s psychology and brand posture, but the cellular/metabolic and evolutionary assertions in the tweet are not independently sourced. Treat it as ideology, not scientific proof or medical advice.',
@@ -92,6 +104,15 @@ export const opinionItems: OpinionItem[] = [
 ];
 
 export const timelineEvents: TimelineEvent[] = [
+  {
+    date: '2026-07-07',
+    label: 'Low ferritin and false-negative essays extend AIG story',
+    summary: 'Johnson recast his autoimmune-gastritis disclosure as a protocol lesson: an 11-year low-ferritin signal was dismissed while hemoglobin/hematocrit stayed normal, oral iron and diet changes did not stick, and a 1,000 mg Monoferric infusion reportedly lifted ferritin above target. A companion post says a diagnosis should be celebrated and that he fears false negatives more than false positives. Treat both as Johnson’s self-reported case and measurement ethos, not medical advice.',
+    relatedHref: '/knowledge/biomarker-driven-longevity-protocols/',
+    relatedTitle: 'Biomarker-driven longevity protocols',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-08.md',
+    confidence: 'medium',
+  },
   {
     date: '2026-07-06',
     label: 'Don’t Die “death ritual” essay posted',

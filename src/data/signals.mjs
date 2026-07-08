@@ -1,5 +1,22 @@
 export const curatedSignals = [
   {
+    id: 'aig-low-ferritin-monoferric-ethos',
+    title: 'AIG story becomes a low-ferritin and false-negative lesson',
+    date: '2026-07-07',
+    badge: 'Diagnosis',
+    kind: 'tweet',
+    topic: 'Autoimmune gastritis / measurement ethos',
+    summary:
+      'Johnson restated his autoimmune-gastritis story as an 11-year low-ferritin clue that was repeatedly dismissed because hemoglobin and hematocrit looked normal. He says a 1,000 mg Monoferric IV infusion brought ferritin to 205 ng/mL at two weeks and 195 ng/mL at four weeks, against an 80 ng/mL target. A companion essay argues that “absence of diagnosis” is not health and that he fears false negatives more than false positives. The dashboard treats this as Johnson’s self-reported diagnostic follow-through and measurement philosophy, not iron-treatment advice.',
+    href: '/metrics/',
+    tweetId: '2074546259021680952',
+    confidence: 'medium',
+    sources: [
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-07-08.md#Tweet-2074546259021680952',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-07-08.md#Tweet-2074565720722293004',
+    ],
+  },
+  {
     id: 'dont-die-death-ritual-essay',
     title: 'Johnson frames ordinary indulgence as a shared “death ritual”',
     date: '2026-07-06',
@@ -541,8 +558,8 @@ export const curatedSignals = [
 export const watchQueue = [
   {
     title: 'Autoimmune gastritis follow-through',
-    summary: 'Watch whether Johnson publishes biopsy/pathology details, longitudinal ferritin/B12/gastrin/chromogranin traces, single-cell immune-sequencing results, medical-team disclosures, and any evidence separating available support from the preclinical JAK/STAT, IL-17, iTreg, CAAR-T, and AI-antibody roadmap.',
-    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-04.md',
+    summary: 'Watch whether Johnson publishes biopsy/pathology details, longitudinal ferritin/B12/gastrin/chromogranin traces, single-cell immune-sequencing results, medical-team disclosures, and any evidence separating available support from the preclinical JAK/STAT, IL-17, iTreg, CAAR-T, and AI-antibody roadmap. Also watch whether the Monoferric/ferritin follow-up gains clinician sourcing beyond tweet-level self-report.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-08.md',
     href: '/metrics/',
   },
   {
@@ -662,16 +679,17 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '4', detail: '4 tweets with engagement · x-twitter-daily-2026-07-07.md' },
-  { label: 'Previous daily X capture', value: '3', detail: '3 tweets with engagement · x-twitter-daily-2026-07-05.md' },
+  { label: 'Latest daily X capture', value: '6', detail: '6 tweets with engagement · x-twitter-daily-2026-07-08.md' },
+  { label: 'Previous daily X capture', value: '4', detail: '4 tweets with engagement · x-twitter-daily-2026-07-07.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '41', detail: '12 knowledge pages + 29 update pages after this pass' },
+  { label: 'Public site content', value: '42', detail: '12 knowledge pages + 30 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-07-08', x_post: 6, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-07', x_post: 4, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-05', x_post: 3, third_party: 0, wiki_update: 1, site_update: 0 },
   { date: '2026-07-04', x_post: 7, third_party: 0, wiki_update: 1, site_update: 1 },
