@@ -4,7 +4,7 @@ slug: biomarker-driven-longevity-protocols
 type: concept
 sourcePath: concepts/biomarker-driven-longevity-protocols.md
 created: '2026-05-22'
-updated: '2026-07-08'
+updated: '2026-07-09'
 tags:
   - longevity
   - biomarkers
@@ -32,6 +32,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-01.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-04.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-08.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-09.md
 confidence: medium
 summary: >-
   A biomarker-driven longevity protocol is a health system that treats the body
@@ -91,6 +92,8 @@ On June 30, 2026, Johnson’s autoimmune-gastritis disclosure added the inverse 
 On July 3, 2026, Johnson added a more granular AIG measurement layer: **single-cell immune-receptor sequencing of 1,000,000 immune cells**. His stated goal is to move beyond ordinary immune-cell counts and read each cell’s antigen-receptor “key” to identify the autoreactive clones attacking his stomach lining. The same thread tied that sequencing to a large blood draw (198.5 mL, 33 tubes, 50 tests, roughly 100 biomarkers) and to follow-up markers such as ferritin, anti-parietal-cell antibody, intrinsic-factor antibodies, gastrin, chromogranin A, HLA typing, cytokines, and neurodegeneration markers. The dashboard signal is a new cellular/receptor-level readout in his measurement stack; the caveat is that it remains diagnostic follow-through and hypothesis generation, not validation that a targeted AIG therapy exists or that readers should pursue similar testing.
 
 On July 7, 2026, Johnson turned the same AIG case into a sharper lesson about **under-investigated signals and false negatives**. He said his ferritin averaged 38 ng/mL for 11 years even when he ate meat, but normal hemoglobin and hematocrit let the problem be dismissed until AIG explained why oral iron would not “stick.” He reports choosing a 1,000 mg Monoferric IV infusion and seeing ferritin of 205 ng/mL at two weeks and 195 ng/mL at four weeks, with an 80 ng/mL target. A companion post states that “absence of diagnosis” is not the same as health and that he fears false negatives more than false positives. For this dashboard, the important update is his explicit stance on the over-testing tradeoff; the iron treatment details remain Johnson’s self-report and not reader medical advice.
+
+On July 8, 2026, Johnson moved the AIG thread from diagnosis and measurement into a staged **curative engineering roadmap**. His plan is to pair the 1,000,000-cell immune map with a second stomach biopsy for live T-cells, then build an early-warning loop from biweekly blood draws plus wearable data, cryopreserve immune cells for an ex-vivo **“Bryan in a dish”** model, and test precision therapies first in a computer model and then on his own frozen cells. The operational signal is new: measurement becomes a therapy-selection and safety-screening pipeline. The caution is equally important: this is Johnson’s proposed personal experiment, not an approved autoimmune-gastritis cure, validated ex-vivo screening method, or reader treatment pathway.
 
 ## Practical evaluation checklist
 

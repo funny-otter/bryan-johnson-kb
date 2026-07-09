@@ -22,6 +22,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-26.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-07-04.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-07-08.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-07-09.md',
     ],
     sections: {
       habits: [
@@ -38,6 +39,7 @@ export const protocolCategories = [
         'Treat the June 2026 inherited-cancer DNA + RNA panel as germline risk-stratification context, not a diagnosis, universal screening recommendation, or validation of Johnson’s early-surveillance statistics.',
         'Treat the July 2026 AIG single-cell immune-receptor sequencing thread as Johnson’s diagnostic follow-through: a cellular/receptor-level measurement layer, not a validated therapy or reader test recommendation.',
         'Treat the July 2026 low-ferritin / Monoferric follow-up as Johnson’s self-reported AIG case and false-negative philosophy, not a general iron-infusion recommendation.',
+        'Treat the July 2026 AIG cure roadmap and “Bryan in a dish” model as a proposed personal experiment; it is not an approved autoimmune-disease cure, validated ex-vivo screening protocol, or reader treatment pathway.',
         'Preserve medical-caution framing: this page summarizes Johnson/Blueprint practice, not personal treatment advice.',
       ],
       donts: [
@@ -97,6 +99,11 @@ export const protocolCategories = [
         body: 'Johnson says 11 years of low ferritin were dismissed because hemoglobin and hematocrit stayed normal, then reports a 1,000 mg Monoferric infusion after AIG was found. Keep this as a self-reported lesson about investigating persistent signals, not iron-treatment advice.',
       },
       {
+        label: 'AIG cure roadmap',
+        title: '“Bryan in a dish” moves AIG from diagnosis to proposed therapy testing',
+        body: 'Johnson’s July 8 plan pairs a second stomach biopsy, live T-cell matching, biweekly blood/wearable monitoring, cryopreserved immune cells, and ex-vivo testing before any precision therapy attempt. Keep it as investigational personal-roadmap context, not evidence of a cure.',
+      },
+      {
         label: 'Skin readout',
         title: 'Australian sun exposure becomes another measured endpoint',
         body: 'Johnson claims one week in Australian sun increased his skin-aging metric by about 5% despite protection. Present this as self-measured UV-risk context, not as independent proof or individualized skincare advice.',
@@ -125,6 +132,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/x-twitter-daily-2026-06-26.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-07-04.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-07-08.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-07-09.md',
     ],
     sections: {
       habits: [
@@ -141,6 +149,7 @@ export const protocolCategories = [
         'Classify the inherited-cancer DNA + RNA panel as early-risk surveillance framing: useful for understanding Johnson’s measurement stack, not evidence that broad genetic screening improves outcomes for every reader.',
         'Classify the July 2026 single-cell immune sequencing thread as an AIG diagnostic/readout extension, not as proof that Johnson has a validated antigen-specific therapy.',
         'Classify the July 2026 low-ferritin / Monoferric follow-up as self-reported diagnostic follow-through and a false-negative argument, not as generalized iron-infusion guidance.',
+        'Classify the July 2026 AIG cure roadmap as a staged, investigational personal experiment; the “Bryan in a dish” ex-vivo model and candidate precision therapies are not established clinical outcomes.',
         'Keep the Immortals rename and immortality search-trend narrative in the ideology/brand lane; it does not increase confidence in the 2039 forecast.',
         'Keep the June 2026 immortality manifesto and “Die Economy” frame in the ideology/forecast lane unless independent evidence supports the specific biological and AI claims.',
         'Keep critiques visible so biomarker improvements do not become unsupported longevity promises.',
@@ -195,6 +204,11 @@ export const protocolCategories = [
         label: 'Diagnostic misses',
         title: 'Low ferritin sharpens the false-negative argument',
         body: 'Johnson’s July 7 posts argue that normal headline markers can hide a persistent abnormal signal. The dashboard records the measurement-ethos update while keeping the Monoferric details in self-report and clinician-supervised territory.',
+      },
+      {
+        label: 'AIG therapy roadmap',
+        title: 'Ex-vivo immune-cell testing becomes the next AIG pattern',
+        body: 'The July 8 cure-roadmap post adds a second biopsy for live T-cells, biweekly flare-up monitoring, a cryopreserved “Bryan in a dish” model, and computer-plus-cell safety checks. It is roadmap evidence, not proof of an autoimmune cure.',
       },
       {
         label: 'Aspirational ideology',
@@ -344,6 +358,7 @@ export const protocolSectionsBySlug = {
 };
 
 export const conceptEntries = [
+  { title: 'AIG cure roadmap / Bryan in a dish', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-09.md', summary: 'Johnson proposed a staged AIG cure attempt using live T-cell matching, biweekly blood/wearable monitoring, cryopreserved immune cells, and ex-vivo therapy tests; roadmap evidence, not an approved cure.' },
   { title: 'AIG low ferritin / false-negative follow-up', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-08.md', summary: 'Johnson recast his AIG story as an 11-year low-ferritin diagnostic miss and reported Monoferric ferritin follow-up; useful as measurement ethos, not iron-treatment advice.' },
   { title: 'AIG single-cell immune-receptor sequencing', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-04.md', summary: 'Johnson says he is sequencing 1M immune cells to identify autoreactive clones behind autoimmune gastritis; a cellular/receptor-level measurement layer, not a proven therapy or reader recommendation.' },
   { title: 'Inherited-cancer DNA + RNA risk panel', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-26.md', summary: 'Johnson reported a negative 71-gene Invitae inherited-cancer panel with DNA plus RNA analysis; useful as a risk-stratification measurement signal, not clinical screening advice.' },

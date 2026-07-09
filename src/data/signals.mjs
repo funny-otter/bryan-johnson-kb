@@ -1,5 +1,19 @@
 export const curatedSignals = [
   {
+    id: 'aig-cure-roadmap-bryan-in-a-dish',
+    title: 'Johnson publishes staged AIG cure roadmap and “Bryan in a dish” model',
+    date: '2026-07-08',
+    badge: 'Therapeutic roadmap',
+    kind: 'tweet',
+    topic: 'Autoimmune gastritis / experimental therapeutics',
+    summary:
+      'Johnson published his most explicit autoimmune-gastritis plan yet: diagnose, map 1M immune cells, collect live T-cells from a second stomach biopsy, monitor flare-ups with biweekly blood draws plus wearables, build a cryopreserved ex-vivo “Bryan in a dish” model, then test precision therapies in silico and on his own cells before any in-body attempt. The dashboard treats this as a proposed personal engineering roadmap, not an established cure, validated autoimmune-disease therapy, or medical advice.',
+    href: '/metrics/',
+    tweetId: '2074929493819756557',
+    confidence: 'medium',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-07-09.md#Tweet-2074929493819756557'],
+  },
+  {
     id: 'aig-low-ferritin-monoferric-ethos',
     title: 'AIG story becomes a low-ferritin and false-negative lesson',
     date: '2026-07-07',
@@ -558,8 +572,8 @@ export const curatedSignals = [
 export const watchQueue = [
   {
     title: 'Autoimmune gastritis follow-through',
-    summary: 'Watch whether Johnson publishes biopsy/pathology details, longitudinal ferritin/B12/gastrin/chromogranin traces, single-cell immune-sequencing results, medical-team disclosures, and any evidence separating available support from the preclinical JAK/STAT, IL-17, iTreg, CAAR-T, and AI-antibody roadmap. Also watch whether the Monoferric/ferritin follow-up gains clinician sourcing beyond tweet-level self-report.',
-    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-08.md',
+    summary: 'Watch whether Johnson publishes second-biopsy/pathology details, live T-cell matching, immune-sequencing results, longitudinal ferritin/B12/gastrin/chromogranin traces, biweekly blood/wearable flare-up traces, and any evidence that the “Bryan in a dish” model or candidate precision therapies work beyond tweet-level self-report.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-09.md',
     href: '/metrics/',
   },
   {
@@ -679,16 +693,17 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '6', detail: '6 tweets with engagement · x-twitter-daily-2026-07-08.md' },
-  { label: 'Previous daily X capture', value: '4', detail: '4 tweets with engagement · x-twitter-daily-2026-07-07.md' },
+  { label: 'Latest daily X capture', value: '2', detail: '2 tweets with engagement · x-twitter-daily-2026-07-09.md' },
+  { label: 'Previous daily X capture', value: '6', detail: '6 tweets with engagement · x-twitter-daily-2026-07-08.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '42', detail: '12 knowledge pages + 30 update pages after this pass' },
+  { label: 'Public site content', value: '43', detail: '12 knowledge pages + 31 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-07-09', x_post: 2, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-08', x_post: 6, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-07', x_post: 4, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-05', x_post: 3, third_party: 0, wiki_update: 1, site_update: 0 },

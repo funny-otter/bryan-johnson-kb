@@ -105,6 +105,15 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-07-08',
+    label: 'AIG cure roadmap and “Bryan in a dish” model posted',
+    summary: 'Johnson published a five-step autoimmune-gastritis cure attempt: use prior diagnosis and 1M-cell immune mapping, collect live T-cells through a second stomach biopsy, monitor flare-ups with biweekly blood draws plus wearable data, build a cryopreserved ex-vivo “Bryan in a dish” immune-cell model, and test precision therapies before any in-body use. Treat it as Johnson’s proposed personal experiment and investigational roadmap, not an established cure or reader medical advice.',
+    relatedHref: '/knowledge/biomarker-driven-longevity-protocols/',
+    relatedTitle: 'Biomarker-driven longevity protocols',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-09.md',
+    confidence: 'medium',
+  },
+  {
     date: '2026-07-07',
     label: 'Low ferritin and false-negative essays extend AIG story',
     summary: 'Johnson recast his autoimmune-gastritis disclosure as a protocol lesson: an 11-year low-ferritin signal was dismissed while hemoglobin/hematocrit stayed normal, oral iron and diet changes did not stick, and a 1,000 mg Monoferric infusion reportedly lifted ferritin above target. A companion post says a diagnosis should be celebrated and that he fears false negatives more than false positives. Treat both as Johnson’s self-reported case and measurement ethos, not medical advice.',
