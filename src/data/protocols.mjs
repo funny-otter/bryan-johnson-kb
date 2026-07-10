@@ -367,6 +367,7 @@ export const protocolSectionsBySlug = {
 };
 
 export const conceptEntries = [
+  { title: 'Kate Tolo endometriosis diagnostic triangulation', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-10.md', summary: 'Johnson says an endo-specific ultrasound, AI-assisted pelvic MRI, and microRNA/protein blood test converged on a non-surgical endometriosis diagnosis; useful as a multi-modality measurement case study, not medical advice or cure evidence.' },
   { title: 'AIG cure roadmap / Bryan in a dish', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-09.md', summary: 'Johnson proposed a staged AIG cure attempt using live T-cell matching, biweekly blood/wearable monitoring, cryopreserved immune cells, and ex-vivo therapy tests; roadmap evidence, not an approved cure.' },
   { title: 'AIG low ferritin / false-negative follow-up', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-08.md', summary: 'Johnson recast his AIG story as an 11-year low-ferritin diagnostic miss and reported Monoferric ferritin follow-up; useful as measurement ethos, not iron-treatment advice.' },
   { title: 'AIG single-cell immune-receptor sequencing', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-04.md', summary: 'Johnson says he is sequencing 1M immune cells to identify autoreactive clones behind autoimmune gastritis; a cellular/receptor-level measurement layer, not a proven therapy or reader recommendation.' },

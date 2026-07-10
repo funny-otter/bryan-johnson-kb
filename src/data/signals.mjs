@@ -707,8 +707,8 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '2', detail: '2 tweets with engagement · x-twitter-daily-2026-07-09.md' },
-  { label: 'Previous daily X capture', value: '6', detail: '6 tweets with engagement · x-twitter-daily-2026-07-08.md' },
+  { label: 'Latest daily X capture', value: '5', detail: '5 posts with engagement · x-twitter-daily-2026-07-10.md' },
+  { label: 'Previous daily X capture', value: '2', detail: '2 tweets with engagement · x-twitter-daily-2026-07-09.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
