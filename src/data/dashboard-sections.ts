@@ -105,6 +105,15 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-07-09',
+    label: 'Kate Tolo endometriosis workup confirmed through three non-surgical modalities',
+    summary: 'Johnson announced that Kate Tolo was diagnosed with endometriosis without surgery after an endo-specific ultrasound, AI-assisted pelvic MRI, and microRNA/protein blood test. The dashboard records this as a worked example of multi-modality diagnostic triangulation and the female-health extension of his measurement-first protocol; it is not medical advice, independent validation, or proof that endometriosis can now be cured.',
+    relatedHref: '/knowledge/biomarker-driven-longevity-protocols/',
+    relatedTitle: 'Biomarker-driven longevity protocols',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-10.md',
+    confidence: 'medium',
+  },
+  {
     date: '2026-07-08',
     label: 'AIG cure roadmap and “Bryan in a dish” model posted',
     summary: 'Johnson published a five-step autoimmune-gastritis cure attempt: use prior diagnosis and 1M-cell immune mapping, collect live T-cells through a second stomach biopsy, monitor flare-ups with biweekly blood draws plus wearable data, build a cryopreserved ex-vivo “Bryan in a dish” immune-cell model, and test precision therapies before any in-body use. Treat it as Johnson’s proposed personal experiment and investigational roadmap, not an established cure or reader medical advice.',

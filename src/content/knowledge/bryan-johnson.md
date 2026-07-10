@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-07-09'
+updated: '2026-07-10'
 tags:
   - person
   - company
@@ -40,6 +40,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-01.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-04.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-09.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-10.md
 confidence: medium
 summary: >-
   Bryan Johnson is an American entrepreneur who moved from payments and
@@ -99,6 +100,8 @@ Later on June 30, Johnson returned to health with one of his most substantive pe
 On July 3, Johnson continued the AIG story with a diagnostic follow-through thread: he said he is sequencing **1,000,000 individual immune cells** to identify the autoreactive “rogue” clones attacking his stomach lining. Replies quantified the draw as 198.5 mL, 33 tubes, 50 tests, roughly 100 biomarkers, and the 1M-cell decode, and reported he was “no longer iron deficient” after a 1,000 mg Monoferric infusion. A longer follow-up pushed back on meat/sunlight/food “cure” suggestions, arguing low ferritin is downstream of parietal-cell destruction and that targeted therapy requires identifying the immune-cell clone/receptor pattern first. Treat the sequencing as Johnson’s self-reported measurement modality and diagnostic reasoning, not an established AIG cure or reader testing advice.
 
 On July 8, Johnson published his most explicit AIG cure attempt: a five-step plan that uses the prior diagnosis and 1M-cell immune map, adds a second stomach biopsy to collect live T-cells, watches for flare-ups through biweekly blood draws plus wearable data, cryopreserves immune cells for a **“Bryan in a dish”** testing model, and then evaluates precision therapies through computer modeling and ex-vivo cell testing before any in-body attempt. This is important public-positioning evidence because it turns the AIG story into a personal immune-engineering roadmap. It is still a prospective experiment, not proof of a cure or medical advice.
+
+On July 9, Johnson announced that Kate Tolo had been diagnosed with endometriosis without surgery after a three-modality workup: endo-specific ultrasound, AI-assisted pelvic MRI, and a microRNA/protein blood test, after standard imaging had reportedly missed the condition. The post continues the female-protocol thread from May and gives Johnson a second public disease case, alongside his AIG story, for arguing that persistent symptoms and false negatives should trigger deeper measurement. His “Phase II is curing endometriosis” language is recorded as movement/research positioning, not evidence of an available cure or reader medical advice.
 
 ## Reading stance
 

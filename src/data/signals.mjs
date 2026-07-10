@@ -1,5 +1,19 @@
 export const curatedSignals = [
   {
+    id: 'kate-tolo-endometriosis-three-modality-diagnosis',
+    title: 'Kate Tolo endometriosis diagnosis becomes a multi-modality case study',
+    date: '2026-07-09',
+    badge: 'Female health',
+    kind: 'tweet',
+    topic: 'Endometriosis / diagnostic triangulation',
+    summary:
+      'Johnson announced that Kate Tolo was diagnosed with endometriosis without surgery after a 42-day workup using three complementary modalities: endo-specific ultrasound, AI-assisted pelvic MRI, and a microRNA/protein blood test. The dashboard treats this as a public case study in his measurement-first, multi-modality diagnostic logic and female-health protocol narrative, not as proof of a general diagnostic pathway, medical advice, or validation that endometriosis can now be “cured.”',
+    href: '/metrics/',
+    tweetId: '2075273885143224640',
+    confidence: 'medium',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-07-10.md#Tweet-2075273885143224640'],
+  },
+  {
     id: 'aig-cure-roadmap-bryan-in-a-dish',
     title: 'Johnson publishes staged AIG cure roadmap and “Bryan in a dish” model',
     date: '2026-07-08',
@@ -699,10 +713,11 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '43', detail: '12 knowledge pages + 31 update pages after this pass' },
+  { label: 'Public site content', value: '44', detail: '12 knowledge pages + 32 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-07-10', x_post: 5, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-09', x_post: 2, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-08', x_post: 6, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-07', x_post: 4, third_party: 0, wiki_update: 1, site_update: 1 },

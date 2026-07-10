@@ -4,7 +4,7 @@ slug: biomarker-driven-longevity-protocols
 type: concept
 sourcePath: concepts/biomarker-driven-longevity-protocols.md
 created: '2026-05-22'
-updated: '2026-07-09'
+updated: '2026-07-10'
 tags:
   - longevity
   - biomarkers
@@ -33,6 +33,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-04.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-08.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-09.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-10.md
 confidence: medium
 summary: >-
   A biomarker-driven longevity protocol is a health system that treats the body
@@ -94,6 +95,8 @@ On July 3, 2026, Johnson added a more granular AIG measurement layer: **single-c
 On July 7, 2026, Johnson turned the same AIG case into a sharper lesson about **under-investigated signals and false negatives**. He said his ferritin averaged 38 ng/mL for 11 years even when he ate meat, but normal hemoglobin and hematocrit let the problem be dismissed until AIG explained why oral iron would not “stick.” He reports choosing a 1,000 mg Monoferric IV infusion and seeing ferritin of 205 ng/mL at two weeks and 195 ng/mL at four weeks, with an 80 ng/mL target. A companion post states that “absence of diagnosis” is not the same as health and that he fears false negatives more than false positives. For this dashboard, the important update is his explicit stance on the over-testing tradeoff; the iron treatment details remain Johnson’s self-report and not reader medical advice.
 
 On July 8, 2026, Johnson moved the AIG thread from diagnosis and measurement into a staged **curative engineering roadmap**. His plan is to pair the 1,000,000-cell immune map with a second stomach biopsy for live T-cells, then build an early-warning loop from biweekly blood draws plus wearable data, cryopreserve immune cells for an ex-vivo **“Bryan in a dish”** model, and test precision therapies first in a computer model and then on his own frozen cells. The operational signal is new: measurement becomes a therapy-selection and safety-screening pipeline. The caution is equally important: this is Johnson’s proposed personal experiment, not an approved autoimmune-gastritis cure, validated ex-vivo screening method, or reader treatment pathway.
+
+On July 9, 2026, Johnson used Kate Tolo’s endometriosis workup as a high-signal example of **multi-modality diagnostic triangulation**. He said standard pelvic MRI and transvaginal ultrasound had returned negative, then a second pass confirmed endometriosis without surgery through three complementary modalities: an endo-specific ultrasound performed by trained operators, AI-assisted pelvic MRI through MatricesAI / Geneviève Institute, and a Heranova microRNA/protein blood test. The dashboard-relevant pattern is not that readers should copy the exact workup; it is the protocol logic that hard-to-diagnose disease may require complementary readouts because any single test can miss signal. Johnson’s accuracy statistics and “world-first” framing are his public claims around one person’s case, not independent validation or medical advice.
 
 ## Practical evaluation checklist
 

@@ -23,6 +23,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/x-twitter-daily-2026-07-04.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-07-08.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-07-09.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-07-10.md',
     ],
     sections: {
       habits: [
@@ -40,6 +41,7 @@ export const protocolCategories = [
         'Treat the July 2026 AIG single-cell immune-receptor sequencing thread as Johnson’s diagnostic follow-through: a cellular/receptor-level measurement layer, not a validated therapy or reader test recommendation.',
         'Treat the July 2026 low-ferritin / Monoferric follow-up as Johnson’s self-reported AIG case and false-negative philosophy, not a general iron-infusion recommendation.',
         'Treat the July 2026 AIG cure roadmap and “Bryan in a dish” model as a proposed personal experiment; it is not an approved autoimmune-disease cure, validated ex-vivo screening protocol, or reader treatment pathway.',
+        'Treat the July 2026 Kate Tolo endometriosis workup as multi-modality diagnostic-triangulation context; it is not a reader diagnostic pathway, independent validation, or proof that endometriosis can now be cured.',
         'Preserve medical-caution framing: this page summarizes Johnson/Blueprint practice, not personal treatment advice.',
       ],
       donts: [
@@ -104,6 +106,11 @@ export const protocolCategories = [
         body: 'Johnson’s July 8 plan pairs a second stomach biopsy, live T-cell matching, biweekly blood/wearable monitoring, cryopreserved immune cells, and ex-vivo testing before any precision therapy attempt. Keep it as investigational personal-roadmap context, not evidence of a cure.',
       },
       {
+        label: 'Endometriosis workup',
+        title: 'Kate Tolo case highlights multi-modality diagnostic triangulation',
+        body: 'Johnson says endo-specific ultrasound, AI-assisted pelvic MRI, and a microRNA/protein blood test converged after standard imaging missed signal. Keep it as a female-health measurement case study, not a general diagnostic recommendation or cure claim.',
+      },
+      {
         label: 'Skin readout',
         title: 'Australian sun exposure becomes another measured endpoint',
         body: 'Johnson claims one week in Australian sun increased his skin-aging metric by about 5% despite protection. Present this as self-measured UV-risk context, not as independent proof or individualized skincare advice.',
@@ -133,6 +140,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/x-twitter-daily-2026-07-04.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-07-08.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-07-09.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-07-10.md',
     ],
     sections: {
       habits: [
@@ -150,6 +158,7 @@ export const protocolCategories = [
         'Classify the July 2026 single-cell immune sequencing thread as an AIG diagnostic/readout extension, not as proof that Johnson has a validated antigen-specific therapy.',
         'Classify the July 2026 low-ferritin / Monoferric follow-up as self-reported diagnostic follow-through and a false-negative argument, not as generalized iron-infusion guidance.',
         'Classify the July 2026 AIG cure roadmap as a staged, investigational personal experiment; the “Bryan in a dish” ex-vivo model and candidate precision therapies are not established clinical outcomes.',
+        'Classify the July 2026 Kate Tolo endometriosis workup as a female-health measurement case study: complementary tests can expose false negatives, but Johnson’s case narrative is not a validated general protocol or medical advice.',
         'Keep the Immortals rename and immortality search-trend narrative in the ideology/brand lane; it does not increase confidence in the 2039 forecast.',
         'Keep the June 2026 immortality manifesto and “Die Economy” frame in the ideology/forecast lane unless independent evidence supports the specific biological and AI claims.',
         'Keep critiques visible so biomarker improvements do not become unsupported longevity promises.',
