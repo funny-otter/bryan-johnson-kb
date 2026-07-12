@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-07-10'
+updated: '2026-07-12'
 tags:
   - person
   - company
@@ -41,6 +41,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-04.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-09.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-10.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-11.md
 confidence: medium
 summary: >-
   Bryan Johnson is an American entrepreneur who moved from payments and
@@ -102,6 +103,8 @@ On July 3, Johnson continued the AIG story with a diagnostic follow-through thre
 On July 8, Johnson published his most explicit AIG cure attempt: a five-step plan that uses the prior diagnosis and 1M-cell immune map, adds a second stomach biopsy to collect live T-cells, watches for flare-ups through biweekly blood draws plus wearable data, cryopreserves immune cells for a **“Bryan in a dish”** testing model, and then evaluates precision therapies through computer modeling and ex-vivo cell testing before any in-body attempt. This is important public-positioning evidence because it turns the AIG story into a personal immune-engineering roadmap. It is still a prospective experiment, not proof of a cure or medical advice.
 
 On July 9, Johnson announced that Kate Tolo had been diagnosed with endometriosis without surgery after a three-modality workup: endo-specific ultrasound, AI-assisted pelvic MRI, and a microRNA/protein blood test, after standard imaging had reportedly missed the condition. The post continues the female-protocol thread from May and gives Johnson a second public disease case, alongside his AIG story, for arguing that persistent symptoms and false negatives should trigger deeper measurement. His “Phase II is curing endometriosis” language is recorded as movement/research positioning, not evidence of an available cure or reader medical advice.
+
+On July 10–11, Johnson’s feed returned to foundations and self-reported outcomes rather than introducing a new protocol. He called “removing harm” his best-performing longevity therapy, listing sleep deprivation, inconsistent sleep, sedentary behavior, alcohol, nicotine, late-night eating, loneliness, poor air and water, and other exposures. He also reported 99.6th-percentile bone mineral density, 11.3% body fat, and 160.1 lb lean mass, then cited unnamed cohort summaries connecting body composition with mortality. The subtraction post is useful as behavior philosophy; the body-composition values and epidemiological effect sizes remain Johnson’s self-report and lay citations, not independent validation or reader targets.
 
 ## Reading stance
 

@@ -1,5 +1,19 @@
 export const curatedSignals = [
   {
+    id: 'removal-first-longevity-foundations',
+    title: 'Johnson calls removing harm his best-performing longevity therapy',
+    date: '2026-07-11',
+    badge: 'Foundations',
+    kind: 'tweet',
+    topic: 'Subtraction / health behavior',
+    summary:
+      'Responding to a critique of his intervention stack, Johnson said “removing harm” has been his best-performing longevity therapy and listed sleep deprivation, inconsistent sleep, sedentary behavior, alcohol, nicotine, excess sugar and fat, late-night eating, loneliness, poor air and water, and other exposures. The dashboard treats this as a subtraction-first behavior philosophy—many basics are broadly familiar risk-reduction themes—not proof that every listed exposure has a quantified effect or that his full stack is safe or causal.',
+    href: '/knowledge/algorithmic-health/',
+    tweetId: '2075928661803557087',
+    confidence: 'medium',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-07-11.md#Tweet-2075928661803557087'],
+  },
+  {
     id: 'kate-tolo-endometriosis-three-modality-diagnosis',
     title: 'Kate Tolo endometriosis diagnosis becomes a multi-modality case study',
     date: '2026-07-09',
@@ -707,16 +721,17 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '5', detail: '5 posts with engagement · x-twitter-daily-2026-07-10.md' },
-  { label: 'Previous daily X capture', value: '2', detail: '2 tweets with engagement · x-twitter-daily-2026-07-09.md' },
+  { label: 'Latest daily X capture', value: '7', detail: '7 posts with engagement · x-twitter-daily-2026-07-11.md' },
+  { label: 'Previous daily X capture', value: '5', detail: '5 posts with engagement · x-twitter-daily-2026-07-10.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '44', detail: '12 knowledge pages + 32 update pages after this pass' },
+  { label: 'Public site content', value: '45', detail: '12 knowledge pages + 33 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-07-12', x_post: 7, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-10', x_post: 5, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-09', x_post: 2, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-08', x_post: 6, third_party: 0, wiki_update: 1, site_update: 1 },

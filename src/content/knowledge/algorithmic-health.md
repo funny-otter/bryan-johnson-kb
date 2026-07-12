@@ -4,7 +4,7 @@ slug: algorithmic-health
 type: concept
 sourcePath: concepts/algorithmic-health.md
 created: '2026-05-22'
-updated: '2026-06-18'
+updated: '2026-07-12'
 tags:
   - health
   - protocol
@@ -18,6 +18,7 @@ sources:
   - raw/articles/x-bryan-johnson-recent-posts-2026-05-22.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-05-27.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-18.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-11.md
 confidence: medium
 summary: >-
   Algorithmic health is the pattern of using measurement systems, scientific
@@ -39,6 +40,8 @@ Algorithmic health is the pattern of using measurement systems, scientific prior
 Johnson's May 26, 2026 posts show the same pattern applied to mundane constraints. Sun exposure becomes a skin-aging and vitamin-D-management problem; international travel becomes a glucose, circadian, and sleep-architecture recovery problem; Kate Tolo's female-protocol baseline becomes a reason to avoid international travel during measurement. The dashboard should label the specific travel recovery timelines as Johnson's attributed N=1 claims unless corroborated elsewhere.
 
 The June 17 Nature/N-of-1 essay turns the same pattern into a methodology claim. Johnson and the Blueprint & Immortals science team describe AI, wearables, multi-omics, real-time tracking, and exposome data as tools for mapping individualized response and eventually positioning less-measured people against deeply measured pioneers. That is algorithmic health at platform scale: data collection first, model/neighbor inference second, and individualized decisions last. The claim is useful as a design pattern, but the biological examples bundled with it remain unvalidated self-experiment signals.
+
+In a July 11 post responding to Nassim Nicholas Taleb’s interaction-risk critique, Johnson described **removing harm** as his “best performing longevity therapy.” His list included sleep deprivation and inconsistent timing, sedentary behavior, alcohol, nicotine, late-night eating, excess sugar and fat, loneliness, poor air and water, and several broader or less-defined exposures. This adds a useful subtraction-first branch to algorithmic health: remove obvious negative inputs before optimizing additions. It does not quantify each item’s contribution, validate broad counts such as “15,000 chemicals,” or answer the confounding and interaction questions raised by his remaining intervention stack.
 
 ## Why it matters
 

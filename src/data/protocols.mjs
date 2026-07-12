@@ -24,6 +24,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/x-twitter-daily-2026-07-08.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-07-09.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-07-10.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-07-11.md',
     ],
     sections: {
       habits: [
@@ -42,6 +43,7 @@ export const protocolCategories = [
         'Treat the July 2026 low-ferritin / Monoferric follow-up as Johnson’s self-reported AIG case and false-negative philosophy, not a general iron-infusion recommendation.',
         'Treat the July 2026 AIG cure roadmap and “Bryan in a dish” model as a proposed personal experiment; it is not an approved autoimmune-disease cure, validated ex-vivo screening protocol, or reader treatment pathway.',
         'Treat the July 2026 Kate Tolo endometriosis workup as multi-modality diagnostic-triangulation context; it is not a reader diagnostic pathway, independent validation, or proof that endometriosis can now be cured.',
+        'Read Johnson’s July 2026 “removing harm” list as a subtraction-first behavior philosophy. Sleep consistency, movement, avoiding nicotine/alcohol, and reducing obvious hazards belong with foundations; the post does not quantify each item or resolve the safety and attribution questions around his intervention stack.',
         'Preserve medical-caution framing: this page summarizes Johnson/Blueprint practice, not personal treatment advice.',
       ],
       donts: [
@@ -111,6 +113,11 @@ export const protocolCategories = [
         body: 'Johnson says endo-specific ultrasound, AI-assisted pelvic MRI, and a microRNA/protein blood test converged after standard imaging missed signal. Keep it as a female-health measurement case study, not a general diagnostic recommendation or cure claim.',
       },
       {
+        label: 'Subtraction first',
+        title: 'Removing harm is framed as the highest-return layer',
+        body: 'Johnson lists sleep deprivation, sedentary behavior, alcohol, nicotine, late-night eating, poor air and water, loneliness, and other exposures as removals that outperform additions for him. Keep the principle separate from unsupported effect sizes and from the safety of his broader stack.',
+      },
+      {
         label: 'Skin readout',
         title: 'Australian sun exposure becomes another measured endpoint',
         body: 'Johnson claims one week in Australian sun increased his skin-aging metric by about 5% despite protection. Present this as self-measured UV-risk context, not as independent proof or individualized skincare advice.',
@@ -141,6 +148,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/x-twitter-daily-2026-07-08.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-07-09.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-07-10.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-07-11.md',
     ],
     sections: {
       habits: [
@@ -367,6 +375,7 @@ export const protocolSectionsBySlug = {
 };
 
 export const conceptEntries = [
+  { title: 'Subtraction-first algorithmic health', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-11.md', summary: 'Johnson says removing harms has been his best-performing longevity therapy; useful as a foundations-first decision pattern, not quantified proof for every listed exposure or the safety of his wider stack.' },
   { title: 'Kate Tolo endometriosis diagnostic triangulation', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-10.md', summary: 'Johnson says an endo-specific ultrasound, AI-assisted pelvic MRI, and microRNA/protein blood test converged on a non-surgical endometriosis diagnosis; useful as a multi-modality measurement case study, not medical advice or cure evidence.' },
   { title: 'AIG cure roadmap / Bryan in a dish', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-09.md', summary: 'Johnson proposed a staged AIG cure attempt using live T-cell matching, biweekly blood/wearable monitoring, cryopreserved immune cells, and ex-vivo therapy tests; roadmap evidence, not an approved cure.' },
   { title: 'AIG low ferritin / false-negative follow-up', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-08.md', summary: 'Johnson recast his AIG story as an 11-year low-ferritin diagnostic miss and reported Monoferric ferritin follow-up; useful as measurement ethos, not iron-treatment advice.' },

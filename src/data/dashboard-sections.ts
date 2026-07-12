@@ -20,6 +20,17 @@ export type TimelineEvent = {
 
 export const opinionItems: OpinionItem[] = [
   {
+    claim: 'Johnson says subtraction—not adding more interventions—is his best-performing longevity therapy.',
+    position: 'In a July 11 response to Nassim Nicholas Taleb’s drug-interaction critique, Johnson foregrounded removing sleep deprivation, inconsistent sleep, sedentary behavior, alcohol, nicotine, late-night eating, excess sugar and fat, loneliness, poor air and water, and other harms. It is a notable foundations-first counterweight to his highly visible test, supplement, and prescription stack.',
+    counterpoint: 'Several listed behaviors align with familiar public-health risk reduction, but the tweet does not quantify the contribution of each removal, substantiate broad claims such as “15,000 chemicals,” or resolve interaction, confounding, and safety questions around the interventions he still uses. It is philosophy and self-report, not personal medical advice.',
+    confidence: 'medium',
+    relatedHref: '/knowledge/algorithmic-health/',
+    relatedTitle: 'Algorithmic Health',
+    sources: [
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-07-11.md#Tweet-2075928661803557087',
+    ],
+  },
+  {
     claim: 'Johnson now says the bigger diagnostic risk is false negatives, not just over-testing.',
     position: 'In July 7 posts about autoimmune gastritis and low ferritin, Johnson argued that normal hemoglobin/hematocrit let an 11-year low-iron signal get dismissed, then wrote that “People mistake the absence of diagnosis for the presence of health” and “People fear false positives. I fear false negatives.”',
     counterpoint: 'This clarifies his values around aggressive investigation, but it does not erase the real risks of false positives, anxiety, invasive follow-up, or overtreatment. The Monoferric and ferritin numbers are Johnson’s self-report and should not be read as reader treatment advice.',
@@ -104,6 +115,15 @@ export const opinionItems: OpinionItem[] = [
 ];
 
 export const timelineEvents: TimelineEvent[] = [
+  {
+    date: '2026-07-11',
+    label: '“Removing harm” reframed as Johnson’s best-performing longevity layer',
+    summary: 'Replying to criticism of his complex intervention stack, Johnson emphasized subtraction: sleep consistency, movement, avoiding alcohol and nicotine, earlier eating, social connection, and lower environmental exposures. The dashboard records this as an algorithmic-health and behavior-design signal, not proof of each claimed exposure effect or a resolution of drug/supplement interaction risk.',
+    relatedHref: '/knowledge/algorithmic-health/',
+    relatedTitle: 'Algorithmic Health',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-11.md',
+    confidence: 'medium',
+  },
   {
     date: '2026-07-09',
     label: 'Kate Tolo endometriosis workup confirmed through three non-surgical modalities',
