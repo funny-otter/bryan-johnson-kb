@@ -20,6 +20,17 @@ export type TimelineEvent = {
 
 export const opinionItems: OpinionItem[] = [
   {
+    claim: 'Johnson now frames resistance to life extension as punishment of the “death challenger.”',
+    position: 'In a July 12 essay, Johnson interpreted “he deserved it” reactions to his autoimmune-gastritis diagnosis as an archetypal demand that challengers of death must lose. He placed himself in a lineage with Gilgamesh, Asclepius, and Jesus, then argued that physical death “may no longer be inevitable.”',
+    counterpoint: 'The historical and psychological analogy is Johnson’s unsourced interpretation, and the comparison to mythological and religious figures is a substantial escalation in self-framing. It does not establish that mortality is becoming optional or supply scientific evidence; treat it as Don’t Die ideology, not a medical conclusion or advice.',
+    confidence: 'low',
+    relatedHref: '/knowledge/dont-die/',
+    relatedTitle: "Don't Die",
+    sources: [
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-07-12.md#Tweet-4',
+    ],
+  },
+  {
     claim: 'Johnson says subtraction—not adding more interventions—is his best-performing longevity therapy.',
     position: 'In a July 11 response to Nassim Nicholas Taleb’s drug-interaction critique, Johnson foregrounded removing sleep deprivation, inconsistent sleep, sedentary behavior, alcohol, nicotine, late-night eating, excess sugar and fat, loneliness, poor air and water, and other harms. It is a notable foundations-first counterweight to his highly visible test, supplement, and prescription stack.',
     counterpoint: 'Several listed behaviors align with familiar public-health risk reduction, but the tweet does not quantify the contribution of each removal, substantiate broad claims such as “15,000 chemicals,” or resolve interaction, confounding, and safety questions around the interventions he still uses. It is philosophy and self-report, not personal medical advice.',
@@ -115,6 +126,15 @@ export const opinionItems: OpinionItem[] = [
 ];
 
 export const timelineEvents: TimelineEvent[] = [
+  {
+    date: '2026-07-12',
+    label: '“The world wants me to die” essay escalates Don’t Die’s mythic frame',
+    summary: 'Johnson cast public schadenfreude around his autoimmune-gastritis diagnosis as an archetypal demand that a challenger of death must fail, comparing his philosophical position with Gilgamesh, Asclepius, and Jesus and saying physical death “may no longer be inevitable.” The KB records this as a high-signal ideology and reception update, not a scientific finding, medical conclusion, or advice.',
+    relatedHref: '/knowledge/dont-die/',
+    relatedTitle: "Don't Die",
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-12.md',
+    confidence: 'low',
+  },
   {
     date: '2026-07-11',
     label: '“Removing harm” reframed as Johnson’s best-performing longevity layer',

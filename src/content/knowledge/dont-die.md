@@ -4,7 +4,7 @@ slug: dont-die
 type: concept
 sourcePath: concepts/dont-die.md
 created: '2026-05-22'
-updated: '2026-07-10'
+updated: '2026-07-13'
 tags:
   - longevity
   - biohacking
@@ -26,6 +26,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-29.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-07.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-10.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-12.md
 confidence: medium
 summary: >-
   Don't Die is bryan-johnson's community slogan, longevity philosophy, and
@@ -63,6 +64,8 @@ On June 28, 2026, Johnson quote-tweeted a Charlie Munger psychology-of-misjudgme
 On July 6, 2026, Johnson published a long essay answering the taunt that he is “so busy trying to not die he forgot how to live.” He argued that ordinary indulgence culture — drinking, vaping, fast food, late nights, cheat days, and holiday excess — works as a shared “death ritual” that hides existential fear, so abstainers are attacked because they “reveal to the room that they are drunk.” He contrasts that with explicit mourning and funeral rituals that faced death directly, then reframes Don’t Die as an “evolutionary jailbreak” rather than a sterile obsession with control. This is the clearest recent articulation of the movement’s social-psychology theory, but the cellular/metabolic and evolutionary claims in the post are Johnson’s framing without cited evidence; the dashboard treats it as ideology, not medical or scientific fact.
 
 On July 9, 2026, Johnson tied Kate Tolo’s endometriosis announcement to a sharper curative identity for the movement: “An incurable diagnosis is a rite of passage for Don’t Die. To overcome death, we have to cure disease.” The site records this as movement framing, not a medical claim: diagnosis is being recast as an initiation point for building measurement and cure attempts, linking Johnson’s AIG narrative and Tolo’s endometriosis workup to a broader “cure disease” mission.
+
+On July 12, 2026, Johnson published “The world wants me to die,” interpreting schadenfreude around his autoimmune-gastritis diagnosis as an archetypal demand that a challenger of death must fail. He placed his own philosophical position alongside Gilgamesh, Asclepius, and Jesus—figures he describes as punished by a serpent, a god, or a crowd after challenging death—and argued that this pattern protects people from confronting the possibility that mortality is not fixed. He closed with his strongest version of that belief yet: physical death “may no longer be inevitable.” A follow-up said the diagnosis had emboldened him. This is a material escalation in Don’t Die’s mythological and religious self-framing, but the analogy and psychological mechanism are Johnson’s interpretation, and the claim about death is speculative rather than an established scientific or medical conclusion.
 
 ## Practical components
 
