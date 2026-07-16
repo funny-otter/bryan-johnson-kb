@@ -173,7 +173,7 @@ const latestDate = signalCards[0]?.date || '';
       <a class="watch-path action" href="/concepts/">
         <span>Reference</span>
         <strong>Concepts</strong>
-        <p>12 source-aware glossary entries, including concepts without dedicated wiki pages yet.</p>
+        <p>{conceptEntries.length} source-aware glossary entries, including concepts without dedicated wiki pages yet.</p>
       </a>
       {coreTopics.map((entry) => (
         <a class="watch-path" href={`/knowledge/${entry.data.slug}/`}>

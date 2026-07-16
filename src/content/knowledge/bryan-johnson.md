@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-07-12'
+updated: '2026-07-16'
 tags:
   - person
   - company
@@ -42,6 +42,8 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-09.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-10.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-11.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-12.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-16.md
 confidence: medium
 summary: >-
   Bryan Johnson is an American entrepreneur who moved from payments and
@@ -105,6 +107,8 @@ On July 8, Johnson published his most explicit AIG cure attempt: a five-step pla
 On July 9, Johnson announced that Kate Tolo had been diagnosed with endometriosis without surgery after a three-modality workup: endo-specific ultrasound, AI-assisted pelvic MRI, and a microRNA/protein blood test, after standard imaging had reportedly missed the condition. The post continues the female-protocol thread from May and gives Johnson a second public disease case, alongside his AIG story, for arguing that persistent symptoms and false negatives should trigger deeper measurement. His “Phase II is curing endometriosis” language is recorded as movement/research positioning, not evidence of an available cure or reader medical advice.
 
 On July 10–11, Johnson’s feed returned to foundations and self-reported outcomes rather than introducing a new protocol. He called “removing harm” his best-performing longevity therapy, listing sleep deprivation, inconsistent sleep, sedentary behavior, alcohol, nicotine, late-night eating, loneliness, poor air and water, and other exposures. He also reported 99.6th-percentile bone mineral density, 11.3% body fat, and 160.1 lb lean mass, then cited unnamed cohort summaries connecting body composition with mortality. The subtraction post is useful as behavior philosophy; the body-composition values and epidemiological effect sizes remain Johnson’s self-report and lay citations, not independent validation or reader targets.
+
+On July 14, Johnson added two durable measurement-and-behavior frames. He announced a 90-day Kate Tolo program projected to span three menstrual cycles, 50+ devices, 100 daily tasks, 1,900 biomarkers, and 14.8M data points, presenting the effort as making female health “legible.” He also named resting heart rate his **“Sovereignty Index,”** reported a personal 41 bpm 30-day average, and paired it with evening pre-commitments around food, screens, caffeine, light, and bedtime. The former is a planned N=1 program, not completed female-health evidence; the latter is a behavioral metaphor and self-reported metric, not a universal target or medical advice. A same-day cooperative-AGI reflection was captured in the wiki but not promoted as a standalone public signal because it did not materially change the health, protocol, or Don’t Die model.
 
 ## Reading stance
 

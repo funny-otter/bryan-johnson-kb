@@ -20,6 +20,17 @@ export type TimelineEvent = {
 
 export const opinionItems: OpinionItem[] = [
   {
+    claim: 'Johnson now calls resting heart rate his “Sovereignty Index.”',
+    position: 'In a July 14 essay, Johnson used pre-sleep RHR as a behavioral-control score: whether he is ruled by impulses and an engineered consumption economy or follows pre-committed rules for food, screens, caffeine, light, bedtime, and winding down. He reported a personal 41 bpm 30-day average.',
+    counterpoint: 'RHR can be useful within-person feedback and is associated with fitness and autonomic state, but it is affected by training, illness, medication, stress, measurement conditions, and individual physiology. Johnson’s label and 41 bpm value are self-report and philosophy—not a universal health target, diagnosis, or medical advice.',
+    confidence: 'medium',
+    relatedHref: '/knowledge/algorithmic-health/',
+    relatedTitle: 'Algorithmic Health',
+    sources: [
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-07-16.md#Tweet-2',
+    ],
+  },
+  {
     claim: 'Johnson now frames resistance to life extension as punishment of the “death challenger.”',
     position: 'In a July 12 essay, Johnson interpreted “he deserved it” reactions to his autoimmune-gastritis diagnosis as an archetypal demand that challengers of death must lose. He placed himself in a lineage with Gilgamesh, Asclepius, and Jesus, then argued that physical death “may no longer be inevitable.”',
     counterpoint: 'The historical and psychological analogy is Johnson’s unsourced interpretation, and the comparison to mythological and religious figures is a substantial escalation in self-framing. It does not establish that mortality is becoming optional or supply scientific evidence; treat it as Don’t Die ideology, not a medical conclusion or advice.',
@@ -126,6 +137,24 @@ export const opinionItems: OpinionItem[] = [
 ];
 
 export const timelineEvents: TimelineEvent[] = [
+  {
+    date: '2026-07-14',
+    label: 'Kate Tolo 90-day measurement program expands to a claimed 1,900 biomarkers',
+    summary: 'Johnson announced a three-cycle female-health program projected to collect 14.8M data points through 100 daily tasks and 50+ devices, framing the effort as making cyclical female biology “legible.” The KB records this as a major scale escalation of the Kate Tolo protocol story; the figures describe a planned program, not completed or independently validated results, and are not medical advice.',
+    relatedHref: '/knowledge/biomarker-driven-longevity-protocols/',
+    relatedTitle: 'Biomarker-driven longevity protocols',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-16.md',
+    confidence: 'medium',
+  },
+  {
+    date: '2026-07-14',
+    label: 'RHR named Johnson’s “Sovereignty Index”',
+    summary: 'Johnson reframed resting heart rate as an algorithmic-health proxy for behavioral self-control and reported a personal 41 bpm 30-day average, pairing it with evening pre-commitments around food, screens, caffeine, light, and bedtime. The KB treats the label as a public philosophy and behavior-design signal, not a reader heart-rate target, diagnosis, or medical advice.',
+    relatedHref: '/knowledge/algorithmic-health/',
+    relatedTitle: 'Algorithmic Health',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-16.md',
+    confidence: 'medium',
+  },
   {
     date: '2026-07-12',
     label: '“The world wants me to die” essay escalates Don’t Die’s mythic frame',

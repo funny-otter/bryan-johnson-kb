@@ -4,7 +4,7 @@ slug: biomarker-driven-longevity-protocols
 type: concept
 sourcePath: concepts/biomarker-driven-longevity-protocols.md
 created: '2026-05-22'
-updated: '2026-07-10'
+updated: '2026-07-16'
 tags:
   - longevity
   - biomarkers
@@ -34,6 +34,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-08.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-09.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-10.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-16.md
 confidence: medium
 summary: >-
   A biomarker-driven longevity protocol is a health system that treats the body
@@ -97,6 +98,8 @@ On July 7, 2026, Johnson turned the same AIG case into a sharper lesson about **
 On July 8, 2026, Johnson moved the AIG thread from diagnosis and measurement into a staged **curative engineering roadmap**. His plan is to pair the 1,000,000-cell immune map with a second stomach biopsy for live T-cells, then build an early-warning loop from biweekly blood draws plus wearable data, cryopreserve immune cells for an ex-vivo **“Bryan in a dish”** model, and test precision therapies first in a computer model and then on his own frozen cells. The operational signal is new: measurement becomes a therapy-selection and safety-screening pipeline. The caution is equally important: this is Johnson’s proposed personal experiment, not an approved autoimmune-gastritis cure, validated ex-vivo screening method, or reader treatment pathway.
 
 On July 9, 2026, Johnson used Kate Tolo’s endometriosis workup as a high-signal example of **multi-modality diagnostic triangulation**. He said standard pelvic MRI and transvaginal ultrasound had returned negative, then a second pass confirmed endometriosis without surgery through three complementary modalities: an endo-specific ultrasound performed by trained operators, AI-assisted pelvic MRI through MatricesAI / Geneviève Institute, and a Heranova microRNA/protein blood test. The dashboard-relevant pattern is not that readers should copy the exact workup; it is the protocol logic that hard-to-diagnose disease may require complementary readouts because any single test can miss signal. Johnson’s accuracy statistics and “world-first” framing are his public claims around one person’s case, not independent validation or medical advice.
+
+On July 14, 2026, Johnson announced a major **scale escalation of Kate Tolo’s female-health protocol**: a projected 90-day program spanning three menstrual cycles, 100 tasks a day, 6–10 hours a day, 50+ devices, 1,900 biomarkers, and 14.8 million data points. He framed cyclical female biology as historically under-measured and said the goal is to make Tolo “legible” first to herself and then to others. For evaluation, the distinction between protocol specification and evidence is crucial: the figures are Johnson’s plan for a future collection window, not a completed dataset, study result, or independently verified measurement. Dense data can improve longitudinal visibility, but volume alone does not establish clinical meaning, actionability, representativeness, or privacy safeguards, and one intensively measured participant does not define a general female-health protocol.
 
 ## Practical evaluation checklist
 

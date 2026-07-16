@@ -1,5 +1,33 @@
 export const curatedSignals = [
   {
+    id: 'kate-tolo-1900-biomarker-legibility-program',
+    title: 'Kate Tolo’s 90-day program scales to 1,900 claimed biomarkers',
+    date: '2026-07-14',
+    badge: 'Female health',
+    kind: 'tweet',
+    topic: 'Female health / measurement scale',
+    summary:
+      'Johnson announced a 90-day Kate Tolo program spanning three menstrual cycles, 50+ devices, 100 daily tasks, and a projected 1,900 biomarkers / 14.8 million data points. He framed it as making cyclical female biology “legible.” The dashboard treats those numbers as Johnson’s planned program specification—not a completed dataset, independently validated study, general protocol, or medical advice.',
+    href: '/metrics/',
+    tweetId: '2077168569591505050',
+    confidence: 'medium',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-07-16.md#Tweet-3'],
+  },
+  {
+    id: 'rhr-sovereignty-index-behavior-frame',
+    title: 'Resting heart rate becomes Johnson’s “Sovereignty Index”',
+    date: '2026-07-14',
+    badge: 'Algorithmic health',
+    kind: 'tweet',
+    topic: 'RHR / behavioral control',
+    summary:
+      'Johnson recast pre-sleep resting heart rate as a score for whether impulses and engineered consumption are controlling him, reporting a personal 41 bpm 30-day average and prescribing evening pre-commitments around food, screens, caffeine, light, bedtime, and winding down. The named proxy is a useful algorithmic-health frame, but 41 bpm is his self-report—not a reader target, diagnosis, or medical advice.',
+    href: '/knowledge/algorithmic-health/',
+    tweetId: '2077144970553933842',
+    confidence: 'medium',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-07-16.md#Tweet-2'],
+  },
+  {
     id: 'dont-die-death-challenger-archetype',
     title: 'Johnson casts Don’t Die as a “death challenger” archetype',
     date: '2026-07-12',
@@ -619,6 +647,18 @@ export const watchQueue = [
     href: '/metrics/',
   },
   {
+    title: 'Kate Tolo 90-day measurement release',
+    summary: 'Watch whether the projected 1,900 biomarkers / 14.8M data points are actually published with definitions, cycle-phase context, missing-data handling, interpretation limits, and governance for highly sensitive female-health data.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-16.md',
+    href: '/metrics/',
+  },
+  {
+    title: 'RHR “Sovereignty Index” validity',
+    summary: 'Watch whether Johnson publishes the underlying trend, explains measurement conditions and confounders, and separates within-person behavioral feedback from clinical targets or population-wide vagal-tone claims.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-16.md',
+    href: '/knowledge/algorithmic-health/',
+  },
+  {
     title: 'Immortality manifesto evidence claims',
     summary: 'Watch for independent sourcing around the Sid Sijbrandij and Paul Conyngham cases, clearer definitions of longevity escape velocity, and whether Johnson separates AI-accelerated cancer anecdotes from evidence for whole-body aging escape.',
     source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md',
@@ -635,12 +675,6 @@ export const watchQueue = [
     summary: 'Watch for clinical validation, regulatory status, false-positive handling, comparison data against MRI/ultrasound, and evidence that baseline + longitudinal whole-body scanning improves outcomes rather than simply increasing incidental findings.',
     source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md',
     href: '/metrics/',
-  },
-  {
-    title: 'Kate Tolo female-protocol measurement release',
-    summary: 'Watch whether the July cycle-anchored protocol publishes actual baseline data, measurement methods, and interpretation boundaries for hormone, vaginal pH, skin, brain, body-composition, and performance readouts.',
-    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md',
-    href: '/health/',
   },
   {
     title: 'Immortals Rx GLP-1 and peptide evidence',
@@ -715,12 +749,6 @@ export const watchQueue = [
     href: '/longevity/',
   },
   {
-    title: 'Kate Tolo baseline',
-    summary: 'Watch for published baseline measurements, cycle-phase details, and careful separation between N=1 observation and advice.',
-    source: 'raw/articles/bryan-johnson/x-twitter-bryan-johnson-2026-05-22.md',
-    href: '/health/',
-  },
-  {
     title: 'Microplastics testing',
     summary: 'Watch for evidence behind the claimed N=1 reduction and product validation for the Blueprint blood test.',
     source: 'raw/articles/bryan-johnson/blueprint-microplastics-test-2026-05-23.md',
@@ -735,16 +763,17 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '5', detail: '5 posts with engagement · x-twitter-daily-2026-07-12.md' },
-  { label: 'Previous daily X capture', value: '7', detail: '7 posts with engagement · x-twitter-daily-2026-07-11.md' },
+  { label: 'Latest daily X capture', value: '3', detail: '3 Jul 14 posts captured · x-twitter-daily-2026-07-16.md' },
+  { label: 'Previous daily X capture', value: '5', detail: '5 posts with engagement · x-twitter-daily-2026-07-12.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '46', detail: '12 knowledge pages + 34 update pages after this pass' },
+  { label: 'Public site content', value: '47', detail: '12 knowledge pages + 35 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-07-16', x_post: 3, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-13', x_post: 5, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-12', x_post: 7, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-10', x_post: 5, third_party: 0, wiki_update: 1, site_update: 1 },
