@@ -156,6 +156,19 @@ describe('home overview and dedicated changelog route', () => {
     assert.doesNotMatch(indexSource, /Synthetic activity heatmap/i, 'activity panel must not identify itself as synthetic');
   });
 
+  it('keeps the July 16 crosslink-reversal post in a low-confidence ex-vivo research-watch lane', () => {
+    for (const required of [
+      '2077789855434879292',
+      'x-twitter-daily-2026-07-17.md',
+      'unnamed laboratory result',
+      'work remains ex vivo',
+      'safe delivery of a large bacterial enzyme into living tissue is unresolved',
+      'confidence: \'low\'',
+    ]) {
+      assert.match(signalsSource, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `crosslink research signal should preserve: ${required}`);
+    }
+  });
+
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
     for (const phrase of ['watchQueue', 'sourceCounts', 'curatedActivity', 'Protocol tabs backed']) {
       assert.match(indexSource, new RegExp(phrase), `overview should use real sidebar data: ${phrase}`);

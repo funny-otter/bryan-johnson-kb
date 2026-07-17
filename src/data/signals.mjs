@@ -1,5 +1,19 @@
 export const curatedSignals = [
   {
+    id: 'ex-vivo-age-crosslink-reversal-research-watch',
+    title: 'Johnson flags ex vivo work on reversing age-related protein crosslinks',
+    date: '2026-07-16',
+    badge: 'Research watch',
+    kind: 'tweet',
+    topic: 'Glycation / crosslink repair',
+    summary:
+      'Johnson amplified an unnamed laboratory result that he says used AlphaFold to search 45,000 oxidases and directed evolution to screen more than 500 million engineered variants against age-related sugar–protein crosslinking. He also stated that the work remains ex vivo and that safe delivery of a large bacterial enzyme into living tissue is unresolved. The dashboard treats this as a low-confidence research lead—not a demonstrated human treatment, independently validated result, protocol change, or medical advice.',
+    href: '/longevity/',
+    tweetId: '2077789855434879292',
+    confidence: 'low',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-07-17.md#Tweet-2077789855434879292'],
+  },
+  {
     id: 'kate-tolo-1900-biomarker-legibility-program',
     title: 'Kate Tolo’s 90-day program scales to 1,900 claimed biomarkers',
     date: '2026-07-14',
@@ -647,6 +661,12 @@ export const watchQueue = [
     href: '/metrics/',
   },
   {
+    title: 'Crosslink-reversal source and delivery evidence',
+    summary: 'Watch for the named paper or preprint, enzyme identity, reproducible ex-vivo results, independent review, and evidence that tissue delivery, penetration, bioavailability, immunogenicity, and safety can be solved in vivo.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-17.md',
+    href: '/longevity/',
+  },
+  {
     title: 'Kate Tolo 90-day measurement release',
     summary: 'Watch whether the projected 1,900 biomarkers / 14.8M data points are actually published with definitions, cycle-phase context, missing-data handling, interpretation limits, and governance for highly sensitive female-health data.',
     source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-16.md',
@@ -763,16 +783,17 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '3', detail: '3 Jul 14 posts captured · x-twitter-daily-2026-07-16.md' },
-  { label: 'Previous daily X capture', value: '5', detail: '5 posts with engagement · x-twitter-daily-2026-07-12.md' },
+  { label: 'Latest daily X capture', value: '1', detail: '1 Jul 16 post captured · x-twitter-daily-2026-07-17.md' },
+  { label: 'Previous daily X capture', value: '3', detail: '3 Jul 14 posts captured · x-twitter-daily-2026-07-16.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '47', detail: '12 knowledge pages + 35 update pages after this pass' },
+  { label: 'Public site content', value: '48', detail: '12 knowledge pages + 36 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-07-17', x_post: 1, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-16', x_post: 3, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-13', x_post: 5, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-12', x_post: 7, third_party: 0, wiki_update: 1, site_update: 1 },

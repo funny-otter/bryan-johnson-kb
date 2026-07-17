@@ -138,6 +138,15 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-07-16',
+    label: 'Ex-vivo age-crosslink reversal enters Johnson’s research watch',
+    summary: 'Johnson amplified an unnamed laboratory result that he says used AlphaFold to search 45,000 oxidases and directed evolution to screen more than 500 million variants against age-related sugar–protein crosslinking. The post explicitly says the work remains ex vivo and that safe delivery of a large bacterial enzyme into living tissue is unresolved, so the KB records a low-confidence research lead—not a demonstrated treatment, independent validation, protocol change, or medical advice.',
+    relatedHref: '/knowledge/bryan-johnson/',
+    relatedTitle: 'Bryan Johnson',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-17.md',
+    confidence: 'low',
+  },
+  {
     date: '2026-07-14',
     label: 'Kate Tolo 90-day measurement program expands to a claimed 1,900 biomarkers',
     summary: 'Johnson announced a three-cycle female-health program projected to collect 14.8M data points through 100 daily tasks and 50+ devices, framing the effort as making cyclical female biology “legible.” The KB records this as a major scale escalation of the Kate Tolo protocol story; the figures describe a planned program, not completed or independently validated results, and are not medical advice.',
