@@ -45,6 +45,22 @@ function assertRenderedClaimSource(html, claimFragment, expectedSource) {
   );
 }
 
+function assertRenderedHabitSource(html, claimFragment, expectedSource) {
+  const claimIndex = html.indexOf(claimFragment);
+  assert.notEqual(claimIndex, -1, `missing rendered habit: ${claimFragment}`);
+
+  const rowStart = html.lastIndexOf('<div class="habit"', claimIndex);
+  const rowEnd = html.indexOf('</div>', claimIndex);
+  assert.notEqual(rowStart, -1, `missing habit row for: ${claimFragment}`);
+  assert.notEqual(rowEnd, -1, `unterminated habit row for: ${claimFragment}`);
+
+  const row = html.slice(rowStart, rowEnd);
+  assert.ok(
+    row.includes(`<code>${expectedSource}</code>`),
+    `habit must render beside ${expectedSource}; rendered row was: ${row}`,
+  );
+}
+
 describe('protocol terminal dossier pages', () => {
   it('uses separate BJ.WATCH habit/objective/forbidden surfaces instead of one mixed bucket ledger', () => {
     assert.ok(existsSync(protocolComponentPath), 'missing shared ProtocolDossier component');
@@ -116,7 +132,7 @@ describe('protocol terminal dossier pages', () => {
     }
   });
 
-  it('renders the July 20 health and longevity claims beside their exact July 21 raw source', () => {
+  it('renders audited protocol claims beside their exact durable sources', () => {
     buildProtocolPages();
 
     const july21Source = 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-21.md';
@@ -174,6 +190,11 @@ describe('protocol terminal dossier pages', () => {
       renderedHtml.longevity,
       'The disease and proposed research program are unspecified',
       july21Source,
+    );
+    assertRenderedHabitSource(
+      renderedHtml.sleep,
+      'go to bed on time',
+      'raw/articles/bryan-johnson/x-twitter-bryan-johnson-2026-05-22.md#Thu May 21 13:59:33 +0000 2026',
     );
   });
 

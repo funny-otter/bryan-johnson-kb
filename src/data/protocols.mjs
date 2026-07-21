@@ -288,7 +288,7 @@ export const protocolCategories = [
     confidence: 'medium',
     sections: {
       habits: [
-        sourced('Keep bedtime consistency as the central behavior signal, with Johnson’s own “go to bed on time” framing.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md'),
+        sourced('Present “go to bed on time” as Johnson’s own habit framing, not a universal prescription.', 'raw/articles/bryan-johnson/x-twitter-bryan-johnson-2026-05-22.md#Thu May 21 13:59:33 +0000 2026'),
         sourced('Use front-loading sleep before planned late nights as a source-backed example, not as a universal rule.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-05-25.md#Sun May 24 22:07:24 +0000 2026--2058671232002990136'),
       ],
       longterm: [
