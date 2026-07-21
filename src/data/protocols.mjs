@@ -26,6 +26,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/x-twitter-daily-2026-07-10.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-07-11.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-07-16.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-07-21.md',
     ],
     sections: {
       habits: [
@@ -47,6 +48,7 @@ export const protocolCategories = [
         'Read Johnson’s July 2026 “removing harm” list as a subtraction-first behavior philosophy. Sleep consistency, movement, avoiding nicotine/alcohol, and reducing obvious hazards belong with foundations; the post does not quantify each item or resolve the safety and attribution questions around his intervention stack.',
         'Treat the July 2026 Kate Tolo 90-day / 1,900-biomarker announcement as a projected N=1 program specification, not completed female-health evidence, a representative protocol, or medical advice.',
         'Treat Johnson’s RHR “Sovereignty Index” as within-person behavior-design framing. His reported 41 bpm average is not a universal target, and resting heart rate needs individual and clinical context.',
+        'Treat the July 2026 eye-health thread as an organ-specific measurement agenda. It names no dysfunction, test, protocol, or outcome and is not reader guidance.',
         'Preserve medical-caution framing: this page summarizes Johnson/Blueprint practice, not personal treatment advice.',
       ],
       donts: [
@@ -131,6 +133,11 @@ export const protocolCategories = [
         body: 'Johnson uses resting heart rate to score pre-committed food, screen, caffeine, light, and bedtime rules. The behavior-design pattern is the signal; his self-reported 41 bpm average is not a reader target or diagnosis.',
       },
       {
+        label: 'Eye-health agenda',
+        title: 'Measurement and dysfunction diagnosis are proposed, not specified',
+        body: 'Johnson says eye health needs robust measurement, diagnosis, and corrective protocols beyond diet or supplements. No condition, test, intervention, or result is named, so this remains a watch item rather than a public protocol.',
+      },
+      {
         label: 'Skin readout',
         title: 'Australian sun exposure becomes another measured endpoint',
         body: 'Johnson claims one week in Australian sun increased his skin-aging metric by about 5% despite protection. Present this as self-measured UV-risk context, not as independent proof or individualized skincare advice.',
@@ -163,6 +170,7 @@ export const protocolCategories = [
       'raw/articles/bryan-johnson/x-twitter-daily-2026-07-10.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-07-11.md',
       'raw/articles/bryan-johnson/x-twitter-daily-2026-07-16.md',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-07-21.md',
     ],
     sections: {
       habits: [
@@ -182,6 +190,7 @@ export const protocolCategories = [
         'Classify the July 2026 AIG cure roadmap as a staged, investigational personal experiment; the “Bryan in a dish” ex-vivo model and candidate precision therapies are not established clinical outcomes.',
         'Classify the July 2026 Kate Tolo endometriosis workup as a female-health measurement case study: complementary tests can expose false negatives, but Johnson’s case narrative is not a validated general protocol or medical advice.',
         'Classify the July 2026 1,900-biomarker / 14.8M-data-point Kate Tolo announcement as measurement-scale ambition. It is a planned N=1 collection program, not completed or independently validated female-health evidence.',
+        'Classify Johnson’s July 2026 disease-resolution/frontier-biotech pivot as strategic positioning. The disease and proposed research program are unspecified, so the announcement is not evidence of a cure or protocol change readers can act on.',
         'Keep the Immortals rename and immortality search-trend narrative in the ideology/brand lane; it does not increase confidence in the 2039 forecast.',
         'Keep the June 2026 immortality manifesto and “Die Economy” frame in the ideology/forecast lane unless independent evidence supports the specific biological and AI claims.',
         'Keep critiques visible so biomarker improvements do not become unsupported longevity promises.',
@@ -192,6 +201,11 @@ export const protocolCategories = [
       ],
     },
     cards: [
+      {
+        label: 'Strategy pivot',
+        title: 'Disease resolution and frontier biotech move to the foreground',
+        body: 'Johnson says an unspecified incurable-disease diagnosis shifted the project away from longevity staples. Until targets, methods, evidence, and outcomes are published, this is a research agenda—not a demonstrated cure or treatment recommendation.',
+      },
       {
         label: 'Structured manifesto',
         title: 'Immortality argument is clearer, not stronger evidence',
@@ -390,6 +404,8 @@ export const protocolSectionsBySlug = {
 };
 
 export const conceptEntries = [
+  { title: 'Disease-resolution / frontier-biotech pivot', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-21.md', summary: 'Johnson says an unspecified incurable-disease diagnosis shifted his project from longevity staples toward disease resolution and frontier biotech; a strategic agenda without named targets, therapies, outcomes, or reader guidance.' },
+  { title: 'Eye-health measurement agenda', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-21.md', summary: 'Johnson calls for robust eye-health measurement, dysfunction diagnosis, and corrective protocols beyond diet or supplements; no condition, test, intervention, or result is yet specified.' },
   { title: 'Female-health legibility / 90-day Kate Tolo program', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-16.md', summary: 'Johnson projects three measured cycles, 50+ devices, 1,900 biomarkers, and 14.8M data points to make female biology “legible”; a planned N=1 program, not completed evidence or medical advice.' },
   { title: 'RHR “Sovereignty Index”', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-16.md', summary: 'Johnson uses resting heart rate as a behavioral-control proxy for evening pre-commitments; useful algorithmic-health framing, not a universal 41 bpm target or diagnosis.' },
   { title: 'Subtraction-first algorithmic health', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-11.md', summary: 'Johnson says removing harms has been his best-performing longevity therapy; useful as a foundations-first decision pattern, not quantified proof for every listed exposure or the safety of his wider stack.' },

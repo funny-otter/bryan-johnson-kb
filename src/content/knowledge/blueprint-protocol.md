@@ -4,7 +4,7 @@ slug: blueprint-protocol
 type: concept
 sourcePath: concepts/blueprint-protocol.md
 created: '2026-05-22'
-updated: '2026-06-23'
+updated: '2026-07-21'
 tags:
   - protocol
   - longevity
@@ -27,6 +27,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-21.md
 confidence: medium
 contested: true
 summary: >-
@@ -97,6 +98,10 @@ A June 17 follow-up added a heart-rate trace from the same 56-minute 200°F / 93
 The same daily batch included Johnson's most formal public defense of Blueprint's method to date, prompted by a Nature feature. With the Blueprint & Immortals Medical and Science Team, he argued that RCTs remain the gold standard for population average effects and safety, but are structurally limited for tuning individualized intervention combinations over time. For the public KB, this is best treated as a methodology update: it clarifies why Blueprint keeps emphasizing dense personal measurement, while also making the evidence boundary explicit because the essay's examples are still observations needing validation.
 
 Critical context: changes are hard to interpret because dozens of variables move at once. In conventional evidence hierarchy, this is hypothesis-generating self-experimentation, not proof of general efficacy.
+
+### Disease-resolution and eye-health agenda
+
+On July 20, 2026, Johnson said an unspecified incurable-disease diagnosis had shifted his project from “longevity staples” toward disease resolution and frontier biotech. In a separate eye-health thread that day, he distinguished general diet and supplement discussion from what he wants to see: robust measurement, diagnosis of dysfunction, and protocols intended to correct it. Together the posts suggest a change in emphasis—from broad longevity routines toward disease- and organ-specific engineering—but they do not identify the disease, measurement set, dysfunction, intervention, or outcome. The dashboard records a strategic agenda, not a demonstrated protocol, cure, or reader medical guidance.
 
 ## Automation analogy
 

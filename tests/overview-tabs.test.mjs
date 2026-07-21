@@ -169,6 +169,19 @@ describe('home overview and dedicated changelog route', () => {
     }
   });
 
+  it('keeps the July 20 disease-resolution pivot attributed and non-prescriptive', () => {
+    for (const required of [
+      '2079272175232827396',
+      'x-twitter-daily-2026-07-21.md',
+      'unspecified “incurable disease” diagnosis',
+      'disease, research targets, tests, therapies, and outcomes were not named',
+      'not named, independently validated, or offered as medical advice',
+      'confidence: \'medium\'',
+    ]) {
+      assert.match(signalsSource, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `disease-resolution signal should preserve: ${required}`);
+    }
+  });
+
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
     for (const phrase of ['watchQueue', 'sourceCounts', 'curatedActivity', 'Protocol tabs backed']) {
       assert.match(indexSource, new RegExp(phrase), `overview should use real sidebar data: ${phrase}`);

@@ -138,6 +138,15 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-07-20',
+    label: 'Johnson announces disease-resolution and frontier-biotech pivot',
+    summary: 'Johnson said an unspecified incurable-disease diagnosis shifted his project from longevity staples toward disease resolution and frontier biotech. A same-day eye-health thread called for organ-specific measurement, dysfunction diagnosis, and corrective protocols, but named no disease, research target, test, intervention, or result. The KB records a strategic and measurement-agenda update—not a demonstrated treatment, independent validation, or medical advice.',
+    relatedHref: '/knowledge/bryan-johnson/',
+    relatedTitle: 'Bryan Johnson',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-21.md',
+    confidence: 'medium',
+  },
+  {
     date: '2026-07-16',
     label: 'Ex-vivo age-crosslink reversal enters Johnson’s research watch',
     summary: 'Johnson amplified an unnamed laboratory result that he says used AlphaFold to search 45,000 oxidases and directed evolution to screen more than 500 million variants against age-related sugar–protein crosslinking. The post explicitly says the work remains ex vivo and that safe delivery of a large bacterial enzyme into living tissue is unresolved, so the KB records a low-confidence research lead—not a demonstrated treatment, independent validation, protocol change, or medical advice.',

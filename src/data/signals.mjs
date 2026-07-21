@@ -1,5 +1,19 @@
 export const curatedSignals = [
   {
+    id: 'disease-resolution-frontier-biotech-pivot',
+    title: 'Johnson says his project shifted toward disease resolution and frontier biotech',
+    date: '2026-07-20',
+    badge: 'Strategy',
+    kind: 'tweet',
+    topic: 'Disease resolution / frontier biotech',
+    summary:
+      'Johnson said an unspecified “incurable disease” diagnosis shifted his project “overnight” from longevity staples toward disease resolution and frontier biotech. In a same-day thread, he also identified eye health as a possible longevity gap and called for robust measurement, dysfunction diagnosis, and corrective protocols rather than only diet or supplements. The dashboard treats this as a strategic and measurement-agenda signal: the disease, research targets, tests, therapies, and outcomes were not named, independently validated, or offered as medical advice.',
+    href: '/knowledge/bryan-johnson/',
+    tweetId: '2079272175232827396',
+    confidence: 'medium',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-07-21.md#Tweet-2079272175232827396'],
+  },
+  {
     id: 'ex-vivo-age-crosslink-reversal-research-watch',
     title: 'Johnson flags ex vivo work on reversing age-related protein crosslinks',
     date: '2026-07-16',
@@ -655,6 +669,12 @@ export const curatedSignals = [
 
 export const watchQueue = [
   {
+    title: 'Disease-resolution pivot and eye-health measurement agenda',
+    summary: 'Watch for a voluntarily disclosed diagnosis, named research targets, specific eye-health measurements or dysfunctions, protocol details, preclinical or clinical evidence, safety boundaries, and outcomes. The July 20 posts provide strategic positioning only—not a demonstrated therapy or reader action.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-21.md',
+    href: '/knowledge/bryan-johnson/',
+  },
+  {
     title: 'Autoimmune gastritis follow-through',
     summary: 'Watch whether Johnson publishes second-biopsy/pathology details, live T-cell matching, immune-sequencing results, longitudinal ferritin/B12/gastrin/chromogranin traces, biweekly blood/wearable flare-up traces, and any evidence that the “Bryan in a dish” model or candidate precision therapies work beyond tweet-level self-report.',
     source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-09.md',
@@ -783,16 +803,19 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '1', detail: '1 Jul 16 post captured · x-twitter-daily-2026-07-17.md' },
-  { label: 'Previous daily X capture', value: '3', detail: '3 Jul 14 posts captured · x-twitter-daily-2026-07-16.md' },
+  { label: 'Latest daily X capture', value: '3', detail: '3 Jul 20 posts captured · x-twitter-daily-2026-07-21.md' },
+  { label: 'Previous daily X capture', value: '2', detail: '2 Jul 19 posts captured · x-twitter-daily-2026-07-20.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '48', detail: '12 knowledge pages + 36 update pages after this pass' },
+  { label: 'Public site content', value: '49', detail: '12 knowledge pages + 37 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-07-21', x_post: 3, third_party: 0, wiki_update: 1, site_update: 1 },
+  { date: '2026-07-20', x_post: 2, third_party: 0, wiki_update: 1, site_update: 0 },
+  { date: '2026-07-18', x_post: 1, third_party: 0, wiki_update: 1, site_update: 0 },
   { date: '2026-07-17', x_post: 1, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-16', x_post: 3, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-13', x_post: 5, third_party: 0, wiki_update: 1, site_update: 1 },

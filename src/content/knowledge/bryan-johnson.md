@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-07-17'
+updated: '2026-07-21'
 tags:
   - person
   - company
@@ -45,6 +45,7 @@ sources:
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-12.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-16.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-17.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-21.md
 confidence: medium
 summary: >-
   Bryan Johnson is an American entrepreneur who moved from payments and
@@ -112,6 +113,8 @@ On July 10–11, Johnson’s feed returned to foundations and self-reported outc
 On July 14, Johnson added two durable measurement-and-behavior frames. He announced a 90-day Kate Tolo program projected to span three menstrual cycles, 50+ devices, 100 daily tasks, 1,900 biomarkers, and 14.8M data points, presenting the effort as making female health “legible.” He also named resting heart rate his **“Sovereignty Index,”** reported a personal 41 bpm 30-day average, and paired it with evening pre-commitments around food, screens, caffeine, light, and bedtime. The former is a planned N=1 program, not completed female-health evidence; the latter is a behavioral metaphor and self-reported metric, not a universal target or medical advice. A same-day cooperative-AGI reflection was captured in the wiki but not promoted as a standalone public signal because it did not materially change the health, protocol, or Don’t Die model.
 
 On July 16, Johnson amplified an unnamed laboratory result about enzymatically reversing age-related sugar–protein crosslinks. His post says researchers used AlphaFold to search 45,000 oxidases and directed evolution to screen more than 500 million engineered variants. The work remains **ex vivo**, however, and Johnson explicitly identified safe delivery of a large bacterial enzyme into living tissue—with adequate penetration and bioavailability—as an unresolved challenge. The dashboard records this as a low-confidence research-watch signal, not a demonstrated human treatment, protocol change, independent scientific validation, or medical advice.
+
+On July 20, Johnson said an unspecified “incurable disease” diagnosis had shifted his project “overnight” from longevity staples toward disease resolution and frontier biotech. A same-day thread asked whether eye health is missing from longevity discussions and clarified that his interest is in robust measurement, dysfunction diagnosis, and corrective protocols rather than only diet or supplements. This is a material strategy and measurement-agenda signal, but the posts do not name the disease, connect it explicitly to his previously disclosed autoimmune gastritis, or provide research targets, tests, therapies, or outcomes. The dashboard therefore keeps the update in the attributed-positioning lane rather than treating it as evidence of a treatment or as medical advice.
 
 ## Reading stance
 
