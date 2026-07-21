@@ -2,14 +2,20 @@ import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
 import { existsSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { describe, it } from 'node:test';
+import { before, describe, it } from 'node:test';
 
-import { protocolCategories } from '../src/data/protocols.mjs';
+import { protocolCategories, protocolSectionsBySlug } from '../src/data/protocols.mjs';
 
 const protocolComponentPath = new URL('../src/components/ProtocolDossier.astro', import.meta.url);
 const aliasRoutePath = new URL('../src/pages/protocols/[category].astro', import.meta.url);
 const stylesPath = new URL('../src/styles/global.css', import.meta.url);
 const categoryRoutes = ['health', 'longevity', 'nutrition', 'sleep'];
+const sectionKeys = ['habits', 'longterm', 'donts'];
+const dossierRowClasses = {
+  habits: 'habit',
+  longterm: 'obj',
+  donts: 'dont',
+};
 const root = fileURLToPath(new URL('..', import.meta.url));
 
 function read(url) {
@@ -29,39 +35,178 @@ function buildProtocolPages() {
   );
 }
 
+function decodeHtml(value) {
+  return value
+    .replace(/&#x([0-9a-f]+);/gi, (_match, code) => String.fromCodePoint(Number.parseInt(code, 16)))
+    .replace(/&#([0-9]+);/g, (_match, code) => String.fromCodePoint(Number.parseInt(code, 10)))
+    .replace(/&(amp|apos|gt|lt|quot);/g, (_match, entity) => ({
+      amp: '&',
+      apos: "'",
+      gt: '>',
+      lt: '<',
+      quot: '"',
+    })[entity]);
+}
+
+function parseAttributes(source) {
+  const attributes = {};
+  const pattern = /([^\s=/>]+)(?:\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'=<>`]+)))?/g;
+
+  for (const match of source.matchAll(pattern)) {
+    attributes[match[1]] = decodeHtml(match[2] ?? match[3] ?? match[4] ?? '');
+  }
+
+  return attributes;
+}
+
+function extractElements(html, tagName) {
+  const pattern = new RegExp(`<\\/?${tagName}\\b([^>]*)>`, 'gi');
+  const stack = [];
+  const elements = [];
+
+  for (const match of html.matchAll(pattern)) {
+    if (match[0].startsWith('</')) {
+      const opening = stack.pop();
+      assert.ok(opening, `unexpected closing <${tagName}> tag`);
+      elements.push({
+        attributes: opening.attributes,
+        innerHtml: html.slice(opening.contentStart, match.index),
+        start: opening.start,
+      });
+    } else if (!match[0].endsWith('/>')) {
+      stack.push({
+        attributes: parseAttributes(match[1]),
+        contentStart: match.index + match[0].length,
+        start: match.index,
+      });
+    }
+  }
+
+  assert.equal(stack.length, 0, `unterminated <${tagName}> tag`);
+  return elements.sort((left, right) => left.start - right.start);
+}
+
+function hasClass(element, className) {
+  return (element.attributes.class ?? '').split(/\s+/).includes(className);
+}
+
+function renderedText(html) {
+  return decodeHtml(html.replace(/<[^>]+>/g, ' ')).replace(/\s+/g, ' ').trim();
+}
+
+function singleElementText(html, tagName, predicate, label) {
+  const matches = extractElements(html, tagName).filter(predicate);
+  assert.equal(matches.length, 1, `${label} must contain exactly one matching <${tagName}>`);
+  return renderedText(matches[0].innerHtml);
+}
+
+function renderedObjectiveClaim(item) {
+  const [_rawTarget, ...rest] = item.text.split(/—|:|;/);
+  return rest.length ? rest.join('—').trim() : item.text;
+}
+
+function extractDossierSectionRows(html, sectionKey) {
+  const rowClass = dossierRowClasses[sectionKey];
+  const rows = extractElements(html, 'div').filter((element) => hasClass(element, rowClass));
+
+  return rows.map((row, index) => {
+    const claim = sectionKey === 'habits'
+      ? singleElementText(row.innerHtml, 'strong', (element) => hasClass(element, 'h-title'), `${sectionKey}[${index}]`)
+      : sectionKey === 'longterm'
+        ? singleElementText(row.innerHtml, 'strong', () => true, `${sectionKey}[${index}]`)
+        : singleElementText(row.innerHtml, 'span', (element) => !element.attributes.class, `${sectionKey}[${index}]`);
+    const sourceTag = sectionKey === 'habits' ? 'code' : 'small';
+    const visibleSource = singleElementText(row.innerHtml, sourceTag, () => true, `${sectionKey}[${index}] source`);
+
+    return {
+      claim,
+      source: row.attributes['data-source'],
+      visibleSource,
+    };
+  });
+}
+
+function assertDossierSourcePairs(html, protocol, surface) {
+  for (const sectionKey of sectionKeys) {
+    const expected = protocol.sections[sectionKey].map((item) => ({
+      claim: sectionKey === 'longterm' ? renderedObjectiveClaim(item) : item.text,
+      source: item.source,
+      visibleSource: item.source,
+    }));
+
+    assert.deepEqual(
+      extractDossierSectionRows(html, sectionKey),
+      expected,
+      `${surface} must preserve every ${sectionKey} claim/source pair in source order`,
+    );
+  }
+}
+
+function extractKnowledgeSectionRows(html, sectionKey) {
+  const buckets = extractElements(html, 'article').filter((element) => hasClass(element, `bucket-${sectionKey}`));
+  assert.equal(buckets.length, 1, `knowledge page must render exactly one ${sectionKey} bucket`);
+
+  return extractElements(buckets[0].innerHtml, 'li').map((row, index) => {
+    const sourceStart = row.innerHtml.search(/<small\b/i);
+    assert.notEqual(sourceStart, -1, `${sectionKey}[${index}] must visibly render its source`);
+    const source = singleElementText(row.innerHtml, 'code', () => true, `${sectionKey}[${index}] source`);
+
+    return {
+      claim: renderedText(row.innerHtml.slice(0, sourceStart)),
+      source,
+    };
+  });
+}
+
+function assertKnowledgeSourcePairs(html, sections, surface) {
+  for (const sectionKey of sectionKeys) {
+    const expected = sections[sectionKey].map(({ text: claim, source }) => ({ claim, source }));
+    assert.deepEqual(
+      extractKnowledgeSectionRows(html, sectionKey),
+      expected,
+      `${surface} must preserve every ${sectionKey} claim/source pair in source order`,
+    );
+  }
+}
+
+function swapRenderedSources(html, firstSource, secondSource) {
+  const placeholder = '__PROTOCOL_SOURCE_PERMUTATION_MUTANT__';
+  assert.ok(html.includes(firstSource), `mutant fixture is missing ${firstSource}`);
+  assert.ok(html.includes(secondSource), `mutant fixture is missing ${secondSource}`);
+  assert.ok(!html.includes(placeholder), 'mutant placeholder must be unique');
+  return html
+    .replaceAll(firstSource, placeholder)
+    .replaceAll(secondSource, firstSource)
+    .replaceAll(placeholder, secondSource);
+}
+
+function assertLegacyDossierChecksStillPass(html, protocol) {
+  const itemCount = Object.values(protocol.sections).flat().length;
+  assert.equal(html.match(/data-source=/g)?.length ?? 0, itemCount);
+  for (const item of Object.values(protocol.sections).flat()) {
+    assert.ok(html.includes(`>${item.source}<`), `legacy presence control must still find ${item.source}`);
+  }
+}
+
 function assertRenderedClaimSource(html, claimFragment, expectedSource) {
-  const claimIndex = html.indexOf(claimFragment);
-  assert.notEqual(claimIndex, -1, `missing rendered claim: ${claimFragment}`);
-
-  const rowStart = html.lastIndexOf('<div class="obj"', claimIndex);
-  const rowEnd = html.indexOf('</div>', claimIndex);
-  assert.notEqual(rowStart, -1, `missing objective row for: ${claimFragment}`);
-  assert.notEqual(rowEnd, -1, `unterminated objective row for: ${claimFragment}`);
-
-  const row = html.slice(rowStart, rowEnd);
-  assert.ok(
-    row.includes(`<small>${expectedSource}</small>`),
-    `claim must render beside ${expectedSource}; rendered row was: ${row}`,
-  );
+  const row = extractDossierSectionRows(html, 'longterm')
+    .find(({ claim }) => claim.includes(claimFragment));
+  assert.ok(row, `missing rendered objective claim: ${claimFragment}`);
+  assert.equal(row.source, expectedSource, `${claimFragment} must keep its source attribute`);
+  assert.equal(row.visibleSource, expectedSource, `${claimFragment} must visibly name its exact source`);
 }
 
 function assertRenderedHabitSource(html, claimFragment, expectedSource) {
-  const claimIndex = html.indexOf(claimFragment);
-  assert.notEqual(claimIndex, -1, `missing rendered habit: ${claimFragment}`);
-
-  const rowStart = html.lastIndexOf('<div class="habit"', claimIndex);
-  const rowEnd = html.indexOf('</div>', claimIndex);
-  assert.notEqual(rowStart, -1, `missing habit row for: ${claimFragment}`);
-  assert.notEqual(rowEnd, -1, `unterminated habit row for: ${claimFragment}`);
-
-  const row = html.slice(rowStart, rowEnd);
-  assert.ok(
-    row.includes(`<code>${expectedSource}</code>`),
-    `habit must render beside ${expectedSource}; rendered row was: ${row}`,
-  );
+  const row = extractDossierSectionRows(html, 'habits')
+    .find(({ claim }) => claim.includes(claimFragment));
+  assert.ok(row, `missing rendered habit: ${claimFragment}`);
+  assert.equal(row.source, expectedSource, `${claimFragment} must keep its source attribute`);
+  assert.equal(row.visibleSource, expectedSource, `${claimFragment} must visibly name its exact source`);
 }
 
 describe('protocol terminal dossier pages', () => {
+  before(() => buildProtocolPages());
+
   it('uses separate BJ.WATCH habit/objective/forbidden surfaces instead of one mixed bucket ledger', () => {
     assert.ok(existsSync(protocolComponentPath), 'missing shared ProtocolDossier component');
     const source = read(protocolComponentPath);
@@ -132,10 +277,7 @@ describe('protocol terminal dossier pages', () => {
     }
   });
 
-  it('renders audited protocol claims beside their exact durable sources', () => {
-    buildProtocolPages();
-
-    const july21Source = 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-21.md';
+  it('renders every canonical dossier and knowledge-page claim beside its exact item source', () => {
     const renderedHtml = Object.fromEntries(
       protocolCategories.map((protocol) => [
         protocol.category,
@@ -144,55 +286,67 @@ describe('protocol terminal dossier pages', () => {
     );
 
     for (const protocol of protocolCategories) {
-      const itemCount = Object.values(protocol.sections).flat().length;
-      const renderedSourceRows = renderedHtml[protocol.category].match(/data-source=/g) ?? [];
-      assert.equal(renderedSourceRows.length, itemCount, `${protocol.category} must render one source-bearing row per protocol item`);
-
-      for (const item of Object.values(protocol.sections).flat()) {
-        assert.ok(
-          renderedHtml[protocol.category].includes(`>${item.source}<`),
-          `${protocol.category} must visibly name ${item.source}`,
-        );
-      }
+      assertDossierSourcePairs(renderedHtml[protocol.category], protocol, `/${protocol.category}/`);
+      assert.ok(
+        existsSync(new URL(`../dist/protocols/${protocol.category}/index.html`, import.meta.url)),
+        `/protocols/${protocol.category}/ alias must remain part of the generated build`,
+      );
     }
 
-    assertRenderedClaimSource(
-      renderedHtml.health,
-      'Johnson shifted the dose question from minutes in the sauna',
-      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md',
+    for (const [slug, sections] of Object.entries(protocolSectionsBySlug)) {
+      assert.ok(sections, `${slug} must resolve to protocol sections`);
+      const html = read(new URL(`../dist/knowledge/${slug}/index.html`, import.meta.url));
+      assertKnowledgeSourcePairs(html, sections, `/knowledge/${slug}/`);
+    }
+  });
+
+  it('rejects source permutations that the former global-presence checks allowed', () => {
+    const protocol = protocolCategories.find(({ category }) => category === 'nutrition');
+    assert.ok(protocol, 'nutrition protocol must exist for the permutation fixture');
+    const firstSource = protocol.sections.longterm[0].source;
+    const secondSource = protocol.sections.donts[1].source;
+
+    const dossierHtml = read(new URL('../dist/nutrition/index.html', import.meta.url));
+    const dossierMutant = swapRenderedSources(dossierHtml, firstSource, secondSource);
+    assertLegacyDossierChecksStillPass(dossierMutant, protocol);
+    assert.throws(
+      () => assertDossierSourcePairs(dossierMutant, protocol, '/nutrition/ permutation mutant'),
+      assert.AssertionError,
+      'row-level dossier assertions must fail when two declared sources trade positions',
     );
-    assertRenderedClaimSource(
-      renderedHtml.health,
-      'Treat the June 2026 inherited-cancer DNA + RNA panel',
-      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-26.md',
+    assertDossierSourcePairs(dossierHtml, protocol, '/nutrition/ explicit-source implementation');
+
+    const knowledgeHtml = read(new URL('../dist/knowledge/blueprint/index.html', import.meta.url));
+    const knowledgeMutant = swapRenderedSources(knowledgeHtml, firstSource, secondSource);
+    for (const item of Object.values(protocol.sections).flat()) {
+      assert.ok(knowledgeMutant.includes(`>${item.source}<`), `presence control must still find ${item.source}`);
+    }
+    assert.throws(
+      () => assertKnowledgeSourcePairs(knowledgeMutant, protocol.sections, '/knowledge/blueprint/ permutation mutant'),
+      assert.AssertionError,
+      'row-level knowledge assertions must fail when two declared sources trade positions',
     );
+    assertKnowledgeSourcePairs(knowledgeHtml, protocol.sections, '/knowledge/blueprint/ explicit-source implementation');
+  });
+
+  it('keeps audited eye-health, disease-resolution, and bedtime claims on their exact sources', () => {
+    const july21Source = 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-21.md';
+    const healthHtml = read(new URL('../dist/health/index.html', import.meta.url));
+    const longevityHtml = read(new URL('../dist/longevity/index.html', import.meta.url));
+    const sleepHtml = read(new URL('../dist/sleep/index.html', import.meta.url));
+
     assertRenderedClaimSource(
-      renderedHtml.health,
+      healthHtml,
       'Treat the July 2026 eye-health thread as an organ-specific measurement agenda.',
       july21Source,
     );
     assertRenderedClaimSource(
-      renderedHtml.longevity,
-      'Classify daily Tadalafil/Cialis and similar drug claims',
-      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md',
-    );
-    assertRenderedClaimSource(
-      renderedHtml.longevity,
-      'structural imaging may complement chemical and functional data',
-      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md',
-    );
-    assertRenderedClaimSource(
-      renderedHtml.longevity,
-      'the “Bryan in a dish” ex-vivo model and candidate precision therapies',
-      'raw/articles/bryan-johnson/x-twitter-daily-2026-07-09.md',
-    );
-    assertRenderedClaimSource(
-      renderedHtml.longevity,
+      longevityHtml,
       'The disease and proposed research program are unspecified',
       july21Source,
     );
     assertRenderedHabitSource(
-      renderedHtml.sleep,
+      sleepHtml,
       'go to bed on time',
       'raw/articles/bryan-johnson/x-twitter-bryan-johnson-2026-05-22.md#Thu May 21 13:59:33 +0000 2026',
     );
