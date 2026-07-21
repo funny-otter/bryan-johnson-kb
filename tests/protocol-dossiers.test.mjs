@@ -1,14 +1,48 @@
 import assert from 'node:assert/strict';
+import { spawnSync } from 'node:child_process';
 import { existsSync, readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import { describe, it } from 'node:test';
+
+import { protocolCategories } from '../src/data/protocols.mjs';
 
 const protocolComponentPath = new URL('../src/components/ProtocolDossier.astro', import.meta.url);
 const aliasRoutePath = new URL('../src/pages/protocols/[category].astro', import.meta.url);
 const stylesPath = new URL('../src/styles/global.css', import.meta.url);
 const categoryRoutes = ['health', 'longevity', 'nutrition', 'sleep'];
+const root = fileURLToPath(new URL('..', import.meta.url));
 
 function read(url) {
   return readFileSync(url, 'utf8');
+}
+
+function buildProtocolPages() {
+  const result = spawnSync('npm', ['run', 'build'], {
+    cwd: root,
+    encoding: 'utf8',
+  });
+
+  assert.equal(
+    result.status,
+    0,
+    `protocol integration build failed:\n${result.stdout}\n${result.stderr}`,
+  );
+}
+
+function assertRenderedClaimSource(html, claimFragment, expectedSource) {
+  const claimIndex = html.indexOf(claimFragment);
+  assert.notEqual(claimIndex, -1, `missing rendered claim: ${claimFragment}`);
+
+  const rowStart = html.lastIndexOf('<div class="obj"', claimIndex);
+  const rowEnd = html.indexOf('</div>', claimIndex);
+  assert.notEqual(rowStart, -1, `missing objective row for: ${claimFragment}`);
+  assert.notEqual(rowEnd, -1, `unterminated objective row for: ${claimFragment}`);
+
+  const row = html.slice(rowStart, rowEnd);
+  assert.ok(
+    row.includes(`<small>${expectedSource}</small>`),
+    `claim must render beside ${expectedSource}; rendered row was: ${row}`,
+  );
 }
 
 describe('protocol terminal dossier pages', () => {
@@ -33,8 +67,10 @@ describe('protocol terminal dossier pages', () => {
     assert.match(source, /Long-term objectives/, 'dossier should title the objectives panel exactly like the reference');
     assert.match(source, /Forbidden/, 'dossier should title the forbidden panel exactly like the reference');
     assert.match(source, /FORBID/, 'forbidden rows should use the compact FORBID label');
+    assert.match(source, /dont-copy[\s\S]*row\.source/, 'forbidden rows should name their exact item source');
     assert.doesNotMatch(source, /<span>BUCKET<\/span>/, 'protocol pages must not render one combined bucket table');
     assert.doesNotMatch(source, /ledgerRows/, 'component should not mix HBT/LNG/DNT rows into one ledger collection');
+    assert.doesNotMatch(source, /sourceFor|index\s*%\s*protocol\.sourcePaths/, 'source attribution must never depend on row position');
   });
 
   it('canonical protocol routes delegate to the dossier component and avoid the old card wall', () => {
@@ -55,6 +91,90 @@ describe('protocol terminal dossier pages', () => {
     for (const category of categoryRoutes) {
       assert.match(source, new RegExp(category), `alias route should include ${category}`);
     }
+  });
+
+  it('requires an explicit source on every habit, objective, and forbidden item', () => {
+    for (const protocol of protocolCategories) {
+      const itemSources = [];
+
+      for (const section of ['habits', 'longterm', 'donts']) {
+        assert.ok(Array.isArray(protocol.sections[section]), `${protocol.category}.${section} must be an array`);
+
+        for (const [index, item] of protocol.sections[section].entries()) {
+          assert.equal(typeof item, 'object', `${protocol.category}.${section}[${index}] must use the explicit source contract`);
+          assert.match(item.text, /\S/, `${protocol.category}.${section}[${index}] must include claim text`);
+          assert.match(item.source, /\S/, `${protocol.category}.${section}[${index}] must include an exact source path`);
+          itemSources.push(item.source);
+        }
+      }
+
+      assert.deepEqual(
+        protocol.sourcePaths,
+        [...new Set(itemSources)],
+        `${protocol.category}.sourcePaths must be derived from its item-level sources`,
+      );
+    }
+  });
+
+  it('renders the July 20 health and longevity claims beside their exact July 21 raw source', () => {
+    buildProtocolPages();
+
+    const july21Source = 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-21.md';
+    const renderedHtml = Object.fromEntries(
+      protocolCategories.map((protocol) => [
+        protocol.category,
+        read(new URL(`../dist/${protocol.category}/index.html`, import.meta.url)),
+      ]),
+    );
+
+    for (const protocol of protocolCategories) {
+      const itemCount = Object.values(protocol.sections).flat().length;
+      const renderedSourceRows = renderedHtml[protocol.category].match(/data-source=/g) ?? [];
+      assert.equal(renderedSourceRows.length, itemCount, `${protocol.category} must render one source-bearing row per protocol item`);
+
+      for (const item of Object.values(protocol.sections).flat()) {
+        assert.ok(
+          renderedHtml[protocol.category].includes(`>${item.source}<`),
+          `${protocol.category} must visibly name ${item.source}`,
+        );
+      }
+    }
+
+    assertRenderedClaimSource(
+      renderedHtml.health,
+      'Johnson shifted the dose question from minutes in the sauna',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md',
+    );
+    assertRenderedClaimSource(
+      renderedHtml.health,
+      'Treat the June 2026 inherited-cancer DNA + RNA panel',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-26.md',
+    );
+    assertRenderedClaimSource(
+      renderedHtml.health,
+      'Treat the July 2026 eye-health thread as an organ-specific measurement agenda.',
+      july21Source,
+    );
+    assertRenderedClaimSource(
+      renderedHtml.longevity,
+      'Classify daily Tadalafil/Cialis and similar drug claims',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md',
+    );
+    assertRenderedClaimSource(
+      renderedHtml.longevity,
+      'structural imaging may complement chemical and functional data',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md',
+    );
+    assertRenderedClaimSource(
+      renderedHtml.longevity,
+      'the “Bryan in a dish” ex-vivo model and candidate precision therapies',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-07-09.md',
+    );
+    assertRenderedClaimSource(
+      renderedHtml.longevity,
+      'The disease and proposed research program are unspecified',
+      july21Source,
+    );
   });
 
   it('styles protocol pages like the BJ.WATCH terminal reference', () => {

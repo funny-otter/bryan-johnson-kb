@@ -1,12 +1,13 @@
 ---
 type SectionKey = 'habits' | 'longterm' | 'donts';
+type ProtocolItem = { text: string; source: string };
 type Protocol = {
   category: string;
   title: string;
   lede: string;
   confidence: string;
   sourcePaths: string[];
-  sections: Partial<Record<SectionKey, string[]>>;
+  sections: Partial<Record<SectionKey, ProtocolItem[]>>;
   cards: Array<{ label: string; title: string; body: string }>;
 };
 
@@ -15,13 +16,12 @@ const { protocol, caution = 'Source-aware summary only; not medical advice. Exac
   caution?: string;
 };
 
-const sourceFor = (index: number) => protocol.sourcePaths.length ? protocol.sourcePaths[index % protocol.sourcePaths.length] : 'source pending';
 const sourcedItems = (key: SectionKey, fallback: string) => {
   const items = Array.isArray(protocol.sections?.[key]) ? protocol.sections[key] ?? [] : [];
-  return (items.length ? items : [fallback]).map((text, index) => ({
-    text,
+  const rows = items.length ? items : [{ text: fallback, source: 'source pending' }];
+  return rows.map((item, index) => ({
+    ...item,
     index: index + 1,
-    source: sourceFor(index),
   }));
 };
 
@@ -73,7 +73,7 @@ const confidenceMix = [
           <span>idx</span><span>time</span><span>habit</span>
         </div>
         {habitRows.map((row) => (
-          <div class="habit" role="row">
+          <div class="habit" role="row" data-source={row.source}>
             <span class="id" role="cell">{String(row.index).padStart(2, '0')}</span>
             <span class="h-time" role="cell">{row.time}<span class="h-dose-inline">HBT</span></span>
             <span class="h-copy" role="cell">
@@ -88,7 +88,7 @@ const confidenceMix = [
         <div class="panel objectives-panel" id="longterm">
           <h3>Long-term objectives</h3>
           {objectiveRows.map((row) => (
-            <div class="obj">
+            <div class="obj" data-source={row.source}>
               <span class="target">{row.target}</span>
               <span class="text"><strong>{row.text}</strong><small>{row.source}</small></span>
             </div>
@@ -97,7 +97,10 @@ const confidenceMix = [
         <div class="panel forbidden-panel" id="donts">
           <h3>Forbidden</h3>
           {forbiddenRows.map((row) => (
-            <div class="dont"><span class="sr-only">FORBID: </span>{row.text}</div>
+            <div class="dont" data-source={row.source}>
+              <span class="sr-only">FORBID: </span>
+              <span class="dont-copy"><span>{row.text}</span><small>{row.source}</small></span>
+            </div>
           ))}
         </div>
       </div>

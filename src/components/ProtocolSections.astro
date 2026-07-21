@@ -1,6 +1,7 @@
 ---
 type SectionKey = 'habits' | 'longterm' | 'donts';
-type ProtocolSectionMap = Partial<Record<SectionKey, string[]>>;
+type ProtocolItem = { text: string; source: string };
+type ProtocolSectionMap = Partial<Record<SectionKey, ProtocolItem[]>>;
 const { sections = {} as ProtocolSectionMap, title = 'Protocol sections' } = Astro.props as {
   sections?: ProtocolSectionMap;
   title?: string;
@@ -43,7 +44,9 @@ const sectionDefinitions: Array<{ key: SectionKey; label: string; kicker: string
           <h3>{definition.label}</h3>
           {items.length > 0 ? (
             <ul>
-              {items.map((item) => <li>{item}</li>)}
+              {items.map((item) => (
+                <li>{item.text}<small class="protocol-item-source"><code>{item.source}</code></small></li>
+              ))}
             </ul>
           ) : (
             <p class="empty-state">{definition.empty}</p>

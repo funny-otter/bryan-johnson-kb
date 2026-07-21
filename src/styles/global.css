@@ -524,6 +524,8 @@ meter::-moz-meter-bar { background: var(--accent); }
 .dont { display: flex; align-items: center; gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--line); color: #b6d2c9; font-size: 12.5px; line-height: 1.45; }
 .dont:last-child { border-bottom: 0; }
 .dont::before { content: "FORBID"; flex: 0 0 auto; padding: 1px 4px; border: 1px solid #603a30; color: var(--orange); background: rgba(224,117,101,.06); font-size: 9px; letter-spacing: .12em; }
+.dont-copy { min-width: 0; display: grid; gap: 4px; }
+.dont-copy small { color: #71978d; font-size: 10px; line-height: 1.35; overflow-wrap: anywhere; }
 .protocol-dossier-side { position: sticky; top: 61px; display: grid; gap: 14px; }
 .protocol-analysis-panel { border: 1px solid var(--line); background: rgba(11,26,22,.62); padding: 17px 15px; }
 .protocol-analysis-panel h2 { margin: 0 0 18px; color: #71978d; font-size: 11px; letter-spacing: .2em; }
@@ -540,6 +542,8 @@ meter::-moz-meter-bar { background: var(--accent); }
 .protocol-section-bucket h3 { margin: 9px 0 12px; color: var(--text); font-size: 22px; }
 .protocol-section-bucket ul { margin: 0; padding-left: 19px; color: #c7ded7; }
 .protocol-section-bucket li + li { margin-top: 10px; }
+.protocol-item-source { display: block; margin-top: 5px; color: #71978d; font-size: 10px; line-height: 1.35; overflow-wrap: anywhere; }
+.protocol-item-source code { color: inherit; background: transparent; border: 0; padding: 0; font-size: inherit; }
 .protocol-section-bucket.bucket-donts { background: linear-gradient(180deg, rgba(255,209,102,.075), rgba(11,26,22,.62)); }
 .empty-state { color: var(--muted); font-style: italic; }
 .concept-card,
