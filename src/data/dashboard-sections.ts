@@ -138,6 +138,15 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-07-21',
+    label: 'Autologous iPSC and ocular tear-panel plans follow the strategy pivot',
+    summary: 'Johnson described a dish-grown, autologous reprogrammed-cell model as a newborn “clone” and proposed therapy testing, organ growth, and cell transplantation; he separately reported collecting tears for a 15-marker ocular-surface panel. The KB records concrete follow-through on the prior disease-resolution and eye-health agenda, while keeping the iPSC applications speculative and the tear panel result-free—not evidence of a human clone, available regenerative treatment, validated eye protocol, or medical advice.',
+    relatedHref: '/knowledge/immortality-by-2039/',
+    relatedTitle: 'Immortality by 2039',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md',
+    confidence: 'low',
+  },
+  {
     date: '2026-07-20',
     label: 'Johnson announces disease-resolution and frontier-biotech pivot',
     summary: 'Johnson said an unspecified incurable-disease diagnosis shifted his project from longevity staples toward disease resolution and frontier biotech. A same-day eye-health thread called for organ-specific measurement, dysfunction diagnosis, and corrective protocols, but named no disease, research target, test, intervention, or result. The KB records a strategic and measurement-agenda update—not a demonstrated treatment, independent validation, or medical advice.',

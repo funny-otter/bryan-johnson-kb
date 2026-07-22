@@ -329,21 +329,27 @@ describe('protocol terminal dossier pages', () => {
     assertKnowledgeSourcePairs(knowledgeHtml, protocol.sections, '/knowledge/blueprint/ explicit-source implementation');
   });
 
-  it('keeps audited eye-health, disease-resolution, and bedtime claims on their exact sources', () => {
+  it('keeps audited eye tear-panel, disease-resolution, and bedtime claims on their exact sources', () => {
     const july21Source = 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-21.md';
+    const july22Source = 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md';
     const healthHtml = read(new URL('../dist/health/index.html', import.meta.url));
     const longevityHtml = read(new URL('../dist/longevity/index.html', import.meta.url));
     const sleepHtml = read(new URL('../dist/sleep/index.html', import.meta.url));
 
     assertRenderedClaimSource(
       healthHtml,
-      'Treat the July 2026 eye-health thread as an organ-specific measurement agenda.',
-      july21Source,
+      'Treat the July 2026 ocular tear-panel post as an organ-specific measurement plan.',
+      july22Source,
     );
     assertRenderedClaimSource(
       longevityHtml,
       'The disease and proposed research program are unspecified',
       july21Source,
+    );
+    assertRenderedClaimSource(
+      longevityHtml,
+      'autologous iPSC “clone” post as speculative regenerative-biotech positioning',
+      july22Source,
     );
     assertRenderedHabitSource(
       sleepHtml,

@@ -4,7 +4,7 @@ slug: immortality-by-2039
 type: concept
 sourcePath: concepts/immortality-by-2039.md
 created: '2026-05-22'
-updated: '2026-06-25'
+updated: '2026-07-22'
 tags:
   - longevity
   - prediction
@@ -13,6 +13,7 @@ tags:
   - biohacking
   - open-question
 sources:
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md
   - raw/articles/blueprint-immortal-by-2039-2026-01-30.md
   - raw/articles/blueprint-about-2026-05-22.md
   - raw/articles/bryan-johnson-x-targeted-searches-2026-05-22.md
@@ -51,6 +52,8 @@ On X, he often repeats adjacent formulations: humans may be “the first generat
 On June 19, 2026, Johnson reinforced the same frame by explicitly announcing that the company has changed its name to Immortals and by publishing a search-trend essay that portrays “Bryan Johnson” and “immortality” as rising together since 2022. The underlying search data source was not cited in the tweet, so the dashboard treats this as Johnson’s narrative about legitimacy and cultural momentum, not independent analytics. It strengthens the evidence that immortality is central to the brand, but it does not raise confidence in the 2039 forecast.
 
 On June 24, 2026, Johnson published his most explicit structured immortality argument to date. He defined the target as life-expectancy gains outpacing the rate of aging, then argued from three buckets: biology already contains age-reset or escape motifs (embryos, *Turritopsis*, iPSCs, partial reprogramming), AI can solve biological complexity (AlphaFold2 as the exemplar), and early AI-assisted cancer anecdotes look encouraging. The cancer examples — Sid Sijbrandij’s AI-directed personalized therapy account and Paul Conyngham’s dog mRNA-vaccine story — are Johnson’s retelling in a tweet capture, not independently verified evidence here. The essay also adds a practical tier: “don’t die in the meantime,” find the weakest system that could kill you before future therapies arrive, and invest in AI / Immortality / Energy. This is important for understanding the thesis, but it does not raise confidence in the 2039 forecast.
+
+On July 21, 2026, Johnson described a newborn version of himself living in a petri dish and framed autologous reprogrammed cells as a possible platform for therapy testing, organ growth, new treatments, and young-cell transplantation. He attributed the proposed process to Yamanaka factors resetting epigenetic age and producing pluripotent cells, and pointed generally to related clinical-trial work. The post extends the earlier organ-clone implementation story but supplies no cell-line characterization, named trial, organ, delivery method, safety evidence, or outcome. The dashboard therefore treats “clone” as Johnson’s metaphor for a dish-grown cell model—not evidence that a human clone exists or that personalized replacement organs and therapies are safe, effective, or available.
 
 ## Why confidence is low
 

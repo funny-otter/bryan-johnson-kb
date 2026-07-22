@@ -32,7 +32,7 @@ export const protocolCategories = [
         sourced('Read Johnson’s July 2026 “removing harm” list as a subtraction-first behavior philosophy. Sleep consistency, movement, avoiding nicotine/alcohol, and reducing obvious hazards belong with foundations; the post does not quantify each item or resolve the safety and attribution questions around his intervention stack.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-11.md'),
         sourced('Treat the July 2026 Kate Tolo 90-day / 1,900-biomarker announcement as a projected N=1 program specification, not completed female-health evidence, a representative protocol, or medical advice.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-16.md'),
         sourced('Treat Johnson’s RHR “Sovereignty Index” as within-person behavior-design framing. His reported 41 bpm average is not a universal target, and resting heart rate needs individual and clinical context.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-16.md'),
-        sourced('Treat the July 2026 eye-health thread as an organ-specific measurement agenda. It names no dysfunction, test, protocol, or outcome and is not reader guidance.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-21.md'),
+        sourced('Treat the July 2026 ocular tear-panel post as an organ-specific measurement plan. Johnson reports a $1,800 specialty-lab panel across 15 biomarkers, but publishes no result, diagnosis, clinical utility, intervention, or outcome.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md'),
         sourced('Preserve medical-caution framing: this page summarizes Johnson/Blueprint practice, not personal treatment advice.', 'concepts/biomarker-driven-longevity-protocols.md'),
       ],
       donts: [
@@ -118,8 +118,8 @@ export const protocolCategories = [
       },
       {
         label: 'Eye-health agenda',
-        title: 'Measurement and dysfunction diagnosis are proposed, not specified',
-        body: 'Johnson says eye health needs robust measurement, diagnosis, and corrective protocols beyond diet or supplements. No condition, test, intervention, or result is named, so this remains a watch item rather than a public protocol.',
+        title: 'Tear collection adds a concrete test, but no result or protocol',
+        body: 'Johnson reports collecting tears with paper strips for a $1,800 specialty-lab panel covering 15 inflammatory, tissue-degradation, and regenerative-signaling biomarkers. No result, diagnosis, intervention, reference range, or validated clinical utility is published, so this remains a watch item rather than public guidance.',
       },
       {
         label: 'Skin readout',
@@ -153,6 +153,7 @@ export const protocolCategories = [
         sourced('Classify the July 2026 Kate Tolo endometriosis workup as a female-health measurement case study: complementary tests can expose false negatives, but Johnson’s case narrative is not a validated general protocol or medical advice.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-10.md'),
         sourced('Classify the July 2026 1,900-biomarker / 14.8M-data-point Kate Tolo announcement as measurement-scale ambition. It is a planned N=1 collection program, not completed or independently validated female-health evidence.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-16.md'),
         sourced('Classify Johnson’s July 2026 disease-resolution/frontier-biotech pivot as strategic positioning. The disease and proposed research program are unspecified, so the announcement is not evidence of a cure or protocol change readers can act on.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-21.md'),
+        sourced('Classify Johnson’s July 2026 autologous iPSC “clone” post as speculative regenerative-biotech positioning. It supplies no cell-line characterization, cited trial, organ, delivery method, safety evidence, or outcome and is not evidence of a human clone or available treatment.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md'),
         sourced('Keep the Immortals rename and immortality search-trend narrative in the ideology/brand lane; it does not increase confidence in the 2039 forecast.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md'),
         sourced('Keep the June 2026 immortality manifesto and “Die Economy” frame in the ideology/forecast lane unless independent evidence supports the specific biological and AI claims.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md'),
         sourced('Keep critiques visible so biomarker improvements do not become unsupported longevity promises.', 'raw/articles/bryan-johnson/years-biomarkers-limits-2026-04-20.md'),
@@ -167,6 +168,11 @@ export const protocolCategories = [
         label: 'Strategy pivot',
         title: 'Disease resolution and frontier biotech move to the foreground',
         body: 'Johnson says an unspecified incurable-disease diagnosis shifted the project away from longevity staples. Until targets, methods, evidence, and outcomes are published, this is a research agenda—not a demonstrated cure or treatment recommendation.',
+      },
+      {
+        label: 'Autologous iPSC plan',
+        title: 'A “newborn clone” metaphor is not a human clone or available organ platform',
+        body: 'Johnson says his cells were reprogrammed with Yamanaka factors into a pluripotent state and proposes therapy testing, organ growth, and young-cell transplantation. Without cell characterization, trial citations, safety data, delivery details, or outcomes, this remains low-confidence research positioning.',
       },
       {
         label: 'Structured manifesto',
@@ -348,8 +354,9 @@ export const protocolSectionsBySlug = {
 };
 
 export const conceptEntries = [
+  { title: 'Autologous iPSC disease-resolution platform', confidence: 'low', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md', summary: 'Johnson calls a dish-grown reprogrammed-cell model a newborn “clone” and proposes therapy testing, organ growth, and young-cell transplantation; speculative positioning without evidence of a human clone, clinically available organ platform, or outcome.' },
+  { title: 'Ocular tear-biomarker measurement plan', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md', summary: 'Johnson reports a $1,800 specialty-lab panel across 15 tear biomarkers for ocular-surface tracking; a concrete measurement plan without results, diagnosis, intervention, validated clinical utility, or reader guidance.' },
   { title: 'Disease-resolution / frontier-biotech pivot', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-21.md', summary: 'Johnson says an unspecified incurable-disease diagnosis shifted his project from longevity staples toward disease resolution and frontier biotech; a strategic agenda without named targets, therapies, outcomes, or reader guidance.' },
-  { title: 'Eye-health measurement agenda', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-21.md', summary: 'Johnson calls for robust eye-health measurement, dysfunction diagnosis, and corrective protocols beyond diet or supplements; no condition, test, intervention, or result is yet specified.' },
   { title: 'Female-health legibility / 90-day Kate Tolo program', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-16.md', summary: 'Johnson projects three measured cycles, 50+ devices, 1,900 biomarkers, and 14.8M data points to make female biology “legible”; a planned N=1 program, not completed evidence or medical advice.' },
   { title: 'RHR “Sovereignty Index”', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-16.md', summary: 'Johnson uses resting heart rate as a behavioral-control proxy for evening pre-commitments; useful algorithmic-health framing, not a universal 41 bpm target or diagnosis.' },
   { title: 'Subtraction-first algorithmic health', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-11.md', summary: 'Johnson says removing harms has been his best-performing longevity therapy; useful as a foundations-first decision pattern, not quantified proof for every listed exposure or the safety of his wider stack.' },

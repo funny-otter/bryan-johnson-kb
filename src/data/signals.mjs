@@ -1,5 +1,33 @@
 export const curatedSignals = [
   {
+    id: 'autologous-ipsc-frontier-biotech-plan',
+    title: 'Johnson frames autologous iPSCs as a personal disease-resolution platform',
+    date: '2026-07-21',
+    badge: 'Frontier biotech',
+    kind: 'tweet',
+    topic: 'iPSC / regenerative medicine',
+    summary:
+      'Johnson called a dish-grown, reprogrammed cell model a newborn “clone” of himself and proposed therapy testing, organ growth, cell transplantation, and disease repair. He says blood-derived cells exposed to Yamanaka factors became pluripotent and pointed generally to related clinical-trial work, but supplied no cell-line characterization, trial citations, organ, therapy, safety, or outcome data. The dashboard treats this as attributed biotech and immortality positioning—not evidence of a human clone or a clinically available personalized-organ platform.',
+    href: '/knowledge/immortality-by-2039/',
+    tweetId: '2079672688034083030',
+    confidence: 'low',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md#Tweet-2079672688034083030'],
+  },
+  {
+    id: 'ocular-tear-biomarker-panel-plan',
+    title: 'Eye-health agenda advances to a 15-marker tear-panel plan',
+    date: '2026-07-21',
+    badge: 'Measurement',
+    kind: 'tweet',
+    topic: 'Ocular surface / tear biomarkers',
+    summary:
+      'Johnson reported using paper strips to collect tears for a $1,800 specialty-lab panel spanning 15 inflammatory, tissue-degradation, and regenerative-signaling biomarkers. He says the panel will establish an ocular-surface baseline and track a forthcoming eye protocol. No results, diagnosis, intervention, reference range, clinical-utility evidence, or outcome was published, so this remains an N=1 measurement plan—not an eye-health protocol or medical advice.',
+    href: '/metrics/',
+    tweetId: '2079359268550283686',
+    confidence: 'medium',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md#Tweet-2079359268550283686'],
+  },
+  {
     id: 'disease-resolution-frontier-biotech-pivot',
     title: 'Johnson says his project shifted toward disease resolution and frontier biotech',
     date: '2026-07-20',
@@ -669,10 +697,16 @@ export const curatedSignals = [
 
 export const watchQueue = [
   {
-    title: 'Disease-resolution pivot and eye-health measurement agenda',
-    summary: 'Watch for a voluntarily disclosed diagnosis, named research targets, specific eye-health measurements or dysfunctions, protocol details, preclinical or clinical evidence, safety boundaries, and outcomes. The July 20 posts provide strategic positioning only—not a demonstrated therapy or reader action.',
-    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-21.md',
-    href: '/knowledge/bryan-johnson/',
+    title: 'Autologous iPSC characterization and disease-resolution evidence',
+    summary: 'Watch for the named cell line or laboratory, pluripotency and genomic-stability characterization, cited clinical trials, the diagnosis or target tissue, differentiation and delivery details, tumor/rejection safeguards, ethics oversight, and measured outcomes. The July 21 “clone” post is Johnson’s speculative framing—not evidence of a human clone, transplantable organ, or available treatment.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md',
+    href: '/knowledge/immortality-by-2039/',
+  },
+  {
+    title: 'Ocular tear-panel results and eye protocol',
+    summary: 'Watch for the 15-marker results, reference ranges, diagnosed dysfunction, intervention design, repeat-measurement plan, clinical utility, safety boundaries, and outcomes. The current source reports collection and a forthcoming protocol only; it does not establish a validated screening panel or reader action.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md',
+    href: '/metrics/',
   },
   {
     title: 'Autoimmune gastritis follow-through',
@@ -803,16 +837,17 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '3', detail: '3 Jul 20 posts captured · x-twitter-daily-2026-07-21.md' },
-  { label: 'Previous daily X capture', value: '2', detail: '2 Jul 19 posts captured · x-twitter-daily-2026-07-20.md' },
+  { label: 'Latest daily X capture', value: '4', detail: '4 Jul 21 posts captured · x-twitter-daily-2026-07-22.md' },
+  { label: 'Previous daily X capture', value: '3', detail: '3 Jul 20 posts captured · x-twitter-daily-2026-07-21.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '49', detail: '12 knowledge pages + 37 update pages after this pass' },
+  { label: 'Public site content', value: '50', detail: '12 knowledge pages + 38 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-07-22', x_post: 4, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-21', x_post: 3, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-20', x_post: 2, third_party: 0, wiki_update: 1, site_update: 0 },
   { date: '2026-07-18', x_post: 1, third_party: 0, wiki_update: 1, site_update: 0 },

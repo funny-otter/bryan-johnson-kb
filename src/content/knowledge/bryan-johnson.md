@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-07-21'
+updated: '2026-07-22'
 tags:
   - person
   - company
@@ -13,6 +13,7 @@ tags:
   - biomarkers
   - protocol
 sources:
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md
   - raw/articles/bryan-johnson/bryan-johnson-home-2026-05-22.md
   - raw/articles/bryan-johnson/bryan-johnson-about-2026-05-22.md
   - raw/articles/bryan-johnson/bryan-johnson-project-blueprint-2021-10-13.md
@@ -115,6 +116,8 @@ On July 14, Johnson added two durable measurement-and-behavior frames. He announ
 On July 16, Johnson amplified an unnamed laboratory result about enzymatically reversing age-related sugar–protein crosslinks. His post says researchers used AlphaFold to search 45,000 oxidases and directed evolution to screen more than 500 million engineered variants. The work remains **ex vivo**, however, and Johnson explicitly identified safe delivery of a large bacterial enzyme into living tissue—with adequate penetration and bioavailability—as an unresolved challenge. The dashboard records this as a low-confidence research-watch signal, not a demonstrated human treatment, protocol change, independent scientific validation, or medical advice.
 
 On July 20, Johnson said an unspecified “incurable disease” diagnosis had shifted his project “overnight” from longevity staples toward disease resolution and frontier biotech. A same-day thread asked whether eye health is missing from longevity discussions and clarified that his interest is in robust measurement, dysfunction diagnosis, and corrective protocols rather than only diet or supplements. This is a material strategy and measurement-agenda signal, but the posts do not name the disease, connect it explicitly to his previously disclosed autoimmune gastritis, or provide research targets, tests, therapies, or outcomes. The dashboard therefore keeps the update in the attributed-positioning lane rather than treating it as evidence of a treatment or as medical advice.
+
+On July 21, Johnson supplied two concrete follow-ups. First, he described a dish-grown, autologous reprogrammed-cell model as a newborn “clone” of himself and proposed therapy testing, organ growth, cell transplantation, and disease repair, attributing the process to Yamanaka factors and induced pluripotency. The source does not establish that a human clone exists or provide cell-line characterization, cited trials, safety data, an organ, a treatment, or an outcome, so the dashboard records speculative frontier-biotech and immortality positioning. Second, he reported collecting tears for a $1,800 specialty-lab panel across 15 ocular biomarkers, with a future eye protocol promised but no result, diagnosis, intervention, clinical-utility evidence, or outcome published. A high-engagement kindness/cortisol post from the same batch remains unpromoted because its health claims were unsourced and did not change the protocol model.
 
 ## Reading stance
 

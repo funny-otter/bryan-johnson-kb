@@ -182,6 +182,19 @@ describe('home overview and dedicated changelog route', () => {
     }
   });
 
+  it('keeps the July 21 iPSC and ocular tear-panel follow-ups bounded by the source evidence', () => {
+    for (const required of [
+      '2079672688034083030',
+      '2079359268550283686',
+      'x-twitter-daily-2026-07-22.md',
+      'not evidence of a human clone',
+      'No results, diagnosis, intervention, reference range, clinical-utility evidence, or outcome was published',
+      'confidence: \'low\'',
+    ]) {
+      assert.match(signalsSource, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `July 21 follow-up signals should preserve: ${required}`);
+    }
+  });
+
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
     for (const phrase of ['watchQueue', 'sourceCounts', 'curatedActivity', 'Protocol tabs backed']) {
       assert.match(indexSource, new RegExp(phrase), `overview should use real sidebar data: ${phrase}`);

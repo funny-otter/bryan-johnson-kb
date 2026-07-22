@@ -4,7 +4,7 @@ slug: blueprint-protocol
 type: concept
 sourcePath: concepts/blueprint-protocol.md
 created: '2026-05-22'
-updated: '2026-07-21'
+updated: '2026-07-22'
 tags:
   - protocol
   - longevity
@@ -13,6 +13,7 @@ tags:
   - biohacking
   - automation
 sources:
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md
   - raw/articles/project-blueprint-2021-10-13.md
   - raw/articles/bryan-johnson-protocol-2026-01-23.md
   - raw/articles/bryan-johnson-morning-routine-2026-04-22.md
@@ -102,6 +103,8 @@ Critical context: changes are hard to interpret because dozens of variables move
 ### Disease-resolution and eye-health agenda
 
 On July 20, 2026, Johnson said an unspecified incurable-disease diagnosis had shifted his project from “longevity staples” toward disease resolution and frontier biotech. In a separate eye-health thread that day, he distinguished general diet and supplement discussion from what he wants to see: robust measurement, diagnosis of dysfunction, and protocols intended to correct it. Together the posts suggest a change in emphasis—from broad longevity routines toward disease- and organ-specific engineering—but they do not identify the disease, measurement set, dysfunction, intervention, or outcome. The dashboard records a strategic agenda, not a demonstrated protocol, cure, or reader medical guidance.
+
+On July 21, the eye-health agenda gained a concrete measurement but still no public protocol: Johnson reported collecting tears with paper strips for a $1,800 specialty-lab panel across 15 inflammatory, tissue-degradation, and regenerative-signaling biomarkers. He said the readings would establish the ocular-surface environment and track progress, with an eye protocol forthcoming. No result, diagnosis, intervention, reference range, clinical-utility evidence, or outcome was published, so the dashboard records an N=1 measurement plan rather than eye-health guidance.
 
 ## Automation analogy
 
