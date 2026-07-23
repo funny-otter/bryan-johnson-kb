@@ -4,7 +4,7 @@ slug: blueprint-protocol
 type: concept
 sourcePath: concepts/blueprint-protocol.md
 created: '2026-05-22'
-updated: '2026-07-22'
+updated: '2026-07-23'
 tags:
   - protocol
   - longevity
@@ -13,6 +13,7 @@ tags:
   - biohacking
   - automation
 sources:
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-23.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md
   - raw/articles/project-blueprint-2021-10-13.md
   - raw/articles/bryan-johnson-protocol-2026-01-23.md
@@ -72,9 +73,13 @@ On June 12, he gave one concrete example: daily 5 mg Tadalafil/Cialis, which he 
 
 On June 22, Johnson announced a major expansion of the same prescription layer, now branded **Immortals Rx**, under the headline “microdose GLP-1s,” “peptides,” and “NAD+.” Newly listed items included semaglutide/Wegovy, tirzepatide/Zepbound, SGLT2 inhibitors Jardiance and Brenzavvy, additional sex/arousal/skin/hair peptide complexes, glutathione, and NAD+, alongside the existing tadalafil/metformin/minoxidil/tretinoin/acarbose stack. This is the strongest public signal so far that the Rx business is widening from a short list of Johnson’s own drugs into GLP-1, peptide, and NAD+ catalogs. It should be presented as Immortals/Blueprint commercial positioning; off-label longevity efficacy and safety are not established by the announcement.
 
+On July 22, Johnson made the GLP-1 catalog more specific, saying Immortals Rx now lists six options: Zepbound, Wegovy injections, Wegovy tablets, Foundayo tablets, compounded tirzepatide, and compounded semaglutide. He tied the list to weight loss, “food noise,” and possible longevity relevance after an Australia time-zone shift. This is a concrete commercial update, but the post names no studies and does not independently establish formulation status, availability, prescribing criteria, compounded-treatment safety, or efficacy for longevity.
+
 ### Jet lag and routine snapshots
 
 The June 2026 batch also included self-reported jet-lag recovery timelines and a caffeine + melatonin recovery protocol Johnson said he was testing, plus a breakfast snapshot centered on vegetables, legumes, mushrooms, herbs, seeds, and olive oil. These are examples of the measurement loop in public: an intervention or routine is narrated, tied to biomarkers or recovery, then folded back into the protocol story.
+
+On July 22, Johnson posted another personal routine snapshot: asleep at 8 p.m., awake at 4:30 a.m., then breathwork, oral care, light and red-light exposure, protein/collagen/EVOO/berries, IHHT, work, stool/saliva/blood/urine testing, exercise, a 200°F dry sauna, and a later plant-led meal. It documents his current stack but is not evidence that the combined routine improves longevity or a template readers should follow.
 
 On June 18, Johnson posted the outcome half of that jet-lag test after returning from Australia: 300 mg caffeine in the morning plus 3 mg melatonin before bed, which he said accelerated body-clock resynchronization and was observable “live” via blood glucose. This is useful as protocol logging and follow-up, but still N=1 self-report rather than dosing guidance or proof that the intervention caused recovery.
 

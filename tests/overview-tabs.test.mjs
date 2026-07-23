@@ -195,6 +195,19 @@ describe('home overview and dedicated changelog route', () => {
     }
   });
 
+  it('publishes the July 22 six-option GLP-1 catalog as attributed commercial positioning', () => {
+    for (const required of [
+      '2079987669594214556',
+      'x-twitter-daily-2026-07-23.md',
+      'six GLP-1 options',
+      'Zepbound, Wegovy injections and tablets, Foundayo tablets, compounded tirzepatide, and compounded semaglutide',
+      'not evidence that any option is safe or effective for longevity',
+      'confidence: \'medium\'',
+    ]) {
+      assert.match(signalsSource, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `GLP-1 catalog signal should preserve: ${required}`);
+    }
+  });
+
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
     for (const phrase of ['watchQueue', 'sourceCounts', 'curatedActivity', 'Protocol tabs backed']) {
       assert.match(indexSource, new RegExp(phrase), `overview should use real sidebar data: ${phrase}`);

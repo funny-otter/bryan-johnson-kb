@@ -23,6 +23,7 @@ export const protocolCategories = [
         sourced('Track the June 2026 jet-lag follow-up as a self-reported caffeine + melatonin test using blood glucose as a body-clock readout, not as general travel medical advice.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md'),
         sourced('Treat the June 2026 Australian sun/skin-aging post as a skin-readout example inside the measurement loop, not as validated skincare advice.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md'),
         sourced('Treat the June 2026 Immortals Rx expansion separately from foundational habits; the GLP-1, SGLT2, peptide, and NAD+ catalog is a commercial/protocol claim that requires clinician oversight.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md'),
+        sourced('Treat the July 2026 six-option GLP-1 catalog as an Immortals Rx commercial update. Johnson names branded and compounded listings, but the post does not establish formulation status, availability, prescribing criteria, or safety and efficacy for longevity use.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-23.md'),
         sourced('Treat Johnson’s June 2026 “one international trip per quarter” rule as a biomarker-derived personal boundary, not as a reader travel guideline.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md'),
         sourced('Treat the June 2026 inherited-cancer DNA + RNA panel as germline risk-stratification context, not a diagnosis, universal screening recommendation, or validation of Johnson’s early-surveillance statistics.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-26.md'),
         sourced('Treat the July 2026 AIG single-cell immune-receptor sequencing thread as Johnson’s diagnostic follow-through: a cellular/receptor-level measurement layer, not a validated therapy or reader test recommendation.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-04.md'),
@@ -63,8 +64,8 @@ export const protocolCategories = [
       },
       {
         label: 'Rx expansion',
-        title: 'Immortals Rx now includes GLP-1s, peptides, and NAD+',
-        body: 'Johnson’s June 22 expansion added semaglutide/Wegovy, tirzepatide/Zepbound, SGLT2 inhibitors, peptide complexes, glutathione, and NAD+ to the Rx story. Keep it as product-positioning and protocol evidence, not medication advice.',
+        title: 'Immortals Rx now names six branded or compounded GLP-1 options',
+        body: 'Johnson’s July 22 catalog lists Zepbound, Wegovy injections/tablets, Foundayo tablets, compounded tirzepatide, and compounded semaglutide. Keep it as attributed product-positioning—not medication advice or evidence of longevity safety, efficacy, formulation status, or availability.',
       },
       {
         label: 'Jet lag N=1',
@@ -143,6 +144,7 @@ export const protocolCategories = [
         sourced('Separate durable healthspan practices from frontier enhancement, drug-stack, gene-therapy, and immortality narratives.', 'concepts/biomarker-driven-longevity-protocols.md'),
         sourced('Classify daily Tadalafil/Cialis and similar drug claims as hypothesis-generating prescription-intervention claims unless independent clinical evidence supports the exact longevity use case.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md'),
         sourced('Classify Immortals Rx GLP-1, SGLT2, peptide, and NAD+ listings as commercial platform expansion; do not treat off-label longevity positioning as proven outcome evidence.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md'),
+        sourced('Classify the July 2026 six-option GLP-1 catalog as a more specific commercial listing, not validation of weight-loss or longevity efficacy, compounded-treatment safety, prescribing criteria, formulation status, or availability.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-23.md'),
         sourced('Classify sauna/HSP27 claims as mechanistic biomarker self-experimentation unless replicated and tied to clinically meaningful outcomes.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md'),
         sourced('Classify the Midjourney scanner essay as a measurement-modality argument; structural imaging may complement chemical and functional data, but the third-party device and routine-screening claims need validation.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md'),
         sourced('Classify Johnson’s June 2026 wearable reply as a relative-tracking claim: consistency can help trend detection, but it does not settle absolute accuracy or clinical validity.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md'),
@@ -236,8 +238,8 @@ export const protocolCategories = [
       },
       {
         label: 'Rx platform',
-        title: 'GLP-1 and peptide expansion raises evidence questions',
-        body: 'The expanded Immortals Rx catalog is notable because it moves the public protocol further into prescription therapeutics. It needs clinician/regulatory context and drug-specific evidence, not generic longevity framing.',
+        title: 'Six-option GLP-1 list sharpens the evidence questions',
+        body: 'The July 22 list makes the prescription catalog more concrete by naming branded and compounded options. It still needs clinician/regulatory context, formulation and availability verification, and drug-specific evidence—not generic longevity framing.',
       },
     ],
   }),
@@ -354,6 +356,7 @@ export const protocolSectionsBySlug = {
 };
 
 export const conceptEntries = [
+  { title: 'Immortals Rx six-option GLP-1 catalog', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-23.md', summary: 'Johnson lists Zepbound, Wegovy injections/tablets, Foundayo tablets, compounded tirzepatide, and compounded semaglutide for weight loss and longevity; commercial positioning, not proof of formulation status, availability, or longevity safety and efficacy.' },
   { title: 'Autologous iPSC disease-resolution platform', confidence: 'low', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md', summary: 'Johnson calls a dish-grown reprogrammed-cell model a newborn “clone” and proposes therapy testing, organ growth, and young-cell transplantation; speculative positioning without evidence of a human clone, clinically available organ platform, or outcome.' },
   { title: 'Ocular tear-biomarker measurement plan', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md', summary: 'Johnson reports a $1,800 specialty-lab panel across 15 tear biomarkers for ocular-surface tracking; a concrete measurement plan without results, diagnosis, intervention, validated clinical utility, or reader guidance.' },
   { title: 'Disease-resolution / frontier-biotech pivot', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-21.md', summary: 'Johnson says an unspecified incurable-disease diagnosis shifted his project from longevity staples toward disease resolution and frontier biotech; a strategic agenda without named targets, therapies, outcomes, or reader guidance.' },

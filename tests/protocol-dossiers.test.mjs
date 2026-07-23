@@ -329,13 +329,24 @@ describe('protocol terminal dossier pages', () => {
     assertKnowledgeSourcePairs(knowledgeHtml, protocol.sections, '/knowledge/blueprint/ explicit-source implementation');
   });
 
-  it('keeps audited eye tear-panel, disease-resolution, and bedtime claims on their exact sources', () => {
+  it('keeps audited GLP-1, eye tear-panel, disease-resolution, and bedtime claims on their exact sources', () => {
     const july21Source = 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-21.md';
     const july22Source = 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md';
+    const july23Source = 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-23.md';
     const healthHtml = read(new URL('../dist/health/index.html', import.meta.url));
     const longevityHtml = read(new URL('../dist/longevity/index.html', import.meta.url));
     const sleepHtml = read(new URL('../dist/sleep/index.html', import.meta.url));
 
+    assertRenderedClaimSource(
+      healthHtml,
+      'Treat the July 2026 six-option GLP-1 catalog as an Immortals Rx commercial update.',
+      july23Source,
+    );
+    assertRenderedClaimSource(
+      longevityHtml,
+      'Classify the July 2026 six-option GLP-1 catalog as a more specific commercial listing',
+      july23Source,
+    );
     assertRenderedClaimSource(
       healthHtml,
       'Treat the July 2026 ocular tear-panel post as an organ-specific measurement plan.',

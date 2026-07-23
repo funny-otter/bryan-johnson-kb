@@ -1,5 +1,19 @@
 export const curatedSignals = [
   {
+    id: 'immortals-rx-six-glp1-catalog',
+    title: 'Immortals Rx names six GLP-1 options for weight loss and longevity',
+    date: '2026-07-22',
+    badge: 'Rx catalog',
+    kind: 'tweet',
+    topic: 'GLP-1 / prescription platform',
+    summary:
+      'Johnson said Immortals Rx now lists six GLP-1 options: Zepbound, Wegovy injections and tablets, Foundayo tablets, compounded tirzepatide, and compounded semaglutide. He connected the catalog to weight loss, food-noise management, and possible longevity relevance after a time-zone shift. The post cites no named studies and is not evidence that any option is safe or effective for longevity; formulation, compounded-treatment, prescribing, and availability details were not independently verified by this curation.',
+    href: '/health/',
+    tweetId: '2079987669594214556',
+    confidence: 'medium',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-07-23.md#Tweet-2079987669594214556'],
+  },
+  {
     id: 'autologous-ipsc-frontier-biotech-plan',
     title: 'Johnson frames autologous iPSCs as a personal disease-resolution platform',
     date: '2026-07-21',
@@ -752,8 +766,8 @@ export const watchQueue = [
   },
   {
     title: 'Immortals Rx GLP-1 and peptide evidence',
-    summary: 'Watch for prescribing criteria, dosing details, adverse-event disclosures, clinician/pharmacy specifics, and independent evidence for GLP-1, SGLT2, peptide, glutathione, and NAD+ longevity positioning.',
-    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md',
+    summary: 'Watch for prescribing criteria, doses, adverse-event disclosures, clinician/pharmacy specifics, approved-versus-compounded formulation status, current availability, and independent evidence for the weight-loss and longevity positioning. The July 22 post names six GLP-1 listings but does not supply named studies or establish safety or efficacy for longevity use.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-23.md',
     href: '/health/',
   },
   {
@@ -837,16 +851,17 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '4', detail: '4 Jul 21 posts captured · x-twitter-daily-2026-07-22.md' },
-  { label: 'Previous daily X capture', value: '3', detail: '3 Jul 20 posts captured · x-twitter-daily-2026-07-21.md' },
+  { label: 'Latest daily X capture', value: '2', detail: '2 Jul 22 posts captured · x-twitter-daily-2026-07-23.md' },
+  { label: 'Previous daily X capture', value: '4', detail: '4 Jul 21 posts captured · x-twitter-daily-2026-07-22.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '50', detail: '12 knowledge pages + 38 update pages after this pass' },
+  { label: 'Public site content', value: '51', detail: '12 knowledge pages + 39 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-07-23', x_post: 2, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-22', x_post: 4, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-21', x_post: 3, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-20', x_post: 2, third_party: 0, wiki_update: 1, site_update: 0 },

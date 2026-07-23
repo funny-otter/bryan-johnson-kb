@@ -138,6 +138,15 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-07-22',
+    label: 'Immortals Rx names six GLP-1 options',
+    summary: 'Johnson said Immortals Rx now lists Zepbound, Wegovy injections and tablets, Foundayo tablets, compounded tirzepatide, and compounded semaglutide, framing them around weight loss, food-noise management, and possible longevity relevance. The KB records a concrete catalog update—not independent verification of formulation status, availability, prescribing criteria, compounded-treatment safety, or efficacy for longevity, and not medical advice.',
+    relatedHref: '/knowledge/blueprint-protocol/',
+    relatedTitle: 'Blueprint Protocol',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-23.md',
+    confidence: 'medium',
+  },
+  {
     date: '2026-07-21',
     label: 'Autologous iPSC and ocular tear-panel plans follow the strategy pivot',
     summary: 'Johnson described a dish-grown, autologous reprogrammed-cell model as a newborn “clone” and proposed therapy testing, organ growth, and cell transplantation; he separately reported collecting tears for a 15-marker ocular-surface panel. The KB records concrete follow-through on the prior disease-resolution and eye-health agenda, while keeping the iPSC applications speculative and the tear panel result-free—not evidence of a human clone, available regenerative treatment, validated eye protocol, or medical advice.',
