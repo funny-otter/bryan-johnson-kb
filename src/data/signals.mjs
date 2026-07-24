@@ -1,5 +1,19 @@
 export const curatedSignals = [
   {
+    id: 'sauna-checklist-meal-timing-feedback',
+    title: 'Johnson turns his sauna experiment into a public checklist',
+    date: '2026-07-23',
+    badge: 'Protocol update',
+    kind: 'tweet',
+    topic: 'Sauna / heat exposure',
+    summary:
+      'Johnson recommended 4–7 dry-sauna sessions per week, named time/temperature and core-temperature targets, and added hydration, fertility, air-quality, and material cautions. A separate post reported that moving his final meal from noon to 2 p.m. raised his sleep heart rate from 42 to 44 bpm. The dashboard treats both as Johnson’s attributed N=1 protocol positioning—not a reader prescription or independent evidence of longevity benefit.',
+    href: '/health/',
+    tweetId: '2080377484793511959',
+    confidence: 'medium',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-07-24.md#Tweet-2080377484793511959'],
+  },
+  {
     id: 'immortals-rx-six-glp1-catalog',
     title: 'Immortals Rx names six GLP-1 options for weight loss and longevity',
     date: '2026-07-22',
@@ -802,8 +816,8 @@ export const watchQueue = [
   },
   {
     title: 'Sauna/HSP27 replication and safety context',
-    summary: 'Watch whether Johnson publishes the underlying biomarker panels, repeats the threshold finding, distinguishes HSP27 movement from clinical outcomes, and adds safety guidance for heat exposure risk.',
-    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md',
+    summary: 'Johnson has now added public frequency, heat-dose, hydration, fertility, air-quality, and material guidance. Watch for the underlying biomarker panels, independent replication, adverse-event reporting, evidence behind the dry-versus-wet/infrared distinction, and a clear separation between HSP27 movement and clinical outcomes.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-24.md',
     href: '/health/',
   },
   {
@@ -851,16 +865,17 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '2', detail: '2 Jul 22 posts captured · x-twitter-daily-2026-07-23.md' },
-  { label: 'Previous daily X capture', value: '4', detail: '4 Jul 21 posts captured · x-twitter-daily-2026-07-22.md' },
+  { label: 'Latest daily X capture', value: '5', detail: '5 Jul 23 posts captured · x-twitter-daily-2026-07-24.md' },
+  { label: 'Previous daily X capture', value: '2', detail: '2 Jul 22 posts captured · x-twitter-daily-2026-07-23.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '51', detail: '12 knowledge pages + 39 update pages after this pass' },
+  { label: 'Public site content', value: '52', detail: '12 knowledge pages + 40 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-07-24', x_post: 5, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-23', x_post: 2, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-22', x_post: 4, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-21', x_post: 3, third_party: 0, wiki_update: 1, site_update: 1 },

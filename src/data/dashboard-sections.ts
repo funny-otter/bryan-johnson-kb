@@ -138,6 +138,15 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-07-23',
+    label: 'Sauna N=1 expands into a public protocol checklist',
+    summary: 'Johnson recommended 4–7 dry-sauna sessions weekly and published time/temperature, core-temperature, hydration, fertility, air-quality, and material guidance. A separate post reported a 42-to-44 bpm sleep-heart-rate difference when his final meal moved from noon to 2 p.m. The KB records attributed protocol and feedback-loop claims—not validated causal estimates, reader targets, personal medical advice, or independent evidence of longevity benefit.',
+    relatedHref: '/knowledge/blueprint-protocol/',
+    relatedTitle: 'Blueprint Protocol',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-24.md',
+    confidence: 'medium',
+  },
+  {
     date: '2026-07-22',
     label: 'Immortals Rx names six GLP-1 options',
     summary: 'Johnson said Immortals Rx now lists Zepbound, Wegovy injections and tablets, Foundayo tablets, compounded tirzepatide, and compounded semaglutide, framing them around weight loss, food-noise management, and possible longevity relevance. The KB records a concrete catalog update—not independent verification of formulation status, availability, prescribing criteria, compounded-treatment safety, or efficacy for longevity, and not medical advice.',

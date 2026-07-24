@@ -4,7 +4,7 @@ slug: blueprint-protocol
 type: concept
 sourcePath: concepts/blueprint-protocol.md
 created: '2026-05-22'
-updated: '2026-07-23'
+updated: '2026-07-24'
 tags:
   - protocol
   - longevity
@@ -13,6 +13,7 @@ tags:
   - biohacking
   - automation
 sources:
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-24.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-23.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md
   - raw/articles/project-blueprint-2021-10-13.md
@@ -61,6 +62,8 @@ Johnson's April 2026 morning routine is an example implementation: 8:30pm bedtim
 
 On June 19, 2026, a high-engagement routine post compressed that posture into a seven-day checklist: stop food four hours before sleep, screens off 60 minutes before bed, read for 10 minutes before sleep, get light in the eyes on waking, and exercise daily. It is useful as a current, low-tech summary of Johnson’s recurring sleep/wake advice; it should still be presented as his habit framing rather than personalized medical guidance.
 
+On July 23, Johnson supplied a compact meal-timing feedback example: he reported a sleep heart rate of 42 bpm when he finished eating at noon versus 44 bpm when he finished at 2 p.m. The value for understanding Blueprint is the input/output framing—small behavioral changes become measured protocol variables—not the two readings as universal targets or proof that meal timing alone caused the difference.
+
 ## Iteration and reversals
 
 The protocol is not static. Johnson's public posts include stopping or pausing interventions when measurements disappoint. A 2025 @bryan_johnson post says he paused metformin after five years because it appeared to build energy capacity while limiting his ability to use much of it.
@@ -98,6 +101,8 @@ On June 16, 2026, Johnson posted a three-session dry-sauna experiment using an i
 This is useful for the dashboard because it shows Blueprint's protocol-iteration style: define a measurable mechanism, track delivered dose inside the body, compare response, then revise the practical rule. It should not be rendered as a public sauna prescription. Extreme heat exposure can be risky, and Johnson's thread remains N=1 biomarker evidence rather than independent proof of clinical longevity benefit.
 
 A June 17 follow-up added a heart-rate trace from the same 56-minute 200°F / 93°C session, with Johnson reporting a 128–133 bpm peak and a spike when changing ice on his face, neck, and groin. The extra datapoint is dashboard-useful mainly because it shows how Blueprint experiments now publish physiological traces alongside biomarker claims; it does not change the N=1 status or safety caveats.
+
+On July 23, Johnson broadened that experiment into public protocol guidance: 4–7 dry-sauna sessions per week; example thresholds of 11 minutes at 176°F / 80°C and 20 minutes at 195°F / 90.5°C; a personal path to 102.2°F / 39°C core temperature; and cautions or claims spanning acclimation, hydration/electrolytes, fertility, cold plunging, recovery, microplastics, air quality, sauna materials, clothing, and heat tolerance. The expansion is editorially important because it crosses from documenting one measured experiment into telling an audience what to do. Every item therefore remains explicitly attributed to Johnson; the post does not independently validate the dry-versus-wet/infrared distinction, the benefit thresholds, the fertility or microplastics claims, or a reader-safe universal protocol.
 
 ### N-of-1 methodology essay (June 2026)
 

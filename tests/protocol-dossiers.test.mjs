@@ -329,10 +329,11 @@ describe('protocol terminal dossier pages', () => {
     assertKnowledgeSourcePairs(knowledgeHtml, protocol.sections, '/knowledge/blueprint/ explicit-source implementation');
   });
 
-  it('keeps audited GLP-1, eye tear-panel, disease-resolution, and bedtime claims on their exact sources', () => {
+  it('keeps audited GLP-1, eye tear-panel, disease-resolution, sauna, meal-timing, and bedtime claims on their exact sources', () => {
     const july21Source = 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-21.md';
     const july22Source = 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md';
     const july23Source = 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-23.md';
+    const july24Source = 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-24.md';
     const healthHtml = read(new URL('../dist/health/index.html', import.meta.url));
     const longevityHtml = read(new URL('../dist/longevity/index.html', import.meta.url));
     const sleepHtml = read(new URL('../dist/sleep/index.html', import.meta.url));
@@ -361,6 +362,16 @@ describe('protocol terminal dossier pages', () => {
       longevityHtml,
       'autologous iPSC “clone” post as speculative regenerative-biotech positioning',
       july22Source,
+    );
+    assertRenderedClaimSource(
+      healthHtml,
+      'Treat the July 2026 sauna checklist as Johnson’s attributed protocol guidance',
+      july24Source,
+    );
+    assertRenderedClaimSource(
+      sleepHtml,
+      'Treat Johnson’s reported 42-to-44 bpm sleep-heart-rate difference',
+      july24Source,
     );
     assertRenderedHabitSource(
       sleepHtml,

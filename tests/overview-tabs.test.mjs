@@ -208,6 +208,19 @@ describe('home overview and dedicated changelog route', () => {
     }
   });
 
+  it('publishes the July 23 sauna checklist as attributed, non-prescriptive protocol positioning', () => {
+    for (const required of [
+      '2080377484793511959',
+      'x-twitter-daily-2026-07-24.md',
+      '4–7 dry-sauna sessions per week',
+      'hydration, fertility, air-quality, and material cautions',
+      'not a reader prescription or independent evidence of longevity benefit',
+      'confidence: \'medium\'',
+    ]) {
+      assert.match(signalsSource, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `sauna checklist signal should preserve: ${required}`);
+    }
+  });
+
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
     for (const phrase of ['watchQueue', 'sourceCounts', 'curatedActivity', 'Protocol tabs backed']) {
       assert.match(indexSource, new RegExp(phrase), `overview should use real sidebar data: ${phrase}`);

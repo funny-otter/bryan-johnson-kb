@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-07-23'
+updated: '2026-07-24'
 tags:
   - person
   - company
@@ -13,6 +13,7 @@ tags:
   - biomarkers
   - protocol
 sources:
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-24.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-23.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md
   - raw/articles/bryan-johnson/bryan-johnson-home-2026-05-22.md
@@ -121,6 +122,8 @@ On July 20, Johnson said an unspecified “incurable disease” diagnosis had sh
 On July 21, Johnson supplied two concrete follow-ups. First, he described a dish-grown, autologous reprogrammed-cell model as a newborn “clone” of himself and proposed therapy testing, organ growth, cell transplantation, and disease repair, attributing the process to Yamanaka factors and induced pluripotency. The source does not establish that a human clone exists or provide cell-line characterization, cited trials, safety data, an organ, a treatment, or an outcome, so the dashboard records speculative frontier-biotech and immortality positioning. Second, he reported collecting tears for a $1,800 specialty-lab panel across 15 ocular biomarkers, with a future eye protocol promised but no result, diagnosis, intervention, clinical-utility evidence, or outcome published. A high-engagement kindness/cortisol post from the same batch remains unpromoted because its health claims were unsourced and did not change the protocol model.
 
 On July 22, Johnson returned to the commercial prescription layer, saying Immortals Rx now lists six GLP-1 options: Zepbound, Wegovy injections/tablets, Foundayo tablets, compounded tirzepatide, and compounded semaglutide. He framed the catalog around weight loss, food-noise management, and possible longevity relevance after a time-zone shift. The same batch included a detailed personal routine snapshot with IHHT, repeated biological sampling, exercise, and a 200°F dry sauna. The dashboard promotes the catalog as product news and keeps the routine as context; neither is evidence of longevity efficacy, a treatment recommendation, or independent verification of the named formulations and availability.
+
+On July 23, Johnson translated his earlier sauna/HSP27 self-experiment into a broad public checklist. He recommended 4–7 dry-sauna sessions weekly, offered example time/temperature and core-temperature targets, and added advice or claims about acclimation, post-workout timing, hydration, fertility, cold plunging, recovery, microplastics, air quality, materials, and clothing. A separate post reported that moving his final meal from noon to 2 p.m. raised his sleep heart rate from 42 to 44 bpm and used engineering analogies to defend treating small changes as measurable inputs. The dashboard records both as attributed N=1 protocol positioning; they are not validated causal estimates, universal targets, personal medical advice, or independent evidence of longevity benefit.
 
 ## Reading stance
 

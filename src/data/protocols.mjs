@@ -20,6 +20,7 @@ export const protocolCategories = [
       longterm: [
         sourced('Treat Blueprint as a repeatable feedback system whose rules can evolve as biomarkers, symptoms, or evidence change.', 'concepts/blueprint-protocol.md'),
         sourced('Track the June 2026 sauna/HSP27 thread as a protocol-design case study: Johnson shifted the dose question from minutes in the sauna to measured core temperature and biomarker response.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md'),
+        sourced('Treat the July 2026 sauna checklist as Johnson’s attributed protocol guidance. Its 4–7-session frequency, heat-dose targets, fertility and microplastics claims, hydration advice, and environmental cautions are not a reader prescription or independent evidence of longevity benefit.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-24.md'),
         sourced('Track the June 2026 jet-lag follow-up as a self-reported caffeine + melatonin test using blood glucose as a body-clock readout, not as general travel medical advice.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md'),
         sourced('Treat the June 2026 Australian sun/skin-aging post as a skin-readout example inside the measurement loop, not as validated skincare advice.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md'),
         sourced('Treat the June 2026 Immortals Rx expansion separately from foundational habits; the GLP-1, SGLT2, peptide, and NAD+ catalog is a commercial/protocol claim that requires clinician oversight.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md'),
@@ -58,9 +59,9 @@ export const protocolCategories = [
         body: 'Hormonal, drug, or supplement experiments belong behind caution labels unless backed by independent clinical evidence for the specific claim.',
       },
       {
-        label: 'Sauna dose test',
-        title: 'Heat exposure is now framed as measured core-temperature dose',
-        body: 'Johnson claims his HSP27 response appeared only after roughly 15 minutes above 102.2°F / 39°C core temperature. Keep this as N=1 protocol documentation with heat-safety caution, not generic sauna advice.',
+        label: 'Sauna protocol update',
+        title: 'Measured heat dose becomes a broad public checklist',
+        body: 'Johnson moved from the June HSP27 experiment to a July checklist covering frequency, time/temperature, core temperature, hydration, fertility, air quality, and materials. Keep every item attributed and N=1; the post is not generic sauna advice or independent proof of longevity benefit.',
       },
       {
         label: 'Rx expansion',
@@ -146,6 +147,7 @@ export const protocolCategories = [
         sourced('Classify Immortals Rx GLP-1, SGLT2, peptide, and NAD+ listings as commercial platform expansion; do not treat off-label longevity positioning as proven outcome evidence.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md'),
         sourced('Classify the July 2026 six-option GLP-1 catalog as a more specific commercial listing, not validation of weight-loss or longevity efficacy, compounded-treatment safety, prescribing criteria, formulation status, or availability.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-23.md'),
         sourced('Classify sauna/HSP27 claims as mechanistic biomarker self-experimentation unless replicated and tied to clinically meaningful outcomes.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md'),
+        sourced('Classify the July 2026 sauna checklist as an attributed expansion from N=1 biomarker testing into public protocol guidance; its frequency, heat-dose, fertility, microplastics, recovery, hydration, and environmental claims require independent evidence and safety context.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-24.md'),
         sourced('Classify the Midjourney scanner essay as a measurement-modality argument; structural imaging may complement chemical and functional data, but the third-party device and routine-screening claims need validation.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md'),
         sourced('Classify Johnson’s June 2026 wearable reply as a relative-tracking claim: consistency can help trend detection, but it does not settle absolute accuracy or clinical validity.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md'),
         sourced('Classify the inherited-cancer DNA + RNA panel as early-risk surveillance framing: useful for understanding Johnson’s measurement stack, not evidence that broad genetic screening improves outcomes for every reader.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-26.md'),
@@ -198,8 +200,8 @@ export const protocolCategories = [
       },
       {
         label: 'Heat-dose biomarkers',
-        title: 'Sauna claims illustrate the biomarker-vs-outcome gap',
-        body: 'The June 2026 sauna thread is useful because it isolates dose tracking more clearly than many Blueprint posts, but HSP27 movement still does not prove longer healthspan for readers.',
+        title: 'Sauna claims now span biomarkers and public guidance',
+        body: 'The June experiment isolated core-temperature dose and HSP27 movement; the July checklist expands into frequency, fertility, hydration, recovery, and environmental claims. Neither source proves longer healthspan or supplies a reader-safe universal protocol.',
       },
       {
         label: 'Structural imaging',
@@ -302,6 +304,7 @@ export const protocolCategories = [
       longterm: [
         sourced('Frame sleep as a durable foundation feeding the broader biomarker and recovery system.', 'concepts/blueprint-protocol.md'),
         sourced('Use the June 19 seven-day checklist as a simple recurring-habits example, while preserving that readers need individualized medical guidance for health conditions.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md'),
+        sourced('Treat Johnson’s reported 42-to-44 bpm sleep-heart-rate difference when his final meal moved from noon to 2 p.m. as an N=1 observation, not a causal estimate or universal meal cutoff.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-24.md'),
         sourced('Keep jet-lag protocol material in a circadian-recovery / self-experiment bucket unless replicated and externally validated.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md'),
         sourced('Treat the June 2026 “one international trip per quarter” suggestion as Johnson’s biomarker-derived travel budget, not generalized medical advice.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md'),
         sourced('Add exact wearable targets only after source verification and keep them in claims/measurement context.', 'concepts/biomarker-driven-longevity-protocols.md'),
@@ -342,6 +345,11 @@ export const protocolCategories = [
         title: 'Food cutoff, screen cutoff, reading, morning light, exercise',
         body: 'Johnson’s June 19 high-engagement checklist is a compact version of his recurring sleep/wake routine: final food 4 hours before bed, screens off 60 minutes before bed, 10 minutes reading, morning light, and daily exercise.',
       },
+      {
+        label: 'Meal-timing N=1',
+        title: 'A two-hour meal shift is linked to a 2 bpm sleep-heart-rate change',
+        body: 'Johnson reports a sleep heart rate of 42 bpm after finishing food at noon versus 44 bpm after finishing at 2 p.m. It illustrates his feedback-loop mindset, but one personal comparison does not establish causality, clinical importance, or a reader target.',
+      },
     ],
   }),
 ];
@@ -356,6 +364,7 @@ export const protocolSectionsBySlug = {
 };
 
 export const conceptEntries = [
+  { title: 'Sauna checklist / meal-timing feedback', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-24.md', summary: 'Johnson expands his sauna N=1 into attributed public guidance and reports a 42-to-44 bpm sleep-heart-rate difference after a two-hour meal shift; protocol positioning and personal observation, not validated causal evidence or medical advice.' },
   { title: 'Immortals Rx six-option GLP-1 catalog', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-23.md', summary: 'Johnson lists Zepbound, Wegovy injections/tablets, Foundayo tablets, compounded tirzepatide, and compounded semaglutide for weight loss and longevity; commercial positioning, not proof of formulation status, availability, or longevity safety and efficacy.' },
   { title: 'Autologous iPSC disease-resolution platform', confidence: 'low', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md', summary: 'Johnson calls a dish-grown reprogrammed-cell model a newborn “clone” and proposes therapy testing, organ growth, and young-cell transplantation; speculative positioning without evidence of a human clone, clinically available organ platform, or outcome.' },
   { title: 'Ocular tear-biomarker measurement plan', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md', summary: 'Johnson reports a $1,800 specialty-lab panel across 15 tear biomarkers for ocular-surface tracking; a concrete measurement plan without results, diagnosis, intervention, validated clinical utility, or reader guidance.' },
