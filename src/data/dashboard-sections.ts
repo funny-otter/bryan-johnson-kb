@@ -138,6 +138,24 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-07-25',
+    label: 'Kate Tolo baseline becomes a 100-day operational measurement program',
+    summary: 'Johnson described a pre-intervention baseline with 14 million claimed menstrual-cycle data points, 100+ daily tasks, 50+ devices, and a 12-person medical team. The published schedule makes the collection burden and modality mix visible; the KB records one intensive N=1 program—not completed results, a representative female-health protocol, or medical advice.',
+    relatedHref: '/knowledge/biomarker-driven-longevity-protocols/',
+    relatedTitle: 'Biomarker-driven longevity protocols',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-26.md',
+    confidence: 'medium',
+  },
+  {
+    date: '2026-07-24',
+    label: 'Immortals names individual disease-resolution infrastructure as a company direction',
+    summary: 'Johnson said Immortals will retain its existing health-product and concierge stack while adding iPSCs, organoids, deep cellular characterization, and personalized therapy development. The KB records a material strategy update—not evidence of an operational clinical platform, diagnosis, treatment, cure, safety, or outcome.',
+    relatedHref: '/knowledge/blueprint-protocol/',
+    relatedTitle: 'Blueprint Protocol',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-25.md',
+    confidence: 'medium',
+  },
+  {
     date: '2026-07-23',
     label: 'Sauna N=1 expands into a public protocol checklist',
     summary: 'Johnson recommended 4–7 dry-sauna sessions weekly and published time/temperature, core-temperature, hydration, fertility, air-quality, and material guidance. A separate post reported a 42-to-44 bpm sleep-heart-rate difference when his final meal moved from noon to 2 p.m. The KB records attributed protocol and feedback-loop claims—not validated causal estimates, reader targets, personal medical advice, or independent evidence of longevity benefit.',

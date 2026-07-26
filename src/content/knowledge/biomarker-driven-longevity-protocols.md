@@ -4,7 +4,7 @@ slug: biomarker-driven-longevity-protocols
 type: concept
 sourcePath: concepts/biomarker-driven-longevity-protocols.md
 created: '2026-05-22'
-updated: '2026-07-24'
+updated: '2026-07-26'
 tags:
   - longevity
   - biomarkers
@@ -13,6 +13,8 @@ tags:
   - protocol
   - evaluation
 sources:
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-26.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-25.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-24.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md
   - raw/articles/bryan-johnson/bryan-johnson-project-blueprint-2021-10-13.md
@@ -109,6 +111,10 @@ On July 20, 2026, Johnson extended the measurement-first frame to **eye health**
 On July 21, Johnson added the first concrete ocular-fluid readout to that agenda: he reported collecting tears with paper strips for a $1,800 specialty-lab panel spanning 15 inflammatory, tissue-degradation, and regenerative-signaling biomarkers. He said the panel would quantify the ocular-surface molecular environment and support progress tracking, with an eye protocol forthcoming. The useful methodology signal is the move from a broad organ-system question to a repeatable molecular sample. The evidence boundary remains substantial: no result, diagnosis, intervention, reference range, clinical utility, or outcome was published, so this is an N=1 measurement plan rather than a validated screening panel or medical recommendation.
 
 On July 23, Johnson expanded the June sauna/HSP27 experiment into a public checklist. The list mixes measurable dose ideas—frequency, cabin temperature, session time, and a personal 102.2°F / 39°C core-temperature target—with broader recommendations or claims about hydration, fertility, post-session cold exposure, recovery, microplastics, air quality, materials, and dry versus wet/infrared evidence. This is a useful worked example of a biomarker finding becoming protocol policy, but also of why the transition needs scrutiny: an N=1 HSP27 response does not independently validate the full checklist, a clinical longevity benefit, or a safe universal heat dose. His separate 42-to-44 bpm meal-timing comparison is likewise a personal observation rather than a causal estimate.
+
+On July 24, Johnson said Immortals was adding iPSCs, organoids, deep cellular characterization, and personalized therapy development to its existing health-product and concierge stack. Methodologically, this proposes a wider loop in which dense measurement feeds individualized disease models and candidate therapies. The expansion is still a company strategy claim: no operational pathway, diagnostic performance, safety process, treatment, cure, or outcome was published.
+
+On July 25, Johnson operationalized Kate Tolo’s female-health baseline as a 100-day, pre-intervention collection program with 14 million claimed menstrual-cycle data points, 100+ daily tasks, 50+ devices, and a 12-person medical team. The schedule spans repeated samples, hormonal and metabolic measures, wearables, functional and sensory testing, imaging, microbiome work, exercise, sleep, mood, and routine care. This makes measurement burden, modality coverage, and sequencing visible, but volume does not establish validity or actionability. One participant also cannot define a representative female-health protocol, and publication will need clear metric definitions, cycle-phase context, missing-data methods, privacy governance, and interpretation limits.
 
 ## Practical evaluation checklist
 

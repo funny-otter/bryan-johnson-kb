@@ -35,6 +35,8 @@ export const protocolCategories = [
         sourced('Treat the July 2026 Kate Tolo 90-day / 1,900-biomarker announcement as a projected N=1 program specification, not completed female-health evidence, a representative protocol, or medical advice.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-16.md'),
         sourced('Treat Johnson’s RHR “Sovereignty Index” as within-person behavior-design framing. His reported 41 bpm average is not a universal target, and resting heart rate needs individual and clinical context.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-16.md'),
         sourced('Treat the July 2026 ocular tear-panel post as an organ-specific measurement plan. Johnson reports a $1,800 specialty-lab panel across 15 biomarkers, but publishes no result, diagnosis, clinical utility, intervention, or outcome.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md'),
+        sourced('Treat Immortals’ July 2026 disease-resolution infrastructure expansion as Johnson’s strategy and product positioning. The iPSC, organoid, deep-cell-characterization, and personalized-therapy directions do not establish an operational clinical platform, diagnosis, treatment, cure, safety, or outcome.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-25.md'),
+        sourced('Treat the July 2026 operational Kate Tolo baseline as an N=1 measurement program. The 100-day, 14-million-data-point plan with 100+ daily tasks, 50+ devices, and a 12-person team is not completed evidence, a representative female-health protocol, or reader guidance.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-26.md'),
         sourced('Preserve medical-caution framing: this page summarizes Johnson/Blueprint practice, not personal treatment advice.', 'concepts/biomarker-driven-longevity-protocols.md'),
       ],
       donts: [
@@ -124,6 +126,16 @@ export const protocolCategories = [
         body: 'Johnson reports collecting tears with paper strips for a $1,800 specialty-lab panel covering 15 inflammatory, tissue-degradation, and regenerative-signaling biomarkers. No result, diagnosis, intervention, reference range, or validated clinical utility is published, so this remains a watch item rather than public guidance.',
       },
       {
+        label: 'Disease infrastructure',
+        title: 'Immortals names personalized-biotech directions without clinical evidence',
+        body: 'Johnson says Immortals is adding iPSCs, organoids, deep cellular characterization, and personalized therapy development. Keep this as company strategy until an operational pathway, safety process, diagnostic performance, treatments, and outcomes are published.',
+      },
+      {
+        label: 'Female-health baseline',
+        title: 'Kate Tolo’s 100-day baseline makes the collection burden visible',
+        body: 'Johnson describes 14 million data points, 100+ daily tasks, 50+ devices, and a 12-person team before interventions. The source documents one intensive N=1 program—not completed results, a general protocol, or medical advice.',
+      },
+      {
         label: 'Skin readout',
         title: 'Australian sun exposure becomes another measured endpoint',
         body: 'Johnson claims one week in Australian sun increased his skin-aging metric by about 5% despite protection. Present this as self-measured UV-risk context, not as independent proof or individualized skincare advice.',
@@ -158,6 +170,8 @@ export const protocolCategories = [
         sourced('Classify the July 2026 1,900-biomarker / 14.8M-data-point Kate Tolo announcement as measurement-scale ambition. It is a planned N=1 collection program, not completed or independently validated female-health evidence.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-16.md'),
         sourced('Classify Johnson’s July 2026 disease-resolution/frontier-biotech pivot as strategic positioning. The disease and proposed research program are unspecified, so the announcement is not evidence of a cure or protocol change readers can act on.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-21.md'),
         sourced('Classify Johnson’s July 2026 autologous iPSC “clone” post as speculative regenerative-biotech positioning. It supplies no cell-line characterization, cited trial, organ, delivery method, safety evidence, or outcome and is not evidence of a human clone or available treatment.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md'),
+        sourced('Classify Immortals’ July 2026 disease-resolution infrastructure expansion as strategic frontier-biotech positioning. Naming iPSCs, organoids, deep cellular characterization, and personalized therapy development does not establish a clinically available platform or evidence of diagnosis, treatment, safety, cure, or outcome.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-25.md'),
+        sourced('Classify the July 2026 operational Kate Tolo baseline as measurement-scale ambition and protocol operations. The 100-day N=1 plan is not completed or independently validated female-health evidence, and its sensitive-data methods and governance remain unpublished.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-26.md'),
         sourced('Keep the Immortals rename and immortality search-trend narrative in the ideology/brand lane; it does not increase confidence in the 2039 forecast.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md'),
         sourced('Keep the June 2026 immortality manifesto and “Die Economy” frame in the ideology/forecast lane unless independent evidence supports the specific biological and AI claims.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md'),
         sourced('Keep critiques visible so biomarker improvements do not become unsupported longevity promises.', 'raw/articles/bryan-johnson/years-biomarkers-limits-2026-04-20.md'),
@@ -170,8 +184,8 @@ export const protocolCategories = [
     cards: [
       {
         label: 'Strategy pivot',
-        title: 'Disease resolution and frontier biotech move to the foreground',
-        body: 'Johnson says an unspecified incurable-disease diagnosis shifted the project away from longevity staples. Until targets, methods, evidence, and outcomes are published, this is a research agenda—not a demonstrated cure or treatment recommendation.',
+        title: 'Disease resolution moves from agenda to stated company buildout',
+        body: 'Johnson now says Immortals will retain its existing health stack while adding iPSCs, organoids, deep cellular characterization, and personalized therapy development. Until facilities, methods, oversight, safety, and outcomes are published, this remains strategy—not an operational cure platform or treatment recommendation.',
       },
       {
         label: 'Autologous iPSC plan',
@@ -364,6 +378,8 @@ export const protocolSectionsBySlug = {
 };
 
 export const conceptEntries = [
+  { title: 'Kate Tolo 100-day operational baseline', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-26.md', summary: 'Johnson describes 14M menstrual-cycle data points, 100+ daily tasks, 50+ devices, and a 12-person medical team before interventions; one intensive N=1 program, not completed female-health evidence or medical advice.' },
+  { title: 'Immortals individual disease-resolution infrastructure', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-25.md', summary: 'Johnson says Immortals is adding iPSCs, organoids, deep cellular characterization, and personalized therapy development; company strategy, not evidence of a clinically available diagnosis or cure platform.' },
   { title: 'Sauna checklist / meal-timing feedback', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-24.md', summary: 'Johnson expands his sauna N=1 into attributed public guidance and reports a 42-to-44 bpm sleep-heart-rate difference after a two-hour meal shift; protocol positioning and personal observation, not validated causal evidence or medical advice.' },
   { title: 'Immortals Rx six-option GLP-1 catalog', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-23.md', summary: 'Johnson lists Zepbound, Wegovy injections/tablets, Foundayo tablets, compounded tirzepatide, and compounded semaglutide for weight loss and longevity; commercial positioning, not proof of formulation status, availability, or longevity safety and efficacy.' },
   { title: 'Autologous iPSC disease-resolution platform', confidence: 'low', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md', summary: 'Johnson calls a dish-grown reprogrammed-cell model a newborn “clone” and proposes therapy testing, organ growth, and young-cell transplantation; speculative positioning without evidence of a human clone, clinically available organ platform, or outcome.' },

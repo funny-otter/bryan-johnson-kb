@@ -4,7 +4,7 @@ slug: blueprint-protocol
 type: concept
 sourcePath: concepts/blueprint-protocol.md
 created: '2026-05-22'
-updated: '2026-07-24'
+updated: '2026-07-26'
 tags:
   - protocol
   - longevity
@@ -13,6 +13,8 @@ tags:
   - biohacking
   - automation
 sources:
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-26.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-25.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-24.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-23.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md
@@ -115,6 +117,12 @@ Critical context: changes are hard to interpret because dozens of variables move
 On July 20, 2026, Johnson said an unspecified incurable-disease diagnosis had shifted his project from “longevity staples” toward disease resolution and frontier biotech. In a separate eye-health thread that day, he distinguished general diet and supplement discussion from what he wants to see: robust measurement, diagnosis of dysfunction, and protocols intended to correct it. Together the posts suggest a change in emphasis—from broad longevity routines toward disease- and organ-specific engineering—but they do not identify the disease, measurement set, dysfunction, intervention, or outcome. The dashboard records a strategic agenda, not a demonstrated protocol, cure, or reader medical guidance.
 
 On July 21, the eye-health agenda gained a concrete measurement but still no public protocol: Johnson reported collecting tears with paper strips for a $1,800 specialty-lab panel across 15 inflammatory, tissue-degradation, and regenerative-signaling biomarkers. He said the readings would establish the ocular-surface environment and track progress, with an eye protocol forthcoming. No result, diagnosis, intervention, reference range, clinical-utility evidence, or outcome was published, so the dashboard records an N=1 measurement plan rather than eye-health guidance.
+
+### Immortals disease infrastructure and female-health baseline
+
+On July 24, Johnson described Immortals’ disease-resolution pivot as a company buildout. Alongside the existing nutrition, prescription, hormone, peptide, biomarker, and concierge layers, he named induced pluripotent stem cells, organoids, deep cellular characterization, and personalized therapy development as new directions intended to help individuals investigate and resolve their own health issues. This extends Blueprint’s measure–intervene–retest loop toward personalized biotech R&D, but the post does not establish an operational clinical platform, diagnostic accuracy, treatment safety, or any cure or outcome.
+
+On July 25, Johnson published a more operational version of Kate Tolo’s baseline: 100 days before interventions, 14 million claimed menstrual-cycle data points, 100+ tasks a day, 50+ devices, and a 12-person medical team. The schedule combines repeated biological samples, hormone and metabolic measures, functional and sensory tests, imaging, wearables, microbiome work, exercise, sleep, mood, and routine care. Its dashboard value is visibility into protocol operations and burden; it remains a single N=1 program with no published results, validated general female-health protocol, or reader guidance.
 
 ## Automation analogy
 

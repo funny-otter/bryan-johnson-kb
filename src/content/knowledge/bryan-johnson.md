@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-07-24'
+updated: '2026-07-26'
 tags:
   - person
   - company
@@ -13,6 +13,8 @@ tags:
   - biomarkers
   - protocol
 sources:
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-26.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-25.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-24.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-23.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md
@@ -124,6 +126,10 @@ On July 21, Johnson supplied two concrete follow-ups. First, he described a dish
 On July 22, Johnson returned to the commercial prescription layer, saying Immortals Rx now lists six GLP-1 options: Zepbound, Wegovy injections/tablets, Foundayo tablets, compounded tirzepatide, and compounded semaglutide. He framed the catalog around weight loss, food-noise management, and possible longevity relevance after a time-zone shift. The same batch included a detailed personal routine snapshot with IHHT, repeated biological sampling, exercise, and a 200°F dry sauna. The dashboard promotes the catalog as product news and keeps the routine as context; neither is evidence of longevity efficacy, a treatment recommendation, or independent verification of the named formulations and availability.
 
 On July 23, Johnson translated his earlier sauna/HSP27 self-experiment into a broad public checklist. He recommended 4–7 dry-sauna sessions weekly, offered example time/temperature and core-temperature targets, and added advice or claims about acclimation, post-workout timing, hydration, fertility, cold plunging, recovery, microplastics, air quality, materials, and clothing. A separate post reported that moving his final meal from noon to 2 p.m. raised his sleep heart rate from 42 to 44 bpm and used engineering analogies to defend treating small changes as measurable inputs. The dashboard records both as attributed N=1 protocol positioning; they are not validated causal estimates, universal targets, personal medical advice, or independent evidence of longevity benefit.
+
+On July 24, Johnson made the disease-resolution pivot more concrete at the company level. He said Immortals would keep its nutrition, GLP-1, longevity-medicine, hormone, peptide, biomarker, and concierge-medicine work while adding induced pluripotent stem cells, organoids, deep cellular characterization, and personalized therapy development as infrastructure for individuals to discover and resolve their own health issues. This is a material strategy and product-direction signal, but not evidence that the proposed platform can diagnose or cure disease, that the named technologies are clinically available through Immortals, or that any treatment is safe or effective.
+
+On July 25, Johnson published an operational snapshot of Kate Tolo’s female-health program: a 100-day baseline before interventions, 14 million claimed menstrual-cycle data points, 100+ daily tasks, 50+ devices, and a 12-person medical team. The schedule spans repeated samples, hormonal and metabolic measures, wearables, functional and sensory testing, imaging, microbiome work, exercise, sleep, mood, and routine care. The dashboard treats this as one intensively measured N=1 program—not a completed dataset, representative female-health study, general protocol, or medical advice. A same-day dunk-training post was retained in the private source corpus but not promoted because it did not materially change the public knowledge model.
 
 ## Reading stance
 

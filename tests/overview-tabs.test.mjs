@@ -221,6 +221,23 @@ describe('home overview and dedicated changelog route', () => {
     }
   });
 
+  it('publishes the July 24–25 Immortals and Kate Tolo updates with evidence boundaries', () => {
+    for (const required of [
+      '2080690740532019638',
+      'x-twitter-daily-2026-07-25.md',
+      'infrastructure for individuals to discover and resolve their own health issues',
+      'not evidence that the platform can diagnose or cure disease',
+      '2081098595378545131',
+      'x-twitter-daily-2026-07-26.md',
+      '14 million menstrual-cycle data points',
+      '100+ daily tasks, 50+ devices, and a 12-person medical team',
+      'not a completed dataset, general female-health protocol, or medical advice',
+      'confidence: \'medium\'',
+    ]) {
+      assert.match(signalsSource, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `latest curated signals should preserve: ${required}`);
+    }
+  });
+
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
     for (const phrase of ['watchQueue', 'sourceCounts', 'curatedActivity', 'Protocol tabs backed']) {
       assert.match(indexSource, new RegExp(phrase), `overview should use real sidebar data: ${phrase}`);

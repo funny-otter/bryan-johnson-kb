@@ -1,5 +1,33 @@
 export const curatedSignals = [
   {
+    id: 'kate-tolo-100-day-operational-baseline',
+    title: 'Kate Tolo’s female-health baseline becomes an operational 100-day program',
+    date: '2026-07-25',
+    badge: 'Female health',
+    kind: 'tweet',
+    topic: 'Female health / N=1 measurement',
+    summary:
+      'Johnson said Tolo is collecting 14 million menstrual-cycle data points during a 100-day baseline with 100+ daily tasks, 50+ devices, and a 12-person medical team before interventions begin. The schedule spans samples, metabolic and hormonal measures, wearables, functional testing, imaging, microbiome work, exercise, sleep, and routine care. The dashboard treats this as one intensive N=1 program—not a completed dataset, general female-health protocol, or medical advice.',
+    href: '/metrics/',
+    tweetId: '2081098595378545131',
+    confidence: 'medium',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-07-26.md#Tweet-2081098595378545131'],
+  },
+  {
+    id: 'immortals-individual-disease-resolution-infrastructure',
+    title: 'Immortals expands its stated mission into individual disease-resolution infrastructure',
+    date: '2026-07-24',
+    badge: 'Strategy',
+    kind: 'tweet',
+    topic: 'Disease resolution / personalized biotech',
+    summary:
+      'Johnson said Immortals is building infrastructure for individuals to discover and resolve their own health issues while retaining its nutrition, GLP-1, medicine, hormone, peptide, biomarker, and concierge layers. He named iPSCs, organoids, deep cellular characterization, and personalized therapy development as additions. This is strategic and product positioning—not evidence that the platform can diagnose or cure disease, that the technologies are clinically available through Immortals, or that any treatment is safe or effective.',
+    href: '/longevity/',
+    tweetId: '2080690740532019638',
+    confidence: 'medium',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-07-25.md#Tweet-2080690740532019638'],
+  },
+  {
     id: 'sauna-checklist-meal-timing-feedback',
     title: 'Johnson turns his sauna experiment into a public checklist',
     date: '2026-07-23',
@@ -725,6 +753,18 @@ export const curatedSignals = [
 
 export const watchQueue = [
   {
+    title: 'Immortals disease-resolution infrastructure evidence',
+    summary: 'Watch for named facilities and partners, cell-line and organoid characterization, diagnostic validation, regulatory and ethics oversight, consent/data governance, therapy-selection methods, safety controls, and measured patient outcomes. The July 24 post is a company strategy statement—not evidence of an operational disease-resolution platform or cure.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-25.md',
+    href: '/longevity/',
+  },
+  {
+    title: 'Kate Tolo baseline methods, results, and data governance',
+    summary: 'Watch whether the 100-day baseline is published with metric definitions, device and assay methods, cycle-phase alignment, missing-data handling, preregistered analyses, adverse events, privacy/consent controls, and complete results. The current source describes collection burden and intent, not validated female-health findings.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-26.md',
+    href: '/metrics/',
+  },
+  {
     title: 'Autologous iPSC characterization and disease-resolution evidence',
     summary: 'Watch for the named cell line or laboratory, pluripotency and genomic-stability characterization, cited clinical trials, the diagnosis or target tissue, differentiation and delivery details, tumor/rejection safeguards, ethics oversight, and measured outcomes. The July 21 “clone” post is Johnson’s speculative framing—not evidence of a human clone, transplantable organ, or available treatment.',
     source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md',
@@ -748,12 +788,7 @@ export const watchQueue = [
     source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-17.md',
     href: '/longevity/',
   },
-  {
-    title: 'Kate Tolo 90-day measurement release',
-    summary: 'Watch whether the projected 1,900 biomarkers / 14.8M data points are actually published with definitions, cycle-phase context, missing-data handling, interpretation limits, and governance for highly sensitive female-health data.',
-    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-16.md',
-    href: '/metrics/',
-  },
+
   {
     title: 'RHR “Sovereignty Index” validity',
     summary: 'Watch whether Johnson publishes the underlying trend, explains measurement conditions and confounders, and separates within-person behavioral feedback from clinical targets or population-wide vagal-tone claims.',
@@ -865,16 +900,18 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '5', detail: '5 Jul 23 posts captured · x-twitter-daily-2026-07-24.md' },
-  { label: 'Previous daily X capture', value: '2', detail: '2 Jul 22 posts captured · x-twitter-daily-2026-07-23.md' },
+  { label: 'Latest daily X capture', value: '2', detail: '2 Jul 25 posts captured · x-twitter-daily-2026-07-26.md' },
+  { label: 'Previous daily X capture', value: '2', detail: '2 Jul 24 posts captured · x-twitter-daily-2026-07-25.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '52', detail: '12 knowledge pages + 40 update pages after this pass' },
+  { label: 'Public site content', value: '53', detail: '12 knowledge pages + 41 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-07-26', x_post: 2, third_party: 0, wiki_update: 1, site_update: 1 },
+  { date: '2026-07-25', x_post: 2, third_party: 0, wiki_update: 1, site_update: 0 },
   { date: '2026-07-24', x_post: 5, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-23', x_post: 2, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-22', x_post: 4, third_party: 0, wiki_update: 1, site_update: 1 },
