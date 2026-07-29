@@ -138,6 +138,15 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-07-28',
+    label: 'Aviation essay supplies an origin story for the “Autonomous Self”',
+    summary: 'Johnson said aviation checklists, protocols, and active risk management inspired him to move food decisions to a pre-committed morning-authored system and later connect Kernel, AI, and automation to Blueprint and Don’t Die. The KB records an autobiographical account and behavior-design model—not evidence that the routine treats depression, a universal meal-timing rule, or a generalizable outcome.',
+    relatedHref: '/knowledge/blueprint-protocol/',
+    relatedTitle: 'Blueprint Protocol',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-29.md',
+    confidence: 'medium',
+  },
+  {
     date: '2026-07-25',
     label: 'Kate Tolo baseline becomes a 100-day operational measurement program',
     summary: 'Johnson described a pre-intervention baseline with 14 million claimed menstrual-cycle data points, 100+ daily tasks, 50+ devices, and a 12-person medical team. The published schedule makes the collection burden and modality mix visible; the KB records one intensive N=1 program—not completed results, a representative female-health protocol, or medical advice.',

@@ -4,7 +4,7 @@ slug: dont-die
 type: concept
 sourcePath: concepts/dont-die.md
 created: '2026-05-22'
-updated: '2026-07-26'
+updated: '2026-07-29'
 tags:
   - longevity
   - biohacking
@@ -12,6 +12,7 @@ tags:
   - protocol
   - open-question
 sources:
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-29.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-25.md
   - raw/articles/bryan-johnson/dont-die-bryan-johnson-2026-05-22.md
   - raw/articles/bryan-johnson/bryan-johnson-protocol-2026-05-22.md
@@ -43,6 +44,8 @@ In the health context, Don't Die generalizes [project blueprint](/knowledge/proj
 ## Philosophy
 
 Don't Die reframes “normal” self-destructive behaviors as a kind of violence against future selves. In the official narrative, Johnson's “Evening Bryan” overeating harms “Sleep Bryan,” “Morning Bryan,” “Work Bryan,” and “Dad Bryan.” This is a behavior-design move: rather than treating health decisions as preference satisfaction, it moralizes actions that increase “speed to death.” 
+
+On July 28, 2026, Johnson connected that “Morning Bryan” device to aviation. He said pilot training taught him that safety systems should assume human fallibility, so the higher-willpower morning self should write the operating checklist rather than asking the stressed evening self to improvise. He then linked aviation culture, Kernel, AI, and automation to the “Autonomous Self” and described Don’t Die as the corresponding system and philosophy. This is a source-stated origin narrative—not evidence that his food cutoff or broader regimen is a general treatment for overeating or depression.
 
 The slogan also reaches beyond health. Johnson's X/Twitter messaging in May 2026 included statements such as “Humanity is building three things right now: energy, intelligence, life” and “we may be the first generation to not die,” while also encouraging friends/family to adopt life-promoting habits. In practice, Don't Die functions as both serious longevity ideology and internet-native identity/brand. 
 

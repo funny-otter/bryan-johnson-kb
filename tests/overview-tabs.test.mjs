@@ -238,6 +238,18 @@ describe('home overview and dedicated changelog route', () => {
     }
   });
 
+  it('publishes the July 28 aviation origin essay as bounded autobiographical context', () => {
+    for (const required of [
+      '2082234024001704356',
+      'x-twitter-daily-2026-07-29.md',
+      'flight training taught him to treat safety and performance as systems',
+      'not evidence that the routine treats depression',
+      'confidence: \'medium\'',
+    ]) {
+      assert.match(signalsSource, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `aviation origin signal should preserve: ${required}`);
+    }
+  });
+
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
     for (const phrase of ['watchQueue', 'sourceCounts', 'curatedActivity', 'Protocol tabs backed']) {
       assert.match(indexSource, new RegExp(phrase), `overview should use real sidebar data: ${phrase}`);

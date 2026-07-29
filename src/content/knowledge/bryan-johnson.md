@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-07-26'
+updated: '2026-07-29'
 tags:
   - person
   - company
@@ -13,6 +13,7 @@ tags:
   - biomarkers
   - protocol
 sources:
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-29.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-26.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-25.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-24.md
@@ -64,6 +65,8 @@ Bryan Johnson is an American entrepreneur who moved from payments and deep-tech 
 Since 2021, Johnson's public center of gravity has been [project blueprint](/knowledge/project-blueprint/), a self-experiment intended to measure 70+ organs, quantify biological age, and use an evidence-and-biomarker feedback loop to choose interventions. In the original Project Blueprint post, Johnson described “firing Evening Bryan” from food decisions, shifting decision authority from preference to biomarkers, and treating Blueprint as a “stock ticker” for the current state of anti-aging science, albeit explicitly as an N=1 experiment. 
 
 Johnson’s worldview now fuses personal health optimization with the broader [dont die](/knowledge/dont-die/) frame: death, biological aging, planetary risk, and AI-era existential risk are treated as problems for coordinated measurement, technology, community, and norm formation. His home page presents three pillars: Don't Die as community, Protocol as freely available information, and Blueprint as interventions/commerce.  
+
+In a July 28 autobiographical essay, Johnson supplied a more detailed origin story for that system. He said flight training taught him to see safety and performance as products of checklists, protocols, and active risk management; he then applied that model to evening overeating by having his morning self pre-commit to a 5 p.m. food cutoff. Johnson says the combination of aviation culture, Kernel, AI, and automation later became his idea of an “Autonomous Self” and the first human prototype for Don’t Die. This is his personal retrospective, not evidence that the routine treats depression, that the cutoff is generally appropriate, or that his reported results generalize.
 
 ## Key entities and relationships
 

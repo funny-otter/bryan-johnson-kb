@@ -4,7 +4,7 @@ slug: blueprint-protocol
 type: concept
 sourcePath: concepts/blueprint-protocol.md
 created: '2026-05-22'
-updated: '2026-07-26'
+updated: '2026-07-29'
 tags:
   - protocol
   - longevity
@@ -13,6 +13,7 @@ tags:
   - biohacking
   - automation
 sources:
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-07-29.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-26.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-25.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-24.md
@@ -53,6 +54,12 @@ The protocol has the structure of an autonomous control system:
 3. **Policy:** diet, exercise, sleep, supplements, medications, light, heat, oral care, and other interventions.
 4. **Feedback:** repeat measurements and adjust.
 5. **Public ledger:** publish routines/results through the web, X/Twitter, and Blueprint content.
+
+### Aviation/checklist origin narrative
+
+In a July 28, 2026 autobiographical essay, Johnson traced this control-system style to flight training. He described aviation as a culture that assumes human fallibility and responds with preflight checks, phase-specific procedures, emergency manuals, and active risk management. He says he transferred that logic to food decisions by having “Morning Bryan” set a no-food-after-5 p.m. rule before the lower-willpower evening period, then expanded the system to food type, amount, and timing.
+
+The essay is useful for understanding why Blueprint is presented as automation rather than daily willpower: Johnson links aviation, Kernel, AI, and the “Autonomous Self” directly to Don’t Die. It remains a personal retrospective. It does not establish that the meal cutoff caused his reported sleep, weight, fatigue, or energy changes; it is not a universal meal-timing recommendation or evidence that the system treats depression.
 
 ## Current protocol stack
 

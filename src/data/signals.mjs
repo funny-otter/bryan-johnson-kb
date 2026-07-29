@@ -1,5 +1,19 @@
 export const curatedSignals = [
   {
+    id: 'aviation-checklists-autonomous-self-origin',
+    title: 'Johnson traces Blueprint and Don’t Die to aviation checklists',
+    date: '2026-07-28',
+    badge: 'Origin story',
+    kind: 'tweet',
+    topic: 'Behavior design / automation',
+    summary:
+      'In an autobiographical essay, Johnson said flight training taught him to treat safety and performance as systems built from checklists, protocols, and active risk management. He says that model helped him pre-commit to a 5 p.m. food cutoff and later shaped the “Autonomous Self” and Don’t Die. The dashboard treats this as Johnson’s personal origin narrative—not evidence that the routine treats depression, that a 5 p.m. cutoff is generally appropriate, or that his reported results generalize.',
+    href: '/knowledge/blueprint-protocol/',
+    tweetId: '2082234024001704356',
+    confidence: 'medium',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-07-29.md#Tweet-2082234024001704356'],
+  },
+  {
     id: 'kate-tolo-100-day-operational-baseline',
     title: 'Kate Tolo’s female-health baseline becomes an operational 100-day program',
     date: '2026-07-25',
