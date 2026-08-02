@@ -250,6 +250,19 @@ describe('home overview and dedicated changelog route', () => {
     }
   });
 
+  it('publishes the July 31 menstrual-blood sampling proposal with diagnostic boundaries', () => {
+    for (const required of [
+      '2083000689106772176',
+      'x-twitter-daily-2026-08-02.md',
+      'repeatable, non-invasive sample of the uterine environment',
+      'publishes no assay method or result',
+      'not a validated diagnostic test, established substitute for biopsy, general protocol, or medical advice',
+      "confidence: 'low'",
+    ]) {
+      assert.match(signalsSource, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `menstrual-blood signal should preserve: ${required}`);
+    }
+  });
+
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
     for (const phrase of ['watchQueue', 'sourceCounts', 'curatedActivity', 'Protocol tabs backed']) {
       assert.match(indexSource, new RegExp(phrase), `overview should use real sidebar data: ${phrase}`);

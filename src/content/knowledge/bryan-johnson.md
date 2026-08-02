@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-07-29'
+updated: '2026-08-02'
 tags:
   - person
   - company
@@ -13,6 +13,7 @@ tags:
   - biomarkers
   - protocol
 sources:
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-08-02.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-29.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-26.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-25.md
@@ -133,6 +134,8 @@ On July 23, Johnson translated his earlier sauna/HSP27 self-experiment into a br
 On July 24, Johnson made the disease-resolution pivot more concrete at the company level. He said Immortals would keep its nutrition, GLP-1, longevity-medicine, hormone, peptide, biomarker, and concierge-medicine work while adding induced pluripotent stem cells, organoids, deep cellular characterization, and personalized therapy development as infrastructure for individuals to discover and resolve their own health issues. This is a material strategy and product-direction signal, but not evidence that the proposed platform can diagnose or cure disease, that the named technologies are clinically available through Immortals, or that any treatment is safe or effective.
 
 On July 25, Johnson published an operational snapshot of Kate Tolo’s female-health program: a 100-day baseline before interventions, 14 million claimed menstrual-cycle data points, 100+ daily tasks, 50+ devices, and a 12-person medical team. The schedule spans repeated samples, hormonal and metabolic measures, wearables, functional and sensory testing, imaging, microbiome work, exercise, sleep, mood, and routine care. The dashboard treats this as one intensively measured N=1 program—not a completed dataset, representative female-health study, general protocol, or medical advice. A same-day dunk-training post was retained in the private source corpus but not promoted because it did not materially change the public knowledge model.
+
+On July 30–31, the feed added two useful N=1 examples. Johnson said one week of eating animal protein after six years of a plant-forward diet coincided with a 61% drop in two named fiber-associated bacteria and a 2.5× increase in bile-tolerant bacteria; he explicitly limited the claim to his own measured response rather than arguing against meat. Johnson and Kate Tolo also said they froze roughly 10 mL of menstrual blood and proposed it as a repeatable, non-invasive uterine sample. No assay method or result was published for the menstrual-blood proposal, so the dashboard promotes the new measurement category while treating both items as attributed self-experiments—not dietary guidance, a validated diagnostic test, a biopsy substitute, or medical advice.
 
 ## Reading stance
 

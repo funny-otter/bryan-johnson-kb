@@ -4,7 +4,7 @@ slug: biomarker-driven-longevity-protocols
 type: concept
 sourcePath: concepts/biomarker-driven-longevity-protocols.md
 created: '2026-05-22'
-updated: '2026-07-26'
+updated: '2026-08-02'
 tags:
   - longevity
   - biomarkers
@@ -13,6 +13,7 @@ tags:
   - protocol
   - evaluation
 sources:
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-08-02.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-26.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-25.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-24.md
@@ -115,6 +116,8 @@ On July 23, Johnson expanded the June sauna/HSP27 experiment into a public check
 On July 24, Johnson said Immortals was adding iPSCs, organoids, deep cellular characterization, and personalized therapy development to its existing health-product and concierge stack. Methodologically, this proposes a wider loop in which dense measurement feeds individualized disease models and candidate therapies. The expansion is still a company strategy claim: no operational pathway, diagnostic performance, safety process, treatment, cure, or outcome was published.
 
 On July 25, Johnson operationalized Kate Tolo’s female-health baseline as a 100-day, pre-intervention collection program with 14 million claimed menstrual-cycle data points, 100+ daily tasks, 50+ devices, and a 12-person medical team. The schedule spans repeated samples, hormonal and metabolic measures, wearables, functional and sensory testing, imaging, microbiome work, exercise, sleep, mood, and routine care. This makes measurement burden, modality coverage, and sequencing visible, but volume does not establish validity or actionability. One participant also cannot define a representative female-health protocol, and publication will need clear metric definitions, cycle-phase context, missing-data methods, privacy governance, and interpretation limits.
+
+On July 31, Johnson and Tolo added **menstrual-blood sampling** to that measurement program. They said roughly 10 mL was frozen at -80 °C and proposed menstrual blood as a repeatable, non-invasive view of the uterine environment, naming possible analyses for diseased tissue, microplastics, endocrine disruptors, PFAS, and endometrial, immune, and stem cells. The returned X reply is truncated after “We collected to…,” and no collection protocol, laboratory method, result, reference range, diagnostic performance, or clinical outcome was published. The dashboard therefore records a novel N=1 biosampling proposal—not a validated diagnostic test, established alternative to surgical biopsy, general female-health protocol, or medical advice.
 
 ## Practical evaluation checklist
 

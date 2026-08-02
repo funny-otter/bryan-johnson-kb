@@ -1,5 +1,19 @@
 export const curatedSignals = [
   {
+    id: 'menstrual-blood-uterine-sampling-claim',
+    title: 'Johnson proposes menstrual blood as a repeatable uterine sample',
+    date: '2026-07-31',
+    badge: 'Female health',
+    kind: 'tweet',
+    topic: 'Female health / biosampling',
+    summary:
+      'Johnson and Kate Tolo said they froze roughly 10 mL of menstrual blood and proposed it as a repeatable, non-invasive sample of the uterine environment. The post names possible analyses for diseased tissue, microplastics, endocrine disruptors, PFAS, and several cell types, but publishes no assay method or result. The dashboard treats this as an attributed N=1 measurement proposal—not a validated diagnostic test, established substitute for biopsy, general protocol, or medical advice.',
+    href: '/knowledge/biomarker-driven-longevity-protocols/',
+    tweetId: '2083000689106772176',
+    confidence: 'low',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-08-02.md#Tweet-2083000689106772176'],
+  },
+  {
     id: 'aviation-checklists-autonomous-self-origin',
     title: 'Johnson traces Blueprint and Don’t Die to aviation checklists',
     date: '2026-07-28',

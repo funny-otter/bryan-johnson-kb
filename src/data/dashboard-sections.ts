@@ -138,6 +138,15 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-07-31',
+    label: 'Menstrual blood proposed as a repeatable uterine sample',
+    summary: 'Johnson and Kate Tolo said they froze roughly 10 mL of menstrual blood and described it as a repeatable, non-invasive window into the uterine environment, naming possible analyses for diseased tissue, environmental contaminants, and cell populations. The KB records a source-stated N=1 measurement proposal—not a published assay result, validated diagnostic test, proven biopsy substitute, general female-health protocol, or medical advice.',
+    relatedHref: '/knowledge/biomarker-driven-longevity-protocols/',
+    relatedTitle: 'Biomarker-driven longevity protocols',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-08-02.md',
+    confidence: 'low',
+  },
+  {
     date: '2026-07-28',
     label: 'Aviation essay supplies an origin story for the “Autonomous Self”',
     summary: 'Johnson said aviation checklists, protocols, and active risk management inspired him to move food decisions to a pre-committed morning-authored system and later connect Kernel, AI, and automation to Blueprint and Don’t Die. The KB records an autobiographical account and behavior-design model—not evidence that the routine treats depression, a universal meal-timing rule, or a generalizable outcome.',
