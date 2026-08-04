@@ -263,12 +263,28 @@ describe('home overview and dedicated changelog route', () => {
     }
   });
 
+  it('publishes the August 3 Viagra/statin cancer claim without turning it into treatment guidance', () => {
+    for (const required of [
+      '2084315644338835803',
+      'x-twitter-daily-2026-08-04.md',
+      'Viagra plus statins may blunt cancer spread',
+      'study is preclinical and the human evidence is observational',
+      'not evidence that sildenafil, tadalafil, or statins prevent metastasis',
+      "confidence: 'low'",
+    ]) {
+      assert.match(signalsSource, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `Viagra/statin signal should preserve: ${required}`);
+    }
+  });
+
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
     for (const phrase of ['watchQueue', 'sourceCounts', 'curatedActivity', 'Protocol tabs backed']) {
       assert.match(indexSource, new RegExp(phrase), `overview should use real sidebar data: ${phrase}`);
     }
     for (const phrase of ['Enhanced Games follow-up', 'Kate Tolo baseline', 'Microplastics testing', '82 unique tweet URLs', '11 tweets with engagement']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `signals/sidebar data should include ${phrase}`);
+    }
+    for (const phrase of ['2 Aug 3 posts captured', '6 Jul 30–31 gap-fill posts', '12 knowledge pages + 44 update pages']) {
+      assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `source counts should include ${phrase}`);
     }
     assert.doesNotMatch(indexSource, /index \* 17|updateCards\[0\]|next curated publish pass/, 'right sidebar should not use deterministic placeholder formulas or newest-card watch copy');
   });

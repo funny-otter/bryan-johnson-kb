@@ -4,7 +4,7 @@ slug: blueprint-protocol
 type: concept
 sourcePath: concepts/blueprint-protocol.md
 created: '2026-05-22'
-updated: '2026-07-29'
+updated: '2026-08-04'
 tags:
   - protocol
   - longevity
@@ -13,6 +13,7 @@ tags:
   - biohacking
   - automation
 sources:
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-08-04.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-29.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-26.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-25.md
@@ -86,6 +87,8 @@ On June 12, he gave one concrete example: daily 5 mg Tadalafil/Cialis, which he 
 On June 22, Johnson announced a major expansion of the same prescription layer, now branded **Immortals Rx**, under the headline “microdose GLP-1s,” “peptides,” and “NAD+.” Newly listed items included semaglutide/Wegovy, tirzepatide/Zepbound, SGLT2 inhibitors Jardiance and Brenzavvy, additional sex/arousal/skin/hair peptide complexes, glutathione, and NAD+, alongside the existing tadalafil/metformin/minoxidil/tretinoin/acarbose stack. This is the strongest public signal so far that the Rx business is widening from a short list of Johnson’s own drugs into GLP-1, peptide, and NAD+ catalogs. It should be presented as Immortals/Blueprint commercial positioning; off-label longevity efficacy and safety are not established by the announcement.
 
 On July 22, Johnson made the GLP-1 catalog more specific, saying Immortals Rx now lists six options: Zepbound, Wegovy injections, Wegovy tablets, Foundayo tablets, compounded tirzepatide, and compounded semaglutide. He tied the list to weight loss, “food noise,” and possible longevity relevance after an Australia time-zone shift. This is a concrete commercial update, but the post names no studies and does not independently establish formulation status, availability, prescribing criteria, compounded-treatment safety, or efficacy for longevity.
+
+On August 3, Johnson extended the prescription narrative into cancer research by quote-posting a summary claiming that sildenafil plus statins may interfere with tumor-cell cholesterol use. He cited lower colorectal-cancer mortality and metastasis figures and proposed that the mechanism could apply to tadalafil, while explicitly saying the study was preclinical and human evidence observational. This does not announce a new product or protocol and does not establish that sildenafil, tadalafil, or statins prevent metastasis. It remains a low-confidence interpretation linked to an existing commercial prescription line, not treatment guidance.
 
 ### Jet lag and routine snapshots
 

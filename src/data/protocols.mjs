@@ -25,6 +25,7 @@ export const protocolCategories = [
         sourced('Treat the June 2026 Australian sun/skin-aging post as a skin-readout example inside the measurement loop, not as validated skincare advice.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md'),
         sourced('Treat the June 2026 Immortals Rx expansion separately from foundational habits; the GLP-1, SGLT2, peptide, and NAD+ catalog is a commercial/protocol claim that requires clinician oversight.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md'),
         sourced('Treat the July 2026 six-option GLP-1 catalog as an Immortals Rx commercial update. Johnson names branded and compounded listings, but the post does not establish formulation status, availability, prescribing criteria, or safety and efficacy for longevity use.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-23.md'),
+        sourced('Treat Johnson’s August 2026 Viagra-plus-statins cancer-spread post as a low-confidence intervention claim. He identifies the cited work as preclinical and the human evidence as observational; his proposed extension from sildenafil to tadalafil is not evidence of efficacy or a reason to combine medicines.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-08-04.md'),
         sourced('Treat Johnson’s June 2026 “one international trip per quarter” rule as a biomarker-derived personal boundary, not as a reader travel guideline.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md'),
         sourced('Treat the June 2026 inherited-cancer DNA + RNA panel as germline risk-stratification context, not a diagnosis, universal screening recommendation, or validation of Johnson’s early-surveillance statistics.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-26.md'),
         sourced('Treat the July 2026 AIG single-cell immune-receptor sequencing thread as Johnson’s diagnostic follow-through: a cellular/receptor-level measurement layer, not a validated therapy or reader test recommendation.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-04.md'),
@@ -69,6 +70,11 @@ export const protocolCategories = [
         label: 'Rx expansion',
         title: 'Immortals Rx now names six branded or compounded GLP-1 options',
         body: 'Johnson’s July 22 catalog lists Zepbound, Wegovy injections/tablets, Foundayo tablets, compounded tirzepatide, and compounded semaglutide. Keep it as attributed product-positioning—not medication advice or evidence of longevity safety, efficacy, formulation status, or availability.',
+      },
+      {
+        label: 'Cancer research claim',
+        title: 'A Viagra-plus-statins mechanism remains preclinical and observational',
+        body: 'Johnson linked a cancer-spread research summary to tadalafil after describing sildenafil/statin findings. His own post says the study is preclinical and human data observational, so the claim is not evidence that these medicines prevent metastasis and is not treatment guidance.',
       },
       {
         label: 'Jet lag N=1',
@@ -158,6 +164,7 @@ export const protocolCategories = [
         sourced('Classify daily Tadalafil/Cialis and similar drug claims as hypothesis-generating prescription-intervention claims unless independent clinical evidence supports the exact longevity use case.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md'),
         sourced('Classify Immortals Rx GLP-1, SGLT2, peptide, and NAD+ listings as commercial platform expansion; do not treat off-label longevity positioning as proven outcome evidence.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md'),
         sourced('Classify the July 2026 six-option GLP-1 catalog as a more specific commercial listing, not validation of weight-loss or longevity efficacy, compounded-treatment safety, prescribing criteria, formulation status, or availability.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-23.md'),
+        sourced('Classify Johnson’s August 2026 Viagra-plus-statins cancer-spread post as a low-confidence, product-adjacent intervention claim. The post itself labels the study preclinical and human evidence observational, and its extension from sildenafil to tadalafil is not established treatment evidence.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-08-04.md'),
         sourced('Classify sauna/HSP27 claims as mechanistic biomarker self-experimentation unless replicated and tied to clinically meaningful outcomes.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-17.md'),
         sourced('Classify the July 2026 sauna checklist as an attributed expansion from N=1 biomarker testing into public protocol guidance; its frequency, heat-dose, fertility, microplastics, recovery, hydration, and environmental claims require independent evidence and safety context.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-24.md'),
         sourced('Classify the Midjourney scanner essay as a measurement-modality argument; structural imaging may complement chemical and functional data, but the third-party device and routine-screening claims need validation.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-24.md'),

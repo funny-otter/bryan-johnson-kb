@@ -1,5 +1,19 @@
 export const curatedSignals = [
   {
+    id: 'viagra-statin-cancer-spread-claim',
+    title: 'Johnson says Viagra plus statins may blunt cancer spread',
+    date: '2026-08-03',
+    badge: 'Research claim',
+    kind: 'tweet',
+    topic: 'Cancer / prescription drugs',
+    summary:
+      'Johnson quote-posted a research summary claiming sildenafil plus statins may disrupt tumor-cell cholesterol use and cited lower colorectal-cancer mortality and metastasis figures. He also proposed that the mechanism could apply to tadalafil, while stating that the underlying study is preclinical and the human evidence is observational. The dashboard treats this as a low-confidence, product-adjacent research claim—not evidence that sildenafil, tadalafil, or statins prevent metastasis, a reason to combine medicines, or medical advice.',
+    href: '/knowledge/blueprint-protocol/',
+    tweetId: '2084315644338835803',
+    confidence: 'low',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-08-04.md#Tweet-2084315644338835803'],
+  },
+  {
     id: 'menstrual-blood-uterine-sampling-claim',
     title: 'Johnson proposes menstrual blood as a repeatable uterine sample',
     date: '2026-07-31',
@@ -928,16 +942,18 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '2', detail: '2 Jul 25 posts captured · x-twitter-daily-2026-07-26.md' },
-  { label: 'Previous daily X capture', value: '2', detail: '2 Jul 24 posts captured · x-twitter-daily-2026-07-25.md' },
+  { label: 'Latest daily X capture', value: '2', detail: '2 Aug 3 posts captured · x-twitter-daily-2026-08-04.md' },
+  { label: 'Previous daily X capture', value: '6', detail: '6 Jul 30–31 gap-fill posts · x-twitter-daily-2026-08-02.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '53', detail: '12 knowledge pages + 41 update pages after this pass' },
+  { label: 'Public site content', value: '56', detail: '12 knowledge pages + 44 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-08-04', x_post: 2, third_party: 0, wiki_update: 1, site_update: 1 },
+  { date: '2026-08-02', x_post: 6, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-26', x_post: 2, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-25', x_post: 2, third_party: 0, wiki_update: 1, site_update: 0 },
   { date: '2026-07-24', x_post: 5, third_party: 0, wiki_update: 1, site_update: 1 },
