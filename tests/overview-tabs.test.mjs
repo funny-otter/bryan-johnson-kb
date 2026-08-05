@@ -276,6 +276,20 @@ describe('home overview and dedicated changelog route', () => {
     }
   });
 
+  it('publishes the August 4 Kate Tolo build comparison as an operational claim, not clinical proof', () => {
+    for (const required of [
+      '2084681696205766914',
+      'x-twitter-daily-2026-08-05.md',
+      'own longevity infrastructure took five years',
+      'built Kate Tolo’s female-health protocol in 90 days',
+      'did not define “better,” publish comparative measurements, or report clinical outcomes',
+      'not evidence that Tolo’s protocol is clinically superior',
+      "confidence: 'low'",
+    ]) {
+      assert.match(signalsSource, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `Kate Tolo build-comparison signal should preserve: ${required}`);
+    }
+  });
+
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
     for (const phrase of ['watchQueue', 'sourceCounts', 'curatedActivity', 'Protocol tabs backed']) {
       assert.match(indexSource, new RegExp(phrase), `overview should use real sidebar data: ${phrase}`);
@@ -283,7 +297,7 @@ describe('home overview and dedicated changelog route', () => {
     for (const phrase of ['Enhanced Games follow-up', 'Kate Tolo baseline', 'Microplastics testing', '82 unique tweet URLs', '11 tweets with engagement']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `signals/sidebar data should include ${phrase}`);
     }
-    for (const phrase of ['2 Aug 3 posts captured', '6 Jul 30–31 gap-fill posts', '12 knowledge pages + 44 update pages']) {
+    for (const phrase of ['3 Aug 4 posts captured', '2 Aug 3 posts captured', '12 knowledge pages + 45 update pages']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `source counts should include ${phrase}`);
     }
     assert.doesNotMatch(indexSource, /index \* 17|updateCards\[0\]|next curated publish pass/, 'right sidebar should not use deterministic placeholder formulas or newest-card watch copy');

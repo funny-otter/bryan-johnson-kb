@@ -4,7 +4,7 @@ slug: blueprint-protocol
 type: concept
 sourcePath: concepts/blueprint-protocol.md
 created: '2026-05-22'
-updated: '2026-08-04'
+updated: '2026-08-05'
 tags:
   - protocol
   - longevity
@@ -13,6 +13,7 @@ tags:
   - biohacking
   - automation
 sources:
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-08-05.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-08-04.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-29.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-26.md
@@ -133,6 +134,8 @@ On July 21, the eye-health agenda gained a concrete measurement but still no pub
 On July 24, Johnson described Immortals’ disease-resolution pivot as a company buildout. Alongside the existing nutrition, prescription, hormone, peptide, biomarker, and concierge layers, he named induced pluripotent stem cells, organoids, deep cellular characterization, and personalized therapy development as new directions intended to help individuals investigate and resolve their own health issues. This extends Blueprint’s measure–intervene–retest loop toward personalized biotech R&D, but the post does not establish an operational clinical platform, diagnostic accuracy, treatment safety, or any cure or outcome.
 
 On July 25, Johnson published a more operational version of Kate Tolo’s baseline: 100 days before interventions, 14 million claimed menstrual-cycle data points, 100+ tasks a day, 50+ devices, and a 12-person medical team. The schedule combines repeated biological samples, hormone and metabolic measures, functional and sensory tests, imaging, wearables, microbiome work, exercise, sleep, mood, and routine care. Its dashboard value is visibility into protocol operations and burden; it remains a single N=1 program with no published results, validated general female-health protocol, or reader guidance.
+
+On August 4, Johnson compared the build process directly: he said his own longevity infrastructure took five years to assemble, including the doctors, protocols, measurements, and mistakes, while his team built Tolo’s protocol in 90 days and made it “better.” The notable signal is operational rather than clinical—Blueprint is being presented as infrastructure a team can reproduce and improve, not only as Johnson’s personal N=1 routine. The source does not define “better,” publish comparative measurements, or report outcomes, so it is not evidence that Tolo’s protocol is clinically superior, generalizable, or appropriate for readers.
 
 ## Automation analogy
 

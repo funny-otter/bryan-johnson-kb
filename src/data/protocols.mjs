@@ -38,6 +38,7 @@ export const protocolCategories = [
         sourced('Treat the July 2026 ocular tear-panel post as an organ-specific measurement plan. Johnson reports a $1,800 specialty-lab panel across 15 biomarkers, but publishes no result, diagnosis, clinical utility, intervention, or outcome.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md'),
         sourced('Treat Immortals’ July 2026 disease-resolution infrastructure expansion as Johnson’s strategy and product positioning. The iPSC, organoid, deep-cell-characterization, and personalized-therapy directions do not establish an operational clinical platform, diagnosis, treatment, cure, safety, or outcome.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-25.md'),
         sourced('Treat the July 2026 operational Kate Tolo baseline as an N=1 measurement program. The 100-day, 14-million-data-point plan with 100+ daily tasks, 50+ devices, and a 12-person team is not completed evidence, a representative female-health protocol, or reader guidance.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-26.md'),
+        sourced('Treat Johnson’s August 2026 claim that Kate Tolo’s protocol was built in 90 days and is “better” than his five-year build as an operational comparison only. No quality criteria, comparative measurements, outcomes, or external validation were published.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-08-05.md'),
         sourced('Preserve medical-caution framing: this page summarizes Johnson/Blueprint practice, not personal treatment advice.', 'concepts/biomarker-driven-longevity-protocols.md'),
       ],
       donts: [
@@ -138,8 +139,8 @@ export const protocolCategories = [
       },
       {
         label: 'Female-health baseline',
-        title: 'Kate Tolo’s 100-day baseline makes the collection burden visible',
-        body: 'Johnson describes 14 million data points, 100+ daily tasks, 50+ devices, and a 12-person team before interventions. The source documents one intensive N=1 program—not completed results, a general protocol, or medical advice.',
+        title: 'Kate Tolo’s baseline becomes a team-built protocol claim',
+        body: 'Johnson describes 14 million data points, 100+ daily tasks, 50+ devices, and a 12-person team before interventions. He later said the team built Tolo’s protocol in 90 days after his own five-year infrastructure build and called it “better,” without defining quality criteria or publishing comparative outcomes. The sources document one intensive N=1 program and an operational claim—not completed results, clinical superiority, a general protocol, or medical advice.',
       },
       {
         label: 'Skin readout',

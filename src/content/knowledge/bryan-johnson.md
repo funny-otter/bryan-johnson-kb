@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-08-04'
+updated: '2026-08-05'
 tags:
   - person
   - company
@@ -13,6 +13,7 @@ tags:
   - biomarkers
   - protocol
 sources:
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-08-05.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-08-04.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-08-02.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-29.md
@@ -139,6 +140,8 @@ On July 25, Johnson published an operational snapshot of Kate Tolo’s female-he
 On July 30–31, the feed added two useful N=1 examples. Johnson said one week of eating animal protein after six years of a plant-forward diet coincided with a 61% drop in two named fiber-associated bacteria and a 2.5× increase in bile-tolerant bacteria; he explicitly limited the claim to his own measured response rather than arguing against meat. Johnson and Kate Tolo also said they froze roughly 10 mL of menstrual blood and proposed it as a repeatable, non-invasive uterine sample. No assay method or result was published for the menstrual-blood proposal, so the dashboard promotes the new measurement category while treating both items as attributed self-experiments—not dietary guidance, a validated diagnostic test, a biopsy substitute, or medical advice.
 
 On August 3, Johnson quote-posted a cancer-research summary claiming that Viagra plus statins may blunt cancer spread. He cited 18% lower colorectal-cancer mortality and 15% lower metastasis, described a cholesterol-related mechanism, and proposed that the mechanism could apply to tadalafil. Johnson also stated that the underlying study was preclinical and that human evidence was observational. The dashboard therefore records a low-confidence, product-adjacent research claim—not evidence that sildenafil, tadalafil, or statins prevent metastasis, a reason to combine medicines, or medical advice. A separate report of feeling better after a 48-hour social-media fast was skipped as a subjective, low-signal self-report.
+
+On August 4, Johnson said his longevity infrastructure took five years to build, while his team assembled Kate Tolo’s female-health protocol in 90 days and made it “better.” The comparison is useful as a strategy signal: he is presenting the measurement system as something a team can reproduce and improve rather than only as his personal routine. Because the post defines no quality criteria and publishes no comparative measurements or outcomes, the dashboard does not treat it as evidence of clinical superiority or generalizability. His same-day AI reflection and bowel-movement reaction were left out as philosophical or low-signal chronology.
 
 ## Reading stance
 

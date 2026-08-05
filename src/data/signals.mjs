@@ -1,5 +1,19 @@
 export const curatedSignals = [
   {
+    id: 'kate-tolo-protocol-build-comparison',
+    title: 'Johnson says Kate Tolo’s protocol was built faster—and calls it “better”',
+    date: '2026-08-04',
+    badge: 'Program claim',
+    kind: 'tweet',
+    topic: 'Female health / protocol operations',
+    summary:
+      'Johnson said his own longevity infrastructure took five years to assemble, while his team built Kate Tolo’s female-health protocol in 90 days and made it “better.” The comparison suggests that Blueprint is trying to turn one founder’s N=1 system into team-built, repeatable infrastructure. Johnson did not define “better,” publish comparative measurements, or report clinical outcomes, so the dashboard treats this as an attributed operational claim—not evidence that Tolo’s protocol is clinically superior, validated for other people, or medical advice.',
+    href: '/knowledge/blueprint-protocol/',
+    tweetId: '2084681696205766914',
+    confidence: 'low',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-08-05.md#Tweet-2084681696205766914'],
+  },
+  {
     id: 'viagra-statin-cancer-spread-claim',
     title: 'Johnson says Viagra plus statins may blunt cancer spread',
     date: '2026-08-03',
@@ -942,16 +956,17 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '2', detail: '2 Aug 3 posts captured · x-twitter-daily-2026-08-04.md' },
-  { label: 'Previous daily X capture', value: '6', detail: '6 Jul 30–31 gap-fill posts · x-twitter-daily-2026-08-02.md' },
+  { label: 'Latest daily X capture', value: '3', detail: '3 Aug 4 posts captured · x-twitter-daily-2026-08-05.md' },
+  { label: 'Previous daily X capture', value: '2', detail: '2 Aug 3 posts captured · x-twitter-daily-2026-08-04.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '56', detail: '12 knowledge pages + 44 update pages after this pass' },
+  { label: 'Public site content', value: '57', detail: '12 knowledge pages + 45 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-08-05', x_post: 3, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-08-04', x_post: 2, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-08-02', x_post: 6, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-07-26', x_post: 2, third_party: 0, wiki_update: 1, site_update: 1 },
