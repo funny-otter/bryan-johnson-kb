@@ -290,6 +290,28 @@ describe('home overview and dedicated changelog route', () => {
     }
   });
 
+  it('publishes the August 12–13 measurement and brain-clearance posts with evidence boundaries', () => {
+    for (const required of [
+      '2087620254797320493',
+      '2087974099926831116',
+      '2087979402831507514',
+      'x-twitter-daily-2026-08-13.md',
+      'x-twitter-daily-2026-08-14.md',
+      '47-tube, 250 mL blood draw',
+      'brain, skin, strength, balance, reaction-speed, and mobility tests',
+      'Neither post supplied results or test-validity evidence',
+      'unnamed mouse study',
+      'no paper, human data, or translational safety evidence',
+      'not a Blueprint intervention, demonstrated human therapy, or medical advice',
+      "confidence: 'low'",
+    ]) {
+      assert.match(signalsSource, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `August measurement/research signals should preserve: ${required}`);
+    }
+
+    assert.match(protocolsSource, /47-tube, 250 mL blood draw[\s\S]*no assay list, results, diagnosis, clinical interpretation/, 'protocol guidance should keep the blood draw in the scale-and-methods lane');
+    assert.match(protocolsSource, /brain-clearance post as an uncited, preclinical research lead[\s\S]*no named paper, human evidence, translational safety data/, 'longevity guidance should keep the brain-clearance post preclinical');
+  });
+
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
     for (const phrase of ['watchQueue', 'sourceCounts', 'curatedActivity', 'Protocol tabs backed']) {
       assert.match(indexSource, new RegExp(phrase), `overview should use real sidebar data: ${phrase}`);
@@ -297,7 +319,7 @@ describe('home overview and dedicated changelog route', () => {
     for (const phrase of ['Enhanced Games follow-up', 'Kate Tolo baseline', 'Microplastics testing', '82 unique tweet URLs', '11 tweets with engagement']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `signals/sidebar data should include ${phrase}`);
     }
-    for (const phrase of ['3 Aug 4 posts captured', '2 Aug 3 posts captured', '12 knowledge pages + 45 update pages']) {
+    for (const phrase of ['3 Aug 13 posts captured', '2 Aug 12 posts captured', '12 knowledge pages + 46 update pages']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `source counts should include ${phrase}`);
     }
     assert.doesNotMatch(indexSource, /index \* 17|updateCards\[0\]|next curated publish pass/, 'right sidebar should not use deterministic placeholder formulas or newest-card watch copy');

@@ -4,7 +4,7 @@ slug: biomarker-driven-longevity-protocols
 type: concept
 sourcePath: concepts/biomarker-driven-longevity-protocols.md
 created: '2026-05-22'
-updated: '2026-08-05'
+updated: '2026-08-14'
 tags:
   - longevity
   - biomarkers
@@ -13,6 +13,8 @@ tags:
   - protocol
   - evaluation
 sources:
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-08-14.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-08-13.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-08-05.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-08-04.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-08-02.md
@@ -124,6 +126,10 @@ On July 31, Johnson and Tolo added **menstrual-blood sampling** to that measurem
 On August 3, Johnson added a pharmacology claim rather than a new measurement modality. He quote-posted a summary saying Viagra plus statins may blunt cancer spread, cited 18% lower colorectal-cancer mortality and 15% lower metastasis, and proposed that a sildenafil mechanism could apply to tadalafil. His own caveat is decisive for classification: the underlying study was preclinical and the human evidence observational. The dashboard therefore treats this as a low-confidence intervention hypothesis linked to Johnson’s prescription-product narrative—not evidence of causality, proof that tadalafil prevents metastasis, a reason to combine drugs, or medical advice.
 
 On August 4, Johnson made a new operational claim about transferring the measurement system: his own longevity infrastructure took five years to build, while a team assembled Kate Tolo’s protocol in 90 days and, in his words, made it “better.” This suggests a shift from one founder’s bespoke N=1 loop toward repeatable, team-mediated protocol infrastructure. It does not yet show that transferability works: the post supplies no definition of quality, comparative measurements, completed outcomes, external validation, or evidence that the protocol generalizes beyond Tolo.
+
+On August 12, Johnson reported another large collection event: 47 tubes and 250 mL of blood for single-cell sequencing of circulating immune cells alongside inflammation, oxidative-stress, vascular, metabolic/lipid, glucose-regulation, and brain-related measurements. Compared with his July AIG draw, this is an expansion or repetition of the cellular and multi-domain measurement layer rather than a new clinical result. The source publishes no assay list, findings, diagnosis, intervention, or interpretation, and collection volume is not evidence of validity or actionability.
+
+On August 13, he paired that laboratory-scale posture with a public Baseten event listing biological-age evaluations for brain, skin, strength, balance, reaction speed, and mobility. This broadens the visible functional-testing surface but does not establish that the tests measure one coherent “biological age,” predict outcomes, or support treatment decisions. A separate post that day summarized a mouse brain-clearance gene-therapy result without naming the paper; it belongs in preclinical research watch, not in the validated measurement or intervention tier.
 
 ## Practical evaluation checklist
 

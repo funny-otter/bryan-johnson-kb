@@ -39,6 +39,8 @@ export const protocolCategories = [
         sourced('Treat Immortals’ July 2026 disease-resolution infrastructure expansion as Johnson’s strategy and product positioning. The iPSC, organoid, deep-cell-characterization, and personalized-therapy directions do not establish an operational clinical platform, diagnosis, treatment, cure, safety, or outcome.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-25.md'),
         sourced('Treat the July 2026 operational Kate Tolo baseline as an N=1 measurement program. The 100-day, 14-million-data-point plan with 100+ daily tasks, 50+ devices, and a 12-person team is not completed evidence, a representative female-health protocol, or reader guidance.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-26.md'),
         sourced('Treat Johnson’s August 2026 claim that Kate Tolo’s protocol was built in 90 days and is “better” than his five-year build as an operational comparison only. No quality criteria, comparative measurements, outcomes, or external validation were published.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-08-05.md'),
+        sourced('Treat Johnson’s August 2026 47-tube, 250 mL blood draw as a scale and methods update. The post names single-cell immune sequencing and broad measurement domains but publishes no assay list, results, diagnosis, clinical interpretation, or evidence that collection volume improves outcomes.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-08-13.md'),
+        sourced('Treat the Baseten biological-age event as public measurement positioning. Its brain, skin, strength, balance, reaction-speed, and mobility domains are not evidence that the tests form a validated or actionable biological-age score.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-08-14.md'),
         sourced('Preserve medical-caution framing: this page summarizes Johnson/Blueprint practice, not personal treatment advice.', 'concepts/biomarker-driven-longevity-protocols.md'),
       ],
       donts: [
@@ -143,6 +145,11 @@ export const protocolCategories = [
         body: 'Johnson describes 14 million data points, 100+ daily tasks, 50+ devices, and a 12-person team before interventions. He later said the team built Tolo’s protocol in 90 days after his own five-year infrastructure build and called it “better,” without defining quality criteria or publishing comparative outcomes. The sources document one intensive N=1 program and an operational claim—not completed results, clinical superiority, a general protocol, or medical advice.',
       },
       {
+        label: 'Measurement scale',
+        title: 'A 47-tube draw and bioage event add breadth, not validated outcomes',
+        body: 'Johnson reports single-cell immune sequencing plus multi-domain blood measures, then promotes functional tests across brain, skin, strength, balance, reaction speed, and mobility. No results, assay performance, coherent biological-age validation, diagnosis, or reader action is published.',
+      },
+      {
         label: 'Skin readout',
         title: 'Australian sun exposure becomes another measured endpoint',
         body: 'Johnson claims one week in Australian sun increased his skin-aging metric by about 5% despite protection. Present this as self-measured UV-risk context, not as independent proof or individualized skincare advice.',
@@ -180,6 +187,7 @@ export const protocolCategories = [
         sourced('Classify Johnson’s July 2026 autologous iPSC “clone” post as speculative regenerative-biotech positioning. It supplies no cell-line characterization, cited trial, organ, delivery method, safety evidence, or outcome and is not evidence of a human clone or available treatment.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md'),
         sourced('Classify Immortals’ July 2026 disease-resolution infrastructure expansion as strategic frontier-biotech positioning. Naming iPSCs, organoids, deep cellular characterization, and personalized therapy development does not establish a clinically available platform or evidence of diagnosis, treatment, safety, cure, or outcome.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-25.md'),
         sourced('Classify the July 2026 operational Kate Tolo baseline as measurement-scale ambition and protocol operations. The 100-day N=1 plan is not completed or independently validated female-health evidence, and its sensitive-data methods and governance remain unpublished.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-26.md'),
+        sourced('Classify Johnson’s August 2026 brain-clearance post as an uncited, preclinical research lead. The source describes one intranasal gene therapy in mice but supplies no named paper, human evidence, translational safety data, Blueprint intervention, or clinical outcome.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-08-14.md'),
         sourced('Keep the Immortals rename and immortality search-trend narrative in the ideology/brand lane; it does not increase confidence in the 2039 forecast.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md'),
         sourced('Keep the June 2026 immortality manifesto and “Die Economy” frame in the ideology/forecast lane unless independent evidence supports the specific biological and AI claims.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md'),
         sourced('Keep critiques visible so biomarker improvements do not become unsupported longevity promises.', 'raw/articles/bryan-johnson/years-biomarkers-limits-2026-04-20.md'),
@@ -190,6 +198,11 @@ export const protocolCategories = [
       ],
     },
     cards: [
+      {
+        label: 'Brain research watch',
+        title: 'Mouse drainage-flow restoration is not a human gene therapy',
+        body: 'Johnson says one intranasal gene therapy restored downstream brain-fluid flow to young-adult levels in aged mice. Without the named paper, full methods, replication, durability, adverse-event data, or human studies, this remains a low-confidence preclinical lead—not a Blueprint intervention or treatment recommendation.',
+      },
       {
         label: 'Strategy pivot',
         title: 'Disease resolution moves from agenda to stated company buildout',
@@ -386,6 +399,8 @@ export const protocolSectionsBySlug = {
 };
 
 export const conceptEntries = [
+  { title: 'Mouse brain-clearance gene-therapy research watch', confidence: 'low', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-08-14.md', summary: 'Johnson summarized an unnamed mouse study reporting restored downstream brain-fluid flow after one intranasal gene therapy; an uncited preclinical lead, not a Blueprint intervention, human treatment, or medical advice.' },
+  { title: 'Single-cell and functional bioage measurement expansion', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-08-13.md + raw/articles/bryan-johnson/x-twitter-daily-2026-08-14.md', summary: 'A 47-tube blood draw and Baseten event widen Johnson’s molecular and functional measurement surfaces, but publish no results or evidence that the tests are clinically valid, coherent, or actionable.' },
   { title: 'Kate Tolo 100-day operational baseline', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-26.md', summary: 'Johnson describes 14M menstrual-cycle data points, 100+ daily tasks, 50+ devices, and a 12-person medical team before interventions; one intensive N=1 program, not completed female-health evidence or medical advice.' },
   { title: 'Immortals individual disease-resolution infrastructure', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-25.md', summary: 'Johnson says Immortals is adding iPSCs, organoids, deep cellular characterization, and personalized therapy development; company strategy, not evidence of a clinically available diagnosis or cure platform.' },
   { title: 'Sauna checklist / meal-timing feedback', confidence: 'medium', source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-24.md', summary: 'Johnson expands his sauna N=1 into attributed public guidance and reports a 42-to-44 bpm sleep-heart-rate difference after a two-hour meal shift; protocol positioning and personal observation, not validated causal evidence or medical advice.' },

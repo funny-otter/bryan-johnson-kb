@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-08-05'
+updated: '2026-08-14'
 tags:
   - person
   - company
@@ -13,6 +13,8 @@ tags:
   - biomarkers
   - protocol
 sources:
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-08-14.md
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-08-13.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-08-05.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-08-04.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-08-02.md
@@ -142,6 +144,10 @@ On July 30–31, the feed added two useful N=1 examples. Johnson said one week o
 On August 3, Johnson quote-posted a cancer-research summary claiming that Viagra plus statins may blunt cancer spread. He cited 18% lower colorectal-cancer mortality and 15% lower metastasis, described a cholesterol-related mechanism, and proposed that the mechanism could apply to tadalafil. Johnson also stated that the underlying study was preclinical and that human evidence was observational. The dashboard therefore records a low-confidence, product-adjacent research claim—not evidence that sildenafil, tadalafil, or statins prevent metastasis, a reason to combine medicines, or medical advice. A separate report of feeling better after a 48-hour social-media fast was skipped as a subjective, low-signal self-report.
 
 On August 4, Johnson said his longevity infrastructure took five years to build, while his team assembled Kate Tolo’s female-health protocol in 90 days and made it “better.” The comparison is useful as a strategy signal: he is presenting the measurement system as something a team can reproduce and improve rather than only as his personal routine. Because the post defines no quality criteria and publishes no comparative measurements or outcomes, the dashboard does not treat it as evidence of clinical superiority or generalizability. His same-day AI reflection and bowel-movement reaction were left out as philosophical or low-signal chronology.
+
+On August 12–13, Johnson published two measurement-scale updates. He reported a 47-tube, 250 mL blood draw for single-cell sequencing of circulating immune cells plus inflammation, oxidative-stress, vascular, metabolic/lipid, glucose-regulation, and brain-related measures. The next day he promoted a Baseten event offering biological-age evaluations across brain, skin, strength, balance, reaction speed, and mobility. These posts show the project widening both its molecular and functional measurement surfaces, but they publish no results, test-performance evidence, clinical interpretation, or proof that the measurements improve outcomes.
+
+In a separate August 13 post, Johnson summarized an unnamed mouse study in which aging reportedly narrowed microscopic fluid-drainage openings behind the nose and reduced total outflow by 40–50%, while one intranasal gene therapy enlarged downstream drainage structures and restored flow to young-adult levels within six weeks. The dashboard records this as low-confidence preclinical research watch: the post supplied no paper, human evidence, translational safety data, or connection to a Blueprint intervention. The same batch’s uncited sleep/attractiveness claim, and the prior day’s uncited cooking/AGEs recommendation, were not promoted as reader guidance.
 
 ## Reading stance
 

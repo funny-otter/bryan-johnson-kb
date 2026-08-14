@@ -138,6 +138,24 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-08-13',
+    label: 'Mouse brain-clearance gene therapy enters Johnson’s research watch',
+    summary: 'Johnson summarized an unnamed mouse study reporting age-related narrowing of microscopic fluid-drainage openings behind the nose, a 40–50% fall in total outflow, and restoration of downstream flow after one intranasal gene therapy. The post supplied no paper, human evidence, or translational safety data, so the KB records a low-confidence preclinical lead—not a Blueprint intervention, demonstrated treatment, or medical advice.',
+    relatedHref: '/longevity/',
+    relatedTitle: 'Longevity protocol',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-08-14.md',
+    confidence: 'low',
+  },
+  {
+    date: '2026-08-12',
+    label: '47-tube draw broadens Johnson’s cellular and multi-domain measurement stack',
+    summary: 'Johnson reported a 250 mL blood draw across 47 tubes for single-cell sequencing of circulating immune cells plus inflammation, oxidative-stress, vascular, metabolic/lipid, glucose-regulation, and brain-related measurements. The post reported no results, diagnosis, treatment, or clinical interpretation, so the KB records measurement scale and method—not evidence that more testing improves outcomes or a reader testing plan.',
+    relatedHref: '/knowledge/biomarker-driven-longevity-protocols/',
+    relatedTitle: 'Biomarker-driven longevity protocols',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-08-13.md',
+    confidence: 'medium',
+  },
+  {
     date: '2026-07-31',
     label: 'Menstrual blood proposed as a repeatable uterine sample',
     summary: 'Johnson and Kate Tolo said they froze roughly 10 mL of menstrual blood and described it as a repeatable, non-invasive window into the uterine environment, naming possible analyses for diseased tissue, environmental contaminants, and cell populations. The KB records a source-stated N=1 measurement proposal—not a published assay result, validated diagnostic test, proven biopsy substitute, general female-health protocol, or medical advice.',

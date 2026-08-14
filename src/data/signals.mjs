@@ -1,5 +1,36 @@
 export const curatedSignals = [
   {
+    id: 'mouse-brain-clearance-gene-therapy-research-watch',
+    title: 'Johnson highlights a mouse brain-clearance gene-therapy result',
+    date: '2026-08-13',
+    badge: 'Research watch',
+    kind: 'tweet',
+    topic: 'Brain clearance / gene therapy',
+    summary:
+      'Johnson summarized an unnamed mouse study in which aging reportedly narrowed microscopic fluid-drainage openings behind the nose, reducing total outflow by 40–50%, while one intranasal gene therapy enlarged downstream drainage structures and restored flow to young-adult levels within six weeks. The post supplied no paper, human data, or translational safety evidence, so the dashboard treats it as a low-confidence preclinical lead—not a Blueprint intervention, demonstrated human therapy, or medical advice.',
+    href: '/longevity/',
+    tweetId: '2087979402831507514',
+    confidence: 'low',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-08-14.md#Tweet-2087979402831507514'],
+  },
+  {
+    id: 'single-cell-functional-bioage-measurement-expansion',
+    title: 'Johnson widens the measurement stack from single cells to functional bioage tests',
+    date: '2026-08-13',
+    badge: 'Measurement',
+    kind: 'tweet',
+    topic: 'Single-cell profiling / biological age',
+    summary:
+      'Across August 12–13 posts, Johnson reported a 47-tube, 250 mL blood draw for single-cell sequencing of circulating immune cells plus inflammation, oxidative-stress, vascular, metabolic/lipid, glucose-regulation, and brain-related measures, then promoted a Baseten event spanning brain, skin, strength, balance, reaction-speed, and mobility tests. Neither post supplied results or test-validity evidence, so this is a measurement-scale and event-positioning update—not proof that the tests are clinically valid, actionable, or appropriate for readers.',
+    href: '/knowledge/biomarker-driven-longevity-protocols/',
+    tweetId: '2087974099926831116',
+    confidence: 'medium',
+    sources: [
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-08-13.md#Tweet-2087620254797320493',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-08-14.md#Tweet-2087974099926831116',
+    ],
+  },
+  {
     id: 'kate-tolo-protocol-build-comparison',
     title: 'Johnson says Kate Tolo’s protocol was built faster—and calls it “better”',
     date: '2026-08-04',
@@ -809,6 +840,18 @@ export const curatedSignals = [
 
 export const watchQueue = [
   {
+    title: 'Brain-clearance paper and human-translation evidence',
+    summary: 'Watch for the named paper, molecular target and vector, full mouse methods and endpoints, independent replication, durability, adverse effects, and any human safety or efficacy work. Johnson’s August 13 post is an uncited preclinical summary—not evidence of an available intranasal gene therapy.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-08-14.md',
+    href: '/longevity/',
+  },
+  {
+    title: '47-tube draw methods, results, and actionability',
+    summary: 'Watch for the exact assays, prespecified questions, single-cell methods, complete results, reference ranges, clinical interpretation, and protocol changes. A larger draw and broader panel show measurement scale, but not whether the data are valid, useful, or outcome-improving.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-08-13.md',
+    href: '/knowledge/biomarker-driven-longevity-protocols/',
+  },
+  {
     title: 'Immortals disease-resolution infrastructure evidence',
     summary: 'Watch for named facilities and partners, cell-line and organoid characterization, diagnostic validation, regulatory and ethics oversight, consent/data governance, therapy-selection methods, safety controls, and measured patient outcomes. The July 24 post is a company strategy statement—not evidence of an operational disease-resolution platform or cure.',
     source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-25.md',
@@ -956,16 +999,23 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '3', detail: '3 Aug 4 posts captured · x-twitter-daily-2026-08-05.md' },
-  { label: 'Previous daily X capture', value: '2', detail: '2 Aug 3 posts captured · x-twitter-daily-2026-08-04.md' },
+  { label: 'Latest daily X capture', value: '3', detail: '3 Aug 13 posts captured · x-twitter-daily-2026-08-14.md' },
+  { label: 'Previous daily X capture', value: '2', detail: '2 Aug 12 posts captured · x-twitter-daily-2026-08-13.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '57', detail: '12 knowledge pages + 45 update pages after this pass' },
+  { label: 'Public site content', value: '58', detail: '12 knowledge pages + 46 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-08-14', x_post: 3, third_party: 0, wiki_update: 1, site_update: 1 },
+  { date: '2026-08-13', x_post: 2, third_party: 0, wiki_update: 1, site_update: 0 },
+  { date: '2026-08-12', x_post: 1, third_party: 0, wiki_update: 1, site_update: 0 },
+  { date: '2026-08-11', x_post: 1, third_party: 0, wiki_update: 1, site_update: 0 },
+  { date: '2026-08-09', x_post: 1, third_party: 0, wiki_update: 1, site_update: 0 },
+  { date: '2026-08-07', x_post: 1, third_party: 0, wiki_update: 1, site_update: 0 },
+  { date: '2026-08-06', x_post: 2, third_party: 0, wiki_update: 1, site_update: 0 },
   { date: '2026-08-05', x_post: 3, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-08-04', x_post: 2, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-08-02', x_post: 6, third_party: 0, wiki_update: 1, site_update: 1 },
