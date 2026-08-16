@@ -4,6 +4,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { before, describe, it } from 'node:test';
 
+import { splitObjective } from '../src/data/objectives.mjs';
 import { protocolCategories, protocolSectionsBySlug } from '../src/data/protocols.mjs';
 
 const protocolComponentPath = new URL('../src/components/ProtocolDossier.astro', import.meta.url);
@@ -100,9 +101,11 @@ function singleElementText(html, tagName, predicate, label) {
   return renderedText(matches[0].innerHtml);
 }
 
-function renderedObjectiveClaim(item) {
-  const [_rawTarget, ...rest] = item.text.split(/—|:|;/);
-  return rest.length ? rest.join('—').trim() : item.text;
+function renderedObjectiveClaim(item, index) {
+  // The dossier renders objectives through the shared lossless contract in
+  // src/data/objectives.mjs; the expected visible claim must use that exact
+  // contract instead of re-implementing a delimiter split here.
+  return splitObjective(item.text, index + 1).text;
 }
 
 function extractDossierSectionRows(html, sectionKey) {
@@ -128,8 +131,8 @@ function extractDossierSectionRows(html, sectionKey) {
 
 function assertDossierSourcePairs(html, protocol, surface) {
   for (const sectionKey of sectionKeys) {
-    const expected = protocol.sections[sectionKey].map((item) => ({
-      claim: sectionKey === 'longterm' ? renderedObjectiveClaim(item) : item.text,
+    const expected = protocol.sections[sectionKey].map((item, index) => ({
+      claim: sectionKey === 'longterm' ? renderedObjectiveClaim(item, index) : item.text,
       source: item.source,
       visibleSource: item.source,
     }));
@@ -389,6 +392,83 @@ describe('protocol terminal dossier pages', () => {
       sleepHtml,
       'go to bed on time',
       'raw/articles/bryan-johnson/x-twitter-bryan-johnson-2026-05-22.md#Thu May 21 13:59:33 +0000 2026',
+    );
+  });
+
+  it('renders every configured objective losslessly: delimiter prefixes never discard claim text', () => {
+    const htmlByCategory = Object.fromEntries(
+      protocolCategories.map((protocol) => [
+        protocol.category,
+        read(new URL(`../dist/${protocol.category}/index.html`, import.meta.url)),
+      ]),
+    );
+
+    let losslessRows = 0;
+    for (const protocol of protocolCategories) {
+      const rows = extractDossierSectionRows(htmlByCategory[protocol.category], 'longterm');
+      assert.equal(rows.length, protocol.sections.longterm.length, `${protocol.category} objective row count must match configuration`);
+
+      for (const [index, item] of protocol.sections.longterm.entries()) {
+        const row = rows[index];
+        assert.equal(row.source, item.source, `${protocol.category}.longterm[${index}] must keep its source attribute`);
+        assert.equal(row.visibleSource, item.source, `${protocol.category}.longterm[${index}] must visibly name its exact source`);
+
+        // Non-circular losslessness contract: the rendered claim must be the
+        // full configured text, or a suffix of it whose dropped prefix is short
+        // enough to be the visible target label. A long delimiter prefix must
+        // never be silently discarded from the reader-visible body.
+        const isSuffix = item.text === row.claim || item.text.endsWith(row.claim);
+        assert.ok(isSuffix, `${protocol.category}.longterm[${index}] rendered claim must be the full text or a suffix of it`);
+        if (row.claim.length < item.text.length) {
+          const droppedPrefix = item.text.slice(0, item.text.length - row.claim.length);
+          assert.ok(
+            droppedPrefix.trim().length > 0 && droppedPrefix.length <= 34,
+            `${protocol.category}.longterm[${index}] may only drop a prefix short enough to render as the target label (dropped ${JSON.stringify(droppedPrefix)})`,
+          );
+          assert.ok(droppedPrefix.search(/—|:|;/) !== -1, 'a dropped prefix must end at a delimiter');
+        }
+        losslessRows += 1;
+      }
+    }
+
+    assert.ok(losslessRows >= 55, `expected to audit every configured objective, saw ${losslessRows}`);
+  });
+
+  it('keeps representative long-prefix Health and Longevity objectives on their exact sources in full', () => {
+    const healthHtml = read(new URL('../dist/health/index.html', import.meta.url));
+    const longevityHtml = read(new URL('../dist/longevity/index.html', import.meta.url));
+
+    // Full configured text (including the clause the old renderer dropped) must
+    // survive rendering beside its exact source.
+    assertRenderedClaimSource(
+      healthHtml,
+      'Treat the June 2026 Immortals Rx expansion separately from foundational habits; the GLP-1, SGLT2, peptide, and NAD+ catalog is a commercial/protocol claim that requires clinician oversight.',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md',
+    );
+    assertRenderedClaimSource(
+      healthHtml,
+      'Treat the July 2026 AIG single-cell immune-receptor sequencing thread as Johnson’s diagnostic follow-through: a cellular/receptor-level measurement layer, not a validated therapy or reader test recommendation.',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-07-04.md',
+    );
+    assertRenderedClaimSource(
+      healthHtml,
+      'Read Johnson’s July 2026 “removing harm” list as a subtraction-first behavior philosophy. Sleep consistency, movement, avoiding nicotine/alcohol, and reducing obvious hazards belong with foundations; the post does not quantify each item or resolve the safety and attribution questions around his intervention stack.',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-07-11.md',
+    );
+    assertRenderedClaimSource(
+      longevityHtml,
+      'Classify Immortals Rx GLP-1, SGLT2, peptide, and NAD+ listings as commercial platform expansion; do not treat off-label longevity positioning as proven outcome evidence.',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md',
+    );
+    assertRenderedClaimSource(
+      longevityHtml,
+      'Classify Johnson’s June 2026 wearable reply as a relative-tracking claim: consistency can help trend detection, but it does not settle absolute accuracy or clinical validity.',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md',
+    );
+    assertRenderedClaimSource(
+      longevityHtml,
+      'Keep the Immortals rename and immortality search-trend narrative in the ideology/brand lane; it does not increase confidence in the 2039 forecast.',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md',
     );
   });
 

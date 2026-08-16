@@ -1,4 +1,6 @@
 ---
+import { splitObjective } from '../data/objectives.mjs';
+
 type SectionKey = 'habits' | 'longterm' | 'donts';
 type ProtocolItem = { text: string; source: string };
 type Protocol = {
@@ -30,15 +32,13 @@ const habitRows = sourcedItems('habits', 'No source-backed daily habits are publ
   time: item.text.match(/sleep|bedtime|wake/i) ? 'night' : item.text.match(/meal|breakfast|dinner|calorie|food|protein|nutrition/i) ? 'meal' : 'daily',
 }));
 
-const objectiveRows = sourcedItems('longterm', 'No source-backed long-term objectives are published for this protocol yet.').map((item) => {
-  const [rawTarget, ...rest] = item.text.split(/—|:|;/);
-  const target = rawTarget && rawTarget.length <= 34 ? rawTarget.trim() : `target ${String(item.index).padStart(2, '0')}`;
-  return {
-    ...item,
-    target,
-    text: rest.length ? rest.join('—').trim() : item.text,
-  };
-});
+const objectiveRows = sourcedItems('longterm', 'No source-backed long-term objectives are published for this protocol yet.').map((item) => ({
+  ...item,
+  // Lossless contract: the full objective text always survives rendering; a
+  // delimiter prefix becomes a short target label only when it is short enough
+  // to be one (both halves stay visible). See src/data/objectives.mjs.
+  ...splitObjective(item.text, item.index),
+}));
 
 const forbiddenRows = sourcedItems('donts', 'No source-backed forbidden items are published for this protocol yet.');
 const sourcePreview = protocol.sourcePaths.slice(0, 5);
