@@ -1,5 +1,19 @@
 export const curatedSignals = [
   {
+    id: 'food-discipline-biomarker-accountability',
+    title: 'Johnson frames dietary control as biomarker-governed mastery',
+    date: '2026-08-16',
+    badge: 'Algorithmic health',
+    kind: 'tweet',
+    topic: 'Dietary control / behavior',
+    summary:
+      'Responding to people who call his dietary control an eating disorder, Johnson described years of disciplined eating as mastery, said he is accountable to biomarkers and changes the food protocol according to data, and acknowledged that a quest can become unhealthy. The dashboard treats this as attributed algorithmic-health and behavior framing plus a personal self-description—not a clinical diagnosis, evidence that his regimen is appropriate for others, or medical advice.',
+    href: '/knowledge/algorithmic-health/',
+    tweetId: '2089036111545000149',
+    confidence: 'medium',
+    sources: ['raw/articles/bryan-johnson/x-twitter-daily-2026-08-17.md#Tweet-2089036111545000149'],
+  },
+  {
     id: 'mouse-brain-clearance-gene-therapy-research-watch',
     title: 'Johnson highlights a mouse brain-clearance gene-therapy result',
     date: '2026-08-13',
@@ -840,6 +854,12 @@ export const curatedSignals = [
 
 export const watchQueue = [
   {
+    title: 'Food-discipline safeguards and clinical context',
+    summary: 'Watch whether Johnson defines the unhealthy territory he acknowledges, publishes nutritional and functional outcomes, and explains the clinical oversight or safety guardrails around protocol-driven eating. The August 16 post is a personal account and rhetorical argument; it does not provide a clinical assessment or resolve the eating-disorder characterization it answers.',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-08-17.md',
+    href: '/knowledge/algorithmic-health/',
+  },
+  {
     title: 'Brain-clearance paper and human-translation evidence',
     summary: 'Watch for the named paper, molecular target and vector, full mouse methods and endpoints, independent replication, durability, adverse effects, and any human safety or efficacy work. Johnson’s August 13 post is an uncited preclinical summary—not evidence of an available intranasal gene therapy.',
     source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-08-14.md',
@@ -999,16 +1019,18 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '3', detail: '3 Aug 13 posts captured · x-twitter-daily-2026-08-14.md' },
-  { label: 'Previous daily X capture', value: '2', detail: '2 Aug 12 posts captured · x-twitter-daily-2026-08-13.md' },
+  { label: 'Latest daily X capture', value: '1', detail: '1 Aug 16 post captured · x-twitter-daily-2026-08-17.md' },
+  { label: 'Previous daily X capture', value: '5', detail: '5 Aug 14–15 posts captured · x-twitter-daily-2026-08-15.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '58', detail: '12 knowledge pages + 46 update pages after this pass' },
+  { label: 'Public site content', value: '59', detail: '12 knowledge pages + 47 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-08-17', x_post: 1, third_party: 0, wiki_update: 1, site_update: 1 },
+  { date: '2026-08-15', x_post: 5, third_party: 0, wiki_update: 1, site_update: 0 },
   { date: '2026-08-14', x_post: 3, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-08-13', x_post: 2, third_party: 0, wiki_update: 1, site_update: 0 },
   { date: '2026-08-12', x_post: 1, third_party: 0, wiki_update: 1, site_update: 0 },

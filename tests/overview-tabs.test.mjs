@@ -13,6 +13,10 @@ const signalsPath = new URL('../src/data/signals.mjs', import.meta.url);
 const signalsSource = existsSync(signalsPath) ? readFileSync(signalsPath, 'utf8') : '';
 const protocolsPath = new URL('../src/data/protocols.mjs', import.meta.url);
 const protocolsSource = existsSync(protocolsPath) ? readFileSync(protocolsPath, 'utf8') : '';
+const dashboardSectionsPath = new URL('../src/data/dashboard-sections.ts', import.meta.url);
+const dashboardSectionsSource = existsSync(dashboardSectionsPath) ? readFileSync(dashboardSectionsPath, 'utf8') : '';
+const algorithmicHealthPath = new URL('../src/content/knowledge/algorithmic-health.md', import.meta.url);
+const algorithmicHealthSource = existsSync(algorithmicHealthPath) ? readFileSync(algorithmicHealthPath, 'utf8') : '';
 const conceptsPagePath = new URL('../src/pages/concepts/index.astro', import.meta.url);
 const conceptsPageSource = existsSync(conceptsPagePath) ? readFileSync(conceptsPagePath, 'utf8') : '';
 const nutritionPagePath = new URL('../src/pages/nutrition/index.astro', import.meta.url);
@@ -312,6 +316,23 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(protocolsSource, /brain-clearance post as an uncited, preclinical research lead[\s\S]*no named paper, human evidence, translational safety data/, 'longevity guidance should keep the brain-clearance post preclinical');
   });
 
+  it('publishes the August 16 food-discipline post as attributed behavior framing, not a clinical judgment', () => {
+    for (const required of [
+      '2089036111545000149',
+      'x-twitter-daily-2026-08-17.md',
+      'accountable to biomarkers',
+      'quest can become unhealthy',
+      'personal self-description',
+      'not a clinical diagnosis',
+      "confidence: 'medium'",
+    ]) {
+      assert.match(signalsSource, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i'), `food-discipline signal should preserve: ${required}`);
+    }
+
+    assert.match(dashboardSectionsSource, /dietary control[\s\S]*biomarker-governed[\s\S]*clinical assessment/i, 'opinion context should preserve both Johnson’s position and the clinical boundary');
+    assert.match(algorithmicHealthSource, /August 16[\s\S]*changes his food protocol according to data[\s\S]*does not establish clinical appropriateness/i, 'algorithmic-health context should preserve the decision-loop signal and its limit');
+  });
+
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
     for (const phrase of ['watchQueue', 'sourceCounts', 'curatedActivity', 'Protocol tabs backed']) {
       assert.match(indexSource, new RegExp(phrase), `overview should use real sidebar data: ${phrase}`);
@@ -319,7 +340,7 @@ describe('home overview and dedicated changelog route', () => {
     for (const phrase of ['Enhanced Games follow-up', 'Kate Tolo baseline', 'Microplastics testing', '82 unique tweet URLs', '11 tweets with engagement']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `signals/sidebar data should include ${phrase}`);
     }
-    for (const phrase of ['3 Aug 13 posts captured', '2 Aug 12 posts captured', '12 knowledge pages + 46 update pages']) {
+    for (const phrase of ['1 Aug 16 post captured', '5 Aug 14–15 posts captured', '12 knowledge pages + 47 update pages']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `source counts should include ${phrase}`);
     }
     assert.doesNotMatch(indexSource, /index \* 17|updateCards\[0\]|next curated publish pass/, 'right sidebar should not use deterministic placeholder formulas or newest-card watch copy');

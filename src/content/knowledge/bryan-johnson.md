@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-08-14'
+updated: '2026-08-17'
 tags:
   - person
   - company
@@ -13,6 +13,7 @@ tags:
   - biomarkers
   - protocol
 sources:
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-08-17.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-08-14.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-08-13.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-08-05.md
@@ -148,6 +149,8 @@ On August 4, Johnson said his longevity infrastructure took five years to build,
 On August 12–13, Johnson published two measurement-scale updates. He reported a 47-tube, 250 mL blood draw for single-cell sequencing of circulating immune cells plus inflammation, oxidative-stress, vascular, metabolic/lipid, glucose-regulation, and brain-related measures. The next day he promoted a Baseten event offering biological-age evaluations across brain, skin, strength, balance, reaction speed, and mobility. These posts show the project widening both its molecular and functional measurement surfaces, but they publish no results, test-performance evidence, clinical interpretation, or proof that the measurements improve outcomes.
 
 In a separate August 13 post, Johnson summarized an unnamed mouse study in which aging reportedly narrowed microscopic fluid-drainage openings behind the nose and reduced total outflow by 40–50%, while one intranasal gene therapy enlarged downstream drainage structures and restored flow to young-adult levels within six weeks. The dashboard records this as low-confidence preclinical research watch: the post supplied no paper, human evidence, translational safety data, or connection to a Blueprint intervention. The same batch’s uncited sleep/attractiveness claim, and the prior day’s uncited cooking/AGEs recommendation, were not promoted as reader guidance.
+
+On August 16, Johnson responded to people characterizing his dietary control as an eating disorder. He described years of discipline as mastery, said he is accountable to biomarkers and changes the protocol according to data, and acknowledged that the pursuit can move into unhealthy territory. The dashboard records this as a current algorithmic-health and behavior-design position. It is Johnson’s personal self-description—not a clinical diagnosis, proof that his eating pattern is safe or appropriate for others, or medical advice.
 
 ## Reading stance
 

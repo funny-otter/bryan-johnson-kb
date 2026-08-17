@@ -4,7 +4,7 @@ slug: biomarker-driven-longevity-protocols
 type: concept
 sourcePath: concepts/biomarker-driven-longevity-protocols.md
 created: '2026-05-22'
-updated: '2026-08-14'
+updated: '2026-08-17'
 tags:
   - longevity
   - biomarkers
@@ -13,6 +13,7 @@ tags:
   - protocol
   - evaluation
 sources:
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-08-17.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-08-14.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-08-13.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-08-05.md
@@ -130,6 +131,8 @@ On August 4, Johnson made a new operational claim about transferring the measure
 On August 12, Johnson reported another large collection event: 47 tubes and 250 mL of blood for single-cell sequencing of circulating immune cells alongside inflammation, oxidative-stress, vascular, metabolic/lipid, glucose-regulation, and brain-related measurements. Compared with his July AIG draw, this is an expansion or repetition of the cellular and multi-domain measurement layer rather than a new clinical result. The source publishes no assay list, findings, diagnosis, intervention, or interpretation, and collection volume is not evidence of validity or actionability.
 
 On August 13, he paired that laboratory-scale posture with a public Baseten event listing biological-age evaluations for brain, skin, strength, balance, reaction speed, and mobility. This broadens the visible functional-testing surface but does not establish that the tests measure one coherent “biological age,” predict outcomes, or support treatment decisions. A separate post that day summarized a mouse brain-clearance gene-therapy result without naming the paper; it belongs in preclinical research watch, not in the validated measurement or intervention tier.
+
+On August 16, Johnson described food discipline as another biomarker-governed feedback loop: he said he is accountable to biomarkers, changes the protocol according to data, and views years of dietary control as mastery while acknowledging that the pursuit can become unhealthy. The useful methodology signal is the stated decision rule—measure, adjust, repeat—not a clinical conclusion about his eating. The post is a personal account, does not establish nutritional or psychological safety, and does not make the regimen appropriate for readers.
 
 ## Practical evaluation checklist
 

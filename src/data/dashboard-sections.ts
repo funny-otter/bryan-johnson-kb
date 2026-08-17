@@ -20,6 +20,17 @@ export type TimelineEvent = {
 
 export const opinionItems: OpinionItem[] = [
   {
+    claim: 'Johnson frames dietary control as biomarker-governed mastery rather than disorder.',
+    position: 'Responding to people who say he has an eating disorder, Johnson described years of dietary control as mastery, said he is accountable to biomarkers and changes the protocol according to data, and acknowledged that the pursuit can enter unhealthy territory.',
+    counterpoint: 'The post is a personal self-description and rhetorical analogy, not a clinical assessment. Biomarker feedback does not by itself establish psychological wellbeing, nutritional adequacy, or whether a pattern is clinically appropriate; the dashboard neither diagnoses Johnson nor treats his routine as guidance.',
+    confidence: 'medium',
+    relatedHref: '/knowledge/algorithmic-health/',
+    relatedTitle: 'Algorithmic Health',
+    sources: [
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-08-17.md#Tweet-2089036111545000149',
+    ],
+  },
+  {
     claim: 'Johnson now calls resting heart rate his “Sovereignty Index.”',
     position: 'In a July 14 essay, Johnson used pre-sleep RHR as a behavioral-control score: whether he is ruled by impulses and an engineered consumption economy or follows pre-committed rules for food, screens, caffeine, light, bedtime, and winding down. He reported a personal 41 bpm 30-day average.',
     counterpoint: 'RHR can be useful within-person feedback and is associated with fitness and autonomic state, but it is affected by training, illness, medication, stress, measurement conditions, and individual physiology. Johnson’s label and 41 bpm value are self-report and philosophy—not a universal health target, diagnosis, or medical advice.',
@@ -137,6 +148,15 @@ export const opinionItems: OpinionItem[] = [
 ];
 
 export const timelineEvents: TimelineEvent[] = [
+  {
+    date: '2026-08-16',
+    label: 'Food-discipline post makes biomarker accountability—and its boundary—explicit',
+    summary: 'Responding to eating-disorder characterizations, Johnson described dietary control as mastery, said he changes his protocol according to biomarker data, and acknowledged that the pursuit can become unhealthy. The KB records an algorithmic-health and behavior-design position—not a clinical diagnosis, proof that the regimen is appropriate for others, or medical advice.',
+    relatedHref: '/knowledge/algorithmic-health/',
+    relatedTitle: 'Algorithmic Health',
+    source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-08-17.md',
+    confidence: 'medium',
+  },
   {
     date: '2026-08-13',
     label: 'Mouse brain-clearance gene therapy enters Johnson’s research watch',

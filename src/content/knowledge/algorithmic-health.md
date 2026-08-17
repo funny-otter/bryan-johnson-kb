@@ -4,7 +4,7 @@ slug: algorithmic-health
 type: concept
 sourcePath: concepts/algorithmic-health.md
 created: '2026-05-22'
-updated: '2026-07-24'
+updated: '2026-08-17'
 tags:
   - health
   - protocol
@@ -12,6 +12,7 @@ tags:
   - automation
   - decision
 sources:
+  - raw/articles/bryan-johnson/x-twitter-daily-2026-08-17.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-24.md
   - raw/articles/bryan-johnson-project-blueprint-2021-10-13.md
   - raw/articles/dont-die-bryan-johnson-2026-05-22.md
@@ -48,6 +49,8 @@ In a July 11 post responding to Nassim Nicholas Taleb’s interaction-risk criti
 On July 14, Johnson gave this decision pattern a named score: **Resting Heart Rate as his “Sovereignty Index.”** He reported a personal 41 bpm 30-day average and argued that pre-sleep RHR reflects whether engineered consumption and a stressed evening self are controlling behavior. His checklist—stop food four hours before bed, stop screens 60 minutes before bed, keep one bedtime, wind down deliberately, finish caffeine by noon, and use red/amber rather than blue evening light—is a classic algorithmic-health move: decide the rules before willpower is lowest. The useful signal is the pre-commitment model, not 41 bpm as a goal. RHR varies with fitness, illness, medication, stress, physiology, and measurement conditions; Johnson’s value and broad vagal-tone claims are self-report and should not be read as diagnosis or medical advice.
 
 On July 23, Johnson supplied a miniature feedback-loop example: he reported that finishing food at 2 p.m. rather than noon moved his sleep heart rate from 42 to 44 bpm, then compared the sensitivity to changes in EV charging, aerodynamics, and coffee-grinder settings. The algorithmic-health signal is the habit of treating a small input change as something to measure and retest. One personal comparison does not isolate meal timing from confounders, establish clinical importance, or turn noon into a reader target.
+
+On August 16, Johnson made the same rule explicit in a sensitive food-control context. Responding to people who characterize his dietary control as an eating disorder, he described discipline as mastery, said he changes his food protocol according to data, and acknowledged that the pursuit can become unhealthy. This sharpens both the delegated-decision-authority pattern and its risk boundary. It is Johnson’s personal self-description and rhetorical argument; it does not establish clinical appropriateness, decide whether a behavior is disordered, or show that his regimen generalizes.
 
 ## Why it matters
 
