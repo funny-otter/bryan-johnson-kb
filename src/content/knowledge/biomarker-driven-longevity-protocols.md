@@ -4,7 +4,7 @@ slug: biomarker-driven-longevity-protocols
 type: concept
 sourcePath: concepts/biomarker-driven-longevity-protocols.md
 created: '2026-05-22'
-updated: '2026-08-17'
+updated: '2026-08-20'
 tags:
   - longevity
   - biomarkers
@@ -13,6 +13,8 @@ tags:
   - protocol
   - evaluation
 sources:
+  - https://x.com/bryan_johnson/status/2089822905891000605
+  - https://x.com/bryan_johnson/status/2090212567235149828
   - raw/articles/bryan-johnson/x-twitter-daily-2026-08-17.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-08-14.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-08-13.md
@@ -133,6 +135,10 @@ On August 12, Johnson reported another large collection event: 47 tubes and 250 
 On August 13, he paired that laboratory-scale posture with a public Baseten event listing biological-age evaluations for brain, skin, strength, balance, reaction speed, and mobility. This broadens the visible functional-testing surface but does not establish that the tests measure one coherent “biological age,” predict outcomes, or support treatment decisions. A separate post that day summarized a mouse brain-clearance gene-therapy result without naming the paper; it belongs in preclinical research watch, not in the validated measurement or intervention tier.
 
 On August 16, Johnson described food discipline as another biomarker-governed feedback loop: he said he is accountable to biomarkers, changes the protocol according to data, and views years of dietary control as mastery while acknowledging that the pursuit can become unhealthy. The useful methodology signal is the stated decision rule—measure, adjust, repeat—not a clinical conclusion about his eating. The post is a personal account, does not establish nutritional or psychological safety, and does not make the regimen appropriate for readers.
+
+On August 18, Johnson supplied the clearest example yet of the measure–intervene–retest loop reaching an organ-specific diagnosis: after a stye visit, meibography and Schirmer testing showed advanced meibomian-gland dysfunction, and he published a four-therapy eye stack with a plan to track repeated imaging until it plateaus. The loop is also turned on itself—he named likely drivers inside his own protocol (a topical anti-androgen, low insulin/IGF-1 signaling, thyroid history) as candidate contributors to the gland loss. The methodology signal is the closed feedback design; the evidence boundary is that all therapies were simultaneous, the 30% improvement figure is self-reported imaging, probing is explicitly unsettled science in his own words, and no independent assessment was published. This is an N=1 account, not a validated eye-care protocol or medical advice.
+
+On August 19, Johnson quote-commented third-party oncology news: an mRNA therapy that instructs the body to produce a tumor’s genetic fingerprint so the immune system trains T-cells against it, paired with Keytruda releasing the brakes cancer places on T-cells, which he says has reached a Phase 3 trial for the first time. He named no trial, paper, sponsor, or data. Like the mouse brain-clearance post, this belongs in research watch—third-party commentary inside his longevity narrative, not a Blueprint intervention, an available treatment, or medical advice.
 
 ## Practical evaluation checklist
 

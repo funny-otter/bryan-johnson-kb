@@ -4,7 +4,7 @@ slug: dont-die
 type: concept
 sourcePath: concepts/dont-die.md
 created: '2026-05-22'
-updated: '2026-07-29'
+updated: '2026-08-20'
 tags:
   - longevity
   - biohacking
@@ -12,6 +12,7 @@ tags:
   - protocol
   - open-question
 sources:
+  - https://x.com/bryan_johnson/status/2089802500765548788
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-29.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-25.md
   - raw/articles/bryan-johnson/dont-die-bryan-johnson-2026-05-22.md
@@ -72,6 +73,8 @@ On July 9, 2026, Johnson tied Kate Tolo’s endometriosis announcement to a shar
 On July 12, 2026, Johnson published “The world wants me to die,” interpreting schadenfreude around his autoimmune-gastritis diagnosis as an archetypal demand that a challenger of death must fail. He placed his own philosophical position alongside Gilgamesh, Asclepius, and Jesus—figures he describes as punished by a serpent, a god, or a crowd after challenging death—and argued that this pattern protects people from confronting the possibility that mortality is not fixed. He closed with his strongest version of that belief yet: physical death “may no longer be inevitable.” A follow-up said the diagnosis had emboldened him. This is a material escalation in Don’t Die’s mythological and religious self-framing, but the analogy and psychological mechanism are Johnson’s interpretation, and the claim about death is speculative rather than an established scientific or medical conclusion.
 
 On July 24, Johnson shifted Don’t Die’s curative language into a more concrete company mission. He argued that once basic needs are met, “solving all diseases” is the rational next project and described Immortals as infrastructure for individuals to discover and resolve their own health issues, naming iPSCs, organoids, deep cellular characterization, and personalized therapy development. The post matters as movement and company positioning; it is not evidence that Immortals can diagnose or cure disease, that these technologies are clinically available through the company, or that any treatment is safe or effective.
+
+On August 18, Johnson quote-posted the final episode of New York Times columnist Ross Douthat’s “Interesting Times” podcast, which features him as “the man who wants to live forever,” and said he is energized to see Don’t Die “being metabolized by society” as people grapple with what longer, disease-free lives would mean. The dashboard records this as mainstream-media reception and movement positioning—the ideology reaching outside longevity circles—not a health claim, an endorsement of the podcast’s framing, or verification of its contents.
 
 ## Practical components
 

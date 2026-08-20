@@ -41,6 +41,7 @@ export const protocolCategories = [
         sourced('Treat Johnson’s August 2026 claim that Kate Tolo’s protocol was built in 90 days and is “better” than his five-year build as an operational comparison only. No quality criteria, comparative measurements, outcomes, or external validation were published.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-08-05.md'),
         sourced('Treat Johnson’s August 2026 47-tube, 250 mL blood draw as a scale and methods update. The post names single-cell immune sequencing and broad measurement domains but publishes no assay list, results, diagnosis, clinical interpretation, or evidence that collection volume improves outcomes.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-08-13.md'),
         sourced('Treat the Baseten biological-age event as public measurement positioning. Its brain, skin, strength, balance, reaction-speed, and mobility domains are not evidence that the tests form a validated or actionable biological-age score.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-08-14.md'),
+        sourced('Treat the August 2026 meibomian-gland post as an attributed N=1 diagnosis-and-intervention account. Johnson reports advanced MGD with gland dropout, a four-therapy stack (IPL, radiofrequency, intraductal probing, 630nm red light), and a self-reported 30% gland-function improvement; his own post says the probing science is unsettled and the therapies cannot be separated. It is not a validated eye-care protocol or reader guidance.', 'https://x.com/bryan_johnson/status/2089822905891000605'),
         sourced('Preserve medical-caution framing: this page summarizes Johnson/Blueprint practice, not personal treatment advice.', 'concepts/biomarker-driven-longevity-protocols.md'),
       ],
       donts: [
@@ -49,6 +50,11 @@ export const protocolCategories = [
       ],
     },
     cards: [
+      {
+        label: 'Eye-health protocol',
+        title: 'Meibomian-gland dysfunction becomes the first disclosed organ-specific diagnosis',
+        body: 'Johnson reports advanced MGD found via meibography after a stye visit, treated with IPL, radiofrequency, intraductal probing, and red-light therapy plus home care, with a self-reported 30% gland-function improvement. His own post flags unsettled probing science and unseparable therapies; keep it attributed N=1, not reader eye-care guidance.',
+      },
       {
         label: 'Measurement loop',
         title: 'Use biomarkers as feedback, not as guaranteed outcomes',
@@ -188,6 +194,7 @@ export const protocolCategories = [
         sourced('Classify Immortals’ July 2026 disease-resolution infrastructure expansion as strategic frontier-biotech positioning. Naming iPSCs, organoids, deep cellular characterization, and personalized therapy development does not establish a clinically available platform or evidence of diagnosis, treatment, safety, cure, or outcome.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-25.md'),
         sourced('Classify the July 2026 operational Kate Tolo baseline as measurement-scale ambition and protocol operations. The 100-day N=1 plan is not completed or independently validated female-health evidence, and its sensitive-data methods and governance remain unpublished.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-26.md'),
         sourced('Classify Johnson’s August 2026 brain-clearance post as an uncited, preclinical research lead. The source describes one intranasal gene therapy in mice but supplies no named paper, human evidence, translational safety data, Blueprint intervention, or clinical outcome.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-08-14.md'),
+        sourced('Classify Johnson’s August 2026 mRNA–Keytruda post as third-party research commentary. He describes a tumor-fingerprint mRNA therapy paired with Keytruda in a first Phase 3 trial but names no trial, paper, sponsor, or data, so it is not a Blueprint intervention, an available treatment, or medical advice.', 'https://x.com/bryan_johnson/status/2090212567235149828'),
         sourced('Keep the Immortals rename and immortality search-trend narrative in the ideology/brand lane; it does not increase confidence in the 2039 forecast.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md'),
         sourced('Keep the June 2026 immortality manifesto and “Die Economy” frame in the ideology/forecast lane unless independent evidence supports the specific biological and AI claims.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-25.md'),
         sourced('Keep critiques visible so biomarker improvements do not become unsupported longevity promises.', 'raw/articles/bryan-johnson/years-biomarkers-limits-2026-04-20.md'),
@@ -198,6 +205,11 @@ export const protocolCategories = [
       ],
     },
     cards: [
+      {
+        label: 'Cancer research watch',
+        title: 'Tumor-fingerprint mRNA therapy reaches Phase 3, with no trial named',
+        body: 'Johnson describes an mRNA therapy training T-cells on a tumor’s genetic fingerprint, paired with Keytruda, now in a first Phase 3 trial. No trial, paper, sponsor, or data is named, so this stays third-party research commentary—not a Blueprint intervention, available treatment, or medical advice.',
+      },
       {
         label: 'Brain research watch',
         title: 'Mouse drainage-flow restoration is not a human gene therapy',

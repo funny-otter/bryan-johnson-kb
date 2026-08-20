@@ -4,7 +4,7 @@ slug: blueprint-protocol
 type: concept
 sourcePath: concepts/blueprint-protocol.md
 created: '2026-05-22'
-updated: '2026-08-14'
+updated: '2026-08-20'
 tags:
   - protocol
   - longevity
@@ -13,6 +13,7 @@ tags:
   - biohacking
   - automation
 sources:
+  - https://x.com/bryan_johnson/status/2089822905891000605
   - raw/articles/bryan-johnson/x-twitter-daily-2026-08-14.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-08-13.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-08-05.md
@@ -130,6 +131,8 @@ Critical context: changes are hard to interpret because dozens of variables move
 On July 20, 2026, Johnson said an unspecified incurable-disease diagnosis had shifted his project from “longevity staples” toward disease resolution and frontier biotech. In a separate eye-health thread that day, he distinguished general diet and supplement discussion from what he wants to see: robust measurement, diagnosis of dysfunction, and protocols intended to correct it. Together the posts suggest a change in emphasis—from broad longevity routines toward disease- and organ-specific engineering—but they do not identify the disease, measurement set, dysfunction, intervention, or outcome. The dashboard records a strategic agenda, not a demonstrated protocol, cure, or reader medical guidance.
 
 On July 21, the eye-health agenda gained a concrete measurement but still no public protocol: Johnson reported collecting tears with paper strips for a $1,800 specialty-lab panel across 15 inflammatory, tissue-degradation, and regenerative-signaling biomarkers. He said the readings would establish the ocular-surface environment and track progress, with an eye protocol forthcoming. No result, diagnosis, intervention, reference range, clinical-utility evidence, or outcome was published, so the dashboard records an N=1 measurement plan rather than eye-health guidance.
+
+On August 18, the agenda landed a diagnosis and a disclosed intervention stack. After visiting an eye doctor for a stye, Johnson said infrared meibography and Schirmer testing showed advanced meibomian-gland dysfunction with meaningful gland dropout plus concurrent aqueous deficiency. He published a four-therapy in-office stack—intense pulsed light, radiofrequency, intraductal probing (the Maskin protocol), and 630nm low-level red light—alongside home compresses, preservative-free and lipid-replacement drops, and tear-stimulation devices, and reported a self-measured 30% improvement in gland function on imaging. He also named systemic drivers that sit inside his own longevity protocol: a topical anti-androgen used for hair growth, low insulin/IGF-1 signaling, and a prior subclinical thyroid flare. The post itself concedes the probing science is unsettled and that four simultaneous therapies cannot be attributed individually. The dashboard records an attributed N=1 diagnosis-and-intervention account—not a validated eye-care protocol, evidence the therapies work in general, or medical advice.
 
 ### Immortals disease infrastructure and female-health baseline
 

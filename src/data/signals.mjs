@@ -1,5 +1,47 @@
 export const curatedSignals = [
   {
+    id: 'meibomian-gland-dysfunction-protocol-disclosure',
+    title: 'Johnson discloses advanced meibomian-gland dysfunction and a four-therapy eye stack',
+    date: '2026-08-18',
+    badge: 'Eye health',
+    kind: 'tweet',
+    topic: 'Eye health / meibomian glands',
+    summary:
+      'After a stye visit, Johnson says infrared meibography and Schirmer testing showed advanced meibomian-gland dysfunction with meaningful gland dropout. He reports a stack of in-office IPL, radiofrequency, intraductal probing (the Maskin protocol), and 630nm red-light therapy plus home compresses and drops, and says imaging shows a 30% improvement in gland function. He also names likely drivers inside his own protocol—a topical anti-androgen used for hair growth, low insulin/IGF-1 signaling, and thyroid history. The post itself says probing science is not settled and that four simultaneous therapies cannot be separated, and the improvement figure is self-reported. The dashboard records an attributed N=1 diagnosis-and-intervention account—not reader eye-care guidance or medical advice.',
+    href: '/knowledge/blueprint-protocol/',
+    tweetId: '2089822905891000605',
+    confidence: 'medium',
+    sources: ['https://x.com/bryan_johnson/status/2089822905891000605'],
+  },
+  {
+    id: 'mrna-tumor-vaccine-phase3-research-watch',
+    title: 'Johnson highlights a tumor-specific mRNA cancer therapy reaching Phase 3',
+    date: '2026-08-19',
+    badge: 'Research watch',
+    kind: 'tweet',
+    topic: 'mRNA immunotherapy / cancer',
+    summary:
+      'Johnson described an mRNA therapy that instructs the body to produce a tumor’s genetic fingerprint so the immune system can train T-cells to attack it, paired with Keytruda removing the brakes cancer puts on T-cells, and said it is in a Phase 3 trial for the first time. The post names no trial, paper, or data, so the dashboard treats it as low-confidence third-party research commentary—not a Blueprint intervention, an available treatment, or medical advice.',
+    href: '/longevity/',
+    tweetId: '2090212567235149828',
+    confidence: 'low',
+    sources: ['https://x.com/bryan_johnson/status/2090212567235149828'],
+  },
+  {
+    id: 'dont-die-nyt-interesting-times-reception',
+    title: 'Don’t Die reaches mainstream podcast reception via NYT’s Ross Douthat',
+    date: '2026-08-18',
+    badge: 'Media',
+    kind: 'tweet',
+    topic: 'Don’t Die / media reception',
+    summary:
+      'Johnson quote-posted the final episode of New York Times columnist Ross Douthat’s “Interesting Times” podcast, which features him as “the man who wants to live forever,” and said he is energized to see Don’t Die “being metabolized by society.” The dashboard records a media-reception and movement-positioning signal—not a health claim or verification of the podcast’s framing.',
+    href: '/knowledge/dont-die/',
+    tweetId: '2089802500765548788',
+    confidence: 'medium',
+    sources: ['https://x.com/bryan_johnson/status/2089802500765548788'],
+  },
+  {
     id: 'food-discipline-biomarker-accountability',
     title: 'Johnson frames dietary control as biomarker-governed mastery',
     date: '2026-08-16',
@@ -854,6 +896,20 @@ export const curatedSignals = [
 
 export const watchQueue = [
   {
+    title: 'MGD follow-through: imaging, drivers, and protocol tradeoffs',
+    summary:
+      'Watch for repeated meibography images, whether the reported 30% gland-function improvement persists or reverses, which therapy drove it, and how Johnson weighs the named systemic drivers—topical anti-androgen use, low insulin/IGF-1 signaling, thyroid history—against his longevity protocol. His August 18 post is an attributed N=1 account with unseparated simultaneous therapies; it is not evidence any therapy works, that probing is settled science, or reader eye-care guidance.',
+    source: 'https://x.com/bryan_johnson/status/2089822905891000605',
+    href: '/knowledge/blueprint-protocol/',
+  },
+  {
+    title: 'Named mRNA–Keytruda Phase 3 trial',
+    summary:
+      'Watch for the trial name, NCT registration, sponsor, indication, and published results. Johnson’s August 19 post describes a tumor-fingerprint mRNA therapy paired with Keytruda in its first Phase 3 trial but names no trial or paper, so it remains third-party research commentary—not a Blueprint intervention, available treatment, or medical advice.',
+    source: 'https://x.com/bryan_johnson/status/2090212567235149828',
+    href: '/longevity/',
+  },
+  {
     title: 'Food-discipline safeguards and clinical context',
     summary: 'Watch whether Johnson defines the unhealthy territory he acknowledges, publishes nutritional and functional outcomes, and explains the clinical oversight or safety guardrails around protocol-driven eating. The August 16 post is a personal account and rhetorical argument; it does not provide a clinical assessment or resolve the eating-disorder characterization it answers.',
     source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-08-17.md',
@@ -891,7 +947,7 @@ export const watchQueue = [
   },
   {
     title: 'Ocular tear-panel results and eye protocol',
-    summary: 'Watch for the 15-marker results, reference ranges, diagnosed dysfunction, intervention design, repeat-measurement plan, clinical utility, safety boundaries, and outcomes. The current source reports collection and a forthcoming protocol only; it does not establish a validated screening panel or reader action.',
+    summary: 'Watch for the 15-marker tear-panel results, reference ranges, and how the panel relates to the August 18 meibomian-gland diagnosis and four-therapy eye stack. The original source reported collection and a forthcoming protocol only; the new post supplies a diagnosis and self-reported 30% improvement but still no panel results, independent assessment, or validated reader pathway.',
     source: 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-22.md',
     href: '/metrics/',
   },
@@ -1020,15 +1076,17 @@ export const watchQueue = [
 
 export const sourceCounts = [
   { label: 'Latest daily X capture', value: '1', detail: '1 Aug 16 post captured · x-twitter-daily-2026-08-17.md' },
+  { label: 'Direct X reads this pass', value: '3', detail: '3 Aug 18–19 posts read directly · tweet URLs cited' },
   { label: 'Previous daily X capture', value: '5', detail: '5 Aug 14–15 posts captured · x-twitter-daily-2026-08-15.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '59', detail: '12 knowledge pages + 47 update pages after this pass' },
+  { label: 'Public site content', value: '60', detail: '12 knowledge pages + 48 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-08-20', x_post: 3, third_party: 1, wiki_update: 0, site_update: 1 },
   { date: '2026-08-17', x_post: 1, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-08-15', x_post: 5, third_party: 0, wiki_update: 1, site_update: 0 },
   { date: '2026-08-14', x_post: 3, third_party: 0, wiki_update: 1, site_update: 1 },

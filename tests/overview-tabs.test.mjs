@@ -333,6 +333,37 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(algorithmicHealthSource, /August 16[\s\S]*changes his food protocol according to data[\s\S]*does not establish clinical appropriateness/i, 'algorithmic-health context should preserve the decision-loop signal and its limit');
   });
 
+  it('publishes the August 18–19 eye-health and mRNA posts as attributed N=1 and research-watch claims', () => {
+    for (const required of [
+      '2089822905891000605',
+      '2090212567235149828',
+      '2089802500765548788',
+      'https://x.com/bryan_johnson/status/2089822905891000605',
+      'meibomian-gland dysfunction',
+      'self-reported 30% improvement',
+      'not reader eye-care guidance or medical advice',
+      'names no trial, paper, or data',
+      'not a Blueprint intervention, an available treatment, or medical advice',
+      "confidence: 'low'",
+    ]) {
+      assert.match(signalsSource, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i'), `August 18–19 signals should preserve: ${required}`);
+    }
+
+    assert.match(dashboardSectionsSource, /meibomian[\s\S]*probing[\s\S]*unsettled/i, 'opinion context should keep the MGD therapy-stack details and their limits together');
+    assert.match(dashboardSectionsSource, /Interesting Times[\s\S]*media-reception/i, 'timeline should record the NYT podcast item as media reception');
+
+    const blueprintProtocolSource = readFileSync(new URL('../src/content/knowledge/blueprint-protocol.md', import.meta.url), 'utf8');
+    assert.match(blueprintProtocolSource, /August 18[\s\S]*meibography[\s\S]*four-therapy[\s\S]*not a validated eye-care protocol/i, 'blueprint-protocol page should extend the eye-health arc with its evidence boundary');
+
+    const biomarkerProtocolsSource = readFileSync(new URL('../src/content/knowledge/biomarker-driven-longevity-protocols.md', import.meta.url), 'utf8');
+    assert.match(biomarkerProtocolsSource, /August 18[\s\S]*organ-specific diagnosis[\s\S]*self-reported imaging/i, 'biomarker-protocols page should preserve the feedback-loop framing and its limit');
+    assert.match(biomarkerProtocolsSource, /August 19[\s\S]*Phase 3[\s\S]*named no trial/i, 'biomarker-protocols page should keep the mRNA post in research watch');
+
+    for (const required of ['Tumor-fingerprint mRNA therapy reaches Phase 3', 'Eye-health protocol']) {
+      assert.match(protocolsSource, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `protocol dossier should include card: ${required}`);
+    }
+  });
+
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
     for (const phrase of ['watchQueue', 'sourceCounts', 'curatedActivity', 'Protocol tabs backed']) {
       assert.match(indexSource, new RegExp(phrase), `overview should use real sidebar data: ${phrase}`);
@@ -340,7 +371,7 @@ describe('home overview and dedicated changelog route', () => {
     for (const phrase of ['Enhanced Games follow-up', 'Kate Tolo baseline', 'Microplastics testing', '82 unique tweet URLs', '11 tweets with engagement']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `signals/sidebar data should include ${phrase}`);
     }
-    for (const phrase of ['1 Aug 16 post captured', '5 Aug 14–15 posts captured', '12 knowledge pages + 47 update pages']) {
+    for (const phrase of ['1 Aug 16 post captured', '5 Aug 14–15 posts captured', '12 knowledge pages + 48 update pages']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `source counts should include ${phrase}`);
     }
     assert.doesNotMatch(indexSource, /index \* 17|updateCards\[0\]|next curated publish pass/, 'right sidebar should not use deterministic placeholder formulas or newest-card watch copy');

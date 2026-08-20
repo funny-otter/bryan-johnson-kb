@@ -20,6 +20,15 @@ export type TimelineEvent = {
 
 export const opinionItems: OpinionItem[] = [
   {
+    claim: 'Johnson says his longevity protocol may be stressing his meibomian glands.',
+    position: 'After being diagnosed with advanced meibomian-gland dysfunction, Johnson reported a four-therapy eye stack (IPL, radiofrequency, intraductal probing, red-light therapy) with a self-reported 30% gland-function improvement, and named likely systemic drivers that include his own choices: a topical anti-androgen used for hair growth, low insulin/IGF-1 signaling from his diet, and thyroid history.',
+    counterpoint: 'The post is an attributed N=1 account. Johnson himself flags that probing science is unsettled and that four simultaneous therapies cannot be separated, and the improvement figure is self-reported imaging without independent verification. It is not evidence any therapy works for others, a validated eye-care protocol, or medical advice; gland-confounding attribution to his protocol remains his hypothesis.',
+    confidence: 'medium',
+    relatedHref: '/knowledge/blueprint-protocol/',
+    relatedTitle: 'Blueprint Protocol',
+    sources: ['https://x.com/bryan_johnson/status/2089822905891000605'],
+  },
+  {
     claim: 'Johnson frames dietary control as biomarker-governed mastery rather than disorder.',
     position: 'Responding to people who say he has an eating disorder, Johnson described years of dietary control as mastery, said he is accountable to biomarkers and changes the protocol according to data, and acknowledged that the pursuit can enter unhealthy territory.',
     counterpoint: 'The post is a personal self-description and rhetorical analogy, not a clinical assessment. Biomarker feedback does not by itself establish psychological wellbeing, nutritional adequacy, or whether a pattern is clinically appropriate; the dashboard neither diagnoses Johnson nor treats his routine as guidance.',
@@ -148,6 +157,33 @@ export const opinionItems: OpinionItem[] = [
 ];
 
 export const timelineEvents: TimelineEvent[] = [
+  {
+    date: '2026-08-19',
+    label: 'Tumor-fingerprint mRNA therapy enters Johnson’s research watch',
+    summary: 'Johnson described an mRNA therapy that trains the immune system on a tumor’s genetic fingerprint, paired with Keytruda removing the brakes cancer puts on T-cells, and said it has reached a Phase 3 trial for the first time. The post names no trial, paper, or data, so the KB records low-confidence third-party research commentary—not a Blueprint intervention, an available treatment, or medical advice.',
+    relatedHref: '/longevity/',
+    relatedTitle: 'Longevity protocol',
+    source: 'https://x.com/bryan_johnson/status/2090212567235149828',
+    confidence: 'low',
+  },
+  {
+    date: '2026-08-18',
+    label: 'Eye-health agenda lands a diagnosis: advanced meibomian-gland dysfunction',
+    summary: 'After a stye visit, Johnson said meibography and Schirmer testing showed advanced meibomian-gland dysfunction with gland dropout, and published a four-therapy stack—in-office IPL, radiofrequency, intraductal probing, and 630nm red light—plus home compresses and drops, reporting a self-rated 30% gland-function improvement. He also named likely drivers inside his own protocol, including a topical anti-androgen and low insulin/IGF-1 signaling. The KB records an attributed N=1 diagnosis-and-intervention account—not a validated eye-care protocol, evidence the therapies work in general, or medical advice.',
+    relatedHref: '/knowledge/blueprint-protocol/',
+    relatedTitle: 'Blueprint Protocol',
+    source: 'https://x.com/bryan_johnson/status/2089822905891000605',
+    confidence: 'medium',
+  },
+  {
+    date: '2026-08-18',
+    label: 'Don’t Die featured in the finale of NYT’s “Interesting Times” podcast',
+    summary: 'Johnson quote-posted Ross Douthat’s final “Interesting Times” episode, which features him as “the man who wants to live forever,” and said he is energized to see Don’t Die “being metabolized by society.” The KB records a media-reception and movement-positioning signal—not a health claim or endorsement of the podcast’s framing.',
+    relatedHref: '/knowledge/dont-die/',
+    relatedTitle: "Don't Die",
+    source: 'https://x.com/bryan_johnson/status/2089802500765548788',
+    confidence: 'medium',
+  },
   {
     date: '2026-08-16',
     label: 'Food-discipline post makes biomarker accountability—and its boundary—explicit',
