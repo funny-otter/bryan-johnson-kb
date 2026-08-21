@@ -364,6 +364,37 @@ describe('home overview and dedicated changelog route', () => {
     }
   });
 
+  it('publishes the August 20 dog-adoption post as an attributed observational claim with literature context', () => {
+    for (const required of [
+      '2090503911493022007',
+      'https://x.com/bryan_johnson/status/2090503911493022007',
+      '24% lower risk of dying early',
+      'Kramer',
+      '2019 meta-analysis',
+      '2021 reappraisal',
+      'confounder-adjusted estimates',
+      'nonsignificant',
+      'not a demonstrated causal effect',
+      'confidence: \'low\'',
+    ]) {
+      assert.match(signalsSource, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i'), `dog-adoption signal should preserve: ${required}`);
+    }
+
+    assert.match(dashboardSectionsSource, /24% lower risk of dying early[\s\S]*Kramer[\s\S]*nonsignificant[\s\S]*not a demonstrated causal effect/i, 'opinion context should pair the claim with the literature counterpoint');
+    assert.match(dashboardSectionsSource, /Dog adoption framed with a 24% mortality-association statistic/, 'timeline should record the dog-adoption item');
+
+    const dontDieSource = readFileSync(new URL('../src/content/knowledge/dont-die.md', import.meta.url), 'utf8');
+    assert.match(dontDieSource, /August 20[\s\S]*Katara[\s\S]*24%[\s\S]*Kramer[\s\S]*nonsignificant[\s\S]*not a demonstrated causal effect/i, 'dont-die page should keep the claim and its literature boundary together');
+
+    const bryanJohnsonSource = readFileSync(new URL('../src/content/knowledge/bryan-johnson.md', import.meta.url), 'utf8');
+    assert.match(bryanJohnsonSource, /August 20[\s\S]*Katara[\s\S]*highest-engagement[\s\S]*contested adjustment[\s\S]*not a demonstrated causal effect/i, 'bryan-johnson page should record the dog post with its attribution boundary');
+  });
+
+  it('consolidates August 18–20 provenance onto the wiki daily capture', () => {
+    assert.match(signalsSource, /raw\/articles\/bryan-johnson\/x-twitter-daily-2026-08-21\.md/, 'signals should cite the wiki daily capture');
+    assert.match(signalsSource, /9 Aug 18–20 posts captured/, 'source counts should rotate to the latest wiki capture');
+  });
+
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
     for (const phrase of ['watchQueue', 'sourceCounts', 'curatedActivity', 'Protocol tabs backed']) {
       assert.match(indexSource, new RegExp(phrase), `overview should use real sidebar data: ${phrase}`);
@@ -371,7 +402,7 @@ describe('home overview and dedicated changelog route', () => {
     for (const phrase of ['Enhanced Games follow-up', 'Kate Tolo baseline', 'Microplastics testing', '82 unique tweet URLs', '11 tweets with engagement']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `signals/sidebar data should include ${phrase}`);
     }
-    for (const phrase of ['1 Aug 16 post captured', '5 Aug 14–15 posts captured', '12 knowledge pages + 48 update pages']) {
+    for (const phrase of ['1 Aug 16 post captured', '5 Aug 14–15 posts captured', '12 knowledge pages + 49 update pages']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `source counts should include ${phrase}`);
     }
     assert.doesNotMatch(indexSource, /index \* 17|updateCards\[0\]|next curated publish pass/, 'right sidebar should not use deterministic placeholder formulas or newest-card watch copy');

@@ -20,6 +20,19 @@ export type TimelineEvent = {
 
 export const opinionItems: OpinionItem[] = [
   {
+    claim: 'Johnson says dog owners have about a 24% lower risk of dying early, announcing he adopted a dog.',
+    position: 'Adopting a Belgian Malinois he named Katara, Johnson paired the announcement with the statistic that dog ownership is associated with roughly 24% lower all-cause mortality — the same order of magnitude reported by a 2019 meta-analysis of 10 observational studies covering about 3.8 million participants (Kramer et al., Circulation: Cardiovascular Quality and Outcomes).',
+    counterpoint: 'The underlying evidence is observational, and its headline figure is unadjusted. A 2021 reappraisal re-pooling the same literature with confounder-adjusted estimates found the all-cause mortality association statistically nonsignificant (pooled RR ≈ 0.93), with a residual protective signal mainly in people with existing cardiovascular disease. The dashboard records an attributed association with contested adjustment — not a demonstrated causal effect, a health recommendation to adopt a dog, or medical advice.',
+    confidence: 'low',
+    relatedHref: '/knowledge/dont-die/',
+    relatedTitle: "Don't Die",
+    sources: [
+      'https://x.com/bryan_johnson/status/2090503911493022007',
+      'https://doi.org/10.1161/circoutcomes.119.005554',
+      'https://www.ahajournals.org/doi/10.1161/CIRCOUTCOMES.120.006907',
+    ],
+  },
+  {
     claim: 'Johnson says his longevity protocol may be stressing his meibomian glands.',
     position: 'After being diagnosed with advanced meibomian-gland dysfunction, Johnson reported a four-therapy eye stack (IPL, radiofrequency, intraductal probing, red-light therapy) with a self-reported 30% gland-function improvement, and named likely systemic drivers that include his own choices: a topical anti-androgen used for hair growth, low insulin/IGF-1 signaling from his diet, and thyroid history.',
     counterpoint: 'The post is an attributed N=1 account. Johnson himself flags that probing science is unsettled and that four simultaneous therapies cannot be separated, and the improvement figure is self-reported imaging without independent verification. It is not evidence any therapy works for others, a validated eye-care protocol, or medical advice; gland-confounding attribution to his protocol remains his hypothesis.',
@@ -157,6 +170,15 @@ export const opinionItems: OpinionItem[] = [
 ];
 
 export const timelineEvents: TimelineEvent[] = [
+  {
+    date: '2026-08-20',
+    label: 'Dog adoption framed with a 24% mortality-association statistic',
+    summary: 'Johnson announced he adopted a Belgian Malinois named Katara and wrote that dog owners have about a 24% lower risk of dying early. The figure matches an unadjusted 2019 meta-analysis of ~3.8 million participants; a 2021 reappraisal using confounder-adjusted estimates found the all-cause association nonsignificant. The KB records an attributed observational claim with literature context—not a causal effect, a reason to adopt a dog for health, or medical advice.',
+    relatedHref: '/knowledge/dont-die/',
+    relatedTitle: "Don't Die",
+    source: 'https://x.com/bryan_johnson/status/2090503911493022007',
+    confidence: 'low',
+  },
   {
     date: '2026-08-19',
     label: 'Tumor-fingerprint mRNA therapy enters Johnson’s research watch',

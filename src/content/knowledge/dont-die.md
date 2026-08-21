@@ -4,7 +4,7 @@ slug: dont-die
 type: concept
 sourcePath: concepts/dont-die.md
 created: '2026-05-22'
-updated: '2026-08-20'
+updated: '2026-08-21'
 tags:
   - longevity
   - biohacking
@@ -12,6 +12,9 @@ tags:
   - protocol
   - open-question
 sources:
+  - https://x.com/bryan_johnson/status/2090503911493022007
+  - https://doi.org/10.1161/circoutcomes.119.005554
+  - https://www.ahajournals.org/doi/10.1161/CIRCOUTCOMES.120.006907
   - https://x.com/bryan_johnson/status/2089802500765548788
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-29.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-25.md
@@ -75,6 +78,8 @@ On July 12, 2026, Johnson published “The world wants me to die,” interpretin
 On July 24, Johnson shifted Don’t Die’s curative language into a more concrete company mission. He argued that once basic needs are met, “solving all diseases” is the rational next project and described Immortals as infrastructure for individuals to discover and resolve their own health issues, naming iPSCs, organoids, deep cellular characterization, and personalized therapy development. The post matters as movement and company positioning; it is not evidence that Immortals can diagnose or cure disease, that these technologies are clinically available through the company, or that any treatment is safe or effective.
 
 On August 18, Johnson quote-posted the final episode of New York Times columnist Ross Douthat’s “Interesting Times” podcast, which features him as “the man who wants to live forever,” and said he is energized to see Don’t Die “being metabolized by society” as people grapple with what longer, disease-free lives would mean. The dashboard records this as mainstream-media reception and movement positioning—the ideology reaching outside longevity circles—not a health claim, an endorsement of the podcast’s framing, or verification of its contents.
+
+On August 20, Johnson announced he adopted a Belgian Malinois named Katara and framed the decision with the claim that dog owners have about a 24% lower risk of dying early. That extends Don’t Die’s lifestyle filter to pet ownership, and the statistic has traceable literature behind it: an unadjusted 2019 meta-analysis of 10 observational studies covering roughly 3.8 million participants reported exactly that association (Kramer et al., *Circulation: Cardiovascular Quality and Outcomes*), while a 2021 reappraisal re-pooling the same studies with confounder-adjusted estimates found the all-cause mortality association statistically nonsignificant (pooled RR ≈ 0.93), with a residual protective signal mainly in people with existing cardiovascular disease. The dashboard records this as an attributed observational claim with contested adjustment—not a demonstrated causal effect, a health recommendation to adopt a dog, or medical advice.
 
 ## Practical components
 

@@ -1,5 +1,23 @@
 export const curatedSignals = [
   {
+    id: 'dog-adoption-mortality-claim',
+    title: 'Johnson adopts a dog and cites a 24% lower mortality association',
+    date: '2026-08-20',
+    badge: 'Claim',
+    kind: 'tweet',
+    topic: 'Dog ownership / mortality association',
+    summary:
+      'Johnson announced he adopted a Belgian Malinois named Katara and wrote that dog owners have about a 24% lower risk of dying early. The number matches a real 2019 meta-analysis of 10 observational studies and ~3.8 million participants (Kramer et al., Circulation: Cardiovascular Quality and Outcomes), which reported an unadjusted 24% risk reduction; a 2021 reappraisal using confounder-adjusted estimates found the all-cause mortality association statistically nonsignificant (pooled RR ≈ 0.93). The dashboard records an attributed observational association with contested adjustment—not a demonstrated causal effect, a health recommendation to adopt a dog, or medical advice.',
+    href: '/knowledge/dont-die/',
+    tweetId: '2090503911493022007',
+    confidence: 'low',
+    sources: [
+      'https://x.com/bryan_johnson/status/2090503911493022007',
+      'https://doi.org/10.1161/circoutcomes.119.005554',
+      'https://www.ahajournals.org/doi/10.1161/CIRCOUTCOMES.120.006907',
+    ],
+  },
+  {
     id: 'meibomian-gland-dysfunction-protocol-disclosure',
     title: 'Johnson discloses advanced meibomian-gland dysfunction and a four-therapy eye stack',
     date: '2026-08-18',
@@ -11,7 +29,10 @@ export const curatedSignals = [
     href: '/knowledge/blueprint-protocol/',
     tweetId: '2089822905891000605',
     confidence: 'medium',
-    sources: ['https://x.com/bryan_johnson/status/2089822905891000605'],
+    sources: [
+      'https://x.com/bryan_johnson/status/2089822905891000605',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-08-21.md',
+    ],
   },
   {
     id: 'mrna-tumor-vaccine-phase3-research-watch',
@@ -25,7 +46,10 @@ export const curatedSignals = [
     href: '/longevity/',
     tweetId: '2090212567235149828',
     confidence: 'low',
-    sources: ['https://x.com/bryan_johnson/status/2090212567235149828'],
+    sources: [
+      'https://x.com/bryan_johnson/status/2090212567235149828',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-08-21.md',
+    ],
   },
   {
     id: 'dont-die-nyt-interesting-times-reception',
@@ -39,7 +63,10 @@ export const curatedSignals = [
     href: '/knowledge/dont-die/',
     tweetId: '2089802500765548788',
     confidence: 'medium',
-    sources: ['https://x.com/bryan_johnson/status/2089802500765548788'],
+    sources: [
+      'https://x.com/bryan_johnson/status/2089802500765548788',
+      'raw/articles/bryan-johnson/x-twitter-daily-2026-08-21.md',
+    ],
   },
   {
     id: 'food-discipline-biomarker-accountability',
@@ -896,6 +923,13 @@ export const curatedSignals = [
 
 export const watchQueue = [
   {
+    title: 'Dog-ownership mortality claim: source and framing',
+    summary:
+      'Watch whether Johnson cites the underlying literature for the “24% lower risk of dying early” claim and how he frames it. The figure matches an unadjusted 2019 meta-analysis (Kramer et al., ~3.8M participants); a 2021 reappraisal using confounder-adjusted estimates found the all-cause association nonsignificant. It is an observational association—not a causal effect, a reason to adopt a dog for health, or medical advice.',
+    source: 'https://x.com/bryan_johnson/status/2090503911493022007',
+    href: '/knowledge/dont-die/',
+  },
+  {
     title: 'MGD follow-through: imaging, drivers, and protocol tradeoffs',
     summary:
       'Watch for repeated meibography images, whether the reported 30% gland-function improvement persists or reverses, which therapy drove it, and how Johnson weighs the named systemic drivers—topical anti-androgen use, low insulin/IGF-1 signaling, thyroid history—against his longevity protocol. His August 18 post is an attributed N=1 account with unseparated simultaneous therapies; it is not evidence any therapy works, that probing is settled science, or reader eye-care guidance.',
@@ -1075,17 +1109,19 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '1', detail: '1 Aug 16 post captured · x-twitter-daily-2026-08-17.md' },
-  { label: 'Direct X reads this pass', value: '3', detail: '3 Aug 18–19 posts read directly · tweet URLs cited' },
-  { label: 'Previous daily X capture', value: '5', detail: '5 Aug 14–15 posts captured · x-twitter-daily-2026-08-15.md' },
+  { label: 'Latest daily X capture', value: '9', detail: '9 Aug 18–20 posts captured · x-twitter-daily-2026-08-21.md' },
+  { label: 'Literature check this pass', value: '2', detail: '2 papers verified for the dog-ownership claim · Kramer 2019 + 2021 reappraisal' },
+  { label: 'Previous daily X capture', value: '1', detail: '1 Aug 16 post captured · x-twitter-daily-2026-08-17.md' },
+  { label: 'Earlier daily X capture', value: '5', detail: '5 Aug 14–15 posts captured · x-twitter-daily-2026-08-15.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '60', detail: '12 knowledge pages + 48 update pages after this pass' },
+  { label: 'Public site content', value: '61', detail: '12 knowledge pages + 49 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-08-21', x_post: 1, third_party: 2, wiki_update: 1, site_update: 1 },
   { date: '2026-08-20', x_post: 3, third_party: 1, wiki_update: 0, site_update: 1 },
   { date: '2026-08-17', x_post: 1, third_party: 0, wiki_update: 1, site_update: 1 },
   { date: '2026-08-15', x_post: 5, third_party: 0, wiki_update: 1, site_update: 0 },

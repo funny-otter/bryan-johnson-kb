@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-08-20'
+updated: '2026-08-21'
 tags:
   - person
   - company
@@ -13,6 +13,9 @@ tags:
   - biomarkers
   - protocol
 sources:
+  - https://x.com/bryan_johnson/status/2090503911493022007
+  - https://doi.org/10.1161/circoutcomes.119.005554
+  - https://www.ahajournals.org/doi/10.1161/CIRCOUTCOMES.120.006907
   - https://x.com/bryan_johnson/status/2089822905891000605
   - https://x.com/bryan_johnson/status/2090212567235149828
   - https://x.com/bryan_johnson/status/2089802500765548788
@@ -156,6 +159,8 @@ In a separate August 13 post, Johnson summarized an unnamed mouse study in which
 On August 16, Johnson responded to people characterizing his dietary control as an eating disorder. He described years of discipline as mastery, said he is accountable to biomarkers and changes the protocol according to data, and acknowledged that the pursuit can move into unhealthy territory. The dashboard records this as a current algorithmic-health and behavior-design position. It is Johnson’s personal self-description—not a clinical diagnosis, proof that his eating pattern is safe or appropriate for others, or medical advice.
 
 On August 18–19, Johnson published three higher-signal updates. He disclosed advanced meibomian-gland dysfunction diagnosed after a stye visit—meibography imaging plus Schirmer testing showing gland dropout and aqueous deficiency—and a four-therapy eye stack (IPL, radiofrequency, intraductal probing, 630nm red light) with a self-reported 30% gland-function improvement, while naming drivers inside his own protocol such as a topical anti-androgen and low insulin/IGF-1 signaling. He also highlighted a tumor-fingerprint mRNA immunotherapy paired with Keytruda that he says has reached a Phase 3 trial, and quote-posted the finale of Ross Douthat’s New York Times podcast featuring him, saying Don’t Die is “being metabolized by society.” The dashboard records the eye post as an attributed N=1 diagnosis-and-intervention account, the mRNA post as low-confidence third-party research commentary naming no trial or paper, and the podcast post as media reception. None are reader guidance or medical advice; lower-signal same-period posts (a focus-frustration reflection and dunk-training updates) were reviewed but not promoted.
+
+On August 20, Johnson announced he adopted a Belgian Malinois named Katara and paired the announcement with the claim that dog owners have about a 24% lower risk of dying early—his highest-engagement post of the August 18–20 window. The figure traces to real literature: an unadjusted 2019 meta-analysis of 10 observational studies covering ~3.8 million participants (Kramer et al., *Circulation: Cardiovascular Quality and Outcomes*) reported exactly that association, while a 2021 reappraisal re-pooling the same studies with confounder-adjusted estimates found the all-cause mortality association statistically nonsignificant (pooled RR ≈ 0.93), with residual protective signal mainly in people with existing cardiovascular disease. The dashboard records this as an attributed observational claim with contested adjustment—not a demonstrated causal effect, a health recommendation to adopt a dog, or medical advice. A same-day sun/oxygen aphorism and the dog’s-name follow-up were reviewed but not promoted separately.
 
 ## Reading stance
 
