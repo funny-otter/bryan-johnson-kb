@@ -7,7 +7,7 @@ export const curatedSignals = [
     kind: 'tweet',
     topic: 'Dog ownership / mortality association',
     summary:
-      'Johnson announced he adopted a Belgian Malinois named Katara and wrote that dog owners have about a 24% lower risk of dying early. The number matches a real 2019 meta-analysis of 10 observational studies and ~3.8 million participants (Kramer et al., Circulation: Cardiovascular Quality and Outcomes), which reported an unadjusted 24% risk reduction; a 2021 reappraisal using confounder-adjusted estimates found the all-cause mortality association statistically nonsignificant (pooled RR ≈ 0.93). The dashboard records an attributed observational association with contested adjustment—not a demonstrated causal effect, a health recommendation to adopt a dog, or medical advice.',
+      'Johnson announced he adopted a Belgian Malinois named Katara and wrote that dog owners have about a 24% lower risk of dying early. The number matches a real 2019 meta-analysis of 10 observational studies and ~3.8 million participants (Kramer et al., Circulation: Cardiovascular Quality and Outcomes), which reported an unadjusted 24% risk reduction; a 2020 reappraisal using confounder-adjusted estimates found the all-cause mortality association statistically nonsignificant (pooled RR ≈ 0.93). The dashboard records an attributed observational association with contested adjustment—not a demonstrated causal effect, a health recommendation to adopt a dog, or medical advice.',
     href: '/knowledge/dont-die/',
     tweetId: '2090503911493022007',
     confidence: 'low',
@@ -925,7 +925,7 @@ export const watchQueue = [
   {
     title: 'Dog-ownership mortality claim: source and framing',
     summary:
-      'Watch whether Johnson cites the underlying literature for the “24% lower risk of dying early” claim and how he frames it. The figure matches an unadjusted 2019 meta-analysis (Kramer et al., ~3.8M participants); a 2021 reappraisal using confounder-adjusted estimates found the all-cause association nonsignificant. It is an observational association—not a causal effect, a reason to adopt a dog for health, or medical advice.',
+      'Watch whether Johnson cites the underlying literature for the “24% lower risk of dying early” claim and how he frames it. The figure matches an unadjusted 2019 meta-analysis (Kramer et al., ~3.8M participants); a 2020 reappraisal using confounder-adjusted estimates found the all-cause association nonsignificant. It is an observational association—not a causal effect, a reason to adopt a dog for health, or medical advice.',
     source: 'https://x.com/bryan_johnson/status/2090503911493022007',
     href: '/knowledge/dont-die/',
   },
@@ -1110,7 +1110,7 @@ export const watchQueue = [
 
 export const sourceCounts = [
   { label: 'Latest daily X capture', value: '9', detail: '9 Aug 18–20 posts captured · x-twitter-daily-2026-08-21.md' },
-  { label: 'Literature check this pass', value: '2', detail: '2 papers verified for the dog-ownership claim · Kramer 2019 + 2021 reappraisal' },
+  { label: 'Literature check this pass', value: '2', detail: '2 papers verified for the dog-ownership claim · Kramer 2019 + 2020 reappraisal' },
   { label: 'Previous daily X capture', value: '1', detail: '1 Aug 16 post captured · x-twitter-daily-2026-08-17.md' },
   { label: 'Earlier daily X capture', value: '5', detail: '5 Aug 14–15 posts captured · x-twitter-daily-2026-08-15.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },

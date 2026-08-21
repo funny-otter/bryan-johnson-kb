@@ -371,7 +371,7 @@ describe('home overview and dedicated changelog route', () => {
       '24% lower risk of dying early',
       'Kramer',
       '2019 meta-analysis',
-      '2021 reappraisal',
+      '2020 reappraisal',
       'confounder-adjusted estimates',
       'nonsignificant',
       'not a demonstrated causal effect',
