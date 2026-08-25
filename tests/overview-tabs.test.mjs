@@ -390,9 +390,46 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(bryanJohnsonSource, /August 20[\s\S]*Katara[\s\S]*highest-engagement[\s\S]*contested adjustment[\s\S]*not a demonstrated causal effect/i, 'bryan-johnson page should record the dog post with its attribution boundary');
   });
 
-  it('consolidates August 18–20 provenance onto the wiki daily capture', () => {
-    assert.match(signalsSource, /raw\/articles\/bryan-johnson\/x-twitter-daily-2026-08-21\.md/, 'signals should cite the wiki daily capture');
-    assert.match(signalsSource, /9 Aug 18–20 posts captured/, 'source counts should rotate to the latest wiki capture');
+  it('consolidates August 22–24 provenance onto the wiki daily captures', () => {
+    assert.match(signalsSource, /x-twitter-daily-2026-08-23\.md/, 'source counts should rotate to the latest wiki capture');
+    assert.match(signalsSource, /4 Aug 22–23 posts captured/, 'latest capture count should be shown');
+    assert.match(signalsSource, /2 Aug 23–24 posts captured/, 'source counts should keep the August 23–24 capture');
+    assert.match(signalsSource, /9 Aug 18–20 posts captured/, 'source counts should keep the August 18–20 capture');
+
+    const updatePage = readFileSync(new URL('../src/content/updates/2026-08-24-cycle-phase-cholesterol-curation.md', import.meta.url), 'utf8');
+    assert.match(updatePage, /raw\/articles\/bryan-johnson\/x-twitter-daily-2026-08-23\.md/, 'update page should cite the wiki daily capture');
+    assert.match(updatePage, /raw\/articles\/bryan-johnson\/x-twitter-daily-2026-08-24\.md/, 'update page should cite the August 23–24 capture');
+  });
+
+  it('publishes the August 24 cycle-phase cholesterol thread as attributed claims with literature context', () => {
+    for (const required of [
+      'cycle-phase-cholesterol-claims',
+      '2091983155700133977',
+      'https://x.com/_katetolo/status/2091955753674543337',
+      '19% cycle-dependent swing',
+      'BioCycle',
+      'Mumford et al., 2010',
+      '14.3%',
+      '7.9%',
+      '~6% “mislabeled” figure does not precisely match',
+      'not a directive to reinterpret lab results without a clinician',
+      "confidence: 'medium'",
+    ]) {
+      assert.match(signalsSource, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i'), `cycle-phase signal should preserve: ${required}`);
+    }
+
+    assert.match(dashboardSectionsSource, /follicular[\s\S]*BioCycle[\s\S]*does not precisely match[\s\S]*directive to reinterpret labs? (results )?without a clinician/i, 'opinion context should pair the claim with the literature boundary');
+    assert.match(dashboardSectionsSource, /Cycle-phase cholesterol claims amplified into the female-protocol narrative/, 'timeline should record the cycle-phase cholesterol item');
+
+    const biomarkerProtocolsSource = readFileSync(new URL('../src/content/knowledge/biomarker-driven-longevity-protocols.md', import.meta.url), 'utf8');
+    assert.match(biomarkerProtocolsSource, /August 24[\s\S]*follicular[\s\S]*BioCycle[\s\S]*Mumford et al\., 2010[\s\S]*not a directive to reinterpret lab results without a clinician/i, 'biomarker-protocols page should keep the claim and its literature boundary together');
+
+    const bryanJohnsonSource = readFileSync(new URL('../src/content/knowledge/bryan-johnson.md', import.meta.url), 'utf8');
+    assert.match(bryanJohnsonSource, /August 24[\s\S]*check your girl.s blood work[\s\S]*BioCycle[\s\S]*not medical advice/i, 'bryan-johnson page should record the quote-post with its attribution boundary');
+    assert.match(bryanJohnsonSource, /August 22[\s\S]*biggest villain[\s\S]*rhetorical restatement/i, 'bryan-johnson page should record the birthday-window allegory as rhetoric');
+
+    const dontDieSource = readFileSync(new URL('../src/content/knowledge/dont-die.md', import.meta.url), 'utf8');
+    assert.match(dontDieSource, /August 22[\s\S]*biggest villain[\s\S]*rhetorical restatement[\s\S]*personal chronology/i, 'dont-die page should keep the allegory and its chronology boundary together');
   });
 
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
@@ -402,7 +439,7 @@ describe('home overview and dedicated changelog route', () => {
     for (const phrase of ['Enhanced Games follow-up', 'Kate Tolo baseline', 'Microplastics testing', '82 unique tweet URLs', '11 tweets with engagement']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `signals/sidebar data should include ${phrase}`);
     }
-    for (const phrase of ['1 Aug 16 post captured', '5 Aug 14–15 posts captured', '12 knowledge pages + 49 update pages']) {
+    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 50 update pages']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `source counts should include ${phrase}`);
     }
     assert.doesNotMatch(indexSource, /index \* 17|updateCards\[0\]|next curated publish pass/, 'right sidebar should not use deterministic placeholder formulas or newest-card watch copy');

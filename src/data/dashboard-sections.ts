@@ -20,6 +20,22 @@ export type TimelineEvent = {
 
 export const opinionItems: OpinionItem[] = [
   {
+    claim: 'Johnson and Tolo say women’s cholesterol readings may depend on menstrual-cycle phase.',
+    position:
+      'Amplifying Kate Tolo’s thread, Johnson told women with high cholesterol to re-check it against their cycle. Tolo says cholesterol isn’t one number—it reads higher in the follicular half of the cycle, falls after ovulation, and hits its lowest just before the period, with a claimed ~19% swing; she cites the FDA’s 1977 exclusion of women of childbearing age from early drug trials and the 2010 “first rigorous, large-scale proof,” and announces her own $2.6M, 14-million-datapoint cycle experiment.',
+    counterpoint:
+      'The physiology is documented: the NIH BioCycle study (Mumford et al., 2010, J Clin Endocrinol Metab; 259 women, up to 16 fertility-monitor-timed draws over two cycles) measured ~19% mean within-woman total-cholesterol variation, and more women crossed the ≥200 mg/dL boundary when tested in the follicular phase (14.3%) than the late-luteal phase (7.9%); a 2011 clinical-lipidology review by the same group recommends cycle-aware timing with repeat draws near boundaries. But the thread names no study, its “~6% mislabeled” figure does not precisely match published results (5% of BioCycle women were above 200 mg/dL at all visits; 19.7% at least once), and phase-specific reference ranges remain a proposal no lab has adopted. The dashboard records attributed claims with literature context—not a directive to reinterpret lab results without a clinician, and not medical advice.',
+    confidence: 'medium',
+    relatedHref: '/knowledge/biomarker-driven-longevity-protocols/',
+    relatedTitle: 'Biomarker-driven longevity protocols',
+    sources: [
+      'https://x.com/bryan_johnson/status/2091983155700133977',
+      'https://x.com/_katetolo/status/2091955753674543337',
+      'https://doi.org/10.1210/jc.2010-0109',
+      'https://doi.org/10.2217/clp.11.9',
+    ],
+  },
+  {
     claim: 'Johnson says dog owners have about a 24% lower risk of dying early, announcing he adopted a dog.',
     position: 'Adopting a Belgian Malinois he named Katara, Johnson paired the announcement with the statistic that dog ownership is associated with roughly 24% lower all-cause mortality — the same order of magnitude reported by a 2019 meta-analysis of 10 observational studies covering about 3.8 million participants (Kramer et al., Circulation: Cardiovascular Quality and Outcomes).',
     counterpoint: 'The underlying evidence is observational, and its headline figure is unadjusted. A 2020 reappraisal re-pooling the same literature with confounder-adjusted estimates found the all-cause mortality association statistically nonsignificant (pooled RR ≈ 0.93), with a residual protective signal mainly in people with existing cardiovascular disease. The dashboard records an attributed association with contested adjustment — not a demonstrated causal effect, a health recommendation to adopt a dog, or medical advice.',
@@ -170,6 +186,16 @@ export const opinionItems: OpinionItem[] = [
 ];
 
 export const timelineEvents: TimelineEvent[] = [
+  {
+    date: '2026-08-24',
+    label: 'Cycle-phase cholesterol claims amplified into the female-protocol narrative',
+    summary:
+      'Johnson amplified Kate Tolo’s thread telling women with high cholesterol they may be misdiagnosed because cholesterol reads higher in the follicular half of the menstrual cycle, falls after ovulation, and bottoms out just before the period—citing a ~19% cycle-dependent swing, the FDA’s 1977 childbearing-age trial exclusion, and her own $2.6M cycle experiment. The numbers track the NIH BioCycle study (Mumford et al., 2010: ~19% mean within-woman total-cholesterol variation; 14.3% vs 7.9% of women above the 200 mg/dL boundary in follicular vs late-luteal testing), and a 2011 review by the same group recommends cycle-aware timing. The KB records attributed claims with literature context—the thread names no study, its “~6% mislabeled” figure does not precisely match published results, and none of it is a directive to reinterpret labs without a clinician or medical advice.',
+    relatedHref: '/knowledge/biomarker-driven-longevity-protocols/',
+    relatedTitle: 'Biomarker-driven longevity protocols',
+    source: 'https://x.com/bryan_johnson/status/2091983155700133977',
+    confidence: 'medium',
+  },
   {
     date: '2026-08-20',
     label: 'Dog adoption framed with a 24% mortality-association statistic',

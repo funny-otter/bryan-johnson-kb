@@ -81,6 +81,8 @@ On August 18, Johnson quote-posted the final episode of New York Times columnist
 
 On August 20, Johnson announced he adopted a Belgian Malinois named Katara and framed the decision with the claim that dog owners have about a 24% lower risk of dying early. That extends Don’t Die’s lifestyle filter to pet ownership, and the statistic has traceable literature behind it: an unadjusted 2019 meta-analysis of 10 observational studies covering roughly 3.8 million participants reported exactly that association (Kramer et al., *Circulation: Cardiovascular Quality and Outcomes*), while a 2020 reappraisal re-pooling the same studies with confounder-adjusted estimates found the all-cause mortality association statistically nonsignificant (pooled RR ≈ 0.93), with a residual protective signal mainly in people with existing cardiovascular disease. The dashboard records this as an attributed observational claim with contested adjustment—not a demonstrated causal effect, a health recommendation to adopt a dog, or medical advice.
 
+On August 22, his birthday, Johnson condensed the movement’s anti-death framing into a short allegory: after listing political parties, religions, nations, competitors, ideologies, and individuals as the enemies people habitually focus on, he called death the “biggest villain”—romanticized, defended, even worshiped. The dashboard records this as a rhetorical restatement of the Don’t Die worldview rather than evidence about mortality or any intervention; his same-day birthday posts, including a joking request for a death prediction from his biographical details, remain personal chronology.
+
 ## Practical components
 
 The public-facing Don't Die stack includes:

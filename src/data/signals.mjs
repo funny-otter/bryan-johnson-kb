@@ -1,5 +1,24 @@
 export const curatedSignals = [
   {
+    id: 'cycle-phase-cholesterol-claims',
+    title: 'Johnson amplifies Tolo’s cycle-phase cholesterol “misdiagnosis” claims',
+    date: '2026-08-24',
+    badge: 'Female health',
+    kind: 'tweet',
+    topic: 'Female health / lab interpretation',
+    summary:
+      'Johnson amplified Kate Tolo’s thread telling women in their 30s with high cholesterol they may be misdiagnosed: cholesterol “isn’t one number”—it reads higher in the follicular half of the menstrual cycle, falls after ovulation, and hits its lowest just before the period, with a claimed ~19% cycle-dependent swing; she cites the FDA’s 1977 exclusion of women of childbearing age from early drug trials and announces her own $2.6M, 14-million-datapoint cycle experiment. The physiology is real and documented: the NIH BioCycle study (Mumford et al., 2010, J Clin Endocrinol Metab; 259 women, up to 16 fertility-monitor-timed draws over two cycles) measured ~19% mean within-woman total-cholesterol variation, and more women crossed the ≥200 mg/dL boundary when tested in the follicular phase (14.3%) than the late-luteal phase (7.9%); a 2011 clinical-lipidology review by the same group recommends cycle-aware timing with repeat draws near boundaries. But the thread names no study, its ~6% “mislabeled” figure does not precisely match published results (5% of BioCycle women were above 200 mg/dL at all visits; 19.7% at least once), and reference-range reform is a proposal, not an adopted standard. The dashboard records attributed claims with literature context—not a directive to reinterpret lab results without a clinician, and not medical advice.',
+    href: '/knowledge/biomarker-driven-longevity-protocols/',
+    tweetId: '2091983155700133977',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2091983155700133977',
+      'https://x.com/_katetolo/status/2091955753674543337',
+      'https://doi.org/10.1210/jc.2010-0109',
+      'https://doi.org/10.2217/clp.11.9',
+    ],
+  },
+  {
     id: 'dog-adoption-mortality-claim',
     title: 'Johnson adopts a dog and cites a 24% lower mortality association',
     date: '2026-08-20',
@@ -923,6 +942,13 @@ export const curatedSignals = [
 
 export const watchQueue = [
   {
+    title: 'Cycle-aware cholesterol claims: named study and range reform',
+    summary:
+      'Watch whether Tolo or Johnson name the underlying study for the cycle-phase cholesterol thread (the numbers track the NIH BioCycle study, Mumford et al. 2010: ~19% within-woman total-cholesterol variation; 14.3% vs 7.9% above the 200 mg/dL boundary in follicular vs late-luteal testing), reconcile the “~6% mislabeled” figure with published results, and whether any lab adopts phase-specific reference ranges. The thread’s physiology is documented, but range reform is a proposal, and none of it is a directive to reinterpret labs without a clinician or medical advice.',
+    source: 'https://x.com/_katetolo/status/2091955753674543337',
+    href: '/knowledge/biomarker-driven-longevity-protocols/',
+  },
+  {
     title: 'Dog-ownership mortality claim: source and framing',
     summary:
       'Watch whether Johnson cites the underlying literature for the “24% lower risk of dying early” claim and how he frames it. The figure matches an unadjusted 2019 meta-analysis (Kramer et al., ~3.8M participants); a 2020 reappraisal using confounder-adjusted estimates found the all-cause association nonsignificant. It is an observational association—not a causal effect, a reason to adopt a dog for health, or medical advice.',
@@ -1109,18 +1135,20 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '9', detail: '9 Aug 18–20 posts captured · x-twitter-daily-2026-08-21.md' },
-  { label: 'Literature check this pass', value: '2', detail: '2 papers verified for the dog-ownership claim · Kramer 2019 + 2020 reappraisal' },
-  { label: 'Previous daily X capture', value: '1', detail: '1 Aug 16 post captured · x-twitter-daily-2026-08-17.md' },
-  { label: 'Earlier daily X capture', value: '5', detail: '5 Aug 14–15 posts captured · x-twitter-daily-2026-08-15.md' },
+  { label: 'Latest daily X capture', value: '4', detail: '4 Aug 22–23 posts captured · x-twitter-daily-2026-08-23.md' },
+  { label: 'Literature check this pass', value: '2', detail: '2 papers verified for cycle-phase cholesterol claims · BioCycle (Mumford 2010) + 2011 review' },
+  { label: 'Previous X capture', value: '9', detail: '9 Aug 18–20 posts captured · x-twitter-daily-2026-08-21.md' },
+  { label: 'Aug 23–24 daily X capture', value: '2', detail: '2 Aug 23–24 posts captured · x-twitter-daily-2026-08-24.md' },
+  { label: 'Earlier daily X capture', value: '1', detail: '1 Aug 16 post captured · x-twitter-daily-2026-08-17.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '61', detail: '12 knowledge pages + 49 update pages after this pass' },
+  { label: 'Public site content', value: '62', detail: '12 knowledge pages + 50 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-08-24', x_post: 1, third_party: 1, wiki_update: 1, site_update: 1 },
   { date: '2026-08-21', x_post: 1, third_party: 2, wiki_update: 1, site_update: 1 },
   { date: '2026-08-20', x_post: 3, third_party: 1, wiki_update: 0, site_update: 1 },
   { date: '2026-08-17', x_post: 1, third_party: 0, wiki_update: 1, site_update: 1 },

@@ -51,6 +51,11 @@ export const protocolCategories = [
     },
     cards: [
       {
+        label: 'Female-health labs',
+        title: 'Cycle-phase cholesterol claims meet the BioCycle literature',
+        body: 'Johnson amplified Kate Tolo’s thread that women labeled with high cholesterol may be misdiagnosed because cholesterol swings ~19% across the menstrual cycle. The physiology is documented (NIH BioCycle, Mumford et al. 2010; 2011 review), but the thread names no study and its “~6% mislabeled” figure does not precisely match published results. Keep it attributed claim-plus-context, not a directive to reinterpret labs without a clinician.',
+      },
+      {
         label: 'Eye-health protocol',
         title: 'Meibomian-gland dysfunction becomes the first disclosed organ-specific diagnosis',
         body: 'Johnson reports advanced MGD found via meibography after a stye visit, treated with IPL, radiofrequency, intraductal probing, and red-light therapy plus home care, with a self-reported 30% gland-function improvement. His own post flags unsettled probing science and unseparable therapies; keep it attributed N=1, not reader eye-care guidance.',
