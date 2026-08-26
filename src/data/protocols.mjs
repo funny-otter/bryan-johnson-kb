@@ -40,6 +40,7 @@ export const protocolCategories = [
         sourced('Treat the July 2026 operational Kate Tolo baseline as an N=1 measurement program. The 100-day, 14-million-data-point plan with 100+ daily tasks, 50+ devices, and a 12-person team is not completed evidence, a representative female-health protocol, or reader guidance.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-26.md'),
         sourced('Treat Johnson’s August 2026 claim that Kate Tolo’s protocol was built in 90 days and is “better” than his five-year build as an operational comparison only. No quality criteria, comparative measurements, outcomes, or external validation were published.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-08-05.md'),
         sourced('Treat Johnson’s August 2026 47-tube, 250 mL blood draw as a scale and methods update. The post names single-cell immune sequencing and broad measurement domains but publishes no assay list, results, diagnosis, clinical interpretation, or evidence that collection volume improves outcomes.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-08-13.md'),
+        sourced('Treat Johnson’s August 2026 interval-training post as an attributed exercise claim, not a prescription. The 4×4 shape (3 sessions/week, 4 minutes at 90–95% effort with 3 easy minutes, 8 weeks) is the Helgerud et al. 2007 protocol (+7.2% VO2max), and the “11% lower all-cause mortality” figure compresses per-MET fitness associations (Kodama et al. 2009: 13% per MET)—no trial has measured mortality from eight weeks of intervals, and the post names no study.', 'https://x.com/bryan_johnson/status/2092230490581574033'),
         sourced('Treat the Baseten biological-age event as public measurement positioning. Its brain, skin, strength, balance, reaction-speed, and mobility domains are not evidence that the tests form a validated or actionable biological-age score.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-08-14.md'),
         sourced('Treat the August 2026 meibomian-gland post as an attributed N=1 diagnosis-and-intervention account. Johnson reports advanced MGD with gland dropout, a four-therapy stack (IPL, radiofrequency, intraductal probing, 630nm red light), and a self-reported 30% gland-function improvement; his own post says the probing science is unsettled and the therapies cannot be separated. It is not a validated eye-care protocol or reader guidance.', 'https://x.com/bryan_johnson/status/2089822905891000605'),
         sourced('Preserve medical-caution framing: this page summarizes Johnson/Blueprint practice, not personal treatment advice.', 'concepts/biomarker-driven-longevity-protocols.md'),
@@ -50,6 +51,11 @@ export const protocolCategories = [
       ],
     },
     cards: [
+      {
+        label: 'Exercise claim',
+        title: 'Interval-training protocol arrives with an 11% mortality-reduction figure',
+        body: 'Johnson posted 3 sessions/week for 8 weeks of 4×4 intervals (4 minutes at 90–95% effort, 3 easy minutes between) with the claim of 11% lower all-cause mortality. The protocol is Helgerud et al. 2007 (+7.2% VO2max) and the mortality arithmetic matches per-MET fitness associations (Kodama et al. 2009: 13% per MET), but no trial has measured mortality from eight weeks of intervals and the post names no study. Attributed claim-plus-context, not an exercise prescription or medical advice.',
+      },
       {
         label: 'Female-health labs',
         title: 'Cycle-phase cholesterol claims meet the BioCycle literature',

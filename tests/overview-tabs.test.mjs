@@ -432,6 +432,33 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(dontDieSource, /August 22[\s\S]*biggest villain[\s\S]*rhetorical restatement[\s\S]*personal chronology/i, 'dont-die page should keep the allegory and its chronology boundary together');
   });
 
+  it('publishes the August 25 interval-training mortality claim as attributed exercise guidance, not a prescription', () => {
+    for (const required of [
+      'interval-training-mortality-claim',
+      '2092230490581574033',
+      'https://x.com/bryan_johnson/status/2092230490581574033',
+      'Helgerud et al., 2007',
+      'Kodama et al., 2009',
+      '13% lower all-cause mortality risk per additional MET',
+      'no trial has measured mortality outcomes from eight weeks of intervals',
+      'not a demonstrated 8-week mortality outcome, an exercise prescription, or medical advice',
+      "confidence: 'medium'",
+    ]) {
+      assert.match(signalsSource, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i'), `interval-training signal should preserve: ${required}`);
+    }
+
+    assert.match(dashboardSectionsSource, /Helgerud[\s\S]*Kodama[\s\S]*not a demonstrated 8-week mortality outcome, an exercise prescription, or medical advice/i, 'opinion context should pair the protocol claim with the literature boundary');
+    assert.match(dashboardSectionsSource, /Interval-training protocol posted with an 11% mortality-reduction claim/, 'timeline should record the interval-training item');
+
+    const biomarkerProtocolsSource = readFileSync(new URL('../src/content/knowledge/biomarker-driven-longevity-protocols.md', import.meta.url), 'utf8');
+    assert.match(biomarkerProtocolsSource, /August 25[\s\S]*Helgerud et al\., 2007[\s\S]*Kodama et al\., 2009[\s\S]*not a demonstrated 8-week mortality outcome, an exercise prescription, or medical advice/i, 'biomarker-protocols page should keep the exercise claim and its literature boundary together');
+
+    const bryanJohnsonSource = readFileSync(new URL('../src/content/knowledge/bryan-johnson.md', import.meta.url), 'utf8');
+    assert.match(bryanJohnsonSource, /August 25[\s\S]*Norwegian 4×4[\s\S]*no trial has measured mortality outcomes[\s\S]*exercise prescription, or medical advice/i, 'bryan-johnson page should record the interval-training post with its attribution boundary');
+
+    assert.match(protocolsSource, /interval-training post as an attributed exercise claim, not a prescription[\s\S]*Helgerud et al\. 2007[\s\S]*Kodama et al\. 2009/, 'protocol guidance should keep the interval-training claim in the attributed lane');
+  });
+
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
     for (const phrase of ['watchQueue', 'sourceCounts', 'curatedActivity', 'Protocol tabs backed']) {
       assert.match(indexSource, new RegExp(phrase), `overview should use real sidebar data: ${phrase}`);
@@ -439,7 +466,7 @@ describe('home overview and dedicated changelog route', () => {
     for (const phrase of ['Enhanced Games follow-up', 'Kate Tolo baseline', 'Microplastics testing', '82 unique tweet URLs', '11 tweets with engagement']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `signals/sidebar data should include ${phrase}`);
     }
-    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 50 update pages']) {
+    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 51 update pages']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `source counts should include ${phrase}`);
     }
     assert.doesNotMatch(indexSource, /index \* 17|updateCards\[0\]|next curated publish pass/, 'right sidebar should not use deterministic placeholder formulas or newest-card watch copy');

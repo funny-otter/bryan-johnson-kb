@@ -4,7 +4,7 @@ slug: biomarker-driven-longevity-protocols
 type: concept
 sourcePath: concepts/biomarker-driven-longevity-protocols.md
 created: '2026-05-22'
-updated: '2026-08-20'
+updated: '2026-08-25'
 tags:
   - longevity
   - biomarkers
@@ -13,6 +13,9 @@ tags:
   - protocol
   - evaluation
 sources:
+  - https://x.com/bryan_johnson/status/2092230490581574033
+  - https://doi.org/10.1249/mss.0b013e3180304570
+  - https://doi.org/10.1001/jama.2009.681
   - https://x.com/bryan_johnson/status/2089822905891000605
   - https://x.com/bryan_johnson/status/2090212567235149828
   - raw/articles/bryan-johnson/x-twitter-daily-2026-08-17.md
@@ -141,6 +144,8 @@ On August 18, Johnson supplied the clearest example yet of the measure–interve
 On August 19, Johnson quote-commented third-party oncology news: an mRNA therapy that instructs the body to produce a tumor’s genetic fingerprint so the immune system trains T-cells against it, paired with Keytruda releasing the brakes cancer places on T-cells, which he says has reached a Phase 3 trial for the first time. He named no trial, paper, sponsor, or data. Like the mouse brain-clearance post, this belongs in research watch—third-party commentary inside his longevity narrative, not a Blueprint intervention, an available treatment, or medical advice.
 
 On August 24, the female-protocol narrative moved from collection scale to lab interpretation. Johnson amplified Kate Tolo’s thread arguing that women in their 30s labeled with high cholesterol may be misdiagnosed because cholesterol is not one number: it reads higher in the follicular half of the menstrual cycle, falls after ovulation, and hits its lowest just before the period, with a claimed ~19% cycle-dependent swing. Tolo cited the FDA’s 1977 exclusion of women of childbearing age from early drug trials, called a 2010 study the “first rigorous, large-scale proof,” and announced her own $2.6M experiment collecting 14 million cycle data points. The claims track real literature: the NIH BioCycle study (Mumford et al., 2010, *J Clin Endocrinol Metab*; 259 women, up to 16 fertility-monitor-timed draws over two cycles) measured ~19% mean within-woman total-cholesterol variation, and more women crossed the ≥200 mg/dL boundary when tested in the follicular phase (14.3%) than the late-luteal phase (7.9%); a 2011 clinical-lipidology review by the same group recommends cycle-aware test timing with repeat draws near boundaries. The dashboard keeps the boundary explicit: the thread names no study, its “~6% mislabeled” figure does not precisely match published results (5% of BioCycle women were above 200 mg/dL at all visits; 19.7% at least once), and phase-specific reference ranges remain a proposal rather than an adopted standard. This is attributed claim-plus-context, not a directive to reinterpret lab results without a clinician or medical advice.
+
+On August 25, Johnson moved the exercise claim lane into a concrete protocol with a quantified mortality figure. He posted 3 workouts a week for 8 weeks, each built from four 4-minute intervals at 90–95% effort separated by 3 easy minutes, and claimed a “lower risk of dying from any cause by 11% in 8 weeks,” closing that “your improved cardiorespiratory fitness is the risk reduction.” The protocol is the Norwegian 4×4 from Helgerud et al., 2007 (Med Sci Sports Exerc; 40 moderately trained men, workload-matched, 3 sessions/week for 8 weeks: +7.2% VO2max for the 4×4 group versus no change for moderate continuous training), and the mortality arithmetic tracks the Kodama et al., 2009 JAMA meta-analysis of 33 studies and 102,980 participants (13% lower all-cause mortality per additional MET of fitness, RR 0.87, 95% CI 0.84–0.90). The dashboard keeps the boundary explicit: no trial has measured mortality outcomes from eight weeks of interval training—the 11% compresses an RCT fitness outcome and a long-run observational association into an unattributed figure, and the post names no study. This is attributed claim-plus-context, not a demonstrated 8-week mortality outcome, an exercise prescription, or medical advice.
 
 ## Practical evaluation checklist
 

@@ -1,5 +1,23 @@
 export const curatedSignals = [
   {
+    id: 'interval-training-mortality-claim',
+    title: 'Johnson posts a 4×4 interval protocol claiming an 11% all-cause-mortality reduction in 8 weeks',
+    date: '2026-08-25',
+    badge: 'Exercise',
+    kind: 'tweet',
+    topic: 'Exercise / cardiorespiratory fitness',
+    summary:
+      'Johnson posted a concrete exercise prescription—3 workouts a week for 8 weeks, each built from four 4-minute intervals at 90–95% effort separated by 3 easy minutes—claiming a “lower risk of dying from any cause by 11% in 8 weeks” and closing that “your improved cardiorespiratory fitness is the risk reduction.” The protocol is the Norwegian 4×4 from Helgerud et al., 2007 (Med Sci Sports Exerc; 40 moderately trained men, 3 sessions/week for 8 weeks, workload-matched: +7.2% VO2max for 4×4 vs no change for moderate continuous groups), and the mortality arithmetic tracks observational meta-analysis: Kodama et al., 2009 (JAMA; 33 studies, 102,980 participants) pooled a 13% lower all-cause mortality risk per additional MET of fitness (RR 0.87, 95% CI 0.84–0.90). But no trial has measured mortality outcomes from eight weeks of intervals—the 11% is a modeled compression of an RCT fitness outcome plus a long-run epidemiological association, and the post names no study. The dashboard records an attributed exercise claim with literature context—not a demonstrated 8-week mortality outcome, an exercise prescription, or medical advice.',
+    href: '/health/',
+    tweetId: '2092230490581574033',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2092230490581574033',
+      'https://doi.org/10.1249/mss.0b013e3180304570',
+      'https://doi.org/10.1001/jama.2009.681',
+    ],
+  },
+  {
     id: 'cycle-phase-cholesterol-claims',
     title: 'Johnson amplifies Tolo’s cycle-phase cholesterol “misdiagnosis” claims',
     date: '2026-08-24',
@@ -942,6 +960,13 @@ export const curatedSignals = [
 
 export const watchQueue = [
   {
+    title: 'Interval-training mortality claim: named source for the 11% figure',
+    summary:
+      'Watch whether Johnson names the study behind the “11% in 8 weeks” all-cause-mortality claim attached to his 4×4 interval protocol. The protocol matches Helgerud et al. 2007 (8 weeks, 3×/week 4×4 intervals at 90–95% HRmax: +7.2% VO2max) and the mortality arithmetic matches per-MET fitness associations (Kodama et al. 2009: 13% lower all-cause mortality per MET, RR 0.87)—but no trial has measured mortality outcomes from eight weeks of intervals. Attributed claim-plus-context, not an exercise prescription or medical advice.',
+    source: 'https://x.com/bryan_johnson/status/2092230490581574033',
+    href: '/health/',
+  },
+  {
     title: 'Cycle-aware cholesterol claims: named study and range reform',
     summary:
       'Watch whether Tolo or Johnson name the underlying study for the cycle-phase cholesterol thread (the numbers track the NIH BioCycle study, Mumford et al. 2010: ~19% within-woman total-cholesterol variation; 14.3% vs 7.9% above the 200 mg/dL boundary in follicular vs late-luteal testing), reconcile the “~6% mislabeled” figure with published results, and whether any lab adopts phase-specific reference ranges. The thread’s physiology is documented, but range reform is a proposal, and none of it is a directive to reinterpret labs without a clinician or medical advice.',
@@ -1135,19 +1160,22 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest daily X capture', value: '4', detail: '4 Aug 22–23 posts captured · x-twitter-daily-2026-08-23.md' },
-  { label: 'Literature check this pass', value: '2', detail: '2 papers verified for cycle-phase cholesterol claims · BioCycle (Mumford 2010) + 2011 review' },
-  { label: 'Previous X capture', value: '9', detail: '9 Aug 18–20 posts captured · x-twitter-daily-2026-08-21.md' },
+  { label: 'Latest X capture', value: '2', detail: '2 Aug 25 posts captured · knowledge/raw/x/2026-08-26 bryan-johnson-batch' },
+  { label: 'Literature check this pass', value: '2', detail: '2 papers verified for the interval-training claim · Helgerud 2007 + Kodama 2009' },
+  { label: 'Previous daily X capture', value: '4', detail: '4 Aug 22–23 posts captured · x-twitter-daily-2026-08-23.md' },
+  { label: 'Cycle-phase literature', value: '2', detail: '2 papers verified for cycle-phase cholesterol claims · BioCycle (Mumford 2010) + 2011 review' },
   { label: 'Aug 23–24 daily X capture', value: '2', detail: '2 Aug 23–24 posts captured · x-twitter-daily-2026-08-24.md' },
+  { label: 'Earlier daily X capture', value: '9', detail: '9 Aug 18–20 posts captured · x-twitter-daily-2026-08-21.md' },
   { label: 'Earlier daily X capture', value: '1', detail: '1 Aug 16 post captured · x-twitter-daily-2026-08-17.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '62', detail: '12 knowledge pages + 50 update pages after this pass' },
+  { label: 'Public site content', value: '63', detail: '12 knowledge pages + 51 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-08-25', x_post: 2, third_party: 2, wiki_update: 0, site_update: 1 },
   { date: '2026-08-24', x_post: 1, third_party: 1, wiki_update: 1, site_update: 1 },
   { date: '2026-08-21', x_post: 1, third_party: 2, wiki_update: 1, site_update: 1 },
   { date: '2026-08-20', x_post: 3, third_party: 1, wiki_update: 0, site_update: 1 },

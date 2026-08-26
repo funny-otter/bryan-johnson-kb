@@ -20,6 +20,21 @@ export type TimelineEvent = {
 
 export const opinionItems: OpinionItem[] = [
   {
+    claim: 'Johnson says eight weeks of 4×4 interval training lowers all-cause mortality risk by 11%.',
+    position:
+      'Johnson posted an exercise prescription—3 workouts a week for 8 weeks, each four rounds of 4 minutes at 90–95% effort with 3 easy minutes between—claiming a “lower risk of dying from any cause by 11% in 8 weeks” and adding “your improved cardiorespiratory fitness is the risk reduction.”',
+    counterpoint:
+      'The protocol is the Norwegian 4×4 from Helgerud et al., 2007 (Med Sci Sports Exerc; 40 moderately trained men, workload-matched, 3 sessions/week for 8 weeks): +7.2% VO2max for the 4×4 group versus no change for moderate continuous training. The mortality arithmetic tracks Kodama et al., 2009 (JAMA meta-analysis; 33 studies, 102,980 participants): 13% lower all-cause mortality per additional MET of fitness (RR 0.87, 95% CI 0.84–0.90). But no trial has measured mortality outcomes from eight weeks of intervals—the post compresses an RCT fitness outcome and a long-run observational association into an unattributed mortality figure and names no study. The dashboard records an attributed exercise claim with literature context—not a demonstrated 8-week mortality outcome, an exercise prescription, or medical advice.',
+    confidence: 'medium',
+    relatedHref: '/knowledge/biomarker-driven-longevity-protocols/',
+    relatedTitle: 'Biomarker-driven longevity protocols',
+    sources: [
+      'https://x.com/bryan_johnson/status/2092230490581574033',
+      'https://doi.org/10.1249/mss.0b013e3180304570',
+      'https://doi.org/10.1001/jama.2009.681',
+    ],
+  },
+  {
     claim: 'Johnson and Tolo say women’s cholesterol readings may depend on menstrual-cycle phase.',
     position:
       'Amplifying Kate Tolo’s thread, Johnson told women with high cholesterol to re-check it against their cycle. Tolo says cholesterol isn’t one number—it reads higher in the follicular half of the cycle, falls after ovulation, and hits its lowest just before the period, with a claimed ~19% swing; she cites the FDA’s 1977 exclusion of women of childbearing age from early drug trials and the 2010 “first rigorous, large-scale proof,” and announces her own $2.6M, 14-million-datapoint cycle experiment.',
@@ -186,6 +201,16 @@ export const opinionItems: OpinionItem[] = [
 ];
 
 export const timelineEvents: TimelineEvent[] = [
+  {
+    date: '2026-08-25',
+    label: 'Interval-training protocol posted with an 11% mortality-reduction claim',
+    summary:
+      'Johnson posted a Norwegian-4×4-style prescription—3 workouts a week for 8 weeks, four rounds of 4 minutes at 90–95% effort with 3 easy minutes between—claiming a “lower risk of dying from any cause by 11% in 8 weeks” and that “your improved cardiorespiratory fitness is the risk reduction.” The protocol matches Helgerud et al., 2007 (8 weeks, 3×/week 4×4 at 90–95% HRmax: +7.2% VO2max, workload-matched), and the mortality arithmetic matches per-MET fitness associations (Kodama et al., 2009 JAMA meta-analysis: 13% lower all-cause mortality per MET, RR 0.87)—but no trial has measured mortality from eight weeks of intervals, and the post names no study. The KB records an attributed exercise claim with literature context—not a demonstrated 8-week mortality outcome, an exercise prescription, or medical advice.',
+    relatedHref: '/knowledge/biomarker-driven-longevity-protocols/',
+    relatedTitle: 'Biomarker-driven longevity protocols',
+    source: 'https://x.com/bryan_johnson/status/2092230490581574033',
+    confidence: 'medium',
+  },
   {
     date: '2026-08-24',
     label: 'Cycle-phase cholesterol claims amplified into the female-protocol narrative',
