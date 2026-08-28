@@ -1,5 +1,41 @@
 export const curatedSignals = [
   {
+    id: 'nte-tadalafil-biomarker-claim',
+    title: 'Johnson publishes a nighttime-erection “personal best” and calls NTE a tier 1 longevity biomarker',
+    date: '2026-08-27',
+    badge: 'Biomarkers',
+    kind: 'tweet',
+    topic: 'Nighttime erections / cardiovascular risk',
+    summary:
+      'Johnson posted a self-reported record—4 hr 2 min of nighttime erections (NTE) at “93% strength,” ranked against a personal database of 55,000 measurements—calling NTE “a tier 1 longevity biomarker as critical to systemic health as VO2 max, resting heart rate, HRV, and blood pressure.” He claims low nighttime-erection scores mean “2x risk of heart attack and stroke in the next 4 years” and lists his protocol: high sleep quality, cardiovascular fitness, a calm nervous system, and daily tadalafil 5 mg (“I take this longevity medication daily”). The direction tracks real literature—erectile dysfunction precedes and predicts cardiovascular events (Vlachopoulos et al., 2011 JACC meta-analysis of 12 cohorts, 36,744 men: RR 1.48 for CVD, 1.35 for stroke; the Krimpen population cohort found HR 2.6 for MI/stroke/sudden death only in *severely reduced* rigidity over ~6 years)—but the post names no study, and its flat “2x in 4 years” is stronger than the meta-analytic averages. Consumer NTE scores are not a validated clinical risk tool, and daily tadalafil is a prescription medication requiring clinician oversight. The dashboard records an attributed N=1 biomarker claim with literature context—not a validated risk prediction, a monitoring recommendation, or medical advice.',
+    href: '/knowledge/biomarker-driven-longevity-protocols/',
+    tweetId: '2093061998468903267',
+    confidence: 'low',
+    sources: [
+      'https://x.com/bryan_johnson/status/2093061998468903267',
+      'https://doi.org/10.1016/j.jacc.2011.06.024',
+      'https://pubmed.ncbi.nlm.nih.gov/17728804/',
+    ],
+  },
+  {
+    id: 'ldl-cholesterol-actionability-claim',
+    title: 'Johnson calls LDL “one of the most actionable things from a blood draw” with a 23%-per-mmol figure',
+    date: '2026-08-26',
+    badge: 'Cholesterol',
+    kind: 'tweet',
+    topic: 'LDL cholesterol / cardiovascular risk',
+    summary:
+      'Johnson posted that “LDL cholesterol is one of the most actionable things from a blood draw,” citing “a meta analysis of 49 randomized trials and 312,175 people” finding ~23% fewer major vascular events (heart attacks, strokes, cardiovascular death) per 39 mg/dL (1 mmol/L) LDL reduction, adding that nutrition “can do some of the heavy lifting”—“dropping LDL levels by 13-14% over six months by combining viscous fiber, nuts, plant protein, and plant sterols”—and that “medications can also serve a role.” The unnamed meta-analysis matches Sabatine et al., 2016 (JAMA; 49 trials, 312,175 participants, 39,645 major vascular events: RR 0.77 per 1 mmol/L LDL reduction, 95% CI 0.75–0.79, across statin and LDL-receptor-upregulating nonstatin therapies), and the diet figure matches the Jenkins et al., 2011 portfolio-diet RCT (JAMA; 345 hyperlipidemic participants, 6 months: −13.1% to −13.8% LDL for viscous fiber + nuts + soy/plant protein + plant sterols vs −3.0% control). The arithmetic is faithful to its sources, but the post names neither study, and the 23% is a trial-population relative effect over years of treatment—not a guarantee for any individual. The dashboard records an attributed claim with verified literature context—not a lab-interpretation directive, a diet prescription, or medical advice.',
+    href: '/health/',
+    tweetId: '2092597711543632216',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2092597711543632216',
+      'https://doi.org/10.1001/jama.2016.13985',
+      'https://doi.org/10.1001/jama.2011.1202',
+    ],
+  },
+  {
     id: 'interval-training-mortality-claim',
     title: 'Johnson posts a 4×4 interval protocol claiming an 11% all-cause-mortality reduction in 8 weeks',
     date: '2026-08-25',
@@ -960,6 +996,20 @@ export const curatedSignals = [
 
 export const watchQueue = [
   {
+    title: 'NTE biomarker claim: named source for the “2x in 4 years” risk figure',
+    summary:
+      'Watch whether Johnson names the study behind the “2x risk of heart attack and stroke in the next 4 years” claim attached to nighttime erections. The direction is documented—ED precedes and predicts cardiovascular events (Vlachopoulos et al. 2011 JACC meta-analysis: RR 1.48 CVD, 1.35 stroke; Krimpen cohort: HR 2.6 only for severely reduced rigidity over ~6 years)—but the flat 2x-in-4-years figure is stronger than the meta-analytic averages and the post names no study. Also watch whether consumer NTE measurement gains any clinical-validation evidence, and whether his daily tadalafil framing acknowledges prescription oversight. Attributed claim-plus-context, not a monitoring recommendation or medical advice.',
+    source: 'https://x.com/bryan_johnson/status/2093061998468903267',
+    href: '/knowledge/biomarker-driven-longevity-protocols/',
+  },
+  {
+    title: 'LDL actionability posts: named citations and individual framing',
+    summary:
+      'Watch whether Johnson names the meta-analysis behind the 23%-per-39 mg/dL LDL figure (the numbers match Sabatine et al. 2016 JAMA: RR 0.77 per 1 mmol/L across 49 trials, 312,175 participants) and the portfolio-diet source (Jenkins et al. 2011 JAMA: −13.1% to −13.8% LDL at 6 months), and whether future posts translate trial-population relative effects into individualized absolute risk. Attributed claim-plus-context, not a lab-interpretation directive or medical advice.',
+    source: 'https://x.com/bryan_johnson/status/2092597711543632216',
+    href: '/health/',
+  },
+  {
     title: 'Interval-training mortality claim: named source for the 11% figure',
     summary:
       'Watch whether Johnson names the study behind the “11% in 8 weeks” all-cause-mortality claim attached to his 4×4 interval protocol. The protocol matches Helgerud et al. 2007 (8 weeks, 3×/week 4×4 intervals at 90–95% HRmax: +7.2% VO2max) and the mortality arithmetic matches per-MET fitness associations (Kodama et al. 2009: 13% lower all-cause mortality per MET, RR 0.87)—but no trial has measured mortality outcomes from eight weeks of intervals. Attributed claim-plus-context, not an exercise prescription or medical advice.',
@@ -1160,21 +1210,26 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest X capture', value: '2', detail: '2 Aug 25 posts captured · knowledge/raw/x/2026-08-26 bryan-johnson-batch' },
-  { label: 'Literature check this pass', value: '2', detail: '2 papers verified for the interval-training claim · Helgerud 2007 + Kodama 2009' },
-  { label: 'Previous daily X capture', value: '4', detail: '4 Aug 22–23 posts captured · x-twitter-daily-2026-08-23.md' },
+  { label: 'Latest X capture', value: '3', detail: '3 Aug 27 posts captured · knowledge/raw/x/2026-08-28 bryan-johnson-batch' },
+  { label: 'Literature check this pass', value: '4', detail: '4 papers verified · Sabatine 2016 + Jenkins 2011 + Vlachopoulos 2011 + Krimpen cohort' },
+  { label: 'Previous X capture', value: '1', detail: '1 Aug 26 post captured · knowledge/raw/x/2026-08-27 bryan-johnson-batch' },
+  { label: 'Interval-training literature', value: '2', detail: '2 papers verified for the interval-training claim · Helgerud 2007 + Kodama 2009' },
+  { label: 'Earlier daily X capture', value: '2', detail: '2 Aug 25 posts captured · knowledge/raw/x/2026-08-26 bryan-johnson-batch' },
   { label: 'Cycle-phase literature', value: '2', detail: '2 papers verified for cycle-phase cholesterol claims · BioCycle (Mumford 2010) + 2011 review' },
   { label: 'Aug 23–24 daily X capture', value: '2', detail: '2 Aug 23–24 posts captured · x-twitter-daily-2026-08-24.md' },
+  { label: 'Earlier daily X capture', value: '4', detail: '4 Aug 22–23 posts captured · x-twitter-daily-2026-08-23.md' },
   { label: 'Earlier daily X capture', value: '9', detail: '9 Aug 18–20 posts captured · x-twitter-daily-2026-08-21.md' },
   { label: 'Earlier daily X capture', value: '1', detail: '1 Aug 16 post captured · x-twitter-daily-2026-08-17.md' },
   { label: 'Earlier June X capture', value: '18', detail: '18 tweets with engagement · x-twitter-daily-2026-06-12.md' },
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '63', detail: '12 knowledge pages + 51 update pages after this pass' },
+  { label: 'Public site content', value: '64', detail: '12 knowledge pages + 52 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-08-27', x_post: 3, third_party: 2, wiki_update: 0, site_update: 1 },
+  { date: '2026-08-26', x_post: 1, third_party: 2, wiki_update: 0, site_update: 1 },
   { date: '2026-08-25', x_post: 2, third_party: 2, wiki_update: 0, site_update: 1 },
   { date: '2026-08-24', x_post: 1, third_party: 1, wiki_update: 1, site_update: 1 },
   { date: '2026-08-21', x_post: 1, third_party: 2, wiki_update: 1, site_update: 1 },

@@ -459,6 +459,71 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(protocolsSource, /interval-training post as an attributed exercise claim, not a prescription[\s\S]*Helgerud et al\. 2007[\s\S]*Kodama et al\. 2009/, 'protocol guidance should keep the interval-training claim in the attributed lane');
   });
 
+  it('publishes the August 26 LDL claim with both unnamed studies identified and bounded', () => {
+    for (const required of [
+      'ldl-cholesterol-actionability-claim',
+      '2092597711543632216',
+      'https://x.com/bryan_johnson/status/2092597711543632216',
+      'one of the most actionable things from a blood draw',
+      'Sabatine et al., 2016',
+      'https://doi.org/10.1001/jama.2016.13985',
+      'Jenkins et al., 2011',
+      'https://doi.org/10.1001/jama.2011.1202',
+      '−13.1% to −13.8% LDL',
+      'the post names neither study',
+      'trial-population relative effect',
+      'not a lab-interpretation directive, a diet prescription, or medical advice',
+      "confidence: 'medium'",
+    ]) {
+      assert.match(signalsSource, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i'), `LDL signal should preserve: ${required}`);
+    }
+
+    assert.match(dashboardSectionsSource, /Sabatine[\s\S]*Jenkins[\s\S]*trial-population relative effect[\s\S]*not medical advice/i, 'opinion context should pair the LDL claim with named sources and the boundary');
+    assert.match(dashboardSectionsSource, /LDL framed as .one of the most actionable things from a blood draw./, 'timeline should record the LDL item');
+
+    const biomarkerProtocolsSource = readFileSync(new URL('../src/content/knowledge/biomarker-driven-longevity-protocols.md', import.meta.url), 'utf8');
+    assert.match(biomarkerProtocolsSource, /August 26[\s\S]*Sabatine et al\., 2016[\s\S]*Jenkins et al\., 2011[\s\S]*LDL interpretation belongs with a clinician[\s\S]*not a lab-interpretation directive, a diet prescription, or medical advice/i, 'biomarker-protocols page should keep the LDL claim and its literature boundary together');
+
+    const bryanJohnsonSource = readFileSync(new URL('../src/content/knowledge/bryan-johnson.md', import.meta.url), 'utf8');
+    assert.match(bryanJohnsonSource, /August 26[\s\S]*Sabatine et al\., 2016[\s\S]*Jenkins et al\., 2011[\s\S]*not an individual guarantee or a lab-interpretation directive[\s\S]*not medical advice/i, 'bryan-johnson page should record the LDL post with its attribution boundary');
+
+    assert.match(protocolsSource, /LDL post as an attributed cholesterol claim[\s\S]*Sabatine et al\. 2016[\s\S]*Jenkins et al\. 2011[\s\S]*not individual guarantees or a lab-interpretation directive/, 'protocol guidance should keep the LDL claim in the attributed lane');
+  });
+
+  it('publishes the August 27 nighttime-erection biomarker claim as attributed N=1 material, not monitoring guidance', () => {
+    for (const required of [
+      'nte-tadalafil-biomarker-claim',
+      '2093061998468903267',
+      'https://x.com/bryan_johnson/status/2093061998468903267',
+      'tier 1 longevity biomarker',
+      '2x risk of heart attack and stroke',
+      'daily tadalafil 5 mg',
+      'Vlachopoulos et al., 2011',
+      'https://doi.org/10.1016/j.jacc.2011.06.024',
+      'RR 1.48 for CVD, 1.35 for stroke',
+      'Krimpen',
+      'https://pubmed.ncbi.nlm.nih.gov/17728804/',
+      'stronger than the meta-analytic averages',
+      'consumer NTE scores are not a validated clinical risk tool',
+      'prescription medication requiring clinician oversight',
+      'not a validated risk prediction, a monitoring recommendation, or medical advice',
+      "confidence: 'low'",
+    ]) {
+      assert.match(signalsSource, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i'), `NTE signal should preserve: ${required}`);
+    }
+
+    assert.match(dashboardSectionsSource, /Vlachopoulos[\s\S]*Krimpen[\s\S]*stronger than the meta-analytic averages[\s\S]*prescription medication requiring clinician oversight/i, 'opinion context should pair the NTE claim with the literature boundary');
+    assert.match(dashboardSectionsSource, /Nighttime-erection .personal best. published as a tier-1-biomarker claim/, 'timeline should record the NTE item');
+
+    const biomarkerProtocolsSource = readFileSync(new URL('../src/content/knowledge/biomarker-driven-longevity-protocols.md', import.meta.url), 'utf8');
+    assert.match(biomarkerProtocolsSource, /August 27[\s\S]*Vlachopoulos et al\., 2011[\s\S]*Krimpen[\s\S]*not a validated risk prediction, a monitoring recommendation, or medical advice/i, 'biomarker-protocols page should keep the NTE claim and its literature boundary together');
+
+    const bryanJohnsonSource = readFileSync(new URL('../src/content/knowledge/bryan-johnson.md', import.meta.url), 'utf8');
+    assert.match(bryanJohnsonSource, /August 27[\s\S]*Vlachopoulos et al\., 2011[\s\S]*Krimpen[\s\S]*not a validated risk prediction, a monitoring recommendation, or medical advice/i, 'bryan-johnson page should record the NTE post with its attribution boundary');
+
+    assert.match(protocolsSource, /nighttime-erection post as an attributed N=1 biomarker claim[\s\S]*Vlachopoulos et al\. 2011[\s\S]*Krimpen[\s\S]*requiring clinician oversight/, 'protocol guidance should keep the NTE claim in the attributed lane');
+  });
+
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
     for (const phrase of ['watchQueue', 'sourceCounts', 'curatedActivity', 'Protocol tabs backed']) {
       assert.match(indexSource, new RegExp(phrase), `overview should use real sidebar data: ${phrase}`);
@@ -466,7 +531,7 @@ describe('home overview and dedicated changelog route', () => {
     for (const phrase of ['Enhanced Games follow-up', 'Kate Tolo baseline', 'Microplastics testing', '82 unique tweet URLs', '11 tweets with engagement']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `signals/sidebar data should include ${phrase}`);
     }
-    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 51 update pages']) {
+    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 52 update pages']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `source counts should include ${phrase}`);
     }
     assert.doesNotMatch(indexSource, /index \* 17|updateCards\[0\]|next curated publish pass/, 'right sidebar should not use deterministic placeholder formulas or newest-card watch copy');

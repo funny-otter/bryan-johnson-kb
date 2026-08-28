@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-08-25'
+updated: '2026-08-27'
 tags:
   - person
   - company
@@ -13,6 +13,12 @@ tags:
   - biomarkers
   - protocol
 sources:
+  - https://x.com/bryan_johnson/status/2093061998468903267
+  - https://doi.org/10.1016/j.jacc.2011.06.024
+  - https://pubmed.ncbi.nlm.nih.gov/17728804/
+  - https://x.com/bryan_johnson/status/2092597711543632216
+  - https://doi.org/10.1001/jama.2016.13985
+  - https://doi.org/10.1001/jama.2011.1202
   - https://x.com/bryan_johnson/status/2092230490581574033
   - https://doi.org/10.1249/mss.0b013e3180304570
   - https://doi.org/10.1001/jama.2009.681
@@ -170,6 +176,10 @@ On August 22, his 49th birthday, Johnson posted a short anti-death allegory call
 On August 24, Johnson quote-posted Kate Tolo’s thread on cycle-phase cholesterol variation with “check your girl’s blood work…,” amplifying the claim that women in their 30s labeled with high cholesterol may be misdiagnosed because cholesterol swings ~19% across the menstrual cycle—higher in the follicular half, lowest just before the period. Tolo cited the FDA’s 1977 exclusion of women from early drug trials and announced her own $2.6M, 14-million-datapoint cycle experiment. The claims track the NIH BioCycle study (Mumford et al., 2010: ~19% mean within-woman total-cholesterol variation; 14.3% vs 7.9% above the 200 mg/dL boundary in follicular vs late-luteal testing) and a 2011 review recommending cycle-aware timing, but the thread names no study and its “~6% mislabeled” figure does not precisely match published results (5% high at all visits; 19.7% at least once). The dashboard records attributed claims with literature context—not a directive to reinterpret labs without a clinician, and not medical advice. The same batch’s Baseten event promotion, hardware/health question, testosterone-culture post, birthday-note post, and food-mastery aphorism were reviewed and kept as chronology or low-signal positioning.
 
 On August 25, Johnson posted an exercise prescription—3 workouts a week for 8 weeks, each built from four 4-minute intervals at 90–95% effort separated by 3 easy minutes—claiming a “lower risk of dying from any cause by 11% in 8 weeks” and closing that “your improved cardiorespiratory fitness is the risk reduction.” The protocol is the Norwegian 4×4 from Helgerud et al., 2007 (Med Sci Sports Exerc; 40 moderately trained men, workload-matched, 3 sessions/week for 8 weeks: +7.2% VO2max versus no change for moderate continuous training), and the mortality arithmetic tracks the Kodama et al., 2009 JAMA meta-analysis (33 studies, 102,980 participants: 13% lower all-cause mortality per additional MET of fitness, RR 0.87, 95% CI 0.84–0.90). No trial has measured mortality outcomes from eight weeks of intervals; the 11% compresses an RCT fitness outcome and a long-run observational association into an unattributed figure, and the post names no study. The dashboard records an attributed exercise claim with literature context—not a demonstrated 8-week mortality outcome, an exercise prescription, or medical advice. A same-day post noting that roughly two-thirds of humanity believes in some form of life after death was reviewed and kept as chronology-only philosophy commentary.
+
+On August 26, Johnson turned to LDL cholesterol, calling it “one of the most actionable things from a blood draw” and citing “a meta analysis of 49 randomized trials and 312,175 people” for ~23% fewer major vascular events per 39 mg/dL (1 mmol/L) LDL reduction. He added that nutrition can do some of the heavy lifting—“dropping LDL levels by 13-14% over six months by combining viscous fiber, nuts, plant protein, and plant sterols”—and that “medications can also serve a role.” The figures are faithful to their sources once named: the meta-analysis matches Sabatine et al., 2016 (JAMA; 49 trials, 312,175 participants, 39,645 major vascular events: RR 0.77 per 1 mmol/L reduction, 95% CI 0.75–0.79, pooled across statin and LDL-receptor-upregulating nonstatin therapies), and the diet figure matches the Jenkins et al., 2011 portfolio-diet RCT (JAMA; 345 hyperlipidemic participants over 6 months: −13.1% to −13.8% LDL for viscous fiber, nuts, soy/plant protein, and plant sterols versus −3.0% for the low-saturated-fat control). The post names neither study, and the 23% is a trial-population relative effect over years of treatment—not an individual guarantee or a lab-interpretation directive. The dashboard records an attributed claim with verified literature context, not medical advice.
+
+On August 27, Johnson published a self-reported sexual-health “personal best”: 4 hr 2 min of nighttime erections (NTE) at 93% strength, ranked against a personal database of 55,000 measurements, calling NTE “a tier 1 longevity biomarker as critical to systemic health as VO2 max, resting heart rate, HRV, and blood pressure.” He claimed low nighttime-erection scores mean “2x risk of heart attack and stroke in the next 4 years” and listed his protocol: high sleep quality, cardiovascular fitness, a calm nervous system, and daily tadalafil 5 mg (“I take this longevity medication daily”). The direction is documented—erectile dysfunction precedes and predicts cardiovascular events—but the post’s specifics outrun the literature: the Vlachopoulos et al., 2011 JACC meta-analysis (12 cohorts, 36,744 men) pooled RR 1.48 for CVD and 1.35 for stroke, and the Krimpen population cohort found HR 2.6 for MI, stroke, or sudden death only in severely reduced rigidity over roughly six years. The post names no study; its flat “2x in 4 years” is stronger than the meta-analytic averages; consumer NTE scores are not a validated clinical risk tool; and daily tadalafil is a prescription medication requiring clinician oversight. The dashboard records an attributed N=1 biomarker claim with literature context—not a validated risk prediction, a monitoring recommendation, or medical advice. The same batch’s “3x better at predicting the right cancer treatment when biology is tracked longitudinally” post and a truncated retweet were reviewed and kept as chronology-only claims without identifiable sources.
 
 ## Reading stance
 

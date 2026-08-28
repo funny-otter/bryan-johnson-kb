@@ -20,6 +20,36 @@ export type TimelineEvent = {
 
 export const opinionItems: OpinionItem[] = [
   {
+    claim: 'Johnson says nighttime erections are “a tier 1 longevity biomarker” and that low scores mean 2x the risk of heart attack and stroke within four years.',
+    position:
+      'Johnson posted a self-reported “personal best”—4 hr 2 min of nighttime erections at 93% strength, ranked against a personal database of 55,000 measurements—calling NTE as critical to systemic health as VO2 max, resting heart rate, HRV, and blood pressure, and listing a protocol of sleep quality, cardiovascular fitness, a calm nervous system, and daily tadalafil 5 mg.',
+    counterpoint:
+      'The direction tracks real literature: erectile dysfunction precedes and predicts cardiovascular events. The Vlachopoulos et al., 2011 JACC meta-analysis (12 cohorts, 36,744 men) pooled RR 1.48 for CVD and 1.35 for stroke, and the Krimpen population cohort found HR 2.6 for MI/stroke/sudden death only in severely reduced rigidity over ~6 years. But the post names no study, and its flat “2x in 4 years” is stronger than the meta-analytic averages. NTE scores from consumer devices are not a validated clinical risk tool, and daily tadalafil is a prescription medication requiring clinician oversight. The dashboard records an attributed N=1 claim with literature context—not a validated risk prediction, a monitoring recommendation, or medical advice.',
+    confidence: 'low',
+    relatedHref: '/knowledge/biomarker-driven-longevity-protocols/',
+    relatedTitle: 'Biomarker-driven longevity protocols',
+    sources: [
+      'https://x.com/bryan_johnson/status/2093061998468903267',
+      'https://doi.org/10.1016/j.jacc.2011.06.024',
+      'https://pubmed.ncbi.nlm.nih.gov/17728804/',
+    ],
+  },
+  {
+    claim: 'Johnson says LDL cholesterol is “one of the most actionable things from a blood draw,” with 23% fewer major vascular events per 39 mg/dL reduction.',
+    position:
+      'Johnson cited “a meta analysis of 49 randomized trials and 312,175 people” finding about 23% fewer major vascular events per 39 mg/dL (1 mmol/L) LDL reduction, said nutrition can do some of the heavy lifting—13–14% LDL reduction over six months from viscous fiber, nuts, plant protein, and plant sterols—and acknowledged “medications can also serve a role.”',
+    counterpoint:
+      'The figures are faithful to their sources once named: the meta-analysis matches Sabatine et al., 2016 (JAMA; 49 trials, 312,175 participants, 39,645 events: RR 0.77 per 1 mmol/L, 95% CI 0.75–0.79, across statin and LDL-receptor-upregulating nonstatin therapies), and the diet figure matches the Jenkins et al., 2011 portfolio-diet RCT (JAMA; 345 participants, 6 months: −13.1% to −13.8% LDL vs −3.0% control). But the post cites neither study, and the 23% is a trial-population relative effect over years of treatment—not an individual guarantee or a lab-interpretation directive. The dashboard records an attributed claim with verified literature context, not medical advice.',
+    confidence: 'medium',
+    relatedHref: '/health/',
+    relatedTitle: 'Health protocol',
+    sources: [
+      'https://x.com/bryan_johnson/status/2092597711543632216',
+      'https://doi.org/10.1001/jama.2016.13985',
+      'https://doi.org/10.1001/jama.2011.1202',
+    ],
+  },
+  {
     claim: 'Johnson says eight weeks of 4×4 interval training lowers all-cause mortality risk by 11%.',
     position:
       'Johnson posted an exercise prescription—3 workouts a week for 8 weeks, each four rounds of 4 minutes at 90–95% effort with 3 easy minutes between—claiming a “lower risk of dying from any cause by 11% in 8 weeks” and adding “your improved cardiorespiratory fitness is the risk reduction.”',
@@ -201,6 +231,26 @@ export const opinionItems: OpinionItem[] = [
 ];
 
 export const timelineEvents: TimelineEvent[] = [
+  {
+    date: '2026-08-27',
+    label: 'Nighttime-erection “personal best” published as a tier-1-biomarker claim',
+    summary:
+      'Johnson posted a self-reported record—4 hr 2 min of nighttime erections at 93% strength from a personal database of 55,000 measurements—calling NTE a tier 1 longevity biomarker alongside VO2 max, resting heart rate, HRV, and blood pressure, claiming low scores mean 2x risk of heart attack and stroke within four years, and listing daily tadalafil 5 mg in his protocol. ED does precede and predict cardiovascular events (Vlachopoulos et al., 2011: RR 1.48 CVD / 1.35 stroke; Krimpen: HR 2.6 only for severely reduced rigidity), but the post names no study, its flat 2x-in-4-years figure is stronger than meta-analytic averages, consumer NTE scores are not a validated clinical risk tool, and tadalafil is a prescription drug. The KB records an attributed N=1 claim with literature context—not a validated risk prediction, a monitoring recommendation, or medical advice.',
+    relatedHref: '/knowledge/biomarker-driven-longevity-protocols/',
+    relatedTitle: 'Biomarker-driven longevity protocols',
+    source: 'https://x.com/bryan_johnson/status/2093061998468903267',
+    confidence: 'low',
+  },
+  {
+    date: '2026-08-26',
+    label: 'LDL framed as “one of the most actionable things from a blood draw”',
+    summary:
+      'Johnson called LDL cholesterol one of the most actionable blood-draw outputs, citing a meta-analysis of 49 randomized trials and 312,175 people for ~23% fewer major vascular events per 39 mg/dL (1 mmol/L) LDL reduction, and a 13–14% six-month LDL reduction from combining viscous fiber, nuts, plant protein, and plant sterols. The figures match Sabatine et al., 2016 (JAMA; RR 0.77 per 1 mmol/L, 49 trials, 312,175 participants) and the Jenkins et al., 2011 portfolio-diet RCT (−13.1% to −13.8% LDL at 6 months), but the post names neither study. The KB records an attributed claim with verified literature context—not a lab-interpretation directive, a diet prescription, or medical advice.',
+    relatedHref: '/health/',
+    relatedTitle: 'Health protocol',
+    source: 'https://x.com/bryan_johnson/status/2092597711543632216',
+    confidence: 'medium',
+  },
   {
     date: '2026-08-25',
     label: 'Interval-training protocol posted with an 11% mortality-reduction claim',

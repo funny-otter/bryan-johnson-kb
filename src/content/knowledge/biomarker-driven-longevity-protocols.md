@@ -4,7 +4,7 @@ slug: biomarker-driven-longevity-protocols
 type: concept
 sourcePath: concepts/biomarker-driven-longevity-protocols.md
 created: '2026-05-22'
-updated: '2026-08-25'
+updated: '2026-08-27'
 tags:
   - longevity
   - biomarkers
@@ -13,6 +13,12 @@ tags:
   - protocol
   - evaluation
 sources:
+  - https://x.com/bryan_johnson/status/2093061998468903267
+  - https://doi.org/10.1016/j.jacc.2011.06.024
+  - https://pubmed.ncbi.nlm.nih.gov/17728804/
+  - https://x.com/bryan_johnson/status/2092597711543632216
+  - https://doi.org/10.1001/jama.2016.13985
+  - https://doi.org/10.1001/jama.2011.1202
   - https://x.com/bryan_johnson/status/2092230490581574033
   - https://doi.org/10.1249/mss.0b013e3180304570
   - https://doi.org/10.1001/jama.2009.681
@@ -146,6 +152,10 @@ On August 19, Johnson quote-commented third-party oncology news: an mRNA therapy
 On August 24, the female-protocol narrative moved from collection scale to lab interpretation. Johnson amplified Kate Tolo’s thread arguing that women in their 30s labeled with high cholesterol may be misdiagnosed because cholesterol is not one number: it reads higher in the follicular half of the menstrual cycle, falls after ovulation, and hits its lowest just before the period, with a claimed ~19% cycle-dependent swing. Tolo cited the FDA’s 1977 exclusion of women of childbearing age from early drug trials, called a 2010 study the “first rigorous, large-scale proof,” and announced her own $2.6M experiment collecting 14 million cycle data points. The claims track real literature: the NIH BioCycle study (Mumford et al., 2010, *J Clin Endocrinol Metab*; 259 women, up to 16 fertility-monitor-timed draws over two cycles) measured ~19% mean within-woman total-cholesterol variation, and more women crossed the ≥200 mg/dL boundary when tested in the follicular phase (14.3%) than the late-luteal phase (7.9%); a 2011 clinical-lipidology review by the same group recommends cycle-aware test timing with repeat draws near boundaries. The dashboard keeps the boundary explicit: the thread names no study, its “~6% mislabeled” figure does not precisely match published results (5% of BioCycle women were above 200 mg/dL at all visits; 19.7% at least once), and phase-specific reference ranges remain a proposal rather than an adopted standard. This is attributed claim-plus-context, not a directive to reinterpret lab results without a clinician or medical advice.
 
 On August 25, Johnson moved the exercise claim lane into a concrete protocol with a quantified mortality figure. He posted 3 workouts a week for 8 weeks, each built from four 4-minute intervals at 90–95% effort separated by 3 easy minutes, and claimed a “lower risk of dying from any cause by 11% in 8 weeks,” closing that “your improved cardiorespiratory fitness is the risk reduction.” The protocol is the Norwegian 4×4 from Helgerud et al., 2007 (Med Sci Sports Exerc; 40 moderately trained men, workload-matched, 3 sessions/week for 8 weeks: +7.2% VO2max for the 4×4 group versus no change for moderate continuous training), and the mortality arithmetic tracks the Kodama et al., 2009 JAMA meta-analysis of 33 studies and 102,980 participants (13% lower all-cause mortality per additional MET of fitness, RR 0.87, 95% CI 0.84–0.90). The dashboard keeps the boundary explicit: no trial has measured mortality outcomes from eight weeks of interval training—the 11% compresses an RCT fitness outcome and a long-run observational association into an unattributed figure, and the post names no study. This is attributed claim-plus-context, not a demonstrated 8-week mortality outcome, an exercise prescription, or medical advice.
+
+On August 26, the biomarker lane turned to LDL cholesterol as “one of the most actionable things from a blood draw.” Johnson cited “a meta analysis of 49 randomized trials and 312,175 people” finding about 23% fewer major vascular events per 39 mg/dL (1 mmol/L) LDL reduction, and said nutrition can do some of the heavy lifting—“dropping LDL levels by 13-14% over six months by combining viscous fiber, nuts, plant protein, and plant sterols”—with “medications” as a possible role. The meta-analysis matches Sabatine et al., 2016 (JAMA; 49 trials, 312,175 participants, 39,645 major vascular events: RR 0.77 per 1 mmol/L reduction, 95% CI 0.75–0.79, pooled across statin and LDL-receptor-upregulating nonstatin therapies), and the diet figure matches the Jenkins et al., 2011 portfolio-diet RCT (JAMA; 345 hyperlipidemic participants over 6 months: −13.1% routine to −13.8% intensive LDL reduction versus −3.0% for the low-saturated-fat control). The dashboard keeps the boundary explicit: the post names neither study, and the 23% is a trial-population relative effect accumulated over years of treatment, not an individual guarantee—LDL interpretation belongs with a clinician. This is attributed claim-plus-context, not a lab-interpretation directive, a diet prescription, or medical advice.
+
+On August 27, the measurement loop added a sexual-health biomarker claim. Johnson published a self-reported NTE “personal best”—4 hr 2 min of nighttime erections at 93% strength, ranked against a personal database of 55,000 measurements—and called NTE “a tier 1 longevity biomarker as critical to systemic health as VO2 max, resting heart rate, HRV, and blood pressure.” He claimed low nighttime-erection scores mean “2x risk of heart attack and stroke in the next 4 years,” and listed a protocol of high sleep quality, cardiovascular fitness, a calm nervous system, and daily tadalafil 5 mg (“I take this longevity medication daily”). The direction is documented—erectile dysfunction precedes and predicts cardiovascular events—but the post’s specifics outrun the literature: the Vlachopoulos et al., 2011 JACC meta-analysis (12 prospective cohorts, 36,744 men) pooled RR 1.48 for CVD and 1.35 for stroke, and the Krimpen population cohort found HR 2.6 for MI, stroke, or sudden death only in severely reduced rigidity over roughly six years of follow-up. The post names no study; its flat “2x in 4 years” is stronger than the meta-analytic averages; consumer NTE scores are not a validated clinical risk tool; and daily tadalafil is a prescription medication requiring clinician oversight. This is an attributed N=1 biomarker claim with literature context—not a validated risk prediction, a monitoring recommendation, or medical advice.
 
 ## Practical evaluation checklist
 
