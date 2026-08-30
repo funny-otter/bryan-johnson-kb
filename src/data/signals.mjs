@@ -1,5 +1,23 @@
 export const curatedSignals = [
   {
+    id: 'nte-age-decline-claim',
+    title: 'Johnson posts NTE-by-age decline tables that nearly match classic normative data—while naming none of it',
+    date: '2026-08-29',
+    badge: 'Biomarkers',
+    kind: 'tweet',
+    topic: 'Nighttime erections / aging',
+    summary:
+      'Two days after his NTE “personal best,” Johnson posted age-binned nightly-duration tables—Age 20: 190 min, Age 50: 103 min, Age 60: 81 min, Age 75+: 50 min—repeating that “ED predicts cardiovascular events yrs before symptoms” and the “2x risk of heart attack and stroke over 4 years” figure. The decline itself is among the better-documented observations in sleep/sexual medicine: Karacan et al., 1975 (Am J Psychiatry; 125 healthy males aged 3–79, EEG-verified) established age-normative NPT data, and Johnson’s age-20 anchor of 190 min sits almost exactly on published values—Horita & Kumamoto, 1989 (189 healthy males aged 3–84) measured 189.6 min of total nightly tumescence at age 20, declining to ~62 min at age 70—while Schiavi et al., 1988 (J Gerontol; 40 healthy men aged 23–73) showed NPT frequency and duration fall progressively with age independent of sleep changes. But the post names no study; its intermediate bins (103/81/50 min) match no single published cohort—older-age values differ between series (Horita: ~62 min at 70; Karacan’s series: ~102 min at 70)—and the repeated flat “2x in 4 years” remains stronger than meta-analytic averages (Vlachopoulos et al., 2011: RR 1.48 for CVD, 1.35 for stroke). Consumer NTE scores are still not a validated clinical risk tool. The dashboard records an attributed normative-data claim with literature context—not a validated risk prediction, a monitoring recommendation, or medical advice.',
+    href: '/knowledge/biomarker-driven-longevity-protocols/',
+    tweetId: '2093698799172829255',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2093698799172829255',
+      'https://doi.org/10.1176/ajp.132.9.932',
+      'https://doi.org/10.1093/geronj/43.5.m146',
+    ],
+  },
+  {
     id: 'nte-tadalafil-biomarker-claim',
     title: 'Johnson publishes a nighttime-erection “personal best” and calls NTE a tier 1 longevity biomarker',
     date: '2026-08-27',
@@ -1210,9 +1228,10 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest X capture', value: '3', detail: '3 Aug 27 posts captured · knowledge/raw/x/2026-08-28 bryan-johnson-batch' },
-  { label: 'Literature check this pass', value: '4', detail: '4 papers verified · Sabatine 2016 + Jenkins 2011 + Vlachopoulos 2011 + Krimpen cohort' },
-  { label: 'Previous X capture', value: '1', detail: '1 Aug 26 post captured · knowledge/raw/x/2026-08-27 bryan-johnson-batch' },
+  { label: 'Latest X capture', value: '2', detail: '2 Aug 29 posts captured · knowledge/raw/x/2026-08-30 bryan-johnson-batch' },
+  { label: 'Literature check this pass', value: '3', detail: '3 papers verified · Karacan 1975 + Schiavi 1988 + Horita 1989 NPT normative series' },
+  { label: 'Previous X capture', value: '1', detail: '1 Aug 28 post captured · knowledge/raw/x/2026-08-29 bryan-johnson-batch' },
+  { label: 'Earlier X capture', value: '3', detail: '3 Aug 27 posts captured · knowledge/raw/x/2026-08-28 bryan-johnson-batch' },
   { label: 'Interval-training literature', value: '2', detail: '2 papers verified for the interval-training claim · Helgerud 2007 + Kodama 2009' },
   { label: 'Earlier daily X capture', value: '2', detail: '2 Aug 25 posts captured · knowledge/raw/x/2026-08-26 bryan-johnson-batch' },
   { label: 'Cycle-phase literature', value: '2', detail: '2 papers verified for cycle-phase cholesterol claims · BioCycle (Mumford 2010) + 2011 review' },
@@ -1224,10 +1243,12 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '64', detail: '12 knowledge pages + 52 update pages after this pass' },
+  { label: 'Public site content', value: '65', detail: '12 knowledge pages + 53 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-08-29', x_post: 2, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-08-28', x_post: 1, third_party: 0, wiki_update: 0, site_update: 0 },
   { date: '2026-08-27', x_post: 3, third_party: 2, wiki_update: 0, site_update: 1 },
   { date: '2026-08-26', x_post: 1, third_party: 2, wiki_update: 0, site_update: 1 },
   { date: '2026-08-25', x_post: 2, third_party: 2, wiki_update: 0, site_update: 1 },

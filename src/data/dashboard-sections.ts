@@ -20,6 +20,21 @@ export type TimelineEvent = {
 
 export const opinionItems: OpinionItem[] = [
   {
+    claim: 'Johnson posts NTE-by-age decline tables (190 min at 20 → 50 min at 75+) as if they were established reference data.',
+    position:
+      'Two days after his NTE “personal best,” Johnson posted age-binned nightly-duration tables—Age 20: 190 min, Age 50: 103 min, Age 60: 81 min, Age 75+: 50 min—repeating that “ED predicts cardiovascular events yrs before symptoms” with the “2x risk of heart attack and stroke over 4 years” figure.',
+    counterpoint:
+      'The decline itself is real and well documented: Karacan et al., 1975 (Am J Psychiatry; 125 healthy males aged 3–79, EEG-verified) established age-normative NPT data, Schiavi et al., 1988 (J Gerontol; 40 healthy men aged 23–73) showed NPT frequency and duration fall progressively with age independent of sleep changes, and Horita & Kumamoto, 1989 (189 healthy males aged 3–84) measured 189.6 min at age 20 declining to ~62 min at age 70—Johnson’s age-20 anchor sits almost exactly on that series. But the post names no study, its intermediate bins match no single published cohort (older-age values differ between series: Horita ~62 min at 70 vs Karacan ~102 min at 70), and the repeated flat “2x in 4 years” remains stronger than meta-analytic averages (Vlachopoulos et al., 2011: RR 1.48 for CVD, 1.35 for stroke). Consumer NTE scores are not a validated clinical risk tool. The dashboard records an attributed normative-data claim with literature context—not a validated risk prediction, a monitoring recommendation, or medical advice.',
+    confidence: 'medium',
+    relatedHref: '/knowledge/biomarker-driven-longevity-protocols/',
+    relatedTitle: 'Biomarker-driven longevity protocols',
+    sources: [
+      'https://x.com/bryan_johnson/status/2093698799172829255',
+      'https://doi.org/10.1176/ajp.132.9.932',
+      'https://doi.org/10.1093/geronj/43.5.m146',
+    ],
+  },
+  {
     claim: 'Johnson says nighttime erections are “a tier 1 longevity biomarker” and that low scores mean 2x the risk of heart attack and stroke within four years.',
     position:
       'Johnson posted a self-reported “personal best”—4 hr 2 min of nighttime erections at 93% strength, ranked against a personal database of 55,000 measurements—calling NTE as critical to systemic health as VO2 max, resting heart rate, HRV, and blood pressure, and listing a protocol of sleep quality, cardiovascular fitness, a calm nervous system, and daily tadalafil 5 mg.',
@@ -231,6 +246,16 @@ export const opinionItems: OpinionItem[] = [
 ];
 
 export const timelineEvents: TimelineEvent[] = [
+  {
+    date: '2026-08-29',
+    label: 'NTE-by-age decline tables posted without naming the normative literature',
+    summary:
+      'Johnson posted age-binned nightly-duration tables—Age 20: 190 min, Age 50: 103 min, Age 60: 81 min, Age 75+: 50 min—repeating that ED predicts cardiovascular events years before symptoms and the 2x-in-4-years risk figure. The decline is well documented (Karacan et al., 1975 normative NPT series; Schiavi et al., 1988 progressive age decline; Horita & Kumamoto, 1989: 189.6 min at age 20 to ~62 min at age 70), and the age-20 anchor sits almost exactly on published values, but the post names no study and its intermediate bins match no single published cohort. The KB records an attributed normative-data claim with literature context—not a validated risk prediction, a monitoring recommendation, or medical advice.',
+    relatedHref: '/knowledge/biomarker-driven-longevity-protocols/',
+    relatedTitle: 'Biomarker-driven longevity protocols',
+    source: 'https://x.com/bryan_johnson/status/2093698799172829255',
+    confidence: 'medium',
+  },
   {
     date: '2026-08-27',
     label: 'Nighttime-erection “personal best” published as a tier-1-biomarker claim',

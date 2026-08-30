@@ -524,6 +524,42 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(protocolsSource, /nighttime-erection post as an attributed N=1 biomarker claim[\s\S]*Vlachopoulos et al\. 2011[\s\S]*Krimpen[\s\S]*requiring clinician oversight/, 'protocol guidance should keep the NTE claim in the attributed lane');
   });
 
+  it('publishes the August 29 NTE age-decline tables as attributed normative-data claims, not reference ranges', () => {
+    for (const required of [
+      'nte-age-decline-claim',
+      '2093698799172829255',
+      'https://x.com/bryan_johnson/status/2093698799172829255',
+      'Age 20: 190 min, Age 50: 103 min, Age 60: 81 min, Age 75+: 50 min',
+      'Karacan et al., 1975',
+      'https://doi.org/10.1176/ajp.132.9.932',
+      'Schiavi et al., 1988',
+      'https://doi.org/10.1093/geronj/43.5.m146',
+      'Horita & Kumamoto, 1989',
+      '189.6 min',
+      'intermediate bins (103/81/50 min) match no single published cohort',
+      'Consumer NTE scores are still not a validated clinical risk tool',
+      'not a validated risk prediction, a monitoring recommendation, or medical advice',
+      "confidence: 'medium'",
+    ]) {
+      assert.match(signalsSource, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i'), `NTE age-decline signal should preserve: ${required}`);
+    }
+
+    assert.match(dashboardSectionsSource, /Karacan[\s\S]*Schiavi[\s\S]*Horita[\s\S]*intermediate bins match no single published cohort[\s\S]*not a validated risk prediction, a monitoring recommendation, or medical advice/i, 'opinion context should pair the age-decline claim with the normative-literature boundary');
+    assert.match(dashboardSectionsSource, /NTE-by-age decline tables posted without naming the normative literature/, 'timeline should record the NTE age-decline item');
+
+    const biomarkerProtocolsSource = readFileSync(new URL('../src/content/knowledge/biomarker-driven-longevity-protocols.md', import.meta.url), 'utf8');
+    assert.match(biomarkerProtocolsSource, /August 29[\s\S]*Karacan et al\., 1975[\s\S]*Schiavi et al\., 1988[\s\S]*Horita & Kumamoto, 1989[\s\S]*not a validated risk prediction, a monitoring recommendation, or medical advice/i, 'biomarker-protocols page should keep the age-decline claim and its literature boundary together');
+
+    const bryanJohnsonSource = readFileSync(new URL('../src/content/knowledge/bryan-johnson.md', import.meta.url), 'utf8');
+    assert.match(bryanJohnsonSource, /August 28–29[\s\S]*190 minutes at age 20[\s\S]*Karacan[\s\S]*Horita & Kumamoto, 1989[\s\S]*not a risk prediction or medical advice/i, 'bryan-johnson page should record the age-decline arc with its attribution boundary');
+
+    assert.match(protocolsSource, /NTE-by-age decline tables as an attributed normative-data claim[\s\S]*Karacan et al\. 1975[\s\S]*Schiavi et al\. 1988[\s\S]*Horita & Kumamoto 1989[\s\S]*not a validated risk prediction or monitoring recommendation/, 'protocol guidance should keep the age-decline claim in the attributed lane');
+
+    const updatePage = readFileSync(new URL('../src/content/updates/2026-08-29-nte-age-decline-claim-curation.md', import.meta.url), 'utf8');
+    assert.match(updatePage, /knowledge\/raw\/x\/2026-08-30\/2026-08-30-bryan-johnson-batch\.md/, 'update page should cite the August 30 capture');
+    assert.match(updatePage, /dunk-training strength PR/, 'update page should document the dunk-post skip decision');
+  });
+
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
     for (const phrase of ['watchQueue', 'sourceCounts', 'curatedActivity', 'Protocol tabs backed']) {
       assert.match(indexSource, new RegExp(phrase), `overview should use real sidebar data: ${phrase}`);
@@ -531,7 +567,7 @@ describe('home overview and dedicated changelog route', () => {
     for (const phrase of ['Enhanced Games follow-up', 'Kate Tolo baseline', 'Microplastics testing', '82 unique tweet URLs', '11 tweets with engagement']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `signals/sidebar data should include ${phrase}`);
     }
-    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 52 update pages']) {
+    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 53 update pages']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `source counts should include ${phrase}`);
     }
     assert.doesNotMatch(indexSource, /index \* 17|updateCards\[0\]|next curated publish pass/, 'right sidebar should not use deterministic placeholder formulas or newest-card watch copy');
