@@ -560,6 +560,61 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(updatePage, /dunk-training strength PR/, 'update page should document the dunk-post skip decision');
   });
 
+  it('publishes the August 30 Kate Tolo cycle readout and Kernel brain-scan percentiles as attributed claims', () => {
+    for (const required of [
+      'kate-tolo-measured-cycle-readout',
+      '2094160047253369203',
+      '408 minutes of Kernel brain data',
+      '48,960 core-temperature readings',
+      '14 million data points',
+      'the world’s most measured woman',
+      'attributed N=1 program readout',
+      'not completed female-health evidence, a representative protocol, or medical advice',
+    ]) {
+      assert.match(signalsSource, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i'), `Kate Tolo cycle signal should preserve: ${required}`);
+    }
+
+    for (const required of [
+      'kernel-brain-scan-percentile-claims',
+      '2094112145357291863',
+      'amygdala 95th',
+      'putamen 99th',
+      'caudate 97th',
+      'frontal gray matter at the 78th percentile',
+      'Draganski et al., 2004',
+      'https://doi.org/10.1038/427311a',
+      'Colcombe et al., 2006',
+      'https://doi.org/10.1093/gerona/61.11.1166',
+      'the post names no study',
+      'speculative for my n of 1 context',
+      'not a validated brain-health metric, evidence that his protocol grew his frontal cortex, or medical advice',
+      "confidence: 'medium'",
+    ]) {
+      assert.match(signalsSource, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i'), `Kernel brain-scan signal should preserve: ${required}`);
+    }
+
+    assert.match(dashboardSectionsSource, /amygdala 95th[\s\S]*putamen 99th[\s\S]*Draganski et al\., 2004[\s\S]*Colcombe et al\., 2006[\s\S]*not a validated brain-health metric, evidence that his protocol grew his frontal cortex, or medical advice/i, 'opinion context should pair the brain-percentile claim with the plasticity-literature boundary');
+    assert.match(dashboardSectionsSource, /most measured menstrual cycle in history[\s\S]*48,960 core-temperature readings[\s\S]*attributed N=1 program readout/i, 'timeline should record the Kate Tolo cycle readout');
+    assert.match(dashboardSectionsSource, /Kernel brain-scan percentiles published as a personality operating manual/, 'timeline should record the Kernel brain-scan item');
+
+    const kernelPageSource = readFileSync(new URL('../src/content/knowledge/kernel.md', import.meta.url), 'utf8');
+    assert.match(kernelPageSource, /August 2026 percentile post[\s\S]*Draganski et al\., 2004[\s\S]*Colcombe et al\., 2006[\s\S]*not a validated brain-health metric/i, 'kernel knowledge page should connect the percentile post to the brain-measurement thesis with its boundary');
+
+    const bryanJohnsonSource = readFileSync(new URL('../src/content/knowledge/bryan-johnson.md', import.meta.url), 'utf8');
+    assert.match(bryanJohnsonSource, /On August 30[\s\S]*most measured menstrual cycle in history[\s\S]*48,960 core-temperature readings[\s\S]*Draganski et al\., 2004[\s\S]*Colcombe et al\., 2006[\s\S]*not a validated brain-health metric/i, 'bryan-johnson page should record the August 30 arc with its attribution boundary');
+
+    const biomarkerProtocolsSource = readFileSync(new URL('../src/content/knowledge/biomarker-driven-longevity-protocols.md', import.meta.url), 'utf8');
+    assert.match(biomarkerProtocolsSource, /On August 30, the measurement loop moved to the brain[\s\S]*Draganski et al\., 2004[\s\S]*Colcombe et al\., 2006[\s\S]*not a validated brain-health metric/i, 'biomarker-protocols page should keep the brain-scan claim and its literature boundary together');
+
+    assert.match(protocolsSource, /Kernel brain-scan percentile post as an attributed self-report[\s\S]*Draganski et al\. 2004[\s\S]*Colcombe et al\. 2006[\s\S]*not a brain-health metric, evidence the protocol grew his frontal cortex, or medical advice/, 'protocol guidance should keep the brain-scan claim in the attributed lane');
+    assert.match(protocolsSource, /Brain-scan percentiles[\s\S]*personality operating manual/, 'protocol dossier should carry a brain-scan percentile card');
+
+    const updatePage = readFileSync(new URL('../src/content/updates/2026-08-30-kate-tolo-kernel-brain-curation.md', import.meta.url), 'utf8');
+    assert.match(updatePage, /knowledge\/raw\/x\/2026-08-31\/2026-08-31-bryan-johnson-batch\.md/, 'update page should cite the August 31 capture');
+    assert.match(updatePage, /son-photo identity post/, 'update page should document the low-signal skip decisions');
+    assert.match(updatePage, /Rutger Bregman technology-alarm quote-post/, 'update page should document the Bregman skip decision');
+  });
+
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
     for (const phrase of ['watchQueue', 'sourceCounts', 'curatedActivity', 'Protocol tabs backed']) {
       assert.match(indexSource, new RegExp(phrase), `overview should use real sidebar data: ${phrase}`);
@@ -567,7 +622,7 @@ describe('home overview and dedicated changelog route', () => {
     for (const phrase of ['Enhanced Games follow-up', 'Kate Tolo baseline', 'Microplastics testing', '82 unique tweet URLs', '11 tweets with engagement']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `signals/sidebar data should include ${phrase}`);
     }
-    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 53 update pages']) {
+    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 54 update pages']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `source counts should include ${phrase}`);
     }
     assert.doesNotMatch(indexSource, /index \* 17|updateCards\[0\]|next curated publish pass/, 'right sidebar should not use deterministic placeholder formulas or newest-card watch copy');

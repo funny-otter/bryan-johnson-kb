@@ -20,6 +20,21 @@ export type TimelineEvent = {
 
 export const opinionItems: OpinionItem[] = [
   {
+    claim: 'Johnson reads his Kernel brain-scan percentiles as a personality operating manual—amygdala 95th, putamen 99th, caudate 97th—and says his frontal gray matter is “climbing.”',
+    position:
+      'Johnson posted regional percentiles from his own Kernel brain measurements (amygdala 95th for emotion/threat detection, putamen 99th for learning/habit formation, caudate 97th for goals/decisions/working memory, globus pallidus 93rd for movement) plus frontal gray matter at the 78th percentile, up 1.35% over two years “when it should be going down with age,” and mapped each region onto his own personality and capacities.',
+    counterpoint:
+      'The post names no study and the normative cohort behind the percentiles is undisclosed; Johnson himself closes with “speculative for my n of 1 context.” The plasticity literature he gestures at is real but less tidy than the telling: the juggling study is Draganski et al., 2004 (Nature; 24 volunteers, 3 months learning a three-ball cascade produced a transient gray-matter expansion selectively in visual-motion cortex hMT/V5 and left posterior intraparietal sulcus, which receded once practice stopped—visual-motion areas, not frontal cortex, and over months, not “within weeks”), and the exercise trial is Colcombe et al., 2006 (J Gerontol A; 6-month randomized trial, 59 sedentary adults aged 60–79, aerobic training increased frontal/temporal gray- and white-matter volumes versus stretching controls—the “decades older than me” framing fits, but it is a group-mean result in older adults, not evidence that any individual’s protocol grows frontal gray matter by measured percentiles). Heritability estimates for subcortical volumes are population statistics and do not explain one person’s percentiles. The dashboard records an attributed self-report with literature context—not a validated brain-health metric, evidence that his protocol grew his frontal cortex, or medical advice.',
+    confidence: 'medium',
+    relatedHref: '/knowledge/kernel/',
+    relatedTitle: 'Kernel',
+    sources: [
+      'https://x.com/bryan_johnson/status/2094112145357291863',
+      'https://doi.org/10.1038/427311a',
+      'https://doi.org/10.1093/gerona/61.11.1166',
+    ],
+  },
+  {
     claim: 'Johnson posts NTE-by-age decline tables (190 min at 20 → 50 min at 75+) as if they were established reference data.',
     position:
       'Two days after his NTE “personal best,” Johnson posted age-binned nightly-duration tables—Age 20: 190 min, Age 50: 103 min, Age 60: 81 min, Age 75+: 50 min—repeating that “ED predicts cardiovascular events yrs before symptoms” with the “2x risk of heart attack and stroke over 4 years” figure.',
@@ -246,6 +261,26 @@ export const opinionItems: OpinionItem[] = [
 ];
 
 export const timelineEvents: TimelineEvent[] = [
+  {
+    date: '2026-08-30',
+    label: 'Kate Tolo’s cycle declared “the most measured menstrual cycle in history”',
+    summary:
+      'Johnson posted running totals for Kate Tolo’s current menstrual cycle after “waiting for 34 days”: 408 minutes of Kernel brain data, ~10,000 blood-glucose readings, 48,960 core-temperature readings from an ingestible pill, 136 body photographs, and a stated 14 million total data points, across a roughly thirty-item measurement inventory, calling Tolo “the world’s most measured woman.” The totals match the scale of the 100-day, 14-million-datapoint baseline announced in July, so this reads as a mid-program tally of self-reported counts with no dataset, assay methods, results, or clinical interpretation. The KB records an attributed N=1 program readout—not completed female-health evidence, a representative protocol, or medical advice.',
+    relatedHref: '/metrics/',
+    relatedTitle: 'Metrics',
+    source: 'https://x.com/bryan_johnson/status/2094160047253369203',
+    confidence: 'medium',
+  },
+  {
+    date: '2026-08-30',
+    label: 'Kernel brain-scan percentiles published as a personality operating manual',
+    summary:
+      'Johnson posted regional percentiles from his Kernel brain measurements—amygdala 95th, putamen 99th, caudate 97th, globus pallidus 93rd, frontal gray matter 78th and “climbing” (up 1.35% over two years)—and mapped each region onto his own personality and capacities. He cited twin-study heritability of roughly 0.75–0.89 for the subcortical regions and gestured at real plasticity literature (Draganski et al., 2004 juggling study; Colcombe et al., 2006 aerobic-exercise trial) without naming either, and closed with “speculative for my n of 1 context.” The normative cohort behind the percentiles is undisclosed. The KB records an attributed self-report with literature context—not a validated brain-health metric, evidence that his protocol grew his frontal cortex, or medical advice.',
+    relatedHref: '/knowledge/kernel/',
+    relatedTitle: 'Kernel',
+    source: 'https://x.com/bryan_johnson/status/2094112145357291863',
+    confidence: 'medium',
+  },
   {
     date: '2026-08-29',
     label: 'NTE-by-age decline tables posted without naming the normative literature',

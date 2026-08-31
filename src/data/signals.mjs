@@ -1,5 +1,37 @@
 export const curatedSignals = [
   {
+    id: 'kate-tolo-measured-cycle-readout',
+    title: 'Johnson declares Kate Tolo’s current cycle “the most measured menstrual cycle in history”',
+    date: '2026-08-30',
+    badge: 'Female health',
+    kind: 'tweet',
+    topic: 'Female health / program readout',
+    summary:
+      'After “waiting for 34 days,” Johnson posted running totals for Kate Tolo’s current menstrual cycle: 408 minutes of Kernel brain data, ~10,000 blood-glucose readings, 48,960 core-temperature readings from an ingestible pill, 136 body photographs, and a stated 14 million data points overall—across a roughly thirty-item inventory spanning cortisol, DNA methylation, oral/stool/vaginal microbiomes, urine hormone metabolites, cervical mucus, sleep, wearables, resting metabolic rate, reaction time, skin biological age, and Kernel brain measurement—calling Tolo “the world’s most measured woman.” The totals match the scale of the 100-day, 14-million-datapoint baseline announced in July, so this reads as a mid-program tally of self-reported counts: no dataset, assay methods, results, or clinical interpretation accompany it. The dashboard records an attributed N=1 program readout—not completed female-health evidence, a representative protocol, or medical advice.',
+    href: '/metrics/',
+    tweetId: '2094160047253369203',
+    confidence: 'medium',
+    sources: ['https://x.com/bryan_johnson/status/2094160047253369203'],
+  },
+  {
+    id: 'kernel-brain-scan-percentile-claims',
+    title: 'Johnson publishes his Kernel brain-scan percentiles and reads them as a personality operating manual',
+    date: '2026-08-30',
+    badge: 'Measurement',
+    kind: 'tweet',
+    topic: 'Brain measurement / self-interpretation',
+    summary:
+      'Johnson posted regional percentiles from his own Kernel brain measurements—amygdala 95th (emotion/threat), putamen 99th (learning/habits), caudate 97th (goals/decisions/working memory), globus pallidus 93rd (movement), and frontal gray matter at the 78th percentile “and climbing,” up 1.35% over two years—mapping each region onto his personality (processing hate as information rather than threat, fast habit formation, juggling founder/creator/“rejuvenation athlete” threads). He cites twin-study heritability of roughly 0.75–0.89 for the subcortical regions and gestures at real plasticity literature: the juggling result is Draganski et al., 2004 (Nature; 3 months learning to juggle produced a transient gray-matter expansion selectively in visual-motion cortex hMT/V5 that receded when practice stopped—not frontal, and over months rather than “within weeks”), and the exercise trial is Colcombe et al., 2006 (J Gerontol A; 6-month randomized trial in 59 sedentary adults aged 60–79: aerobic training increased frontal and temporal gray/white-matter volumes versus stretching controls, roughly matching his “people decades older than me” framing). But the post names neither study, the normative cohort behind the percentiles is undisclosed, and Johnson himself closes with “speculative for my n of 1 context.” The dashboard records an attributed self-report with literature context—not a validated brain-health metric, evidence that his protocol grew his frontal cortex, or medical advice.',
+    href: '/knowledge/kernel/',
+    tweetId: '2094112145357291863',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2094112145357291863',
+      'https://doi.org/10.1038/427311a',
+      'https://doi.org/10.1093/gerona/61.11.1166',
+    ],
+  },
+  {
     id: 'nte-age-decline-claim',
     title: 'Johnson posts NTE-by-age decline tables that nearly match classic normative data—while naming none of it',
     date: '2026-08-29',
@@ -1228,12 +1260,13 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest X capture', value: '2', detail: '2 Aug 29 posts captured · knowledge/raw/x/2026-08-30 bryan-johnson-batch' },
-  { label: 'Literature check this pass', value: '3', detail: '3 papers verified · Karacan 1975 + Schiavi 1988 + Horita 1989 NPT normative series' },
-  { label: 'Previous X capture', value: '1', detail: '1 Aug 28 post captured · knowledge/raw/x/2026-08-29 bryan-johnson-batch' },
-  { label: 'Earlier X capture', value: '3', detail: '3 Aug 27 posts captured · knowledge/raw/x/2026-08-28 bryan-johnson-batch' },
+  { label: 'Latest X capture', value: '5', detail: '5 Aug 30 posts captured · knowledge/raw/x/2026-08-31 bryan-johnson-batch' },
+  { label: 'Literature check this pass', value: '2', detail: '2 papers verified · Draganski 2004 + Colcombe 2006 brain-plasticity trials' },
+  { label: 'Previous X capture', value: '2', detail: '2 Aug 29 posts captured · knowledge/raw/x/2026-08-30 bryan-johnson-batch' },
+  { label: 'Earlier X capture', value: '1', detail: '1 Aug 28 post captured · knowledge/raw/x/2026-08-29 bryan-johnson-batch' },
+  { label: 'NPT normative literature', value: '3', detail: '3 papers verified for the NTE age-decline claim · Karacan 1975 + Schiavi 1988 + Horita 1989' },
   { label: 'Interval-training literature', value: '2', detail: '2 papers verified for the interval-training claim · Helgerud 2007 + Kodama 2009' },
-  { label: 'Earlier daily X capture', value: '2', detail: '2 Aug 25 posts captured · knowledge/raw/x/2026-08-26 bryan-johnson-batch' },
+  { label: 'Earlier X capture', value: '2', detail: '2 Aug 25 posts captured · knowledge/raw/x/2026-08-26 bryan-johnson-batch' },
   { label: 'Cycle-phase literature', value: '2', detail: '2 papers verified for cycle-phase cholesterol claims · BioCycle (Mumford 2010) + 2011 review' },
   { label: 'Aug 23–24 daily X capture', value: '2', detail: '2 Aug 23–24 posts captured · x-twitter-daily-2026-08-24.md' },
   { label: 'Earlier daily X capture', value: '4', detail: '4 Aug 22–23 posts captured · x-twitter-daily-2026-08-23.md' },
@@ -1243,11 +1276,11 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '65', detail: '12 knowledge pages + 53 update pages after this pass' },
+  { label: 'Public site content', value: '66', detail: '12 knowledge pages + 54 update pages after this pass' },
 ];
 
 export const curatedActivity = [
-  { date: '2026-08-29', x_post: 2, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-08-30', x_post: 5, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-08-28', x_post: 1, third_party: 0, wiki_update: 0, site_update: 0 },
   { date: '2026-08-27', x_post: 3, third_party: 2, wiki_update: 0, site_update: 1 },
   { date: '2026-08-26', x_post: 1, third_party: 2, wiki_update: 0, site_update: 1 },

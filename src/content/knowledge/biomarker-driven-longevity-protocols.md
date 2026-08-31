@@ -4,7 +4,7 @@ slug: biomarker-driven-longevity-protocols
 type: concept
 sourcePath: concepts/biomarker-driven-longevity-protocols.md
 created: '2026-05-22'
-updated: '2026-08-27'
+updated: '2026-08-31'
 tags:
   - longevity
   - biomarkers
@@ -13,6 +13,9 @@ tags:
   - protocol
   - evaluation
 sources:
+  - https://x.com/bryan_johnson/status/2094112145357291863
+  - https://doi.org/10.1038/427311a
+  - https://doi.org/10.1093/gerona/61.11.1166
   - https://x.com/bryan_johnson/status/2093061998468903267
   - https://doi.org/10.1016/j.jacc.2011.06.024
   - https://pubmed.ncbi.nlm.nih.gov/17728804/
@@ -158,6 +161,8 @@ On August 26, the biomarker lane turned to LDL cholesterol as “one of the most
 On August 27, the measurement loop added a sexual-health biomarker claim. Johnson published a self-reported NTE “personal best”—4 hr 2 min of nighttime erections at 93% strength, ranked against a personal database of 55,000 measurements—and called NTE “a tier 1 longevity biomarker as critical to systemic health as VO2 max, resting heart rate, HRV, and blood pressure.” He claimed low nighttime-erection scores mean “2x risk of heart attack and stroke in the next 4 years,” and listed a protocol of high sleep quality, cardiovascular fitness, a calm nervous system, and daily tadalafil 5 mg (“I take this longevity medication daily”). The direction is documented—erectile dysfunction precedes and predicts cardiovascular events—but the post’s specifics outrun the literature: the Vlachopoulos et al., 2011 JACC meta-analysis (12 prospective cohorts, 36,744 men) pooled RR 1.48 for CVD and 1.35 for stroke, and the Krimpen population cohort found HR 2.6 for MI, stroke, or sudden death only in severely reduced rigidity over roughly six years of follow-up. The post names no study; its flat “2x in 4 years” is stronger than the meta-analytic averages; consumer NTE scores are not a validated clinical risk tool; and daily tadalafil is a prescription medication requiring clinician oversight. This is an attributed N=1 biomarker claim with literature context—not a validated risk prediction, a monitoring recommendation, or medical advice.
 
 On August 29, Johnson extended the NTE claim from personal data to population reference tables: age-binned nightly-duration figures of 190 minutes at age 20, 103 at 50, 81 at 60, and 50 at 75+, again repeating that “ED predicts cardiovascular events yrs before symptoms” and the “2x risk of heart attack and stroke over 4 years” figure. The decline itself is among the better-documented observations in sleep and sexual medicine—Karacan et al., 1975 (Am J Psychiatry; 125 healthy males aged 3–79, EEG-verified) established age-normative NPT data; Schiavi et al., 1988 (J Gerontol; 40 healthy men aged 23–73) showed NPT frequency and duration fall progressively with age independent of sleep changes; and Horita & Kumamoto, 1989 (189 healthy males aged 3–84) measured 189.6 minutes of total nightly tumescence at age 20 declining to roughly 62 minutes at age 70—putting Johnson’s age-20 anchor almost exactly on published values. But the post names no study; its intermediate bins match no single published cohort (older-age values differ between series—Horita found ~62 minutes at age 70 where Karacan’s series reports ~102); and the repeated flat “2x in 4 years” remains stronger than meta-analytic averages. Consumer NTE scores are not a validated clinical risk tool. The dashboard records an attributed normative-data claim with literature context—not a validated risk prediction, a monitoring recommendation, or medical advice.
+
+On August 30, the measurement loop moved to the brain. Johnson posted regional percentiles from his own Kernel measurements—amygdala 95th, putamen 99th, caudate 97th, globus pallidus 93rd, and frontal gray matter at the 78th percentile, up 1.35% over two years “when it should be going down with age”—and mapped each region onto his personality, from processing hate as information rather than threat to near-effortless habit formation. He cited twin-study heritability of roughly 0.75–0.89 for the subcortical regions and gestured at plasticity literature without naming it: adults who learned to juggle grew measurable gray matter (Draganski et al., 2004, Nature; a transient, selective expansion in visual-motion cortex hMT/V5 over roughly three months that receded once practice stopped), and six months of aerobic exercise grew frontal gray and white matter in sedentary adults aged 60–79 (Colcombe et al., 2006, J Gerontol A; 6-month randomized trial, 59 participants). The post names no study, the normative cohort behind the percentiles is undisclosed, and Johnson himself closes with “speculative for my n of 1 context.” The dashboard records an attributed self-report with literature context—not a validated brain-health metric, evidence that his protocol grew his frontal cortex, or medical advice.
 
 ## Practical evaluation checklist
 

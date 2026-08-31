@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-08-27'
+updated: '2026-08-31'
 tags:
   - person
   - company
@@ -13,7 +13,11 @@ tags:
   - biomarkers
   - protocol
 sources:
-  - https://x.com/bryan_johnson/status/2093061998468903267
+  - https://x.com/bryan_johnson/status/2094160047253369203
+  - https://x.com/bryan_johnson/status/2094112145357291863
+  - https://doi.org/10.1038/427311a
+  - https://doi.org/10.1093/gerona/61.11.1166
+  - https://x.com/bryan_johnson/status/2093698799172829255
   - https://doi.org/10.1016/j.jacc.2011.06.024
   - https://pubmed.ncbi.nlm.nih.gov/17728804/
   - https://x.com/bryan_johnson/status/2092597711543632216
@@ -182,6 +186,8 @@ On August 26, Johnson turned to LDL cholesterol, calling it “one of the most a
 On August 27, Johnson published a self-reported sexual-health “personal best”: 4 hr 2 min of nighttime erections (NTE) at 93% strength, ranked against a personal database of 55,000 measurements, calling NTE “a tier 1 longevity biomarker as critical to systemic health as VO2 max, resting heart rate, HRV, and blood pressure.” He claimed low nighttime-erection scores mean “2x risk of heart attack and stroke in the next 4 years” and listed his protocol: high sleep quality, cardiovascular fitness, a calm nervous system, and daily tadalafil 5 mg (“I take this longevity medication daily”). The direction is documented—erectile dysfunction precedes and predicts cardiovascular events—but the post’s specifics outrun the literature: the Vlachopoulos et al., 2011 JACC meta-analysis (12 cohorts, 36,744 men) pooled RR 1.48 for CVD and 1.35 for stroke, and the Krimpen population cohort found HR 2.6 for MI, stroke, or sudden death only in severely reduced rigidity over roughly six years. The post names no study; its flat “2x in 4 years” is stronger than the meta-analytic averages; consumer NTE scores are not a validated clinical risk tool; and daily tadalafil is a prescription medication requiring clinician oversight. The dashboard records an attributed N=1 biomarker claim with literature context—not a validated risk prediction, a monitoring recommendation, or medical advice. The same batch’s “3x better at predicting the right cancer treatment when biology is tracked longitudinally” post and a truncated retweet were reviewed and kept as chronology-only claims without identifiable sources.
 
 On August 28–29, the NTE arc moved from personal data to population framing. Johnson posted age-binned nightly-duration tables—190 minutes at age 20, 103 at 50, 81 at 60, and 50 at 75+—repeating the ED-precedes-cardiovascular-disease framing and the 2x-in-4-years risk figure. The age decline is genuinely well documented (Karacan et al., 1975 normative NPT series of 125 males aged 3–79; Schiavi et al., 1988 showing progressive decline independent of sleep changes; Horita & Kumamoto, 1989: 189.6 minutes at age 20 declining to roughly 62 minutes at age 70, which puts his age-20 anchor almost exactly on published values), but the post names no study and its intermediate bins match no single published cohort—older-age values differ between series, and consumer NTE scores remain unvalidated as a clinical risk tool. The dashboard records an attributed normative-data claim with literature context, not a risk prediction or medical advice. The same window’s dunk-training strength PR (365 lbs × 2 at age 49) and a Baseten longevity-event recap (3,500 applicants for 150 spots) were reviewed and kept as chronology-only posts that do not materially change the public knowledge model.
+
+On August 30, the feed produced two substantive updates. Johnson declared Kate Tolo’s current menstrual cycle “the most measured menstrual cycle in history,” posting running totals after “waiting for 34 days”: 408 minutes of Kernel brain data, roughly 10,000 blood-glucose readings, 48,960 core-temperature readings from an ingestible pill, 136 body photographs, and a stated 14 million total data points, across a roughly thirty-item measurement inventory spanning cortisol, DNA methylation, oral/stool/vaginal microbiomes, urine hormone metabolites, cervical mucus, sleep, wearables, resting metabolic rate, reaction time, and skin biological age—calling Tolo “the world’s most measured woman.” The totals match the scale of the 100-day, 14-million-datapoint baseline announced in July, so this reads as a mid-program tally of self-reported counts with no dataset, assay methods, results, or clinical interpretation; the dashboard records an attributed N=1 program readout, not completed female-health evidence, a representative protocol, or medical advice. The same day, Johnson published regional percentiles from his own Kernel brain measurements—amygdala 95th, putamen 99th, caudate 97th, globus pallidus 93rd, frontal gray matter 78th and “climbing” (up 1.35% over two years)—and mapped each region onto his personality, citing twin-study heritability of roughly 0.75–0.89 for the subcortical regions while naming no study. The plasticity literature he gestured at is real: Draganski et al., 2004 (*Nature*) found a transient, selective gray-matter expansion in visual-motion cortex from three months of learning to juggle, which receded once practice stopped, and Colcombe et al., 2006 (*J Gerontol A*) found frontal gray/white-matter gains from six months of aerobic exercise in sedentary adults aged 60–79. Neither validates region-by-region self-interpretation, the normative cohort behind the percentiles is undisclosed, and Johnson himself closes with “speculative for my n of 1 context.” The dashboard records an attributed self-report with literature context—not a validated brain-health metric, evidence that his protocol grew his frontal cortex, or medical advice. The same batch’s son-photo post, sleep-status aphorism, and Rutger Bregman technology-alarm quote-post were reviewed and kept as chronology-only posts that do not materially change the public knowledge model.
 
 ## Reading stance
 
