@@ -558,6 +558,8 @@ describe('home overview and dedicated changelog route', () => {
     const updatePage = readFileSync(new URL('../src/content/updates/2026-08-29-nte-age-decline-claim-curation.md', import.meta.url), 'utf8');
     assert.match(updatePage, /knowledge\/raw\/x\/2026-08-30\/2026-08-30-bryan-johnson-batch\.md/, 'update page should cite the August 30 capture');
     assert.match(updatePage, /dunk-training strength PR/, 'update page should document the dunk-post skip decision');
+    assert.match(updatePage, /three prior dunk-post skip decisions \(July 25, August 2, and August 18\)/, 'update page should state the accurate three-decision dunk skip history');
+    assert.doesNotMatch(updatePage, /four prior dunk-post skip decisions \(August 2, 18, 19/, 'update page must not repeat the phantom August 19 dunk date');
   });
 
   it('publishes the August 30 Kate Tolo cycle readout and Kernel brain-scan percentiles as attributed claims', () => {
@@ -682,6 +684,9 @@ describe('home overview and dedicated changelog route', () => {
     const updatePage = readFileSync(new URL('../src/content/updates/2026-09-03-i-am-18-claims-caffeine-forensics-curation.md', import.meta.url), 'utf8');
     assert.match(updatePage, /knowledge\/raw\/x\/2026-09-03\/2026-09-03-bryan-johnson-batch\.md/, 'update page should cite the September 3 capture');
     assert.match(updatePage, /dunk-training posts/, 'update page should document the dunk-post skip decision');
+    assert.match(updatePage, /four prior dunk-post skip decisions \(July 25, August 2, 18, and 28\)/, 'update page should state the accurate four-decision dunk skip history');
+    assert.doesNotMatch(updatePage, /19, 28, 29\)/, 'update page must not repeat the phantom dunk dates');
+    assert.doesNotMatch(updatePage, /six prior dunk/, 'update page must not claim six prior dunk skips');
   });
 
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
