@@ -4,7 +4,7 @@ slug: biomarker-driven-longevity-protocols
 type: concept
 sourcePath: concepts/biomarker-driven-longevity-protocols.md
 created: '2026-05-22'
-updated: '2026-08-31'
+updated: '2026-09-03'
 tags:
   - longevity
   - biomarkers
@@ -13,6 +13,7 @@ tags:
   - protocol
   - evaluation
 sources:
+  - https://x.com/bryan_johnson/status/2094944302900367425
   - https://x.com/bryan_johnson/status/2094112145357291863
   - https://doi.org/10.1038/427311a
   - https://doi.org/10.1093/gerona/61.11.1166
@@ -163,6 +164,8 @@ On August 27, the measurement loop added a sexual-health biomarker claim. Johnso
 On August 29, Johnson extended the NTE claim from personal data to population reference tables: age-binned nightly-duration figures of 190 minutes at age 20, 103 at 50, 81 at 60, and 50 at 75+, again repeating that “ED predicts cardiovascular events yrs before symptoms” and the “2x risk of heart attack and stroke over 4 years” figure. The decline itself is among the better-documented observations in sleep and sexual medicine—Karacan et al., 1975 (Am J Psychiatry; 125 healthy males aged 3–79, EEG-verified) established age-normative NPT data; Schiavi et al., 1988 (J Gerontol; 40 healthy men aged 23–73) showed NPT frequency and duration fall progressively with age independent of sleep changes; and Horita & Kumamoto, 1989 (189 healthy males aged 3–84) measured 189.6 minutes of total nightly tumescence at age 20 declining to roughly 62 minutes at age 70—putting Johnson’s age-20 anchor almost exactly on published values. But the post names no study; its intermediate bins match no single published cohort (older-age values differ between series—Horita found ~62 minutes at age 70 where Karacan’s series reports ~102); and the repeated flat “2x in 4 years” remains stronger than meta-analytic averages. Consumer NTE scores are not a validated clinical risk tool. The dashboard records an attributed normative-data claim with literature context—not a validated risk prediction, a monitoring recommendation, or medical advice.
 
 On August 30, the measurement loop moved to the brain. Johnson posted regional percentiles from his own Kernel measurements—amygdala 95th, putamen 99th, caudate 97th, globus pallidus 93rd, and frontal gray matter at the 78th percentile, up 1.35% over two years “when it should be going down with age”—and mapped each region onto his personality, from processing hate as information rather than threat to near-effortless habit formation. He cited twin-study heritability of roughly 0.75–0.89 for the subcortical regions and gestured at plasticity literature without naming it: adults who learned to juggle grew measurable gray matter (Draganski et al., 2004, Nature; a transient, selective expansion in visual-motion cortex hMT/V5 over roughly three months that receded once practice stopped), and six months of aerobic exercise grew frontal gray and white matter in sedentary adults aged 60–79 (Colcombe et al., 2006, J Gerontol A; 6-month randomized trial, 59 participants). The post names no study, the normative cohort behind the percentiles is undisclosed, and Johnson himself closes with “speculative for my n of 1 context.” The dashboard records an attributed self-report with literature context—not a validated brain-health metric, evidence that his protocol grew his frontal cortex, or medical advice.
+
+On September 2, the measurement story became a headline outcome claim: “in many ways, I am 18.” Johnson listed fourteen systems he says are indistinguishable from an 18-year-old—sleep quality, erection function, fertility, resting heart rate, vascular health, cardiovascular health, blood pressure, metabolic health, blood glucose control, bone mineral density, muscle, fat, “undetectable” inflammation, and shitposting—conceding only hearing and somatic mutations as age-typical, framing the result as “the first rep” achievable by others in five years. This is the biomarker-driven protocol’s thesis compressed into one claim: measure enough systems, act on the readings, and the body stays young. The evaluation boundary is the same one this page applies throughout: no dataset, assay list, reference cohort, or per-system comparison standard accompanies the post, so each “indistinguishable” is Johnson’s self-characterization of undisclosed-norm test results, not a validated equivalence. Notably, the two conceded systems—hearing and somatic mutations—are ones his measurement stack cannot yet correct, which is itself informative about where dense measurement stops translating into outcomes. The dashboard records an attributed N=1 outcome claim—not evidence of youthful equivalence, a replication promise, or medical advice.
 
 ## Practical evaluation checklist
 

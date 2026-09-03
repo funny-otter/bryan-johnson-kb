@@ -56,6 +56,11 @@ export const protocolCategories = [
     },
     cards: [
       {
+        label: '“I am 18” claim',
+        title: 'Fourteen systems claimed indistinguishable from an 18-year-old',
+        body: 'Johnson posted that “in many ways, I am 18,” listing fourteen systems he says match an 18-year-old—sleep quality, erection function, fertility, resting heart rate, vascular and cardiovascular health, blood pressure, metabolic health, blood glucose control, bone mineral density, muscle, fat, “undetectable” inflammation, and shitposting—while conceding hearing and somatic mutations remain age-typical, framing it as “the first rep” achievable by others in five years. The post publishes no dataset, assay methods, or reference cohort for any system. Attributed N=1 outcome claim, not evidence of youthful equivalence, a replication promise, or medical advice.',
+      },
+      {
         label: 'Brain-scan percentiles',
         title: 'Kernel brain-scan percentiles arrive as a personality operating manual',
         body: 'Johnson posted regional percentiles from his Kernel brain measurements—amygdala 95th, putamen 99th, caudate 97th, globus pallidus 93rd, frontal gray matter 78th “and climbing”—and mapped each onto his personality, citing twin-study heritability (roughly 0.75–0.89 for the subcortical regions) while naming no study and closing with “speculative for my n of 1 context.” The plasticity literature he gestures at is real but less tidy: Draganski et al. 2004 found a transient visual-motion-cortex gray-matter change from learning to juggle (which receded when practice stopped), and Colcombe et al. 2006 found frontal-volume gains from aerobic exercise in sedentary adults aged 60–79—neither validates region-by-region self-interpretation, and the normative cohort behind his percentiles is undisclosed. Attributed self-report plus literature context, not a brain-health metric or medical advice.',
@@ -385,6 +390,7 @@ export const protocolCategories = [
       ],
       longterm: [
         sourced('Frame sleep as a durable foundation feeding the broader biomarker and recovery system.', 'concepts/blueprint-protocol.md'),
+        sourced('Treat Johnson’s September 2026 caffeine-mistake chronology as an algorithmic-health example—quantifying a mundane cafe error with a sound meter, order-screen inspection, and base rates—while keeping its “70–130%” injury-risk figure unverified. The nearest literature is chronic-sleep association in adolescent athletes (Milewski et al. 2014: 1.7× multivariate; von Rosen et al. 2017: up to 2.25× with rising training load), not acute single-night disruption. Skipping one session after a wrecked night is his personal decision, not reader sleep or training guidance.', 'https://x.com/bryan_johnson/status/2095236652918812756'),
         sourced('Use the June 19 seven-day checklist as a simple recurring-habits example, while preserving that readers need individualized medical guidance for health conditions.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md'),
         sourced('Treat Johnson’s reported 42-to-44 bpm sleep-heart-rate difference when his final meal moved from noon to 2 p.m. as an N=1 observation, not a causal estimate or universal meal cutoff.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-24.md'),
         sourced('Keep jet-lag protocol material in a circadian-recovery / self-experiment bucket unless replicated and externally validated.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-19.md'),

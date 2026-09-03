@@ -4,7 +4,7 @@ slug: algorithmic-health
 type: concept
 sourcePath: concepts/algorithmic-health.md
 created: '2026-05-22'
-updated: '2026-08-17'
+updated: '2026-09-03'
 tags:
   - health
   - protocol
@@ -12,6 +12,10 @@ tags:
   - automation
   - decision
 sources:
+  - https://x.com/bryan_johnson/status/2095236652918812756
+  - https://x.com/bryan_johnson/status/2094444126838366520
+  - https://doi.org/10.1097/BPO.0000000000000151
+  - https://doi.org/10.1111/sms.12855
   - raw/articles/bryan-johnson/x-twitter-daily-2026-08-17.md
   - raw/articles/bryan-johnson/x-twitter-daily-2026-07-24.md
   - raw/articles/bryan-johnson-project-blueprint-2021-10-13.md
@@ -51,6 +55,8 @@ On July 14, Johnson gave this decision pattern a named score: **Resting Heart Ra
 On July 23, Johnson supplied a miniature feedback-loop example: he reported that finishing food at 2 p.m. rather than noon moved his sleep heart rate from 42 to 44 bpm, then compared the sensitivity to changes in EV charging, aerodynamics, and coffee-grinder settings. The algorithmic-health signal is the habit of treating a small input change as something to measure and retest. One personal comparison does not isolate meal timing from confounders, establish clinical importance, or turn noon into a reader target.
 
 On August 16, Johnson made the same rule explicit in a sensitive food-control context. Responding to people who characterize his dietary control as an eating disorder, he described discipline as mastery, said he changes his food protocol according to data, and acknowledged that the pursuit can become unhealthy. This sharpens both the delegated-decision-authority pattern and its risk boundary. It is Johnson’s personal self-description and rhetorical argument; it does not establish clinical appropriateness, decide whether a behavior is disordered, or show that his regimen generalizes.
+
+On September 1–2, a cafe’s caffeinated-instead-of-decaf mistake became the pattern’s most public miniature. Johnson first reported that the error wrecked his sleep and made him cancel morning dunk training, citing that “acute sleep disruption can increase injury risk by 70-130%.” Two days later he returned to the cafe with a sound meter and published the investigation: ~75 dBA background noise against his replicated 72 dBA order volume (a −3 dB signal-to-noise ratio in which “a decaf coffee” and “a cup of coffee” could sound nearly identical even with healthy hearing), a photographed order screen where adjacent and otherwise-identical “brewed” buttons invite a “capture error,” a cited roughly 1-in-8 cafe order error rate, and an estimated ~55% chance the barista recognized him. The useful signal is the forensic habit itself—quantifying a mundane mistake with decibels, error rates, and base rates rather than dismissing it. The boundary is the injury figure: it names no study, and the nearest literature measures something else. Chronic insufficient sleep in adolescent athletes raises injury risk 1.7× on multivariate analysis (Milewski et al., 2014, *J Pediatr Orthop*; 112 athletes, <8 h/night; RR 2.1 univariate), and rising training load with falling sleep raises it up to 2.25× (von Rosen et al., 2017, *Scand J Med Sci Sports*; 496 athletes)—season-long associations in young athletes, not acute single-night disruption in a 49-year-old. Skipping one session after a wrecked night is a defensible personal decision; the specific number is not a validated statistic, and none of it is sleep guidance or medical advice.
 
 ## Why it matters
 

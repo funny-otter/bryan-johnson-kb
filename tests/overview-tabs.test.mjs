@@ -615,6 +615,75 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(updatePage, /Rutger Bregman technology-alarm quote-post/, 'update page should document the Bregman skip decision');
   });
 
+  it('publishes the September 2 "I am 18", timed blood-collection, and caffeine-forensics posts as attributed claims', () => {
+    for (const required of [
+      'eighteen-year-old-multi-system-claims',
+      '2094944302900367425',
+      'https://x.com/bryan_johnson/status/2094944302900367425',
+      'fourteen systems',
+      'sleep quality, erection function, fertility, resting heart rate, vascular health, cardiovascular health, blood pressure, metabolic health, blood glucose control, bone mineral density, muscle, fat',
+      'hearing and somatic mutations',
+      'the first rep',
+      'no dataset, assay methods, reference cohort, or comparison standard',
+      'not evidence of system-by-system youthful equivalence, a promise readers can replicate the result, or medical advice',
+    ]) {
+      assert.match(signalsSource, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i'), `"I am 18" signal should preserve: ${required}`);
+    }
+
+    for (const required of [
+      'kate-tolo-timed-blood-collection',
+      '2094516331903340742',
+      'https://x.com/bryan_johnson/status/2094516331903340742',
+      'six-hour collection window',
+      '7 mL of menstrual blood',
+      '35-day delay',
+      'frontier science',
+      'not a validated diagnostic workflow, evidence the sample is scientifically useful, or medical advice',
+    ]) {
+      assert.match(signalsSource, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i'), `blood-collection signal should preserve: ${required}`);
+    }
+
+    for (const required of [
+      'caffeine-forensics-injury-risk-claim',
+      '2095236652918812756',
+      'https://x.com/bryan_johnson/status/2095236652918812756',
+      'increase injury risk by 70-130%',
+      '~75 dBA cafe background',
+      '−3 dB signal-to-noise ratio',
+      '~1-in-8 cafe order error rate',
+      '~55% chance the barista recognized him',
+      'Milewski et al., 2014',
+      'https://doi.org/10.1097/BPO.0000000000000151',
+      'von Rosen et al., 2017',
+      'https://doi.org/10.1111/sms.12855',
+      'not a validated acute-injury statistic, sleep guidance, or medical advice',
+      "confidence: 'medium'",
+    ]) {
+      assert.match(signalsSource, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i'), `caffeine-forensics signal should preserve: ${required}`);
+    }
+
+    assert.match(dashboardSectionsSource, /indistinguishable from an 18-year-old[\s\S]*no dataset, assay methods, or reference cohort[\s\S]*not evidence of youthful equivalence, a replication promise, or medical advice/i, 'opinion context should pair the "I am 18" claim with its boundary');
+    assert.match(dashboardSectionsSource, /fourteen systems claimed indistinguishable from an 18-year-old/i, 'timeline should record the "I am 18" item');
+    assert.match(dashboardSectionsSource, /Milewski[\s\S]*von Rosen[\s\S]*not a validated acute-injury statistic or medical advice/i, 'opinion context should pair the injury figure with the sleep/injury literature');
+    assert.match(dashboardSectionsSource, /six-hour global logistics event/i, 'timeline should record the timed blood collection');
+    assert.match(dashboardSectionsSource, /Cycle start becomes a six-hour global logistics event/, 'timeline should record the blood-collection item');
+
+    const bryanJohnsonSource = readFileSync(new URL('../src/content/knowledge/bryan-johnson.md', import.meta.url), 'utf8');
+    assert.match(bryanJohnsonSource, /On September 1–2[\s\S]*in many ways, I am 18[\s\S]*hearing and somatic mutations[\s\S]*not evidence of system-by-system youthful equivalence, a replication promise, or medical advice/i, 'bryan-johnson page should record the September arc with its attribution boundary');
+
+    const algorithmicHealthPage = readFileSync(new URL('../src/content/knowledge/algorithmic-health.md', import.meta.url), 'utf8');
+    assert.match(algorithmicHealthPage, /On September 1–2[\s\S]*sound meter[\s\S]*Milewski et al\., 2014[\s\S]*von Rosen et al\., 2017[\s\S]*none of it is sleep guidance or medical advice/i, 'algorithmic-health page should keep the forensic detail and literature boundary together');
+
+    const biomarkerProtocolsSource = readFileSync(new URL('../src/content/knowledge/biomarker-driven-longevity-protocols.md', import.meta.url), 'utf8');
+    assert.match(biomarkerProtocolsSource, /On September 2[\s\S]*in many ways, I am 18[\s\S]*no dataset, assay list, reference cohort[\s\S]*not evidence of youthful equivalence, a replication promise, or medical advice/i, 'biomarker-protocols page should keep the outcome claim and its boundary together');
+
+    assert.match(protocolsSource, /caffeine-mistake chronology as an algorithmic-health example[\s\S]*Milewski et al\. 2014[\s\S]*von Rosen et al\. 2017[\s\S]*not reader sleep or training guidance/, 'sleep protocol guidance should keep the caffeine chronology in the attributed lane');
+
+    const updatePage = readFileSync(new URL('../src/content/updates/2026-09-03-i-am-18-claims-caffeine-forensics-curation.md', import.meta.url), 'utf8');
+    assert.match(updatePage, /knowledge\/raw\/x\/2026-09-03\/2026-09-03-bryan-johnson-batch\.md/, 'update page should cite the September 3 capture');
+    assert.match(updatePage, /dunk-training posts/, 'update page should document the dunk-post skip decision');
+  });
+
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
     for (const phrase of ['watchQueue', 'sourceCounts', 'curatedActivity', 'Protocol tabs backed']) {
       assert.match(indexSource, new RegExp(phrase), `overview should use real sidebar data: ${phrase}`);
@@ -622,7 +691,7 @@ describe('home overview and dedicated changelog route', () => {
     for (const phrase of ['Enhanced Games follow-up', 'Kate Tolo baseline', 'Microplastics testing', '82 unique tweet URLs', '11 tweets with engagement']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `signals/sidebar data should include ${phrase}`);
     }
-    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 54 update pages']) {
+    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 55 update pages']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `source counts should include ${phrase}`);
     }
     assert.doesNotMatch(indexSource, /index \* 17|updateCards\[0\]|next curated publish pass/, 'right sidebar should not use deterministic placeholder formulas or newest-card watch copy');

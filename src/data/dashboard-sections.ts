@@ -20,6 +20,33 @@ export type TimelineEvent = {
 
 export const opinionItems: OpinionItem[] = [
   {
+    claim: 'Johnson says that across fourteen measured systems he is “indistinguishable from an 18-year-old,” conceding only hearing and somatic mutations as age-typical.',
+    position:
+      'Johnson posted that “in many ways, I am 18”—that an alien would struggle to distinguish him from his son—and listed sleep quality, erection function, fertility, resting heart rate, vascular health, cardiovascular health, blood pressure, metabolic health, blood glucose control, bone mineral density, muscle, fat, inflammation (“undetectable”), and shitposting as systems where he matches an 18-year-old, naming hearing and somatic mutations as the exceptions. He framed it as “the first rep,” said the results took five years, and told readers in their 30s–60s “the answer is yes” because “the most powerful things are free, and gated only by choice.”',
+    counterpoint:
+      'The post publishes no dataset, assay methods, reference cohort, or comparison standard for any listed system; “indistinguishable from an 18-year-old” is Johnson’s self-characterization of his own test results against undisclosed norms, and the same feed recently promoted NTE, LDL, and brain-percentile claims whose specifics outran their named sources. The concessions are notable—age-typical hearing and rising somatic mutations are both genuinely age-linked—but the replication promise (“the answer is yes”) is motivational framing, not an outcome claim with evidence behind it. The dashboard records an attributed N=1 outcome claim—not evidence of system-by-system youthful equivalence, a promise readers can replicate it, or medical advice.',
+    confidence: 'low',
+    relatedHref: '/knowledge/bryan-johnson/',
+    relatedTitle: 'Bryan Johnson',
+    sources: ['https://x.com/bryan_johnson/status/2094944302900367425'],
+  },
+  {
+    claim: 'Johnson cancelled a training session after accidental caffeine exposure, citing that “acute sleep disruption can increase injury risk by 70-130%.”',
+    position:
+      'After a cafe served him fully caffeinated coffee instead of decaf and wrecked his sleep, Johnson skipped his morning dunk training citing the 70–130% injury-risk figure. Two days later he published a measured investigation of the mistake itself: a sound meter showing ~75 dBA cafe background against his replicated 72 dBA order volume (a −3 dB signal-to-noise ratio where “a decaf coffee” and “a cup of coffee” could sound nearly identical), a photographed order screen with adjacent identical “brewed” buttons inviting a capture error, a cited ~1-in-8 cafe order error rate, and an estimated ~55% chance the barista recognized him.',
+    counterpoint:
+      'The forensic habit is the signal worth keeping: quantifying a mundane mistake with decibels, error rates, and base rates rather than dismissing it is algorithmic health applied to daily life. But the 70–130% figure names no study, and the nearest literature does not match it: chronic insufficient sleep in adolescent athletes raises injury risk 1.7× multivariate (Milewski et al., 2014, J Pediatr Orthop; 112 athletes, <8 h/night; RR 2.1 univariate) and up to 2.25× when training load rises while sleep falls (von Rosen et al., 2017, Scand J Med Sci Sports; 496 athletes)—season-long associations in young athletes, not acute single-night disruption in a 49-year-old. Skipping one session after a wrecked night is a defensible personal decision; the specific number is not a validated acute-injury statistic, and none of it is sleep guidance or medical advice.',
+    confidence: 'medium',
+    relatedHref: '/knowledge/algorithmic-health/',
+    relatedTitle: 'Algorithmic Health',
+    sources: [
+      'https://x.com/bryan_johnson/status/2095236652918812756',
+      'https://x.com/bryan_johnson/status/2094444126838366520',
+      'https://doi.org/10.1097/BPO.0000000000000151',
+      'https://doi.org/10.1111/sms.12855',
+    ],
+  },
+  {
     claim: 'Johnson reads his Kernel brain-scan percentiles as a personality operating manual—amygdala 95th, putamen 99th, caudate 97th—and says his frontal gray matter is “climbing.”',
     position:
       'Johnson posted regional percentiles from his own Kernel brain measurements (amygdala 95th for emotion/threat detection, putamen 99th for learning/habit formation, caudate 97th for goals/decisions/working memory, globus pallidus 93rd for movement) plus frontal gray matter at the 78th percentile, up 1.35% over two years “when it should be going down with age,” and mapped each region onto his own personality and capacities.',
@@ -261,6 +288,36 @@ export const opinionItems: OpinionItem[] = [
 ];
 
 export const timelineEvents: TimelineEvent[] = [
+  {
+    date: '2026-09-02',
+    label: '“I am 18”: fourteen systems claimed indistinguishable from an 18-year-old',
+    summary:
+      'Johnson posted that “in many ways, I am 18”—an alien would struggle to distinguish him from his son—listing fourteen systems he says match an 18-year-old (sleep quality, erection function, fertility, resting heart rate, vascular and cardiovascular health, blood pressure, metabolic health, blood glucose control, bone mineral density, muscle, fat, “undetectable” inflammation, and shitposting) while conceding hearing and somatic mutations remain age-typical. He framed it as “the first rep,” said it took five years, and told readers the answer for them is yes. The post publishes no dataset, assay methods, or reference cohort for any system; the claim is Johnson’s self-characterization of undisclosed-norm test results. The KB records an attributed N=1 outcome claim—not evidence of youthful equivalence, a replication promise, or medical advice.',
+    relatedHref: '/knowledge/bryan-johnson/',
+    relatedTitle: 'Bryan Johnson',
+    source: 'https://x.com/bryan_johnson/status/2094944302900367425',
+    confidence: 'low',
+  },
+  {
+    date: '2026-09-02',
+    label: 'Decaf-mistake investigation quantifies a cafe error with sound meters and base rates',
+    summary:
+      'Two days after accidental caffeine wrecked his sleep and made him cancel dunk training (citing an unattributed “70–130%” injury-risk increase), Johnson returned to the cafe with a sound meter and published the investigation: ~75 dBA background against his replicated 72 dBA order volume (−3 dB signal-to-noise where the two orders sound nearly identical), a photographed order screen with adjacent identical “brewed” buttons inviting a capture error, a cited ~1-in-8 cafe order error rate, and an estimated ~55% chance the barista recognized him. The nearest sleep/injury literature is season-long chronic-sleep association in adolescent athletes (Milewski 2014: 1.7×; von Rosen 2017: up to 2.25×), not acute single-night disruption. The KB records an attributed self-measurement example with literature context—not a validated acute-injury statistic or medical advice.',
+    relatedHref: '/knowledge/algorithmic-health/',
+    relatedTitle: 'Algorithmic Health',
+    source: 'https://x.com/bryan_johnson/status/2095236652918812756',
+    confidence: 'medium',
+  },
+  {
+    date: '2026-08-31',
+    label: 'Cycle start becomes a six-hour global logistics event',
+    summary:
+      'Johnson live-logged the start of Kate Tolo’s period as an operational event: bleeding began 10:34 am, the cells “start dying immediately,” a lab must process the sample within 24 hours, and an “entire global team” activated cup, tubes, ice, packing, and overnight courier inside a roughly six-hour window to collect 7 mL of menstrual blood—missing it means a 35-day delay. He says the blood is for “frontier science…more details soon.” This executes the July 31 menstrual-blood-as-uterine-sample proposal and shows the program’s operational intensity, but reports only timing and volume—no assay, analysis, or validation. The KB records an attributed N=1 program-operations update—not a validated diagnostic workflow or medical advice.',
+    relatedHref: '/metrics/',
+    relatedTitle: 'Metrics',
+    source: 'https://x.com/bryan_johnson/status/2094516331903340742',
+    confidence: 'medium',
+  },
   {
     date: '2026-08-30',
     label: 'Kate Tolo’s cycle declared “the most measured menstrual cycle in history”',

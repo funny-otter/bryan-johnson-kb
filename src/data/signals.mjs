@@ -1,5 +1,55 @@
 export const curatedSignals = [
   {
+    id: 'eighteen-year-old-multi-system-claims',
+    title: 'Johnson claims he is “indistinguishable from an 18-year-old” across fourteen measured systems',
+    date: '2026-09-02',
+    badge: 'Claim',
+    kind: 'tweet',
+    topic: 'Multi-system biological-age claim',
+    summary:
+      'Johnson posted that “in many ways, I am 18”—claiming an alien would struggle to distinguish him from his son—and listed fourteen systems where he says he is indistinguishable from an 18-year-old: sleep quality, erection function, fertility, resting heart rate, vascular health, cardiovascular health, blood pressure, metabolic health, blood glucose control, bone mineral density, muscle, fat, inflammation (“undetectable”), and, jokingly, shitposting. He concedes two measures remain age-typical—hearing and somatic mutations—and frames the result as “the first rep,” achievable by others in five years because “the most powerful things are free, and gated only by choice.” The post publishes no dataset, assay methods, reference cohort, or comparison standard for a single listed system; “indistinguishable from an 18-year-old” is Johnson’s self-characterization of his own test results against undisclosed norms, not a validated multi-system equivalence. The dashboard records an attributed N=1 outcome claim—not evidence of system-by-system youthful equivalence, a promise readers can replicate the result, or medical advice.',
+    href: '/knowledge/bryan-johnson/',
+    tweetId: '2094944302900367425',
+    confidence: 'low',
+    sources: ['https://x.com/bryan_johnson/status/2094944302900367425'],
+  },
+  {
+    id: 'kate-tolo-timed-blood-collection',
+    title: 'A menstrual cycle becomes a logistics emergency: Johnson live-logs a six-hour blood-collection window',
+    date: '2026-08-31',
+    badge: 'Female health',
+    kind: 'tweet',
+    topic: 'Female health / biosampling operations',
+    summary:
+      'Johnson live-logged the start of Kate Tolo’s period as an operational event: bleeding started 10:34 am, the cells “start dying immediately,” a laboratory must process the sample within 24 hours, and a roughly six-hour collection window opened—insertion cup, tubes, ice, packing, and a booked overnight courier activated by an “entire global team” to collect 7 mL of menstrual blood, with a missed window meaning a 35-day delay. He says the blood is “being used for frontier science…more details soon.” The post is the executed follow-through on the July 31 proposal to treat menstrual blood as a repeatable uterine sample, and it shows the program’s operational intensity: cycle-triggered sampling run like a time-critical logistics event. It reports collection timing and volume only—no assay, analysis, result, or validation of the sampling method. The dashboard records an attributed N=1 program-operations update—not a validated diagnostic workflow, evidence the sample is scientifically useful, or medical advice.',
+    href: '/metrics/',
+    tweetId: '2094516331903340742',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2094516331903340742',
+      'https://x.com/bryan_johnson/status/2083000689106772176',
+    ],
+  },
+  {
+    id: 'caffeine-forensics-injury-risk-claim',
+    title: 'A cafe’s decaf mistake becomes a measured investigation—anchored by an unattributed “70–130%” injury-risk figure',
+    date: '2026-09-02',
+    badge: 'Algorithmic health',
+    kind: 'tweet',
+    topic: 'Sleep disruption / injury risk / self-measurement',
+    summary:
+      'After a cafe served him fully caffeinated coffee instead of decaf, Johnson reported wrecked sleep and cancelled his morning dunk training because “acute sleep disruption can increase injury risk by 70-130%.” Two days later he returned with a sound meter and published the investigation: ~75 dBA cafe background against his replicated 72 dBA order volume (a −3 dB signal-to-noise ratio in which “a decaf coffee” and “a cup of coffee” could sound nearly identical), a photographed order screen where adjacent “brewed” caff/decaf buttons invite a “capture error,” a cited ~1-in-8 cafe order error rate, and an estimated ~55% chance the barista recognized him. The forensic habit—quantifying a mundane mistake rather than dismissing it—is a textbook algorithmic-health move. But the 70–130% injury figure names no study, and the nearest literature does not match it: chronic insufficient sleep in adolescent athletes raises injury risk 1.7× (Milewski et al., 2014, J Pediatr Orthop; 112 athletes, <8 h/night, multivariate) and up to 2.25× when training load rises while sleep falls (von Rosen et al., 2017, Scand J Med Sci Sports; 496 athletes)—associations in young athletes over a season, not acute single-night disruption in a 49-year-old. Skipping one training session after a wrecked night is a defensible personal decision; the specific number is not. The dashboard records an attributed event narrative and self-measurement example with literature context—not a validated acute-injury statistic, sleep guidance, or medical advice.',
+    href: '/knowledge/algorithmic-health/',
+    tweetId: '2095236652918812756',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2095236652918812756',
+      'https://x.com/bryan_johnson/status/2094444126838366520',
+      'https://doi.org/10.1097/BPO.0000000000000151',
+      'https://doi.org/10.1111/sms.12855',
+    ],
+  },
+  {
     id: 'kate-tolo-measured-cycle-readout',
     title: 'Johnson declares Kate Tolo’s current cycle “the most measured menstrual cycle in history”',
     date: '2026-08-30',
@@ -1260,9 +1310,11 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest X capture', value: '5', detail: '5 Aug 30 posts captured · knowledge/raw/x/2026-08-31 bryan-johnson-batch' },
-  { label: 'Literature check this pass', value: '2', detail: '2 papers verified · Draganski 2004 + Colcombe 2006 brain-plasticity trials' },
-  { label: 'Previous X capture', value: '2', detail: '2 Aug 29 posts captured · knowledge/raw/x/2026-08-30 bryan-johnson-batch' },
+  { label: 'Latest X capture', value: '8', detail: '8 Aug 31–Sep 2 posts captured · knowledge/raw/x/2026-09-01..03 bryan-johnson-batch' },
+  { label: 'Literature check this pass', value: '2', detail: '2 papers verified · Milewski 2014 + von Rosen 2017 sleep/injury-risk studies' },
+  { label: 'Previous X capture', value: '5', detail: '5 Aug 30 posts captured · knowledge/raw/x/2026-08-31 bryan-johnson-batch' },
+  { label: 'Literature check last pass', value: '2', detail: '2 papers verified · Draganski 2004 + Colcombe 2006 brain-plasticity trials' },
+  { label: 'Earlier X capture', value: '2', detail: '2 Aug 29 posts captured · knowledge/raw/x/2026-08-30 bryan-johnson-batch' },
   { label: 'Earlier X capture', value: '1', detail: '1 Aug 28 post captured · knowledge/raw/x/2026-08-29 bryan-johnson-batch' },
   { label: 'NPT normative literature', value: '3', detail: '3 papers verified for the NTE age-decline claim · Karacan 1975 + Schiavi 1988 + Horita 1989' },
   { label: 'Interval-training literature', value: '2', detail: '2 papers verified for the interval-training claim · Helgerud 2007 + Kodama 2009' },
@@ -1276,10 +1328,13 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '66', detail: '12 knowledge pages + 54 update pages after this pass' },
+  { label: 'Public site content', value: '67', detail: '12 knowledge pages + 55 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-09-02', x_post: 2, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-09-01', x_post: 3, third_party: 0, wiki_update: 0, site_update: 0 },
+  { date: '2026-08-31', x_post: 3, third_party: 0, wiki_update: 0, site_update: 0 },
   { date: '2026-08-30', x_post: 5, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-08-28', x_post: 1, third_party: 0, wiki_update: 0, site_update: 0 },
   { date: '2026-08-27', x_post: 3, third_party: 2, wiki_update: 0, site_update: 1 },
