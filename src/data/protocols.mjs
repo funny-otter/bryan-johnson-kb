@@ -215,6 +215,7 @@ export const protocolCategories = [
       ],
       longterm: [
         sourced('Separate durable healthspan practices from frontier enhancement, drug-stack, gene-therapy, and immortality narratives.', 'concepts/biomarker-driven-longevity-protocols.md'),
+        sourced('Treat the September 2026 Eight Sleep biological-age model as a commercial measurement claim with a real but unreviewed preprint behind it. The post’s figures track BCG-FM (Kjaer et al., arXiv:2606.07692: 2.04M hours / 136,575 participants; 3.26-year MAE; diabetes 0.852, heart failure 0.822, hypertension 0.810, sleep apnea 0.792 AUROC), but the product is a membership feature co-developed with Johnson’s Immortals, its internal disease labels are self-reported, and it is not a diagnostic device by the post’s own words. Not a validated longevity measurement, a purchasing signal, or medical advice.', 'https://x.com/bryan_johnson/status/2095675388810936586'),
         sourced('Classify daily Tadalafil/Cialis and similar drug claims as hypothesis-generating prescription-intervention claims unless independent clinical evidence supports the exact longevity use case.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-13.md'),
         sourced('Classify Immortals Rx GLP-1, SGLT2, peptide, and NAD+ listings as commercial platform expansion; do not treat off-label longevity positioning as proven outcome evidence.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-23.md'),
         sourced('Classify the July 2026 six-option GLP-1 catalog as a more specific commercial listing, not validation of weight-loss or longevity efficacy, compounded-treatment safety, prescribing criteria, formulation status, or availability.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-23.md'),
@@ -390,6 +391,7 @@ export const protocolCategories = [
       ],
       longterm: [
         sourced('Frame sleep as a durable foundation feeding the broader biomarker and recovery system.', 'concepts/blueprint-protocol.md'),
+        sourced('Treat the September 2026 Eight Sleep “sleep fingerprint” announcement as an attributed product-launch and research claim, not validated sleep science. The post’s figures match the BCG-FM preprint (Kjaer et al., arXiv:2606.07692: 2.04M hours from 136,575 participants; 3.26-year biological-age MAE; diabetes 0.852 / heart failure 0.822 / hypertension 0.810 / sleep apnea 0.792 AUROC), but it is a vendor collaboration behind a membership feature, its internal labels are self-reported, the preprint is not peer-reviewed, and the “better than Apple’s model” comparison is not in the paper. Johnson’s own post calls it “a research milestone, not a diagnostic device.”', 'https://x.com/bryan_johnson/status/2095675388810936586'),
         sourced('Treat Johnson’s September 2026 caffeine-mistake chronology as an algorithmic-health example—quantifying a mundane cafe error with a sound meter, order-screen inspection, and base rates—while keeping its “70–130%” injury-risk figure unverified. The nearest literature is chronic-sleep association in adolescent athletes (Milewski et al. 2014: 1.7× multivariate; von Rosen et al. 2017: up to 2.25× with rising training load), not acute single-night disruption. Skipping one session after a wrecked night is his personal decision, not reader sleep or training guidance.', 'https://x.com/bryan_johnson/status/2095236652918812756'),
         sourced('Use the June 19 seven-day checklist as a simple recurring-habits example, while preserving that readers need individualized medical guidance for health conditions.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-06-20.md'),
         sourced('Treat Johnson’s reported 42-to-44 bpm sleep-heart-rate difference when his final meal moved from noon to 2 p.m. as an N=1 observation, not a causal estimate or universal meal cutoff.', 'raw/articles/bryan-johnson/x-twitter-daily-2026-07-24.md'),
@@ -403,6 +405,11 @@ export const protocolCategories = [
       ],
     },
     cards: [
+      {
+        label: 'Sleep fingerprint',
+        title: 'Eight Sleep model estimates biological age from one night’s bed-sensor signal',
+        body: 'Johnson announced an Eight Sleep collaboration claiming a 3.3-year biological-age estimate, 92.5% one-night identification, and disease AUROCs up to 0.852 (diabetes). The figures match the BCG-FM preprint (arXiv:2606.07692: 3.26-year MAE; 2.04M hours from 136,575 participants), but it is a vendor-backed membership feature with self-reported internal labels and no peer review; the “better than Apple’s model” comparison is not in the paper. Johnson’s own post calls it “a research milestone, not a diagnostic device.” Attributed product-launch and research claim, not validated sleep science or medical advice.',
+      },
       {
         label: 'Consistency',
         title: '“Go to bed on time” is a recurring signal',

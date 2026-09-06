@@ -689,6 +689,49 @@ describe('home overview and dedicated changelog route', () => {
     assert.doesNotMatch(updatePage, /six prior dunk/, 'update page must not claim six prior dunk skips');
   });
 
+  it('publishes the September 4 Eight Sleep sleep-fingerprint announcement as an attributed product claim with verified preprint context', () => {
+    for (const required of [
+      'eight-sleep-sleep-fingerprint-model',
+      '2095675388810936586',
+      'https://x.com/bryan_johnson/status/2095675388810936586',
+      'https://arxiv.org/abs/2606.07692',
+      'BCG-FM',
+      '2.04 million hours of bed-sensor ballistocardiography from 136,575 participants',
+      '3.26 years',
+      '92.5% Rank-1 identity retrieval',
+      '0.852 for diabetes',
+      '0.822 for heart failure',
+      '0.792 for sleep apnea',
+      'self-reported',
+      'not peer-reviewed',
+      'has no corresponding comparison in the preprint',
+      'a research milestone, not a diagnostic device',
+      'not a validated diagnostic, a reader health claim, or medical advice',
+      "confidence: 'medium'",
+    ]) {
+      assert.match(signalsSource, new RegExp(required.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&'), 'i'), `Eight Sleep signal should preserve: ${required}`);
+    }
+
+    assert.match(dashboardSectionsSource, /arXiv:2606\.07692[\s\S]*3\.26 years[\s\S]*not a validated diagnostic, a reader health claim, or medical advice/i, 'opinion context should pair the Eight Sleep claim with the preprint boundary');
+    assert.match(dashboardSectionsSource, /Eight Sleep .sleep fingerprint. model announced as a biological-age product/, 'timeline should record the Eight Sleep item');
+
+    const bryanJohnsonSource = readFileSync(new URL('../src/content/knowledge/bryan-johnson.md', import.meta.url), 'utf8');
+    assert.match(bryanJohnsonSource, /On September 4[\s\S]*arXiv:2606\.07692[\s\S]*not a validated diagnostic, a purchasing signal, or medical advice/i, 'bryan-johnson page should record the Eight Sleep announcement with its attribution boundary');
+
+    const biomarkerProtocolsSource = readFileSync(new URL('../src/content/knowledge/biomarker-driven-longevity-protocols.md', import.meta.url), 'utf8');
+    assert.match(biomarkerProtocolsSource, /On September 4[\s\S]*arXiv:2606\.07692[\s\S]*not a validated diagnostic, clinical risk tool, purchasing guidance, or medical advice/i, 'biomarker-protocols page should keep the Eight Sleep claim and its preprint boundary together');
+
+    const algorithmicHealthPage = readFileSync(new URL('../src/content/knowledge/algorithmic-health.md', import.meta.url), 'utf8');
+    assert.match(algorithmicHealthPage, /On September 4[\s\S]*Autonomous Health[\s\S]*arXiv:2606\.07692[\s\S]*not a validated ambient diagnostic/i, 'algorithmic-health page should record the Autonomous Health instantiation with its boundary');
+
+    assert.match(protocolsSource, /Eight Sleep .sleep fingerprint. announcement as an attributed product-launch and research claim[\s\S]*arXiv:2606\.07692[\s\S]*not a diagnostic device/, 'sleep protocol guidance should keep the Eight Sleep claim in the attributed lane');
+    assert.match(protocolsSource, /label: 'Sleep fingerprint'/, 'sleep protocol dossier should carry a sleep-fingerprint card');
+
+    const updatePage = readFileSync(new URL('../src/content/updates/2026-09-06-eight-sleep-sleep-fingerprint-model-curation.md', import.meta.url), 'utf8');
+    assert.match(updatePage, /knowledge\/raw\/x\/2026-09-05\/2026-09-05-bryan-johnson-batch\.md/, 'update page should cite the September 5 capture');
+    assert.match(updatePage, /five prior dunk-post skip decisions \(July 25, August 2, 18, 28, and September 1\)/, 'update page should state the accurate five-decision dunk skip history');
+  });
+
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
     for (const phrase of ['watchQueue', 'sourceCounts', 'curatedActivity', 'Protocol tabs backed']) {
       assert.match(indexSource, new RegExp(phrase), `overview should use real sidebar data: ${phrase}`);
@@ -696,7 +739,7 @@ describe('home overview and dedicated changelog route', () => {
     for (const phrase of ['Enhanced Games follow-up', 'Kate Tolo baseline', 'Microplastics testing', '82 unique tweet URLs', '11 tweets with engagement']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `signals/sidebar data should include ${phrase}`);
     }
-    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 55 update pages']) {
+    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 56 update pages']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `source counts should include ${phrase}`);
     }
     assert.doesNotMatch(indexSource, /index \* 17|updateCards\[0\]|next curated publish pass/, 'right sidebar should not use deterministic placeholder formulas or newest-card watch copy');

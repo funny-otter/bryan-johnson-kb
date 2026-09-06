@@ -20,6 +20,21 @@ export type TimelineEvent = {
 
 export const opinionItems: OpinionItem[] = [
   {
+    claim: 'Johnson says an AI model built on sleep data “accurately predicts your age,” identifying individuals from one night’s signal with 92.5% accuracy and detecting conditions like diabetes better than Apple’s model.',
+    position:
+      'Johnson announced a collaboration with Eight Sleep CEO Matteo Franceschetti: a “sleep fingerprint” model now available on their platforms, trained on what he calls the largest raw biosignal dataset ever used for an AI from any device (2.04 million hours, 136,575 participants, 498k sessions, 122 million segments). He reports it estimates biological age within 3.3 years, identifies a user from one night’s signal with 92.5% accuracy, and detects diabetes (0.852), heart failure (0.822), hypertension (0.810), sleep apnea (0.792), snoring (0.751), and general heart conditions (0.734), framed as “possibly the most accurate contactless bioage estimate ever reported” and an example of the “Autonomous Health” world where surroundings take care of us without our asking.',
+    counterpoint:
+      'This announcement is unusually checkable because a preprint exists, and its numbers match the post: BCG-FM (Kjaer et al., arXiv:2606.07692) pretrained with contrastive learning on 2.04M hours of nightly bed-sensor ballistocardiography from 136,575 participants, reporting 3.26-year MAE biological-age estimation (the lowest reported for any ambient, contactless modality), 92.5% Rank-1 identity retrieval, and the same disease AUROCs—diabetes 0.852, heart failure 0.822 on external cohorts, hypertension 0.810, sleep apnea 0.792, snoring 0.751, general heart conditions 0.734—with log-linear batch-size scaling (R²=0.982). The boundaries: it is a vendor collaboration behind Eight Sleep’s membership “Biological Age” feature (developed with Johnson’s Immortals), so the incentives are commercial; the internal disease labels are self-reported; the external validation cohorts are small; the preprint is not peer-reviewed; and the post’s “diabetes better than Apple’s model” has no corresponding comparison in the preprint, whose Apple-Watch PpgAge benchmark is age accuracy (2.43-year MAE on a healthy cohort), not disease detection—so the comparative boast is not verifiable from the cited work. Johnson’s own post concedes the limitations—“internal labels are self-reported and external cohorts are small”—and calls it “a research milestone, not a diagnostic device.” The dashboard records an attributed product-launch and research claim with verified preprint context—not a validated diagnostic, a reason to buy a product for health decisions, or medical advice.',
+    confidence: 'medium',
+    relatedHref: '/sleep/',
+    relatedTitle: 'Sleep protocol',
+    sources: [
+      'https://x.com/bryan_johnson/status/2095675388810936586',
+      'https://arxiv.org/abs/2606.07692',
+      'https://www.eightsleep.com/blog/biological-age',
+    ],
+  },
+  {
     claim: 'Johnson says that across fourteen measured systems he is “indistinguishable from an 18-year-old,” conceding only hearing and somatic mutations as age-typical.',
     position:
       'Johnson posted that “in many ways, I am 18”—that an alien would struggle to distinguish him from his son—and listed sleep quality, erection function, fertility, resting heart rate, vascular health, cardiovascular health, blood pressure, metabolic health, blood glucose control, bone mineral density, muscle, fat, inflammation (“undetectable”), and shitposting as systems where he matches an 18-year-old, naming hearing and somatic mutations as the exceptions. He framed it as “the first rep,” said the results took five years, and told readers in their 30s–60s “the answer is yes” because “the most powerful things are free, and gated only by choice.”',
@@ -288,6 +303,16 @@ export const opinionItems: OpinionItem[] = [
 ];
 
 export const timelineEvents: TimelineEvent[] = [
+  {
+    date: '2026-09-04',
+    label: 'Eight Sleep “sleep fingerprint” model announced as a biological-age product',
+    summary:
+      'Johnson posted that he “just launched an AI model based on sleep data… and it accurately predicts your age,” built with Eight Sleep CEO Matteo Franceschetti. The post’s headline figures match a real preprint: BCG-FM (Kjaer et al., arXiv:2606.07692) pretrained on 2.04 million hours of bed-sensor ballistocardiography from 136,575 participants, reporting biological age within 3.26 years MAE (lowest reported for any ambient, contactless modality), 92.5% Rank-1 identity retrieval from one night’s signal, and disease AUROCs including diabetes 0.852, heart failure 0.822 (external cohort), hypertension 0.810, sleep apnea 0.792, snoring 0.751, and general heart conditions 0.734, with log-linear batch-size scaling (R²=0.982). The boundaries stay visible: it is a vendor collaboration behind Eight Sleep’s membership “Biological Age” feature developed with Johnson’s Immortals; internal labels are self-reported; external cohorts are small; the preprint is not peer-reviewed; and the post’s “diabetes better than Apple’s model” has no corresponding comparison in the preprint, whose Apple-Watch PpgAge benchmark is age accuracy. Johnson’s own post calls it “a research milestone, not a diagnostic device.” The KB records an attributed product-launch and research claim with verified preprint context—not a validated diagnostic, a reader health claim, or medical advice.',
+    relatedHref: '/sleep/',
+    relatedTitle: 'Sleep protocol',
+    source: 'https://x.com/bryan_johnson/status/2095675388810936586',
+    confidence: 'medium',
+  },
   {
     date: '2026-09-02',
     label: '“I am 18”: fourteen systems claimed indistinguishable from an 18-year-old',

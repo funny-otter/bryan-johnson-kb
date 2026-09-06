@@ -1,5 +1,23 @@
 export const curatedSignals = [
   {
+    id: 'eight-sleep-sleep-fingerprint-model',
+    title: 'Johnson announces an Eight Sleep AI model that reads a “sleep fingerprint” and estimates biological age',
+    date: '2026-09-04',
+    badge: 'Measurement',
+    kind: 'tweet',
+    topic: 'Sleep biosignal foundation model / biological age',
+    summary:
+      'Johnson posted that he “just launched an AI model based on sleep data… and it accurately predicts your age,” built with Eight Sleep CEO Matteo Franceschetti and available on their platforms. The claims are unusually checkable because a preprint exists: BCG-FM (Kjaer et al., arXiv:2606.07692) pretrained on 2.04 million hours of bed-sensor ballistocardiography from 136,575 participants, and its reported figures match the post — biological age within 3.26 years (the lowest reported for any ambient, contactless modality), 92.5% Rank-1 identity retrieval from one night’s signal, and AUROCs of 0.852 for diabetes, 0.822 for heart failure (external cohort), 0.810 for hypertension, 0.792 for sleep apnea, 0.751 for snoring, and 0.734 for general heart conditions, with log-linear batch-size scaling (R²=0.982). The boundaries: this is a vendor collaboration (Eight Sleep’s membership “Biological Age” feature, developed with Johnson’s Immortals), the internal disease labels are self-reported, the external cohorts are small, the preprint is not peer-reviewed, and the post’s “diabetes better than Apple’s model” has no corresponding comparison in the preprint, whose Apple-Watch PpgAge benchmark is age accuracy, not disease detection. Johnson’s own post concedes it is “a research milestone, not a diagnostic device.” The dashboard records an attributed product-launch and research claim with verified preprint context—not a validated diagnostic, a reader health claim, or medical advice.',
+    href: '/sleep/',
+    tweetId: '2095675388810936586',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2095675388810936586',
+      'https://arxiv.org/abs/2606.07692',
+      'https://www.eightsleep.com/blog/biological-age',
+    ],
+  },
+  {
     id: 'eighteen-year-old-multi-system-claims',
     title: 'Johnson claims he is “indistinguishable from an 18-year-old” across fourteen measured systems',
     date: '2026-09-02',
@@ -1096,6 +1114,13 @@ export const curatedSignals = [
 
 export const watchQueue = [
   {
+    title: 'Eight Sleep Biological Age rollout',
+    summary:
+      'Watch for peer review of the BCG-FM preprint (arXiv:2606.07692), external validation of the 3.26-year MAE and disease AUROCs beyond vendor cohorts, and how the membership feature describes its limits to consumers.',
+    source: 'https://x.com/bryan_johnson/status/2095675388810936586',
+    href: '/sleep/',
+  },
+  {
     title: 'NTE biomarker claim: named source for the “2x in 4 years” risk figure',
     summary:
       'Watch whether Johnson names the study behind the “2x risk of heart attack and stroke in the next 4 years” claim attached to nighttime erections. The direction is documented—ED precedes and predicts cardiovascular events (Vlachopoulos et al. 2011 JACC meta-analysis: RR 1.48 CVD, 1.35 stroke; Krimpen cohort: HR 2.6 only for severely reduced rigidity over ~6 years)—but the flat 2x-in-4-years figure is stronger than the meta-analytic averages and the post names no study. Also watch whether consumer NTE measurement gains any clinical-validation evidence, and whether his daily tadalafil framing acknowledges prescription oversight. Attributed claim-plus-context, not a monitoring recommendation or medical advice.',
@@ -1310,11 +1335,11 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest X capture', value: '8', detail: '8 Aug 31–Sep 2 posts captured · knowledge/raw/x/2026-09-01..03 bryan-johnson-batch' },
-  { label: 'Literature check this pass', value: '2', detail: '2 papers verified · Milewski 2014 + von Rosen 2017 sleep/injury-risk studies' },
-  { label: 'Previous X capture', value: '5', detail: '5 Aug 30 posts captured · knowledge/raw/x/2026-08-31 bryan-johnson-batch' },
-  { label: 'Literature check last pass', value: '2', detail: '2 papers verified · Draganski 2004 + Colcombe 2006 brain-plasticity trials' },
-  { label: 'Earlier X capture', value: '2', detail: '2 Aug 29 posts captured · knowledge/raw/x/2026-08-30 bryan-johnson-batch' },
+  { label: 'Latest X capture', value: '4', detail: '4 Sep 4 posts captured · knowledge/raw/x/2026-09-05 bryan-johnson-batch' },
+  { label: 'Preprint verified this pass', value: '1', detail: 'BCG-FM sleep foundation model · arXiv:2606.07692 figures matched to the post' },
+  { label: 'Previous X capture', value: '8', detail: '8 Aug 31–Sep 2 posts captured · knowledge/raw/x/2026-09-01..03 bryan-johnson-batch' },
+  { label: 'Literature check last pass', value: '2', detail: '2 papers verified · Milewski 2014 + von Rosen 2017 sleep/injury-risk studies' },
+  { label: 'Earlier X capture', value: '5', detail: '5 Aug 30 posts captured · knowledge/raw/x/2026-08-31 bryan-johnson-batch' },
   { label: 'Earlier X capture', value: '1', detail: '1 Aug 28 post captured · knowledge/raw/x/2026-08-29 bryan-johnson-batch' },
   { label: 'NPT normative literature', value: '3', detail: '3 papers verified for the NTE age-decline claim · Karacan 1975 + Schiavi 1988 + Horita 1989' },
   { label: 'Interval-training literature', value: '2', detail: '2 papers verified for the interval-training claim · Helgerud 2007 + Kodama 2009' },
@@ -1328,10 +1353,12 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '67', detail: '12 knowledge pages + 55 update pages after this pass' },
+  { label: 'Public site content', value: '68', detail: '12 knowledge pages + 56 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-09-04', x_post: 4, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-09-03', x_post: 0, third_party: 0, wiki_update: 0, site_update: 0 },
   { date: '2026-09-02', x_post: 2, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-09-01', x_post: 3, third_party: 0, wiki_update: 0, site_update: 0 },
   { date: '2026-08-31', x_post: 3, third_party: 0, wiki_update: 0, site_update: 0 },
