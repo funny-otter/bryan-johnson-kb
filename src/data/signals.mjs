@@ -1,5 +1,128 @@
 export const curatedSignals = [
   {
+    id: 'home-mold-testing-gym',
+    title: 'Johnson quantifies household mold with a spore-trap air sampler and an outdoor control',
+    date: '2026-09-25',
+    badge: 'Testing',
+    kind: 'tweet',
+    topic: 'Environmental health / mold measurement',
+    summary:
+      'Johnson reported finding mold in his home gym after periodic air testing: 4,900 spores/m³ indoors versus a 360 spores/m³ outdoor control, dominated by penicillium/aspergillus at 4,800 spores/m³ with ulocladium at roughly 40, which he graded “stage 4, high.” A companion post explained the method: a Buck BioAire B520 pump pulls a calibrated air volume through a spore-trap cassette that deposits airborne particles onto a sticky slide, with spores then counted under a microscope. The structure is a familiar algorithmic-health move—quantify the environment with a device, use an outdoor control as the baseline, then subtract harm—but it is a single self-administered sample with no lab report, no species confirmation beyond microscopy, and no stated health outcome; “stage 4” is his grading, not a published exposure standard. The dashboard records an attributed N=1 environmental measurement—not a mold-remediation recommendation, an exposure-safety threshold, or medical advice.',
+    href: '/knowledge/algorithmic-health/',
+    tweetId: '2103607895539769379',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2103607895539769379',
+      'https://x.com/bryan_johnson/status/2103609948534104116',
+    ],
+  },
+  {
+    id: 'kate-endo-cure-program-baseline',
+    title: 'The endometriosis program moves from diagnosis to a cure attempt with an MRI baseline',
+    date: '2026-09-23',
+    badge: 'Female health',
+    kind: 'tweet',
+    topic: 'Endometriosis / cure program / diagnostic delay',
+    summary:
+      'Johnson wrote that he is “focusing a significant amount of my time trying to build a cure for Kate’s endometriosis,” calling it a devastating disease affecting 10% of women that is underfunded and poorly understood; a follow-up described a baseline pelvic MRI to map Tolo’s deep lesions, cysts, and scar tissue so any change can be tracked in detail. His framing statistics check out against published literature: endometriosis prevalence estimates run 6–10% of women of reproductive age, and his “average 6.6 years to diagnose” matches the mean diagnostic delay found in a 2024 international scoping review (Health Care Women Int.). The post also revises the July diagnosis story—“four specialty different tests (blood, MRI, saliva, transvaginal ultrasound)” in 42 days, where July’s announcement named three modalities. No cure method, target, trial, or outcome is published; the dashboard records an attributed program-intent update with verified epidemiologic context—not evidence a cure exists or is feasible, a diagnostic pathway readers can follow, or medical advice.',
+    href: '/metrics/',
+    tweetId: '2102860303226831335',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2102860303226831335',
+      'https://x.com/bryan_johnson/status/2100651567926182263',
+      'https://doi.org/10.1080/07399332.2024.2413056',
+    ],
+  },
+  {
+    id: 'semaglutide-mouse-lifespan-claim',
+    title: 'Johnson relays a Nature mouse study: late-life semaglutide extended lifespan 12%—in female mice',
+    date: '2026-09-18',
+    badge: 'Research claim',
+    kind: 'tweet',
+    topic: 'GLP-1 / semaglutide lifespan',
+    summary:
+      'Johnson posted that “old female mice on semaglutide lived 12% longer and ran 2.8× as long before exhaustion,” listing gains including +177% treadmill time, −57% maze escape time, −65% senescence, and ~3× hippocampal neuronal rejuvenation, with treatment starting at 20 months (his gloss: human-equivalent 60s) and a calorie-restriction control. The study is real and published: Feng et al., Nature, September 2, 2026 (10.1038/s41586-026-10940-7) treated 20-month-old female C57BL/6 mice with daily semaglutide, extending median lifespan from 742 to 834 days (+12.4%), improving endurance, exploration, spatial memory, and glucose control, and attenuating hallmarks of aging; the paper’s headline comparisons match the post, including that matched calorie restriction reproduced endurance-type gains but not the exploration, memory, and glucose advantages. The boundaries: this is one strain, female sex only, daily injections, median—not maximum—lifespan, and a mouse study with no human longevity translation; the post’s precise multiplier figures (2.8×, +177%) are figure-level readings not restated in the paper’s abstract. Notably, Johnson’s Immortals Rx sells GLP-1 medications, so the amplification is commercially adjacent. The dashboard records an attributed research summary with verified source context—not human longevity evidence, medication guidance, or medical advice.',
+    href: '/longevity/',
+    tweetId: '2100746261964202305',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2100746261964202305',
+      'https://doi.org/10.1038/s41586-026-10940-7',
+      'https://www.nih.gov/news-events/nih-research-matters/glp-1-drug-slows-aging-mice',
+    ],
+  },
+  {
+    id: 'glp1-employment-study-claim',
+    title: 'A GLP-1 economics finding is paraphrased: non-working women who started GLP-1s were more likely to get jobs',
+    date: '2026-09-18',
+    badge: 'Research claim',
+    kind: 'tweet',
+    topic: 'GLP-1 / labor-market outcomes',
+    summary:
+      'Johnson posted that “non-working women who started GLP-1s saw a 20–25 percentage point increase in getting a job over 2 to 3 yrs.” The underlying study is real: NBER working paper w35387 (Diamond, June 2026) used the Understanding America Study to compare women starting GLP-1s for weight loss with matched women who wanted to start but had not, finding employment among baseline non-employed women rose 13.2 percentage points overall and 26.9 points after six or more quarters (about 1.5 years), with single women’s marriage/cohabitation up 29 points and no gains for already-employed women—interpreted as a first-impression obesity penalty. Johnson’s paraphrase loosely brackets the paper’s two horizons (13–27 points) and stretches the window (“2 to 3 yrs”); the post names no paper. The dashboard records an attributed research relay with verified source context—not evidence about any individual’s outcomes, a reason to seek medication for economic benefit, or medical advice.',
+    href: '/health/',
+    tweetId: '2100763486850805808',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2100763486850805808',
+      'https://www.nber.org/papers/w35387',
+    ],
+  },
+  {
+    id: 'talmage-sperm-fertility-claims',
+    title: 'Son’s semen results become a male-fertility claims post—anchored by a real population trend',
+    date: '2026-09-10',
+    badge: 'Claim',
+    kind: 'tweet',
+    topic: 'Male fertility / semen analysis',
+    summary:
+      'Johnson posted that his son Talmage “has excellent sperm”—“top 1% of men in his age group,” “19x the WHO fertility minimum,” with total motile sperm of 326 million, total count 759 million, and concentration 167 M/mL—then pivoted to a public advice list (sleep 8+ hours, lifting, interval training, omega-3s/NAC/zinc/CoQ10, avoiding testicular heat, alcohol, cigarettes, plastics, and unsupervised testosterone) and a follow-up telling parents to get sons tested in their late teens to early twenties. The population framing is documented: sperm concentration among Western men unselected by fertility fell 52.4% between 1973 and 2011 (Levine et al., 2017, Hum Reprod Update meta-regression of 185 studies, 42,935 men), matching his “fallen by about 50% within the last 50 years.” The rest is N=1 family data with no reference cohort disclosed for the “top 1%” and “19x” rankings, and the advice list is generic lifestyle guidance presented without individualization. The dashboard records an attributed family measurement and advice post with one verified population statistic—not fertility guidance, a testing recommendation for readers’ children, or medical advice.',
+    href: '/health/',
+    tweetId: '2098185202585747947',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2098185202585747947',
+      'https://x.com/bryan_johnson/status/2098188590073438235',
+      'https://doi.org/10.1093/humupd/dmx022',
+    ],
+  },
+  {
+    id: 'immortals-concierge-75k-pricing',
+    title: 'Immortals Concierge pricing goes public: $75,000 a year rising to $1,000,000',
+    date: '2026-09-10',
+    badge: 'Product',
+    kind: 'tweet',
+    topic: 'Concierge longevity platform / pricing',
+    summary:
+      'Johnson published the first explicit pricing for his clinic-grade program: “You can get my same elite medical team for $75k/yr”—membership “starts at $75,000 and goes up to $1,000,000,” with a dedicated physician, health coach and care coordinator, personalized protocols, genetic testing, 25+ diagnostic tests, and a 200+ biomarker panel spanning whole-body MRI, coronary CTA, DEXA, retinal imaging, microbiomes, and continuous glucose monitoring. The differentiators are “world-exclusive” technologies: immune-system sequencing and cryopreservation, and “age reversal of your cells to iPSCs, an embryonic state.” His efficacy argument is testimonial—“my biomarkers speak to the team’s efficacy”—while closing that “my protocol is available online for free.” The pricing and service list are concrete commercial disclosures; the exclusivity claims are not evidence that iPSC reprogramming or immune cryopreservation is an established clinical service with proven outcomes. The dashboard records an attributed product-pricing disclosure—not evidence of clinical efficacy of any listed service, an accessibility claim, or medical advice.',
+    href: '/longevity/',
+    tweetId: '2098148080025846005',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2098148080025846005',
+      'https://x.com/bryan_johnson/status/2098148244119584980',
+    ],
+  },
+  {
+    id: 'organ-specific-aging-pathstar',
+    title: 'Organ-by-organ aging schedules posted from a 25,306-biopsy AI study—figures match PathStAR',
+    date: '2026-09-08',
+    badge: 'Research claim',
+    kind: 'tweet',
+    topic: 'Organ aging rates / computational pathology',
+    summary:
+      'Johnson posted that “organs age differently”—vagina and uterus fastest in the 50s, ovaries in two peaks at 35–40 and 55–60, testes/prostate/gut in the 30s and around 50s, vascular tissues fastest in the 30s then slowing—citing “30+ million microscopic images analyzed from 25,306 human biopsies across 970 donors” by an AI model that evaluated tissue decay “without knowing chronological age.” Every figure matches PathStAR (bioRxiv 2025.09.29.679316; published in Nature Aging per the institute’s August 31, 2026 release): a structural-aging framework applied to 25,306 postmortem GTEx biopsies from 970 donors aged 21–70 across 40 tissues, segmenting 30.3 million image patches without training on chronological age, and classifying early-aging (vascular, 30s), late-aging (uterus/vagina, menopause-era 50s), and biphasic tissues (digestive and male reproductive, 30s and ~50s; ovary 35–40 and 55–60). The boundaries: this is postmortem histology structure, not organ function in living people; donors span 21–70 only; and “organs atrophy on different schedules” describes tissue architecture, not individual risk. The dashboard records an attributed research summary with verified source context—not a personal organ-age test, a clinical risk model, or medical advice.',
+    href: '/longevity/',
+    tweetId: '2097458211670589449',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2097458211670589449',
+      'https://www.biorxiv.org/content/10.1101/2025.09.29.679316v3',
+      'https://sbpdiscovery.org/press/every-organ-ages-on-its-own-schedule-and-the-schedules-are-in-sync/',
+    ],
+  },
+  {
     id: 'eight-sleep-sleep-fingerprint-model',
     title: 'Johnson announces an Eight Sleep AI model that reads a “sleep fingerprint” and estimates biological age',
     date: '2026-09-04',
@@ -1114,6 +1237,20 @@ export const curatedSignals = [
 
 export const watchQueue = [
   {
+    title: 'Kate Tolo endometriosis “cure” program',
+    summary:
+      'Watch whether Johnson publishes the actual intervention, targets, and outcome measures behind the stated plan to “build a cure for Kate’s endometriosis,” and whether the MRI-based lesion/cyst/scar-tissue baseline converts into tracked disease-state endpoints rather than a single before/after story. The epidemiologic framing is verified (6–10% prevalence; 6.6-year average diagnostic delay), but no method, target, or trial exists yet. Attributed program-intent tracking, not cure evidence or medical advice.',
+    source: 'https://x.com/bryan_johnson/status/2102860303226831335',
+    href: '/metrics/',
+  },
+  {
+    title: 'Immortals Concierge $75k–$1M rollout',
+    summary:
+      'Watch how the $75,000-to-$1,000,000 membership tiers hold up in practice: which “world-exclusive” services (immune sequencing and cryopreservation, iPSC age reversal) are actually delivered, whether outcome data beyond Johnson’s testimonial biomarkers ever appears, and how the free-protocol-vs-paid-concierge framing evolves. Commercial disclosure tracking, not efficacy evidence.',
+    source: 'https://x.com/bryan_johnson/status/2098148080025846005',
+    href: '/longevity/',
+  },
+  {
     title: 'Eight Sleep Biological Age rollout',
     summary:
       'Watch for peer review of the BCG-FM preprint (arXiv:2606.07692), external validation of the 3.26-year MAE and disease AUROCs beyond vendor cohorts, and how the membership feature describes its limits to consumers.',
@@ -1335,9 +1472,12 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest X capture', value: '4', detail: '4 Sep 4 posts captured · knowledge/raw/x/2026-09-05 bryan-johnson-batch' },
-  { label: 'Preprint verified this pass', value: '1', detail: 'BCG-FM sleep foundation model · arXiv:2606.07692 figures matched to the post' },
-  { label: 'Previous X capture', value: '8', detail: '8 Aug 31–Sep 2 posts captured · knowledge/raw/x/2026-09-01..03 bryan-johnson-batch' },
+  { label: 'Latest X capture', value: '2', detail: '2 Sep 25 posts captured · knowledge/raw/x/2026-09-27 bryan-johnson-batch' },
+  { label: 'Live Bird timeline audit', value: '51', detail: '51 Sep 6–25 posts reviewed via read-only bird user-tweets gap-fill audit' },
+  { label: 'Studies verified this pass', value: '4', detail: '4 sources matched · Nature semaglutide + PathStAR organ aging + NBER GLP-1 employment + Levine 2017 sperm decline' },
+  { label: 'Previous X capture', value: '4', detail: '4 Sep 4 posts captured · knowledge/raw/x/2026-09-05 bryan-johnson-batch' },
+  { label: 'Preprint verified last pass', value: '1', detail: 'BCG-FM sleep foundation model · arXiv:2606.07692 figures matched to the post' },
+  { label: 'Earlier X capture', value: '8', detail: '8 Aug 31–Sep 2 posts captured · knowledge/raw/x/2026-09-01..03 bryan-johnson-batch' },
   { label: 'Literature check last pass', value: '2', detail: '2 papers verified · Milewski 2014 + von Rosen 2017 sleep/injury-risk studies' },
   { label: 'Earlier X capture', value: '5', detail: '5 Aug 30 posts captured · knowledge/raw/x/2026-08-31 bryan-johnson-batch' },
   { label: 'Earlier X capture', value: '1', detail: '1 Aug 28 post captured · knowledge/raw/x/2026-08-29 bryan-johnson-batch' },
@@ -1353,10 +1493,26 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '68', detail: '12 knowledge pages + 56 update pages after this pass' },
+  { label: 'Public site content', value: '69', detail: '12 knowledge pages + 57 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-09-25', x_post: 2, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-09-23', x_post: 5, third_party: 0, wiki_update: 0, site_update: 0 },
+  { date: '2026-09-22', x_post: 1, third_party: 0, wiki_update: 0, site_update: 0 },
+  { date: '2026-09-21', x_post: 1, third_party: 0, wiki_update: 0, site_update: 0 },
+  { date: '2026-09-19', x_post: 1, third_party: 0, wiki_update: 0, site_update: 0 },
+  { date: '2026-09-18', x_post: 8, third_party: 0, wiki_update: 0, site_update: 0 },
+  { date: '2026-09-17', x_post: 2, third_party: 0, wiki_update: 0, site_update: 0 },
+  { date: '2026-09-15', x_post: 1, third_party: 0, wiki_update: 0, site_update: 0 },
+  { date: '2026-09-14', x_post: 4, third_party: 0, wiki_update: 0, site_update: 0 },
+  { date: '2026-09-13', x_post: 3, third_party: 0, wiki_update: 0, site_update: 0 },
+  { date: '2026-09-12', x_post: 4, third_party: 0, wiki_update: 0, site_update: 0 },
+  { date: '2026-09-11', x_post: 3, third_party: 0, wiki_update: 0, site_update: 0 },
+  { date: '2026-09-10', x_post: 10, third_party: 0, wiki_update: 0, site_update: 0 },
+  { date: '2026-09-09', x_post: 1, third_party: 0, wiki_update: 0, site_update: 0 },
+  { date: '2026-09-08', x_post: 1, third_party: 0, wiki_update: 0, site_update: 0 },
+  { date: '2026-09-06', x_post: 2, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-09-04', x_post: 4, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-09-03', x_post: 0, third_party: 0, wiki_update: 0, site_update: 0 },
   { date: '2026-09-02', x_post: 2, third_party: 0, wiki_update: 0, site_update: 1 },

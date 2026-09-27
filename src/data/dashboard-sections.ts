@@ -20,6 +20,51 @@ export type TimelineEvent = {
 
 export const opinionItems: OpinionItem[] = [
   {
+    claim: 'Johnson says late-life semaglutide extended lifespan 12% in aged female mice, presenting the numbers as a longevity finding.',
+    position:
+      'Johnson relayed a mouse study in detail: “old female mice on semaglutide lived 12% longer and ran 2.8× as long before exhaustion,” with +177% treadmill time, −57% maze escape time, −65% senescence, ~3× hippocampal neuronal rejuvenation, treatment from 20 months (his gloss: human-equivalent 60s), and a calorie-restriction control that matched the endurance gains but not the memory, exploration, or glucose advantages.',
+    counterpoint:
+      'The study is real and the direction is reported faithfully: Feng et al., Nature, September 2, 2026 (10.1038/s41586-026-10940-7) treated 20-month-old female C57BL/6 mice with daily semaglutide and extended median lifespan from 742 to 834 days (+12.4%), with functional improvements and calorie-restriction comparisons matching the post’s structure. The boundaries: one strain, female mice only, daily injections, median lifespan, and no human longevity evidence—the leap from mouse median lifespan to human aging is exactly the gap the dashboard exists to keep visible. The post’s precise multipliers (2.8×, +177%) are figure-level readings not restated in the paper’s abstract, and Johnson’s Immortals Rx sells GLP-1 medications, making the amplification commercially adjacent. The dashboard records an attributed research summary with verified source context—not human longevity evidence, medication guidance, or medical advice.',
+    confidence: 'medium',
+    relatedHref: '/longevity/',
+    relatedTitle: 'Longevity protocol',
+    sources: [
+      'https://x.com/bryan_johnson/status/2100746261964202305',
+      'https://doi.org/10.1038/s41586-026-10940-7',
+      'https://www.nih.gov/news-events/nih-research-matters/glp-1-drug-slows-aging-mice',
+    ],
+  },
+  {
+    claim: 'Johnson says he is “focusing a significant amount of my time” on building a cure for Kate Tolo’s endometriosis, a disease he says affects 10% of women and takes 6.6 years to diagnose.',
+    position:
+      'Johnson announced the endometriosis program is escalating from diagnosis to a cure attempt, backed by a baseline pelvic MRI to map Tolo’s deep lesions, cysts, and scar tissue so any change can be tracked “with great detail,” and repeated his framing that the disease is common, devastating, underfunded, and slow to diagnose.',
+    counterpoint:
+      'The epidemiologic anchors check out: endometriosis prevalence estimates run 6–10% of women of reproductive age, and the 6.6-year average diagnostic delay matches a 2024 international scoping review (Health Care Women Int., 10.1080/07399332.2024.2413056). But no cure method, molecular target, trial design, or outcome definition is published—only intent and a measurement baseline—so this remains an N=1 program announcement, not evidence that a cure exists, is feasible, or generalizes. The post also quietly revises the July diagnosis story from three modalities to “four specialty different tests (blood, MRI, saliva, transvaginal ultrasound).” The dashboard records an attributed program-intent update with verified context—not cure evidence, a diagnostic pathway readers can follow, or medical advice.',
+    confidence: 'medium',
+    relatedHref: '/metrics/',
+    relatedTitle: 'Metrics',
+    sources: [
+      'https://x.com/bryan_johnson/status/2102860303226831335',
+      'https://x.com/bryan_johnson/status/2100651567926182263',
+      'https://doi.org/10.1080/07399332.2024.2413056',
+    ],
+  },
+  {
+    claim: 'Johnson says organs age on different schedules—vagina and uterus fastest in the 50s, ovaries in two peaks, vascular tissue in the 30s—citing a 25,306-biopsy AI analysis.',
+    position:
+      'Johnson posted organ-specific aging schedules drawn from “30+ million microscopic images analyzed from 25,306 human biopsies across 970 donors,” with an AI model that evaluated tissue structural decay “without knowing chronological age, showing organs atrophy on different schedules.”',
+    counterpoint:
+      'Every figure matches PathStAR (bioRxiv 2025.09.29.679316, published in Nature Aging per the August 31, 2026 institute release): 25,306 postmortem GTEx biopsies from 970 donors aged 21–70 across 40 tissues, 30.3 million image patches, age-blind training, early-aging vascular tissue (30s), late-aging uterus/vagina (50s), biphasic ovary (35–40 and 55–60) and digestive/male-reproductive tissues. The boundaries: postmortem histology measures tissue architecture, not organ function in living people; donors span ages 21–70; and the study describes population-level schedules, not an individual organ-age test. The dashboard records an attributed research summary with verified source context—not a personal organ-aging readout, a clinical risk model, or medical advice.',
+    confidence: 'medium',
+    relatedHref: '/longevity/',
+    relatedTitle: 'Longevity protocol',
+    sources: [
+      'https://x.com/bryan_johnson/status/2097458211670589449',
+      'https://www.biorxiv.org/content/10.1101/2025.09.29.679316v3',
+      'https://sbpdiscovery.org/press/every-organ-ages-on-its-own-schedule-and-the-schedules-are-in-sync/',
+    ],
+  },
+  {
     claim: 'Johnson says an AI model built on sleep data “accurately predicts your age,” identifying individuals from one night’s signal with 92.5% accuracy and detecting conditions like diabetes better than Apple’s model.',
     position:
       'Johnson announced a collaboration with Eight Sleep CEO Matteo Franceschetti: a “sleep fingerprint” model now available on their platforms, trained on what he calls the largest raw biosignal dataset ever used for an AI from any device (2.04 million hours, 136,575 participants, 498k sessions, 122 million segments). He reports it estimates biological age within 3.3 years, identifies a user from one night’s signal with 92.5% accuracy, and detects diabetes (0.852), heart failure (0.822), hypertension (0.810), sleep apnea (0.792), snoring (0.751), and general heart conditions (0.734), framed as “possibly the most accurate contactless bioage estimate ever reported” and an example of the “Autonomous Health” world where surroundings take care of us without our asking.',
@@ -303,6 +348,56 @@ export const opinionItems: OpinionItem[] = [
 ];
 
 export const timelineEvents: TimelineEvent[] = [
+  {
+    date: '2026-09-25',
+    label: 'Home mold found and quantified with spore-trap air sampling',
+    summary:
+      'Johnson reported mold in his home gym at 4,900 spores/m³ against a 360 spores/m³ outdoor control—penicillium/aspergillus at 4,800, graded “stage 4, high”—and explained his periodic testing method: a Buck BioAire B520 pump drawing a calibrated air volume through a spore-trap cassette onto a sticky slide, with microscope spore counting. A single self-administered sample with no lab report or published exposure standard behind the “stage” grading. The KB records an attributed N=1 environmental measurement—not remediation guidance, an exposure threshold, or medical advice.',
+    relatedHref: '/knowledge/algorithmic-health/',
+    relatedTitle: 'Algorithmic health',
+    source: 'https://x.com/bryan_johnson/status/2103607895539769379',
+    confidence: 'medium',
+  },
+  {
+    date: '2026-09-23',
+    label: 'Endometriosis program escalates from diagnosis to a stated cure attempt',
+    summary:
+      'Johnson wrote that he is “focusing a significant amount of my time trying to build a cure for Kate’s endometriosis,” calling it a devastating disease affecting 10% of women, and described a baseline pelvic MRI to map deep lesions, cysts, and scar tissue for tracking. His framing statistics check out—prevalence estimates run 6–10% and the 6.6-year average diagnostic delay matches a 2024 scoping review—but no cure method, target, or trial is published; the post also revises the July diagnosis story to “four specialty different tests.” The KB records an attributed program-intent update with verified epidemiologic context—not cure evidence or medical advice.',
+    relatedHref: '/metrics/',
+    relatedTitle: 'Metrics',
+    source: 'https://x.com/bryan_johnson/status/2102860303226831335',
+    confidence: 'medium',
+  },
+  {
+    date: '2026-09-18',
+    label: 'Nature mouse study relayed: late-life semaglutide extended median lifespan 12%',
+    summary:
+      'Johnson relayed Feng et al. (Nature, September 2, 2026; 10.1038/s41586-026-10940-7) in detail: 20-month-old female C57BL/6 mice on daily semaglutide lived 12% longer (median 742→834 days) and ran 2.8× as long before exhaustion, with gains in exploration, spatial memory, and glucose control that the matched calorie-restriction control did not reproduce; treatment start was glossed as human-equivalent 60s. The study is real and faithfully structured, but it is one strain, female-only, median lifespan, and mouse-only—no human longevity evidence—and Johnson’s Immortals Rx sells GLP-1s, making the amplification commercially adjacent. The KB records an attributed research summary with verified source context—not medication guidance or medical advice.',
+    relatedHref: '/longevity/',
+    relatedTitle: 'Longevity protocol',
+    source: 'https://x.com/bryan_johnson/status/2100746261964202305',
+    confidence: 'medium',
+  },
+  {
+    date: '2026-09-10',
+    label: 'Immortals Concierge pricing published: $75,000 to $1,000,000 a year',
+    summary:
+      'Johnson published first explicit pricing for his clinic-grade program—“my same elite medical team for $75k/yr,” with memberships from $75,000 up to $1,000,000—covering a dedicated physician, coach and coordinator, personalized protocols, genetic testing, 25+ diagnostics, and a 200+ biomarker panel, plus “world-exclusive” immune-system sequencing/cryopreservation and iPSC “age reversal.” The pricing and service list are concrete commercial disclosures; the exclusivity claims are not evidence of established clinical services, and his efficacy argument is testimonial. The KB records an attributed product-pricing disclosure—not evidence of clinical efficacy or medical advice.',
+    relatedHref: '/longevity/',
+    relatedTitle: 'Longevity protocol',
+    source: 'https://x.com/bryan_johnson/status/2098148080025846005',
+    confidence: 'medium',
+  },
+  {
+    date: '2026-09-08',
+    label: 'Organ-by-organ aging schedules posted, matching the PathStAR biopsy study',
+    summary:
+      'Johnson posted that “organs age differently”—uterus/vagina fastest in the 50s, ovaries in two peaks (35–40, 55–60), testes/prostate/gut biphasic, vascular tissue early in the 30s—citing 30+ million images from 25,306 biopsies across 970 donors analyzed by an age-blind AI model. The figures match PathStAR (bioRxiv 2025.09.29.679316; Nature Aging per the institute’s August 31, 2026 release), built on postmortem GTEx tissue from donors aged 21–70. The KB records an attributed research summary with verified source context—population-level histology schedules, not a personal organ-age test or medical advice.',
+    relatedHref: '/longevity/',
+    relatedTitle: 'Longevity protocol',
+    source: 'https://x.com/bryan_johnson/status/2097458211670589449',
+    confidence: 'medium',
+  },
   {
     date: '2026-09-04',
     label: 'Eight Sleep “sleep fingerprint” model announced as a biological-age product',

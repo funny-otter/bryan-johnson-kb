@@ -739,7 +739,7 @@ describe('home overview and dedicated changelog route', () => {
     for (const phrase of ['Enhanced Games follow-up', 'Kate Tolo baseline', 'Microplastics testing', '82 unique tweet URLs', '11 tweets with engagement']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `signals/sidebar data should include ${phrase}`);
     }
-    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 56 update pages']) {
+    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 57 update pages']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `source counts should include ${phrase}`);
     }
     assert.doesNotMatch(indexSource, /index \* 17|updateCards\[0\]|next curated publish pass/, 'right sidebar should not use deterministic placeholder formulas or newest-card watch copy');

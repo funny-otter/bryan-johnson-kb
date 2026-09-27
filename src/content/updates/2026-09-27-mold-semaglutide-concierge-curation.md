@@ -1,0 +1,19 @@
+---
+title: 'Mold testing, semaglutide mouse study, Immortals Concierge pricing curation'
+date: '2026-09-27'
+source: builder-tweet-check
+wikiPaths:
+  - knowledge/raw/x/2026-09-27/2026-09-27-bryan-johnson-batch.md
+---
+# Mold testing, semaglutide mouse study, Immortals Concierge pricing curation
+
+- Closed the September 6–25 coverage gap. The librarian daily batch captures paused after September 5 and resumed September 27, so this pass ran a bounded read-only Bird timeline audit (`bird user-tweets @bryan_johnson -n 200 --json`) covering 51 posts from September 6–25, in addition to the September 27 ingest's two September 25 posts. Seven items were promoted to the dashboard; the remaining 44 were reviewed and kept as chronology-only.
+- Promoted the September 25 mold-testing pair from the September 27 ingest: home-gym mold quantified at 4,900 spores/m³ against a 360 spores/m³ outdoor control (penicillium/aspergillus 4,800), with the Buck BioAire B520 spore-trap method explained. Recorded as an attributed N=1 environmental measurement.
+- Promoted the endometriosis cure-program announcement (September 23: "focusing a significant amount of my time trying to build a cure," with the September 17 baseline-MRI post) with verified epidemiologic context: 6–10% prevalence and the 6.6-year average diagnostic delay match a 2024 scoping review (10.1080/07399332.2024.2413056). Noted the diagnosis story revision from three modalities (July) to "four specialty different tests."
+- Promoted the September 18 semaglutide mouse-lifespan post after verifying the underlying study: Feng et al., Nature, September 2, 2026 (10.1038/s41586-026-10940-7) — median lifespan 742→834 days (+12.4%) in 20-month-old female C57BL/6 mice, with the calorie-restriction comparison matching the post's structure. Kept the mouse-only/female-only/median-lifespan boundary and the Immortals Rx commercial adjacency visible.
+- Promoted the September 18 GLP-1 employment post after verifying NBER w35387 (Diamond): 13.2-point overall and 26.9-point six-plus-quarter employment gains among baseline non-employed women — Johnson's "20–25 points over 2 to 3 yrs" is a loose paraphrase.
+- Promoted the September 10 Immortals Concierge pricing disclosure ($75,000–$1,000,000 memberships) as a commercial milestone, and the September 10 son's-sperm post with its one verified anchor (Levine et al. 2017: unselected Western sperm concentration −52.4%, 1973–2011) against undisclosed "top 1%"/"19x WHO" ranking cohorts.
+- Promoted the September 8 organ-aging schedule post after verifying PathStAR (bioRxiv 2025.09.29.679316; Nature Aging): 25,306 postmortem GTEx biopsies, 970 donors, 30.3M patches, age-blind — every posted figure matches.
+- Skipped as chronology-only, consistent with prior skip decisions: dunk-training PRs and jump updates (September 9, 14, 18, 21), eHbA1c 4.4% and Sunday-routine posts (September 6), the creatine-theft saga (September 18), AI-alignment and Kernel posts (September 13, 19, 22, 24), the 5-MeO-DMT singularity essay (September 19), GLP-1/semaglutide culture-war posts (September 17), "kindness/being mean" aphorisms (September 10, 12, 15), sleep advice one-liners (September 23), the Talmage birthday story (September 23), and remaining one-line engagement posts.
+- Added: seven curated signals, three opinion items, five timeline rows, two watch-queue entries (endo cure program, Concierge rollout), five protocol guidance rows, three protocol dossier cards, dated paragraphs on the bryan-johnson, biomarker-driven-longevity-protocols, and algorithmic-health knowledge pages, and September 6–25 curated-activity rows.
+- Source provenance: the September 27 ingest under `knowledge/raw/x/2026-09-27/` plus a bounded read-only Bird timeline audit at curation time (195 posts spanning July 3–September 25); no posts newer than the September 25 22:17 UTC capture were present.
