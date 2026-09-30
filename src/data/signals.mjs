@@ -1,5 +1,23 @@
 export const curatedSignals = [
   {
+    id: 'altitude-wearable-dips',
+    title: 'Five days at 7,000 ft read as wearable deltas: sleep −15%, “nervous system” −17%, resting heart rate +16%',
+    date: '2026-09-29',
+    badge: 'N=1 test',
+    kind: 'tweet',
+    topic: 'Altitude / sleep and autonomic response',
+    summary:
+      'Johnson posted a travel-physiology readout after five days in Colorado and Wyoming at 7,000 ft (≈2,130 m): “sleep down 15%,” “nervous system down 17%,” “resting heart rate up 16%,” closing “Very happy to be back at sea level today.” The direction matches published moderate-altitude physiology: in 51 healthy lowland men studied at 490/1,630/2,590 m (Latshang et al., Sleep 2013, 10.5665/sleep.3242), altitude brought progressively worse periodic breathing (AHI 4.6/h at 490 m to 13.1/h on the first night at 2,590 m), lower mean nocturnal oxygen saturation (96%→90%), and reduced slow-wave sleep, while the same Zurich cohort recorded heart rate +3.3 bpm and mean blood pressure +4.8 mmHg at 2,590 m versus 490 m (PLOS ONE, 10.1371/journal.pone.0070081). The boundary: Johnson’s percentages are proprietary wearable-index deltas—a sleep score and an Oura-style “nervous system” composite are not polysomnography—over one trip with no baseline window disclosed; the same literature shows acclimatization by the second night, unchanged sleep efficiency and subjective sleepiness, no measurable vigilance decrement at these elevations, and even improved lipid profiles and hsCRP at altitude. The dashboard records an attributed N=1 wearable observation with verified literature direction—not evidence that moderate-altitude travel is harmful, a travel or sleep recommendation, or medical advice.',
+    href: '/knowledge/algorithmic-health/',
+    tweetId: '2104962827073040874',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2104962827073040874',
+      'https://doi.org/10.5665/sleep.3242',
+      'https://doi.org/10.1371/journal.pone.0070081',
+    ],
+  },
+  {
     id: 'home-mold-testing-gym',
     title: 'Johnson quantifies household mold with a spore-trap air sampler and an outdoor control',
     date: '2026-09-25',
@@ -1472,10 +1490,12 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest X capture', value: '2', detail: '2 Sep 25 posts captured · knowledge/raw/x/2026-09-27 bryan-johnson-batch' },
-  { label: 'Live Bird timeline audit', value: '51', detail: '51 Sep 6–25 posts reviewed via read-only bird user-tweets gap-fill audit' },
-  { label: 'Studies verified this pass', value: '4', detail: '4 sources matched · Nature semaglutide + PathStAR organ aging + NBER GLP-1 employment + Levine 2017 sperm decline' },
-  { label: 'Previous X capture', value: '4', detail: '4 Sep 4 posts captured · knowledge/raw/x/2026-09-05 bryan-johnson-batch' },
+  { label: 'Latest X capture', value: '2', detail: '2 Sep 29 posts captured · knowledge/raw/x/2026-09-30 bryan-johnson-batch' },
+  { label: 'Live Bird timeline audit', value: '194', detail: '194 Jul 4–Sep 29 posts reviewed via read-only bird user-tweets gap-fill audit' },
+  { label: 'Studies verified this pass', value: '2', detail: '2 sources matched · Latshang 2013 altitude sleep + Zurich cohort PLOS ONE altitude HR/BP' },
+  { label: 'Previous X capture', value: '2', detail: '2 Sep 28 posts captured · knowledge/raw/x/2026-09-29 bryan-johnson-batch' },
+  { label: 'Prior X capture', value: '2', detail: '2 Sep 25 posts captured · knowledge/raw/x/2026-09-27 bryan-johnson-batch' },
+  { label: 'Earlier X capture', value: '4', detail: '4 Sep 4 posts captured · knowledge/raw/x/2026-09-05 bryan-johnson-batch' },
   { label: 'Preprint verified last pass', value: '1', detail: 'BCG-FM sleep foundation model · arXiv:2606.07692 figures matched to the post' },
   { label: 'Earlier X capture', value: '8', detail: '8 Aug 31–Sep 2 posts captured · knowledge/raw/x/2026-09-01..03 bryan-johnson-batch' },
   { label: 'Literature check last pass', value: '2', detail: '2 papers verified · Milewski 2014 + von Rosen 2017 sleep/injury-risk studies' },
@@ -1493,10 +1513,12 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '69', detail: '12 knowledge pages + 57 update pages after this pass' },
+  { label: 'Public site content', value: '70', detail: '12 knowledge pages + 58 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-09-29', x_post: 2, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-09-28', x_post: 2, third_party: 0, wiki_update: 0, site_update: 0 },
   { date: '2026-09-25', x_post: 2, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-09-23', x_post: 5, third_party: 0, wiki_update: 0, site_update: 0 },
   { date: '2026-09-22', x_post: 1, third_party: 0, wiki_update: 0, site_update: 0 },

@@ -732,6 +732,44 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(updatePage, /five prior dunk-post skip decisions \(July 25, August 2, 18, 28, and September 1\)/, 'update page should state the accurate five-decision dunk skip history');
   });
 
+  it('publishes the September 29 altitude wearable readout as an attributed N=1 with verified literature direction', () => {
+    for (const required of [
+      'altitude-wearable-dips',
+      '2104962827073040874',
+      'https://x.com/bryan_johnson/status/2104962827073040874',
+      'https://doi.org/10.5665/sleep.3242',
+      'https://doi.org/10.1371/journal.pone.0070081',
+      'Latshang et al., Sleep 2013',
+      'AHI 4.6/h at 490 m to 13.1/h',
+      '96%→90%',
+      'proprietary wearable-index deltas',
+      'acclimatization by the second night',
+      'not evidence that moderate-altitude travel is harmful, a travel or sleep recommendation, or medical advice',
+      "confidence: 'medium'",
+    ]) {
+      assert.match(signalsSource, new RegExp(required, 'i'), `altitude signal should preserve: ${required}`);
+    }
+
+    assert.match(dashboardSectionsSource, /Latshang[^]*10[.]5665\/sleep[.]3242[^]*not evidence moderate-altitude travel is harmful, travel or sleep guidance, or medical advice/i, 'timeline should pair the altitude claim with the literature boundary');
+    assert.match(dashboardSectionsSource, /Altitude trip quantified as wearable deltas/, 'timeline should record the altitude item');
+
+    const bryanJohnsonSource = readFileSync(new URL('../src/content/knowledge/bryan-johnson.md', import.meta.url), 'utf8');
+    assert.match(bryanJohnsonSource, /On September 29[^]*Latshang et al[.,]+ Sleep 2013[^]*not evidence that moderate-altitude travel is harmful, travel or sleep guidance, or medical advice/i, 'bryan-johnson page should record the altitude post with its attribution boundary');
+
+    const biomarkerProtocolsSource = readFileSync(new URL('../src/content/knowledge/biomarker-driven-longevity-protocols.md', import.meta.url), 'utf8');
+    assert.match(biomarkerProtocolsSource, /On September 29[^]*10[.]5665\/sleep[.]3242[^]*not evidence that moderate-altitude travel is harmful, a travel or sleep recommendation, or medical advice/i, 'biomarker-protocols page should keep the altitude claim and its literature boundary together');
+
+    const algorithmicHealthPage = readFileSync(new URL('../src/content/knowledge/algorithmic-health.md', import.meta.url), 'utf8');
+    assert.match(algorithmicHealthPage, /On September 29[^]*Latshang et al[.,]+ Sleep 2013[^]*not polysomnography[^]*not evidence that moderate-altitude travel is harmful/i, 'algorithmic-health page should record the altitude observation with its boundary');
+
+    assert.match(protocolsSource, /altitude readout as an attributed N=1 wearable observation, not travel or sleep guidance[^]*Latshang et al[.,]+ Sleep 2013[^]*10[.]1371\/journal[.]pone[.]0070081/, 'sleep protocol guidance should keep the altitude claim in the attributed lane');
+    assert.match(protocolsSource, /label: 'Altitude N=1'/, 'sleep protocol dossier should carry an altitude card');
+
+    const updatePage = readFileSync(new URL('../src/content/updates/2026-09-30-altitude-wearable-deltas-curation.md', import.meta.url), 'utf8');
+    assert.match(updatePage, /knowledge\/raw\/x\/2026-09-30\/2026-09-30-bryan-johnson-batch[.]md/, 'update page should cite the September 30 capture');
+    assert.match(updatePage, /no gap[^]*Johnson posted nothing September 26/, 'update page should state the verified no-gap audit result');
+  });
+
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
     for (const phrase of ['watchQueue', 'sourceCounts', 'curatedActivity', 'Protocol tabs backed']) {
       assert.match(indexSource, new RegExp(phrase), `overview should use real sidebar data: ${phrase}`);
@@ -739,7 +777,7 @@ describe('home overview and dedicated changelog route', () => {
     for (const phrase of ['Enhanced Games follow-up', 'Kate Tolo baseline', 'Microplastics testing', '82 unique tweet URLs', '11 tweets with engagement']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `signals/sidebar data should include ${phrase}`);
     }
-    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 57 update pages']) {
+    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 58 update pages']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `source counts should include ${phrase}`);
     }
     assert.doesNotMatch(indexSource, /index \* 17|updateCards\[0\]|next curated publish pass/, 'right sidebar should not use deterministic placeholder formulas or newest-card watch copy');

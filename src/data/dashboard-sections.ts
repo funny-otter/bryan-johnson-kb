@@ -349,6 +349,16 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-09-29',
+    label: 'Altitude trip quantified as wearable deltas: sleep −15%, “nervous system” −17%, RHR +16%',
+    summary:
+      'Johnson posted a five-day 7,000 ft (≈2,130 m) Colorado/Wyoming trip readout—“sleep down 15%,” “nervous system down 17%,” “resting heart rate up 16%,” “very happy to be back at sea level.” The direction matches published moderate-altitude physiology: 51 healthy lowland men at 490/1,630/2,590 m showed altitude-dependent periodic breathing (AHI 4.6/h→13.1/h), SpO₂ 96%→90%, and reduced slow-wave sleep (Latshang et al., Sleep 2013, 10.5665/sleep.3242), with the same cohort recording heart rate +3.3 bpm and mean BP +4.8 mmHg at 2,590 m (PLOS ONE, 10.1371/journal.pone.0070081). But the percentages are proprietary wearable-index deltas over one trip with no baseline window disclosed—and the same literature shows acclimatization by night two, unchanged sleep efficiency, and no vigilance decrement at these elevations. The KB records an attributed N=1 wearable observation with verified literature direction—not evidence moderate-altitude travel is harmful, travel or sleep guidance, or medical advice.',
+    relatedHref: '/knowledge/algorithmic-health/',
+    relatedTitle: 'Algorithmic health',
+    source: 'https://x.com/bryan_johnson/status/2104962827073040874',
+    confidence: 'medium',
+  },
+  {
     date: '2026-09-25',
     label: 'Home mold found and quantified with spore-trap air sampling',
     summary:
