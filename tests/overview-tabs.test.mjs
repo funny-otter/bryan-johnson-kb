@@ -770,6 +770,45 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(updatePage, /no gap[^]*Johnson posted nothing September 26/, 'update page should state the verified no-gap audit result');
   });
 
+  it('publishes the September 30 sea-level rebound post as an attributed N=1 epilogue with verified descent literature', () => {
+    for (const required of [
+      'altitude-sea-level-rebound',
+      '2105304207083573462',
+      'https://x.com/bryan_johnson/status/2105304207083573462',
+      'https://doi.org/10.1007/s44470-026-00128-1',
+      'Deflorin et al., J Clin Sleep Med',
+      'time under 90% oxygen saturation 5→1 min',
+      'AHI 14.2→9.2/h',
+      '93.8%→95.2%',
+      'altitude residents descending',
+      'not evidence of a rebound effect, travel or sleep guidance, or medical advice',
+      "confidence: 'medium'",
+    ]) {
+      assert.match(signalsSource, new RegExp(required, 'i'), `rebound signal should preserve: ${required}`);
+    }
+
+    assert.match(dashboardSectionsSource, /Deflorin[^]*10[.]1007\/s44470-026-00128-1[^]*not evidence of a rebound effect, travel or sleep guidance, or medical advice/i, 'timeline should pair the rebound claim with the literature boundary');
+    assert.match(dashboardSectionsSource, /Sea-level rebound quantified/, 'timeline should record the rebound item');
+
+    const bryanJohnsonSource = readFileSync(new URL('../src/content/knowledge/bryan-johnson.md', import.meta.url), 'utf8');
+    assert.match(bryanJohnsonSource, /On September 30[^]*Deflorin et al[.,]+ J Clin Sleep Med[^]*10[.]1007\/s44470-026-00128-1[^]*not evidence of a rebound effect, travel or sleep guidance, or medical advice/i, 'bryan-johnson page should record the rebound post with its attribution boundary');
+
+    const biomarkerProtocolsSource = readFileSync(new URL('../src/content/knowledge/biomarker-driven-longevity-protocols.md', import.meta.url), 'utf8');
+    assert.match(biomarkerProtocolsSource, /On September 30[^]*10[.]1007\/s44470-026-00128-1[^]*not evidence of a rebound effect, a travel or sleep recommendation, or medical advice/i, 'biomarker-protocols page should keep the rebound claim and its literature boundary together');
+
+    const algorithmicHealthPage = readFileSync(new URL('../src/content/knowledge/algorithmic-health.md', import.meta.url), 'utf8');
+    assert.match(algorithmicHealthPage, /On September 30[^]*Deflorin et al[.,]+ J Clin Sleep Med[^]*not polysomnography|On September 30[^]*Deflorin et al[.,]+ J Clin Sleep Med[^]*instrument problem in reverse/i, 'algorithmic-health page should record the rebound observation with its boundary');
+
+    assert.match(protocolsSource, /sea-level rebound post as the attributed epilogue to the altitude readout, not evidence of a rebound effect[^]*Deflorin et al[.,]+ J Clin Sleep Med[^]*10[.]1007\/s44470-026-00128-1/, 'sleep protocol guidance should keep the rebound claim in the attributed lane');
+    assert.match(protocolsSource, /label: 'Altitude rebound'/, 'sleep protocol dossier should carry a rebound card');
+    assert.match(signalsSource, /1 Sep 30 post captured · knowledge\/raw\/x\/2026-10-01 bryan-johnson-batch/, 'source counts should rotate to the October 1 capture');
+    assert.match(signalsSource, /194 Aug 14–Sep 30 posts reviewed/, 'audit window should extend to September 30');
+
+    const updatePage = readFileSync(new URL('../src/content/updates/2026-10-01-sea-level-rebound-curation.md', import.meta.url), 'utf8');
+    assert.match(updatePage, /knowledge\/raw\/x\/2026-10-01\/2026-10-01-bryan-johnson-batch[.]md/, 'update page should cite the October 1 capture');
+    assert.match(updatePage, /no gap[^]*the September 30 14:30 UTC rebound post is the newest item/, 'update page should state the verified no-gap audit result');
+  });
+
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
     for (const phrase of ['watchQueue', 'sourceCounts', 'curatedActivity', 'Protocol tabs backed']) {
       assert.match(indexSource, new RegExp(phrase), `overview should use real sidebar data: ${phrase}`);
@@ -777,7 +816,7 @@ describe('home overview and dedicated changelog route', () => {
     for (const phrase of ['Enhanced Games follow-up', 'Kate Tolo baseline', 'Microplastics testing', '82 unique tweet URLs', '11 tweets with engagement']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `signals/sidebar data should include ${phrase}`);
     }
-    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 58 update pages']) {
+    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 59 update pages']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `source counts should include ${phrase}`);
     }
     assert.doesNotMatch(indexSource, /index \* 17|updateCards\[0\]|next curated publish pass/, 'right sidebar should not use deterministic placeholder formulas or newest-card watch copy');

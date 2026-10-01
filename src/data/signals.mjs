@@ -1,5 +1,22 @@
 export const curatedSignals = [
   {
+    id: 'altitude-sea-level-rebound',
+    title: 'First night back at sea level: rebound deltas — sleep +13%, “nervous system” +17%, resting heart rate −12%',
+    date: '2026-09-30',
+    badge: 'N=1 test',
+    kind: 'tweet',
+    topic: 'Altitude / sleep and autonomic response',
+    summary:
+      'The September 29 altitude readout acquired its epilogue: Johnson posted the first night back at sea level as mirror deltas—“sleep up 13%,” “nervous system up 17%,” “resting heart rate down 12%”—adding “my body slingshotted in rebound from 5 days of acute hypoxic stress.” The direction is consistent with published descent research: a randomized crossover trial in 44 healthy residents of moderate altitude (median home elevation 1,230 m) found that two nights at 590 m reduced nocturnal hypoxemia (time under 90% oxygen saturation 5→1 min), sleep-disordered breathing (AHI 14.2→9.2/h, ODI 10.0→6.0/h), and raised mean nocturnal SpO₂ 93.8%→95.2% versus living above 1,000 m, with significantly more slow-wave sleep on the second low-altitude night (Deflorin et al., J Clin Sleep Med, 10.1007/s44470-026-00128-1). The boundary: the post repeats the same proprietary wearable-index percentages as the altitude post—a sleep score and an Oura-style composite are not polysomnography—over a single recovery night with no baseline window; “slingshotted” is narrative framing, not a measured physiological rebound; and the trial studied altitude residents descending rather than a sea-level traveler returning from 7,000 ft, measuring breathing and oxygen rather than any wearable index. The dashboard records an attributed N=1 follow-up observation with literature-consistent direction—not evidence of a rebound effect, travel or sleep guidance, or medical advice.',
+    href: '/knowledge/algorithmic-health/',
+    tweetId: '2105304207083573462',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2105304207083573462',
+      'https://doi.org/10.1007/s44470-026-00128-1',
+    ],
+  },
+  {
     id: 'altitude-wearable-dips',
     title: 'Five days at 7,000 ft read as wearable deltas: sleep −15%, “nervous system” −17%, resting heart rate +16%',
     date: '2026-09-29',
@@ -1490,11 +1507,13 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Latest X capture', value: '2', detail: '2 Sep 29 posts captured · knowledge/raw/x/2026-09-30 bryan-johnson-batch' },
-  { label: 'Live Bird timeline audit', value: '194', detail: '194 Jul 4–Sep 29 posts reviewed via read-only bird user-tweets gap-fill audit' },
-  { label: 'Studies verified this pass', value: '2', detail: '2 sources matched · Latshang 2013 altitude sleep + Zurich cohort PLOS ONE altitude HR/BP' },
-  { label: 'Previous X capture', value: '2', detail: '2 Sep 28 posts captured · knowledge/raw/x/2026-09-29 bryan-johnson-batch' },
-  { label: 'Prior X capture', value: '2', detail: '2 Sep 25 posts captured · knowledge/raw/x/2026-09-27 bryan-johnson-batch' },
+  { label: 'Latest X capture', value: '1', detail: '1 Sep 30 post captured · knowledge/raw/x/2026-10-01 bryan-johnson-batch' },
+  { label: 'Live Bird timeline audit', value: '194', detail: '194 Aug 14–Sep 30 posts reviewed via read-only bird user-tweets gap-fill audit' },
+  { label: 'Studies verified this pass', value: '1', detail: '1 source matched · Deflorin 2026 JCSM randomized crossover trial on descent to low altitude' },
+  { label: 'Previous X capture', value: '2', detail: '2 Sep 29 posts captured · knowledge/raw/x/2026-09-30 bryan-johnson-batch' },
+  { label: 'Prior X capture', value: '2', detail: '2 Sep 28 posts captured · knowledge/raw/x/2026-09-29 bryan-johnson-batch' },
+  { label: 'Earlier X capture', value: '2', detail: '2 Sep 25 posts captured · knowledge/raw/x/2026-09-27 bryan-johnson-batch' },
+  { label: 'Altitude literature verified', value: '2', detail: '2 sources matched last pass · Latshang 2013 altitude sleep + Zurich cohort PLOS ONE altitude HR/BP' },
   { label: 'Earlier X capture', value: '4', detail: '4 Sep 4 posts captured · knowledge/raw/x/2026-09-05 bryan-johnson-batch' },
   { label: 'Preprint verified last pass', value: '1', detail: 'BCG-FM sleep foundation model · arXiv:2606.07692 figures matched to the post' },
   { label: 'Earlier X capture', value: '8', detail: '8 Aug 31–Sep 2 posts captured · knowledge/raw/x/2026-09-01..03 bryan-johnson-batch' },
@@ -1513,10 +1532,11 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '70', detail: '12 knowledge pages + 58 update pages after this pass' },
+  { label: 'Public site content', value: '71', detail: '12 knowledge pages + 59 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-09-30', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-09-29', x_post: 2, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-09-28', x_post: 2, third_party: 0, wiki_update: 0, site_update: 0 },
   { date: '2026-09-25', x_post: 2, third_party: 0, wiki_update: 0, site_update: 1 },

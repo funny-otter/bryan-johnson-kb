@@ -349,6 +349,16 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-09-30',
+    label: 'Sea-level rebound quantified: sleep +13%, “nervous system” +17%, resting heart rate −12%',
+    summary:
+      'The altitude story got its epilogue: Johnson posted his first night back at sea level as mirror deltas to the September 29 readout—“sleep up 13%,” “nervous system up 17%,” “resting heart rate down 12%”—adding “my body slingshotted in rebound from 5 days of acute hypoxic stress.” The direction is consistent with published descent research: a randomized crossover trial in 44 healthy moderate-altitude residents found two nights at 590 m reduced nocturnal hypoxemia (T90 5→1 min), sleep-disordered breathing (AHI 14.2→9.2/h), and raised SpO₂ 93.8%→95.2% versus living above 1,000 m, with more slow-wave sleep on the second low-altitude night (Deflorin et al., J Clin Sleep Med, 10.1007/s44470-026-00128-1). But the post repeats the same proprietary wearable-index percentages over a single recovery night with no baseline window—and the trial studied altitude residents descending, not a sea-level traveler rebounding from 7,000 ft, and measured breathing and oxygen rather than any wearable index. The KB records an attributed N=1 follow-up observation with literature-consistent direction—not evidence of a rebound effect, travel or sleep guidance, or medical advice.',
+    relatedHref: '/knowledge/algorithmic-health/',
+    relatedTitle: 'Algorithmic health',
+    source: 'https://x.com/bryan_johnson/status/2105304207083573462',
+    confidence: 'medium',
+  },
+  {
     date: '2026-09-29',
     label: 'Altitude trip quantified as wearable deltas: sleep −15%, “nervous system” −17%, RHR +16%',
     summary:
