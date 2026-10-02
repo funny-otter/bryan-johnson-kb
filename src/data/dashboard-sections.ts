@@ -349,6 +349,16 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-10-01',
+    label: '“Cognitive light cone” becomes a Don’t Die species metric: wealth spent on not dying',
+    summary:
+      'Johnson quote-tweeted a call to spend “more than 0.05% of the federal NIH budget on studying the mechanisms of aging” and proposed that a species’ cognitive light cone is measured by the percent of wealth it applies to securing its existence—“the more advanced, the most it applies to not dying”—crediting the term to Michael Levin in a follow-up. The attribution verifies: Levin coined “cognitive light cone” in “The Computational Boundary of a Self” (Frontiers in Psychology, 2019, 10.3389/fpsyg.2019.02688) as the spatio-temporal boundary of the goals an agent can represent and pursue; Johnson’s “defend against thermodynamic entropy” gloss is his extension, not Levin’s definition. The 0.05% figure comes from the quoted post, not Johnson, and matches only the narrowest line: NIA’s dedicated geroscience request is $25.0 million in the FY2027 President’s Budget—about 0.05% of NIH’s roughly $48 billion—while the broader Division of Aging Biology ran $342.3 million in FY2025 (≈0.7%), the “under 1%” share advocacy cites. The KB records an attributed ideology formulation with verified term origin and budget context—not an established species-level metric, a funding recommendation, or medical advice.',
+    relatedHref: '/knowledge/dont-die/',
+    relatedTitle: 'Don’t Die',
+    source: 'https://x.com/bryan_johnson/status/2105756629530542105',
+    confidence: 'medium',
+  },
+  {
     date: '2026-09-30',
     label: 'Sea-level rebound quantified: sleep +13%, “nervous system” +17%, resting heart rate −12%',
     summary:

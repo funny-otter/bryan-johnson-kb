@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-09-03'
+updated: '2026-10-01'
 tags:
   - person
   - company
@@ -13,6 +13,8 @@ tags:
   - biomarkers
   - protocol
 sources:
+  - https://x.com/bryan_johnson/status/2105756629530542105
+  - https://doi.org/10.3389/fpsyg.2019.02688
   - https://x.com/bryan_johnson/status/2094944302900367425
   - https://x.com/bryan_johnson/status/2095236652918812756
   - https://x.com/bryan_johnson/status/2094444126838366520
@@ -204,6 +206,8 @@ Across September 6–25, the feed produced six window-defining updates. Johnson 
 On September 29, after the six-update window closed, the feed added one more attributable data point: a five-day 7,000 ft (≈2,130 m) Colorado/Wyoming trip posted as wearable deltas—“sleep down 15%,” “nervous system down 17%,” “resting heart rate up 16%,” “very happy to be back at sea level.” The direction matches controlled moderate-altitude physiology (Latshang et al., Sleep 2013: periodic breathing and reduced slow-wave sleep at 1,630–2,590 m in 51 healthy lowland men; heart rate +3.3 bpm and mean BP +4.8 mmHg at 2,590 m in the same cohort, PLOS ONE), but the figures are proprietary wearable-index percentages over one trip with no baseline window, and the same literature shows second-night acclimatization and no vigilance cost at these elevations. The dashboard records an attributed N=1 wearable observation with verified literature direction—not evidence that moderate-altitude travel is harmful, travel or sleep guidance, or medical advice. The same window’s September 28 one-liners—a “put phone down / get off dat ass / work out” prompt and a “health is an engineering disclipline” gloss—and the September 29 social-drink-grip observation were reviewed and kept as chronology-only items, consistent with prior skip decisions for one-line engagement posts.
 
 On September 30, the altitude story received its epilogue: Johnson posted his first night back at sea level as mirror deltas—“sleep up 13%,” “nervous system up 17%,” “resting heart rate down 12%”—writing that his body “slingshotted in rebound from 5 days of acute hypoxic stress.” The direction is consistent with published descent research: a randomized crossover trial in 44 healthy residents of moderate altitude (median home elevation 1,230 m) found that two nights at 590 m reduced nocturnal hypoxemia (time under 90% SpO₂ 5→1 min) and sleep-disordered breathing (AHI 14.2→9.2/h) and raised mean nocturnal SpO₂ 93.8%→95.2% versus living above 1,000 m, with more slow-wave sleep on the second low-altitude night (Deflorin et al., J Clin Sleep Med, 10.1007/s44470-026-00128-1). The boundaries stand: the same proprietary wearable-index percentages over a single recovery night with no baseline window, “slingshot” as narrative framing rather than a measured rebound, and a trial population—altitude residents descending—that differs from a sea-level traveler returning from 7,000 ft, measuring breathing and oxygen rather than any wearable index. The dashboard records an attributed N=1 follow-up observation with literature-consistent direction—not evidence of a rebound effect, travel or sleep guidance, or medical advice.
+
+On October 1, Johnson gave Don’t Die a borrowing-from-science formulation: quote-tweeting a call to spend “more than 0.05% of the federal NIH budget on studying the mechanisms of aging,” he proposed that “the cognitive light cone of a species can be measured by the percent of wealth applied to securing its existence. The more advanced, the most it applies to not dying,” crediting the term to Michael Levin in a follow-up post. The attribution verifies—Levin coined “cognitive light cone” in “The Computational Boundary of a Self” (Frontiers in Psychology, 2019, 10.3389/fpsyg.2019.02688)—but his construct measures the scale of goal-directedness, and Johnson’s “defend against thermodynamic entropy” gloss and wealth-share species metric are his own extensions. The 0.05% figure belongs to the quoted post and matches only the narrowest budget line: NIA’s dedicated geroscience request is $25.0 million in the FY2027 President’s Budget—about 0.05% of NIH’s roughly $48 billion—while the broader Division of Aging Biology ran $342.3 million in FY2025 (≈0.7%). The dashboard records an attributed ideology formulation with verified term origin and budget context—not an established species-level metric, a funding recommendation, or medical advice. The same evening’s @jgebbia US-government-website congratulation post was reviewed and kept as personal-network chronology, off-topic for the dashboard.
 
 ## Reading stance
 

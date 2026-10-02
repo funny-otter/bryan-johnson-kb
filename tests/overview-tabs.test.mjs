@@ -809,6 +809,42 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(updatePage, /no gap[^]*the September 30 14:30 UTC rebound post is the newest item/, 'update page should state the verified no-gap audit result');
   });
 
+  it('publishes the October 1 cognitive-light-cone posts as an attributed Don’t Die ideology formulation with verified origin and budget context', () => {
+    for (const required of [
+      'cognitive-light-cone-ideology',
+      '2105756629530542105',
+      'https://x.com/bryan_johnson/status/2105756629530542105',
+      'https://x.com/bryan_johnson/status/2105762956646449427',
+      'https://doi.org/10.3389/fpsyg.2019.02688',
+      'The Computational Boundary of a Self',
+      'Frontiers in Psychology, 2019',
+      'dedicated geroscience request is $25.0 million in the FY2027',
+      '0.05% of NIH’s roughly $48 billion',
+      '$342.3 million in FY2025',
+      'thermodynamic entropy',
+      'not an established species-level metric, a funding recommendation, or medical advice',
+      "confidence: 'medium'",
+    ]) {
+      assert.ok(signalsSource.includes(required), `light-cone signal should preserve: ${required}`);
+    }
+
+    assert.match(dashboardSectionsSource, /Cognitive light cone[^]*10[.]3389\/fpsyg[.]2019[.]02688[^]*not an established species-level metric, a funding recommendation, or medical advice/i, 'timeline should pair the light-cone claim with the origin and budget boundary');
+    assert.match(dashboardSectionsSource, /cognitive light cone.*becomes a Don’t Die species metric/i, 'timeline should record the light-cone item');
+
+    const bryanJohnsonSource = readFileSync(new URL('../src/content/knowledge/bryan-johnson.md', import.meta.url), 'utf8');
+    assert.match(bryanJohnsonSource, /On October 1[^]*10[.]3389\/fpsyg[.]2019[.]02688[^]*not an established species-level metric, a funding recommendation, or medical advice/i, 'bryan-johnson page should record the light-cone post with its attribution boundary');
+
+    const dontDieSource = readFileSync(new URL('../src/content/knowledge/dont-die.md', import.meta.url), 'utf8');
+    assert.match(dontDieSource, /On October 1[^]*10[.]3389\/fpsyg[.]2019[.]02688[^]*not an established species-level metric, a funding recommendation, or medical advice/i, 'dont-die page should record the ideology formulation with its boundary');
+
+    assert.match(signalsSource, /30 Sep 17–Oct 1 posts reviewed/, 'audit window should cover this pass');
+    assert.match(signalsSource, /12 knowledge pages \+ 60 update pages/, 'site content count should include the new update page');
+
+    const updatePage = readFileSync(new URL('../src/content/updates/2026-10-02-cognitive-light-cone-curation.md', import.meta.url), 'utf8');
+    assert.match(updatePage, /knowledge\/raw\/x\/2026-10-01\/2026-10-01-bryan-johnson-batch[.]md/, 'update page should cite the October 1 capture');
+    assert.match(updatePage, /Skipped the @jgebbia post/, 'update page should document the off-topic skip decision');
+  });
+
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
     for (const phrase of ['watchQueue', 'sourceCounts', 'curatedActivity', 'Protocol tabs backed']) {
       assert.match(indexSource, new RegExp(phrase), `overview should use real sidebar data: ${phrase}`);
@@ -816,7 +852,7 @@ describe('home overview and dedicated changelog route', () => {
     for (const phrase of ['Enhanced Games follow-up', 'Kate Tolo baseline', 'Microplastics testing', '82 unique tweet URLs', '11 tweets with engagement']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `signals/sidebar data should include ${phrase}`);
     }
-    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 59 update pages']) {
+    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 60 update pages']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `source counts should include ${phrase}`);
     }
     assert.doesNotMatch(indexSource, /index \* 17|updateCards\[0\]|next curated publish pass/, 'right sidebar should not use deterministic placeholder formulas or newest-card watch copy');

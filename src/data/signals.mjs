@@ -1,5 +1,24 @@
 export const curatedSignals = [
   {
+    id: 'cognitive-light-cone-ideology',
+    title: 'Don’t Die borrows Levin’s “cognitive light cone”: a species measured by the wealth it spends on not dying',
+    date: '2026-10-01',
+    badge: 'Ideology',
+    kind: 'tweet',
+    topic: 'Don’t Die ideology / aging-research funding',
+    summary:
+      'Johnson quote-tweeted a post asking to “spend more than 0.05% of the federal NIH budget on studying the mechanisms of aging” and proposed that “the cognitive light cone of a species can be measured by the percent of wealth applied to securing its existence. The more advanced, the most it applies to not dying,” adding a follow-up crediting the term to @drmichaellevin. The attribution checks out: Levin coined “cognitive light cone” in “The Computational Boundary of a Self” (Frontiers in Psychology, 2019, 10.3389/fpsyg.2019.02688) as the spatio-temporal boundary of the goals an agent can represent and act on—though his definition concerns the scale of goal-directedness, not Johnson’s added “defend against thermodynamic entropy” gloss. The funding figure belongs to the quoted post rather than Johnson, and it matches only the narrowest line: NIA’s dedicated geroscience request is $25.0 million in the FY2027 President’s Budget—about 0.05% of NIH’s roughly $48 billion—while the broader Division of Aging Biology ran $342.3 million in FY2025 (≈0.7%), the “under 1%” share aging-biology advocacy cites. The dashboard records an attributed Don’t Die ideology formulation with verified term origin and budget context—not an established species-level metric, a funding recommendation, or medical advice.',
+    href: '/knowledge/dont-die/',
+    tweetId: '2105756629530542105',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2105756629530542105',
+      'https://x.com/bryan_johnson/status/2105762956646449427',
+      'https://doi.org/10.3389/fpsyg.2019.02688',
+      'https://www.nia.nih.gov/about/budget/fiscal-year-2027-budget',
+    ],
+  },
+  {
     id: 'altitude-sea-level-rebound',
     title: 'First night back at sea level: rebound deltas — sleep +13%, “nervous system” +17%, resting heart rate −12%',
     date: '2026-09-30',
@@ -1507,13 +1526,15 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
+  { label: 'Live Bird timeline audit', value: '30', detail: '30 Sep 17–Oct 1 posts reviewed via read-only bird user-tweets gap-fill audit' },
+  { label: 'Studies verified this pass', value: '2', detail: '2 sources matched · Levin 2019 cognitive light cone origin + NIA geroscience/Aging Biology budget lines' },
   { label: 'Latest X capture', value: '1', detail: '1 Sep 30 post captured · knowledge/raw/x/2026-10-01 bryan-johnson-batch' },
-  { label: 'Live Bird timeline audit', value: '194', detail: '194 Aug 14–Sep 30 posts reviewed via read-only bird user-tweets gap-fill audit' },
-  { label: 'Studies verified this pass', value: '1', detail: '1 source matched · Deflorin 2026 JCSM randomized crossover trial on descent to low altitude' },
+  { label: 'Prior audit window', value: '194', detail: '194 Aug 14–Sep 30 posts reviewed last pass via read-only bird user-tweets audit' },
+  { label: 'Descent literature verified', value: '1', detail: '1 source matched last pass · Deflorin 2026 JCSM randomized crossover trial on descent to low altitude' },
   { label: 'Previous X capture', value: '2', detail: '2 Sep 29 posts captured · knowledge/raw/x/2026-09-30 bryan-johnson-batch' },
   { label: 'Prior X capture', value: '2', detail: '2 Sep 28 posts captured · knowledge/raw/x/2026-09-29 bryan-johnson-batch' },
   { label: 'Earlier X capture', value: '2', detail: '2 Sep 25 posts captured · knowledge/raw/x/2026-09-27 bryan-johnson-batch' },
-  { label: 'Altitude literature verified', value: '2', detail: '2 sources matched last pass · Latshang 2013 altitude sleep + Zurich cohort PLOS ONE altitude HR/BP' },
+  { label: 'Altitude literature verified', value: '2', detail: '2 sources matched earlier pass · Latshang 2013 altitude sleep + Zurich cohort PLOS ONE altitude HR/BP' },
   { label: 'Earlier X capture', value: '4', detail: '4 Sep 4 posts captured · knowledge/raw/x/2026-09-05 bryan-johnson-batch' },
   { label: 'Preprint verified last pass', value: '1', detail: 'BCG-FM sleep foundation model · arXiv:2606.07692 figures matched to the post' },
   { label: 'Earlier X capture', value: '8', detail: '8 Aug 31–Sep 2 posts captured · knowledge/raw/x/2026-09-01..03 bryan-johnson-batch' },
@@ -1532,10 +1553,11 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '71', detail: '12 knowledge pages + 59 update pages after this pass' },
+  { label: 'Public site content', value: '72', detail: '12 knowledge pages + 60 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-10-01', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-09-30', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-09-29', x_post: 2, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-09-28', x_post: 2, third_party: 0, wiki_update: 0, site_update: 0 },

@@ -4,7 +4,7 @@ slug: dont-die
 type: concept
 sourcePath: concepts/dont-die.md
 created: '2026-05-22'
-updated: '2026-08-21'
+updated: '2026-10-01'
 tags:
   - longevity
   - biohacking
@@ -12,6 +12,10 @@ tags:
   - protocol
   - open-question
 sources:
+  - https://x.com/bryan_johnson/status/2105756629530542105
+  - https://x.com/bryan_johnson/status/2105762956646449427
+  - https://doi.org/10.3389/fpsyg.2019.02688
+  - https://www.nia.nih.gov/about/budget/fiscal-year-2027-budget
   - https://x.com/bryan_johnson/status/2090503911493022007
   - https://doi.org/10.1161/circoutcomes.119.005554
   - https://www.ahajournals.org/doi/10.1161/CIRCOUTCOMES.120.006907
@@ -82,6 +86,8 @@ On August 18, Johnson quote-posted the final episode of New York Times columnist
 On August 20, Johnson announced he adopted a Belgian Malinois named Katara and framed the decision with the claim that dog owners have about a 24% lower risk of dying early. That extends Don’t Die’s lifestyle filter to pet ownership, and the statistic has traceable literature behind it: an unadjusted 2019 meta-analysis of 10 observational studies covering roughly 3.8 million participants reported exactly that association (Kramer et al., *Circulation: Cardiovascular Quality and Outcomes*), while a 2020 reappraisal re-pooling the same studies with confounder-adjusted estimates found the all-cause mortality association statistically nonsignificant (pooled RR ≈ 0.93), with a residual protective signal mainly in people with existing cardiovascular disease. The dashboard records this as an attributed observational claim with contested adjustment—not a demonstrated causal effect, a health recommendation to adopt a dog, or medical advice.
 
 On August 22, his birthday, Johnson condensed the movement’s anti-death framing into a short allegory: after listing political parties, religions, nations, competitors, ideologies, and individuals as the enemies people habitually focus on, he called death the “biggest villain”—romanticized, defended, even worshiped. The dashboard records this as a rhetorical restatement of the Don’t Die worldview rather than evidence about mortality or any intervention; his same-day birthday posts, including a joking request for a death prediction from his biographical details, remain personal chronology.
+
+On October 1, Johnson gave the ideology a borrowing-from-science formulation. Quote-tweeting a call to spend “more than 0.05% of the federal NIH budget on studying the mechanisms of aging,” he proposed that “the cognitive light cone of a species can be measured by the percent of wealth applied to securing its existence. The more advanced, the most it applies to not dying,” and credited the term to Michael Levin in a follow-up post. The attribution is correct: Levin coined “cognitive light cone” in “The Computational Boundary of a Self” (Frontiers in Psychology, 2019, 10.3389/fpsyg.2019.02688) as the spatio-temporal boundary of the goals an agent can represent and pursue. But Levin’s construct measures the scale of goal-directedness, and Johnson’s “defend against thermodynamic entropy” gloss is his own extension; the wealth-share “species metric” is his proposal, not a published measure. The 0.05% figure belongs to the quoted post rather than Johnson, and it matches only the narrowest budget line: NIA’s dedicated geroscience request is $25.0 million in the FY2027 President’s Budget—about 0.05% of NIH’s roughly $48 billion—while the broader Division of Aging Biology ran $342.3 million in FY2025 (≈0.7%), the “under 1%” share aging-biology advocacy cites. The dashboard records this as an attributed Don’t Die ideology formulation with verified term origin and budget context—not an established species-level metric, a funding recommendation, or medical advice.
 
 ## Practical components
 
