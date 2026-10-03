@@ -1,5 +1,26 @@
 export const curatedSignals = [
   {
+    id: 'petit-le-mans-biomarker-review',
+    title: 'Algorithmic health goes to the race track: Johnson reviews a friend’s qualifying stint via “car stats, micro decisions, blood biomarkers”',
+    date: '2026-10-02',
+    badge: 'Algorithmic health',
+    kind: 'tweet',
+    topic: 'Method export / motorsport physiology',
+    summary:
+      'Johnson posted from the Motul Petit Le Mans weekend at Michelin Raceway Road Atlanta, where three friends—Shopify founder Tobi Lütke, Ruby on Rails creator DHH (David Heinemeier Hansson), and Le Mans podium finisher Mathias Beche—share the No. 11 TDS Racing ORECA LMP2 07 in the 10-hour IMSA season finale. The entry verifies against IMSA’s official entry list (54 cars, 2.54-mile 12-turn road course, green flag October 3, 12:10 p.m. ET), and both résumés check out: DHH won the GTE-Am class at the 2014 24 Hours of Le Mans with Aston Martin Racing, and Beche is a former ELMS LMP2 champion and 2014 Le Mans LMP1-L class winner with Rebellion Racing. The dashboard-relevant move is the second post: after Lütke “just got off the track” from qualifying, Johnson said he is now “reviewing Tobi’s performance via biomarkers”—“the car stats + his micro decisions + his blood biomarkers”—the algorithmic-health loop (telemetry, decisions, blood) applied to another person’s performance domain. The physiology framing is broadly literature-consistent: endurance racing measured in studies shows cockpit temperatures of roughly 40–50°C in multi-layer fireproof suits, heart rates of 159–170 bpm sustained for full stints (up to ~89% of age-predicted maximum), sweat rates around 0.6 L/h with clinically meaningful dehydration in longer races, and research protocols that themselves use ingestible core-temperature pills and continuous glucose monitors in driver-athletes (Carlson et al., J Strength Cond Res 2018; Frontiers Sports Act Living 2025). The boundaries: the headline “11 lbs of body weight” loss, “122°F cockpit,” “170 heart rate,” “4.2 g,” and “600–900 calories per hour” figures are Johnson’s own numbers with no per-race source; the biomarker review of Lütke is announced, not published—no panel, method, or result exists; and whether blood biomarkers add anything to established driver-science monitoring is untested. The dashboard records an attributed method-export and event narrative with verified racing context—not evidence that biomarker review improves driving performance, a training or hydration protocol, or medical advice.',
+    href: '/knowledge/algorithmic-health/',
+    tweetId: '2106113593481609361',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2106101026646339833',
+      'https://x.com/bryan_johnson/status/2106113593481609361',
+      'https://x.com/bryan_johnson/status/2106118709568016883',
+      'https://www.imsa.com/wp-content/uploads/sites/32/2026/09/30/2026_IWSC_RoadAtlanta_Official_EntryList_2.pdf',
+      'https://en.wikipedia.org/wiki/2014_24_Hours_of_Le_Mans',
+      'https://doi.org/10.1519/JSC.0000000000002268',
+    ],
+  },
+  {
     id: 'cognitive-light-cone-ideology',
     title: 'Don’t Die borrows Levin’s “cognitive light cone”: a species measured by the wealth it spends on not dying',
     date: '2026-10-01',
@@ -1526,11 +1547,13 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Live Bird timeline audit', value: '30', detail: '30 Sep 17–Oct 1 posts reviewed via read-only bird user-tweets gap-fill audit' },
-  { label: 'Studies verified this pass', value: '2', detail: '2 sources matched · Levin 2019 cognitive light cone origin + NIA geroscience/Aging Biology budget lines' },
+  { label: 'Live Bird timeline audit', value: '30', detail: '30 Sep 18–Oct 2 posts reviewed via read-only bird user-tweets gap-fill audit' },
+  { label: 'Sources verified this pass', value: '4', detail: '4 sources matched · IMSA Petit Le Mans entry list + 2014 Le Mans records + 2 driver-physiology studies' },
+  { label: 'Prior audit window', value: '30', detail: '30 Sep 17–Oct 1 posts reviewed last pass via read-only bird user-tweets audit' },
+  { label: 'Prior studies verified', value: '2', detail: '2 sources matched last pass · Levin 2019 cognitive light cone origin + NIA geroscience/Aging Biology budget lines' },
   { label: 'Latest X capture', value: '1', detail: '1 Sep 30 post captured · knowledge/raw/x/2026-10-01 bryan-johnson-batch' },
-  { label: 'Prior audit window', value: '194', detail: '194 Aug 14–Sep 30 posts reviewed last pass via read-only bird user-tweets audit' },
-  { label: 'Descent literature verified', value: '1', detail: '1 source matched last pass · Deflorin 2026 JCSM randomized crossover trial on descent to low altitude' },
+  { label: 'Prior audit window', value: '194', detail: '194 Aug 14–Sep 30 posts reviewed earlier pass via read-only bird user-tweets audit' },
+  { label: 'Descent literature verified', value: '1', detail: '1 source matched earlier pass · Deflorin 2026 JCSM randomized crossover trial on descent to low altitude' },
   { label: 'Previous X capture', value: '2', detail: '2 Sep 29 posts captured · knowledge/raw/x/2026-09-30 bryan-johnson-batch' },
   { label: 'Prior X capture', value: '2', detail: '2 Sep 28 posts captured · knowledge/raw/x/2026-09-29 bryan-johnson-batch' },
   { label: 'Earlier X capture', value: '2', detail: '2 Sep 25 posts captured · knowledge/raw/x/2026-09-27 bryan-johnson-batch' },
@@ -1553,10 +1576,11 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '72', detail: '12 knowledge pages + 60 update pages after this pass' },
+  { label: 'Public site content', value: '73', detail: '12 knowledge pages + 61 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-10-02', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-01', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-09-30', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-09-29', x_post: 2, third_party: 0, wiki_update: 0, site_update: 1 },

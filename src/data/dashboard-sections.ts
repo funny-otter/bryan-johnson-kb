@@ -349,6 +349,16 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-10-02',
+    label: 'Algorithmic health applied to someone else: “reviewing Tobi’s performance via biomarkers” at Petit Le Mans',
+    summary:
+      'Johnson posted from the Motul Petit Le Mans weekend at Michelin Raceway Road Atlanta, where friends Tobi Lütke, DHH, and Mathias Beche share the No. 11 TDS Racing ORECA LMP2 07 in the 10-hour IMSA finale (October 3). After Lütke’s qualifying stint, Johnson said he is now “reviewing Tobi’s performance via biomarkers”—“the car stats + his micro decisions + his blood biomarkers”—the first time the dashboard’s algorithmic-health loop (telemetry, decisions, blood) is pointed at another person’s performance domain rather than Johnson’s own body or environment. The event and résumés verify against IMSA’s official entry list and Le Mans records (DHH: 2014 GTE-Am class winner; Beche: ELMS LMP2 champion and 2014 LMP1-L winner), and the physiology framing is consistent with driver-science literature (cockpit ~40–50°C, heart rates 159–170 bpm, ~0.6 L/h sweat rates, ingestible core-temp pills and CGM in research protocols). The boundary: the “11 lbs,” “122°F cockpit,” “170 heart rate,” and “600–900 calories per hour” figures are Johnson’s own with no per-race source, and the biomarker review of Lütke is announced, not published—no panel, method, or result. The KB records an attributed method-export and event narrative with verified racing context—not evidence that biomarker review improves driving performance, a training or hydration protocol, or medical advice.',
+    relatedHref: '/knowledge/algorithmic-health/',
+    relatedTitle: 'Algorithmic health',
+    source: 'https://x.com/bryan_johnson/status/2106113593481609361',
+    confidence: 'medium',
+  },
+  {
     date: '2026-10-01',
     label: '“Cognitive light cone” becomes a Don’t Die species metric: wealth spent on not dying',
     summary:

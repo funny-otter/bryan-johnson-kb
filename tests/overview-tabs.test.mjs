@@ -838,11 +838,51 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(dontDieSource, /On October 1[^]*10[.]3389\/fpsyg[.]2019[.]02688[^]*not an established species-level metric, a funding recommendation, or medical advice/i, 'dont-die page should record the ideology formulation with its boundary');
 
     assert.match(signalsSource, /30 Sep 17–Oct 1 posts reviewed/, 'audit window should cover this pass');
-    assert.match(signalsSource, /12 knowledge pages \+ 60 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 61 update pages/, 'site content count should include the new update page');
 
     const updatePage = readFileSync(new URL('../src/content/updates/2026-10-02-cognitive-light-cone-curation.md', import.meta.url), 'utf8');
     assert.match(updatePage, /knowledge\/raw\/x\/2026-10-01\/2026-10-01-bryan-johnson-batch[.]md/, 'update page should cite the October 1 capture');
     assert.match(updatePage, /Skipped the @jgebbia post/, 'update page should document the off-topic skip decision');
+  });
+
+  it('publishes the October 2 Petit Le Mans posts as an attributed algorithmic-health method export with verified racing context', () => {
+    for (const required of [
+      'petit-le-mans-biomarker-review',
+      '2106113593481609361',
+      'https://x.com/bryan_johnson/status/2106101026646339833',
+      'https://x.com/bryan_johnson/status/2106113593481609361',
+      'https://x.com/bryan_johnson/status/2106118709568016883',
+      'reviewing Tobi’s performance via biomarkers',
+      'No. 11 TDS Racing ORECA LMP2 07',
+      'Motul Petit Le Mans',
+      'https://doi.org/10.1519/JSC.0000000000002268',
+      '159–170 bpm',
+      '0.6 L/h',
+      'announced, not published',
+      'not evidence that biomarker review improves driving performance, a training or hydration protocol, or medical advice',
+      "confidence: 'medium'",
+    ]) {
+      assert.ok(signalsSource.includes(required), `petit-le-mans signal should preserve: ${required}`);
+    }
+
+    assert.match(dashboardSectionsSource, /reviewing Tobi’s performance via biomarkers[^]*not evidence that biomarker review improves driving performance, a training or hydration protocol, or medical advice/i, 'timeline should pair the method-export claim with its boundary');
+    assert.match(dashboardSectionsSource, /Algorithmic health applied to someone else/i, 'timeline should record the Petit Le Mans item');
+
+    const bryanJohnsonSource = readFileSync(new URL('../src/content/knowledge/bryan-johnson.md', import.meta.url), 'utf8');
+    assert.match(bryanJohnsonSource, /On October 2[^]*10[.]1519\/JSC[.]0000000000002268[^]*not evidence that biomarker review improves driving performance, a training or hydration protocol, or medical advice/i, 'bryan-johnson page should record the Petit Le Mans method export with its boundary');
+
+    const algorithmicHealthPage = readFileSync(new URL('../src/content/knowledge/algorithmic-health.md', import.meta.url), 'utf8');
+    assert.match(algorithmicHealthPage, /On October 2[^]*reviewing Tobi’s performance via biomarkers[^]*not evidence that biomarker review improves driving performance, a training or hydration protocol, or medical advice/i, 'algorithmic-health page should record the method export with its boundary');
+
+    const braintreeSource = readFileSync(new URL('../src/content/knowledge/braintree.md', import.meta.url), 'utf8');
+    assert.match(braintreeSource, /first customers[^]*37signals[^]*Treat the “first customers” ordering as Johnson’s attribution/, 'braintree page should record the first-customers attribution with its verifiable fact');
+
+    assert.match(signalsSource, /30 Sep 18–Oct 2 posts reviewed/, 'audit window should cover this pass');
+    assert.match(signalsSource, /12 knowledge pages \+ 61 update pages/, 'site content count should include the new update page');
+
+    const updatePage = readFileSync(new URL('../src/content/updates/2026-10-03-petit-le-mans-biomarker-review-curation.md', import.meta.url), 'utf8');
+    assert.match(updatePage, /IMSA’s official entry list/, 'update page should document the entry-list verification');
+    assert.match(updatePage, /folded into the braintree knowledge page/, 'update page should document the Braintree handling decision');
   });
 
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
@@ -852,7 +892,7 @@ describe('home overview and dedicated changelog route', () => {
     for (const phrase of ['Enhanced Games follow-up', 'Kate Tolo baseline', 'Microplastics testing', '82 unique tweet URLs', '11 tweets with engagement']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `signals/sidebar data should include ${phrase}`);
     }
-    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 60 update pages']) {
+    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 61 update pages']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `source counts should include ${phrase}`);
     }
     assert.doesNotMatch(indexSource, /index \* 17|updateCards\[0\]|next curated publish pass/, 'right sidebar should not use deterministic placeholder formulas or newest-card watch copy');

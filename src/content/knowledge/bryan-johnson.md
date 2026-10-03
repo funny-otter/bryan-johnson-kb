@@ -4,7 +4,7 @@ slug: bryan-johnson
 type: entity
 sourcePath: entities/bryan-johnson.md
 created: '2026-05-22'
-updated: '2026-10-01'
+updated: '2026-10-02'
 tags:
   - person
   - company
@@ -13,6 +13,7 @@ tags:
   - biomarkers
   - protocol
 sources:
+  - https://x.com/bryan_johnson/status/2106113593481609361
   - https://x.com/bryan_johnson/status/2105756629530542105
   - https://doi.org/10.3389/fpsyg.2019.02688
   - https://x.com/bryan_johnson/status/2094944302900367425
@@ -208,6 +209,8 @@ On September 29, after the six-update window closed, the feed added one more att
 On September 30, the altitude story received its epilogue: Johnson posted his first night back at sea level as mirror deltas—“sleep up 13%,” “nervous system up 17%,” “resting heart rate down 12%”—writing that his body “slingshotted in rebound from 5 days of acute hypoxic stress.” The direction is consistent with published descent research: a randomized crossover trial in 44 healthy residents of moderate altitude (median home elevation 1,230 m) found that two nights at 590 m reduced nocturnal hypoxemia (time under 90% SpO₂ 5→1 min) and sleep-disordered breathing (AHI 14.2→9.2/h) and raised mean nocturnal SpO₂ 93.8%→95.2% versus living above 1,000 m, with more slow-wave sleep on the second low-altitude night (Deflorin et al., J Clin Sleep Med, 10.1007/s44470-026-00128-1). The boundaries stand: the same proprietary wearable-index percentages over a single recovery night with no baseline window, “slingshot” as narrative framing rather than a measured rebound, and a trial population—altitude residents descending—that differs from a sea-level traveler returning from 7,000 ft, measuring breathing and oxygen rather than any wearable index. The dashboard records an attributed N=1 follow-up observation with literature-consistent direction—not evidence of a rebound effect, travel or sleep guidance, or medical advice.
 
 On October 1, Johnson gave Don’t Die a borrowing-from-science formulation: quote-tweeting a call to spend “more than 0.05% of the federal NIH budget on studying the mechanisms of aging,” he proposed that “the cognitive light cone of a species can be measured by the percent of wealth applied to securing its existence. The more advanced, the most it applies to not dying,” crediting the term to Michael Levin in a follow-up post. The attribution verifies—Levin coined “cognitive light cone” in “The Computational Boundary of a Self” (Frontiers in Psychology, 2019, 10.3389/fpsyg.2019.02688)—but his construct measures the scale of goal-directedness, and Johnson’s “defend against thermodynamic entropy” gloss and wealth-share species metric are his own extensions. The 0.05% figure belongs to the quoted post and matches only the narrowest budget line: NIA’s dedicated geroscience request is $25.0 million in the FY2027 President’s Budget—about 0.05% of NIH’s roughly $48 billion—while the broader Division of Aging Biology ran $342.3 million in FY2025 (≈0.7%). The dashboard records an attributed ideology formulation with verified term origin and budget context—not an established species-level metric, a funding recommendation, or medical advice. The same evening’s @jgebbia US-government-website congratulation post was reviewed and kept as personal-network chronology, off-topic for the dashboard.
+
+On October 2, Johnson took the measurement method to someone else’s sport. Posting from the Motul Petit Le Mans weekend at Michelin Raceway Road Atlanta—where friends Tobi Lütke, DHH, and Mathias Beche share the No. 11 TDS Racing ORECA LMP2 07 in the 10-hour IMSA season finale (the entry verifies against IMSA’s official list: 54 cars, 2.54-mile 12-turn road course)—he framed the drivers’ physiological load (a claimed 11 lbs of body-weight loss, 122°F cockpit, heart rate 170, 4.2 g, 600–900 calories per hour) and noted that Lütke and DHH were Braintree’s first customers, a claim consistent with documented early Braintree client lists that included 37signals and Shopify. After Lütke’s qualifying stint, he posted that he is now “reviewing Tobi’s performance via biomarkers”—“the car stats + his micro decisions + his blood biomarkers”—the algorithmic-health loop pointed at another person’s performance domain for the first time. The physiology framing is consistent with published driver science (cockpit temperatures of roughly 40–50°C in multi-layer fireproof suits, sustained heart rates of 159–170 bpm, ~0.6 L/h sweat rates, and research protocols that themselves use ingestible core-temperature pills and continuous glucose monitors; Carlson et al., J Strength Cond Res, 10.1519/JSC.0000000000002268). The boundaries: the headline figures are Johnson’s own with no per-race source, and the biomarker review is announced, not published—no panel, method, or result. The dashboard records an attributed method-export and event narrative with verified racing context—not evidence that biomarker review improves driving performance, a training or hydration protocol, or medical advice.
 
 ## Reading stance
 
