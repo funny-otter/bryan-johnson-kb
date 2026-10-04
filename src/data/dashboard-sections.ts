@@ -349,6 +349,16 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-10-03',
+    label: 'The racing experiment runs: blood drawn before and after Lütke’s 2.5-hour Petit Le Mans stint',
+    summary:
+      'On race day Johnson posted the physiological case—Lütke at over 180 mph, up to 4.2 g (“715 lbs of force” on the body, “67 lbs” on the head), braking at “up to 200 lbs of leg force,” a 104–122°F cockpit, 102°F claimed core temperature, 140–170 bpm heart rate, and up to 5 kg of sweat and 11 lbs of body-weight loss, with rain raising the difficulty—then closed the arc the dashboard had recorded as “announced, not published”: “We completed a first-in-world racing experiment. I collected Tobi’s blood before and after his 2.5 hr race. This blood test is unique. It’s deep molecular profiling.” The internal arithmetic is self-consistent (4.2 g × ~170 lb ≈ 714 lb; 5 kg ≈ 11 lb), and the physiology targets are literature-adjacent (measured endurance racing: ~40–50°C cockpits, 159–170 bpm sustained heart rates, ~0.6 L/h sweat rates; Carlson et al., J Strength Cond Res, 10.1519/JSC.0000000000002268). The boundaries: the headline numbers are Johnson’s own with no per-race telemetry source; the 5 kg/2.5 h figure implies ~2 L/h sweat rate—roughly triple the ~0.6 L/h of measured driver studies; and “deep molecular profiling” names no panel, analyzer, or method—what was measured and how it will be analyzed remain unstated. The same morning he posted a “car racing is cognitive enhancement” thread of three research claims: the NeuroRacer trial (Anguera et al., Nature 2013—12 h of training left 60–85-year-olds beating untrained 20-year-olds at multitasking, gains persisting six months) and driver-neuroscience neural-efficiency findings (Bernardi et al., PLoS ONE 2013—pros recruit smaller task-related brain volumes than novices) verify closely, but the post’s framing compresses them: no cited study shows real racing enhancing cognition—the evidence is a custom video game in older adults and cross-sectional expert/novice comparisons that cannot separate training from selection. The KB records an attributed experiment narrative and research-claims post with verified context—not evidence that molecular profiling of drivers is novel or useful, that racing is a cognitive intervention, a hydration or cooling protocol, or medical advice.',
+    relatedHref: '/knowledge/algorithmic-health/',
+    relatedTitle: 'Algorithmic health',
+    source: 'https://x.com/bryan_johnson/status/2106505132729119179',
+    confidence: 'medium',
+  },
+  {
     date: '2026-10-02',
     label: 'Algorithmic health applied to someone else: “reviewing Tobi’s performance via biomarkers” at Petit Le Mans',
     summary:

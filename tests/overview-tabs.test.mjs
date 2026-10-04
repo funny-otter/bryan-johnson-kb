@@ -838,7 +838,7 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(dontDieSource, /On October 1[^]*10[.]3389\/fpsyg[.]2019[.]02688[^]*not an established species-level metric, a funding recommendation, or medical advice/i, 'dont-die page should record the ideology formulation with its boundary');
 
     assert.match(signalsSource, /30 Sep 17–Oct 1 posts reviewed/, 'audit window should cover this pass');
-    assert.match(signalsSource, /12 knowledge pages \+ 61 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 62 update pages/, 'site content count should include the new update page');
 
     const updatePage = readFileSync(new URL('../src/content/updates/2026-10-02-cognitive-light-cone-curation.md', import.meta.url), 'utf8');
     assert.match(updatePage, /knowledge\/raw\/x\/2026-10-01\/2026-10-01-bryan-johnson-batch[.]md/, 'update page should cite the October 1 capture');
@@ -878,11 +878,52 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(braintreeSource, /first customers[^]*37signals[^]*Treat the “first customers” ordering as Johnson’s attribution/, 'braintree page should record the first-customers attribution with its verifiable fact');
 
     assert.match(signalsSource, /30 Sep 18–Oct 2 posts reviewed/, 'audit window should cover this pass');
-    assert.match(signalsSource, /12 knowledge pages \+ 61 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 62 update pages/, 'site content count should include the new update page');
 
     const updatePage = readFileSync(new URL('../src/content/updates/2026-10-03-petit-le-mans-biomarker-review-curation.md', import.meta.url), 'utf8');
     assert.match(updatePage, /IMSA’s official entry list/, 'update page should document the entry-list verification');
     assert.match(updatePage, /folded into the braintree knowledge page/, 'update page should document the Braintree handling decision');
+  });
+
+  it('publishes the October 3 race-day posts as attributed claims with verified neuroscience and physiology context', () => {
+    for (const required of [
+      'petit-le-mans-race-day-blood-draw',
+      '2106505132729119179',
+      'racing-cognitive-enhancement-claims',
+      '2106404568401682468',
+      'https://x.com/bryan_johnson/status/2106401417707569368',
+      'I collected Tobi’s blood before and after his 2.5 hr race',
+      'It’s deep molecular profiling',
+      '715 lbs of force',
+      'roughly triple the ~0.6 L/h',
+      'https://doi.org/10.1038/nature12486',
+      'https://doi.org/10.1371/journal.pone.0077764',
+      'https://doi.org/10.3389/fnhum.2014.00888',
+      'NeuroRacer',
+      'unable to separate training from selection',
+      'not evidence that molecular profiling of drivers is novel or useful',
+      'not evidence that racing is a cognitive-enhancement intervention, a brain-training recommendation, or medical advice',
+      "confidence: 'medium'",
+    ]) {
+      assert.ok(signalsSource.includes(required), `race-day signal should preserve: ${required}`);
+    }
+
+    assert.match(dashboardSectionsSource, /The racing experiment runs[^]*not evidence that molecular profiling of drivers is novel or useful[^]*or medical advice/i, 'timeline should pair the race-day claim with its boundary');
+    assert.match(dashboardSectionsSource, /The racing experiment runs/i, 'timeline should record the race-day item');
+
+    const bryanJohnsonSource = readFileSync(new URL('../src/content/knowledge/bryan-johnson.md', import.meta.url), 'utf8');
+    assert.match(bryanJohnsonSource, /On October 3, race day[^]*10[.]1038\/nature12486[^]*not evidence that molecular profiling of drivers is novel or useful[^]*or medical advice/i, 'bryan-johnson page should record the race-day experiment with its boundary');
+
+    const algorithmicHealthPage = readFileSync(new URL('../src/content/knowledge/algorithmic-health.md', import.meta.url), 'utf8');
+    assert.match(algorithmicHealthPage, /On October 3, race day[^]*10[.]1371\/journal[.]pone[.]0077764[^]*not evidence that molecular profiling of drivers is novel or useful[^]*or medical advice/i, 'algorithmic-health page should record the race-day experiment with its boundary');
+
+    assert.match(signalsSource, /50 Sep 11–Oct 3 posts reviewed/, 'audit window should cover this pass');
+    assert.match(signalsSource, /12 knowledge pages \+ 62 update pages/, 'site content count should include the new update page');
+
+    const updatePage = readFileSync(new URL('../src/content/updates/2026-10-04-petit-le-mans-race-day-curation.md', import.meta.url), 'utf8');
+    assert.match(updatePage, /50 posts spanning September 11–October 3/, 'update page should document the audit window');
+    assert.match(updatePage, /10[.]1038\/nature12486/, 'update page should document the NeuroRacer verification');
+    assert.match(updatePage, /compression, not a measured count/, 'update page should document the neural-efficiency compression boundary');
   });
 
   it('replaces right-sidebar placeholders with real watch queue, source counts, and curated activity', () => {
@@ -892,7 +933,7 @@ describe('home overview and dedicated changelog route', () => {
     for (const phrase of ['Enhanced Games follow-up', 'Kate Tolo baseline', 'Microplastics testing', '82 unique tweet URLs', '11 tweets with engagement']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `signals/sidebar data should include ${phrase}`);
     }
-    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 61 update pages']) {
+    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 62 update pages']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `source counts should include ${phrase}`);
     }
     assert.doesNotMatch(indexSource, /index \* 17|updateCards\[0\]|next curated publish pass/, 'right sidebar should not use deterministic placeholder formulas or newest-card watch copy');

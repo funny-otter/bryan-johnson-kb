@@ -1,5 +1,43 @@
 export const curatedSignals = [
   {
+    id: 'petit-le-mans-race-day-blood-draw',
+    title: 'The racing experiment runs: Johnson collects Lütke’s blood “before and after his 2.5 hr race,” calling it a first-in-world deep molecular profile',
+    date: '2026-10-03',
+    badge: 'Algorithmic health',
+    kind: 'tweet',
+    topic: 'Method export / motorsport physiology',
+    summary:
+      'On race day the announced experiment acquired data. At 15:10 UTC Johnson posted the physiological case for the weekend—Lütke driving “over 180 mph,” up to 4.2 g throwing his body forward with “715 lbs of force” and his head by “67 lbs,” braking requiring “up to 200 lbs of leg force,” a cockpit averaging “104-122°F,” core temperature reaching “102°F,” heart rate “140-170 bpm,” and up to “170 fl oz (5 kg)” of sweat and “11 lbs” of body-weight loss in a car with no driver cooling—then at 22:02 UTC closed the arc October 2 left open: “We completed a first-in-world racing experiment. I collected Tobi’s blood before and after his 2.5 hr race. This blood test is unique. It’s deep molecular profiling. What happens to the body under these extreme conditions?” The internal arithmetic is self-consistent (4.2 g on a ~170 lb driver ≈ 714 lb; 4.2 g on a ~16 lb head ≈ 67 lb; 5 kg of sweat ≈ 11 lb), and the physiology targets are literature-adjacent: measured endurance racing shows cockpits of ~40–50°C, heart rates of 159–170 bpm sustained for full stints, and sweat rates around 0.6 L/h with clinically meaningful dehydration over longer events (Carlson et al., J Strength Cond Res, 10.1519/JSC.0000000000002268). The boundaries: the headline numbers are Johnson’s own with no per-race telemetry source; the 5 kg sweat claim implies ~2 L/h for 2.5 hours—roughly triple the ~0.6 L/h typical of measured driver studies and a level literature associates with extreme conditions; and “deep molecular profiling” names no panel, analyzer, or method, so what was measured, when, and how it will be analyzed remain unstated. The dashboard records an attributed experiment narrative with verified context—not evidence that molecular profiling of drivers is novel or useful, a hydration or cooling protocol, or medical advice.',
+    href: '/knowledge/algorithmic-health/',
+    tweetId: '2106505132729119179',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2106401417707569368',
+      'https://x.com/bryan_johnson/status/2106505132729119179',
+      'https://doi.org/10.1519/JSC.0000000000002268',
+      'https://doi.org/10.3389/fspor.2025.1498686',
+    ],
+  },
+  {
+    id: 'racing-cognitive-enhancement-claims',
+    title: '“Car racing is cognitive enhancement”: three research claims compressing NeuroRacer and driver-neuroscience findings',
+    date: '2026-10-03',
+    badge: 'Research claims',
+    kind: 'tweet',
+    topic: 'Cognitive enhancement / driving expertise neuroscience',
+    summary:
+      'An hour before the race, Johnson posted a three-claim case that racing itself is cognitive enhancement: “12 hrs on a driving video game, and 60-85 yr olds were cognitively overtaking 20 yr olds”; “race car drivers do in one brain region what a novice does in 15”; and “six months later, the seniors kept the gains with zero practice.” Two of the three anchor to real studies with the numbers matching closely. The first and third trace to Anguera et al. (Nature, 2013, 10.1038/nature12486): 12 hours of adaptive multitasking training on the NeuroRacer 3-D driving game over a month left 60–85-year-olds with multitasking costs better than untrained 20-year-olds’ single-session performance (−16.2% vs −36.7% cost), with gains persisting six months without booster sessions. The second traces to neural-efficiency work in actual drivers: Bernardi et al. (PLoS ONE, 2013, 10.1371/journal.pone.0077764) found professional racing drivers recruit a smaller volume of task-related regions than naïve drivers, and the follow-up structural study (Frontiers Hum Neurosci, 2014, 10.3389/fnhum.2014.00888) found pros more consistently recruiting motor-control and spatial-navigation areas with retrosplenial-cortex gray-matter density correlating with racing success. The boundaries: no study Johnson cites shows actual race-car driving enhancing cognition in drivers—the evidence runs from a custom video game in older adults and cross-sectional expert/novice comparisons, the latter unable to separate training from selection; “one brain region vs 15” is a compression, not a measured count; and the 6-month retention figure is from the game study’s older adults, not from any racing population. The dashboard records an attributed research-claims post with verified sources—not evidence that racing is a cognitive-enhancement intervention, a brain-training recommendation, or medical advice.',
+    href: '/knowledge/algorithmic-health/',
+    tweetId: '2106404568401682468',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2106404568401682468',
+      'https://doi.org/10.1038/nature12486',
+      'https://doi.org/10.1371/journal.pone.0077764',
+      'https://doi.org/10.3389/fnhum.2014.00888',
+    ],
+  },
+  {
     id: 'petit-le-mans-biomarker-review',
     title: 'Algorithmic health goes to the race track: Johnson reviews a friend’s qualifying stint via “car stats, micro decisions, blood biomarkers”',
     date: '2026-10-02',
@@ -1547,10 +1585,11 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Live Bird timeline audit', value: '30', detail: '30 Sep 18–Oct 2 posts reviewed via read-only bird user-tweets gap-fill audit' },
-  { label: 'Sources verified this pass', value: '4', detail: '4 sources matched · IMSA Petit Le Mans entry list + 2014 Le Mans records + 2 driver-physiology studies' },
-  { label: 'Prior audit window', value: '30', detail: '30 Sep 17–Oct 1 posts reviewed last pass via read-only bird user-tweets audit' },
-  { label: 'Prior studies verified', value: '2', detail: '2 sources matched last pass · Levin 2019 cognitive light cone origin + NIA geroscience/Aging Biology budget lines' },
+  { label: 'Live Bird timeline audit', value: '50', detail: '50 Sep 11–Oct 3 posts reviewed via read-only bird user-tweets gap-fill audit' },
+  { label: 'Studies verified this pass', value: '3', detail: '3 sources matched · Anguera 2013 NeuroRacer Nature trial + Bernardi 2013 driver fMRI + Frontiers 2014 racer structural MRI' },
+  { label: 'Prior audit window', value: '30', detail: '30 Sep 18–Oct 2 posts reviewed last pass via read-only bird user-tweets audit' },
+  { label: 'Prior studies verified', value: '4', detail: '4 sources matched last pass · IMSA Petit Le Mans entry list + 2014 Le Mans records + 2 driver-physiology studies' },
+  { label: 'Earlier audit window', value: '30', detail: '30 Sep 17–Oct 1 posts reviewed earlier pass via read-only bird user-tweets audit' },
   { label: 'Latest X capture', value: '1', detail: '1 Sep 30 post captured · knowledge/raw/x/2026-10-01 bryan-johnson-batch' },
   { label: 'Prior audit window', value: '194', detail: '194 Aug 14–Sep 30 posts reviewed earlier pass via read-only bird user-tweets audit' },
   { label: 'Descent literature verified', value: '1', detail: '1 source matched earlier pass · Deflorin 2026 JCSM randomized crossover trial on descent to low altitude' },
@@ -1576,10 +1615,11 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '73', detail: '12 knowledge pages + 61 update pages after this pass' },
+  { label: 'Public site content', value: '74', detail: '12 knowledge pages + 62 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-10-03', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-02', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-01', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-09-30', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1 },
