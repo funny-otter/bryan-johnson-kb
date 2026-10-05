@@ -1,5 +1,23 @@
 export const curatedSignals = [
   {
+    id: 'road-trip-order-restored-epilogue',
+    title: 'Ten days on the road end at home: “Order has been restored,” five-hour morning routine resumed “going all out”',
+    date: '2026-10-04',
+    badge: 'Algorithmic health',
+    kind: 'tweet',
+    topic: 'Routine adherence / behavior',
+    summary:
+      'The road trip this dashboard has tracked since September 29 ended at home, and the closing post is the arc’s only unquantified one: “I’m back home after 10 days on the road. Just completed my five hour morning routine, going all out. I crave the discomfort. It’s my happy place. Find it miserable to live without. Order has been restored.” The count is internally consistent with the tracked window: the five-day altitude leg that ended with the September 29 “back at sea level” post implies departure around September 24–25, Petit Le Mans ran October 2–3, and September 25 through October 4 is ten days inclusive. The discomfort framing extends the August 16 discipline-as-mastery self-description into open identity language (“miserable to live without”), and unlike every other post in the arc it attaches no measurement—no wearable index, no biomarker panel, no outcome claim. The dashboard records an attributed behavior and identity statement closing a measured arc—not evidence that the five-hour routine produces its claimed benefits, a reader routine, or medical advice.',
+    href: '/knowledge/algorithmic-health/',
+    tweetId: '2106802267391393807',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2106802267391393807',
+      'https://x.com/bryan_johnson/status/2104962827073040874',
+      'https://x.com/bryan_johnson/status/2106505132729119179',
+    ],
+  },
+  {
     id: 'petit-le-mans-race-day-blood-draw',
     title: 'The racing experiment runs: Johnson collects Lütke’s blood “before and after his 2.5 hr race,” calling it a first-in-world deep molecular profile',
     date: '2026-10-03',
@@ -1585,10 +1603,11 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Live Bird timeline audit', value: '50', detail: '50 Sep 11–Oct 3 posts reviewed via read-only bird user-tweets gap-fill audit' },
-  { label: 'Studies verified this pass', value: '3', detail: '3 sources matched · Anguera 2013 NeuroRacer Nature trial + Bernardi 2013 driver fMRI + Frontiers 2014 racer structural MRI' },
-  { label: 'Prior audit window', value: '30', detail: '30 Sep 18–Oct 2 posts reviewed last pass via read-only bird user-tweets audit' },
-  { label: 'Prior studies verified', value: '4', detail: '4 sources matched last pass · IMSA Petit Le Mans entry list + 2014 Le Mans records + 2 driver-physiology studies' },
+  { label: 'Live Bird timeline audit', value: '50', detail: '50 Sep 11–Oct 4 posts reviewed via read-only bird user-tweets gap-fill audit' },
+  { label: 'Prior audit window', value: '50', detail: '50 Sep 11–Oct 3 posts reviewed last pass via read-only bird user-tweets audit' },
+  { label: 'Prior studies verified', value: '3', detail: '3 sources matched last pass · Anguera 2013 NeuroRacer Nature trial + Bernardi 2013 driver fMRI + Frontiers 2014 racer structural MRI' },
+  { label: 'Earlier audit window', value: '30', detail: '30 Sep 18–Oct 2 posts reviewed earlier pass via read-only bird user-tweets audit' },
+  { label: 'Earlier studies verified', value: '4', detail: '4 sources matched earlier pass · IMSA Petit Le Mans entry list + 2014 Le Mans records + 2 driver-physiology studies' },
   { label: 'Earlier audit window', value: '30', detail: '30 Sep 17–Oct 1 posts reviewed earlier pass via read-only bird user-tweets audit' },
   { label: 'Latest X capture', value: '1', detail: '1 Sep 30 post captured · knowledge/raw/x/2026-10-01 bryan-johnson-batch' },
   { label: 'Prior audit window', value: '194', detail: '194 Aug 14–Sep 30 posts reviewed earlier pass via read-only bird user-tweets audit' },
@@ -1615,10 +1634,11 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '74', detail: '12 knowledge pages + 62 update pages after this pass' },
+  { label: 'Public site content', value: '75', detail: '12 knowledge pages + 63 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-10-04', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-03', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-02', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-01', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },

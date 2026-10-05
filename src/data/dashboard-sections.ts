@@ -349,6 +349,16 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-10-04',
+    label: 'Ten-day road trip ends at home: “Order has been restored,” five-hour morning routine resumed',
+    summary:
+      'The road-trip arc closed where it started—at home, unquantified. Johnson posted: “I’m back home after 10 days on the road. Just completed my five hour morning routine, going all out. I crave the discomfort. It’s my happy place. Find it miserable to live without. Order has been restored.” The count is internally consistent with the dashboard’s tracked window: the five-day altitude leg ending with the September 29 “back at sea level” post implies departure around September 24–25, Petit Le Mans ran October 2–3, and September 25 through October 4 is ten days inclusive. The discomfort framing extends the August 16 discipline-as-mastery self-description into open identity language (“miserable to live without”), and unlike every other post in the arc it attaches no measurement—no wearable index, no biomarker panel, no outcome claim. The KB records an attributed behavior and identity statement closing a measured arc—not evidence that the five-hour routine produces its claimed benefits, a reader routine, or medical advice.',
+    relatedHref: '/knowledge/algorithmic-health/',
+    relatedTitle: 'Algorithmic health',
+    source: 'https://x.com/bryan_johnson/status/2106802267391393807',
+    confidence: 'medium',
+  },
+  {
     date: '2026-10-03',
     label: 'The racing experiment runs: blood drawn before and after Lütke’s 2.5-hour Petit Le Mans stint',
     summary:
