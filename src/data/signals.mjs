@@ -1,5 +1,81 @@
 export const curatedSignals = [
   {
+    id: 'night-terror-altitude-coda',
+    title: 'The altitude arc gets an unplanned coda: a self-injuring night terror attributed to five days at 7,000 ft plus missed bedtimes',
+    date: '2026-10-06',
+    badge: 'N=1 test',
+    kind: 'tweet',
+    topic: 'Sleep / parasomnia / altitude recovery',
+    summary:
+      'The October 4 “order has been restored” epilogue acquired a footnote two nights later: Johnson reported a night terror — “throwing myself off the bed and bloodying up my back, sides and arms” after dreaming of jumping off a runaway train — a recurrence of a past problem he says once put him in the hospital. His mechanism section is accurate against sleep medicine: night terrors are non-REM disorders of arousal arising from deep slow-wave (stage N3) sleep in the first third of the night — his “1-3 hours after sleep onset” matches the documented one-to-three-hour window — REM’s muscle atonia is why ordinary nightmares are not acted out, and sleep deprivation is a documented precipitant. His causal attribution (five days at 7,000 ft while missing bedtimes for consecutive social events) is consistent with the September 29–30 wearable-dip/rebound arc and with acclimatization timelines of several weeks. The boundaries: this is a self-diagnosed, unmonitored account — no polysomnography, no clinician named, and the “research” he did is uncited — and adult night terrors with self-injury are a presentation sleep medicine associates with underlying conditions worth clinical evaluation. The dashboard records an attributed N=1 event narrative with verified mechanism context—not evidence that altitude travel causes night terrors, a sleep-safety guideline, or medical advice.',
+    href: '/knowledge/algorithmic-health/',
+    tweetId: '2107263567800238552',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2107263567800238552',
+      'https://x.com/bryan_johnson/status/2104962827073040874',
+      'https://pmc.ncbi.nlm.nih.gov/articles/PMC8193803/',
+    ],
+  },
+  {
+    id: 'zolpidem-sex-difference-claim',
+    title: 'Quote-posting Tolo’s female-health thread: the Ambien claim that verifies nearly verbatim against the FDA label',
+    date: '2026-10-05',
+    badge: 'Female health',
+    kind: 'tweet',
+    topic: 'Sex-specific pharmacokinetics / female-health claims',
+    summary:
+      'Johnson quote-posted the zolpidem fact from Kate Tolo’s five-fact female-health thread: “Studies found that women had around 45% higher blood concentrations of ambien (zolpidem) than men after the same dose. Women also cleared the drug from the bloodstream more slowly.” This one is about as checkable as feed claims get: the FDA Ambien label’s “Gender Difference in Pharmacokinetics” section states that Cmax and AUC were “approximately 45% higher at the same dose in female subjects compared with male subjects” because “women clear zolpidem tartrate from the body at a lower rate than men,” and the FDA’s January 2013 safety communication halved the recommended bedtime dose for women (10 mg to 5 mg immediate-release; 12.5 mg to 6.25 mg extended-release) on next-morning-impairment data. The quoted claim is, in effect, the label. The boundaries: the post is a quote-post amplification rather than new analysis, it names no source itself (the figures belong to the FDA documents), and zolpidem is a Schedule IV prescription hypnotic whose dosing is a clinician decision. The dashboard records an attributed female-health claim with verified regulatory provenance—not a dosing directive, a medication change without a prescriber, or medical advice.',
+    href: '/metrics/',
+    tweetId: '2107215752637878559',
+    confidence: 'high',
+    sources: [
+      'https://x.com/bryan_johnson/status/2107215752637878559',
+      'https://x.com/_katetolo/status/2106820447300198810',
+      'https://www.accessdata.fda.gov/drugsatfda_docs/label/2013/019908s032s034,021774s013s015lbl.pdf',
+      'https://www.fda.gov/drugs/drug-safety-and-availability/questions-and-answers-risk-next-morning-impairment-after-use-insomnia-drugs-fda-requires-lower',
+    ],
+  },
+  {
+    id: 'male-body-by-50-claims',
+    title: '“The male body by age 50”: five decline figures and a weekly counter-protocol, three of five verifiable',
+    date: '2026-10-05',
+    badge: 'Research claim',
+    kind: 'tweet',
+    topic: 'Male aging / exercise and sauna prescription',
+    summary:
+      'Johnson’s highest-engagement post in weeks (5.6k likes) lists five decline figures — testosterone down 30%, arterial stiffness up 30%, bone density down 10%, muscle mass down 10%, prostate enlargement in 50% of men — against a weekly counter-protocol: 4 hr heavy lifting, 3 hr zone 2, 45 min HIIT, 2 hr sauna, 8 hr/night sleep. Three of the five figures verify against named literatures: the testosterone figure tracks the Massachusetts Male Aging Study’s longitudinal total-testosterone decline of about 1.6%/yr (compounding to roughly −28% from peak by 50, with free/bioavailable testosterone falling faster at 2–3%/yr; the Baltimore Longitudinal Study found the same direction); the muscle figure matches cross-sectional medians of about 4.7% of peak mass per decade in men (≈10% from 30 to 50); and the prostate figure matches Berry et al.’s classic autopsy series exactly — 50% of men show pathological benign prostatic hyperplasia at ages 51–60. The arterial-stiffness and bone-density percentages name no source and are recorded as attributed values, and the prescription is Johnson’s own weekly stack, not a clinical recommendation — no volume in it is an individually optimized dose, and the post cites no trial of the combined stack. The dashboard records an attributed claims-plus-protocol post with verified context for three figures—not a diagnosis, a male-aging checklist, or medical advice.',
+    href: '/health/',
+    tweetId: '2107147209959727153',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2107147209959727153',
+      'https://academic.oup.com/jcem/article/87/2/589/2846777',
+      'https://pubmed.ncbi.nlm.nih.gov/11158037/',
+      'https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2012.00260/full',
+      'https://doi.org/10.1016/S0022-5347(17)49698-4',
+    ],
+  },
+  {
+    id: 'petit-le-mans-biomarker-results',
+    title: 'The readout arrives: Lütke’s race physiology reviewed — 171 bpm peak, 4.6% body mass lost, 41 breaths/min — but still no blood panel',
+    date: '2026-10-05',
+    badge: 'Algorithmic health',
+    kind: 'tweet',
+    topic: 'Method export / motorsport physiology',
+    summary:
+      'The October 2 “reviewing Tobi’s performance via biomarkers” announcement produced its narrative readout. Johnson reconstructed Lütke’s 2.5-hour Petit Le Mans stint physiologically — heart rate peaking at 171 bpm and already at 136 bpm thirty minutes before the race, qualifying laps faster as heart rate rose, 4.6% of body mass lost to sweat, breathing averaging 41 breaths/min on flying laps (93 liters/min, peaking at 59) — closing with performance context (fastest race lap on lap 88 at 1:15.359, over two hours in; +2.60% off class best against world-class professionals; 150 drivers) and a flow-state neuroscience frame: downregulated prefrontal self-monitoring, norepinephrine-driven time dilation, and the same one-brain-region-vs-fifteen compression the October 3 post used. The one checkable side-claim verifies with a caveat: “at 2% dehydration your reaction time measurably decreases” matches the direction of the Wittbrodt & Millard-Stafford meta-analysis (Med Sci Sports Exerc, 2018: cognitive impairment greater beyond 2% body-mass loss), but that analysis found reaction-time-specific effects nonsignificant (ES −0.10) — attention, executive function, and motor coordination are the impaired domains. The structural boundary is unchanged: the announced “deep molecular profiling” blood draws still have no panel, method, or result — this readout is wearable-and-telemetry narrative, not the molecular data, and whether the pre/post blood comparison yields anything remains unpublished. The dashboard records an attributed readout narrative with verified hydration-literature context—not evidence that biomarker review improves driving performance, a hydration strategy, or medical advice.',
+    href: '/knowledge/algorithmic-health/',
+    tweetId: '2106927047134343298',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2106927047134343298',
+      'https://x.com/bryan_johnson/status/2106505132729119179',
+      'https://x.com/bryan_johnson/status/2106113593481609361',
+      'https://doi.org/10.1249/MSS.0000000000001682',
+    ],
+  },
+  {
     id: 'road-trip-order-restored-epilogue',
     title: 'Ten days on the road end at home: “Order has been restored,” five-hour morning routine resumed “going all out”',
     date: '2026-10-04',
@@ -1603,9 +1679,11 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Live Bird timeline audit', value: '50', detail: '50 Sep 11–Oct 4 posts reviewed via read-only bird user-tweets gap-fill audit' },
-  { label: 'Prior audit window', value: '50', detail: '50 Sep 11–Oct 3 posts reviewed last pass via read-only bird user-tweets audit' },
+  { label: 'Live Bird timeline audit', value: '50', detail: '50 Sep 11–Oct 6 posts reviewed via read-only bird user-tweets gap-fill audit' },
+  { label: 'Studies verified this pass', value: '7', detail: '7 sources matched · FDA zolpidem label + FDA 2013 safety communication + MMAS testosterone + BLSA testosterone + sarcopenia quantitative review + Berry 1984 BPH autopsy series + Wittbrodt 2018 dehydration meta-analysis' },
+  { label: 'Prior audit window', value: '50', detail: '50 Sep 11–Oct 4 posts reviewed last pass via read-only bird user-tweets audit' },
   { label: 'Prior studies verified', value: '3', detail: '3 sources matched last pass · Anguera 2013 NeuroRacer Nature trial + Bernardi 2013 driver fMRI + Frontiers 2014 racer structural MRI' },
+  { label: 'Earlier audit window', value: '50', detail: '50 Sep 11–Oct 3 posts reviewed earlier pass via read-only bird user-tweets audit' },
   { label: 'Earlier audit window', value: '30', detail: '30 Sep 18–Oct 2 posts reviewed earlier pass via read-only bird user-tweets audit' },
   { label: 'Earlier studies verified', value: '4', detail: '4 sources matched earlier pass · IMSA Petit Le Mans entry list + 2014 Le Mans records + 2 driver-physiology studies' },
   { label: 'Earlier audit window', value: '30', detail: '30 Sep 17–Oct 1 posts reviewed earlier pass via read-only bird user-tweets audit' },
@@ -1634,10 +1712,12 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '75', detail: '12 knowledge pages + 63 update pages after this pass' },
+  { label: 'Public site content', value: '76', detail: '12 knowledge pages + 64 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-10-06', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-05', x_post: 5, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-04', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-03', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-02', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },

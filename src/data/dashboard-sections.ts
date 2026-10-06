@@ -349,6 +349,26 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-10-06',
+    label: 'The altitude arc gets an unplanned coda: a self-injuring night terror, mechanism explained, cause attributed to 7,000 ft plus missed bedtimes',
+    summary:
+      'Two nights after “order has been restored,” Johnson reported a night terror — “throwing myself off the bed and bloodying up my back, sides and arms” after a dream of jumping off a runaway train — a recurrence of a past problem he says once hospitalized him. His mechanism account is accurate against sleep medicine: night terrors are non-REM disorders of arousal from deep slow-wave (N3) sleep in the first third of the night (his “1-3 hours after sleep onset” matches the documented window), REM atonia is why ordinary nightmares are not acted out, and sleep deprivation is a documented precipitant. His attribution — five days at 7,000 ft while missing bedtimes for consecutive social events — is consistent with the September 29–30 wearable dip/rebound arc. The boundaries: a self-diagnosed, unmonitored account with no polysomnography, no named clinician, and uncited “research”; adult night terrors with self-injury are a presentation sleep medicine associates with conditions worth clinical evaluation. The KB records an attributed N=1 event narrative with verified mechanism context—not evidence that altitude travel causes night terrors, a sleep-safety guideline, or medical advice.',
+    relatedHref: '/knowledge/algorithmic-health/',
+    relatedTitle: 'Algorithmic health',
+    source: 'https://x.com/bryan_johnson/status/2107263567800238552',
+    confidence: 'medium',
+  },
+  {
+    date: '2026-10-05',
+    label: 'A four-post day: the Lütke race readout, a “male body by 50” claims post, and the zolpidem fact that verifies against the FDA label',
+    summary:
+      'October 5 produced the feed’s densest day since the race weekend. The Petit Le Mans review acquired its narrative readout — heart rate peaking at 171 bpm (136 bpm thirty minutes pre-race), 4.6% of body mass lost to sweat, breathing averaging 41 breaths/min on flying laps and peaking at 59 — while the announced “deep molecular profiling” blood draws still have no panel, method, or result. A “male body by age 50” post listed five decline figures against a weekly counter-protocol (4 hr lifting, 3 hr zone 2, 45 min HIIT, 2 hr sauna, 8 hr sleep); three of the five verify — testosterone against the Massachusetts Male Aging Study’s ~1.6%/yr longitudinal decline, muscle mass against ~4.7%-per-decade cross-sectional medians, and the 50%-of-men prostate figure against Berry et al.’s 1984 autopsy series exactly — while the arterial-stiffness and bone-density figures name no source. And a quote-post of Kate Tolo’s female-health thread carried the zolpidem sex-difference claim, which matches the FDA Ambien label nearly verbatim (Cmax/AUC “approximately 45% higher” in women; slower clearance) and the FDA’s 2013 halving of the recommended dose for women. The KB records attributed readout, claims, and amplification posts with verified context—not evidence that biomarker review improves driving performance, a male-aging checklist, a dosing directive, or medical advice.',
+    relatedHref: '/knowledge/algorithmic-health/',
+    relatedTitle: 'Algorithmic health',
+    source: 'https://x.com/bryan_johnson/status/2106927047134343298',
+    confidence: 'medium',
+  },
+  {
     date: '2026-10-04',
     label: 'Ten-day road trip ends at home: “Order has been restored,” five-hour morning routine resumed',
     summary:
