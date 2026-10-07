@@ -1,5 +1,42 @@
 export const curatedSignals = [
   {
+    id: 'dont-die-zero-manifesto',
+    title: '“Am I a madman or messiah?”: the Don’t Die origin story — biographies, Schopenhauer’s marksman, and “Don’t Die is the Zero”',
+    date: '2026-10-06',
+    badge: 'Ideology',
+    kind: 'tweet',
+    topic: 'Don’t Die ideology / autobiography',
+    summary:
+      'Johnson closed October 6 with the movement’s origin story: “Am I a madman or messiah? … For 30 years I’ve worked to create something of enduring value for the human race.” The essay runs from a biography-driven epistemology (autobiographies “preserve the high resolution nuance that broad histories discard”) through a quantitative-sounding compression thesis — “Every generation’s existence is compressed by around 90%,” so three generations leave “one in a thousand figures, ideas, or works” in cultural memory — to the people he admired: those who found their era’s “Zero,” the central defining issue others couldn’t see, footed with Schopenhauer’s “Talent hits a target no one else can hit. Genius hits a target no one else can see.” The quotation verifies: the marksman passage is genuine Schopenhauer (World as Will and Representation, Vol. II, ch. 31, “On Genius”), with the one-line form the standard condensed rendering and Johnson’s parenthetical first-principle/zeroth-principle glosses his own additions. The trajectory that follows — wealth by 30 as the enabling goal, “At age 34, I sold Braintree Venmo in 2013 for $800M, making $300M of that,” a 2500 thought experiment whose answer is gratitude that 21st-century humans “gave birth to superintelligence and figured out they’d no longer die” — lands on “Don’t Die is the Zero,” a values shift from killing for “power, wealth and status” to “valuing existence itself above all other rewards,” an era commencing in 2030 (restated verbatim in a same-day standalone post), and the self-description “We are performance artists. We are memetic representations.” The boundaries: the $800M exit matches the tracked Braintree record, but “age 34” does not reconcile with the tracked August 1977 birth date and the 2013 close (he would have been 36) and is recorded as a discrepancy; the $300M personal take and the 90%/99.9% compression figures are uncited; the 2030 commencement and GLP-1/body-positivity analogy repeat his September 17 framing; and nothing in the post is evidence about mortality. The dashboard records an attributed ideology-and-autobiography manifesto with verified quotation provenance—not evidence about mortality, a social prediction, or medical advice.',
+    href: '/knowledge/dont-die/',
+    tweetId: '2107556620247163208',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2107556620247163208',
+      'https://x.com/bryan_johnson/status/2107466626711126355',
+      'https://libquotes.com/arthur-schopenhauer/quote/lbl7w0e',
+    ],
+  },
+  {
+    id: 'creatine-rct-measurement-critique',
+    title: 'Correcting the creatine “muscle without exercise” hype: Johnson’s water-retention critique of the Texas A&M RCT — design facts verify, the mechanism is asserted',
+    date: '2026-10-06',
+    badge: 'Research claim',
+    kind: 'tweet',
+    topic: 'Supplement evidence / body-composition measurement',
+    summary:
+      'Johnson quote-posted a 17.6k-like thread celebrating a new creatine trial — “People who never trained took 10g of creatine a day and gained more lean tissue (2.43 lbs) than people who were lifting 3x a week with no creatine (0.31 lbs)” — and argued the opposite: “Creatine didn’t build muscle or burn fat in this study. It was water retention. Exercise wasn’t randomized. Participants chose whether to train. DEXA scans count water as ‘lean mass’.” The trial is real and the checkable parts of the critique verify: Chun, Kreider et al. (Journal of the International Society of Sports Nutrition, 2026, 10.1080/15502783.2026.2716273; ISRCTN83081058) enrolled 73 sedentary adults aged 45–65 (64 completers) who chose their exercise arm and were then randomized double-blind to 10 g/day creatine monohydrate or maltodextrin placebo for 12 weeks with DXA body composition — the no-exercise creatine arm gained +1.1 kg lean tissue versus +0.14 kg for exercise-placebo, exactly the thread’s 2.43-lb/0.31-lb pair — and DEXA genuinely cannot separate muscle protein from water, a limitation the trial could not rule out because it reports no body-water measurement. The boundaries run both ways: “It was water retention” is a mechanism asserted as a finding — the same no-exercise creatine arm also increased 1RM strength, which intracellular hydration alone does not obviously explain — the no-exercise arms were small (about 13 completers each; lean-mass CI 0.2–2.0 kg), the trial’s larger body-fat-percentage reduction belonged to the exercise-plus-diet arm where real fat loss was the design, and the senior author’s creatine-industry ties (AlzChem supplied the creatine) are disclosed rather than hidden. The dashboard records an attributed evidence critique with verified trial-design facts—not a determination of what the lean-mass gain consisted of, a creatine recommendation or warning, or medical advice.',
+    href: '/health/',
+    tweetId: '2107516394418147828',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2107516394418147828',
+      'https://x.com/morellifit/status/2107166825377362034',
+      'https://doi.org/10.1080/15502783.2026.2716273',
+      'https://stories.tamu.edu/news/2026/09/18/study-finds-creatines-benefits-extend-beyond-the-gym/',
+    ],
+  },
+  {
     id: 'night-terror-altitude-coda',
     title: 'The altitude arc gets an unplanned coda: a self-injuring night terror attributed to five days at 7,000 ft plus missed bedtimes',
     date: '2026-10-06',
@@ -1680,10 +1717,10 @@ export const watchQueue = [
 
 export const sourceCounts = [
   { label: 'Live Bird timeline audit', value: '50', detail: '50 Sep 11–Oct 6 posts reviewed via read-only bird user-tweets gap-fill audit' },
-  { label: 'Studies verified this pass', value: '7', detail: '7 sources matched · FDA zolpidem label + FDA 2013 safety communication + MMAS testosterone + BLSA testosterone + sarcopenia quantitative review + Berry 1984 BPH autopsy series + Wittbrodt 2018 dehydration meta-analysis' },
-  { label: 'Prior audit window', value: '50', detail: '50 Sep 11–Oct 4 posts reviewed last pass via read-only bird user-tweets audit' },
-  { label: 'Prior studies verified', value: '3', detail: '3 sources matched last pass · Anguera 2013 NeuroRacer Nature trial + Bernardi 2013 driver fMRI + Frontiers 2014 racer structural MRI' },
-  { label: 'Earlier audit window', value: '50', detail: '50 Sep 11–Oct 3 posts reviewed earlier pass via read-only bird user-tweets audit' },
+  { label: 'Studies verified this pass', value: '4', detail: '4 sources matched · Schopenhauer WWR Vol. II marksman passage + Chun/Kreider JISSN 2026 creatine RCT + Texas A&M release + trial registry ISRCTN83081058' },
+  { label: 'Prior audit window', value: '50', detail: '50 Sep 11–Oct 6 posts reviewed last pass via read-only bird user-tweets gap-fill audit' },
+  { label: 'Prior studies verified', value: '7', detail: '7 sources matched last pass · FDA zolpidem label + FDA 2013 safety communication + MMAS testosterone + BLSA testosterone + sarcopenia quantitative review + Berry 1984 BPH autopsy series + Wittbrodt 2018 dehydration meta-analysis' },
+  { label: 'Earlier audit window', value: '50', detail: '50 Sep 11–Oct 4 posts reviewed earlier pass via read-only bird user-tweets audit' },
   { label: 'Earlier audit window', value: '30', detail: '30 Sep 18–Oct 2 posts reviewed earlier pass via read-only bird user-tweets audit' },
   { label: 'Earlier studies verified', value: '4', detail: '4 sources matched earlier pass · IMSA Petit Le Mans entry list + 2014 Le Mans records + 2 driver-physiology studies' },
   { label: 'Earlier audit window', value: '30', detail: '30 Sep 17–Oct 1 posts reviewed earlier pass via read-only bird user-tweets audit' },
@@ -1712,11 +1749,12 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '76', detail: '12 knowledge pages + 64 update pages after this pass' },
+  { label: 'Public site content', value: '77', detail: '12 knowledge pages + 65 update pages after this pass' },
 ];
 
 export const curatedActivity = [
-  { date: '2026-10-06', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-07', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-06', x_post: 8, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-05', x_post: 5, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-04', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-03', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
