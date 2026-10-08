@@ -349,6 +349,16 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-10-07',
+    label: 'Health as the premium status symbol: CZ’s “compete on health, not lambos” post amplified, with a 75,000-person adoption threshold',
+    summary:
+      'The ideology’s first full status-games cluster. Johnson quote-posted Binance founder CZ’s viral shirtless photo (“Also 49, no AI, no photoshop, pure human labor... I encourage people to compete on health, not wealth rankings or lambos,” 38.7k likes) and read it as “a high status member of society signaling that health is the premium status symbol,” adding his own quantified gate: “The critical threshold for mass adoption will happen at around 75,000 similarly powerful people saying the same thing.” Two follow-ups built the thesis — “Sitting, typing, scrolling and martyring oneself for money are about to lose status. The new status games will reward what can’t be automated or faked: a body and mind in peak ability” (repeating the manifesto’s automation-removes-discipline framing) and the premise post: “Humans are status seeking monkeys... wired neurologically, biochemically and culturally to sacrifice whatever necessary to achieve relative rank... societal role models... create the status games society plays.” The checkable parts verify in direction: CZ’s “49” is accurate (born September 10, 1977), and the status-motive premise matches the evolutionary status literature (the Cheng/Tracy/Foulsham/Kingstone/Henrich dominance–prestige account, JPSP 104(1), 2013). The 75,000 threshold has no cited basis, and the nearest published result measures a different unit: Centola et al.’s 2018 Science coordination experiments (10.1126/science.aas8827) found committed minorities tipping group conventions at roughly 25% of small interacting populations — a fraction of a bounded group, not an absolute count of global elites — with the paper itself stating the value “is not expected to be a universal value.” The image’s “no AI, no photoshop” claim is unverifiable, the “lose status” post is a prediction, and nothing in the cluster is evidence that status games are actually shifting. The KB records an attributed ideology cluster with verified biographical and literature context—not a demonstrated social trend, a validated adoption threshold, or medical advice.',
+    relatedHref: '/knowledge/dont-die/',
+    relatedTitle: 'Don’t Die',
+    source: 'https://x.com/bryan_johnson/status/2107825420435644527',
+    confidence: 'medium',
+  },
+  {
     date: '2026-10-06',
     label: '“Am I a madman or messiah?”: the Don’t Die origin-story manifesto lands — biographies, Schopenhauer’s marksman, “Don’t Die is the Zero”',
     summary:

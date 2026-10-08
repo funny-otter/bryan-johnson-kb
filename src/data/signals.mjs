@@ -1,5 +1,26 @@
 export const curatedSignals = [
   {
+    id: 'health-as-status-games-cluster',
+    title: 'Health as the premium status symbol: Johnson amplifies CZ’s “compete on health, not lambos” post and sets a 75,000-person adoption threshold',
+    date: '2026-10-07',
+    badge: 'Ideology',
+    kind: 'tweet',
+    topic: 'Don’t Die ideology / status games',
+    summary:
+      'October 7 produced the ideology’s first full status-games cluster. Johnson quote-posted Binance founder CZ’s viral shirtless photo (“Not my usual style to post half naked photos, but what the hell... Also 49, no AI, no photoshop, pure human labor... I encourage people to compete on health, not wealth rankings or lambos,” 38.7k likes) and read it as “a high status member of society signaling that health is the premium status symbol,” adding his own quantified gate: “The critical threshold for mass adoption will happen at around 75,000 similarly powerful people saying the same thing.” Two follow-ups built the thesis — “Sitting, typing, scrolling and martyring oneself for money are about to lose status. The new status games will reward what can’t be automated or faked: a body and mind in peak ability” (repeating the manifesto’s automation-removes-discipline framing) and the premise post: “Humans are status seeking monkeys. We can’t help ourselves. We are wired neurologically, biochemically and culturally to sacrifice whatever necessary to achieve relative rank. This is why societal role models are so important: they create the status games society plays.” The checkable parts verify in direction: CZ’s “49” is accurate (born September 10, 1977), and the status-motive premise matches the evolutionary status literature (Cheng, Tracy, Foulsham, Kingstone and Henrich’s dominance–prestige account, JPSP 104(1), 2013). The 75,000 threshold has no cited basis, and the nearest published result measures a different unit: Centola, Becker, Brackbill and Baronchelli’s 2018 Science coordination experiments (10.1126/science.aas8827) found committed minorities tipping group conventions at roughly 25% of small interacting populations — a fraction of a bounded group, not an absolute count of global elites — and the paper itself states the value “is not expected to be a universal value.” The image’s “no AI, no photoshop” claim is unverifiable, the “lose status” post is a prediction, and nothing in the cluster is evidence that status games are actually shifting. The dashboard records an attributed ideology cluster with verified biographical and literature context—not a demonstrated social trend, a validated adoption threshold, or medical advice.',
+    href: '/knowledge/dont-die/',
+    tweetId: '2107825420435644527',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2107825420435644527',
+      'https://x.com/bryan_johnson/status/2107867680355274830',
+      'https://x.com/bryan_johnson/status/2107891916801191989',
+      'https://x.com/cz_binance/status/2107728165242302902',
+      'https://doi.org/10.1126/science.aas8827',
+      'https://pubmed.ncbi.nlm.nih.gov/23163747/',
+    ],
+  },
+  {
     id: 'dont-die-zero-manifesto',
     title: '“Am I a madman or messiah?”: the Don’t Die origin story — biographies, Schopenhauer’s marksman, and “Don’t Die is the Zero”',
     date: '2026-10-06',
@@ -1716,11 +1737,12 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Live Bird timeline audit', value: '50', detail: '50 Sep 11–Oct 6 posts reviewed via read-only bird user-tweets gap-fill audit' },
-  { label: 'Studies verified this pass', value: '4', detail: '4 sources matched · Schopenhauer WWR Vol. II marksman passage + Chun/Kreider JISSN 2026 creatine RCT + Texas A&M release + trial registry ISRCTN83081058' },
+  { label: 'Live Bird timeline audit', value: '50', detail: '50 Sep 18–Oct 7 posts reviewed via read-only bird user-tweets audit' },
+  { label: 'Studies verified this pass', value: '3', detail: '3 sources matched · Centola 2018 Science tipping-point experiments + Cheng et al. JPSP 2013 dominance–prestige account + CZ biographical birth-date record' },
   { label: 'Prior audit window', value: '50', detail: '50 Sep 11–Oct 6 posts reviewed last pass via read-only bird user-tweets gap-fill audit' },
-  { label: 'Prior studies verified', value: '7', detail: '7 sources matched last pass · FDA zolpidem label + FDA 2013 safety communication + MMAS testosterone + BLSA testosterone + sarcopenia quantitative review + Berry 1984 BPH autopsy series + Wittbrodt 2018 dehydration meta-analysis' },
+  { label: 'Prior studies verified', value: '4', detail: '4 sources matched last pass · Schopenhauer WWR Vol. II marksman passage + Chun/Kreider JISSN 2026 creatine RCT + Texas A&M release + trial registry ISRCTN83081058' },
   { label: 'Earlier audit window', value: '50', detail: '50 Sep 11–Oct 4 posts reviewed earlier pass via read-only bird user-tweets audit' },
+  { label: 'Earlier studies verified', value: '7', detail: '7 sources matched earlier pass · FDA zolpidem label + FDA 2013 safety communication + MMAS testosterone + BLSA testosterone + sarcopenia quantitative review + Berry 1984 BPH autopsy series + Wittbrodt 2018 dehydration meta-analysis' },
   { label: 'Earlier audit window', value: '30', detail: '30 Sep 18–Oct 2 posts reviewed earlier pass via read-only bird user-tweets audit' },
   { label: 'Earlier studies verified', value: '4', detail: '4 sources matched earlier pass · IMSA Petit Le Mans entry list + 2014 Le Mans records + 2 driver-physiology studies' },
   { label: 'Earlier audit window', value: '30', detail: '30 Sep 17–Oct 1 posts reviewed earlier pass via read-only bird user-tweets audit' },
@@ -1749,11 +1771,12 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '77', detail: '12 knowledge pages + 65 update pages after this pass' },
+  { label: 'Public site content', value: '78', detail: '12 knowledge pages + 66 update pages after this pass' },
 ];
 
 export const curatedActivity = [
-  { date: '2026-10-07', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-08', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-07', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-06', x_post: 8, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-05', x_post: 5, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-04', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1 },
