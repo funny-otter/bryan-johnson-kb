@@ -349,6 +349,16 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-10-08',
+    label: '“The shame arbitrage press used against me for years is now eliminated”: the Axios interview lands, a second status signal, and childhood-decline stats',
+    summary:
+      'October 8 produced a three-post cluster spanning media reception and the status arc. The anchor: “The shame arbitrage press used against me for years is now eliminated. In this interview, I flexed my: night time erection duration, fertility health, biological age, and that I’m trying to dunk at 49. And, Axios rolled with it. Unthinkable 2 yrs ago. Would’ve been skewered for this weirdness. You can just do things.” The interview is real and the quoted claims verify against Axios’s own October 8 coverage of “The Axios Show” episode: “What creates status and power and prestige is going to be different. And as crazy as it sounds, it may be your nighttime erections... It may be your ability to dunk a basketball at age 49” — a direct restatement of the October 7 status-games thesis in mainstream-outlet framing, alongside the tracked dunk side quest, 4.2 billion collected data points, and the $2M+/yr spend. Two companion posts extended the arc: “another high status signal” quote-posted Mike Solana (Founders Fund CMO and Pirate Wires founder) musing “sort of landing on: if we don’t get the AI apocalypse the average human lifespan maybe jumps to like 500 years or something?” (999 likes) — another high-reach figure normalizing radical life extension, the adoption mechanism Johnson theorized on October 7; and the evening stats post: “They’re in biological decline before their parents” with childhood-obesity figures (1988–2023 doubling from 10% to 21.1%, severe obesity nearly tripling 2.6%→7%, type 2 diabetes rising 5.3%/yr 2002–2018). All three figures verify: CDC/NCHS Health E-Stat tables report child/adolescent obesity 10.0% (1988–1994) → 21.1% (Aug 2021–Aug 2023) with severe obesity 2.6% → 7.0%, and the SEARCH for Diabetes in Youth study (Lancet Diabetes & Endocrinology, 2023) reports youth-onset type 2 diabetes incidence rising 5.31%/yr (95% CI 4.46–6.17) from 2002–2018. The boundaries: the obesity “doubling” is prevalence, not incidence, and the series compares survey waves, not continuous measurement; “biological decline before their parents” is Johnson’s framing of correlation, not a demonstrated cross-generational comparison; the Solana quote is a speculative musing, not a forecast or expert consensus; “shame arbitrage is eliminated” is a perception claim about press treatment, not evidence of social change; and nothing here is medical advice. The KB records an attributed media/status cluster with verified statistics and interview context—not a demonstrated status shift, a life-expectancy forecast, a pediatric-health directive, or medical advice.',
+    relatedHref: '/knowledge/dont-die/',
+    relatedTitle: 'Don’t Die',
+    source: 'https://x.com/bryan_johnson/status/2108212258312712198',
+    confidence: 'medium',
+  },
+  {
     date: '2026-10-07',
     label: 'Health as the premium status symbol: CZ’s “compete on health, not lambos” post amplified, with a 75,000-person adoption threshold',
     summary:

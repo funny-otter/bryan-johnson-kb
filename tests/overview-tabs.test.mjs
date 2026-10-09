@@ -838,7 +838,7 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(dontDieSource, /On October 1[^]*10[.]3389\/fpsyg[.]2019[.]02688[^]*not an established species-level metric, a funding recommendation, or medical advice/i, 'dont-die page should record the ideology formulation with its boundary');
 
     assert.match(signalsSource, /30 Sep 17–Oct 1 posts reviewed/, 'audit window should cover this pass');
-    assert.match(signalsSource, /12 knowledge pages \+ 66 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 67 update pages/, 'site content count should include the new update page');
 
     const updatePage = readFileSync(new URL('../src/content/updates/2026-10-02-cognitive-light-cone-curation.md', import.meta.url), 'utf8');
     assert.match(updatePage, /knowledge\/raw\/x\/2026-10-01\/2026-10-01-bryan-johnson-batch[.]md/, 'update page should cite the October 1 capture');
@@ -878,7 +878,7 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(braintreeSource, /first customers[^]*37signals[^]*Treat the “first customers” ordering as Johnson’s attribution/, 'braintree page should record the first-customers attribution with its verifiable fact');
 
     assert.match(signalsSource, /30 Sep 18–Oct 2 posts reviewed/, 'audit window should cover this pass');
-    assert.match(signalsSource, /12 knowledge pages \+ 66 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 67 update pages/, 'site content count should include the new update page');
 
     const updatePage = readFileSync(new URL('../src/content/updates/2026-10-03-petit-le-mans-biomarker-review-curation.md', import.meta.url), 'utf8');
     assert.match(updatePage, /IMSA’s official entry list/, 'update page should document the entry-list verification');
@@ -918,7 +918,7 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(algorithmicHealthPage, /On October 3, race day[^]*10[.]1371\/journal[.]pone[.]0077764[^]*not evidence that molecular profiling of drivers is novel or useful[^]*or medical advice/i, 'algorithmic-health page should record the race-day experiment with its boundary');
 
     assert.match(signalsSource, /50 Sep 11–Oct 4 posts reviewed/, 'audit window should cover this pass');
-    assert.match(signalsSource, /12 knowledge pages \+ 66 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 67 update pages/, 'site content count should include the new update page');
 
     const updatePage = readFileSync(new URL('../src/content/updates/2026-10-04-petit-le-mans-race-day-curation.md', import.meta.url), 'utf8');
     assert.match(updatePage, /50 posts spanning September 11–October 3/, 'update page should document the audit window');
@@ -952,7 +952,7 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(algorithmicHealthPage, /On October 4[^]*Order has been restored[^]*not evidence that the five-hour routine produces its claimed benefits, a reader routine, or medical advice/i, 'algorithmic-health page should record the epilogue with its boundary');
 
     assert.match(signalsSource, /50 Sep 11–Oct 4 posts reviewed/, 'audit window should cover this pass');
-    assert.match(signalsSource, /12 knowledge pages \+ 66 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 67 update pages/, 'site content count should include the new update page');
 
     const updatePage = readFileSync(new URL('../src/content/updates/2026-10-05-road-trip-epilogue-curation.md', import.meta.url), 'utf8');
     assert.match(updatePage, /50 posts spanning September 11–October 4/, 'update page should document the audit window');
@@ -1066,7 +1066,7 @@ describe('home overview and dedicated changelog route', () => {
 
   it('rotates audit-window and site-content counters for the October 6 pass', () => {
     assert.match(signalsSource, /50 Sep 11–Oct 6 posts reviewed/, 'audit window should cover this pass');
-    assert.match(signalsSource, /12 knowledge pages \+ 66 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 67 update pages/, 'site content count should include the new update page');
     assert.match(signalsSource, /7 sources matched earlier pass · FDA zolpidem label/, 'studies-verified counter should cover this pass');
 
     const updatePage = readFileSync(new URL('../src/content/updates/2026-10-06-post-trip-cluster-curation.md', import.meta.url), 'utf8');
@@ -1139,7 +1139,7 @@ describe('home overview and dedicated changelog route', () => {
 
   it('rotates audit-window and site-content counters for the October 7 pass', () => {
     assert.match(signalsSource, /50 Sep 11–Oct 6 posts reviewed last pass via read-only bird user-tweets gap-fill audit/, 'audit window should carry the demoted October 7 label');
-    assert.match(signalsSource, /12 knowledge pages \+ 66 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 67 update pages/, 'site content count should include the new update page');
     assert.match(signalsSource, /4 sources matched last pass · Schopenhauer WWR Vol[.] II marksman passage/, 'studies-verified counter should cover this pass');
     assert.match(signalsSource, /7 sources matched earlier pass · FDA zolpidem label/, 'prior studies-verified counter should carry the October 6 label');
     assert.match(signalsSource, /\{ date: '2026-10-07', x_post: 3/, 'curated activity should recount the October 7 status-games feed');
@@ -1188,21 +1188,55 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(bryanJohnsonSource, /On October 7, the feed produced a three-post status-games cluster[^]*dominance–prestige account[^]*a validated adoption threshold, or medical advice/i, 'bryan-johnson page should record the status-games cluster within the chronology');
   });
 
-  it('rotates audit-window and site-content counters for the October 8 pass', () => {
-    assert.match(signalsSource, /50 Sep 18–Oct 7 posts reviewed via read-only bird user-tweets audit/, 'audit window should cover this pass');
-    assert.match(signalsSource, /12 knowledge pages \+ 66 update pages/, 'site content count should include the new update page');
-    assert.match(signalsSource, /3 sources matched · Centola 2018 Science tipping-point experiments/, 'studies-verified counter should cover this pass');
-    assert.match(signalsSource, /4 sources matched last pass · Schopenhauer WWR Vol[.] II marksman passage/, 'prior studies-verified counter should carry the October 7 label');
-    assert.match(signalsSource, /\{ date: '2026-10-08', x_post: 0/, 'curated activity should include the October 8 site row');
-    assert.match(signalsSource, /\{ date: '2026-10-07', x_post: 3/, 'curated activity should recount the October 7 status-games feed');
+  it('publishes the October 8 Axios/status/childhood-decline cluster with verified interview and CDC/SEARCH context', () => {
+    for (const required of [
+      'axios-shame-arbitrage-cluster',
+      '2108212258312712198',
+      'https://x.com/bryan_johnson/status/2108212258312712198',
+      'https://x.com/bryan_johnson/status/2108214598864413175',
+      'https://x.com/bryan_johnson/status/2108306478788649121',
+      'https://x.com/micsolana/status/2107962976246669595',
+      'The shame arbitrage press used against me for years is now eliminated',
+      'Axios rolled with it',
+      'You can just do things',
+      'another high status signal',
+      'if we don’t get the AI apocalypse the average human lifespan maybe jumps to like 500 years',
+      'They’re in biological decline before their parents',
+      '10.0% (1988–1994) → 21.1% (Aug 2021–Aug 2023)',
+      '5.31%/yr (95% CI 4.46–6.17)',
+      '10.1016/S2213-8587(23)00025-6',
+      'Mike Solana (Founders Fund CMO and Pirate Wires founder)',
+      'the obesity “doubling” is prevalence, not incidence, and the series compares survey waves, not continuous measurement',
+      'not a demonstrated status shift, a life-expectancy forecast, a pediatric-health directive, or medical advice',
+      "confidence: 'medium'",
+    ]) {
+      assert.ok(signalsSource.includes(required), `Axios/status signal should preserve: ${required}`);
+    }
 
-    const updatePage = readFileSync(new URL('../src/content/updates/2026-10-08-health-as-status-cluster-curation.md', import.meta.url), 'utf8');
-    assert.match(updatePage, /50 posts spanning September 18–October 7/, 'update page should document the audit window');
-    assert.match(updatePage, /last covered post: October 6, 19:40 UTC, the manifesto/, 'update page should document the starting point');
-    assert.match(updatePage, /three posts newer than the last covered post, all from October 7, forming one substantive cluster/, 'update page should document the gap tally');
-    assert.match(updatePage, /10[.]1126\/science[.]aas8827/, 'update page should document the Centola verification');
-    assert.match(updatePage, /born September 10, 1977/, 'update page should document the CZ birth-date verification');
-    assert.match(updatePage, /dominance–prestige/, 'update page should document the status-literature verification');
+    assert.match(dashboardSectionsSource, /shame arbitrage press used against me for years is now eliminated[^]*not a demonstrated status shift, a life-expectancy forecast, a pediatric-health directive, or medical advice/i, 'timeline should pair the Axios/status cluster with its boundary');
+
+    const dontDieSource = readFileSync(new URL('../src/content/knowledge/dont-die.md', import.meta.url), 'utf8');
+    assert.match(dontDieSource, /On October 8, the status arc acquired its first mainstream-media validation[^]*10[.]1016\/S2213-8587\(23\)00025-6[^]*not a demonstrated status shift, a life-expectancy forecast, a pediatric-health directive, or medical advice/i, 'dont-die page should record the Axios/status cluster with its boundary');
+
+    const bryanJohnsonSource = readFileSync(new URL('../src/content/knowledge/bryan-johnson.md', import.meta.url), 'utf8');
+    assert.match(bryanJohnsonSource, /On October 8, the feed produced a three-post cluster[^]*Founders Fund CMO, Pirate Wires founder[^]*a pediatric-health directive, or medical advice/i, 'bryan-johnson page should record the Axios/status cluster within the chronology');
+  });
+
+  it('rotates audit-window and site-content counters for the October 8 pass', () => {
+    assert.match(signalsSource, /50 Sep 18–Oct 8 posts reviewed via read-only bird user-tweets audit/, 'audit window should cover this pass');
+    assert.match(signalsSource, /12 knowledge pages \+ 67 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /4 sources matched · Axios October 8 interview coverage/, 'sources-verified counter should cover this pass');
+    assert.match(signalsSource, /3 sources matched last pass · Centola 2018 Science tipping-point experiments/, 'prior studies-verified counter should carry the October 8 label');
+    assert.match(signalsSource, /\{ date: '2026-10-09', x_post: 0/, 'curated activity should include the October 9 site row');
+    assert.match(signalsSource, /\{ date: '2026-10-08', x_post: 3/, 'curated activity should recount the October 8 Axios/status feed');
+
+    const updatePage = readFileSync(new URL('../src/content/updates/2026-10-09-axios-status-childhood-decline-curation.md', import.meta.url), 'utf8');
+    assert.match(updatePage, /50 posts spanning September 18–October 8/, 'update page should document the audit window');
+    assert.match(updatePage, /last covered post: October 7, 17:52 UTC, the status-monkeys premise post/, 'update page should document the starting point');
+    assert.match(updatePage, /three posts newer than the last covered post, all from October 8, forming one substantive cluster/, 'update page should document the gap tally');
+    assert.match(updatePage, /hestat112/, 'update page should document the CDC verification');
+    assert.match(updatePage, /10[.]1016\/S2213-8587\(23\)00025-6/, 'update page should document the SEARCH Lancet verification');
+    assert.match(updatePage, /foundersfund[.]com\/team\/michael-solana/, 'update page should document the Solana attribution verification');
     assert.match(updatePage, /No skip decisions were needed this pass/, 'update page should document the absence of skip decisions');
   });
 
@@ -1213,7 +1247,7 @@ describe('home overview and dedicated changelog route', () => {
     for (const phrase of ['Enhanced Games follow-up', 'Kate Tolo baseline', 'Microplastics testing', '82 unique tweet URLs', '11 tweets with engagement']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `signals/sidebar data should include ${phrase}`);
     }
-    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 66 update pages']) {
+    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 67 update pages']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `source counts should include ${phrase}`);
     }
     assert.doesNotMatch(indexSource, /index \* 17|updateCards\[0\]|next curated publish pass/, 'right sidebar should not use deterministic placeholder formulas or newest-card watch copy');

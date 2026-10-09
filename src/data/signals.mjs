@@ -1,5 +1,27 @@
 export const curatedSignals = [
   {
+    id: 'axios-shame-arbitrage-cluster',
+    title: '“The shame arbitrage press used against me for years is now eliminated”: the Axios interview lands, a second status signal amplifies a 500-year-lifespan musing, and a childhood-decline stats post draws on verified CDC/SEARCH figures',
+    date: '2026-10-08',
+    badge: 'Media',
+    kind: 'tweet',
+    topic: 'Media reception / status games / child metabolic health',
+    summary:
+      'October 8 produced a three-post cluster spanning media reception and the status arc. The anchor: “The shame arbitrage press used against me for years is now eliminated. In this interview, I flexed my: night time erection duration, fertility health, biological age, and that I’m trying to dunk at 49. And, Axios rolled with it. Unthinkable 2 yrs ago. Would’ve been skewered for this weirdness. You can just do things.” The interview is real and the quoted claims verify against Axios’s own October 8 coverage of “The Axios Show” episode: “What creates status and power and prestige is going to be different. And as crazy as it sounds, it may be your nighttime erections... It may be your ability to dunk a basketball at age 49” — a direct restatement of the October 7 status-games thesis now placed in mainstream-outlet framing, alongside the tracked dunk side quest, 4.2 billion collected data points, and the $2M+/yr spend. Two companion posts extended the arc: “another high status signal” quote-posted Mike Solana (Founders Fund CMO and Pirate Wires founder) musing “sort of landing on: if we don’t get the AI apocalypse the average human lifespan maybe jumps to like 500 years or something?” (999 likes) — another high-reach figure normalizing radical life extension, the exact adoption mechanism Johnson theorized on October 7; and the evening stats post: “They’re in biological decline before their parents” with childhood-obesity figures (1988–2023 doubling from 10% to 21.1%, severe obesity nearly tripling 2.6%→7%, type 2 diabetes rising 5.3%/yr 2002–2018). All three figures verify: CDC/NCHS Health E-Stat tables report child/adolescent obesity 10.0% (1988–1994) → 21.1% (Aug 2021–Aug 2023) with severe obesity 2.6% → 7.0%, and the SEARCH for Diabetes in Youth study (Lancet Diabetes & Endocrinology, 2023) reports youth-onset type 2 diabetes incidence rising 5.31%/yr (95% CI 4.46–6.17) from 2002–2018. The boundaries: the obesity “doubling” is prevalence, not incidence, and the series compares survey waves, not continuous measurement; “biological decline before their parents” is Johnson’s framing of correlation, not a demonstrated cross-generational comparison; the Solana quote is a speculative musing, not a forecast or expert consensus; “shame arbitrage is eliminated” is a perception claim about press treatment, not evidence of social change; and nothing here is medical advice. The dashboard records an attributed media/status cluster with verified statistics and interview context—not a demonstrated status shift, a life-expectancy forecast, a pediatric-health directive, or medical advice.',
+    href: '/knowledge/dont-die/',
+    tweetId: '2108212258312712198',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2108212258312712198',
+      'https://x.com/bryan_johnson/status/2108214598864413175',
+      'https://x.com/bryan_johnson/status/2108306478788649121',
+      'https://x.com/micsolana/status/2107962976246669595',
+      'https://www.axios.com/2026/10/08/bryan-johnson-dont-die-longevity',
+      'https://www.cdc.gov/nchs/data/hestat/hestat112.htm',
+      'https://doi.org/10.1016/S2213-8587(23)00025-6',
+    ],
+  },
+  {
     id: 'health-as-status-games-cluster',
     title: 'Health as the premium status symbol: Johnson amplifies CZ’s “compete on health, not lambos” post and sets a 75,000-person adoption threshold',
     date: '2026-10-07',
@@ -1737,12 +1759,14 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Live Bird timeline audit', value: '50', detail: '50 Sep 18–Oct 7 posts reviewed via read-only bird user-tweets audit' },
-  { label: 'Studies verified this pass', value: '3', detail: '3 sources matched · Centola 2018 Science tipping-point experiments + Cheng et al. JPSP 2013 dominance–prestige account + CZ biographical birth-date record' },
-  { label: 'Prior audit window', value: '50', detail: '50 Sep 11–Oct 6 posts reviewed last pass via read-only bird user-tweets gap-fill audit' },
-  { label: 'Prior studies verified', value: '4', detail: '4 sources matched last pass · Schopenhauer WWR Vol. II marksman passage + Chun/Kreider JISSN 2026 creatine RCT + Texas A&M release + trial registry ISRCTN83081058' },
-  { label: 'Earlier audit window', value: '50', detail: '50 Sep 11–Oct 4 posts reviewed earlier pass via read-only bird user-tweets audit' },
+  { label: 'Live Bird timeline audit', value: '50', detail: '50 Sep 18–Oct 8 posts reviewed via read-only bird user-tweets audit' },
+  { label: 'Sources verified this pass', value: '4', detail: '4 sources matched · Axios October 8 interview coverage + CDC/NCHS Health E-Stat 112 + SEARCH Lancet 2023 T2D trends + Founders Fund bio for Solana attribution' },
+  { label: 'Prior audit window', value: '50', detail: '50 Sep 18–Oct 7 posts reviewed last pass via read-only bird user-tweets audit' },
+  { label: 'Prior studies verified', value: '3', detail: '3 sources matched last pass · Centola 2018 Science tipping-point experiments + Cheng et al. JPSP 2013 dominance–prestige account + CZ biographical birth-date record' },
+  { label: 'Earlier audit window', value: '50', detail: '50 Sep 11–Oct 6 posts reviewed last pass via read-only bird user-tweets gap-fill audit' },
+  { label: 'Earlier studies verified', value: '4', detail: '4 sources matched last pass · Schopenhauer WWR Vol. II marksman passage + Chun/Kreider JISSN 2026 creatine RCT + Texas A&M release + trial registry ISRCTN83081058' },
   { label: 'Earlier studies verified', value: '7', detail: '7 sources matched earlier pass · FDA zolpidem label + FDA 2013 safety communication + MMAS testosterone + BLSA testosterone + sarcopenia quantitative review + Berry 1984 BPH autopsy series + Wittbrodt 2018 dehydration meta-analysis' },
+  { label: 'Earlier audit window', value: '50', detail: '50 Sep 11–Oct 4 posts reviewed earlier pass via read-only bird user-tweets audit' },
   { label: 'Earlier audit window', value: '30', detail: '30 Sep 18–Oct 2 posts reviewed earlier pass via read-only bird user-tweets audit' },
   { label: 'Earlier studies verified', value: '4', detail: '4 sources matched earlier pass · IMSA Petit Le Mans entry list + 2014 Le Mans records + 2 driver-physiology studies' },
   { label: 'Earlier audit window', value: '30', detail: '30 Sep 17–Oct 1 posts reviewed earlier pass via read-only bird user-tweets audit' },
@@ -1771,11 +1795,12 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '78', detail: '12 knowledge pages + 66 update pages after this pass' },
+  { label: 'Public site content', value: '79', detail: '12 knowledge pages + 67 update pages after this pass' },
 ];
 
 export const curatedActivity = [
-  { date: '2026-10-08', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-09', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-08', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-07', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-06', x_post: 8, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-05', x_post: 5, third_party: 0, wiki_update: 0, site_update: 1 },
