@@ -1,5 +1,43 @@
 export const curatedSignals = [
   {
+    id: 'female-nte-measurement-extension',
+    title: 'Nighttime-erection monitoring extends to Kate Tolo: a $275 consumer device meets a $15,723.68 lab setup in the 1,900-biomarker program',
+    date: '2026-10-09',
+    badge: 'Female health',
+    kind: 'tweet',
+    topic: 'Nighttime erections / female health measurement',
+    summary:
+      'Two days after telling Axios that nighttime erections may become the new prestige metric, Johnson extended the track to a second subject in a two-post cluster. The announcement — “I am measuring my girlfriend’s erections” (2,244 likes) — was followed by the protocol detail (267 likes): “Erections are a Tier-1 health marker. In men, ED typically shows up 2-5 years before heart symptoms”; “Women have erections too... The clitoris is erectile tissue, same as men. During REM sleep, blood flow spontaneously increases”; his own counts (4-5 erections per night, averaging 3+ hours); his $275 wireless device that “scores each erection on my phone” against Kate Tolo’s lab setup — a 5 cm probe and a light with a sensor, costing $15,723.68, running “through a wire taped to her leg, into a machine” streaming to a laptop “that cannot be allowed to fall asleep” — closing with nighttime erections being “downstream of whole body health” and “one of 1,900 biomarkers she’s tracking across her menstrual cycle.” The checkable parts verify in direction: the 2–5-year window between ED onset and coronary events is the published Princeton III/IV consensus finding in men, and the female phenomenon is real but thin — Karacan et al. (1970) first recorded the clitoral erection cycle during sleep, and Fisher et al. (1983; Archives of Sexual Behavior, 10.1007/BF01541556; 10 women aged 21–35, vaginal thermoconductance) found cyclic REM-linked engorgement episodes equivalent to male erections in 95% of REM periods, though shorter, more often outside REM, and less tightly REM-linked. The boundaries: the male consensus concerns clinical erectile dysfunction, not consumer NTE scores; the female evidence base is two small studies from 1970/1983 measuring vaginal blood flow, not clitoral rigidity scores, and no published study links female nocturnal engorgement to cardiovascular outcomes; the device prices, nightly counts, and the 1,900-biomarker figure are program claims (1,900 matches the July program specification, not a published dataset); and nothing here validates at-home erection scoring for readers of either sex. The dashboard records an attributed N=1 program-extension claim with verified literature direction—not a validated female health-risk tool, a monitoring recommendation, or medical advice.',
+    href: '/knowledge/biomarker-driven-longevity-protocols/',
+    tweetId: '2108705788986634435',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2108705219941183934',
+      'https://x.com/bryan_johnson/status/2108705788986634435',
+      'https://doi.org/10.1007/BF01541556',
+      'https://pmc.ncbi.nlm.nih.gov/articles/PMC3498391/',
+    ],
+  },
+  {
+    id: 'sleep-duration-time-in-bed-guidance',
+    title: 'Johnson endorses 6.5–7.5 hours of sleep as “ideal,” with 7.5–8.5 hours in bed at 85–90% efficiency',
+    date: '2026-10-09',
+    badge: 'Sleep',
+    kind: 'tweet',
+    topic: 'Sleep duration guidance',
+    summary:
+      'Quote-posting an account declaring “8 hrs was a psyop anyways” (BowTiedPhys, 5,375 likes, attached graph), Johnson posted the day’s highest-engagement item (3,040 likes): “7.5-8.5 hr time in bed is accurate. 6.5-7.5 hr of sleep is ideal which means 7.5-8.5 hr time in bed assuming 85-90% efficiency. The below graph is self reported from questionnaire. 7 hr in bed is too short.” The arithmetic is internally consistent (6.5–7.5 h of sleep at 85–90% efficiency implies roughly 7.2–8.8 h in bed), and the efficiency band matches the National Sleep Foundation’s 2017 consensus that sleep efficiency of ≥85% is an appropriate indicator of good sleep quality across age groups (Ohayon et al., Sleep Health; PubMed 28346153). But the duration claim sits partly below expert consensus: the American Academy of Sleep Medicine and Sleep Research Society recommend adults regularly sleep 7 or more hours per night (Watson et al., 2015), so the 6.5-hour floor is under the consensus threshold and “ideal” is Johnson’s gloss on self-reported questionnaire data — a limitation his own post concedes. “8 hrs was a psyop” is the quoted account’s framing, not Johnson’s, and no cited source accompanies the graph. The dashboard records attributed sleep-duration guidance with verified efficiency context and the consensus floor noted—not a reader sleep prescription or medical advice.',
+    href: '/sleep/',
+    tweetId: '2108530005596877045',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2108530005596877045',
+      'https://x.com/BowTiedPhys/status/2108181900107902986',
+      'https://pubmed.ncbi.nlm.nih.gov/28346153/',
+      'https://pmc.ncbi.nlm.nih.gov/articles/PMC4442216/',
+    ],
+  },
+  {
     id: 'axios-shame-arbitrage-cluster',
     title: '“The shame arbitrage press used against me for years is now eliminated”: the Axios interview lands, a second status signal amplifies a 500-year-lifespan musing, and a childhood-decline stats post draws on verified CDC/SEARCH figures',
     date: '2026-10-08',
@@ -1759,11 +1797,12 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Live Bird timeline audit', value: '50', detail: '50 Sep 18–Oct 8 posts reviewed via read-only bird user-tweets audit' },
-  { label: 'Sources verified this pass', value: '4', detail: '4 sources matched · Axios October 8 interview coverage + CDC/NCHS Health E-Stat 112 + SEARCH Lancet 2023 T2D trends + Founders Fund bio for Solana attribution' },
-  { label: 'Prior audit window', value: '50', detail: '50 Sep 18–Oct 7 posts reviewed last pass via read-only bird user-tweets audit' },
-  { label: 'Prior studies verified', value: '3', detail: '3 sources matched last pass · Centola 2018 Science tipping-point experiments + Cheng et al. JPSP 2013 dominance–prestige account + CZ biographical birth-date record' },
+  { label: 'Live Bird timeline audit', value: '50', detail: '50 Sep 18–Oct 9 posts reviewed via read-only bird user-tweets audit' },
+  { label: 'Sources verified this pass', value: '4', detail: '4 sources matched · Princeton III ED-precedes-CVD consensus + Fisher et al. 1983 female REM engorgement study + NSF 2017 sleep-efficiency consensus + AASM/SRS 2015 sleep-duration consensus' },
+  { label: 'Prior audit window', value: '50', detail: '50 Sep 18–Oct 8 posts reviewed last pass via read-only bird user-tweets audit' },
+  { label: 'Prior studies verified', value: '4', detail: '4 sources matched last pass · Axios October 8 interview coverage + CDC/NCHS Health E-Stat 112 + SEARCH Lancet 2023 T2D trends + Founders Fund bio for Solana attribution' },
   { label: 'Earlier audit window', value: '50', detail: '50 Sep 11–Oct 6 posts reviewed last pass via read-only bird user-tweets gap-fill audit' },
+  { label: 'Earlier studies verified', value: '3', detail: '3 sources matched last pass · Centola 2018 Science tipping-point experiments + Cheng et al. JPSP 2013 dominance–prestige account + CZ biographical birth-date record' },
   { label: 'Earlier studies verified', value: '4', detail: '4 sources matched last pass · Schopenhauer WWR Vol. II marksman passage + Chun/Kreider JISSN 2026 creatine RCT + Texas A&M release + trial registry ISRCTN83081058' },
   { label: 'Earlier studies verified', value: '7', detail: '7 sources matched earlier pass · FDA zolpidem label + FDA 2013 safety communication + MMAS testosterone + BLSA testosterone + sarcopenia quantitative review + Berry 1984 BPH autopsy series + Wittbrodt 2018 dehydration meta-analysis' },
   { label: 'Earlier audit window', value: '50', detail: '50 Sep 11–Oct 4 posts reviewed earlier pass via read-only bird user-tweets audit' },
@@ -1795,11 +1834,12 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '79', detail: '12 knowledge pages + 67 update pages after this pass' },
+  { label: 'Public site content', value: '80', detail: '12 knowledge pages + 68 update pages after this pass' },
 ];
 
 export const curatedActivity = [
-  { date: '2026-10-09', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-10', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-09', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-08', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-07', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-06', x_post: 8, third_party: 0, wiki_update: 0, site_update: 1 },
