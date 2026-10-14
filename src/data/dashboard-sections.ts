@@ -349,6 +349,16 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-10-13',
+    label: '“The Blue Zones are an illusion”: Johnson amplifies the Easter–Newman debunking of longevity hotspots',
+    summary:
+      'October 13 produced the feed’s first population-longevity claim: Johnson’s one-line “The Blue Zones are an illusion” (279 likes) quote-posting Michael Easter’s August 3 debunking thread (2,678 likes) — “The Blue Zones—places where people supposedly live past 100 at extraordinary rates—aren’t real. A 🧵 on what went wrong: bad record keeping, pension fraud, and lots of money.” The thread traces to Oxford/UCL researcher Saul Justin Newman, whose extreme-age demography work won the 2024 Ig Nobel Prize in Demography, and its checkable parts verify against the documented record: Japan’s 2010 government review found 82% of the country’s listed over-100 population already dead (roughly 230,000 people alive on paper only), Italy’s 1997 pension audit found about 30,000 “living” recipients deceased, Costa Rica’s 2008 review found 42% of alleged centenarians had misstated their age, and Japanese government data show Okinawans eat the least vegetables and sweet potatoes in Japan while recording the country’s highest BMI — the opposite of the marketed Blue Zone diet. The structural finding runs the same direction: 82% of American supercentenarian records predate statewide birth certification, and supercentenarian counts collapsed once states completed birth registration. The boundaries: Newman’s critique remains a non-peer-reviewed preprint, and working demographers and gerontologists push back — Sardinia’s Blue Zone researchers (Pes, Poulain et al.) defend their validated records, Zurich geriatrics chair Heike Bischoff-Ferrari calls “paradigm shift” talk premature given independent evidence for activity, moderate intake, and social connection, and Lausanne gerontologist Daniela Jopp questions inferring pension fraud from poverty correlation. “Illusion” is Johnson’s and Easter’s gloss on a contested critique, not a settled demographic result. The dashboard records an attributed amplification of an evidence-backed but disputed debunking—not a settled finding that no population exhibits exceptional longevity, a dietary directive, or medical advice. The same window’s sarcasm pivot post (quote-posting a Polymarket satire item, 3,738 likes — the window’s highest engagement but a joke), the dunk-training protocol video (the umpteenth dunk-chronology skip), and the coolness-peak/vocabulary/social-platform/“generational insanity” aphorisms and the “training for this moment my entire life” joke quote-post (23,987 likes) were reviewed and kept as chronology-only or engagement-banter posts that do not materially change the public knowledge model.',
+    relatedHref: '/longevity/',
+    relatedTitle: 'Longevity claims',
+    source: 'https://x.com/bryan_johnson/status/2110155459781112084',
+    confidence: 'medium',
+  },
+  {
     date: '2026-10-09',
     label: 'Nighttime-erection monitoring extends to Kate Tolo; 6.5–7.5 hours of sleep endorsed as “ideal”',
     summary:
