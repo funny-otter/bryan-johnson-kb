@@ -1,5 +1,24 @@
 export const curatedSignals = [
   {
+    id: 'genome-actionability-admission',
+    title: '“I can’t find a way to use my genome”: the measurement program’s first candid negative result — and the population genetics says that is the modal outcome',
+    date: '2026-10-14',
+    badge: 'Claim',
+    kind: 'tweet',
+    topic: 'Genome sequencing / clinical actionability',
+    summary:
+      'Johnson posted the feed’s first candid negative result about his own measurement program: “I can’t find a way to use my genome. I’m the most intense longevity athlete in the world and haven’t used my genome for a single thing. Fully sequenced in 2012. Again this year, paying $7,902 for matched 30x long read + 100x short read. Still, nothing. What am I missing?” (1,937 likes, 521 replies). The admission is consistent with the site’s tracked record — his June 2026 Invitae panel across 71 inherited-cancer genes found no pathogenic variants — and with population genomics: the deCODE study of 57,933 whole-genome-sequenced Icelanders (NEJM, 10.1056/NEJMoa2300792) found 4.0% (1 in 25) carry at least one actionable genotype on the ACMG Secondary Findings v3.0 list, meaning ~96% of sequenced adults carry none, and national programs report similar yields (Korea’s bio-big-data pilot: 3.75% of 7,472 genomes; Qatar Genome Program: 3.5% under SF v3.1). Washington State’s 2024 WGS evidence report found ACMG-actionable secondary findings in 0–12.5% of tested persons across five studies, with very-low certainty that diagnosis changes management or outcomes. The boundaries: the $7,902 price and the matched 30x long-read + 100x short-read resequencing are program claims; “most intense longevity athlete in the world” is self-description; and one person’s null result is not evidence that sequencing is useless — carrier screening before pregnancy, pharmacogenomics, and diagnostic contexts for suspected genetic disease operate under different yield math, and the 521-reply suggestion thread was not independently assessed. The dashboard records an attributed negative-result admission with verified prevalence context—not a testing recommendation for or against sequencing, or medical advice.',
+    href: '/longevity/',
+    tweetId: '2110438813122359731',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2110438813122359731',
+      'https://doi.org/10.1056/NEJMoa2300792',
+      'https://www.hca.wa.gov/assets/program/WGS-final-report-2024.pdf',
+      'https://pmc.ncbi.nlm.nih.gov/articles/PMC10602966/',
+    ],
+  },
+  {
     id: 'blue-zones-illusion-claim',
     title: '“The Blue Zones are an illusion”: Johnson amplifies the Easter–Newman debunking of longevity hotspots — the fraud records verify, and so does the scientific pushback',
     date: '2026-10-13',
@@ -1816,10 +1835,12 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Live Bird timeline audit', value: '50', detail: '50 Sep 24–Oct 14 posts reviewed via read-only bird user-tweets audit' },
-  { label: 'Sources verified this pass', value: '4', detail: '4 sources matched · UCL Newman Ig Nobel announcement + NZZ English Newman interview (Japan 2010 / Italy 1997 / Costa Rica 2008 audits + Okinawa diet/BMI data) + Easter thread text + Johnson QP engagement' },
-  { label: 'Prior audit window', value: '50', detail: '50 Sep 18–Oct 9 posts reviewed last pass via read-only bird user-tweets audit' },
-  { label: 'Prior studies verified', value: '4', detail: '4 sources matched last pass · Princeton III ED-precedes-CVD consensus + Fisher et al. 1983 female REM engorgement study + NSF 2017 sleep-efficiency consensus + AASM/SRS 2015 duration consensus' },
+  { label: 'Live Bird timeline audit', value: '50', detail: '50 Sep 25–Oct 15 posts reviewed via read-only bird user-tweets audit' },
+  { label: 'Sources verified this pass', value: '3', detail: '3 sources matched · NEJM deCODE Iceland actionable-genotype study (10.1056/NEJMoa2300792) + WA HCA 2024 WGS final evidence report + Korean SF-frequency study (7,472 genomes)' },
+  { label: 'Prior audit window', value: '50', detail: '50 Sep 24–Oct 14 posts reviewed last pass via read-only bird user-tweets audit' },
+  { label: 'Prior sources verified', value: '4', detail: '4 sources matched last pass · UCL Newman Ig Nobel announcement + NZZ English Newman interview (Japan 2010 / Italy 1997 / Costa Rica 2008 audits + Okinawa diet/BMI data) + Easter thread text + Johnson QP engagement' },
+  { label: 'Earlier audit window', value: '50', detail: '50 Sep 18–Oct 9 posts reviewed last pass via read-only bird user-tweets audit' },
+  { label: 'Earlier studies verified', value: '4', detail: '4 sources matched last pass · Princeton III ED-precedes-CVD consensus + Fisher et al. 1983 female REM engorgement study + NSF 2017 sleep-efficiency consensus + AASM/SRS 2015 duration consensus' },
   { label: 'Earlier studies verified', value: '4', detail: '4 sources matched last pass · Axios October 8 interview coverage + CDC/NCHS Health E-Stat 112 + SEARCH Lancet 2023 T2D trends + Founders Fund bio for Solana attribution' },
   { label: 'Earlier audit window', value: '50', detail: '50 Sep 11–Oct 6 posts reviewed last pass via read-only bird user-tweets gap-fill audit' },
   { label: 'Earlier studies verified', value: '3', detail: '3 sources matched last pass · Centola 2018 Science tipping-point experiments + Cheng et al. JPSP 2013 dominance–prestige account + CZ biographical birth-date record' },
@@ -1854,11 +1875,12 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '81', detail: '12 knowledge pages + 69 update pages after this pass' },
+  { label: 'Public site content', value: '82', detail: '12 knowledge pages + 70 update pages after this pass' },
 ];
 
 export const curatedActivity = [
-  { date: '2026-10-14', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-15', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-14', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-13', x_post: 2, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-12', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-11', x_post: 4, third_party: 0, wiki_update: 0, site_update: 1 },

@@ -349,6 +349,16 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-10-14',
+    label: '“I can’t find a way to use my genome”: the measurement program publishes its first candid negative result',
+    summary:
+      'The day after the Blue Zones amplification, Johnson posted the feed’s first candid negative result about his own program: “I can’t find a way to use my genome. I’m the most intense longevity athlete in the world and haven’t used my genome for a single thing. Fully sequenced in 2012. Again this year, paying $7,902 for matched 30x long read + 100x short read. Still, nothing. What am I missing?” (1,937 likes, 521 replies). The admission is consistent with the dashboard’s tracked record — his June 2026 Invitae panel across 71 inherited-cancer genes found no pathogenic variants — and with population genomics: the deCODE study of 57,933 whole-genome-sequenced Icelanders (NEJM, 10.1056/NEJMoa2300792) found 4.0% (1 in 25) carry at least one actionable genotype on the ACMG Secondary Findings v3.0 list, meaning roughly 96% of sequenced adults carry none; Korea’s national pilot found 3.75% of 7,472 genomes; Qatar’s program found 3.5% under SF v3.1; and Washington State’s 2024 WGS evidence review reported ACMG-actionable secondary findings in 0–12.5% of tested persons with very-low certainty that findings change management or outcomes. The boundaries: the $7,902 price and the matched 30x long-read + 100x short-read resequencing are program claims; “most intense longevity athlete in the world” is self-description; and one person’s null result does not make sequencing useless — carrier screening, pharmacogenomics, and diagnostic contexts for suspected genetic disease operate under different yield math, and the 521-reply suggestion thread was not independently assessed. The dashboard records an attributed negative-result admission with verified prevalence context—not a testing recommendation for or against sequencing, or medical advice. The same window’s other posts — the “Built a Type III Kardashev Civilization” LinkedIn joke (1,519 likes) and the retweet of a psychedelics-benchmark satire account (October 15, 01:05 UTC) — were reviewed and kept as engagement-banter posts that do not materially change the public knowledge model.',
+    relatedHref: '/longevity/',
+    relatedTitle: 'Longevity claims',
+    source: 'https://x.com/bryan_johnson/status/2110438813122359731',
+    confidence: 'medium',
+  },
+  {
     date: '2026-10-13',
     label: '“The Blue Zones are an illusion”: Johnson amplifies the Easter–Newman debunking of longevity hotspots',
     summary:
