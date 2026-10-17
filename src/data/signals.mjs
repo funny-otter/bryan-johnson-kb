@@ -1,5 +1,22 @@
 export const curatedSignals = [
   {
+    id: 'rhr-status-engineering-disclosure',
+    title: '“Resting heart is the new thirst trap”: Johnson explains how he engineered a biomarker into a status symbol — the mortality predictor is real, the playbook and the promises are the claims',
+    date: '2026-10-16',
+    badge: 'Ideology',
+    kind: 'tweet',
+    topic: 'Don’t Die ideology / status games / RHR marketing',
+    summary:
+      'Nine days after the CZ status-games cluster, Johnson published the feed’s first first-person account of deliberately engineering a health metric into a status symbol: “Resting heart is the new thirst trap. It’s the sexiest thing about you. Since 2021 I’ve posted about RHR: > 207 times > generating 366,220 likes > 78.3 million views… Now it’s a mainstream symbol of high status. People will adopt something if it helps them get access to sex, money or power… I had to break RHR out of esoteric health and into status and social signaling. RHR needed to represent a person’s youth and vibrancy and signal genetic fitness. So I hit the topic from more than ten angles: > masculinity > cognitive performance > fertility > sexual health > discipline > will power > judgement > health > peer status > values > rebellion against status quo” (846 likes, 82 replies, 33 reposts; October 16, 17:35 UTC). The post closes with prescriptive claims: an RHR of 41 before bed portends “a perfect night sleep… That’s the 99% percentile sleep performance for an 18 year old,” a six-item sleep-hygiene list (food finished four hours before bed, screens off 30–60 minutes before, caffeine done by noon, red/amber light, reading, a wind-down routine), and “Do these things and I promise every part of your life will improve.” The checkable science verifies in direction: the CMAJ 2016 meta-analysis of 46 prospective cohorts (Zhang, Shen, Qi; 10.1503/cmaj.150535; 1,246,203 adults, 78,349 deaths) found each 10 beats/min higher resting heart rate associated with all-cause mortality RR 1.09 (95% CI 1.07–1.12) and cardiovascular mortality RR 1.08, with RHR >80 bpm at RR 1.45 for all-cause mortality and a linear dose–response from the 45 bpm reference, independent of traditional risk factors — and the posting campaign itself corroborates live: a bounded Bird search of the feed directly returns the RHR posts (a 39 bpm morning readout September 6, “resting heart rate down 12%” September 30, “up 16%” at 7,000 ft September 29, forest-bathing “lowered 10%” May 11, “The highest value thing anyone can do… is to lower your resting heart rate before bed” April 25). The boundaries: the 207-post count, 366,220 likes, and 78.3 million views are self-reported X analytics not independently auditable; “the single number to rule all other numbers” converts a population-level mortality predictor into a personal directive; “signal genetic fitness” is marketing language with no genetics content; the RHR-41 “perfect night sleep” and 99th-percentile claims are unevaluated N=1 wearables; the sleep-hygiene list is generic but is sold with a guarantee rather than evidence; and a predictor of mortality is not proof that lowering RHR by any particular routine extends life — the meta-analysis detected publication bias (trim-and-fill corrected all-cause RR 1.04), notes resting heart rate is not recommended in US/European cardiovascular risk-assessment guidelines, and calls for trials to establish whether heart-rate reduction changes outcomes. The dashboard records an attributed ideology-and-marketing disclosure with verified outcome-predictor context—not a validated adoption trend, a sleep protocol, a health directive, or medical advice.',
+    href: '/knowledge/dont-die/',
+    tweetId: '2111149094576202049',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2111149094576202049',
+      'https://doi.org/10.1503/cmaj.150535',
+    ],
+  },
+  {
     id: 'genome-actionability-admission',
     title: '“I can’t find a way to use my genome”: the measurement program’s first candid negative result — and the population genetics says that is the modal outcome',
     date: '2026-10-14',
@@ -1835,10 +1852,12 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Live Bird timeline audit', value: '50', detail: '50 Sep 25–Oct 15 posts reviewed via read-only bird user-tweets audit' },
-  { label: 'Sources verified this pass', value: '3', detail: '3 sources matched · NEJM deCODE Iceland actionable-genotype study (10.1056/NEJMoa2300792) + WA HCA 2024 WGS final evidence report + Korean SF-frequency study (7,472 genomes)' },
-  { label: 'Prior audit window', value: '50', detail: '50 Sep 24–Oct 14 posts reviewed last pass via read-only bird user-tweets audit' },
-  { label: 'Prior sources verified', value: '4', detail: '4 sources matched last pass · UCL Newman Ig Nobel announcement + NZZ English Newman interview (Japan 2010 / Italy 1997 / Costa Rica 2008 audits + Okinawa diet/BMI data) + Easter thread text + Johnson QP engagement' },
+  { label: 'Live Bird timeline audit', value: '50', detail: '50 Oct 2–16 posts reviewed via read-only bird user-tweets audit' },
+  { label: 'Sources verified this pass', value: '3', detail: '3 sources matched · CMAJ 2016 RHR–mortality meta-analysis (46 cohorts, 1,246,203 adults, 10.1503/cmaj.150535) + live Bird search corroboration of the RHR posting campaign + post engagement metrics' },
+  { label: 'Prior audit window', value: '50', detail: '50 Sep 25–Oct 15 posts reviewed last pass via read-only bird user-tweets audit' },
+  { label: 'Prior sources verified', value: '3', detail: '3 sources matched last pass · NEJM deCODE Iceland actionable-genotype study (10.1056/NEJMoa2300792) + WA HCA 2024 WGS final evidence report + Korean SF-frequency study (7,472 genomes)' },
+  { label: 'Earlier audit window', value: '50', detail: '50 Sep 24–Oct 14 posts reviewed last pass via read-only bird user-tweets audit' },
+  { label: 'Earlier sources verified', value: '4', detail: '4 sources matched last pass · UCL Newman Ig Nobel announcement + NZZ English Newman interview (Japan 2010 / Italy 1997 / Costa Rica 2008 audits + Okinawa diet/BMI data) + Easter thread text + Johnson QP engagement' },
   { label: 'Earlier audit window', value: '50', detail: '50 Sep 18–Oct 9 posts reviewed last pass via read-only bird user-tweets audit' },
   { label: 'Earlier studies verified', value: '4', detail: '4 sources matched last pass · Princeton III ED-precedes-CVD consensus + Fisher et al. 1983 female REM engorgement study + NSF 2017 sleep-efficiency consensus + AASM/SRS 2015 duration consensus' },
   { label: 'Earlier studies verified', value: '4', detail: '4 sources matched last pass · Axios October 8 interview coverage + CDC/NCHS Health E-Stat 112 + SEARCH Lancet 2023 T2D trends + Founders Fund bio for Solana attribution' },
@@ -1875,11 +1894,13 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '82', detail: '12 knowledge pages + 70 update pages after this pass' },
+  { label: 'Public site content', value: '83', detail: '12 knowledge pages + 71 update pages after this pass' },
 ];
 
 export const curatedActivity = [
-  { date: '2026-10-15', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-17', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-16', x_post: 4, third_party: 0, wiki_update: 0, site_update: 0 },
+  { date: '2026-10-15', x_post: 5, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-14', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-13', x_post: 2, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-12', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1 },
