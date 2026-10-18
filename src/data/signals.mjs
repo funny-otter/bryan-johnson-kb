@@ -1,5 +1,25 @@
 export const curatedSignals = [
   {
+    id: 'sleep-deviation-meme-cluster',
+    title: '“I got 4 hr 41 min of sleep 😭”: the sleep brand’s most-public deviation — a viral “man who invented going to bed” meme, a candid wearable confession, and an off-the-record Theranos-doc interview',
+    date: '2026-10-17',
+    badge: 'Sleep',
+    kind: 'tweet',
+    topic: 'Sleep consistency / public perception / media',
+    summary:
+      'Twenty-two hours after promising that an RHR of 41 before bed portends “a perfect night sleep,” Johnson posted the highest-engagement @bryan_johnson message in any window this dashboard has audited: “I got 4 hr 41 min of sleep 😭” (20,760 likes, 157 replies, 216 reposts; the previous tracked maximum for his own posts was 9,557) — quote-posting a viral joke from the previous night’s private screening of the Theranos documentary “You Can See Everything”: “bf complaining that the You Can See Everything screening is going past his bedtime while bryan johnson sits two rows ahead of us. sir you are in the presence of the man who invented going to bed.” (@paularambles, 12,955 likes). The joke documents from outside what the October 16 status-engineering disclosure described from the inside — the sleep brand is now legible enough that strangers know his bedtime and find its violation funny — and the confession documents the deviation the brand rarely shows: 4 hr 41 min sits below his own endorsed “6.5-7.5 hr of sleep is ideal” band and below the AASM/SRS consensus floor of 7 or more hours per night (Watson et al., 2015), on a night he chose a private screening over bedtime. He followed with deadpan recovery humor (“thank you everyone for your thoughts and prayers,” 908 likes) and a media post revealing he had interviewed Billy Evans, Elizabeth Holmes’s partner, after the screening: “I can’t say what we talked about because it was off the record. But I will say the doc is a masterpiece… I gave him every opportunity to defend himself and strike back because Fielder roughed him up, and yet, he demurred… Most entered the evening unequivocally believing Holmes is guilty and many left unsure what just happened” (1,397 likes). The film verifies: “You Can See Everything” (A24), directed by Nathan Fielder and Lance Oppenheim about Holmes and Evans, opened in US theaters October 16, 2026 — the night of the private screening. The boundaries: engagement figures drift and were read at curation time; the meme is third-party banter retained because it independently documents how the sleep brand reads in public; the 4h41m figure is a self-reported one-night wearable readout with no posted cause-and-effect analysis — one short night is not a health event, and his own framework treats sleep consistency, not any single night, as the signal; the Evans interview content is off the record, so only Johnson’s public characterization exists — his “masterpiece” verdict and the attendee reactions are his account, not film criticism this site endorses. The dashboard records an attributed consistency-deviation and public-perception cluster with verified film context—not a protocol failure verdict, a sleep recommendation, or medical advice.',
+    href: '/sleep/',
+    tweetId: '2111486128809517355',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2111486128809517355',
+      'https://x.com/paularambles/status/2111347609696952365',
+      'https://x.com/bryan_johnson/status/2111580908914639119',
+      'https://en.wikipedia.org/wiki/You_Can_See_Everything',
+      'https://www.npr.org/2026/10/16/nx-s1-6003625/elizabeth-holmes-nathan-fielder-documentary-review',
+    ],
+  },
+  {
     id: 'rhr-status-engineering-disclosure',
     title: '“Resting heart is the new thirst trap”: Johnson explains how he engineered a biomarker into a status symbol — the mortality predictor is real, the playbook and the promises are the claims',
     date: '2026-10-16',
@@ -1852,10 +1872,12 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Live Bird timeline audit', value: '50', detail: '50 Oct 2–16 posts reviewed via read-only bird user-tweets audit' },
-  { label: 'Sources verified this pass', value: '3', detail: '3 sources matched · CMAJ 2016 RHR–mortality meta-analysis (46 cohorts, 1,246,203 adults, 10.1503/cmaj.150535) + live Bird search corroboration of the RHR posting campaign + post engagement metrics' },
-  { label: 'Prior audit window', value: '50', detail: '50 Sep 25–Oct 15 posts reviewed last pass via read-only bird user-tweets audit' },
-  { label: 'Prior sources verified', value: '3', detail: '3 sources matched last pass · NEJM deCODE Iceland actionable-genotype study (10.1056/NEJMoa2300792) + WA HCA 2024 WGS final evidence report + Korean SF-frequency study (7,472 genomes)' },
+  { label: 'Live Bird timeline audit', value: '50', detail: '50 Oct 3–17 posts reviewed via read-only bird user-tweets audit' },
+  { label: 'Sources verified this pass', value: '3', detail: '3 sources matched · You Can See Everything film record (A24 Fielder/Oppenheim, US release October 16, 2026) + viral screening-meme source post + post engagement metrics' },
+  { label: 'Prior audit window', value: '50', detail: '50 Oct 2–16 posts reviewed last pass via read-only bird user-tweets audit' },
+  { label: 'Prior sources verified', value: '3', detail: '3 sources matched last pass · CMAJ 2016 RHR–mortality meta-analysis (46 cohorts, 1,246,203 adults, 10.1503/cmaj.150535) + live Bird search corroboration of the RHR posting campaign + post engagement metrics' },
+  { label: 'Earlier audit window', value: '50', detail: '50 Sep 25–Oct 15 posts reviewed last pass via read-only bird user-tweets audit' },
+  { label: 'Earlier sources verified', value: '3', detail: '3 sources matched last pass · NEJM deCODE Iceland actionable-genotype study (10.1056/NEJMoa2300792) + WA HCA 2024 WGS final evidence report + Korean SF-frequency study (7,472 genomes)' },
   { label: 'Earlier audit window', value: '50', detail: '50 Sep 24–Oct 14 posts reviewed last pass via read-only bird user-tweets audit' },
   { label: 'Earlier sources verified', value: '4', detail: '4 sources matched last pass · UCL Newman Ig Nobel announcement + NZZ English Newman interview (Japan 2010 / Italy 1997 / Costa Rica 2008 audits + Okinawa diet/BMI data) + Easter thread text + Johnson QP engagement' },
   { label: 'Earlier audit window', value: '50', detail: '50 Sep 18–Oct 9 posts reviewed last pass via read-only bird user-tweets audit' },
@@ -1894,11 +1916,12 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '83', detail: '12 knowledge pages + 71 update pages after this pass' },
+  { label: 'Public site content', value: '84', detail: '12 knowledge pages + 72 update pages after this pass' },
 ];
 
 export const curatedActivity = [
-  { date: '2026-10-17', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-18', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-17', x_post: 4, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-16', x_post: 4, third_party: 0, wiki_update: 0, site_update: 0 },
   { date: '2026-10-15', x_post: 5, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-14', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },

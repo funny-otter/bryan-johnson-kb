@@ -349,6 +349,16 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-10-17',
+    label: '“I got 4 hr 41 min of sleep 😭”: the sleep brand meets its most-public deviation — a viral meme, a candid confession, and a Theranos-doc interview',
+    summary:
+      'Twenty-two hours after promising that an RHR of 41 before bed portends “a perfect night sleep,” Johnson posted the highest-engagement message of any audited window: “I got 4 hr 41 min of sleep 😭” (20,760 likes, 157 replies, 216 reposts; the previous tracked maximum for his own posts was 9,557) — quote-posting a viral joke from the previous night’s private screening of the Theranos documentary “You Can See Everything”: “bf complaining that the You Can See Everything screening is going past his bedtime while bryan johnson sits two rows ahead of us. sir you are in the presence of the man who invented going to bed.” (@paularambles, 12,955 likes). The joke documents from outside what the October 16 status-engineering disclosure described from the inside — the sleep brand is legible enough that strangers know his bedtime and find its violation funny — and the confession documents the deviation the brand rarely shows: 4 hr 41 min sits below his own endorsed “6.5-7.5 hr of sleep is ideal” band and below the AASM/SRS consensus floor of 7 or more hours per night (Watson et al., 2015), on a night he chose a private screening over bedtime. He followed with deadpan recovery humor (“thank you everyone for your thoughts and prayers,” 908 likes) and a media post revealing he had interviewed Billy Evans, Elizabeth Holmes’s partner, after the screening — “I can’t say what we talked about because it was off the record. But I will say the doc is a masterpiece… I gave him every opportunity to defend himself and strike back because Fielder roughed him up, and yet, he demurred… Most entered the evening unequivocally believing Holmes is guilty and many left unsure what just happened” (1,397 likes). The film verifies: “You Can See Everything” (A24), directed by Nathan Fielder and Lance Oppenheim about Holmes and Evans, opened in US theaters October 16, 2026 — the night of the private screening. The boundaries: engagement figures drift and were read at curation time; the meme is third-party banter retained because it independently documents how the sleep brand reads in public; the 4h41m figure is a self-reported one-night wearable readout — one short night is not a health event, and his own framework treats sleep consistency, not any single night, as the signal; the Evans interview content is off the record, so only Johnson’s public characterization exists, and his “masterpiece” verdict is his account, not film criticism this site endorses. The dashboard records an attributed consistency-deviation and public-perception cluster with verified film context—not a protocol failure verdict, a sleep recommendation, or medical advice.',
+    relatedHref: '/sleep/',
+    relatedTitle: 'Sleep protocol',
+    source: 'https://x.com/bryan_johnson/status/2111486128809517355',
+    confidence: 'medium',
+  },
+  {
     date: '2026-10-16',
     label: '“Resting heart is the new thirst trap”: the ideology explains how it engineered a biomarker into a status symbol',
     summary:
