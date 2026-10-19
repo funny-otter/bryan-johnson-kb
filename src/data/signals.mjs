@@ -1,5 +1,24 @@
 export const curatedSignals = [
   {
+    id: 'endo-organoid-method-disclosure',
+    title: '“Collected Kate’s period blood yesterday”: the endometriosis cure program discloses its first method — menstrual-blood organoids plus single-cell profiling',
+    date: '2026-10-18',
+    badge: 'Female health',
+    kind: 'tweet',
+    topic: 'Endometriosis / organoids / menstrual blood',
+    summary:
+      'The September 23 cure-attempt announcement acquired its first disclosed method: “Collected Kate’s period blood yesterday. 30 mL to build an organoid for her endometriosis. 30mL for single cell molecular characterization of her endometriosis.” (1,559 likes, 141 replies, 37 reposts), with a follow-up explaining the model: “An organoid allows us to recreate her biology in a lab dish so that we can model out her disease and can test potential therapies. The deep molecular profiling will be additive to our clarity of what exactly is happening now and in response to therapies.” (202 likes, 8 replies). The science is real and directly on point: Turco et al. (Communications Biology, 2021, 10.1038/s42003-021-02194-y) derived endometrial organoids from menstrual flow with an 87% success rate and showed they are transcriptomically identical to paired-biopsy organoids, explicitly naming endometriosis as a target application, and Boretto et al. (Nature Cell Biology, 2019, 10.1038/s41556-019-0360-z) established patient-derived endometriosis organoids that capture disease heterogeneity and are amenable to drug screening — the exact test-therapies-in-a-dish logic the post describes. This also executes the organoid direction Immortals named as company strategy in July. The boundaries: in the published literature, menstrual-flow organoids model the eutopic (uterine) endometrium, while endometriosis-lesion organoids have been established from surgical biospecimens — whether a menstrual-flow organoid faithfully models Tolo’s lesions is precisely the unvalidated step, and no lab, partner, established line, characterization result, therapy test, or outcome is published; the 30 mL + 30 mL volumes are self-reported (typical loss is 30–40 mL per cycle against the 80 mL heavy-bleeding research threshold), a scale-up from the 7 mL collection the program logged in August. The dashboard records an attributed method disclosure with verified organoid-literature context—not evidence that a cure or therapy test exists, a collection protocol readers can follow, or medical advice.',
+    href: '/metrics/',
+    tweetId: '2111861961394962672',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2111861961394962672',
+      'https://x.com/bryan_johnson/status/2111865059416949245',
+      'https://www.nature.com/articles/s42003-021-02194-y',
+      'https://www.nature.com/articles/s41556-019-0360-z',
+    ],
+  },
+  {
     id: 'sleep-deviation-meme-cluster',
     title: '“I got 4 hr 41 min of sleep 😭”: the sleep brand’s most-public deviation — a viral “man who invented going to bed” meme, a candid wearable confession, and an off-the-record Theranos-doc interview',
     date: '2026-10-17',
@@ -1639,8 +1658,8 @@ export const watchQueue = [
   {
     title: 'Kate Tolo endometriosis “cure” program',
     summary:
-      'Watch whether Johnson publishes the actual intervention, targets, and outcome measures behind the stated plan to “build a cure for Kate’s endometriosis,” and whether the MRI-based lesion/cyst/scar-tissue baseline converts into tracked disease-state endpoints rather than a single before/after story. The epidemiologic framing is verified (6–10% prevalence; 6.6-year average diagnostic delay), but no method, target, or trial exists yet. Attributed program-intent tracking, not cure evidence or medical advice.',
-    source: 'https://x.com/bryan_johnson/status/2102860303226831335',
+      'Watch whether Johnson publishes the actual intervention, targets, and outcome measures behind the stated plan to “build a cure for Kate’s endometriosis,” and whether the MRI-based lesion/cyst/scar-tissue baseline converts into tracked disease-state endpoints rather than a single before/after story. The epidemiologic framing is verified (6–10% prevalence; 6.6-year average diagnostic delay), and the October 18 posts disclosed a first method — 30 mL of menstrual blood to build an organoid plus 30 mL for single-cell molecular characterization, matching real published approaches (Turco et al. 2021: menstrual-flow endometrial organoids at 87% success; Boretto et al. 2019: patient-derived endometriosis organoids amenable to drug screening) — but menstrual-flow organoids model the eutopic endometrium rather than proven lesions, and no lab, partner, established line, characterization, therapy test, or outcome is published. Attributed program-intent tracking, not cure evidence or medical advice.',
+    source: 'https://x.com/bryan_johnson/status/2111861961394962672',
     href: '/metrics/',
   },
   {
@@ -1872,10 +1891,12 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Live Bird timeline audit', value: '50', detail: '50 Oct 3–17 posts reviewed via read-only bird user-tweets audit' },
-  { label: 'Sources verified this pass', value: '3', detail: '3 sources matched · You Can See Everything film record (A24 Fielder/Oppenheim, US release October 16, 2026) + viral screening-meme source post + post engagement metrics' },
-  { label: 'Prior audit window', value: '50', detail: '50 Oct 2–16 posts reviewed last pass via read-only bird user-tweets audit' },
-  { label: 'Prior sources verified', value: '3', detail: '3 sources matched last pass · CMAJ 2016 RHR–mortality meta-analysis (46 cohorts, 1,246,203 adults, 10.1503/cmaj.150535) + live Bird search corroboration of the RHR posting campaign + post engagement metrics' },
+  { label: 'Live Bird timeline audit', value: '50', detail: '50 Oct 5–18 posts reviewed via read-only bird user-tweets audit' },
+  { label: 'Sources verified this pass', value: '4', detail: '4 sources matched · Turco 2021 menstrual-flow organoid study (Commun Biol, 87% derivation success, transcriptome-identical to biopsy organoids) + Boretto 2019 endometriosis-organoid study (Nat Cell Biol) + NICE/normal-range menstrual-loss references (30–40 mL typical, 80 mL HMB research threshold) + post engagement metrics' },
+  { label: 'Prior audit window', value: '50', detail: '50 Oct 3–17 posts reviewed last pass via read-only bird user-tweets audit' },
+  { label: 'Prior sources verified', value: '3', detail: '3 sources matched last pass · You Can See Everything film record (A24 Fielder/Oppenheim, US release October 16, 2026) + viral screening-meme source post + post engagement metrics' },
+  { label: 'Earlier audit window', value: '50', detail: '50 Oct 2–16 posts reviewed last pass via read-only bird user-tweets audit' },
+  { label: 'Earlier sources verified', value: '3', detail: '3 sources matched last pass · CMAJ 2016 RHR–mortality meta-analysis (46 cohorts, 1,246,203 adults, 10.1503/cmaj.150535) + live Bird search corroboration of the RHR posting campaign + post engagement metrics' },
   { label: 'Earlier audit window', value: '50', detail: '50 Sep 25–Oct 15 posts reviewed last pass via read-only bird user-tweets audit' },
   { label: 'Earlier sources verified', value: '3', detail: '3 sources matched last pass · NEJM deCODE Iceland actionable-genotype study (10.1056/NEJMoa2300792) + WA HCA 2024 WGS final evidence report + Korean SF-frequency study (7,472 genomes)' },
   { label: 'Earlier audit window', value: '50', detail: '50 Sep 24–Oct 14 posts reviewed last pass via read-only bird user-tweets audit' },
@@ -1916,11 +1937,12 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '84', detail: '12 knowledge pages + 72 update pages after this pass' },
+  { label: 'Public site content', value: '85', detail: '12 knowledge pages + 73 update pages after this pass' },
 ];
 
 export const curatedActivity = [
-  { date: '2026-10-18', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-19', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-18', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-17', x_post: 4, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-16', x_post: 4, third_party: 0, wiki_update: 0, site_update: 0 },
   { date: '2026-10-15', x_post: 5, third_party: 0, wiki_update: 0, site_update: 1 },

@@ -349,6 +349,16 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-10-18',
+    label: 'The endometriosis cure program discloses its first method: menstrual-blood organoids plus single-cell profiling',
+    summary:
+      'The September 23 cure-attempt announcement acquired its first disclosed method: “Collected Kate’s period blood yesterday. 30 mL to build an organoid for her endometriosis. 30mL for single cell molecular characterization of her endometriosis.” (1,559 likes, 141 replies, 37 reposts), with a follow-up explaining that an organoid “allows us to recreate her biology in a lab dish so that we can model out her disease and can test potential therapies,” with deep molecular profiling “additive to our clarity of what exactly is happening now and in response to therapies” (202 likes, 8 replies). The science behind the approach is real: Turco et al. (Communications Biology, 2021, 10.1038/s42003-021-02194-y) derived endometrial organoids from menstrual flow with an 87% success rate — transcriptomically identical to paired-biopsy organoids — naming endometriosis as a target application, and Boretto et al. (Nature Cell Biology, 2019, 10.1038/s41556-019-0360-z) established patient-derived endometriosis organoids amenable to drug screening, the exact test-therapies-in-a-dish logic the post describes. The boundaries: in the published literature menstrual-flow organoids model the eutopic (uterine) endometrium, while endometriosis-lesion organoids come from surgical biospecimens — whether a menstrual-flow organoid faithfully models Tolo’s lesions is the unvalidated step — and no lab, partner, established line, characterization, therapy test, or outcome is published; the 30 mL + 30 mL volumes are self-reported against a typical 30–40 mL per-cycle loss and a scale-up from the 7 mL collection logged in August. The dashboard records an attributed method disclosure with verified organoid-literature context—not evidence that a cure or therapy test exists, a collection protocol readers can follow, or medical advice. The same day’s dunk-training disclosure — an adjustable rim installed at home, the featured dunk “on 9’8” with a 6” ball… four inches shy of 10 feet” (1,750 likes) — recalibrates the feed’s dunk side quest from training chronology toward a staged demonstration arc and was recorded as a chronology note on the dunk record, consistent with eight prior skip decisions; the featured dunk remains unverified. The October 17 host thank-you post (2111601014835142927) was the last item before the previous covered window, and the October 18, 17:00 UTC organoid follow-up was the newest item on the timeline at curation time.',
+    relatedHref: '/metrics/',
+    relatedTitle: 'Metrics',
+    source: 'https://x.com/bryan_johnson/status/2111861961394962672',
+    confidence: 'medium',
+  },
+  {
     date: '2026-10-17',
     label: '“I got 4 hr 41 min of sleep 😭”: the sleep brand meets its most-public deviation — a viral meme, a candid confession, and a Theranos-doc interview',
     summary:
