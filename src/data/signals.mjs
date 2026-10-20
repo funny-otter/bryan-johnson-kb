@@ -1,5 +1,41 @@
 export const curatedSignals = [
   {
+    id: 'longevity-home-energy-footprint',
+    title: '“What it takes to power my longevity home for 1 day”: the protocol publishes its first energy ledger — 52 kWh/day for the longevity stack, 93 kWh/day for the whole house, against a ~29 kWh/day average US household',
+    date: '2026-10-19',
+    badge: 'Measurement',
+    kind: 'tweet',
+    topic: 'Energy footprint / home protocol infrastructure / solar',
+    summary:
+      'Johnson published the feed’s first full accounting of the physical infrastructure behind the protocol: “What it takes to power my longevity home for 1 day” — 15 kWh for the 200°F sauna, 15 kWh for evening AC holding sleep temperature at 67°F, 10 kWh for five air purifiers, 3 kWh for the Eight Sleep bed, 2 kWh each for HBOT, daylight devices, and red light therapy, and 1 kWh each for “kate’s night time erection device,” reverse-osmosis water, and IHHT — totaling “52 kWh for longevity” inside “93 kWh for whole house,” with “64 kWh solar generation” and “33 kWh exported to the grid,” closing with “A kWh is about 80 full phone charges / So about 4,200 phone charges to power my longevity protocol each day” (295 likes, 59 replies, 2 reposts). The arithmetic verifies: the ten device line items sum to exactly 52 kWh, and 52 × 80 = 4,160 ≈ “about 4,200.” The context the post leaves out: per US Energy Information Administration data the average US household consumes about 10,500 kWh of electricity per year — roughly 29 kWh per day — so the whole-house figure runs about 3.2× an average household and the longevity stack alone (52 kWh/day ≈ 18,980 kWh/yr) draws about 1.8× an average American home’s entire electricity use; and the posted solar arithmetic (64 generated − 33 exported = 31 kWh self-consumed) does not cover the 52 kWh longevity demand that day. The boundaries: all figures are self-reported for a single October day with no measurement methodology; the load is season- and home-dependent (an October evening AC line item, with sauna + AC + purifiers alone accounting for 40 of the 52 kWh); “80 phone charges per kWh” assumes a ~12.5 Wh battery, roughly half or less of current flagship phones, which would halve the phone-charge rendering; and an energy footprint is an infrastructure disclosure, not a health outcome — the post implies nothing about whether any listed device affects longevity. The dashboard records an attributed infrastructure disclosure with verified consumption context—not an efficiency standard readers should copy, evidence the devices improve health, or medical advice.',
+    href: '/longevity/',
+    tweetId: '2112320547828945248',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2112320547828945248',
+      'https://www.eia.gov/energyexplained/use-of-energy/electricity-use-in-homes.php',
+      'https://www.eia.gov/tools/faqs/faq.php?id=97&t=3',
+    ],
+  },
+  {
+    id: 'endo-program-womens-health-eo',
+    title: '“you’re welcome”: Johnson implies his endometriosis campaign influenced the new women’s-health executive order — the order verifies in full, the influence claim does not',
+    date: '2026-10-19',
+    badge: 'Female health',
+    kind: 'tweet',
+    topic: 'Endometriosis / federal policy / implied credit',
+    summary:
+      'Just under four hours after a third-party post announced “a landmark executive order for women’s health, creating a brand-new Women’s Health Division at the National Institutes of Health” — listing endometriosis among the targeted conditions — Johnson quote-posted it with a two-word implied-credit claim: “you’re welcome” (3,624 likes, 71 replies, 53 reposts). The executive order itself verifies in full: “Advancing Women’s Health to Improve Outcomes in All Phases of Life,” signed October 19, 2026, establishes a Women’s Health Division within NIH within 90 days and a White House Women’s Health Task Force co-chaired by the Secretary of Health and Human Services and the White House Chief of Staff, with Section 1 naming endometriosis among the conditions needing more research; HHS’s release credits First Lady Melania Trump’s advocacy and notes the order revokes the prior administration’s EO 14120 (March 2024) and November 2023 memorandum. What does not verify: any connection between Johnson’s year of endometriosis posting — the July diagnosis posts, the September 23 cure-attempt announcement, the October 18 organoid method disclosure — and the order itself. No White House or HHS material mentions Johnson or his campaign, and the documented driver is the First Lady’s initiative; the implied credit is his attribution, posted hours after the news broke. The boundaries: the dashboard tracks policy relevant to the endometriosis program as context, not validation — the order is a research-coordination directive (a new NIH division, a task force, revoked prior initiatives), not a treatment change, funding guarantee, or acknowledgment of any private campaign; engagement figures were read at curation time. The dashboard records an attributed implied-credit claim with verified executive-order context—not evidence of influence, a policy endorsement, or medical advice.',
+    href: '/metrics/',
+    tweetId: '2112262101385568357',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2112262101385568357',
+      'https://www.whitehouse.gov/presidential-actions/2026/10/advancing-womens-health-to-improve-outcomes-in-all-phases-of-life/',
+      'https://www.hhs.gov/press-room/trump-flotus-womens-health-executive-order-new-nih-division.html',
+    ],
+  },
+  {
     id: 'endo-organoid-method-disclosure',
     title: '“Collected Kate’s period blood yesterday”: the endometriosis cure program discloses its first method — menstrual-blood organoids plus single-cell profiling',
     date: '2026-10-18',
@@ -1658,7 +1694,7 @@ export const watchQueue = [
   {
     title: 'Kate Tolo endometriosis “cure” program',
     summary:
-      'Watch whether Johnson publishes the actual intervention, targets, and outcome measures behind the stated plan to “build a cure for Kate’s endometriosis,” and whether the MRI-based lesion/cyst/scar-tissue baseline converts into tracked disease-state endpoints rather than a single before/after story. The epidemiologic framing is verified (6–10% prevalence; 6.6-year average diagnostic delay), and the October 18 posts disclosed a first method — 30 mL of menstrual blood to build an organoid plus 30 mL for single-cell molecular characterization, matching real published approaches (Turco et al. 2021: menstrual-flow endometrial organoids at 87% success; Boretto et al. 2019: patient-derived endometriosis organoids amenable to drug screening) — but menstrual-flow organoids model the eutopic endometrium rather than proven lesions, and no lab, partner, established line, characterization, therapy test, or outcome is published. Attributed program-intent tracking, not cure evidence or medical advice.',
+      'Watch whether Johnson publishes the actual intervention, targets, and outcome measures behind the stated plan to “build a cure for Kate’s endometriosis,” and whether the MRI-based lesion/cyst/scar-tissue baseline converts into tracked disease-state endpoints rather than a single before/after story. The epidemiologic framing is verified (6–10% prevalence; 6.6-year average diagnostic delay), and the October 18 posts disclosed a first method — 30 mL of menstrual blood to build an organoid plus 30 mL for single-cell molecular characterization, matching real published approaches (Turco et al. 2021: menstrual-flow endometrial organoids at 87% success; Boretto et al. 2019: patient-derived endometriosis organoids amenable to drug screening) — but menstrual-flow organoids model the eutopic endometrium rather than proven lesions, and no lab, partner, established line, characterization, therapy test, or outcome is published. October 19 policy context: the new women’s-health executive order names endometriosis among its research priorities and creates an NIH Women’s Health Division — relevant federal attention for the disease, though no White House or HHS material credits Johnson’s campaign and his “you’re welcome” post remains an unverified implied-credit claim. Attributed program-intent tracking, not cure evidence or medical advice.',
     source: 'https://x.com/bryan_johnson/status/2111861961394962672',
     href: '/metrics/',
   },
@@ -1891,10 +1927,12 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Live Bird timeline audit', value: '50', detail: '50 Oct 5–18 posts reviewed via read-only bird user-tweets audit' },
-  { label: 'Sources verified this pass', value: '4', detail: '4 sources matched · Turco 2021 menstrual-flow organoid study (Commun Biol, 87% derivation success, transcriptome-identical to biopsy organoids) + Boretto 2019 endometriosis-organoid study (Nat Cell Biol) + NICE/normal-range menstrual-loss references (30–40 mL typical, 80 mL HMB research threshold) + post engagement metrics' },
-  { label: 'Prior audit window', value: '50', detail: '50 Oct 3–17 posts reviewed last pass via read-only bird user-tweets audit' },
-  { label: 'Prior sources verified', value: '3', detail: '3 sources matched last pass · You Can See Everything film record (A24 Fielder/Oppenheim, US release October 16, 2026) + viral screening-meme source post + post engagement metrics' },
+  { label: 'Live Bird timeline audit', value: '50', detail: '50 Oct 7–20 posts reviewed via read-only bird user-tweets audit' },
+  { label: 'Sources verified this pass', value: '3', detail: '3 sources matched · October 19 women’s-health executive order (White House EO text + HHS release confirming NIH Women’s Health Division, endometriosis named) + EIA average-US-household electricity references (~10,500 kWh/yr ≈ 29 kWh/day) + post engagement metrics' },
+  { label: 'Prior audit window', value: '50', detail: '50 Oct 5–18 posts reviewed last pass via read-only bird user-tweets audit' },
+  { label: 'Prior sources verified', value: '4', detail: '4 sources matched last pass · Turco 2021 menstrual-flow organoid study (Commun Biol, 87% derivation success, transcriptome-identical to biopsy organoids) + Boretto 2019 endometriosis-organoid study (Nat Cell Biol) + NICE/normal-range menstrual-loss references (30–40 mL typical, 80 mL HMB research threshold) + post engagement metrics' },
+  { label: 'Earlier audit window', value: '50', detail: '50 Oct 3–17 posts reviewed last pass via read-only bird user-tweets audit' },
+  { label: 'Earlier sources verified', value: '3', detail: '3 sources matched last pass · You Can See Everything film record (A24 Fielder/Oppenheim, US release October 16, 2026) + viral screening-meme source post + post engagement metrics' },
   { label: 'Earlier audit window', value: '50', detail: '50 Oct 2–16 posts reviewed last pass via read-only bird user-tweets audit' },
   { label: 'Earlier sources verified', value: '3', detail: '3 sources matched last pass · CMAJ 2016 RHR–mortality meta-analysis (46 cohorts, 1,246,203 adults, 10.1503/cmaj.150535) + live Bird search corroboration of the RHR posting campaign + post engagement metrics' },
   { label: 'Earlier audit window', value: '50', detail: '50 Sep 25–Oct 15 posts reviewed last pass via read-only bird user-tweets audit' },
@@ -1937,11 +1975,12 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '85', detail: '12 knowledge pages + 73 update pages after this pass' },
+  { label: 'Public site content', value: '86', detail: '12 knowledge pages + 74 update pages after this pass' },
 ];
 
 export const curatedActivity = [
-  { date: '2026-10-19', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-20', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-19', x_post: 7, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-18', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-17', x_post: 4, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-16', x_post: 4, third_party: 0, wiki_update: 0, site_update: 0 },
