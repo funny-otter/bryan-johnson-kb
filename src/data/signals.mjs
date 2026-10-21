@@ -1,5 +1,44 @@
 export const curatedSignals = [
   {
+    id: 'rapamycin-discontinuation-retrospective',
+    title: '“Rapamycin was the undisputed king of longevity drugs”: Johnson revisits his break-ranks decision two years on — and the skepticism he cites is now genuinely in the peer-reviewed literature',
+    date: '2026-10-20',
+    badge: 'Rx claim',
+    kind: 'tweet',
+    topic: 'Rapamycin / N=1 deprescribing / peer-reviewed skepticism',
+    summary:
+      'Johnson posted a retrospective on his most consequential drug reversal: “Rapamycin was the undisputed king of longevity drugs. I broke ranks and stopped taking it because my extensive biomarker data showed a mixed story. Cool to see two years later that skepticism is in the peer-reviewed literature,” attaching a paper screenshot (360 likes, 42 replies, 7 reposts). His side of the record verifies on his own Blueprint essay “I stopped taking rapamycin”: the September 28, 2024 decision ended almost five years of dosing (weekly 5/6/10 mg, biweekly 13 mg, alternating 6/13 mg), taken because benefits “do not justify the hefty side-effects” he lists as intermittent skin/soft-tissue infections, lipid abnormalities, glucose elevations, and increased resting heart rate — the “mixed story” — with a then-new preprint also reporting rapamycin increased biological age on 2 of 16 epigenetic clocks. The peer-reviewed-skepticism claim verifies in direction across three published reviews: the Lancet Healthy Longevity systematic review of 19 studies found improved immune, cardiovascular, and integumentary parameters but no significant endocrine, muscular, or neurological effects, with increased infections and cholesterol/triglycerides in aging-related-disease groups; Frontiers in Aging (2025) concludes translational efficacy in humans “remains unclear,” partly for lack of standardized pharmacodynamic biomarkers; and Aging (2024) finds human data “have yet to establish that rapamycin… is a proven seno-therapeutic,” noting Kraig et al. 2018’s increases in triglycerides, HbA1c, and VLDL. The boundaries: the attached screenshot is not identified in the capture, so which specific paper he means is unrecorded; the reviews span 2023–2025, so some skepticism predates his stop rather than following it; “undisputed king” is his gloss on mouse lifespan data (ITP trials) whose human translation is exactly what the reviews question; and his discontinuation was an N=1 biomarker decision — the literature counsels uncertainty and monitoring, not that healthy adults should stop or start rapamycin. The dashboard records an attributed course-correction claim with verified literature context—not deprescribing guidance, a validation of his biomarker-driven method, or medical advice.',
+    href: '/health/',
+    tweetId: '2112642762353021020',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2112642762353021020',
+      'https://blueprint.bryanjohnson.com/blogs/news/i-stopped-taking-rapamycin',
+      'https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568(23)0258-1/fulltext',
+      'https://www.frontiersin.org/journals/aging/articles/10.3389/fragi.2025.1628187/full',
+      'https://doi.org/10.18632/aging.206300',
+    ],
+  },
+  {
+    id: 'minoxidil-phase3-pharmacy-positioning',
+    title: '“I don’t see compelling evidence of a meaningful advantage”: Johnson turns a Phase 3 hair-loss readout into competitive positioning for his own pharmacy',
+    date: '2026-10-20',
+    badge: 'Rx claim',
+    kind: 'tweet',
+    topic: 'Oral minoxidil / VDPHL01 Phase 3 / Immortals Pharmacy positioning',
+    summary:
+      'Quote-posting Polymarket’s announcement of Veradermics’ topline (“experimental hair-loss pill significantly increased hair growth in over 500 men, with no serious side effects,” 15,480 likes on the quoted post), Johnson ran the numbers against his own product line: “At 17 mg/day (8.5 mg twice daily), the reported increase was 36.4 hairs/cm². Conventional oral minoxidil at just 5 mg once daily achieved 35.9 hairs/cm² in a smaller published study. I don’t see compelling evidence of a meaningful advantage over normal release oral minoxidil, which is available now at my Immortals Pharmacy. I personally take 3.5 mg daily.” (2,677 likes, 140 replies, 41 reposts). Both figures are quoted accurately. Veradermics’ October 19 Phase 3 ‘304’ topline — 536 men with mild-to-moderate pattern hair loss, 8.5 mg extended-release minoxidil once or twice daily vs placebo — reported non-vellus target-area hair-count increases of 28.6 (QD) and 36.4 (BID) hairs/cm² vs 6.6 for placebo at month 6 (p<0.0001), with no treatment-related serious adverse events and no cardiac adverse events of special interest; 8.5 mg BID is the “17 mg/day” Johnson cites. The 35.9 hairs/cm² comparator traces to Panchaprateep and Luengarun’s open-label study of 30 men on 5 mg once daily for 24 weeks (+35.9 non-vellus hairs/cm², +23.6%) — the only published 5-mg hair-density dataset, as a JAMA Dermatology trial noted when citing it. The boundaries: the comparison is cross-trial, not head-to-head — a 536-person placebo-controlled Phase 3 using digital image analysis against a 30-person single-arm open-label study using manual dermoscopic counts, with different populations, doses (17 mg vs 5 mg), and formulations (extended-release vs immediate-release); near-equal topline counts across those designs are exactly the kind of comparison methodologists flag, and the Phase 3’s own co-primary patient-reported and investigator-rated endpoints have no comparator in the older study. The commercial move is the story’s second half: the post converts a would-be competitor’s topline — for a drug that is not yet FDA-approved — into a pitch for Immortals Pharmacy, while low-dose oral minoxidil is itself off-label prescribing territory requiring clinician oversight, and his personal 3.5 mg dose is an N=1 protocol claim. The dashboard records an attributed research-relay with accurately quoted numbers inside a competitive commercial frame—not a hair-loss treatment recommendation, evidence of equivalence between the two drugs, or medical advice.',
+    href: '/health/',
+    tweetId: '2112558564216868987',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2112558564216868987',
+      'https://ir.veradermics.com/news-releases/news-release-details/veradermics-oral-vdphl01-achieved-early-consistent-and-robust-0',
+      'https://jamanetwork.com/journals/jamadermatology/fullarticle/2817326',
+      'https://pmc.ncbi.nlm.nih.gov/articles/PMC7649170/',
+    ],
+  },
+  {
     id: 'longevity-home-energy-footprint',
     title: '“What it takes to power my longevity home for 1 day”: the protocol publishes its first energy ledger — 52 kWh/day for the longevity stack, 93 kWh/day for the whole house, against a ~29 kWh/day average US household',
     date: '2026-10-19',
@@ -1927,10 +1966,12 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Live Bird timeline audit', value: '50', detail: '50 Oct 7–20 posts reviewed via read-only bird user-tweets audit' },
-  { label: 'Sources verified this pass', value: '3', detail: '3 sources matched · October 19 women’s-health executive order (White House EO text + HHS release confirming NIH Women’s Health Division, endometriosis named) + EIA average-US-household electricity references (~10,500 kWh/yr ≈ 29 kWh/day) + post engagement metrics' },
-  { label: 'Prior audit window', value: '50', detail: '50 Oct 5–18 posts reviewed last pass via read-only bird user-tweets audit' },
-  { label: 'Prior sources verified', value: '4', detail: '4 sources matched last pass · Turco 2021 menstrual-flow organoid study (Commun Biol, 87% derivation success, transcriptome-identical to biopsy organoids) + Boretto 2019 endometriosis-organoid study (Nat Cell Biol) + NICE/normal-range menstrual-loss references (30–40 mL typical, 80 mL HMB research threshold) + post engagement metrics' },
+  { label: 'Live Bird timeline audit', value: '50', detail: '50 Oct 9–21 posts reviewed via read-only bird user-tweets audit' },
+  { label: 'Sources verified this pass', value: '4', detail: '4 sources matched · Veradermics Phase 3 ‘304’ topline (536 men, 28.6/36.4 vs 6.6 hairs/cm²) + Panchaprateep & Luengarun 5-mg oral-minoxidil study (35.9 hairs/cm², n=30 open-label, cited in JAMA Dermatology) + Johnson’s own Blueprint “I stopped taking rapamycin” essay (Sept 28, 2024 decision, dosing history, side-effect list) + peer-reviewed rapamycin-skepticism reviews (Lancet Healthy Longevity systematic review + Frontiers in Aging 2025 + Aging 2024)' },
+  { label: 'Prior audit window', value: '50', detail: '50 Oct 7–20 posts reviewed last pass via read-only bird user-tweets audit' },
+  { label: 'Prior sources verified', value: '3', detail: '3 sources matched last pass · October 19 women’s-health executive order (White House EO text + HHS release confirming NIH Women’s Health Division, endometriosis named) + EIA average-US-household electricity references (~10,500 kWh/yr ≈ 29 kWh/day) + post engagement metrics' },
+  { label: 'Earlier audit window', value: '50', detail: '50 Oct 5–18 posts reviewed last pass via read-only bird user-tweets audit' },
+  { label: 'Earlier sources verified', value: '4', detail: '4 sources matched last pass · Turco 2021 menstrual-flow organoid study (Commun Biol, 87% derivation success, transcriptome-identical to biopsy organoids) + Boretto 2019 endometriosis-organoid study (Nat Cell Biol) + NICE/normal-range menstrual-loss references (30–40 mL typical, 80 mL HMB research threshold) + post engagement metrics' },
   { label: 'Earlier audit window', value: '50', detail: '50 Oct 3–17 posts reviewed last pass via read-only bird user-tweets audit' },
   { label: 'Earlier sources verified', value: '3', detail: '3 sources matched last pass · You Can See Everything film record (A24 Fielder/Oppenheim, US release October 16, 2026) + viral screening-meme source post + post engagement metrics' },
   { label: 'Earlier audit window', value: '50', detail: '50 Oct 2–16 posts reviewed last pass via read-only bird user-tweets audit' },
@@ -1975,11 +2016,12 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '86', detail: '12 knowledge pages + 74 update pages after this pass' },
+  { label: 'Public site content', value: '87', detail: '12 knowledge pages + 75 update pages after this pass' },
 ];
 
 export const curatedActivity = [
-  { date: '2026-10-20', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-21', x_post: 4, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-20', x_post: 9, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-19', x_post: 7, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-18', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-17', x_post: 4, third_party: 0, wiki_update: 0, site_update: 1 },
