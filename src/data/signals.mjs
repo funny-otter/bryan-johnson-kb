@@ -1,5 +1,42 @@
 export const curatedSignals = [
   {
+    id: 'gray-market-peptide-safety-relay',
+    title: '“Your peptides may be coming [from] fentanyl suppliers”: Johnson relays a fully verifiable gray-market peptide safety warning — TRM’s vendor-overlap numbers, CBP’s master-carton seizures, and the first reported bootleg-retatrutide deaths',
+    date: '2026-10-21',
+    badge: 'Rx safety',
+    kind: 'tweet',
+    topic: 'Gray-market peptides / fentanyl-precursor vendors / retatrutide deaths',
+    summary:
+      'Johnson relayed the feed’s first full consumer-protection warning about the gray-market peptide supply chain: “Your peptides may be coming fentanyl suppliers. Anhui Renchen Technology was indicted in 2023 for supplying the Sinaloa Cartel with fentanyl precursors. Their website currently sells semaglutide and melanotan II. Of roughly 200 Chinese firms TRM Labs tracked selling fentanyl precursors, at least 50 now sell peptides. The shipments enter the US in ‘master cartons’ mislabelled as snack food, broken up by a domestic handler and mailed on. CBP has intercepted around 400 of those operations and seized over 130,000 vials in the past year. FDA records surfaced showing two deaths, one in July and one in September, reported after people injected untested black market retatrutide.” (587 likes, 93 replies, 46 reposts; October 21, 21:48 UTC). Every checkable figure verifies against the underlying record: TRM Labs’ October 6 blockchain analysis identified 150+ Chinese chemical manufacturers accepting cryptocurrency with roughly 75% listing both peptides and fentanyl precursors, and crypto inflows to those dual-listing vendors rising from $28.2 million (2023) to $33.8 million (2024) to $37.3 million (2025) with about 57% of identifiable value from the United States; the “roughly 200 firms / at least 50 now sell peptides” framing is the Wall Street Journal’s count from TRM’s longer fentanyl-precursor tracker; Anhui Rencheng (ARTC) was charged by the DOJ in June 2023 and its site still listed semaglutide and Melanotan II alongside fentanyl-class chemicals as of September 2026; CBP’s Cincinnati port had intercepted 300+ master-carton operations by March and roughly 400 by the Journal’s October count, with 2,400+ seizures and 130,000+ vials nationally from October 2025 through August 2026; and the two deaths are the July FAERS report (41-year-old woman, cardiac arrest, product from an “unreliable source”) and September report (49-year-old patient, severe dehydration, malnutrition, cardiac arrest, vial from a “research use only” site) that CBS News reported on October 13 — the first public US death reports linked to bootleg retatrutide, with causation unverified. The boundaries: TRM cannot separate peptide revenue from precursor revenue, so no individual peptide purchase is traceable to trafficking; the deaths are adverse-event reports, not established causation; retatrutide itself is an unapproved investigational drug; Johnson names no source in the post, so the numbers are his transcription; and the warning lands adjacent to his commercial position — his Immortals Pharmacy sells peptides (the GLP-1 catalog promoted in July) as the regulated alternative, which the post leaves implicit rather than disclosing. The dashboard records an attributed safety relay with verified supply-chain context—not purchasing guidance, an indictment of all peptide use, evidence that regulated alternatives are risk-free, or medical advice.',
+    href: '/health/',
+    tweetId: '2113024548643996051',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2113024548643996051',
+      'https://www.trmlabs.com/resources/blog/americans-are-buying-peptides-from-the-same-chinese-chemical-vendors-selling-fentanyl-precursors-sales-up-32-since-2023',
+      'https://www.wsj.com/health/pharma/chinese-makers-of-fentanyl-ingredients-now-sell-bootleg-peptides-to-americans-c383160b',
+      'https://www.cbsnews.com/news/deaths-reported-fda-bootleg-reta-weight-loss-drug/',
+    ],
+  },
+  {
+    id: 'nof1-biomarker-limits-endorsement',
+    title: '“My biomarker numbers say less than people think”: Johnson endorses an unnamed paper’s critique of his own N=1 method — and pitches the aging simulation he says comes next',
+    date: '2026-10-21',
+    badge: 'Methodology',
+    kind: 'tweet',
+    topic: 'N-of-1 limits / biomarker epistemics / aging-system simulation',
+    summary:
+      'In the feed’s most self-critical methodology post, Johnson endorsed a new paper’s argument that the foundation of his own N-of-1 — biomarkers — captures less than his audience believes: “A new paper cites my N-of-1 as a core feature of next generation longevity science. It explains why my biomarker numbers say less than people think. I agree. Aging is a multi-scale physiological process that we can’t actually measure directly. Biomarkers are like the blind men touching the elephant; able to know a piece, but never the whole. The processes that dictate aging exist at multiple levels of biological complexity… Aging manifests differently among people, but in highly nuanced and often invisible ways. The static, cross-sectional measures the field is used to can only get us so far. N-of-1 initiatives like mine can capture some of this nuance, but ultimately fails at generalizability. The authors also critique N-of-1 as able to show ‘responsiveness but not durability; optimisation but not causality.’ The challenge, so far unmet, is modelling the complexity of aging in such a way that the output is not a forecast of biomarkers, but a simulation of aging system dynamics, i.e. one’s health trajectory into the future… A choose your own adventure where we can predict the consequences of both our healthy and unhealthy behaviors. This is exactly what we are aiming to build. If you’re into this as well, hit me up.” (317 likes, 52 replies, 14 reposts; October 21, 02:40 UTC). The epistemics are sound and echo the field’s own frameworks — a Cell framework review holds that no aging biomarker yet satisfies surrogate-endpoint validation, and even the strongest responsiveness work (the TranslAGE database of 51 interventional studies) tests whether biomarkers move under intervention, not whether moving them changes health outcomes. The boundaries: the paper is not identified in the post and is not linked, so the quoted critique — including “responsiveness but not durability; optimisation but not causality” — is his transcription of an unnamed source; “the static, cross-sectional measures the field is used to” understates a field that also runs longitudinal cohorts; and the closing pivot converts the limitation into a recruitment pitch for an aging-system-dynamics simulation that exists so far as stated intent — no model, publication, team, or validation is disclosed. The dashboard records an attributed epistemic-boundary endorsement with unverified source identity—not evidence that biomarker tracking is useless, a disclosed research program, or medical advice.',
+    href: '/metrics/',
+    tweetId: '2112735624684093647',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2112735624684093647',
+      'https://www.cell.com/cell/fulltext/S0092-8674(23)00857-7',
+      'https://pubmed.ncbi.nlm.nih.gov/39484592',
+    ],
+  },
+  {
     id: 'rapamycin-discontinuation-retrospective',
     title: '“Rapamycin was the undisputed king of longevity drugs”: Johnson revisits his break-ranks decision two years on — and the skepticism he cites is now genuinely in the peer-reviewed literature',
     date: '2026-10-20',
@@ -1966,9 +2003,11 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Live Bird timeline audit', value: '50', detail: '50 Oct 9–21 posts reviewed via read-only bird user-tweets audit' },
-  { label: 'Sources verified this pass', value: '4', detail: '4 sources matched · Veradermics Phase 3 ‘304’ topline (536 men, 28.6/36.4 vs 6.6 hairs/cm²) + Panchaprateep & Luengarun 5-mg oral-minoxidil study (35.9 hairs/cm², n=30 open-label, cited in JAMA Dermatology) + Johnson’s own Blueprint “I stopped taking rapamycin” essay (Sept 28, 2024 decision, dosing history, side-effect list) + peer-reviewed rapamycin-skepticism reviews (Lancet Healthy Longevity systematic review + Frontiers in Aging 2025 + Aging 2024)' },
-  { label: 'Prior audit window', value: '50', detail: '50 Oct 7–20 posts reviewed last pass via read-only bird user-tweets audit' },
+  { label: 'Live Bird timeline audit', value: '50', detail: '50 Oct 13–22 posts reviewed via read-only bird user-tweets audit' },
+  { label: 'Sources verified this pass', value: '4', detail: '4 sources matched · TRM Labs October 6 peptide/fentanyl-precursor blockchain analysis (150+ vendors, ~75% dual-listing, $28.2M→$37.3M inflows 2023–2025, ~57% US) + WSJ vendor counts and CBP seizure record (~400 master-carton operations, 2,400+ seizures, 130,000+ vials Oct 2025–Aug 2026) + CBS News October 13 report of two FAERS retatrutide death reports + Koehler et al. Cell Reports Medicine GLP-1/GLP-2 enteropathy study (10.1016/j.xcrm.2026.103115)' },
+  { label: 'Prior audit window', value: '50', detail: '50 Oct 9–21 posts reviewed last pass via read-only bird user-tweets audit' },
+  { label: 'Prior sources verified', value: '4', detail: '4 sources matched last pass · Veradermics Phase 3 ‘304’ topline (536 men, 28.6/36.4 vs 6.6 hairs/cm²) + Panchaprateep & Luengarun 5-mg oral-minoxidil study (35.9 hairs/cm², n=30 open-label, cited in JAMA Dermatology) + Johnson’s own Blueprint “I stopped taking rapamycin” essay (Sept 28, 2024 decision, dosing history, side-effect list) + peer-reviewed rapamycin-skepticism reviews (Lancet Healthy Longevity systematic review + Frontiers in Aging 2025 + Aging 2024)' },
+  { label: 'Earlier audit window', value: '50', detail: '50 Oct 7–20 posts reviewed last pass via read-only bird user-tweets audit' },
   { label: 'Prior sources verified', value: '3', detail: '3 sources matched last pass · October 19 women’s-health executive order (White House EO text + HHS release confirming NIH Women’s Health Division, endometriosis named) + EIA average-US-household electricity references (~10,500 kWh/yr ≈ 29 kWh/day) + post engagement metrics' },
   { label: 'Earlier audit window', value: '50', detail: '50 Oct 5–18 posts reviewed last pass via read-only bird user-tweets audit' },
   { label: 'Earlier sources verified', value: '4', detail: '4 sources matched last pass · Turco 2021 menstrual-flow organoid study (Commun Biol, 87% derivation success, transcriptome-identical to biopsy organoids) + Boretto 2019 endometriosis-organoid study (Nat Cell Biol) + NICE/normal-range menstrual-loss references (30–40 mL typical, 80 mL HMB research threshold) + post engagement metrics' },
@@ -2016,11 +2055,12 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '87', detail: '12 knowledge pages + 75 update pages after this pass' },
+  { label: 'Public site content', value: '88', detail: '12 knowledge pages + 76 update pages after this pass' },
 ];
 
 export const curatedActivity = [
-  { date: '2026-10-21', x_post: 4, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-22', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-21', x_post: 11, third_party: 0, wiki_update: 0, site_update: 2 },
   { date: '2026-10-20', x_post: 9, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-19', x_post: 7, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-18', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
