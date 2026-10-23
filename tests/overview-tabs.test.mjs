@@ -838,7 +838,7 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(dontDieSource, /On October 1[^]*10[.]3389\/fpsyg[.]2019[.]02688[^]*not an established species-level metric, a funding recommendation, or medical advice/i, 'dont-die page should record the ideology formulation with its boundary');
 
     assert.match(signalsSource, /30 Sep 17–Oct 1 posts reviewed/, 'audit window should cover this pass');
-    assert.match(signalsSource, /12 knowledge pages \+ 76 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 77 update pages/, 'site content count should include the new update page');
 
     const updatePage = readFileSync(new URL('../src/content/updates/2026-10-02-cognitive-light-cone-curation.md', import.meta.url), 'utf8');
     assert.match(updatePage, /knowledge\/raw\/x\/2026-10-01\/2026-10-01-bryan-johnson-batch[.]md/, 'update page should cite the October 1 capture');
@@ -878,7 +878,7 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(braintreeSource, /first customers[^]*37signals[^]*Treat the “first customers” ordering as Johnson’s attribution/, 'braintree page should record the first-customers attribution with its verifiable fact');
 
     assert.match(signalsSource, /30 Sep 18–Oct 2 posts reviewed/, 'audit window should cover this pass');
-    assert.match(signalsSource, /12 knowledge pages \+ 76 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 77 update pages/, 'site content count should include the new update page');
 
     const updatePage = readFileSync(new URL('../src/content/updates/2026-10-03-petit-le-mans-biomarker-review-curation.md', import.meta.url), 'utf8');
     assert.match(updatePage, /IMSA’s official entry list/, 'update page should document the entry-list verification');
@@ -918,7 +918,7 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(algorithmicHealthPage, /On October 3, race day[^]*10[.]1371\/journal[.]pone[.]0077764[^]*not evidence that molecular profiling of drivers is novel or useful[^]*or medical advice/i, 'algorithmic-health page should record the race-day experiment with its boundary');
 
     assert.match(signalsSource, /50 Sep 11–Oct 4 posts reviewed/, 'audit window should cover this pass');
-    assert.match(signalsSource, /12 knowledge pages \+ 76 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 77 update pages/, 'site content count should include the new update page');
 
     const updatePage = readFileSync(new URL('../src/content/updates/2026-10-04-petit-le-mans-race-day-curation.md', import.meta.url), 'utf8');
     assert.match(updatePage, /50 posts spanning September 11–October 3/, 'update page should document the audit window');
@@ -952,7 +952,7 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(algorithmicHealthPage, /On October 4[^]*Order has been restored[^]*not evidence that the five-hour routine produces its claimed benefits, a reader routine, or medical advice/i, 'algorithmic-health page should record the epilogue with its boundary');
 
     assert.match(signalsSource, /50 Sep 11–Oct 4 posts reviewed/, 'audit window should cover this pass');
-    assert.match(signalsSource, /12 knowledge pages \+ 76 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 77 update pages/, 'site content count should include the new update page');
 
     const updatePage = readFileSync(new URL('../src/content/updates/2026-10-05-road-trip-epilogue-curation.md', import.meta.url), 'utf8');
     assert.match(updatePage, /50 posts spanning September 11–October 4/, 'update page should document the audit window');
@@ -1066,7 +1066,7 @@ describe('home overview and dedicated changelog route', () => {
 
   it('rotates audit-window and site-content counters for the October 6 pass', () => {
     assert.match(signalsSource, /50 Sep 11–Oct 6 posts reviewed/, 'audit window should cover this pass');
-    assert.match(signalsSource, /12 knowledge pages \+ 76 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 77 update pages/, 'site content count should include the new update page');
     assert.match(signalsSource, /7 sources matched earlier pass · FDA zolpidem label/, 'studies-verified counter should cover this pass');
 
     const updatePage = readFileSync(new URL('../src/content/updates/2026-10-06-post-trip-cluster-curation.md', import.meta.url), 'utf8');
@@ -1139,7 +1139,7 @@ describe('home overview and dedicated changelog route', () => {
 
   it('rotates audit-window and site-content counters for the October 7 pass', () => {
     assert.match(signalsSource, /50 Sep 11–Oct 6 posts reviewed last pass via read-only bird user-tweets gap-fill audit/, 'audit window should carry the demoted October 7 label');
-    assert.match(signalsSource, /12 knowledge pages \+ 76 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 77 update pages/, 'site content count should include the new update page');
     assert.match(signalsSource, /4 sources matched last pass · Schopenhauer WWR Vol[.] II marksman passage/, 'studies-verified counter should cover this pass');
     assert.match(signalsSource, /7 sources matched earlier pass · FDA zolpidem label/, 'prior studies-verified counter should carry the October 6 label');
     assert.match(signalsSource, /\{ date: '2026-10-07', x_post: 3/, 'curated activity should recount the October 7 status-games feed');
@@ -1224,7 +1224,7 @@ describe('home overview and dedicated changelog route', () => {
 
   it('rotates audit-window and site-content counters for the October 9 pass', () => {
     assert.match(signalsSource, /50 Sep 18–Oct 9 posts reviewed last pass/, 'audit window should carry the demoted October 9 label');
-    assert.match(signalsSource, /12 knowledge pages \+ 76 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 77 update pages/, 'site content count should include the new update page');
     assert.match(signalsSource, /4 sources matched last pass · Princeton III ED-precedes-CVD consensus/, 'sources-verified counter should carry the demoted October 9 label');
     assert.match(signalsSource, /4 sources matched last pass · Axios October 8 interview coverage/, 'prior sources-verified counter should carry the October 9 label');
     assert.match(signalsSource, /\{ date: '2026-10-10', x_post: 1/, 'curated activity should include the October 10 site row');
@@ -1304,7 +1304,7 @@ describe('home overview and dedicated changelog route', () => {
 
   it('rotates audit-window and site-content counters for the October 13 pass', () => {
     assert.match(signalsSource, /50 Sep 24–Oct 14 posts reviewed last pass/, 'audit window should carry the demoted October 13 label');
-    assert.match(signalsSource, /12 knowledge pages \+ 76 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 77 update pages/, 'site content count should include the new update page');
     assert.match(signalsSource, /4 sources matched last pass · UCL Newman Ig Nobel announcement/, 'prior sources-verified counter should carry the demoted October 13 label');
     assert.match(signalsSource, /4 sources matched last pass · Princeton III ED-precedes-CVD consensus/, 'older sources-verified counter should carry the demoted October 9 label');
     assert.match(signalsSource, /\{ date: '2026-10-14', x_post: 3/, 'curated activity should recount the October 14 feed');
@@ -1321,7 +1321,7 @@ describe('home overview and dedicated changelog route', () => {
 
   it('rotates audit-window and site-content counters for the October 19 pass', () => {
       assert.match(signalsSource, /50 Oct 7–20 posts reviewed last pass via read-only bird user-tweets audit/, 'audit window should carry the demoted October 20 label');
-      assert.match(signalsSource, /12 knowledge pages \+ 76 update pages/, 'site content count should include the new update page');
+      assert.match(signalsSource, /12 knowledge pages \+ 77 update pages/, 'site content count should include the new update page');
       assert.match(signalsSource, /3 sources matched last pass · October 19 women’s-health executive order/, 'sources-verified counter should carry the demoted October 20 label');
       assert.match(signalsSource, /\{ date: '2026-10-21', x_post: 11/, 'curated activity should recount the October 21 feed');
       assert.match(signalsSource, /\{ date: '2026-10-20', x_post: 9/, 'curated activity should recount the October 20 feed');
@@ -1380,7 +1380,7 @@ describe('home overview and dedicated changelog route', () => {
 
   it('rotates audit-window and site-content counters for the October 20 pass', () => {
       assert.match(signalsSource, /50 Oct 9–21 posts reviewed last pass via read-only bird user-tweets audit/, 'audit window should cover this pass');
-      assert.match(signalsSource, /12 knowledge pages \+ 76 update pages/, 'site content count should include the new update page');
+      assert.match(signalsSource, /12 knowledge pages \+ 77 update pages/, 'site content count should include the new update page');
       assert.match(signalsSource, /4 sources matched last pass · Veradermics Phase 3 ‘304’ topline/, 'sources-verified counter should cover this pass');
       assert.match(signalsSource, /\{ date: '2026-10-21', x_post: 11/, 'curated activity should recount the October 21 feed');
       assert.match(signalsSource, /\{ date: '2026-10-20', x_post: 9/, 'curated activity should recount the October 20 feed');
@@ -1488,10 +1488,10 @@ describe('home overview and dedicated changelog route', () => {
     });
 
     it('rotates audit-window and site-content counters for the October 21 pass', () => {
-      assert.match(signalsSource, /50 Oct 13–22 posts reviewed via read-only bird user-tweets audit/, 'audit window should cover this pass');
-      assert.match(signalsSource, /12 knowledge pages \+ 76 update pages/, 'site content count should include the new update page');
-      assert.match(signalsSource, /4 sources matched · TRM Labs October 6 peptide\/fentanyl-precursor blockchain analysis/, 'sources-verified counter should cover this pass');
-      assert.match(signalsSource, /\{ date: '2026-10-22', x_post: 1/, 'curated activity should recount the October 22 feed');
+      assert.match(signalsSource, /50 Oct 13–22 posts reviewed last pass via read-only bird user-tweets audit/, 'audit window should cover this pass');
+      assert.match(signalsSource, /12 knowledge pages \+ 77 update pages/, 'site content count should include the new update page');
+      assert.match(signalsSource, /4 sources matched last pass · TRM Labs October 6 peptide\/fentanyl-precursor blockchain analysis/, 'sources-verified counter should cover this pass');
+      assert.match(signalsSource, /\{ date: '2026-10-22', x_post: 5/, 'curated activity should recount the October 22 feed');
       assert.match(signalsSource, /\{ date: '2026-10-21', x_post: 11/, 'curated activity should recount the October 21 feed');
 
       const updatePage = readFileSync(new URL('../src/content/updates/2026-10-22-peptide-warning-nof1-critique-curation.md', import.meta.url), 'utf8');
@@ -1505,9 +1505,63 @@ describe('home overview and dedicated changelog route', () => {
       assert.match(updatePage, /Skipped as low-signal\/chronology/, 'update page should document the skip decisions');
     });
 
+    it('publishes the October 22 hearing-protection directive as an attributed claim with verified context', () => {
+      for (const required of [
+        'hearing-protection-earplug-advice',
+        '2113385315801199010',
+        'https://x.com/bryan_johnson/status/2113385315801199010',
+        'https://pubmed.ncbi.nlm.nih.gov/24412398/',
+        'https://doi.org/10.1016/S0140-6736(24)01296-0',
+        'Take earplugs everywhere',
+        'Can’t currently fix hearing loss',
+        'Hearing loss accelerates brain volume loss and cognitive decline',
+        'Lin et al. (NeuroImage, 2014, 10.1016/j.neuroimage.2013.12.059)',
+        '8.4 vs 7.2 cm³/year',
+        'right temporal lobe',
+        '2024 Lancet Commission',
+        'HR 1.37',
+        '17% lower dementia risk',
+        'ACHIEVE',
+        'ARIC subgroup',
+        'routinely above 85 dBA” venue list runs ahead of the measured record',
+        '80.4 dBA',
+        '77–78 dBA',
+        'no trial shows earplugs prevent cognitive decline',
+        'not a reader audiology recommendation, a venue-by-venue noise assessment, evidence that earplug use prevents dementia, or medical advice',
+        "confidence: 'medium'",
+      ]) {
+        assert.ok(signalsSource.includes(required), `October 22 signals should preserve: ${required}`);
+      }
+
+      assert.match(dashboardSectionsSource, /Take earplugs everywhere[^]*not a reader audiology recommendation, evidence of youthful equivalence, evidence that earplug use prevents dementia, a tested physiological loop, or medical advice/i, 'timeline should pair the October 22 claims with their boundary');
+
+      const bryanJohnsonSource = readFileSync(new URL('../src/content/knowledge/bryan-johnson.md', import.meta.url), 'utf8');
+      assert.match(bryanJohnsonSource, /On October 22[^]*Take earplugs everywhere[^]*not a reader audiology recommendation, evidence of youthful equivalence, evidence that earplug use prevents dementia, a tested physiological loop, or medical advice/i, 'bryan-johnson page should record the October 22 claims with their boundary');
+
+      assert.match(protocolsSource, /“Take earplugs everywhere” post as an attributed prevention directive[^]*not a hearing-protection prescription or medical advice/, 'health protocol guidance should keep the hearing directive in the attributed lane');
+      assert.match(protocolsSource, /label: 'Hearing-protection directive'/, 'health protocol dossier should carry a hearing-protection card');
+    });
+
+    it('rotates audit-window and site-content counters for the October 22 pass', () => {
+      assert.match(signalsSource, /50 Oct 14–22 posts reviewed via read-only bird user-tweets audit/, 'audit window should cover this pass');
+      assert.match(signalsSource, /12 knowledge pages \+ 77 update pages/, 'site content count should include the new update page');
+      assert.match(signalsSource, /3 sources matched · Lin et al\. NeuroImage 2014 BLSA hearing\/brain-atrophy study/, 'sources-verified counter should cover this pass');
+      assert.match(signalsSource, /\{ date: '2026-10-23', x_post: 0/, 'curated activity should include the October 23 site row');
+      assert.match(signalsSource, /\{ date: '2026-10-22', x_post: 5/, 'curated activity should recount the October 22 feed');
+
+      const updatePage = readFileSync(new URL('../src/content/updates/2026-10-23-hearing-earplug-directive-curation.md', import.meta.url), 'utf8');
+      assert.match(updatePage, /50 posts spanning October 14–22/, 'update page should document the audit window');
+      assert.match(updatePage, /four posts newer than the last covered boundary/, 'update page should document the gap tally');
+      assert.match(updatePage, /Lin et al\., NeuroImage 2014/, 'update page should document the BLSA verification');
+      assert.match(updatePage, /2024 Lancet Commission ranks hearing loss/, 'update page should document the Lancet Commission verification');
+      assert.match(updatePage, /2,376-venue SoundPrint restaurant survey/, 'update page should document the restaurant-noise verification');
+      assert.match(updatePage, /no trial shows earplugs prevent cognitive decline/, 'update page should document the intervention-evidence boundary');
+      assert.match(updatePage, /Skipped as low-signal\/chronology/, 'update page should document the skip decisions');
+    });
+
   it('rotates audit-window and site-content counters for the October 18 pass', () => {
       assert.match(signalsSource, /50 Oct 5–18 posts reviewed last pass via read-only bird user-tweets audit/, 'audit window should carry the demoted October 18 label');
-      assert.match(signalsSource, /12 knowledge pages \+ 76 update pages/, 'site content count should include the new update page');
+      assert.match(signalsSource, /12 knowledge pages \+ 77 update pages/, 'site content count should include the new update page');
       assert.match(signalsSource, /4 sources matched last pass · Turco 2021 menstrual-flow organoid study/, 'sources-verified counter should carry the demoted October 18 label');
       assert.match(signalsSource, /\{ date: '2026-10-19', x_post: 7/, 'curated activity should recount the October 19 feed');
       assert.match(signalsSource, /\{ date: '2026-10-18', x_post: 3/, 'curated activity should recount the October 18 feed');
@@ -1560,7 +1614,7 @@ describe('home overview and dedicated changelog route', () => {
 
     it('rotates audit-window and site-content counters for the October 17 pass', () => {
       assert.match(signalsSource, /50 Oct 3–17 posts reviewed last pass via read-only bird user-tweets audit/, 'audit window should carry the demoted October 17 label');
-      assert.match(signalsSource, /12 knowledge pages \+ 76 update pages/, 'site content count should include the new update page');
+      assert.match(signalsSource, /12 knowledge pages \+ 77 update pages/, 'site content count should include the new update page');
       assert.match(signalsSource, /3 sources matched last pass · You Can See Everything film record/, 'sources-verified counter should carry the demoted October 17 label');
     assert.match(signalsSource, /\{ date: '2026-10-18', x_post: 3/, 'curated activity should recount the October 18 feed');
     assert.match(signalsSource, /\{ date: '2026-10-17', x_post: 4/, 'curated activity should recount the October 17 feed');
@@ -1610,7 +1664,7 @@ describe('home overview and dedicated changelog route', () => {
 
   it('rotates audit-window and site-content counters for the October 16 pass', () => {
     assert.match(signalsSource, /50 Oct 2–16 posts reviewed last pass via read-only bird user-tweets audit/, 'audit window should carry the demoted October 16 label');
-    assert.match(signalsSource, /12 knowledge pages \+ 76 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 77 update pages/, 'site content count should include the new update page');
     assert.match(signalsSource, /3 sources matched last pass · CMAJ 2016 RHR–mortality meta-analysis/, 'sources-verified counter should carry the demoted October 16 label');
     assert.match(signalsSource, /\{ date: '2026-10-16', x_post: 4/, 'curated activity should recount the October 16 feed');
     assert.match(signalsSource, /\{ date: '2026-10-15', x_post: 5/, 'curated activity should recount the October 15 feed');
@@ -1661,7 +1715,7 @@ describe('home overview and dedicated changelog route', () => {
 
   it('rotates audit-window and site-content counters for the October 14 pass', () => {
     assert.match(signalsSource, /50 Sep 25–Oct 15 posts reviewed last pass via read-only bird user-tweets audit/, 'audit window should carry the demoted October 14 label');
-    assert.match(signalsSource, /12 knowledge pages \+ 76 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 77 update pages/, 'site content count should include the new update page');
     assert.match(signalsSource, /3 sources matched last pass · NEJM deCODE Iceland actionable-genotype study/, 'sources-verified counter should carry the demoted October 14 label');
     assert.match(signalsSource, /\{ date: '2026-10-15', x_post: 5/, 'curated activity should recount the October 15 feed');
     assert.match(signalsSource, /\{ date: '2026-10-14', x_post: 3/, 'curated activity should recount the October 14 feed');
@@ -1751,7 +1805,7 @@ describe('home overview and dedicated changelog route', () => {
     for (const phrase of ['Enhanced Games follow-up', 'Kate Tolo baseline', 'Microplastics testing', '82 unique tweet URLs', '11 tweets with engagement']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `signals/sidebar data should include ${phrase}`);
     }
-    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 76 update pages']) {
+    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 77 update pages']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `source counts should include ${phrase}`);
     }
     assert.doesNotMatch(indexSource, /index \* 17|updateCards\[0\]|next curated publish pass/, 'right sidebar should not use deterministic placeholder formulas or newest-card watch copy');

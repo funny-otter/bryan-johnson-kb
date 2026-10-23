@@ -1,5 +1,25 @@
 export const curatedSignals = [
   {
+    id: 'hearing-protection-earplug-advice',
+    title: '“Take earplugs everywhere”: Johnson issues the feed’s first standalone hearing-preservation directive — the brain-atrophy link is real, but “routinely above 85 dBA” overstates the measured record for the venues he names',
+    date: '2026-10-22',
+    badge: 'Prevention',
+    kind: 'tweet',
+    topic: 'Recreational noise exposure / hearing preservation / dementia risk',
+    summary:
+      'Johnson posted the feed’s first standalone hearing-preservation directive: “Take earplugs everywhere. Environments routinely above 85 dBA: > restaurants > sporting events > social gatherings > gym and theater > trains and subways > coffee shops. Can’t currently fix hearing loss. Hearing loss accelerates brain volume loss and cognitive decline.” (2,034 likes, 171 replies, 94 reposts; October 22, 21:41 UTC). The medical claims verify in direction: Lin et al. (NeuroImage, 2014, 10.1016/j.neuroimage.2013.12.059) followed 126 adults aged 56–86 in the Baltimore Longitudinal Study of Aging neuroimaging substudy for a mean 6.4 years and found speech-frequency hearing impairment independently associated with accelerated whole-brain atrophy (8.4 vs 7.2 cm³/year) and faster volume decline in the right temporal lobe — superior, middle, and inferior temporal gyri plus parahippocampus, the spoken-language regions; and the 2024 Lancet Commission on dementia prevention ranks hearing loss among its 14 modifiable risk factors (updated meta-analysis HR 1.37, n=666,370; 45% of dementia theoretically preventable across all 14), reporting hearing-aid use associated with 17% lower dementia risk and that the ACHIEVE randomized trial found a 48% three-year cognitive protective effect of hearing aids confined to its high-risk ARIC subgroup, with no overall effect in healthy volunteers. “Can’t currently fix hearing loss” is also accurate — noise-induced cochlear damage is permanent, and hearing aids and implants compensate without restoring normal hearing. The boundary: the “routinely above 85 dBA” venue list runs ahead of the measured record for the everyday venues it names — NYC mass-transit dosimetry (243 measurements) puts subway platforms at a mean 80.4 dBA with only about 20% of measurements exceeding 85 (a pilot survey averaged 86 dBA on platforms with 106–112 dBA maxima), while the largest restaurant-noise dataset (2,376 NYC venues crowd-measured via SoundPrint) averages 77–78 dBA with 25% of venues above 81 — conversation-hostile, but a single dinner at those levels sits far below the NIOSH 85-dBA 8-hour cumulative-dose concern, and 85 dBA is a workplace time-weighted limit, not a momentary danger line. The brain associations are observational — the BLSA authors discuss shared-neuropathology and reverse-causation alternatives — and no trial shows earplugs prevent cognitive decline (ACHIEVE tested hearing aids in people with hearing loss, not earplugs in normal-hearing people). The dashboard records an attributed prevention directive with verified literature and measured-noise context—not a reader audiology recommendation, a venue-by-venue noise assessment, evidence that earplug use prevents dementia, or medical advice.',
+    href: '/health/',
+    tweetId: '2113385315801199010',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2113385315801199010',
+      'https://pubmed.ncbi.nlm.nih.gov/24412398/',
+      'https://doi.org/10.1016/S0140-6736(24)01296-0',
+      'https://pmc.ncbi.nlm.nih.gov/articles/PMC2707461/',
+      'https://doi.org/10.4236/jss.2018.68005',
+    ],
+  },
+  {
     id: 'gray-market-peptide-safety-relay',
     title: '“Your peptides may be coming [from] fentanyl suppliers”: Johnson relays a fully verifiable gray-market peptide safety warning — TRM’s vendor-overlap numbers, CBP’s master-carton seizures, and the first reported bootleg-retatrutide deaths',
     date: '2026-10-21',
@@ -2003,10 +2023,12 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Live Bird timeline audit', value: '50', detail: '50 Oct 13–22 posts reviewed via read-only bird user-tweets audit' },
-  { label: 'Sources verified this pass', value: '4', detail: '4 sources matched · TRM Labs October 6 peptide/fentanyl-precursor blockchain analysis (150+ vendors, ~75% dual-listing, $28.2M→$37.3M inflows 2023–2025, ~57% US) + WSJ vendor counts and CBP seizure record (~400 master-carton operations, 2,400+ seizures, 130,000+ vials Oct 2025–Aug 2026) + CBS News October 13 report of two FAERS retatrutide death reports + Koehler et al. Cell Reports Medicine GLP-1/GLP-2 enteropathy study (10.1016/j.xcrm.2026.103115)' },
-  { label: 'Prior audit window', value: '50', detail: '50 Oct 9–21 posts reviewed last pass via read-only bird user-tweets audit' },
-  { label: 'Prior sources verified', value: '4', detail: '4 sources matched last pass · Veradermics Phase 3 ‘304’ topline (536 men, 28.6/36.4 vs 6.6 hairs/cm²) + Panchaprateep & Luengarun 5-mg oral-minoxidil study (35.9 hairs/cm², n=30 open-label, cited in JAMA Dermatology) + Johnson’s own Blueprint “I stopped taking rapamycin” essay (Sept 28, 2024 decision, dosing history, side-effect list) + peer-reviewed rapamycin-skepticism reviews (Lancet Healthy Longevity systematic review + Frontiers in Aging 2025 + Aging 2024)' },
+  { label: 'Live Bird timeline audit', value: '50', detail: '50 Oct 14–22 posts reviewed via read-only bird user-tweets audit' },
+  { label: 'Sources verified this pass', value: '3', detail: '3 sources matched · Lin et al. NeuroImage 2014 BLSA hearing/brain-atrophy study (10.1016/j.neuroimage.2013.12.059; n=126, 6.4-yr follow-up, 8.4 vs 7.2 cm³/yr) + 2024 Lancet Commission dementia-prevention report (hearing loss HR 1.37, hearing aids 17% lower dementia risk, ACHIEVE RCT) + NYC recreational-noise surveys (Neitzel transit dosimetry 80.4 dBA subway platforms + SoundPrint 2,376-venue restaurant survey 77–78 dBA avg)' },
+  { label: 'Prior audit window', value: '50', detail: '50 Oct 13–22 posts reviewed last pass via read-only bird user-tweets audit' },
+  { label: 'Prior sources verified', value: '4', detail: '4 sources matched last pass · TRM Labs October 6 peptide/fentanyl-precursor blockchain analysis (150+ vendors, ~75% dual-listing, $28.2M→$37.3M inflows 2023–2025, ~57% US) + WSJ vendor counts and CBP seizure record (~400 master-carton operations, 2,400+ seizures, 130,000+ vials Oct 2025–Aug 2026) + CBS News October 13 report of two FAERS retatrutide death reports + Koehler et al. Cell Reports Medicine GLP-1/GLP-2 enteropathy study (10.1016/j.xcrm.2026.103115)' },
+  { label: 'Earlier audit window', value: '50', detail: '50 Oct 9–21 posts reviewed last pass via read-only bird user-tweets audit' },
+  { label: 'Earlier sources verified', value: '4', detail: '4 sources matched last pass · Veradermics Phase 3 ‘304’ topline (536 men, 28.6/36.4 vs 6.6 hairs/cm²) + Panchaprateep & Luengarun 5-mg oral-minoxidil study (35.9 hairs/cm², n=30 open-label, cited in JAMA Dermatology) + Johnson’s own Blueprint “I stopped taking rapamycin” essay (Sept 28, 2024 decision, dosing history, side-effect list) + peer-reviewed rapamycin-skepticism reviews (Lancet Healthy Longevity systematic review + Frontiers in Aging 2025 + Aging 2024)' },
   { label: 'Earlier audit window', value: '50', detail: '50 Oct 7–20 posts reviewed last pass via read-only bird user-tweets audit' },
   { label: 'Prior sources verified', value: '3', detail: '3 sources matched last pass · October 19 women’s-health executive order (White House EO text + HHS release confirming NIH Women’s Health Division, endometriosis named) + EIA average-US-household electricity references (~10,500 kWh/yr ≈ 29 kWh/day) + post engagement metrics' },
   { label: 'Earlier audit window', value: '50', detail: '50 Oct 5–18 posts reviewed last pass via read-only bird user-tweets audit' },
@@ -2055,11 +2077,12 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '88', detail: '12 knowledge pages + 76 update pages after this pass' },
+  { label: 'Public site content', value: '89', detail: '12 knowledge pages + 77 update pages after this pass' },
 ];
 
 export const curatedActivity = [
-  { date: '2026-10-22', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-23', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-22', x_post: 5, third_party: 0, wiki_update: 0, site_update: 2 },
   { date: '2026-10-21', x_post: 11, third_party: 0, wiki_update: 0, site_update: 2 },
   { date: '2026-10-20', x_post: 9, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-19', x_post: 7, third_party: 0, wiki_update: 0, site_update: 1 },
