@@ -1,5 +1,26 @@
 export const curatedSignals = [
   {
+    id: 'bone-pressure-lifespan-claim',
+    title: '“Mechanical pressure on shin bones extended mouse lifespan by 80 days (+9.4%)”: the mechanism literature is real — but the headline figure traces to no bone-loading study, and the identical +80-day/9% result belongs to an unrelated 2009 genetics paper',
+    date: '2026-10-24',
+    badge: 'Research claim',
+    kind: 'tweet',
+    topic: 'Bone mechanosensing / PIEZO1 / mouse lifespan claim',
+    summary:
+      'Johnson posted the feed’s first bone-mechanosensing longevity claim: “Mechanical pressure on shin bones extended mouse lifespan by 80 days (+9.4%). That’s the human equivalent of 7–9 yrs. Bone pressure triggers PIEZO1 sensors to broadcast anti-aging signals to the brain, liver, and immune system. If this translates to humans, my dunk training is flooding my entire body with anti-aging juice.” (83 likes, 17 replies, 2 reposts at curation time; October 24, 01:28 UTC, with an attached paper screenshot). The mechanism direction verifies: osteocyte PIEZO1 as the skeleton’s force sensor is established (Li et al., eLife 2019, 10.7554/eLife.49631, where a Piezo1 agonist alone increases bone mass), and 2026 work extends it systemically in exactly the directions the post names — Cai et al., Nature Neuroscience (10.1038/s41593-026-02422-w), show dynamic compressive tibial axial loading increased survival and recovery after stroke/TBI in mice and pigs through osteocyte PIEZO1 releasing IL-1R2, APOL11a and HSP70 and raising serum BDNF, PF4 and dopamine, and Zhang et al. (bioRxiv, 10.64898/2026.07.05.736555) define a mechano-bone-immune axis in which tibial loading suppresses immunosenescence in aged mice and macaques. But the post names no study, and the attached screenshot is Zhao et al., Aging Cell 2026 (10.1111/acel.70687) — a paper about rescuing aged bone’s anabolic (bone-mass) response with a Piezo1 agonist, with no lifespan endpoint. The “+80 days (+9.4%)” figure appears in none of the identified papers; the identical result — median lifespan extended 80 days (862→942 days), ~9%, with the effect significant only in females — is Selman et al., Science 2009 (10.1126/science.1177221) on S6K1 knockout, an mTOR-pathway genetics study with no mechanical loading at all. The “human equivalent of 7–9 yrs” is arithmetic on the +9.4% figure, so it inherits the mismatch; the “liver” leg of the brain/liver/immune triad has no identified source; and the mouse loading in the real papers is an external device compressing the tibia at roughly 15× body weight for minutes — not jumping, so “my dunk training is flooding my entire body with anti-aging juice” is a conditional joke stacked on an untraceable number. The dashboard records an attributed research relay with verified mechanism context and an untraceable headline figure—not evidence that jumping or dunk training extends life, a reader exercise prescription, or medical advice.',
+    href: '/longevity/',
+    tweetId: '2113804913188983076',
+    confidence: 'low',
+    sources: [
+      'https://x.com/bryan_johnson/status/2113804913188983076',
+      'https://doi.org/10.1111/acel.70687',
+      'https://doi.org/10.1038/s41593-026-02422-w',
+      'https://doi.org/10.64898/2026.07.05.736555',
+      'https://doi.org/10.1126/science.1177221',
+      'https://doi.org/10.7554/eLife.49631',
+    ],
+  },
+  {
     id: 'hearing-protection-earplug-advice',
     title: '“Take earplugs everywhere”: Johnson issues the feed’s first standalone hearing-preservation directive — the brain-atrophy link is real, but “routinely above 85 dBA” overstates the measured record for the venues he names',
     date: '2026-10-22',
@@ -2023,9 +2044,11 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Live Bird timeline audit', value: '50', detail: '50 Oct 14–22 posts reviewed via read-only bird user-tweets audit' },
-  { label: 'Sources verified this pass', value: '3', detail: '3 sources matched · Lin et al. NeuroImage 2014 BLSA hearing/brain-atrophy study (10.1016/j.neuroimage.2013.12.059; n=126, 6.4-yr follow-up, 8.4 vs 7.2 cm³/yr) + 2024 Lancet Commission dementia-prevention report (hearing loss HR 1.37, hearing aids 17% lower dementia risk, ACHIEVE RCT) + NYC recreational-noise surveys (Neitzel transit dosimetry 80.4 dBA subway platforms + SoundPrint 2,376-venue restaurant survey 77–78 dBA avg)' },
-  { label: 'Prior audit window', value: '50', detail: '50 Oct 13–22 posts reviewed last pass via read-only bird user-tweets audit' },
+  { label: 'Live Bird timeline audit', value: '20', detail: '20 Oct 20–24 posts reviewed via read-only bird user-tweets audit' },
+  { label: 'Sources verified this pass', value: '5', detail: '5 sources matched · Zhao et al. Aging Cell 2026 Piezo1/Cx43 aged-bone paper (10.1111/acel.70687, image-cited, bone-mass endpoint only) + Cai et al. Nature Neuroscience bone–brain axis (10.1038/s41593-026-02422-w, DCTAL/PIEZO1 post-injury survival) + Zhang et al. bioRxiv mechano-bone-immune axis (10.64898/2026.07.05.736555, aged mice/macaques) + Selman et al. Science 2009 S6K1 knockout (10.1126/science.1177221, +80-day/9% median lifespan figure actually matching the tweet) + Li et al. eLife 2019 Piezo1 bone anabolism (10.7554/eLife.49631)' },
+  { label: 'Prior audit window', value: '50', detail: '50 Oct 14–22 posts reviewed last pass via read-only bird user-tweets audit' },
+  { label: 'Prior sources verified', value: '3', detail: '3 sources matched last pass · Lin et al. NeuroImage 2014 BLSA hearing/brain-atrophy study (10.1016/j.neuroimage.2013.12.059; n=126, 6.4-yr follow-up, 8.4 vs 7.2 cm³/yr) + 2024 Lancet Commission dementia-prevention report (hearing loss HR 1.37, hearing aids 17% lower dementia risk, ACHIEVE RCT) + NYC recreational-noise surveys (Neitzel transit dosimetry 80.4 dBA subway platforms + SoundPrint 2,376-venue restaurant survey 77–78 dBA avg)' },
+  { label: 'Earlier audit window', value: '50', detail: '50 Oct 13–22 posts reviewed last pass via read-only bird user-tweets audit' },
   { label: 'Prior sources verified', value: '4', detail: '4 sources matched last pass · TRM Labs October 6 peptide/fentanyl-precursor blockchain analysis (150+ vendors, ~75% dual-listing, $28.2M→$37.3M inflows 2023–2025, ~57% US) + WSJ vendor counts and CBP seizure record (~400 master-carton operations, 2,400+ seizures, 130,000+ vials Oct 2025–Aug 2026) + CBS News October 13 report of two FAERS retatrutide death reports + Koehler et al. Cell Reports Medicine GLP-1/GLP-2 enteropathy study (10.1016/j.xcrm.2026.103115)' },
   { label: 'Earlier audit window', value: '50', detail: '50 Oct 9–21 posts reviewed last pass via read-only bird user-tweets audit' },
   { label: 'Earlier sources verified', value: '4', detail: '4 sources matched last pass · Veradermics Phase 3 ‘304’ topline (536 men, 28.6/36.4 vs 6.6 hairs/cm²) + Panchaprateep & Luengarun 5-mg oral-minoxidil study (35.9 hairs/cm², n=30 open-label, cited in JAMA Dermatology) + Johnson’s own Blueprint “I stopped taking rapamycin” essay (Sept 28, 2024 decision, dosing history, side-effect list) + peer-reviewed rapamycin-skepticism reviews (Lancet Healthy Longevity systematic review + Frontiers in Aging 2025 + Aging 2024)' },
@@ -2077,10 +2100,11 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '89', detail: '12 knowledge pages + 77 update pages after this pass' },
+  { label: 'Public site content', value: '90', detail: '12 knowledge pages + 78 update pages after this pass' },
 ];
 
 export const curatedActivity = [
+  { date: '2026-10-24', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-23', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-22', x_post: 5, third_party: 0, wiki_update: 0, site_update: 2 },
   { date: '2026-10-21', x_post: 11, third_party: 0, wiki_update: 0, site_update: 2 },

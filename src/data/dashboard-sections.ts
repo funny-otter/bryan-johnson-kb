@@ -349,6 +349,16 @@ export const opinionItems: OpinionItem[] = [
 
 export const timelineEvents: TimelineEvent[] = [
   {
+    date: '2026-10-24',
+    label: 'A bone-mechanosensing lifespan claim arrives with a real mechanism and an untraceable headline number: the +80 days traces to a 2009 genetics paper, not bone loading',
+    summary:
+      'Twenty-one minutes after midnight UTC, Johnson posted the feed’s first bone-mechanosensing longevity claim: “Mechanical pressure on shin bones extended mouse lifespan by 80 days (+9.4%). That’s the human equivalent of 7–9 yrs. Bone pressure triggers PIEZO1 sensors to broadcast anti-aging signals to the brain, liver, and immune system. If this translates to humans, my dunk training is flooding my entire body with anti-aging juice.” (83 likes, 17 replies, 2 reposts; with an attached paper screenshot). The mechanism direction verifies: osteocyte PIEZO1 as the skeleton’s force sensor is established (Li et al., eLife 2019 — a Piezo1 agonist alone increases bone mass), and 2026 work extends it systemically in exactly the directions the post names — Cai et al., Nature Neuroscience, show dynamic compressive tibial loading increased survival and recovery after stroke/TBI in mice and pigs via osteocyte PIEZO1 releasing IL-1R2, APOL11a and HSP70 and raising serum BDNF, PF4 and dopamine; Zhang et al. (bioRxiv) define a mechano-bone-immune axis in which tibial loading suppresses immunosenescence in aged mice and macaques. But the screenshot is Zhao et al., Aging Cell 2026 — a paper about rescuing aged bone’s anabolic bone-mass response with a Piezo1 agonist, with no lifespan endpoint. The “+80 days (+9.4%)” figure appears in none of the identified papers; the identical result — median lifespan 862→942 days, ~9%, significant only in females — is Selman et al., Science 2009 on S6K1 knockout, an mTOR-pathway genetics study with no mechanical loading at all. The “human equivalent of 7–9 yrs” is arithmetic on the mismatched figure; the “liver” leg of the triad has no identified source; and the mouse loading is an external device compressing the tibia at ~15× body weight — not jumping — so the dunk-training payoff is a conditional joke stacked on an untraceable number. The dashboard records an attributed research relay with verified mechanism context and an untraceable headline figure—not evidence that jumping or dunk training extends life, a reader exercise prescription, or medical advice.',
+    relatedHref: '/longevity/',
+    relatedTitle: 'Longevity protocol',
+    source: 'https://x.com/bryan_johnson/status/2113804913188983076',
+    confidence: 'low',
+  },
+  {
     date: '2026-10-22',
     label: '“Take earplugs everywhere”: the feed’s first standalone hearing-preservation directive, and the percentile stack returns as a comeback to “you look your age”',
     summary:
