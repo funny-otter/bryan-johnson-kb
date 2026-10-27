@@ -1,5 +1,84 @@
 export const curatedSignals = [
   {
+    id: 'il11-lifespan-relay-drift',
+    title: '“Extends the medium lifespan of male mice by 22.5% and 35% in female mice”: the IL-11 relay is a real, landmark Nature paper — but the female figure is wrong in the paper, wrong against Johnson’s own 2024 post, and the relay inherits a quote-post’s framing',
+    date: '2026-10-26',
+    badge: 'Research claim',
+    kind: 'tweet',
+    topic: 'IL-11 inhibition / anti-aging / mouse lifespan relay',
+    summary:
+      'Johnson quote-posted Ryan Bethencourt’s same-age-mice photo (“the human equivalent of 85… the mouse on the right was given an antibody blocking a single inflammatory protein (IL-11) starting in late middle age”) with: “Extends the medium lifespan of male mice by 22.5% and 35% in female mice. It’s a few years old, I posted about it in 2024. Showed IL-11 as a driver of aging, and tissue inflammation and fibrosis. It climbed up with age, and was linked to fat build up and muscle loss. It is now in Phase II human clinical trials for lung fibrosis.” (1,048 likes, 51 reposts, 43 replies at curation; October 26, 21:41 UTC). The underlying work verifies in full: Widjaja et al., “Inhibition of IL-11 signalling extends mammalian healthspan and lifespan,” Nature, July 17, 2024 (10.1038/s41586-024-07701-9) — Il11 deletion extended lifespan in both sexes (24.9% averaged across genetic-deletion studies), and anti-IL-11 antibody (X203) from 75 weeks until death extended median lifespan 22.5% in males (130.3→159.6 weeks) and 25% in females (117.1→146.4 weeks), with fewer tumours at autopsy, improved metabolism and muscle function, and the ERK–AMPK–mTORC1 framing the post summarizes; the “Phase II human clinical trials for lung fibrosis” leg also verifies — Boehringer Ingelheim announced a Phase IIa trial of first-in-class IL-11 inhibitor BI 765423 in idiopathic pulmonary fibrosis on January 13, 2026, an asset in-licensed from the same Singapore/Duke-NUS lineage as the mouse work (Lassen Therapeutics’ LASN01 anti-IL-11-receptor antibody completed Phase 1/2a in pulmonary fibrosis and thyroid eye disease). But the relay misquotes its own source: the paper’s female figure is 25%, not 35%, and Johnson’s own July 17, 2024 post (“Treatment with anti-IL-11 from 75 weeks of age until death extends the median lifespan of male mice by 22.5% and of female mice by 25%,” with the same 105-week-old mouse photo) quotes it correctly — so the October 26 version degrades against both the paper and his own earlier post, the same class of transcription drift this dashboard recorded on the bone-pressure figure two days earlier. “Medium lifespan” for “median,” and the quote-post’s 85-human-year framing, are Bethencourt’s glosses; the post names no study. Boundaries: mouse antibody dosing and knockout genetics, no human longevity data; the IPF trial tests lung function, not aging endpoints; the photo pair is one representative image, not the survival curves. The dashboard records an attributed research relay with a verified paper and a drifted figure—not evidence for anti-IL-11 in humans, a drug expectancy, or medical advice.',
+    href: '/longevity/',
+    tweetId: '2114834793296978182',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2114834793296978182',
+      'https://x.com/RyanBethencourt/status/2114701737307087047',
+      'https://x.com/bryan_johnson/status/1813710102308028577',
+      'https://doi.org/10.1038/s41586-024-07701-9',
+      'https://www.duke-nus.edu.sg/newshub/media-releases/il-11-idiopathic-pulmonary-fibrosis',
+      'https://clinicaltrials.gov/study/NCT05331300',
+    ],
+  },
+  {
+    id: 'psilocybin-parkinsons-gdf15-claim',
+    title: '“Another win for psilocybin”: the feed relays a real three-day-old JAMA Psychiatry letter — while calling a 9-person uncontrolled subsample “9 Parkinson’s patients” and dropping every design limitation the authors state',
+    date: '2026-10-25',
+    badge: 'Research claim',
+    kind: 'tweet',
+    topic: 'Psilocybin / Parkinson’s / GDF15 / inflammation markers',
+    summary:
+      'Johnson posted the feed’s first psychedelic-research relay: “Another win for psilocybin. In 9 Parkinson’s patients… GDF15 fell > 17.4% after 10 mg > 13.9% after 25 mg. High GDF15 signals mitochondrial failure and neurodegeneration. Inflammation also declined: > IL-6: −17% > IL-8: −20% > hsCRP: −9.6% > IL-10: +2.7% (anti-inflammatory)” (1,741 likes, 180 reposts, 79 replies; October 25, 14:18 UTC, with an attached figure). The study is real and the match is precise: Bradley, Kelley, et al., “Psilocybin and Inflammatory and Mitochondrial Stress Markers in Parkinson Disease,” JAMA Psychiatry research letter, published October 21, 2026 (10.1001/jamapsychiatry.2026.2733) — a secondary analysis of banked blood from the UCSF open-label pilot (NCT04932434; 12 participants with mild-to-moderate Parkinson’s plus depression/anxiety, 10 mg then 25 mg psilocybin with psychotherapy; Bradley et al., Neuropsychopharmacology 2025, 10.1038/s41386-025-02097-0), in which 9 of 12 gave samples, five inflammatory markers fell and were still significantly below baseline a month after the final dose, and the mitochondrial-stress marker GDF15 improved sharply right after dosing then lost the gain by longer-term follow-up. “High GDF15 signals mitochondrial failure and neurodegeneration” is a fair compression of why the marker was chosen (GDF-15 is elevated in mitochondrial disorders and in Parkinson’s serum). But the relay drops every limitation the letter and its authors state: single-arm, no control group, all participants knew they were receiving the drug, inflammatory markers move with sleep, stress, infection, and the depression that was lifting during hours of therapeutic attention; n=9 banked samples from a 12-person safety pilot; GDF15’s gain did not persist at follow-up while inflammation’s did; and co-author disclosures include psychedelic-industry ties. The “another win” framing converts an early biological signal the authors say needs controlled confirmation into a scoreboard result. Boundaries: psilocybin remains a Schedule I investigational substance; no dose, safety, or efficacy information for any reader; a randomized controlled trial (100 participants, UCSF + Yale, Michael J. Fox Foundation funding) is registered but not read out. The dashboard records an attributed research relay with a verified letter and dropped design context—not evidence psilocybin treats Parkinson’s, a psychedelic-use endorsement, or medical advice.',
+    href: '/health/',
+    tweetId: '2114361011474215200',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2114361011474215200',
+      'https://doi.org/10.1001/jamapsychiatry.2026.2733',
+      'https://doi.org/10.1038/s41386-025-02097-0',
+      'https://clinicaltrials.gov/study/NCT04932434',
+      'https://www.npr.org/2026/10/21/nx-s1-6009441/psychedelics-brain-inflammation-immune-system',
+    ],
+  },
+  {
+    id: 'microplastics-prevention-list',
+    title: '“How to reduce microplastics”: the feed’s first standalone reader-directed microplastics checklist — each item traces to real food-contact microplastics literature, and the biggest caveats are dose and health outcome, not direction',
+    date: '2026-10-25',
+    badge: 'Prevention',
+    kind: 'tweet',
+    topic: 'Microplastics exposure reduction / food-contact plastics',
+    summary:
+      'Johnson posted the feed’s first standalone microplastics-reduction directive aimed at readers’ environments: “how to reduce microplastics > glass or steel water bottle > never microwave food in plastic > wood cutting board > reverse osmosis water filter > loose leaf tea with stainless mesh” (4,855 likes, 190 reposts, 215 replies; October 25, 23:18 UTC). Each item traces to published measurement work: microwaving plastic containers releases by far the most microplastics and nanoplastics of any use scenario — up to 4.22 million microplastic and 2.11 billion nanoplastic particles per cm² in 3 minutes for some containers (Hussain et al., ES&T 2023, 10.1021/acs.est.3c04542s release; Environment & Health/ES&T 57:9782); plastic cutting boards shed an estimated 7.4–50.7 g/person-year of microplastics (polyethylene) — tens of millions of particles annually (Chen et al., ES&T 2023, 10.1021/acs.est.3c00924); plastic teabags steep at brewing temperature release on the order of 11.6 billion microplastics and 3.1 billion nanoplastics per cup in the canonical McGill measurement (Hernandez et al., ES&T 2019, 10.1021/acs.est.9b02540), and new head-to-head work finds bagged tea at 555–2,498 particles/cup vs 0.3–2.4 for bulk/loose leaf (Pehlivan & Gedik, npj Science of Food, October 13, 2026, 10.1038/s41538-026-01175-x) — the exact contrast behind “loose leaf tea with stainless mesh.” Glass/steel bottles and reverse-osmosis filtration are consistent with the same food-contact exposure framework; RO is also the filtration route Johnson’s own July sauna checklist and May microplastics-testing narrative already used. Boundaries: exposure-reduction logic is directional, but no study yet demonstrates that reducing these exposures improves human health outcomes — the health-effects literature is still predominantly association- and mechanism-level (cell/animal), and the ES&T cell studies are high-concentration in-vitro work; the checklist names no study; per-item effect sizes and rankings (which of the five moves exposure most) are not established; “never microwave food in plastic” is the strongest-supported single item. The dashboard records an attributed prevention checklist with verified measurement context—not a reader purchasing list, proven health-benefit evidence, or medical advice.',
+    href: '/nutrition/',
+    tweetId: '2114496819615187026',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2114496819615187026',
+      'https://doi.org/10.1021/acs.est.3c04542s',
+      'https://doi.org/10.1021/acs.est.3c00924',
+      'https://doi.org/10.1021/acs.est.9b02540',
+      'https://doi.org/10.1038/s41538-026-01175-x',
+    ],
+  },
+  {
+    id: 'halloween-sugar-war-framing',
+    title: '“A biological attack is planned for Saturday”: the Halloween-sugar post is rhetoric built on a real number — ~600 million pounds of candy is the standard retail estimate, but every pathway from sugar to “neural reward blunting” is compressed and unattributed',
+    date: '2026-10-25',
+    badge: 'Opinion',
+    kind: 'tweet',
+    topic: 'Halloween candy / sugar-consumption rhetoric',
+    summary:
+      'Johnson posted the feed’s most charged framing of the sugar narrative yet: “A biological attack is planned for Saturday. 600 million pounds of sugar laced with synthetic chemicals will enter the bodies of our children. Wreaking metabolic havoc, injuring vascular architecture, acidifying oral lining, releasing bacterial toxins, and blunting neural reward pathways. Instructing that gluttonous consumption of poison is celebratory.” (7,472 likes, 415 reposts, 510 replies; October 25, 15:33 UTC). The anchor number is the standard retail estimate: Americans buy roughly 600 million pounds of candy for Halloween each year (American Institute for Cancer Research; AP has used the same figure), and October 31, 2026 falls on a Saturday, so “Saturday” checks. The rest is rhetorical escalation of real-but-quiet directions: excess sugar consumption is associated with metabolic and cardiovascular risk and dental caries in the dietary-science literature (the AICR context for the same number is about processed-food calories and weight gain, not “attack” language); “acidifying oral lining” compresses the Stephan curve — sucrose fermentation drops plaque pH within minutes, driving caries — and “releasing bacterial toxins” gestures at endotoxin/LPS translocation literature that is far from established as a candy-season effect in children; “blunting neural reward pathways” compresses reward-system findings mostly demonstrated in rodent sugar-access models and human obesity neuroimaging, not trick-or-treaters. The post names no study, and “biological attack” converts a retail estimate into an adversarial frame — the same enemy-narrative register as the “don’t die” ideology’s death framing, now aimed at a holiday. Boundaries: engagement figures drift; children’s single-day candy consumption has no established acute “attack” consequence, and dietary guidelines treat added sugar as a chronic-exposure limit (≤10% of calories), not a poisoning event. The dashboard records an attributed opinion post with a verified anchor figure and compressed mechanisms—not a pediatric dietary directive, evidence that Halloween candy acutely injures children, or medical advice.',
+    href: '/opinions/',
+    tweetId: '2114379918213894223',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2114379918213894223',
+      'https://www.aicr.org/news/the-downside-of-halloween-candy/',
+      'https://apnews.com/article/technology-business-recycling-halloween-3d683ca2e6f9f137b228465dfa99f334',
+    ],
+  },
+  {
     id: 'bone-pressure-lifespan-claim',
     title: '“Mechanical pressure on shin bones extended mouse lifespan by 80 days (+9.4%)”: the figure looked untraceable for half a day — then Johnson self-corrected, and it resolves to a Cell Metabolism paper published the day before his post',
     date: '2026-10-24',
@@ -2047,10 +2126,11 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Live Bird timeline audit', value: '20', detail: '20 Oct 20–24 posts re-reviewed via read-only bird user-tweets audit (3 posts new since the October 24 pass: the security/patch-aging philosophy post, the paper self-correction, and the morning-routine essay)' },
-  { label: 'Sources verified this pass', value: '3', detail: '3 sources matched · Bai et al. Cell Metabolism 2026 “Dynamic force sensing by bone delays aging and extends lifespan” (10.1016/j.cmet.2026.09.020, published online October 23, 2026 — one day before the post; DTAL 2 N at 2 Hz, 300 cycles twice weekly extended median lifespan 9.4%/79.5 days with brain/liver/immune endpoints; OCR-identified from Johnson’s correction screenshot) + Zhao et al. eLife 2022 Cx43-hemichannel PGE2 loading mechanism backing the correction’s mechanism sentence (10.7554/eLife.74365) + Johnson’s October 24 13:53 UTC self-correction reply (2113992318206497133, 12,489 views) resolving the previously untraceable figure' },
-  { label: 'Prior audit window', value: '20', detail: '20 Oct 20–24 posts reviewed last pass via read-only bird user-tweets audit' },
-  { label: 'Prior sources verified', value: '5', detail: '5 sources matched last pass · Zhao et al. Aging Cell 2026 Piezo1/Cx43 aged-bone paper (10.1111/acel.70687, image-cited in the original post, bone-mass endpoint only) + Cai et al. Nature Neuroscience bone–brain axis (10.1038/s41593-026-02422-w) + Zhang et al. bioRxiv mechano-bone-immune axis (10.64898/2026.07.05.736555) + Selman et al. Science 2009 S6K1 knockout (10.1126/science.1177221 — the coincidental figure match, superseded this pass by the Bai et al. Cell Metabolism correction) + Li et al. eLife 2019 Piezo1 bone anabolism (10.7554/eLife.49631)' },
+  { label: 'Live Bird timeline audit', value: '50', detail: '50 Oct 17–27 posts reviewed via read-only bird user-tweets audit (7 posts new since the October 25 pass: the IL-11 relay, the psilocybin-Parkinson’s letter relay, the microplastics checklist, the Halloween-sugar post, and three low-signal media/banter posts)' },
+  { label: 'Sources verified this pass', value: '4', detail: '4 sources matched · Widjaja et al. Nature 2024 “Inhibition of IL-11 signalling extends mammalian healthspan and lifespan” (10.1038/s41586-024-07701-9; anti-IL-11 22.5% male / 25% female median-lifespan extension — the relay’s “35% female” misquotes both the paper and Johnson’s own July 17, 2024 post) + Boehringer Ingelheim BI 765423 Phase IIa IPF announcement (January 13, 2026, same Duke-NUS/SingHealth lineage) + Bradley/Kelley et al. JAMA Psychiatry research letter (10.1001/jamapsychiatry.2026.2733, published October 21, 2026; 9-of-12 banked-blood subsample of the UCSF open-label Parkinson’s pilot) + Pehlivan & Gedik npj Science of Food bagged-vs-loose-leaf head-to-head (10.1038/s41538-026-01175-x, 555–2,498 vs 0.3–2.4 particles/cup)' },
+  { label: 'Prior audit window', value: '20', detail: '20 Oct 20–24 posts re-reviewed via read-only bird user-tweets audit (the October 25 pass)' },
+  { label: 'Prior sources verified', value: '3', detail: '3 sources matched last pass · Bai et al. Cell Metabolism 2026 “Dynamic force sensing by bone delays aging and extends lifespan” (10.1016/j.cmet.2026.09.020, published online October 23, 2026 — one day before the post; DTAL 2 N at 2 Hz, 300 cycles twice weekly extended median lifespan 9.4%/79.5 days with brain/liver/immune endpoints; OCR-identified from Johnson’s correction screenshot) + Zhao et al. eLife 2022 Cx43-hemichannel PGE2 loading mechanism backing the correction’s mechanism sentence (10.7554/eLife.74365) + Johnson’s October 24 13:53 UTC self-correction reply (2113992318206497133, 12,489 views) resolving the previously untraceable figure' },
+  { label: 'Earlier sources verified', value: '5', detail: '5 sources matched · Zhao et al. Aging Cell 2026 Piezo1/Cx43 aged-bone paper (10.1111/acel.70687, image-cited in the original post, bone-mass endpoint only) + Cai et al. Nature Neuroscience bone–brain axis (10.1038/s41593-026-02422-w) + Zhang et al. bioRxiv mechano-bone-immune axis (10.64898/2026.07.05.736555) + Selman et al. Science 2009 S6K1 knockout (10.1126/science.1177221 — the coincidental figure match, superseded this pass by the Bai et al. Cell Metabolism correction) + Li et al. eLife 2019 Piezo1 bone anabolism (10.7554/eLife.49631)' },
   { label: 'Earlier audit window', value: '50', detail: '50 Oct 14–22 posts reviewed last pass via read-only bird user-tweets audit' },
   { label: 'Earlier sources verified', value: '3', detail: '3 sources matched last pass · Lin et al. NeuroImage 2014 BLSA hearing/brain-atrophy study (10.1016/j.neuroimage.2013.12.059; n=126, 6.4-yr follow-up, 8.4 vs 7.2 cm³/yr) + 2024 Lancet Commission dementia-prevention report (hearing loss HR 1.37, hearing aids 17% lower dementia risk, ACHIEVE RCT) + NYC recreational-noise surveys (Neitzel transit dosimetry 80.4 dBA subway platforms + SoundPrint 2,376-venue restaurant survey 77–78 dBA avg)' },
   { label: 'Earlier audit window', value: '50', detail: '50 Oct 13–22 posts reviewed last pass via read-only bird user-tweets audit' },
@@ -2105,11 +2185,13 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '91', detail: '12 knowledge pages + 79 update pages after this pass' },
+  { label: 'Public site content', value: '92', detail: '12 knowledge pages + 80 update pages after this pass' },
 ];
 
 export const curatedActivity = [
-  { date: '2026-10-25', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-27', x_post: 2, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-26', x_post: 2, third_party: 0, wiki_update: 0, site_update: 0 },
+  { date: '2026-10-25', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-24', x_post: 4, third_party: 0, wiki_update: 0, site_update: 2 },
   { date: '2026-10-23', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-22', x_post: 5, third_party: 0, wiki_update: 0, site_update: 2 },
