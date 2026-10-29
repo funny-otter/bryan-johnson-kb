@@ -1,5 +1,42 @@
 export const curatedSignals = [
   {
+    id: 'stage-blue-light-sleep-anecdote',
+    title: '“We hung out in the dark and it was so much better”: the stage-lights anecdote is the feed’s second evidence-aligned sleep post in two days — the direction verifies against the canonical blue-light RCT, but the post itself is an unmeasured N=1 event story',
+    date: '2026-10-28',
+    badge: 'Sleep',
+    kind: 'tweet',
+    topic: 'Evening blue light / melatonin / sleep onset',
+    summary:
+      'Johnson posted an event anecdote: “The lights pointing at the stage were blasting my eyeballs with blue light which makes it harder to fall asleep and fragments sleep. / So we hung out in the dark and it was so much better.” (761 likes, 7 reposts, 73 replies; October 28, 12:47 UTC). The mechanism direction is among the best-replicated findings in sleep research: in the canonical 5-night randomized crossover, reading a light-emitting e-book before bed versus a print book suppressed evening melatonin by 55.12%, delayed dim-light melatonin onset by more than 1.5 hours, lengthened sleep latency by roughly 10 minutes (25.65 vs 15.75 minutes), reduced REM sleep, and left readers sleepier the next morning (Chang, Aeschbach, Duffy, Czeisler, PNAS 2015, 10.1073/pnas.1418490112) — with the device spectrum peaking at 452 nm in the blue range the post names. The boundaries the post drops: the laboratory exposed participants at controlled illuminance for fixed durations, while the post is an unmeasured single-evening story — no lux reading, no exposure duration, no sleep data, and “so much better” is a subjective impression; the post names no study; and evening-light avoidance is general sleep hygiene, which the AASM suggests against as a stand-alone therapy for chronic insomnia disorder (Edinger et al., J Clin Sleep Med 2021, 10.5664/jcsm.8988). The dashboard records an attributed anecdote with a well-verified direction — not a measured result, a reader light-exposure protocol, or medical advice.',
+    href: '/sleep/',
+    tweetId: '2115425155879260599',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2115425155879260599',
+      'https://doi.org/10.1073/pnas.1418490112',
+      'https://doi.org/10.5664/jcsm.8988',
+    ],
+  },
+  {
+    id: 'aging-economics-wtp-relay',
+    title: '“Slowing aging after the age 50 can add 3.6 yrs of life and is worth $4 million”: the relay traces to a real three-week-old modeling paper — the lifespan figure verifies as a round-up, and the money figure is a willingness-to-pay construct the post inflates and converts to cash-sounding dollars',
+    date: '2026-10-28',
+    badge: 'Research claim',
+    kind: 'tweet',
+    topic: 'Longevity economics / DunedinPACE / willingness-to-pay modeling',
+    summary:
+      'Johnson posted: “Slowing aging after the age 50 can add 3.6 yrs of life and is worth $4 million in economic value” (437 likes, 15 reposts, 56 replies; October 28, 14:01 UTC), with an attached chart screenshot OCR-identified as Felizzi, “Economic impact of biomarker-based aging interventions on healthcare costs and individual value,” Frontiers in Genetics, published October 11, 2026 (10.3389/fgene.2026.1814599). The paper is real and the relay is close: a single-author Hypothesis & Theory modeling study by an enGene (Basel) industry author that chains the DunedinPACE epigenetic clock (via Mak et al. 2023 frailty coupling, 10.1093/gerona/glad251) to Swiss-calibrated survival, frailty-prevalence, and healthcare-cost data, simulating three intervention scenarios starting at age 50. The lifespan figure verifies as a round-up: the most optimistic scenario (CR2, interventions assumed to hold the pace of aging at 1.0) yields a 3.58-year life-expectancy gain — the moderate scenario (CR1) gives 2.89. The money figure drifts twice. First, the paper’s most optimistic total individual value is CHF 3,236,195 — roughly $3.5–3.6 million at recent exchange rates, so “$4 million” overstates the paper’s own headline by about a tenth. Second, and larger: that figure is a willingness-to-pay construct — CHF 1,216,186 survival value plus CHF 2,020,009 health-quality value, undiscounted, in the Murphy–Topel/Scott value-of-life framework — a welfare measure of what a person would rationally pay for the assumed health and longevity gains, not cash, income, or savings. The modeled healthcare-system savings are CHF 131,608 per person over 40 years, and the paper itself reports the healthcare case becomes cost-sensitive once CHF 600 twice-yearly DunedinPACE testing is included, while the individual-value case stays positive. Boundaries the post drops: CR2 assumes an intervention can hold biological aging pace at 1.0 — assumed, not demonstrated by any available treatment; DunedinPACE captures one DNA-methylation axis of aging by the paper’s own caveat; costs and life tables are Swiss; the author is a longevity-industry employee framing the work explicitly around consumer business models; and the post names no study. The dashboard records an attributed research relay with a verified paper, a rounded lifespan figure, and a converted, inflated value construct — not evidence that any available intervention adds 3.6 years of life, a wealth or savings figure, or medical advice.',
+    href: '/longevity/',
+    tweetId: '2115443720145223923',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2115443720145223923',
+      'https://doi.org/10.3389/fgene.2026.1814599',
+      'https://doi.org/10.1093/gerona/glad251',
+      'https://www.nature.com/articles/s43587-021-00080-0',
+    ],
+  },
+  {
     id: 'semen-microplastics-zero-claim',
     title: '“I got mine to zero. The first documented case”: the feed’s semen-microplastics relay verifies study-for-study — the UNM testis and 113-man China semen papers are real and quoted closely — while the “first documented case” of zero is an unreplicated, specialty-lab N=1 with no published method',
     date: '2026-10-27',
@@ -2184,10 +2221,12 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Live Bird timeline audit', value: '50', detail: '50 Oct 19–27 posts reviewed via read-only bird user-tweets audit (9 items new since the October 27 pass — 7 top-level posts and 2 Johnson replies, all on October 27: the bedroom directive, the dunk-progress update, the semen-microplastics relay, the test-availability reply, the FB-joke follow-up, the AI-cyberattacks musing, the MRI readout, the Prenuvo reply, and the Kurzweil endorsement)' },
-  { label: 'Sources verified this pass', value: '4', detail: '4 sources matched · Hu/Garcia/Campen et al. Toxicological Sciences 2024 dog-and-human-testis microplastics study (10.1093/toxsci/kfae060 — all 23 human and 47 canine testes positive, human mean 328.44 µg/g, PE dominant) + eBioMedicine 2024 113-man China semen/urine microplastics study (10.1016/j.ebiom.2024.105369 — PTFE exposure 52.13 vs 58.32 million/mL concentration and 188.90 vs 207.67 million total sperm, the post’s “11%” is 10.6% rounded) + AASM behavioral-treatments guideline family (Edinger et al., J Clin Sleep Med 2021, 10.5664/jcsm.8988 — stimulus control as conditional single-component therapy, CBT-I strong recommendation, sleep-hygiene-alone suggested against) + ACR total-body-MRI screening statement plus JMRI 2019 systematic review (10.1002/jmri.26736 — 32.1% pooled incidental findings, 16.0% false-positive proportion, no society recommends screening asymptomatic people)' },
-  { label: 'Prior audit window', value: '50', detail: '50 Oct 17–27 posts reviewed last pass via read-only bird user-tweets audit (the October 27 pass)' },
+  { label: 'Live Bird timeline audit', value: '50', detail: '50 Oct 19–28 posts reviewed via read-only bird user-tweets audit (5 items newer than the October 27 boundary, of which the October 27 23:16 UTC Kurzweil endorsement was already reviewed and skipped last pass — leaving 4 genuinely new top-level posts on October 28: the stage-lights blue-light anecdote, the aging-economics relay, the breakfast-menu chronology post, and the Shaan Puri banter quote-post)' },
+  { label: 'Sources verified this pass', value: '2', detail: '2 sources matched · Felizzi “Economic impact of biomarker-based aging interventions on healthcare costs and individual value,” Frontiers in Genetics, October 11, 2026 (10.3389/fgene.2026.1814599 — CR2 scenario 3.58-yr LE gain vs the post’s “3.6”; total individual value CHF 3,236,195 vs the post’s “$4 million,” a willingness-to-pay construct per the Murphy–Topel/Scott framework, with modeled healthcare savings of CHF 131,608 and CHF-600 twice-yearly DunedinPACE testing flipping the healthcare case cost-sensitive) + Chang, Aeschbach, Duffy, Czeisler PNAS 2015 LE-eBook crossover (10.1073/pnas.1418490112 — 55.12% melatonin suppression, >1.5 h DLMO delay, ~10 min longer sleep latency, 452 nm peak)' },
+  { label: 'Prior audit window', value: '50', detail: '50 Oct 19–27 posts reviewed last pass via read-only bird user-tweets audit (the October 28 pass)' },
+  { label: 'Prior sources verified', value: '4', detail: '4 sources matched last pass · Hu/Garcia/Campen et al. Toxicological Sciences 2024 dog-and-human-testis microplastics study (10.1093/toxsci/kfae060 — all 23 human and 47 canine testes positive, human mean 328.44 µg/g, PE dominant) + eBioMedicine 2024 113-man China semen/urine microplastics study (10.1016/j.ebiom.2024.105369 — PTFE exposure 52.13 vs 58.32 million/mL concentration and 188.90 vs 207.67 million total sperm, the post’s “11%” is 10.6% rounded) + AASM behavioral-treatments guideline family (Edinger et al., J Clin Sleep Med 2021, 10.5664/jcsm.8988 — stimulus control as conditional single-component therapy, CBT-I strong recommendation, sleep-hygiene-alone suggested against) + ACR total-body-MRI screening statement plus JMRI 2019 systematic review (10.1002/jmri.26736 — 32.1% pooled incidental findings, 16.0% false-positive proportion, no society recommends screening asymptomatic people)' },
   { label: 'Prior sources verified', value: '4', detail: '4 sources matched last pass · Widjaja et al. Nature 2024 “Inhibition of IL-11 signalling extends mammalian healthspan and lifespan” (10.1038/s41586-024-07701-9; anti-IL-11 22.5% male / 25% female median-lifespan extension — the relay’s “35% female” misquotes both the paper and Johnson’s own July 17, 2024 post) + Boehringer Ingelheim BI 765423 Phase IIa IPF announcement (January 13, 2026, same Duke-NUS/SingHealth lineage) + Bradley/Kelley et al. JAMA Psychiatry research letter (10.1001/jamapsychiatry.2026.2733, published October 21, 2026; 9-of-12 banked-blood subsample of the UCSF open-label Parkinson’s pilot) + Pehlivan & Gedik npj Science of Food bagged-vs-loose-leaf head-to-head (10.1038/s41538-026-01175-x, 555–2,498 vs 0.3–2.4 particles/cup)' },
+  { label: 'Earlier audit window', value: '50', detail: '50 Oct 17–27 posts reviewed earlier pass via read-only bird user-tweets audit (the October 27 pass)' },
   { label: 'Earlier sources verified', value: '3', detail: '3 sources matched last pass · Bai et al. Cell Metabolism 2026 “Dynamic force sensing by bone delays aging and extends lifespan” (10.1016/j.cmet.2026.09.020, published online October 23, 2026 — one day before the post; DTAL 2 N at 2 Hz, 300 cycles twice weekly extended median lifespan 9.4%/79.5 days with brain/liver/immune endpoints; OCR-identified from Johnson’s correction screenshot) + Zhao et al. eLife 2022 Cx43-hemichannel PGE2 loading mechanism backing the correction’s mechanism sentence (10.7554/eLife.74365) + Johnson’s October 24 13:53 UTC self-correction reply (2113992318206497133, 12,489 views) resolving the previously untraceable figure' },
   { label: 'Earlier audit window', value: '20', detail: '20 Oct 20–24 posts re-reviewed via read-only bird user-tweets audit (the October 25 pass)' },
   { label: 'Earlier sources verified', value: '5', detail: '5 sources matched · Zhao et al. Aging Cell 2026 Piezo1/Cx43 aged-bone paper (10.1111/acel.70687, image-cited in the original post, bone-mass endpoint only) + Cai et al. Nature Neuroscience bone–brain axis (10.1038/s41593-026-02422-w) + Zhang et al. bioRxiv mechano-bone-immune axis (10.64898/2026.07.05.736555) + Selman et al. Science 2009 S6K1 knockout (10.1126/science.1177221 — the coincidental figure match, superseded this pass by the Bai et al. Cell Metabolism correction) + Li et al. eLife 2019 Piezo1 bone anabolism (10.7554/eLife.49631)' },
@@ -2245,11 +2284,12 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '93', detail: '12 knowledge pages + 81 update pages after this pass' },
+  { label: 'Public site content', value: '94', detail: '12 knowledge pages + 82 update pages after this pass' },
 ];
 
 export const curatedActivity = [
-  { date: '2026-10-28', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-29', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-10-28', x_post: 4, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-27', x_post: 11, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-26', x_post: 2, third_party: 0, wiki_update: 0, site_update: 0 },
   { date: '2026-10-25', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
