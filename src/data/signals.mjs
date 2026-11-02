@@ -1,5 +1,40 @@
 export const curatedSignals = [
   {
+    id: 'music-longevity-therapy-relay',
+    title: '“Music is a longevity therapy”: the trial count verifies exactly — 104 RCTs and 9,617 participants — and all four claimed benefits are real measured outcomes, but the meta-analysis behind them measures stress reduction, not longevity',
+    date: '2026-11-01',
+    badge: 'Research claim',
+    kind: 'tweet',
+    topic: 'Music / stress physiology / meta-analysis relay',
+    summary:
+      'Johnson closed a same-day music thread with the feed’s first music-as-therapy claim: “Music is a longevity therapy / > lowers heart rate / > lowers blood pressure / > lowers cortisol / > lowers anxiety and restlessness / Protocol: a song you love. / 104 randomized trials / 9,617 people” (2,099 likes, 149 reposts, 126 replies; November 1, 18:36 UTC, with an attached figure). The post’s quantitative signature verifies exactly: de Witte, Spruit, van Hooren, Moonen, Stams, “Effects of music interventions on stress-related outcomes: a systematic review and two meta-analyses,” Health Psychology Review, June 2020;14(2):294-324 (10.1080/17437199.2019.1627897; PubMed 31167611), two multilevel meta-analyses of exactly 104 RCTs with exactly 9,617 participants (327 effect sizes) — and each of the four claimed benefits maps onto a measured outcome: heart rate (d = .456), stress-related hormone levels including cortisol (d = .349), blood pressure (d = .343), and anxiety/restlessness-type psychological outcomes (d = .545), with overall physiological d = .380 and psychological d = .545. The boundary the post drops is the title: the paper measures stress reduction, not longevity — no included trial tracked mortality, disease, or aging endpoints, so “longevity therapy” is gloss the paper does not make. Additional boundaries: the pooled effects are small-to-medium (d = .34–.55) and heterogeneous across settings; the paper’s own limitation is a mostly short-term, often single-session evidence base, leaving long-term effects largely unexamined; “lowers cortisol” narrows the paper’s broader “stress-related hormone levels” outcome class; the post names no study; and the claim arrived at the end of a thread primed by a 4,492-like joy post and a 668-like engagement question (583 replies). The dashboard records an attributed research relay with an exactly verified trial count, real outcome directions, and a category upgrade the paper does not support — not evidence that listening to music extends life, a reader listening protocol, or medical advice.',
+    href: '/longevity/',
+    tweetId: '2116962664572477809',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2116962664572477809',
+      'https://doi.org/10.1080/17437199.2019.1627897',
+      'https://pubmed.ncbi.nlm.nih.gov/31167611/',
+    ],
+  },
+  {
+    id: 'chef-rhr-meal-timing-quantification',
+    title: '“My chef get’s my sleep resting heart rate every am”: the RHR storyline extends to staff automation — 1,800+ days claimed behind “exact impact” bands that remain unpublished N=1',
+    date: '2026-11-01',
+    badge: 'Measurement',
+    kind: 'tweet',
+    topic: 'Resting heart rate / meal timing / N=1 measurement loop',
+    summary:
+      'Johnson posted the RHR storyline’s first staff-and-AI disclosure: “My chef get’s my sleep resting heart rate every am. / My AI auto sends. / After 1,800+ days of experimentation, I know the exact impact of meal timing, food composition, and calories on my resting heart rate. / 42 bpm and below: 😃 / 43-45 bpm: 😐 / 45 bpm+: 🙁” (228 likes, 3 reposts, 45 replies; November 1, 19:43 UTC, with an attached photo). The post extends two tracked threads at once: the October 16 “Resting heart is the new thirst trap” status-engineering disclosure, and the RHR-as-outcome-predictor context already on this dashboard (CMAJ 2016 meta-analysis of 46 cohorts, 1,246,203 adults: each 10 bpm higher RHR associated with all-cause mortality RR 1.09; RHR >80 bpm at RR 1.45 — 10.1503/cmaj.150535) — now operationalized: the number routes to his chef each morning via AI auto-send, and meal decisions feed back against personal traffic-light bands. Boundaries: “exact impact” is a self-report — no dataset, effect sizes, or confounder control is published for the claimed 1,800+ days, during which meal timing, composition, and calories varied alongside sleep, training, travel, illness, and more; the 42 / 43–45 / 45+ emoji bands are personal thresholds, not clinical bands; RHR moves for many reasons unrelated to food; and a predictor of mortality is not proof that meal-timing-driven RHR changes extend life. The dashboard records an attributed N=1 measurement-loop disclosure — not published evidence quantifying food→RHR effects, a reader meal-timing protocol, or medical advice.',
+    href: '/nutrition/',
+    tweetId: '2116979494699647184',
+    confidence: 'low',
+    sources: [
+      'https://x.com/bryan_johnson/status/2116979494699647184',
+      'https://doi.org/10.1503/cmaj.150535',
+    ],
+  },
+  {
     id: 'young-stroke-riskfactor-relay',
     title: '“Young adults having strokes increasingly have the bodies of 60 yr olds”: the stroke relay’s core figure verifies exactly — a 50% relative jump in 3+ cardiovascular risk factors among 18–35-year-old stroke patients over eight years — but the “new study” is a 19-month-old Florida registry analysis, and “bodies of 60 yr olds” is gloss the paper does not make',
     date: '2026-10-29',
@@ -2258,12 +2293,14 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Live Bird timeline audit', value: '50', detail: '50 Oct 20–29 posts reviewed via read-only bird user-tweets audit (5 genuinely new top-level posts, all on October 29: the “everything I’ve learned about sauna in 60 seconds” video, the Blueprint-marketplace sauna plug reply, the “avoid eating dirty during an acute immune reaction” immune-memory relay, the “Most people don’t have a motivation problem / Tthey have a sleep problem” aphorism, and the young-adult stroke risk-factor relay)' },
-  { label: 'Sources verified this pass', value: '2', detail: '2 sources matched · “Temporal Trends in Vascular Risk Factor Burden Among Young Adults With Ischemic Stroke — The Florida Stroke Registry,” Neurology, March 25, 2025 (10.1212/WNL.0000000000213447 — 36,488 GWTG-Stroke IS patients 2014–2022, 3,363 aged 18–35; 3+ VRF polymorbidity 10.9%→16.4% in 18–35 = a 50.4% relative jump in exactly eight years, matching the post’s “jumped by 50% in eight years”; 36–55 group 34.6%→41.9%) + Jiang, Tayeri, … Bapat, “Diet at disease onset determines tissue inflammatory memory,” Nature, October 28, 2026 (10.1038/s41586-026-11181-4 — 4-day high-fat window at imiquimod-inflammation onset ~2.1-fold ear thickening, tissue-resident memory CD4+ T cells persisting to 6.5 months, NLRP3/CD4-dependent, published one day before the post)' },
-  { label: 'Prior audit window', value: '50', detail: '50 Oct 19–28 posts reviewed last pass via read-only bird user-tweets audit (the October 29 pass)' },
+  { label: 'Live Bird timeline audit', value: '50', detail: '50 Oct 21–Nov 1 posts reviewed via read-only bird user-tweets audit (9 genuinely new top-level posts across three days: 2 on October 30 — the “i used to stay up late to have more time...” teaser and the Kate Tolo role-model post; 2 on October 31 — the decade-by-decade aging-arc poem and the “breaking bad halloween edition” costume video; 5 on November 1 — the “listening to music while exercising” joy post, the “What music are you listening to today?” question, the “Music is a longevity therapy” claim post, the “finding forever friends” video, and the chef-RHR meal-timing quantification)' },
+  { label: 'Sources verified this pass', value: '1', detail: '1 source matched · de Witte, Spruit, van Hooren, Moonen, Stams, “Effects of music interventions on stress-related outcomes: a systematic review and two meta-analyses,” Health Psychology Review, June 2020;14(2):294-324 (10.1080/17437199.2019.1627897; PubMed 31167611 — two multilevel meta-analyses of exactly 104 RCTs and exactly 9,617 participants, matching the post’s “104 randomized trials / 9,617 people”; HR d = .456, stress-hormone d = .349, BP d = .343, psychological d = .545 — stress-reduction outcomes, not longevity endpoints)' },
+  { label: 'Prior audit window', value: '50', detail: '50 Oct 20–29 posts reviewed last pass via read-only bird user-tweets audit (the October 30 pass)' },
+  { label: 'Prior sources verified', value: '2', detail: '2 sources matched last pass · “Temporal Trends in Vascular Risk Factor Burden Among Young Adults With Ischemic Stroke — The Florida Stroke Registry,” Neurology, March 25, 2025 (10.1212/WNL.0000000000213447 — 36,488 GWTG-Stroke IS patients 2014–2022, 3,363 aged 18–35; 3+ VRF polymorbidity 10.9%→16.4% in 18–35 = a 50.4% relative jump in exactly eight years, matching the post’s “jumped by 50% in eight years”; 36–55 group 34.6%→41.9%) + Jiang, Tayeri, … Bapat, “Diet at disease onset determines tissue inflammatory memory,” Nature, October 28, 2026 (10.1038/s41586-026-11181-4 — 4-day high-fat window at imiquimod-inflammation onset ~2.1-fold ear thickening, tissue-resident memory CD4+ T cells persisting to 6.5 months, NLRP3/CD4-dependent, published one day before the post)' },
   { label: 'Prior sources verified', value: '2', detail: '2 sources matched last pass · Felizzi “Economic impact of biomarker-based aging interventions on healthcare costs and individual value,” Frontiers in Genetics, October 11, 2026 (10.3389/fgene.2026.1814599 — CR2 scenario 3.58-yr LE gain vs the post’s “3.6”; total individual value CHF 3,236,195 vs the post’s “$4 million,” a willingness-to-pay construct per the Murphy–Topel/Scott framework, with modeled healthcare savings of CHF 131,608 and CHF-600 twice-yearly DunedinPACE testing flipping the healthcare case cost-sensitive) + Chang, Aeschbach, Duffy, Czeisler PNAS 2015 LE-eBook crossover (10.1073/pnas.1418490112 — 55.12% melatonin suppression, >1.5 h DLMO delay, ~10 min longer sleep latency, 452 nm peak)' },
-  { label: 'Prior sources verified', value: '4', detail: '4 sources matched last pass · Widjaja et al. Nature 2024 “Inhibition of IL-11 signalling extends mammalian healthspan and lifespan” (10.1038/s41586-024-07701-9; anti-IL-11 22.5% male / 25% female median-lifespan extension — the relay’s “35% female” misquotes both the paper and Johnson’s own July 17, 2024 post) + Boehringer Ingelheim BI 765423 Phase IIa IPF announcement (January 13, 2026, same Duke-NUS/SingHealth lineage) + Bradley/Kelley et al. JAMA Psychiatry research letter (10.1001/jamapsychiatry.2026.2733, published October 21, 2026; 9-of-12 banked-blood subsample of the UCSF open-label Parkinson’s pilot) + Pehlivan & Gedik npj Science of Food bagged-vs-loose-leaf head-to-head (10.1038/s41538-026-01175-x, 555–2,498 vs 0.3–2.4 particles/cup)' },
+  { label: 'Earlier audit window', value: '50', detail: '50 Oct 19–28 posts reviewed earlier pass via read-only bird user-tweets audit (the October 29 pass)' },
   { label: 'Earlier audit window', value: '50', detail: '50 Oct 19–27 posts reviewed earlier pass via read-only bird user-tweets audit (the October 28 pass)' },
+  { label: 'Earlier sources verified', value: '4', detail: '4 sources matched last pass · Widjaja et al. Nature 2024 “Inhibition of IL-11 signalling extends mammalian healthspan and lifespan” (10.1038/s41586-024-07701-9; anti-IL-11 22.5% male / 25% female median-lifespan extension — the relay’s “35% female” misquotes both the paper and Johnson’s own July 17, 2024 post) + Boehringer Ingelheim BI 765423 Phase IIa IPF announcement (January 13, 2026, same Duke-NUS/SingHealth lineage) + Bradley/Kelley et al. JAMA Psychiatry research letter (10.1001/jamapsychiatry.2026.2733, published October 21, 2026; 9-of-12 banked-blood subsample of the UCSF open-label Parkinson’s pilot) + Pehlivan & Gedik npj Science of Food bagged-vs-loose-leaf head-to-head (10.1038/s41538-026-01175-x, 555–2,498 vs 0.3–2.4 particles/cup)' },
   { label: 'Earlier sources verified', value: '4', detail: '4 sources matched last pass · Hu/Garcia/Campen et al. Toxicological Sciences 2024 dog-and-human-testis microplastics study (10.1093/toxsci/kfae060 — all 23 human and 47 canine testes positive, human mean 328.44 µg/g, PE dominant) + eBioMedicine 2024 113-man China semen/urine microplastics study (10.1016/j.ebiom.2024.105369 — PTFE exposure 52.13 vs 58.32 million/mL concentration and 188.90 vs 207.67 million total sperm, the post’s “11%” is 10.6% rounded) + AASM behavioral-treatments guideline family (Edinger et al., J Clin Sleep Med 2021, 10.5664/jcsm.8988 — stimulus control as conditional single-component therapy, CBT-I strong recommendation, sleep-hygiene-alone suggested against) + ACR total-body-MRI screening statement plus JMRI 2019 systematic review (10.1002/jmri.26736 — 32.1% pooled incidental findings, 16.0% false-positive proportion, no society recommends screening asymptomatic people)' },
   { label: 'Earlier audit window', value: '50', detail: '50 Oct 17–27 posts reviewed earlier pass via read-only bird user-tweets audit (the October 27 pass)' },
   { label: 'Earlier sources verified', value: '3', detail: '3 sources matched last pass · Bai et al. Cell Metabolism 2026 “Dynamic force sensing by bone delays aging and extends lifespan” (10.1016/j.cmet.2026.09.020, published online October 23, 2026 — one day before the post; DTAL 2 N at 2 Hz, 300 cycles twice weekly extended median lifespan 9.4%/79.5 days with brain/liver/immune endpoints; OCR-identified from Johnson’s correction screenshot) + Zhao et al. eLife 2022 Cx43-hemichannel PGE2 loading mechanism backing the correction’s mechanism sentence (10.7554/eLife.74365) + Johnson’s October 24 13:53 UTC self-correction reply (2113992318206497133, 12,489 views) resolving the previously untraceable figure' },
@@ -2323,11 +2360,14 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '95', detail: '12 knowledge pages + 83 update pages after this pass' },
+  { label: 'Public site content', value: '96', detail: '12 knowledge pages + 84 update pages after this pass' },
 ];
 
 export const curatedActivity = [
-  { date: '2026-10-30', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-11-02', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-11-01', x_post: 5, third_party: 0, wiki_update: 0, site_update: 0 },
+  { date: '2026-10-31', x_post: 2, third_party: 0, wiki_update: 0, site_update: 0 },
+  { date: '2026-10-30', x_post: 2, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-29', x_post: 5, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-28', x_post: 4, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-10-27', x_post: 11, third_party: 0, wiki_update: 0, site_update: 1 },
