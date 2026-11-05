@@ -1,5 +1,74 @@
 export const curatedSignals = [
   {
+    id: 'menopause-cliff-relay',
+    title: '“Closer to a cliff”: the menopause post’s “300M lab results” is real — 300 million tests across NHANES and Clalit in Nature Medicine, finding step-like jumps in 52/90 tests at the final menstrual period — but the study is three weeks old, retrospective, and its “cliff” framing is already publicly contested by menopause clinicians',
+    date: '2026-11-04',
+    badge: 'Research claim',
+    kind: 'tweet',
+    topic: 'Women’s health / menopause / population-scale physiology',
+    summary:
+      'Johnson relayed a women’s-health claim: “Menopause was thought to be a gradual decline. This new study of 300M lab results suggests it may be closer to a cliff.” (426 likes, 14 reposts, 35 replies; November 4, 17:04 UTC, with an attached figure). The study verifies: Pridham, Hayut, Lavi-Shoseyov, Neeman, Hovav, Toledano, Alon, “Population-scale reconstruction of menopause dynamics reveals a physiological cliff at the final menstrual period,” Nature Medicine, October 12, 2026 (10.1038/s41591-026-04614-0, open access) — the Weizmann/Clalit team applied an astronomy-inspired temporal deconvolution to two cohorts (NHANES 1999–2022 and Israel’s Clalit health insurer, 1.3 million female individuals aged 30–70) totaling 300 million laboratory tests, reconstructing final-menstrual-period-anchored trajectories from cross-sectional data. They found step-like jumps at the FMP in 52 of 90 US laboratory tests (jump sizes 0.1–1.4 s.d.) across endocrine, skeletal, hepatic, renal, inflammatory, and lipid systems; the jumps are absent in males, concordant across the two populations (r = 0.89), preceded by accelerated sex-hormone change ~12–15 years before the FMP (AMH ~15 years, FSH ~14, estradiol ~12 — about 7 years earlier than prior longitudinal work), and attenuated in self-reported menopausal-hormone-therapy users, especially bone, liver, and kidney measures. Boundaries: “300M lab results” is 300 million tests, not patients — the paper’s own abstract says “300 million laboratory tests”; the study is three weeks old and built on retrospective cross-sectional data with self-reported menopause status, its own named limitations; the MHT attenuation is associational, with healthy-user and access bias the authors say needs prospective randomized testing; and Australian menopause clinicians publicly pushed back within a day — Martha Hickey called the “cliff-like” framing “unnecessarily alarming” and noted “physiological cliff is not a scientific or medical term,” with the long-running SWAN cohort indicating a roughly three-year gradual transition; the post names no study. The dashboard records an attributed research relay with an exactly verified corpus — not a reader hormone-therapy decision, evidence about any individual’s menopause timing, or medical advice.',
+    href: '/health/',
+    tweetId: '2118026578190033207',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2118026578190033207',
+      'https://doi.org/10.1038/s41591-026-04614-0',
+    ],
+  },
+  {
+    id: 'dgla-zombie-cell-senolytic-relay',
+    title: '“Zombie cells may have a kill switch”: the post describes a real one-day-old Cell paper — senescent cells run low on DGLA, and repleting it kills them by ferroptosis while healthy cells survive — a mouse-and-dish result with one associational human genetics leg, and Johnson’s own “would be interesting if replicated in humans” is the accurate boundary',
+    date: '2026-11-04',
+    badge: 'Research claim',
+    kind: 'tweet',
+    topic: 'Senolytics / cellular senescence / ferroptosis / lipid metabolism',
+    summary:
+      'Johnson relayed a senescence claim: “Zombie cells may have a kill switch / As we age, some cells stop dividing but refuse to die. / They’re called “zombie” (senescent) cells. They pile up and inflame the tissue around them which is bad for you body. / This research group figured out how to kill them in mice. / They found that these zombie cells run low on one fatty acid: DGLA. So they added it back causing many of the zombie cells to die while the healthy cells survived. / They died by ferroptosis where the cell’s outer membrane oxidizes and breaks. / Would be interesting if replicated in humans.” (589 likes, 31 reposts, 47 replies; November 4, 17:46 UTC). The paper verifies: Kuehnemann, Jezak, Mogck, … Wiley, “Fatty acid desaturation controls cellular fate decisions between senescence and ferroptosis,” Cell (10.1016/j.cell.2026.09.036; Buck Institute-led with University of Eastern Finland and collaborators), announced November 3, 2026 — one day before the post. The mechanism is as posted: senescent cells show altered PUFA metabolism with selectively reduced dihomo-gamma-linolenic acid (DGLA, 20:3 ω-6); repleting DGLA (200 µM) — or inhibiting delta-5-desaturase (D5D/FADS1), the enzyme that metabolizes it — induces ferroptosis selectively in senescent cells across multiple induced-senescence models while healthy cells largely survive; oral DGLA ethyl ester (400 mg/kg, 5 consecutive days) lowered senescent-cell burden (p16 luminescence, SA-β-gal, SASP factors) and improved adipose, liver, and kidney markers in aged 22–24-month mice; and in the human Kuopio Obesity Surgery Study, a FADS1 variant that promotes DGLA accumulation was associated with lower adipose-tissue senescence markers. Boundaries: the intervention evidence is cell culture and aged mice — the liver clearance and functional gains are male-only in the paper and DGLA increased steatotic area, possibly to store the excess administered lipid; 400 mg/kg oral gavage in mice is a research dose with no established human equivalent; the human leg is a genetic association in bariatric-surgery patients, not an intervention trial; “kill switch” is Johnson’s gloss and the post names no study — but its own closing hedge (“would be interesting if replicated in humans”) is exactly right. The dashboard records an attributed research relay with a verified one-day-old paper — not evidence readers should supplement DGLA, a senolytic therapy, or medical advice.',
+    href: '/longevity/',
+    tweetId: '2118037057008456135',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2118037057008456135',
+      'https://doi.org/10.1016/j.cell.2026.09.036',
+      'https://www.uef.fi/en/article/fatty-acid-metabolism-may-help-eliminate-damaged-and-senescent-cells',
+    ],
+  },
+  {
+    id: 'gdf15-dunk-training-disclosure',
+    title: '“Apparently my mitochondria are stressed by this”: the deadlift arithmetic checks (245→425 lb is +74%), but post-workout GDF15 rises are a normal exercise-stress response in healthy humans — the unpublished N=1 series rides a marker that moves with any vigorous workout',
+    date: '2026-11-04',
+    badge: 'Measurement',
+    kind: 'tweet',
+    topic: 'N=1 biomarkers / GDF15 / resistance training / mitokines',
+    summary:
+      'Johnson posted a training-plus-biomarker disclosure: “I’ve been training really hard to dunk a basketball. / Deadlift up 74% (245 → 425 lb) / Apparently my mitochondria are stressed by this. / We’ve been measuring GDF15 after workouts and it rises and falls according to the difficulty level of the workout.” (516 likes, 8 reposts, 79 replies; November 4, 19:21 UTC, with an attached photo). The arithmetic checks — 245→425 lb is +73.5%, rounding to the posted 74% — and the number continues the tracked dunk-training storyline (October 25: 385 lb × 5 from the floor at an estimated ~445 lb 1RM, 2.47× bodyweight). The biomarker context verifies: Kleinert, Hempel, … Plomgaard, “Exercise increases circulating GDF15 in humans,” Molecular Metabolism 2018;9:187-191 (10.1016/j.molmet.2017.12.016 — seven healthy males, 60 min cycling at 67% VO2max, plasma GDF15 +34% at exercise end and +64% at 120-min recovery, rising in every subject with skeletal muscle not the source), and the response is intensity- and duration-dependent in trained adults (ACSM Medicine & Science in Sports & Exercise 2019, 10.1249/01.mss.0000561999.22383.5c). Boundaries: his own series is unpublished N=1 — no assay, values, timepoints, or dataset are published; because acute vigorous exercise raises GDF15 in healthy humans by itself, a post-workout rise is an expected physiological stress response, not evidence of mitochondrial damage, and “apparently my mitochondria are stressed by this” is his interpretation of a normal exercise-stress marker (one already tracked in the psilocybin-Parkinson’s relay, where GDF15 is framed as a mitochondrial-stress signal); GDF15 also moves with illness, inflammation, pregnancy, and weight change, so workout-difficulty correlation is not a validated training metric. The dashboard records an attributed N=1 measurement disclosure with verified context literature — not evidence that hard training harms mitochondria, a reader biomarker to track, or medical advice.',
+    href: '/health/',
+    tweetId: '2118060964222488871',
+    confidence: 'low',
+    sources: [
+      'https://x.com/bryan_johnson/status/2118060964222488871',
+      'https://doi.org/10.1016/j.molmet.2017.12.016',
+    ],
+  },
+  {
+    id: 'music-walking-endurance-relay',
+    title: '“Walking to motivating music increased exercise by 15%”: the number is a real lab finding — treadmill time-to-exhaustion, up 15% under motivational synchronous music in the 2009 Brunel study — but the post drops the condition that made it work: stride-matched tempo',
+    date: '2026-11-04',
+    badge: 'Research claim',
+    kind: 'tweet',
+    topic: 'Music / exercise endurance / ergogenic aids',
+    summary:
+      'Johnson relayed a music-exercise claim: “Walking to motivating music increased exercise by 15%” (1,593 likes, 62 reposts, 81 replies; November 4, 03:27 UTC, with an attached figure), quote-posting his own November 1 “listening to music while exercising is one of life’s greatest joys” post. The figure verifies: Karageorghis, Mouzourides, Priest, Sasso, Morrish, Walley, “Psychophysical and Ergogenic Effects of Synchronous Music during Treadmill Walking,” Journal of Sport and Exercise Psychology 2009;31(1):18-36 (10.1123/jsep.31.1.18; PubMed 19325186) — 30 university-age participants walked to exhaustion starting at 75% heart-rate reserve under motivational synchronous music, neutral (“oudeterous”) synchronous music, and no-music control; “the motivational music elicited a 15% increase in treadmill endurance over control and a 6% increase over oudeterous music,” with the music manipulation accounting for 38% of endurance-time variance. Boundaries: the 15% is laboratory time-to-exhaustion on a treadmill — endurance in a single session, not “exercise” as free-living physical-activity volume; the effect belongs to synchronous music, where stride rate is deliberately kept in time with musical tempo, a condition “walking to motivating music” quietly drops; N=30 young Brunel students walking near exhaustion, one 2009 study; motivational quality of the tracks was participant-selected; the post names no study. The dashboard records an attributed research relay with an exactly verified percentage — not evidence that background music raises daily activity, a reader walking protocol, or medical advice.',
+    href: '/longevity/',
+    tweetId: '2117820882433278457',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2117820882433278457',
+      'https://doi.org/10.1123/jsep.31.1.18',
+    ],
+  },
+  {
     id: 'sauna-three-tier-protocol-post',
     title: '“most people sauna incorrectly”: the three-tier sauna protocol pairs real Kuopio cohort mortality and dementia findings with unpublished N=1 tiers — and a Level 3 whose own dose is stated twice, differently',
     date: '2026-11-03',
@@ -2346,10 +2415,12 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Live Bird timeline audit', value: '50', detail: '50 Oct 21–Nov 4 posts reviewed via read-only bird user-tweets audit (6 genuinely new top-level posts across three days: 1 on November 2 — the “it’s never too late” two-word post; 2 on November 3 — the “today, make your stand… you will exercise” commitment poem and the fever-data reply linking the June HSP27 experiment write-up; 3 on November 4 — the three-tier sauna protocol post, the “Medicine is a compute problem” model relay, and the Blueprint-Tovala meals launch)' },
-  { label: 'Sources verified this pass', value: '3', detail: '3 sources matched · Laukkanen et al., “Association Between Sauna Bathing and Fatal Cardiovascular and All-Cause Mortality Events,” JAMA Internal Medicine, February 23, 2015 (10.1001/jamainternmed.2014.8187 — Kuopio cohort, 2,315 men, 4–7 sessions/week at SCD HR 0.37, fatal CVD HR 0.50, all-cause mortality HR 0.60) + Kunutsor, Laukkanen, et al., Age and Ageing, March 2017 (10.1093/ageing.afw212 — same cohort, dementia HR 0.34, Alzheimer’s HR 0.35 at 4–7 sessions/week) + Waxler, Blazek, et al., “Generative Medical Event Models Improve with Scale,” arXiv:2508.12104 (Epic Cosmos — 16.3B encounters over 300M patients; Curiosity models trained on 118M patients / 115B events, autoregressively predicting the next medical event)' },
-  { label: 'Prior audit window', value: '50', detail: '50 Oct 21–Nov 1 posts reviewed last pass via read-only bird user-tweets audit (the November 2 pass)' },
-  { label: 'Prior sources verified', value: '1', detail: '1 source matched last pass · de Witte, Spruit, van Hooren, Moonen, Stams, “Effects of music interventions on stress-related outcomes: a systematic review and two meta-analyses,” Health Psychology Review, June 2020;14(2):294-324 (10.1080/17437199.2019.1627897; PubMed 31167611 — two multilevel meta-analyses of exactly 104 RCTs and exactly 9,617 participants, matching the post’s “104 randomized trials / 9,617 people”; HR d = .456, stress-hormone d = .349, BP d = .343, psychological d = .545 — stress-reduction outcomes, not longevity endpoints)' },
+  { label: 'Live Bird timeline audit', value: '50', detail: '50 Oct 22–Nov 4 posts reviewed via read-only bird user-tweets audit (4 genuinely new top-level posts, all on November 4 after the prior boundary: the music-walking 15% relay, the menopause-cliff relay, the DGLA zombie-cell relay, and the GDF15 dunk-training disclosure; all four carried checkable claims or measurement content and none were skipped as banter)' },
+  { label: 'Sources verified this pass', value: '4', detail: '4 sources matched · Karageorghis, Mouzourides, Priest, Sasso, Morrish, Walley, “Psychophysical and Ergogenic Effects of Synchronous Music during Treadmill Walking,” JSEP 2009;31(1):18-36 (10.1123/jsep.31.1.18 — motivational synchronous music elicited exactly a 15% treadmill-endurance increase over control, N=30) + Pridham, Hayut, … Alon, “Population-scale reconstruction of menopause dynamics reveals a physiological cliff at the final menstrual period,” Nature Medicine, October 12, 2026 (10.1038/s41591-026-04614-0 — 300 million laboratory tests, NHANES + Clalit 1.3M females, jumps in 52/90 tests at FMP) + Kuehnemann, Jezak, … Wiley, “Fatty acid desaturation controls cellular fate decisions between senescence and ferroptosis,” Cell (10.1016/j.cell.2026.09.036 — DGLA repletion kills senescent cells by ferroptosis in vitro and in aged mice, announced one day before the post) + Kleinert, … Plomgaard, “Exercise increases circulating GDF15 in humans,” Molecular Metabolism 2018;9:187-191 (10.1016/j.molmet.2017.12.016 — +34% at exercise end, +64% at 120-min recovery)' },
+  { label: 'Prior audit window', value: '50', detail: '50 Oct 21–Nov 4 posts reviewed last pass via read-only bird user-tweets audit (the November 4 pass)' },
+  { label: 'Prior sources verified', value: '3', detail: '3 sources matched last pass · Laukkanen et al., “Association Between Sauna Bathing and Fatal Cardiovascular and All-Cause Mortality Events,” JAMA Internal Medicine, February 23, 2015 (10.1001/jamainternmed.2014.8187 — Kuopio cohort, 2,315 men, 4–7 sessions/week at SCD HR 0.37, fatal CVD HR 0.50, all-cause mortality HR 0.60) + Kunutsor, Laukkanen, et al., Age and Ageing, March 2017 (10.1093/ageing.afw212 — same cohort, dementia HR 0.34, Alzheimer’s HR 0.35 at 4–7 sessions/week) + Waxler, Blazek, et al., “Generative Medical Event Models Improve with Scale,” arXiv:2508.12104 (Epic Cosmos — 16.3B encounters over 300M patients; Curiosity models trained on 118M patients / 115B events, autoregressively predicting the next medical event)' },
+  { label: 'Earlier audit window', value: '50', detail: '50 Oct 21–Nov 1 posts reviewed earlier pass via read-only bird user-tweets audit (the November 2 pass)' },
+  { label: 'Earlier sources verified', value: '1', detail: '1 source matched earlier pass · de Witte, Spruit, van Hooren, Moonen, Stams, “Effects of music interventions on stress-related outcomes: a systematic review and two meta-analyses,” Health Psychology Review, June 2020;14(2):294-324 (10.1080/17437199.2019.1627897; PubMed 31167611 — two multilevel meta-analyses of exactly 104 RCTs and exactly 9,617 participants, matching the post’s “104 randomized trials / 9,617 people”; HR d = .456, stress-hormone d = .349, BP d = .343, psychological d = .545 — stress-reduction outcomes, not longevity endpoints)' },
   { label: 'Earlier audit window', value: '50', detail: '50 Oct 20–29 posts reviewed earlier pass via read-only bird user-tweets audit (the October 30 pass)' },
   { label: 'Earlier sources verified', value: '2', detail: '2 sources matched last pass · “Temporal Trends in Vascular Risk Factor Burden Among Young Adults With Ischemic Stroke — The Florida Stroke Registry,” Neurology, March 25, 2025 (10.1212/WNL.0000000000213447 — 36,488 GWTG-Stroke IS patients 2014–2022, 3,363 aged 18–35; 3+ VRF polymorbidity 10.9%→16.4% in 18–35 = a 50.4% relative jump in exactly eight years, matching the post’s “jumped by 50% in eight years”; 36–55 group 34.6%→41.9%) + Jiang, Tayeri, … Bapat, “Diet at disease onset determines tissue inflammatory memory,” Nature, October 28, 2026 (10.1038/s41586-026-11181-4 — 4-day high-fat window at imiquimod-inflammation onset ~2.1-fold ear thickening, tissue-resident memory CD4+ T cells persisting to 6.5 months, NLRP3/CD4-dependent, published one day before the post)' },
   { label: 'Earlier sources verified', value: '2', detail: '2 sources matched earlier pass · Felizzi “Economic impact of biomarker-based aging interventions on healthcare costs and individual value,” Frontiers in Genetics, October 11, 2026 (10.3389/fgene.2026.1814599 — CR2 scenario 3.58-yr LE gain vs the post’s “3.6”; total individual value CHF 3,236,195 vs the post’s “$4 million,” a willingness-to-pay construct per the Murphy–Topel/Scott framework, with modeled healthcare savings of CHF 131,608 and CHF-600 twice-yearly DunedinPACE testing flipping the healthcare case cost-sensitive) + Chang, Aeschbach, Duffy, Czeisler PNAS 2015 LE-eBook crossover (10.1073/pnas.1418490112 — 55.12% melatonin suppression, >1.5 h DLMO delay, ~10 min longer sleep latency, 452 nm peak)' },
@@ -2415,11 +2486,12 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '97', detail: '12 knowledge pages + 85 update pages after this pass' },
+  { label: 'Public site content', value: '98', detail: '12 knowledge pages + 86 update pages after this pass' },
 ];
 
 export const curatedActivity = [
-  { date: '2026-11-04', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-11-05', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-11-04', x_post: 7, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-11-03', x_post: 2, third_party: 0, wiki_update: 0, site_update: 0 },
   { date: '2026-11-02', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-11-01', x_post: 5, third_party: 0, wiki_update: 0, site_update: 0 },
