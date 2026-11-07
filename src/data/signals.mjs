@@ -1,5 +1,40 @@
 export const curatedSignals = [
   {
+    id: 'redlight-market-meme-reception',
+    title: '“always improving my protocol”: the feed’s biggest recorded post (26,887 likes) turns the November 5 AI-stock sell-off into a red-light-therapy joke — a red-lit profile shot facing a wall of red tickers that Business Insider picked up the next day as the sell-off’s signature longevity meme',
+    date: '2026-11-05',
+    badge: 'Media',
+    kind: 'tweet',
+    topic: 'Media reception / persona marketing / red-light therapy',
+    summary:
+      'Johnson posted the audited window’s highest-engagement message — and the largest like count the dashboard has recorded on any audited post: “always improving my protocol” (26,887 likes, 748 reposts, 380 replies; November 5, 21:13 UTC, with an attached photo). The photo, as described in next-day coverage, is a red-lit profile shot facing a monitor wall of red stock tiles — turning that day’s AI-led market sell-off into a red-light-therapy joke. The market context verifies: on November 5 the Nasdaq fell 5.5% into correction territory, the S&P 500 dropped 4.4%, and the Dow shed more than 1,800 points, with Nvidia down 9.3% and AMD down 17.3% (Business Insider, November 6, 2026). The pickup verifies: Business Insider’s November 6 sell-off meme roundup quotes this exact post — “Even longevity bro Bryan Johnson got in on the act, reimagining the sea of red in the market as a dose of red-light therapy” — and Thunder Dungeon’s same-day roundup describes “a red-lit profile shot facing a monitor full of red stock tiles.” The joke lands because red-light exposure is a real tracked item in his own stack: the July 22 routine snapshot lists morning “light and red-light exposure,” the August eye protocol includes 630nm low-level red light, and the October energy post budgets 2 kWh/day for red-light therapy. Boundaries: the post is self-mockery, not a health claim — a screen’s red glow delivers no therapeutic dose (no wavelength specification, irradiance, or exposure protocol, and no outcome is claimed); the media pickup is reception evidence about the account’s cultural reach, not evidence about any intervention; engagement figures drift and were read at curation time (November 7, ~03:15 UTC). The dashboard records an attributed media-reception moment with verified market and coverage context — not evidence that a screen’s red glow is red-light therapy, a health claim, or medical advice.',
+    href: '/knowledge/bryan-johnson/',
+    tweetId: '2118451740219457963',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2118451740219457963',
+      'https://www.businessinsider.com/ai-stock-sell-off-sparked-a-wave-of-market-memes-2026-11',
+    ],
+  },
+  {
+    id: 'hotel-cold-room-sleep-anecdote',
+    title: '“The first thing I do when arriving at a hotel is make my room as cold as it can get”: the travel version of the tracked cold-bedroom directive — direction aligned with sleep-thermoregulation consensus (60–67°F), but “as cold as it can get” is an unmeasured overshoot of every published band',
+    date: '2026-11-05',
+    badge: 'Sleep',
+    kind: 'tweet',
+    topic: 'Sleep environment / thermoregulation / travel routines',
+    summary:
+      'Johnson posted a travel-habit one-liner extending the tracked thermal-sleep storyline: “The first thing I do when arriving at a hotel is make my room as cold as it can get.” (2,634 likes, 44 reposts, 195 replies; November 5, 14:24 UTC). This is the travel version of the feed’s October 27 “Your bedroom should be cold, dark and boring” directive (10,810 likes — that window’s highest engagement) and the October 20 energy post’s line item for evening AC “holding sleep temperature at 67°F.” The direction is consensus sleep-thermoregulation guidance: core body temperature naturally decreases to initiate sleep, and a cool bedroom facilitates that drop — the National Sleep Foundation’s bedroom-environment guidance identifies roughly 60–67°F as optimal for high-quality sleep in most adults, a band his own 67°F home setting sits at the top of. Boundaries: “as cold as it can get” is an unmeasured overshoot of every published band — hotel HVAC minimums vary widely, no temperature was measured or reported, and pushing a room below the guidance range is not an evidence-backed upgrade (the same guidance stresses individual variation and experimentation); the post is an N=1 travel habit with no sleep data attached; environmental sleep hygiene supports but does not treat established insomnia — the AASM suggests against sleep hygiene as a stand-alone therapy for chronic insomnia disorder (Edinger et al., J Clin Sleep Med 2021, 10.5664/jcsm.8988); the post names no study. The dashboard records an attributed sleep-environment habit with verified consensus direction — not a measured result, a reader thermostat setting, or medical advice.',
+    href: '/sleep/',
+    tweetId: '2118348643069534253',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2118348643069534253',
+      'https://www.thensf.org/how-to-make-a-sleep-friendly-bedroom/',
+      'https://doi.org/10.5664/jcsm.8988',
+    ],
+  },
+  {
     id: 'menopause-cliff-relay',
     title: '“Closer to a cliff”: the menopause post’s “300M lab results” is real — 300 million tests across NHANES and Clalit in Nature Medicine, finding step-like jumps in 52/90 tests at the final menstrual period — but the study is three weeks old, retrospective, and its “cliff” framing is already publicly contested by menopause clinicians',
     date: '2026-11-04',
@@ -2415,10 +2450,12 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Live Bird timeline audit', value: '50', detail: '50 Oct 22–Nov 4 posts reviewed via read-only bird user-tweets audit (4 genuinely new top-level posts, all on November 4 after the prior boundary: the music-walking 15% relay, the menopause-cliff relay, the DGLA zombie-cell relay, and the GDF15 dunk-training disclosure; all four carried checkable claims or measurement content and none were skipped as banter)' },
-  { label: 'Sources verified this pass', value: '4', detail: '4 sources matched · Karageorghis, Mouzourides, Priest, Sasso, Morrish, Walley, “Psychophysical and Ergogenic Effects of Synchronous Music during Treadmill Walking,” JSEP 2009;31(1):18-36 (10.1123/jsep.31.1.18 — motivational synchronous music elicited exactly a 15% treadmill-endurance increase over control, N=30) + Pridham, Hayut, … Alon, “Population-scale reconstruction of menopause dynamics reveals a physiological cliff at the final menstrual period,” Nature Medicine, October 12, 2026 (10.1038/s41591-026-04614-0 — 300 million laboratory tests, NHANES + Clalit 1.3M females, jumps in 52/90 tests at FMP) + Kuehnemann, Jezak, … Wiley, “Fatty acid desaturation controls cellular fate decisions between senescence and ferroptosis,” Cell (10.1016/j.cell.2026.09.036 — DGLA repletion kills senescent cells by ferroptosis in vitro and in aged mice, announced one day before the post) + Kleinert, … Plomgaard, “Exercise increases circulating GDF15 in humans,” Molecular Metabolism 2018;9:187-191 (10.1016/j.molmet.2017.12.016 — +34% at exercise end, +64% at 120-min recovery)' },
-  { label: 'Prior audit window', value: '50', detail: '50 Oct 21–Nov 4 posts reviewed last pass via read-only bird user-tweets audit (the November 4 pass)' },
-  { label: 'Prior sources verified', value: '3', detail: '3 sources matched last pass · Laukkanen et al., “Association Between Sauna Bathing and Fatal Cardiovascular and All-Cause Mortality Events,” JAMA Internal Medicine, February 23, 2015 (10.1001/jamainternmed.2014.8187 — Kuopio cohort, 2,315 men, 4–7 sessions/week at SCD HR 0.37, fatal CVD HR 0.50, all-cause mortality HR 0.60) + Kunutsor, Laukkanen, et al., Age and Ageing, March 2017 (10.1093/ageing.afw212 — same cohort, dementia HR 0.34, Alzheimer’s HR 0.35 at 4–7 sessions/week) + Waxler, Blazek, et al., “Generative Medical Event Models Improve with Scale,” arXiv:2508.12104 (Epic Cosmos — 16.3B encounters over 300M patients; Curiosity models trained on 118M patients / 115B events, autoregressively predicting the next medical event)' },
+  { label: 'Live Bird timeline audit', value: '40', detail: '40 Oct 27–Nov 5 posts reviewed via read-only bird user-tweets audit (2 genuinely new top-level posts on November 5 after the prior boundary — the hotel cold-room sleep habit and the red-light market meme; the “ive become a sensitive young man” identity post was reviewed and skipped as banter)' },
+  { label: 'Sources verified this pass', value: '2', detail: '2 sources matched · National Sleep Foundation bedroom-environment guidance (“How to Make a Sleep-Friendly Bedroom” — core temperature naturally decreases to initiate sleep; “experts consider 60 to 67 degrees to be optimal for high quality sleep,” with individual variation stressed) + Business Insider, “The AI Stock Sell-Off Sparked a Wave of Market Memes,” November 6, 2026 (Nasdaq −5.5% into correction, S&P 500 −4.4%, Dow −1,800+ points; quotes the exact “always improving my protocol” post as the sell-off’s longevity meme)' },
+  { label: 'Prior audit window', value: '50', detail: '50 Oct 22–Nov 4 posts reviewed last pass via read-only bird user-tweets audit (the November 5 pass)' },
+  { label: 'Prior sources verified', value: '4', detail: '4 sources matched last pass · Karageorghis, Mouzourides, Priest, Sasso, Morrish, Walley, “Psychophysical and Ergogenic Effects of Synchronous Music during Treadmill Walking,” JSEP 2009;31(1):18-36 (10.1123/jsep.31.1.18 — motivational synchronous music elicited exactly a 15% treadmill-endurance increase over control, N=30) + Pridham, Hayut, … Alon, “Population-scale reconstruction of menopause dynamics reveals a physiological cliff at the final menstrual period,” Nature Medicine, October 12, 2026 (10.1038/s41591-026-04614-0 — 300 million laboratory tests, NHANES + Clalit 1.3M females, jumps in 52/90 tests at FMP) + Kuehnemann, Jezak, … Wiley, “Fatty acid desaturation controls cellular fate decisions between senescence and ferroptosis,” Cell (10.1016/j.cell.2026.09.036 — DGLA repletion kills senescent cells by ferroptosis in vitro and in aged mice, announced one day before the post) + Kleinert, … Plomgaard, “Exercise increases circulating GDF15 in humans,” Molecular Metabolism 2018;9:187-191 (10.1016/j.molmet.2017.12.016 — +34% at exercise end, +64% at 120-min recovery)' },
+  { label: 'Earlier audit window', value: '50', detail: '50 Oct 21–Nov 4 posts reviewed earlier pass via read-only bird user-tweets audit (the November 4 pass)' },
+  { label: 'Earlier sources verified', value: '3', detail: '3 sources matched earlier pass · Laukkanen et al., “Association Between Sauna Bathing and Fatal Cardiovascular and All-Cause Mortality Events,” JAMA Internal Medicine, February 23, 2015 (10.1001/jamainternmed.2014.8187 — Kuopio cohort, 2,315 men, 4–7 sessions/week at SCD HR 0.37, fatal CVD HR 0.50, all-cause mortality HR 0.60) + Kunutsor, Laukkanen, et al., Age and Ageing, March 2017 (10.1093/ageing.afw212 — same cohort, dementia HR 0.34, Alzheimer’s HR 0.35 at 4–7 sessions/week) + Waxler, Blazek, et al., “Generative Medical Event Models Improve with Scale,” arXiv:2508.12104 (Epic Cosmos — 16.3B encounters over 300M patients; Curiosity models trained on 118M patients / 115B events, autoregressively predicting the next medical event)' },
   { label: 'Earlier audit window', value: '50', detail: '50 Oct 21–Nov 1 posts reviewed earlier pass via read-only bird user-tweets audit (the November 2 pass)' },
   { label: 'Earlier sources verified', value: '1', detail: '1 source matched earlier pass · de Witte, Spruit, van Hooren, Moonen, Stams, “Effects of music interventions on stress-related outcomes: a systematic review and two meta-analyses,” Health Psychology Review, June 2020;14(2):294-324 (10.1080/17437199.2019.1627897; PubMed 31167611 — two multilevel meta-analyses of exactly 104 RCTs and exactly 9,617 participants, matching the post’s “104 randomized trials / 9,617 people”; HR d = .456, stress-hormone d = .349, BP d = .343, psychological d = .545 — stress-reduction outcomes, not longevity endpoints)' },
   { label: 'Earlier audit window', value: '50', detail: '50 Oct 20–29 posts reviewed earlier pass via read-only bird user-tweets audit (the October 30 pass)' },
@@ -2486,11 +2523,12 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '98', detail: '12 knowledge pages + 86 update pages after this pass' },
+  { label: 'Public site content', value: '99', detail: '12 knowledge pages + 87 update pages after this pass' },
 ];
 
 export const curatedActivity = [
-  { date: '2026-11-05', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-11-07', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-11-05', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-11-04', x_post: 7, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-11-03', x_post: 2, third_party: 0, wiki_update: 0, site_update: 0 },
   { date: '2026-11-02', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1 },
