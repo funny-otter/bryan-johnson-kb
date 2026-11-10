@@ -1,5 +1,60 @@
 export const curatedSignals = [
   {
+    id: 'psilocybin-anniversary-photo-drop',
+    title: 'The feed’s first zero-text post — nine caption-less photos in four seconds, dropped on the one-year anniversary of the live-documented 5 g psilocybin trip and decoded by the thread’s own replies (“You did P. Cubensis”; “its been a year?”) — a memorial that makes no claim and publishes no data',
+    date: '2026-11-09',
+    badge: 'Media',
+    kind: 'tweet',
+    topic: 'Psilocybin experiment / anniversary / zero-text media drop',
+    summary:
+      'Johnson posted an item with no text at all — no caption, no figures, no emoji, rare in the audited record: nine caption-less photos, a root post plus eight self-replies all timestamped within four seconds (20:50:11–20:50:15 UTC, November 9; root: 581 likes, 11 reposts, 33 replies; chain replies 31–71 likes each). The decode comes from the thread itself and the calendar: replies answer the photos with “its been a year? bro what?” and “You did P. Cubensis” — and November 9–10, 2026 is one year after the live-documented psilocybin trip of November 9–10, 2025, when Johnson took 4.67 g dried Psilocybe cubensis (B+ strain, 24.9 mg psilocybin) “under medical supervision, in a legal setting, and with a professional facilitator,” had the experience live-posted by Kate Tolo as trip-sitter, and followed with a trip report (“I felt like a kid finding and exploring a new playground”) and a brain-activity data post, telling curious readers to “speak with your doctor” (Daily Mail, November 11, 2025; LADbible, November 10, 2025; his own November 18, 2025 recap). The original announcement said he would dose once a month for three months to study longevity effects; no published biomarker readout of that series ever appeared, and today’s drop adds none — no text, no claim, no measurement, just the images. Boundaries: the dashboard cannot independently describe the nine photos (no vision verification was performed); the anniversary decode rests on reply context plus timing; psilocybin remains a Schedule I controlled substance in the U.S. outside regulated research and state-regulated access, and his original framing — supervision, legal setting, facilitator, talk to your doctor — is the responsible boundary a zero-text memorial quietly drops; the site’s prior psilocybin coverage is the October Parkinson’s-GDF15 research relay, not personal-use advocacy. The dashboard records an attributed media drop with verified anniversary context — not a recommendation, evidence of benefit, new data, or medical advice.',
+    href: '/knowledge/bryan-johnson/',
+    tweetId: '2119895349267747181',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2119895349267747181',
+      'https://www.dailymail.com/health/article-15280363/biohacker-Bryan-Johnson-magic-mushrooms-trip.html',
+      'https://www.ladbible.com/news/health/bryan-johnson-biohacker-magic-mushrooms-783784-20251110',
+      'https://www.linkedin.com/posts/bryanrjohnson_first-mushroom-trip-data-is-out-my-brain-activity-7396616176098959360-TytU',
+    ],
+  },
+  {
+    id: 'squat-pr-dunk-force-budget',
+    title: '“To dunk, I need to put 585 lb of force into the floor within 0.2 seconds”: the force number matches published dunk force-plate data for a man his size — but 0.2 seconds is faster than any measured dunk approach, and the lifetime-PR squat behind the “97%” lives only in the video',
+    date: '2026-11-09',
+    badge: 'Exercise',
+    kind: 'tweet',
+    topic: 'Dunk training / ground-reaction force / squat PR / explosiveness',
+    summary:
+      'Johnson posted the dunk storyline’s first force budget: “To dunk, I need to put 585 lb of force into the floor within 0.2 seconds. / This squat gets me 97% of the way there on strength. / I’m working on explosiveness. I’m still on the ground too long when jumping. / Side note: this is the most I’ve ever squatted.” (2,196 likes, 28 reposts, 286 replies; November 9, 17:26 UTC, with a 12.7-second video). The force figure reads as a plausible peak ground-reaction force: the only published dunk force-plate study (Slovak Journal of Sport Science; 10 recreational dunkers, 89 kg, 73.7 cm verticals) recorded peak takeoff forces of 3,158–3,207 N on two-leg approaches — roughly 715 lb, about 3.6× body weight — so 585 lb (2,602 N) is the same published multiple for a ~163 lb jumper. But the 0.2-second window runs ahead of the entire measured record: the same study’s concentric phases lasted 0.311–0.820 seconds depending on approach, none as fast as 0.2 s; and the “97% of the way there on strength” split mirrors the literature’s actual finding that dunking is strength plus power — peak power, not force alone, marked the strongest outputs (6,262 W on the stationary two-leg approach) — while rate of force development is precisely the “explosiveness” he says he lacks, making the self-diagnosis directionally sound. Boundaries: the arithmetic implies a squat in the high-500s lb (97% of 585), but the post’s text names no number — the lift itself lives in the attached video with no independent or meet record, so the lifetime-PR claim is unverifiable; his evidence is one 12.7-second clip, not a measured force plate; “still on the ground too long” is a self-coaching observation; the 3.6× anchor comes from ten recreational dunkers, not from him; and the jump from the tracked October 25 deadlift (385 lb ×5, estimated ~445 lb 1RM) to an implied high-500s squat is a storyline jump the post does not document. The dashboard records an attributed N=1 training disclosure with verified force-plate context — not a reader training program, evidence of a measured 585 lb/0.2 s takeoff, or medical advice.',
+    href: '/health/',
+    tweetId: '2119844166549299627',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2119844166549299627',
+      'https://ojs.umb.sk/index.php/SJSS/article/view/232',
+    ],
+  },
+  {
+    id: 'sleep-stage-narration-rem-timing',
+    title: '“it’s 8:35 pm / i’m asleep”: the feed’s first line-by-line sleep-stage narration — and its one checkable number verifies almost perfectly against textbook architecture (8:35 pm onset → 10:03 pm REM is an 88-minute latency, inside every published 60–100-minute band)',
+    date: '2026-11-09',
+    badge: 'Sleep',
+    kind: 'tweet',
+    topic: 'Sleep architecture / REM latency / glymphatic clearance / RHR',
+    summary:
+      'Johnson posted the feed’s first stage-by-stage sleep narration: “it’s 8:35 pm / i’m asleep / fell asleep in five min / my resting heart rate is 41 bpm / now dropping into deep sleep / brain clearing out waste / rem sleep at 10:03 pm / emotional processing / then, you know what happens next…” (1,370 likes, 13 reposts, 105 replies; November 9, 04:35 UTC). The physiology narrated is real and the one checkable figure verifies: 8:35 pm onset → 10:03 pm first REM is an 88-minute REM latency, squarely inside the textbook band — sleep-medicine references put the first REM episode at roughly 60–100 minutes after onset (about 90 on average) with ~90–120-minute cycles thereafter; deep sleep concentrating early in the night is exactly normal architecture (N3 predominates in the first third); “brain clearing out waste” paraphrases the glymphatic hypothesis, in which natural sleep expands the brain’s interstitial space (13–15% awake → 22–24% asleep) and speeds clearance of metabolites including amyloid-β (Xie et al., Science 2013, 10.1126/science.1241224 — rodent evidence, with the mechanism still actively debated); and “emotional processing” matches the leading REM hypothesis (“sleep to forget, sleep to remember”), in which REM selectively strengthens emotional memories and modulates their charge — a hypothesis with substantial support, not settled fact. The 41 bpm resting heart rate continues the tracked RHR storyline (the October “Sovereignty Index” and the CMAJ 2016 mortality gradient), an N=1 wearable figure, not a reader target. Boundaries: the post contains no data — no device named, no hypnogram shown — it narrates a standard night’s architecture as if it were a live report of his own measured sleep, ending on a wink (“then, you know what happens next…”); a five-minute sleep-onset latency sits at the fast end of the typical 10–20 minutes and carries no diagnostic weight in self-report; the narrated schedule is species-general textbook physiology, not evidence his sleep followed it that night. The dashboard records an attributed sleep-narration post whose one checkable figure verifies against sleep-medicine references — not a reader sleep schedule, evidence that this exact architecture occurred, or medical advice.',
+    href: '/sleep/',
+    tweetId: '2119649934475756016',
+    confidence: 'medium',
+    sources: [
+      'https://x.com/bryan_johnson/status/2119649934475756016',
+      'https://doi.org/10.1126/science.1241224',
+      'https://psychiatryonline.org/doi/10.1176/appi.focus.12.1.9',
+      'https://pmc.ncbi.nlm.nih.gov/articles/PMC4589642/',
+    ],
+  },
+  {
     id: 'prenuvo-heart-scan-partnership',
     title: '“Scan of your heart to make sure all is well”: the feed’s first disclosed Prenuvo paid partnership turns five cardiac-MRI percentiles into a Blueprint-marketplace product plug — the heart-disease framing verifies against the American Heart Association, but the scan’s own materials say it cannot diagnose heart disease or see artery blockages, and the “20 yr old” percentiles are another unpublished private report',
     date: '2026-11-09',
@@ -2484,10 +2539,12 @@ export const watchQueue = [
 ];
 
 export const sourceCounts = [
-  { label: 'Live Bird timeline audit', value: '40', detail: '40 Oct 27–Nov 9 posts reviewed via read-only bird user-tweets audit (3 genuinely new items after the prior boundary — the November 7 motivation aphorism, skipped as a check-free maxim; the November 9 Prenuvo heart-scan partnership with its Blueprint-marketplace self-reply; and the November 9 deep-focus fulfillment post — the 01:39 UTC fulfillment post was the newest item on the timeline)' },
-  { label: 'Sources verified this pass', value: '2', detail: '2 sources matched · Prenuvo Advanced Heart Health Scan product page + Myocardial Solutions/AuntMinnie launch record (FDA-cleared MyoStrain® across 48 ventricular segments, MyoHealth® score as the share of normal segments; Prenuvo’s own materials: “does not diagnose heart disease, assess for coronary artery disease, or replace standard cardiac testing,” cannot see blockages or plaque; launched August 27, 2026) + American Heart Association preventability framing (heart disease the #1 U.S. and global cause of death; “as much as 80% of heart disease and stroke is preventable” via Life’s Essential 8 risk-factor management, restated in the March 31, 2026 dietary-guidance statement 10.1161/CIR.0000000000001435)' },
-  { label: 'Prior audit window', value: '40', detail: '40 Oct 27–Nov 5 posts reviewed last pass via read-only bird user-tweets audit (the November 7 pass)' },
-  { label: 'Prior sources verified', value: '2', detail: '2 sources matched last pass · National Sleep Foundation bedroom-environment guidance (“How to Make a Sleep-Friendly Bedroom” — core temperature naturally decreases to initiate sleep; “experts consider 60 to 67 degrees to be optimal for high quality sleep,” with individual variation stressed) + Business Insider, “The AI Stock Sell-Off Sparked a Wave of Market Memes,” November 6, 2026 (Nasdaq −5.5% into correction, S&P 500 −4.4%, Dow −1,800+ points; quotes the exact “always improving my protocol” post as the sell-off’s longevity meme)' },
+  { label: 'Live Bird timeline audit', value: '34', detail: '34 Oct 29–Nov 9 posts reviewed via read-only bird user-tweets audit plus a bounded thread expansion of the day’s photo chain (6 genuinely new items after the prior boundary, all on November 9 — the sleep-stage narration, the dunk force-budget squat video, the “breakfast” photo, skipped as routine; and the zero-text photo chain, expanded from 6 visible posts to its full 9 — the 20:50:15 UTC chain replies were the newest items on the timeline)' },
+  { label: 'Sources verified this pass', value: '3', detail: '3 sources matched · Sleep-architecture REM-latency references (first REM episode roughly 60–100 minutes after onset, ~90–120-minute cycles; Focus, 10.1176/appi.focus.12.1.9 — the post’s 8:35 pm onset → 10:03 pm REM is an 88-minute latency, inside the band) + Xie et al., “Sleep Drives Metabolite Clearance from the Adult Brain,” Science 2013 (10.1126/science.1241224 — sleeping mice expand interstitial space 13–15% → 22–24% and clear metabolites including amyloid-β faster; the “brain clearing out waste” line) + the Slovak Journal of Sport Science dunk force-plate study (10 recreational dunkers, 89 kg, 73.7 cm verticals; peak takeoff forces 3,158–3,207 N ≈ 715 lb ≈ 3.6× body weight; concentric phases 0.311–0.820 s; peak power 6,262 W — the context for the 585 lb / 0.2 s claim)' },
+  { label: 'Prior audit window', value: '40', detail: '40 Oct 27–Nov 9 posts reviewed last pass via read-only bird user-tweets audit (the November 9 pass)' },
+  { label: 'Prior sources verified', value: '2', detail: '2 sources matched last pass · Prenuvo Advanced Heart Health Scan product page + Myocardial Solutions/AuntMinnie launch record (FDA-cleared MyoStrain® across 48 ventricular segments, MyoHealth® score as the share of normal segments; Prenuvo’s own materials: “does not diagnose heart disease, assess for coronary artery disease, or replace standard cardiac testing,” cannot see blockages or plaque; launched August 27, 2026) + American Heart Association preventability framing (heart disease the #1 U.S. and global cause of death; “as much as 80% of heart disease and stroke is preventable” via Life’s Essential 8 risk-factor management, restated in the March 31, 2026 dietary-guidance statement 10.1161/CIR.0000000000001435)' },
+  { label: 'Earlier audit window', value: '40', detail: '40 Oct 27–Nov 5 posts reviewed earlier pass via read-only bird user-tweets audit (the November 7 pass)' },
+  { label: 'Earlier sources verified', value: '2', detail: '2 sources matched earlier pass · National Sleep Foundation bedroom-environment guidance (“How to Make a Sleep-Friendly Bedroom” — core temperature naturally decreases to initiate sleep; “experts consider 60 to 67 degrees to be optimal for high quality sleep,” with individual variation stressed) + Business Insider, “The AI Stock Sell-Off Sparked a Wave of Market Memes,” November 6, 2026 (Nasdaq −5.5% into correction, S&P 500 −4.4%, Dow −1,800+ points; quotes the exact “always improving my protocol” post as the sell-off’s longevity meme)' },
   { label: 'Earlier audit window', value: '50', detail: '50 Oct 22–Nov 4 posts reviewed earlier pass via read-only bird user-tweets audit (the November 5 pass)' },
   { label: 'Earlier sources verified', value: '4', detail: '4 sources matched earlier pass · Karageorghis, Mouzourides, Priest, Sasso, Morrish, Walley, “Psychophysical and Ergogenic Effects of Synchronous Music during Treadmill Walking,” JSEP 2009;31(1):18-36 (10.1123/jsep.31.1.18 — motivational synchronous music elicited exactly a 15% treadmill-endurance increase over control, N=30) + Pridham, Hayut, … Alon, “Population-scale reconstruction of menopause dynamics reveals a physiological cliff at the final menstrual period,” Nature Medicine, October 12, 2026 (10.1038/s41591-026-04614-0 — 300 million laboratory tests, NHANES + Clalit 1.3M females, jumps in 52/90 tests at FMP) + Kuehnemann, Jezak, … Wiley, “Fatty acid desaturation controls cellular fate decisions between senescence and ferroptosis,” Cell (10.1016/j.cell.2026.09.036 — DGLA repletion kills senescent cells by ferroptosis in vitro and in aged mice, announced one day before the post) + Kleinert, … Plomgaard, “Exercise increases circulating GDF15 in humans,” Molecular Metabolism 2018;9:187-191 (10.1016/j.molmet.2017.12.016 — +34% at exercise end, +64% at 120-min recovery)' },
   { label: 'Earlier audit window', value: '50', detail: '50 Oct 21–Nov 4 posts reviewed earlier pass via read-only bird user-tweets audit (the November 4 pass)' },
@@ -2559,11 +2616,12 @@ export const sourceCounts = [
   { label: 'Recent raw X source file', value: '82', detail: '82 unique tweet URLs · x-twitter-bryan-johnson-2026-05-22.md' },
   { label: 'Daily backfill file', value: '11', detail: '11 tweets with engagement · x-twitter-daily-2026-05-25.md' },
   { label: 'Targeted-search file', value: '92', detail: '92 unique tweet URLs · bryan-johnson-x-targeted-searches-2026-05-22.md' },
-  { label: 'Public site content', value: '100', detail: '12 knowledge pages + 88 update pages after this pass' },
+  { label: 'Public site content', value: '101', detail: '12 knowledge pages + 89 update pages after this pass' },
 ];
 
 export const curatedActivity = [
-  { date: '2026-11-09', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-11-10', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1 },
+  { date: '2026-11-09', x_post: 7, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-11-07', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-11-05', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1 },
   { date: '2026-11-04', x_post: 7, third_party: 0, wiki_update: 0, site_update: 1 },
