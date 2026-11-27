@@ -838,7 +838,7 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(dontDieSource, /On October 1[^]*10[.]3389\/fpsyg[.]2019[.]02688[^]*not an established species-level metric, a funding recommendation, or medical advice/i, 'dont-die page should record the ideology formulation with its boundary');
 
     assert.match(signalsSource, /30 Sep 17–Oct 1 posts reviewed/, 'audit window should cover this pass');
-    assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
 
     const updatePage = readFileSync(new URL('../src/content/updates/2026-10-02-cognitive-light-cone-curation.md', import.meta.url), 'utf8');
     assert.match(updatePage, /knowledge\/raw\/x\/2026-10-01\/2026-10-01-bryan-johnson-batch[.]md/, 'update page should cite the October 1 capture');
@@ -878,7 +878,7 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(braintreeSource, /first customers[^]*37signals[^]*Treat the “first customers” ordering as Johnson’s attribution/, 'braintree page should record the first-customers attribution with its verifiable fact');
 
     assert.match(signalsSource, /30 Sep 18–Oct 2 posts reviewed/, 'audit window should cover this pass');
-    assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
 
     const updatePage = readFileSync(new URL('../src/content/updates/2026-10-03-petit-le-mans-biomarker-review-curation.md', import.meta.url), 'utf8');
     assert.match(updatePage, /IMSA’s official entry list/, 'update page should document the entry-list verification');
@@ -918,7 +918,7 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(algorithmicHealthPage, /On October 3, race day[^]*10[.]1371\/journal[.]pone[.]0077764[^]*not evidence that molecular profiling of drivers is novel or useful[^]*or medical advice/i, 'algorithmic-health page should record the race-day experiment with its boundary');
 
     assert.match(signalsSource, /50 Sep 11–Oct 4 posts reviewed/, 'audit window should cover this pass');
-    assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
 
     const updatePage = readFileSync(new URL('../src/content/updates/2026-10-04-petit-le-mans-race-day-curation.md', import.meta.url), 'utf8');
     assert.match(updatePage, /50 posts spanning September 11–October 3/, 'update page should document the audit window');
@@ -952,7 +952,7 @@ describe('home overview and dedicated changelog route', () => {
     assert.match(algorithmicHealthPage, /On October 4[^]*Order has been restored[^]*not evidence that the five-hour routine produces its claimed benefits, a reader routine, or medical advice/i, 'algorithmic-health page should record the epilogue with its boundary');
 
     assert.match(signalsSource, /50 Sep 11–Oct 4 posts reviewed/, 'audit window should cover this pass');
-    assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
 
     const updatePage = readFileSync(new URL('../src/content/updates/2026-10-05-road-trip-epilogue-curation.md', import.meta.url), 'utf8');
     assert.match(updatePage, /50 posts spanning September 11–October 4/, 'update page should document the audit window');
@@ -1066,7 +1066,7 @@ describe('home overview and dedicated changelog route', () => {
 
   it('rotates audit-window and site-content counters for the October 6 pass', () => {
     assert.match(signalsSource, /50 Sep 11–Oct 6 posts reviewed/, 'audit window should cover this pass');
-    assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
     assert.match(signalsSource, /7 sources matched earlier pass · FDA zolpidem label/, 'studies-verified counter should cover this pass');
 
     const updatePage = readFileSync(new URL('../src/content/updates/2026-10-06-post-trip-cluster-curation.md', import.meta.url), 'utf8');
@@ -1139,7 +1139,7 @@ describe('home overview and dedicated changelog route', () => {
 
   it('rotates audit-window and site-content counters for the October 7 pass', () => {
     assert.match(signalsSource, /50 Sep 11–Oct 6 posts reviewed last pass via read-only bird user-tweets gap-fill audit/, 'audit window should carry the demoted October 7 label');
-    assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
     assert.match(signalsSource, /4 sources matched last pass · Schopenhauer WWR Vol[.] II marksman passage/, 'studies-verified counter should cover this pass');
     assert.match(signalsSource, /7 sources matched earlier pass · FDA zolpidem label/, 'prior studies-verified counter should carry the October 6 label');
     assert.match(signalsSource, /\{ date: '2026-10-07', x_post: 3/, 'curated activity should recount the October 7 status-games feed');
@@ -1224,7 +1224,7 @@ describe('home overview and dedicated changelog route', () => {
 
   it('rotates audit-window and site-content counters for the October 9 pass', () => {
     assert.match(signalsSource, /50 Sep 18–Oct 9 posts reviewed last pass/, 'audit window should carry the demoted October 9 label');
-    assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
     assert.match(signalsSource, /4 sources matched last pass · Princeton III ED-precedes-CVD consensus/, 'sources-verified counter should carry the demoted October 9 label');
     assert.match(signalsSource, /4 sources matched last pass · Axios October 8 interview coverage/, 'prior sources-verified counter should carry the October 9 label');
     assert.match(signalsSource, /\{ date: '2026-10-10', x_post: 1/, 'curated activity should include the October 10 site row');
@@ -1304,7 +1304,7 @@ describe('home overview and dedicated changelog route', () => {
 
   it('rotates audit-window and site-content counters for the October 13 pass', () => {
     assert.match(signalsSource, /50 Sep 24–Oct 14 posts reviewed last pass/, 'audit window should carry the demoted October 13 label');
-    assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
     assert.match(signalsSource, /4 sources matched last pass · UCL Newman Ig Nobel announcement/, 'prior sources-verified counter should carry the demoted October 13 label');
     assert.match(signalsSource, /4 sources matched last pass · Princeton III ED-precedes-CVD consensus/, 'older sources-verified counter should carry the demoted October 9 label');
     assert.match(signalsSource, /\{ date: '2026-10-14', x_post: 3/, 'curated activity should recount the October 14 feed');
@@ -1321,7 +1321,7 @@ describe('home overview and dedicated changelog route', () => {
 
   it('rotates audit-window and site-content counters for the October 19 pass', () => {
       assert.match(signalsSource, /50 Oct 7–20 posts reviewed last pass via read-only bird user-tweets audit/, 'audit window should carry the demoted October 20 label');
-      assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+      assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
       assert.match(signalsSource, /3 sources matched last pass · October 19 women’s-health executive order/, 'sources-verified counter should carry the demoted October 20 label');
       assert.match(signalsSource, /\{ date: '2026-10-21', x_post: 11/, 'curated activity should recount the October 21 feed');
       assert.match(signalsSource, /\{ date: '2026-10-20', x_post: 9/, 'curated activity should recount the October 20 feed');
@@ -1380,7 +1380,7 @@ describe('home overview and dedicated changelog route', () => {
 
   it('rotates audit-window and site-content counters for the October 20 pass', () => {
       assert.match(signalsSource, /50 Oct 9–21 posts reviewed last pass via read-only bird user-tweets audit/, 'audit window should cover this pass');
-      assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+      assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
       assert.match(signalsSource, /4 sources matched last pass · Veradermics Phase 3 ‘304’ topline/, 'sources-verified counter should cover this pass');
       assert.match(signalsSource, /\{ date: '2026-10-21', x_post: 11/, 'curated activity should recount the October 21 feed');
       assert.match(signalsSource, /\{ date: '2026-10-20', x_post: 9/, 'curated activity should recount the October 20 feed');
@@ -1489,7 +1489,7 @@ describe('home overview and dedicated changelog route', () => {
 
     it('rotates audit-window and site-content counters for the October 21 pass', () => {
       assert.match(signalsSource, /50 Oct 13–22 posts reviewed last pass via read-only bird user-tweets audit/, 'audit window should cover this pass');
-      assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+      assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
       assert.match(signalsSource, /4 sources matched last pass · TRM Labs October 6 peptide\/fentanyl-precursor blockchain analysis/, 'sources-verified counter should cover this pass');
       assert.match(signalsSource, /\{ date: '2026-10-22', x_post: 5/, 'curated activity should recount the October 22 feed');
       assert.match(signalsSource, /\{ date: '2026-10-21', x_post: 11/, 'curated activity should recount the October 21 feed');
@@ -1544,7 +1544,7 @@ describe('home overview and dedicated changelog route', () => {
 
     it('rotates audit-window and site-content counters for the October 22 pass', () => {
       assert.match(signalsSource, /50 Oct 14–22 posts reviewed last pass via read-only bird user-tweets audit/, 'audit window should carry the demoted October 22 label');
-      assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+      assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
       assert.match(signalsSource, /3 sources matched last pass · Lin et al\. NeuroImage 2014 BLSA hearing\/brain-atrophy study/, 'sources-verified counter should carry the demoted October 22 label');
       assert.match(signalsSource, /\{ date: '2026-10-23', x_post: 0/, 'curated activity should include the October 23 site row');
       assert.match(signalsSource, /\{ date: '2026-10-22', x_post: 5/, 'curated activity should recount the October 22 feed');
@@ -1604,7 +1604,7 @@ describe('home overview and dedicated changelog route', () => {
 
     it('rotates audit-window and site-content counters for the October 24 pass', () => {
       assert.match(signalsSource, /20 Oct 20–24 posts re-reviewed via read-only bird user-tweets audit/, 'audit window should cover this pass');
-      assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+      assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
       assert.match(signalsSource, /3 sources matched last pass · Bai et al\. Cell Metabolism 2026/, 'sources-verified counter should carry the demoted October 25 label');
       assert.match(signalsSource, /5 sources matched · Zhao et al\. Aging Cell 2026 Piezo1\/Cx43 aged-bone paper/, 'prior-pass sources counter should carry the demoted label');
       assert.match(signalsSource, /\{ date: '2026-10-25', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should include the October 25 site row');
@@ -1847,7 +1847,7 @@ describe('home overview and dedicated changelog route', () => {
       assert.match(signalsSource, /4 sources matched earlier pass · Karageorghis, Mouzourides, Priest, Sasso, Morrish, Walley/, 'prior-pass sources counter should carry the demoted label');
       assert.match(signalsSource, /\{ date: '2026-11-07', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 7 feed');
       assert.match(signalsSource, /\{ date: '2026-11-05', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 5 feed with the later-captured posts');
-      assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+      assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
 
       const updatePage = readFileSync(new URL('../src/content/updates/2026-11-06-redlight-meme-hotel-cold-room-curation.md', import.meta.url), 'utf8');
       assert.match(updatePage, /40 posts spanning October 27–November 5/, 'update page should document the audit window');
@@ -1866,7 +1866,7 @@ describe('home overview and dedicated changelog route', () => {
       assert.match(signalsSource, /2 sources matched earlier pass · National Sleep Foundation bedroom-environment guidance/, 'prior-pass sources counter should carry the demoted November 7 label');
       assert.match(signalsSource, /\{ date: '2026-11-09', x_post: 7, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 9 feed with the later-captured posts');
       assert.match(signalsSource, /\{ date: '2026-11-07', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 7 feed');
-      assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+      assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
 
       const updatePage = readFileSync(new URL('../src/content/updates/2026-11-09-prenuvo-heart-scan-deep-focus-curation.md', import.meta.url), 'utf8');
       assert.match(updatePage, /40 posts spanning October 27–November 9/, 'update page should document the audit window');
@@ -1930,7 +1930,7 @@ describe('home overview and dedicated changelog route', () => {
       assert.match(signalsSource, /2 sources matched earlier pass · Prenuvo Advanced Heart Health Scan product page/, 'prior-pass sources counter should carry the demoted November 10 label');
       assert.match(signalsSource, /\{ date: '2026-11-10', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 10 feed with the glucose post');
       assert.match(signalsSource, /\{ date: '2026-11-09', x_post: 7, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 9 feed with the later-captured posts');
-      assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+      assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
 
       const updatePage = readFileSync(new URL('../src/content/updates/2026-11-10-sleep-dunk-force-psilocybin-anniversary-curation.md', import.meta.url), 'utf8');
       assert.match(updatePage, /34 unique posts spanning October 29–November 9/, 'update page should document the audit window');
@@ -2037,7 +2037,7 @@ describe('home overview and dedicated changelog route', () => {
       assert.match(signalsSource, /40 Oct 27–Nov 9 posts reviewed earlier pass via read-only bird user-tweets audit/, 'earlier-pass audit window should carry the demoted November 9 label');
       assert.match(signalsSource, /\{ date: '2026-11-11', x_post: 2, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 11 feed with the two research relays');
       assert.match(signalsSource, /\{ date: '2026-11-10', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 10 feed with the glucose post');
-      assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+      assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
 
       const updatePage = readFileSync(new URL('../src/content/updates/2026-11-11-glucose-hba1c-percentile-curation.md', import.meta.url), 'utf8');
       assert.match(updatePage, /30 posts spanning October 31–November 10/, 'update page should document the audit window');
@@ -2099,7 +2099,7 @@ describe('home overview and dedicated changelog route', () => {
       assert.match(signalsSource, /\{ date: '2026-11-13', x_post: 2, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 13 feed with the two new posts');
       assert.match(signalsSource, /\{ date: '2026-11-12', x_post: 4, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 12 feed with the four new posts');
       assert.match(signalsSource, /\{ date: '2026-11-11', x_post: 2, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 11 feed with the two research relays');
-      assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+      assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
 
       const updatePage = readFileSync(new URL('../src/content/updates/2026-11-12-lsd-brain-aging-glp1-lifting-curation.md', import.meta.url), 'utf8');
       assert.match(updatePage, /30 posts spanning October 31–November 11/, 'update page should document the audit window');
@@ -2165,7 +2165,7 @@ describe('home overview and dedicated changelog route', () => {
       assert.match(signalsSource, /30 Oct 31–Nov 11 posts reviewed earlier pass via read-only bird user-tweets audit/, 'earlier-pass audit window should carry the demoted November 12 label');
       assert.match(signalsSource, /\{ date: '2026-11-13', x_post: 2, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 13 feed with the two new posts');
       assert.match(signalsSource, /\{ date: '2026-11-12', x_post: 4, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 12 feed with the four new posts');
-      assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+      assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
 
       const updatePage = readFileSync(new URL('../src/content/updates/2026-11-13-nvidia-billionaires-brain-aging-status-symbols-curation.md', import.meta.url), 'utf8');
       assert.match(updatePage, /30 posts spanning November 2–12/, 'update page should document the audit window');
@@ -2227,7 +2227,7 @@ describe('home overview and dedicated changelog route', () => {
       assert.match(signalsSource, /\{ date: '2026-11-15', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should include the recounted November 15 feed row with the sleep challenge');
       assert.match(signalsSource, /\{ date: '2026-11-14', x_post: 4, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 14 feed with the four new posts');
       assert.match(signalsSource, /\{ date: '2026-11-13', x_post: 2, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 13 feed with the two new posts');
-      assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+      assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
 
       const updatePage = readFileSync(new URL('../src/content/updates/2026-11-14-trapbar-deadlift-faa-ground-stop-curation.md', import.meta.url), 'utf8');
       assert.match(updatePage, /30 posts spanning November 2–13/, 'update page should document the audit window');
@@ -2296,7 +2296,7 @@ describe('home overview and dedicated changelog route', () => {
       assert.match(signalsSource, /4 sources matched earlier pass · FAA nationwide-ground-stop statement/, 'earlier-pass sources counter should carry the demoted November 14 label');
       assert.match(signalsSource, /\{ date: '2026-11-15', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 15 feed with the sleep challenge');
       assert.match(signalsSource, /\{ date: '2026-11-14', x_post: 4, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 14 feed with the four new posts');
-      assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+      assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
 
       const updatePage = readFileSync(new URL('../src/content/updates/2026-11-15-pope-immortality-religion-inflammation-curation.md', import.meta.url), 'utf8');
       assert.match(updatePage, /30 posts spanning November 4–14/, 'update page should document the audit window');
@@ -2353,7 +2353,7 @@ describe('home overview and dedicated changelog route', () => {
       assert.match(signalsSource, /3 sources matched earlier pass · Windred, Burns, Lane, Saxena, Rutter, Cain, Phillips/, 'prior-pass sources counter should carry the demoted November 16 label');
       assert.match(signalsSource, /\{ date: '2026-11-17', x_post: 4, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 17 feed with the four new posts');
       assert.match(signalsSource, /\{ date: '2026-11-16', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 16 feed with the three new posts');
-      assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+      assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
 
       const updatePage = readFileSync(new URL('../src/content/updates/2026-11-16-sleep-regularity-challenge-curation.md', import.meta.url), 'utf8');
       assert.match(updatePage, /30 posts spanning November 4–15/, 'update page should document the audit window');
@@ -2488,7 +2488,7 @@ describe('home overview and dedicated changelog route', () => {
       assert.match(signalsSource, /25 Nov 14–20 posts reviewed last pass via read-only bird user-tweets audit plus the November 19, 20, and 21 raw batch captures/, 'audit window should carry the demoted November 21 label');
       assert.match(signalsSource, /6 sources matched last pass · Rocha, Callies, Olzinski, Chen, Diaz, Lo/, 'sources-verified counter should carry the demoted November 21 label');
       assert.match(signalsSource, /Bostrom’s a16z-show estimate, released November 19, 2026/, 'sources-verified counter should document the Bostrom verification');
-      assert.match(signalsSource, /\{ date: '2026-11-25', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should include the November 25 site row');
+      assert.match(signalsSource, /\{ date: '2026-11-26', x_post: 5, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 26 feed with the five new items');
       assert.match(signalsSource, /\{ date: '2026-11-24', x_post: 2, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 24 feed with the two new items');
       assert.match(signalsSource, /\{ date: '2026-11-23', x_post: 7, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 23 feed with the seven new items');
       assert.match(signalsSource, /\{ date: '2026-11-22', x_post: 1, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 22 feed with the Iceland essay');
@@ -2496,7 +2496,7 @@ describe('home overview and dedicated changelog route', () => {
       assert.match(signalsSource, /\{ date: '2026-11-20', x_post: 5, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 20 feed');
       assert.match(signalsSource, /\{ date: '2026-11-19', x_post: 6, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 19 feed');
       assert.match(signalsSource, /\{ date: '2026-11-18', x_post: 5, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 18 feed with the five new items');
-      assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+      assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
 
       const updatePage = readFileSync(new URL('../src/content/updates/2026-11-21-heart-rate-dipping-proteome-gta6-curation.md', import.meta.url), 'utf8');
       assert.match(updatePage, /25 posts spanning November 14–20/, 'update page should document the audit window');
@@ -2649,7 +2649,7 @@ describe('home overview and dedicated changelog route', () => {
       assert.match(signalsSource, /25 Nov 17–21 posts reviewed last pass via read-only bird user-tweets audit plus the November 22 raw batch capture/, 'audit window should carry the demoted November 22 label');
       assert.match(signalsSource, /3 sources matched last pass · the systematic review and meta-analysis “Incidence, Temporal Trends, and Surgical Shift of Achilles Tendon Rupture,” Sports Medicine/, 'sources-verified counter should carry the demoted November 22 label');
       assert.match(signalsSource, /November 21, 2026 \+ 274 days = August 22, 2027, the tracked birth date’s 50th birthday/, 'sources-verified counter should document the birthday arithmetic verification');
-      assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+      assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
 
       const updatePage = readFileSync(new URL('../src/content/updates/2026-11-22-achilles-claim-birthday-countdown-curation.md', import.meta.url), 'utf8');
       assert.match(updatePage, /25 posts spanning November 17–21/, 'update page should document the audit window');
@@ -2762,22 +2762,176 @@ describe('home overview and dedicated changelog route', () => {
       assert.match(protocolsSource, /warm-up claim as an attributed claim stack with a verified programme literature and an untranscribed video[^]*Not a reader warm-up prescription, evidence that any specific 20-minute warm-up prevents injury in any individual, or medical advice/, 'health protocol guidance should keep the warm-up claim in the attributed lane');
     });
 
-    it('rotates audit-window and site-content counters for the November 25 pass', () => {
-      assert.match(signalsSource, /20 Nov 19–24 posts reviewed via read-only bird user-tweets audit plus the November 23, 24, and 25 raw batch captures/, 'audit window should cover this pass');
-      assert.match(signalsSource, /10 sources matched · Soligard, Myklebust, Steffen, Holme, Silvers, Bizzini, Junge, Dvorak, Bahr, Andersen/, 'sources-verified counter should cover this pass');
-      assert.match(signalsSource, /25 Nov 17–21 posts reviewed last pass via read-only bird user-tweets audit plus the November 22 raw batch capture/, 'audit window should carry the demoted November 22 label');
-      assert.match(signalsSource, /3 sources matched last pass · the systematic review and meta-analysis “Incidence, Temporal Trends, and Surgical Shift of Achilles Tendon Rupture,” Sports Medicine/, 'sources-verified counter should carry the demoted November 22 label');
-      assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+    it('publishes the November 25 sleep queuing-math, DST phishing, organ-aging, Thanksgiving cluster as attributed content with verified context', () => {
+      for (const required of [
+        'sleep-queuing-math-relay',
+        '2125683008334446828',
+        'https://x.com/bryan_johnson/status/2125683008334446828',
+        'https://doi.org/10.1093/sleep/26.2.117',
+        '10.1093/sleep/26.2.117',
+        'Same math applies to sleep.',
+        '6hr vs 8hr pushes your system near 100% capacity, multiplying errors, brain fog, and biological debt by 12x',
+        'the feed’s first quote-post of an AI assistant’s advice',
+        'Voxyz_ai sharing Gemini 4 Neon’s queuing-theory answer',
+        'Van Dongen, Maislin, Mullington, Dinges',
+        'The Cumulative Cost of Additional Wakefulness: Dose-Response Effects on Neurobehavioral Functions and Sleep Physiology From Chronic Sleep Restriction and Total Sleep Deprivation',
+        'Sleep 2003;26(2):117–126',
+        '48 healthy adults aged 21–38, randomized to 4, 6, or 8 h time in bed for 14 consecutive days',
+        'deficits in cognitive performance equivalent to up to 2 nights of total sleep deprivation',
+        'largely unaware',
+        'the 4/9/49 delay multipliers describe M/M/1-style utilization curves, and no sleep study produces a “12x” multiplier',
+        'not evidence that sleep scales like a queue, a reader sleep duration, or medical advice',
+        'dst-phishing-sleep-security-relay',
+        '2125661798074360005',
+        'https://x.com/bryan_johnson/status/2125661798074360005',
+        'https://doi.org/10.1073/pnas.2622467123',
+        'Losing an hour of sleep during spring daylight saving time increased phishing click rates by 13% across 11,218 people',
+        'Schechtman, “Modest loss of sleep increases susceptibility to cybersecurity threats,” PNAS, published November 11, 2026',
+        '11,218 employees randomized to receive a simulated phishing email before versus after the spring daylight-saving transition',
+        'click rates rising from 15.66% to 17.76% (a 13% relative increase)',
+        'no differences in opening the email, reporting it as spam, or time-to-open, and the difference peaking ~70 seconds after arrival',
+        'one institution’s phishing-awareness program — not a population sample; the emails were simulated, no actual fraud occurred',
+        'not evidence about any reader’s security practices, a reader sleep prescription, or medical advice',
+        'multi-organ-aging-tug-of-war-relay',
+        '2125635374147944921',
+        'https://x.com/bryan_johnson/status/2125635374147944921',
+        'https://doi.org/10.1038/s41514-026-00566-4',
+        'an “aged” organ raises your risk of death by 56%',
+        'Mak, Krishnamoorthy, Zhang, Lin, Zheng, Jylhävä, Hägg, Tan, Kung, Cheung',
+        'Organ-specific proteomic aging in Chinese adults: 20-year clinical outcomes and metabolomic underpinnings',
+        'npj Aging, published November 19, 2026',
+        '185 Chinese adults from the Hong Kong Osteoporosis Study',
+        '20.3-year follow-up — each aged organ +56% mortality (HR 1.56), ≥3 aged organs 16.5-fold, immune HR 1.95 and brain HR 1.73',
+        'Number-for-number: each additional aged organ (age gap ≥1.5 SD)',
+        '≥3 aged organs 16.5-fold',
+        'methionine was inversely associated with conventional, organismal, and brain age gaps (one of the strongest signals)',
+        'the taurine-hypotaurine pathway was enriched across eight organ age gaps (still enriched for heart, liver, brain, and kidney after BMI/creatinine adjustment)',
+        'tug-of-war framing (methionine tracking younger brains and older muscles, taurine younger vessels and older livers) that reads figure-level metabolite associations the paper never states as organ competition',
+        'the paper never frames organs as competing',
+        'not evidence about any reader’s organ ages, a clinical organ-aging test, or medical advice',
+        'thanksgiving-survival-guide-cluster',
+        '2125596452886130916',
+        'https://x.com/bryan_johnson/status/2125596452886130916',
+        'a thanksgiving survival guide to not feel awful',
+        'Shukla, Iliescu, Thomas, Aronne, “Food Order Has a Significant Impact on Postprandial Glucose and Insulin Levels,” Diabetes Care 2015;38(7):e98–e99',
+        'glucose iAUC 73% lower when protein and vegetables came first',
+        'Shukla, Andono, Touhamy, Casper, Iliescu, Mauer, Zhu, Ludwig, Aronne',
+        'Carbohydrate-last meal pattern lowers postprandial glucose and insulin excursions in type 2 diabetes',
+        'carbohydrate-last glucose iAUC 53% lower than carbohydrate-first',
+        'Buffey, Herring, Langley, Donnelly, Carson',
+        'light walking Δ = −0.72 for glucose and −0.83 for insulin versus prolonged sitting',
+        'the meal-order trials are in metformin-treated type 2 diabetes and prediabetes populations, not healthy adults at Thanksgiving scale',
+        'the walking meta-analysis measured repeated short breaks across a controlled day, not one 10-minute walk after one large meal',
+        '“walk 23 miles after the pie” is a joke',
+        'not evidence about any reader’s holiday meal, a reader holiday protocol, or medical advice',
+        "confidence: 'medium'",
+      ]) {
+        assert.ok(signalsSource.includes(required), `November 26 signals should preserve: ${required}`);
+      }
 
-      const updatePage = readFileSync(new URL('../src/content/updates/2026-11-25-warmup-glp1-implant-riemann-iceland-curation.md', import.meta.url), 'utf8');
-      assert.match(updatePage, /20 posts spanning November 19–24/, 'update page should document the audit window');
-      assert.match(updatePage, /ten genuinely new top-level items after the boundary/, 'update page should document the gap tally');
-      assert.match(updatePage, /10[.]1136\/bmj[.]a2469/, 'update page should document the FIFA 11+ trial verification');
-      assert.match(updatePage, /bmjnph-2026-001622/, 'update page should document the BMJ Nutrition GLP-1 verification');
-      assert.match(updatePage, /10[.]1038\/s41586-026-11251-7/, 'update page should document the Nature implant verification');
-      assert.match(updatePage, /Levent Alpöge’s Claude-assisted Lean proof/, 'update page should document the Riemann verification');
-      assert.match(updatePage, /1[.]6 ± 0[.]3 km³ of lava, the largest since 1783–84 Laki/, 'update page should document the eruption verification');
+      for (const required of [
+        'Six genuinely new top-level items after the November 24, 17:49 UTC warm-up boundary',
+        'the feed’s first quote-post of an AI assistant’s advice — queuing-theory math from Gemini 4 Neon',
+        'the feed’s first holiday survival guide whose two checkable directions trace to meal-order and walking-breaks trials',
+        'the “little immortal man” family meme, the window’s highest engagement',
+      ]) {
+        assert.ok(dashboardSectionsSource.includes(required), `November 26 timeline should preserve: ${required}`);
+      }
+
+      assert.match(dashboardSectionsSource, /Six genuinely new top-level items after the November 24, 17:49 UTC warm-up boundary[^]*not evidence that sleep scales like a queue, a reader sleep duration or holiday protocol, or medical advice/i, 'timeline should pair the November 25 items with their boundary');
+
+      const bryanJohnsonSource = readFileSync(new URL('../src/content/knowledge/bryan-johnson.md', import.meta.url), 'utf8');
+      assert.match(bryanJohnsonSource, /On November 25 \(all six items same-day UTC\), six genuinely new top-level items arrived after the November 24, 17:49 UTC warm-up boundary[^]*10[.]1093\/sleep\/26[.]2[.]117[^]*pnas[.]2622467123[^]*s41514-026-00566-4[^]*not evidence that sleep scales like a queue, a reader sleep duration or holiday protocol, or medical advice/i, 'bryan-johnson page should record the six-item window with its boundary');
+
+      assert.match(protocolsSource, /sleep queuing-math post as an attributed metaphor borrowing an AI assistant’s queuing-theory figures, not a sleep-science claim[^]*Not evidence that sleep scales like a queue, a reader sleep duration, or medical advice/, 'sleep protocol guidance should keep the queuing-math claim in the attributed lane');
+      assert.match(protocolsSource, /multi-organ aging relay as an attributed relay of a six-day-old npj Aging cohort whose headline numbers match exactly, with a tug-of-war framing the paper does not make[^]*Not evidence that any reader’s organs are competing, a diagnostic pathway, or medical advice/, 'longevity protocol guidance should keep the organ-aging claim in the attributed lane');
+    });
+
+    it('rotates audit-window and site-content counters for the November 26 pass', () => {
+      assert.match(signalsSource, /20 Nov 19–25 posts reviewed last pass via read-only bird user-tweets audit plus the November 26 raw batch capture/, 'audit window should carry the demoted November 26 label');
+      assert.match(signalsSource, /7 sources matched last pass · Van Dongen, Maislin, Mullington, Dinges, “The Cumulative Cost of Additional Wakefulness/, 'sources-verified counter should carry the demoted November 26 label');
+      assert.match(signalsSource, /20 Nov 19–24 posts reviewed last pass via read-only bird user-tweets audit plus the November 23, 24, and 25 raw batch captures/, 'audit window should carry the demoted November 25 label');
+      assert.match(signalsSource, /10 sources matched last pass · Soligard, Myklebust, Steffen, Holme, Silvers, Bizzini, Junge, Dvorak, Bahr, Andersen/, 'sources-verified counter should carry the demoted November 25 label');
+      assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
+
+      const updatePage = readFileSync(new URL('../src/content/updates/2026-11-26-sleep-phishing-organ-aging-thanksgiving-curation.md', import.meta.url), 'utf8');
+      assert.match(updatePage, /20 posts spanning November 19–25/, 'update page should document the audit window');
+      assert.match(updatePage, /six genuinely new top-level items after the boundary/, 'update page should document the gap tally');
+      assert.match(updatePage, /10[.]1093\/sleep\/26[.]2[.]117/, 'update page should document the Van Dongen sleep-restriction verification');
+      assert.match(updatePage, /10[.]1073\/pnas[.]2622467123/, 'update page should document the PNAS phishing verification');
+      assert.match(updatePage, /10[.]1038\/s41514-026-00566-4/, 'update page should document the npj Aging organ-aging verification');
+      assert.match(updatePage, /10[.]2337\/dc15-0429/, 'update page should document the Diabetes Care meal-order verification');
+      assert.match(updatePage, /10[.]1136\/bmjdrc-2017-000440/, 'update page should document the BMJ Open DRC meal-order replication');
+      assert.match(updatePage, /10[.]1007\/s40279-022-01649-4/, 'update page should document the Sports Medicine walking-breaks verification');
       assert.match(updatePage, /Nothing skipped/, 'update page should document the no-skip result');
+    });
+
+    it('publishes the November 27 death-optional question, Nietzsche self-command, quantum-gravity, and math-metabolism cluster as attributed content with verified context', () => {
+      for (const required of [
+        'death-optional-fossilized-progress-ideology',
+        '2125981598424428745',
+        'https://x.com/bryan_johnson/status/2125981598424428745',
+        'AI is demonstrating that human assumptions about speed of progress are being fossilized. Has this caused you to think any differently about your opinions on death and the potential of it becoming optional?',
+        'the movement’s superintelligence-transition framing',
+        'death… becoming optional” is the movement’s aspiration restated as a question',
+        'He who cannot obey himself will be commanded.',
+        'the feed’s first Nietzsche quotation',
+        'the genuine closing line of “Of Self-Overcoming” in Part II of Thus Spoke Zarathustra (1883)',
+        'the chapter on will-to-power and self-mastery',
+        '“engineered comfort culture” is Johnson’s enemy-framing written on top of it',
+        'A physicist and a few thousand dollars of compute to try and crack a 100 year old problem unifying general relativity and quantum mechanic',
+        'Venkatesa Chandrasekaran’s single-author Stanford preprint “An algebraic quantization of gravity from the null cone” (arXiv:2611.34924, November 23, 2026)',
+        'background-independent quantization of four-dimensional vacuum general relativity on intersecting null cones',
+        'acknowledgments credit GPT-6 Astra with months of collaboration (~400M tokens)',
+        'a preprint, not peer review — no experimental test, vacuum gravity only',
+        'UCL’s Jonathan Oppenheim publicly questioned whether the construction satisfies diffeomorphism invariance',
+        '“a few thousand dollars of compute” is the post’s unverifiable gloss',
+        'This week, progress in mathematics exceeded human knowledge metabolism.',
+        'press releases are so Nov 21st',
+        'the Claude-assisted Lean proof certified November 21, 2026 by the Lean FRO and Mathlib Initiative',
+        'The highest bar on X isn’t getting a like for something someone already believes.',
+        'meta-commentary on persuasion with no claim',
+        'not evidence that death can become optional, that any physics result is established, a reader persuasion or self-command practice, or medical advice',
+        "confidence: 'medium'",
+      ]) {
+        assert.ok(signalsSource.includes(required), `November 27 signals should preserve: ${required}`);
+      }
+
+      for (const required of [
+        'Five genuinely new top-level items after the November 25, 20:08 UTC sleep queuing-math boundary',
+        'the movement’s death-optional framing turned into a direct audience question',
+        'the feed’s first Nietzsche quotation (“He who cannot obey himself will be commanded”), which verifies exactly to “Of Self-Overcoming” in Part II of Thus Spoke Zarathustra',
+        'a quote-post of a three-day-old single-author Stanford quantum-gravity preprint (arXiv:2611.34924, unreviewed, vacuum-only, publicly questioned by UCL’s Jonathan Oppenheim the same day)',
+        'a math-metabolism joke whose “press releases are so Nov 21st” punchline self-dates to the Riemann-proof certification',
+        'a persuasion aphorism kept as chronology',
+      ]) {
+        assert.ok(dashboardSectionsSource.includes(required), `November 27 timeline should preserve: ${required}`);
+      }
+
+      assert.match(dashboardSectionsSource, /Five genuinely new top-level items after the November 25, 20:08 UTC sleep queuing-math boundary[^]*not evidence that death can become optional, that any physics result is established, a reader persuasion or self-command practice, or medical advice/i, 'timeline should pair the November 26 items with their boundary');
+
+      const bryanJohnsonSource = readFileSync(new URL('../src/content/knowledge/bryan-johnson.md', import.meta.url), 'utf8');
+      assert.match(bryanJohnsonSource, /On November 26 \(all five items same-day UTC\), five genuinely new top-level items arrived after the November 25, 20:08 UTC sleep queuing-math boundary[^]*arXiv:2611[.]34924[^]*not evidence that death can become optional, that any physics result is established, a reader persuasion or self-command practice, or medical advice/i, 'bryan-johnson page should record the five-item window with its boundary');
+    });
+
+    it('rotates audit-window and site-content counters for the November 27 pass', () => {
+      assert.match(signalsSource, /25 Nov 21–26 posts reviewed via read-only bird user-tweets audit plus the November 27 raw batch capture/, 'audit window should cover this pass');
+      assert.match(signalsSource, /4 sources matched · Nietzsche, Thus Spoke Zarathustra, Part II, “Of Self-Overcoming” \(1883\)/, 'sources-verified counter should cover this pass');
+      assert.match(signalsSource, /20 Nov 19–25 posts reviewed last pass via read-only bird user-tweets audit plus the November 26 raw batch capture/, 'audit window should carry the demoted November 26 label');
+      assert.match(signalsSource, /7 sources matched last pass · Van Dongen, Maislin, Mullington, Dinges/, 'sources-verified counter should carry the demoted November 26 label');
+      assert.match(signalsSource, /\{ date: '2026-11-27', x_post: 0, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should include the November 27 site row');
+      assert.match(signalsSource, /\{ date: '2026-11-26', x_post: 5, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 26 feed with the five new items');
+      assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
+
+      const updatePage = readFileSync(new URL('../src/content/updates/2026-11-27-death-optional-nietzsche-quantum-gravity-math-curation.md', import.meta.url), 'utf8');
+      assert.match(updatePage, /25 posts spanning November 21–26/, 'update page should document the audit window');
+      assert.match(updatePage, /five genuinely new top-level items after the boundary/, 'update page should document the gap tally');
+      assert.match(updatePage, /arXiv:2611[.]34924/, 'update page should document the Chandrasekaran preprint verification');
+      assert.match(updatePage, /“Of Self-Overcoming” in Part II of Thus Spoke Zarathustra \(1883\)/, 'update page should document the Nietzsche verification');
+      assert.match(updatePage, /Oppenheim/, 'update page should document the same-day critique verification');
+      assert.match(updatePage, /Lean FRO and Mathlib Initiative/, 'update page should document the Riemann-arc self-dating verification');
+      assert.match(updatePage, /Nothing skipped/, 'update page should document the no-skip result');
+      assert.match(updatePage, /recovered work/, 'update page should document the November 26 recovery');
     });
 
     it('publishes the November 5 red-light market meme and hotel cold-room posts as attributed content with verified context', () => {
@@ -2826,7 +2980,7 @@ describe('home overview and dedicated changelog route', () => {
       assert.match(signalsSource, /3 sources matched earlier pass · Laukkanen et al\., “Association Between Sauna Bathing and Fatal Cardiovascular and All-Cause Mortality Events,” JAMA Internal Medicine/, 'prior-pass sources counter should carry the demoted label');
       assert.match(signalsSource, /\{ date: '2026-11-05', x_post: 3, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should include the recounted November 5 feed row');
       assert.match(signalsSource, /\{ date: '2026-11-04', x_post: 7, third_party: 0, wiki_update: 0, site_update: 1/, 'curated activity should recount the November 4 feed with the later-captured posts');
-      assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+      assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
 
       const updatePage = readFileSync(new URL('../src/content/updates/2026-11-05-menopause-cliff-zombie-cells-gdf15-music-walking-curation.md', import.meta.url), 'utf8');
       assert.match(updatePage, /50 posts spanning October 22–November 4/, 'update page should document the audit window');
@@ -3106,7 +3260,7 @@ describe('home overview and dedicated changelog route', () => {
 
   it('rotates audit-window and site-content counters for the October 18 pass', () => {
       assert.match(signalsSource, /50 Oct 5–18 posts reviewed last pass via read-only bird user-tweets audit/, 'audit window should carry the demoted October 18 label');
-      assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+      assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
       assert.match(signalsSource, /4 sources matched last pass · Turco 2021 menstrual-flow organoid study/, 'sources-verified counter should carry the demoted October 18 label');
       assert.match(signalsSource, /\{ date: '2026-10-19', x_post: 7/, 'curated activity should recount the October 19 feed');
       assert.match(signalsSource, /\{ date: '2026-10-18', x_post: 3/, 'curated activity should recount the October 18 feed');
@@ -3159,7 +3313,7 @@ describe('home overview and dedicated changelog route', () => {
 
     it('rotates audit-window and site-content counters for the October 17 pass', () => {
       assert.match(signalsSource, /50 Oct 3–17 posts reviewed last pass via read-only bird user-tweets audit/, 'audit window should carry the demoted October 17 label');
-      assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+      assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
       assert.match(signalsSource, /3 sources matched last pass · You Can See Everything film record/, 'sources-verified counter should carry the demoted October 17 label');
     assert.match(signalsSource, /\{ date: '2026-10-18', x_post: 3/, 'curated activity should recount the October 18 feed');
     assert.match(signalsSource, /\{ date: '2026-10-17', x_post: 4/, 'curated activity should recount the October 17 feed');
@@ -3209,7 +3363,7 @@ describe('home overview and dedicated changelog route', () => {
 
   it('rotates audit-window and site-content counters for the October 16 pass', () => {
     assert.match(signalsSource, /50 Oct 2–16 posts reviewed last pass via read-only bird user-tweets audit/, 'audit window should carry the demoted October 16 label');
-    assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
     assert.match(signalsSource, /3 sources matched last pass · CMAJ 2016 RHR–mortality meta-analysis/, 'sources-verified counter should carry the demoted October 16 label');
     assert.match(signalsSource, /\{ date: '2026-10-16', x_post: 4/, 'curated activity should recount the October 16 feed');
     assert.match(signalsSource, /\{ date: '2026-10-15', x_post: 5/, 'curated activity should recount the October 15 feed');
@@ -3260,7 +3414,7 @@ describe('home overview and dedicated changelog route', () => {
 
   it('rotates audit-window and site-content counters for the October 14 pass', () => {
     assert.match(signalsSource, /50 Sep 25–Oct 15 posts reviewed last pass via read-only bird user-tweets audit/, 'audit window should carry the demoted October 14 label');
-    assert.match(signalsSource, /12 knowledge pages \+ 100 update pages/, 'site content count should include the new update page');
+    assert.match(signalsSource, /12 knowledge pages \+ 102 update pages/, 'site content count should include the new update page');
     assert.match(signalsSource, /3 sources matched last pass · NEJM deCODE Iceland actionable-genotype study/, 'sources-verified counter should carry the demoted October 14 label');
     assert.match(signalsSource, /\{ date: '2026-10-15', x_post: 5/, 'curated activity should recount the October 15 feed');
     assert.match(signalsSource, /\{ date: '2026-10-14', x_post: 3/, 'curated activity should recount the October 14 feed');
@@ -3350,7 +3504,7 @@ describe('home overview and dedicated changelog route', () => {
     for (const phrase of ['Enhanced Games follow-up', 'Kate Tolo baseline', 'Microplastics testing', '82 unique tweet URLs', '11 tweets with engagement']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `signals/sidebar data should include ${phrase}`);
     }
-    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 100 update pages']) {
+    for (const phrase of ['1 Aug 16 post captured', '9 Aug 18–20 posts captured', '12 knowledge pages + 102 update pages']) {
       assert.match(signalsSource, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `source counts should include ${phrase}`);
     }
     assert.doesNotMatch(indexSource, /index \* 17|updateCards\[0\]|next curated publish pass/, 'right sidebar should not use deterministic placeholder formulas or newest-card watch copy');
